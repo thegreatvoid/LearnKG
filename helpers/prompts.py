@@ -94,3 +94,84 @@ def extractConcepts(prompt: str, metadata={}, model="mistral-openorca:latest"):
         print("\n\nERROR ### Here is the buggy response: ", response, "\n\n")
         result = None
     return result
+
+
+def educationalPrompt(input: str, metadata={}, model="mistral-openorca:latest"):
+    """
+    Educational Dataset Construction Prompt:
+    Extracts canonical educational concepts (with definition, aliases, and concept_type)
+    and pedagogical relations strictly classified into the 5-type controlled ontology:
+      - Prerequisite (A -> B: A understood before B)
+      - Part-of      (A -> B: A is a component of B)
+      - Application  (A -> B: A is applied/used in B)
+      - Extension    (A -> B: A builds upon or extends B)
+      - Similarity   (A <-> B: conceptually similar)
+    """
+    if model is None:
+        model = "mistral-openorca:latest"
+
+    SYS_PROMPT = (
+        "You are an expert Educational Knowledge Graph builder. "
+        "From the given educational text chunk (delimited by ```), extract:\n\n"
+        "1. CONCEPTS:\n"
+        "   - \"concept_name\": Canonical name of the concept.\n"
+        "   - \"aliases\": Alternative names, acronyms, or expressions (e.g. [\"GD\", \"Gradient Descent\"]).\n"
+        "   - \"concept_type\": Must be one of [\"Algorithm\", \"Model\", \"Formula\", \"Theory\", \"Component\"].\n"
+        "   - \"definition\": Best textbook-supported definition grounded strictly in this text.\n"
+        "   - \"evidence\": Exact sentence from the text defining or introducing this concept.\n\n"
+        "2. RELATIONS:\n"
+        "   Strictly map each relationship into one of the 5 controlled educational relation types:\n"
+        "   - \"Prerequisite\": Source must be understood before Target.\n"
+        "   - \"Part-of\": Source is a component or part of Target.\n"
+        "   - \"Application\": Source is applied or used within Target.\n"
+        "   - \"Extension\": Source builds upon or extends Target.\n"
+        "   - \"Similarity\": Source and Target are conceptually or functionally similar.\n\n"
+        "   For each relation:\n"
+        "   - \"source\": Exact concept name of origin.\n"
+        "   - \"target\": Exact concept name of destination.\n"
+        "   - \"relation_type\": One of [\"Prerequisite\", \"Part-of\", \"Application\", \"Extension\", \"Similarity\"].\n"
+        "   - \"weight\": Integer 1-10 reflecting educational importance (Prerequisite: 8-10, Part-of: 7-8, Application: 6-7, Extension: 5-6, Similarity: 4-5).\n"
+        "   - \"evidence\": Exact sentence from the text demonstrating this relation.\n\n"
+        "Output strictly valid JSON with keys \"concepts\" and \"relations\". Do not include any commentary or markdown formatting outside the JSON.\n"
+        "Example output:\n"
+        "{\n"
+        "  \"concepts\": [\n"
+        "    {\"concept_name\": \"Gradient Descent\", \"aliases\": [\"GD\"], \"concept_type\": \"Algorithm\", \"definition\": \"An optimization algorithm used to minimize a loss function.\", \"evidence\": \"Gradient descent is an optimization algorithm used to minimize a loss function.\"}\n"
+        "  ],\n"
+        "  \"relations\": [\n"
+        "    {\"source\": \"Gradient Descent\", \"target\": \"Neural Network\", \"relation_type\": \"Application\", \"weight\": 8, \"evidence\": \"Neural Networks are trained using Gradient Descent.\"}\n"
+        "  ]\n"
+        "}\n"
+    )
+
+    USER_PROMPT = f"context: ```{input}``` \n\n output: "
+    try:
+        response, _ = client.generate(model_name=model, system=SYS_PROMPT, prompt=USER_PROMPT)
+    except Exception as e:
+        print(f"[!] Ollama client error: {e}")
+        return None
+
+    if not response:
+        return None
+
+    # Clean markdown fences if model outputs ```json ... ```
+    cleaned = response.strip()
+    if cleaned.startswith("```"):
+        cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
+        cleaned = re.sub(r"\s*```$", "", cleaned)
+
+    try:
+        result = json.loads(cleaned)
+    except Exception:
+        # Try extracting JSON object substring
+        m = re.search(r"(\{.*\})", cleaned, re.DOTALL)
+        if m:
+            try:
+                result = json.loads(m.group(1))
+            except Exception:
+                result = None
+        else:
+            result = None
+
+    return result
+

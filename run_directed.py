@@ -12,6 +12,9 @@ Run from the knowledge_graph folder:
 import sys
 import subprocess
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 # ─────────────────────────────────────────────────────────────────────────────
 # Auto-install only what's strictly needed
 # ─────────────────────────────────────────────────────────────────────────────
@@ -87,15 +90,50 @@ def safe_pagerank(G: nx.DiGraph) -> tuple[dict, str]:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Config
 # ─────────────────────────────────────────────────────────────────────────────
-GRAPH_CSV   = Path("./data_output/cureus/graph.csv")
-OUTPUT_HTML = Path("./docs/index.html")
+# Config & Toggles
+# ─────────────────────────────────────────────────────────────────────────────
+CONCEPTS_CSV  = Path("./data_output/cureus/concepts.csv")
+RELATIONS_CSV = Path("./data_output/cureus/relations.csv")
+GRAPH_CSV     = Path("./data_output/cureus/graph.csv")
+OUTPUT_HTML   = Path("./docs/index.html")
+
+# Visualization Toggles:
+# - SHOW_EDGE_LABELS: False removes text/sentences from the edge lines for a clean graph.
+#   Set to True if you wish to see predicates on the edges.
+# - SHOW_EDGE_TOOLTIPS: True keeps context visible as a tooltip when hovering over an edge.
+# - MAX_EDGE_LABEL_LENGTH: Truncates long sentences if edge labels are re-enabled.
+SHOW_EDGE_LABELS      = False
+SHOW_EDGE_TOOLTIPS    = True
+MAX_EDGE_LABEL_LENGTH = 30
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 1. Load precomputed graph.csv  (supports old AND new schema)
+# Check for Educational Dataset (concepts.csv & relations.csv)
 # ─────────────────────────────────────────────────────────────────────────────
-print(f"\n[*] Loading {GRAPH_CSV} ...")
+if CONCEPTS_CSV.exists() and RELATIONS_CSV.exists():
+    print(f"\n[*] Found Educational Dataset ({CONCEPTS_CSV.name} & {RELATIONS_CSV.name})")
+    print(f"[*] Building Educational Knowledge Graph directly from structured dataset...")
+    from educational_pipeline.graph_builder import build_educational_graph
+    build_educational_graph(
+        concepts_csv=CONCEPTS_CSV,
+        relations_csv=RELATIONS_CSV,
+        output_html=OUTPUT_HTML,
+        show_edge_labels=SHOW_EDGE_LABELS,
+        show_edge_tooltips=SHOW_EDGE_TOOLTIPS,
+    )
+    print(f"\n{'='*62}")
+    print("  ✅  EDUCATIONAL GRAPH GENERATION SUCCESS")
+    print(f"{'='*62}")
+    print(f"  Nodes (Concepts)   : {CONCEPTS_CSV.resolve()}")
+    print(f"  Edges (Relations)  : {RELATIONS_CSV.resolve()}")
+    print(f"  Visualization Output: {OUTPUT_HTML.resolve()}")
+    print(f"{'='*62}\n")
+    sys.exit(0)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 1. Fallback: Load legacy precomputed graph.csv
+# ─────────────────────────────────────────────────────────────────────────────
+print(f"\n[*] Loading legacy {GRAPH_CSV} ...")
 dfg1 = pd.read_csv(GRAPH_CSV, sep="|")
 print(f"[+] Loaded {len(dfg1)} rows.  Columns: {list(dfg1.columns)}")
 
@@ -197,13 +235,30 @@ for node in all_nodes:
     G.add_node(str(node))
 
 for _, row in dfg.iterrows():
+    edge_attrs = {
+        "weight": float(row["weight"]),
+        "value":  float(row["weight"]),    # Pyvis uses 'value' for edge thickness
+    }
+
+    # Tooltip on hover (shows description/context without cluttering the graph canvas)
+    if SHOW_EDGE_TOOLTIPS:
+        tooltip = str(row["description"]).strip()
+        if not tooltip and "relationship" in row:
+            tooltip = str(row["relationship"]).strip()
+        if tooltip:
+            edge_attrs["title"] = tooltip
+
+    # Label text printed directly on the edge line
+    if SHOW_EDGE_LABELS:
+        rel = str(row["relationship"]).split("|")[0].strip()
+        if MAX_EDGE_LABEL_LENGTH and len(rel) > MAX_EDGE_LABEL_LENGTH:
+            rel = rel[:MAX_EDGE_LABEL_LENGTH].strip() + "..."
+        edge_attrs["label"] = rel
+
     G.add_edge(
         str(row["source"]),
         str(row["target"]),
-        title  = str(row["description"]),
-        label  = str(row["relationship"]).split("|")[0].strip(),
-        weight = float(row["weight"]),
-        value  = float(row["weight"]),    # Pyvis uses 'value' for edge thickness
+        **edge_attrs
     )
 
 print(f"[+] DiGraph: {G.number_of_nodes()} nodes,  {G.number_of_edges()} directed edges.")
@@ -323,8 +378,8 @@ print(f"  Edges       : {G.number_of_edges()} directed edges")
 print(f"  Communities : {len(communities)}")
 print(f"  Node sizing : {pr_source}")
 print(f"  Weights     : ✅  present  (range {dfg['weight'].min():.1f} – {dfg['weight'].max():.1f})")
-print(f"  Arrowheads  : ✅  enabled  (arrows.to in Pyvis options)")
-print(f"  Edge labels : ✅  relationship predicate on each edge")
+print(f"  Edge labels : {'✅  enabled' if SHOW_EDGE_LABELS else '❌  hidden (clean edges)'}")
+print(f"  Tooltips    : {'✅  enabled on hover' if SHOW_EDGE_TOOLTIPS else '❌  disabled'}")
 print(f"  Colors via  : colorsys stdlib  (no seaborn / scipy)")
 print(f"{'='*62}")
 print("\n  Top 10 highest-weight directed edges:")
