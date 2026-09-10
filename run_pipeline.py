@@ -88,7 +88,7 @@ def colors2Community(communities, palette="hls") -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 
 def run_pipeline(
-    data_dir="maths",
+    data_dir="cureus",
     regenerate=False,
     model="zephyr:latest",
     output_html="./docs/index.html",
@@ -313,4 +313,4 @@ def run_pipeline(
 
 
 if __name__ == "__main__":
-    run_pipeline(data_dir="maths")
+    run_pipeline(data_dir="cureus")

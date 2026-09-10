@@ -11,6 +11,7 @@ Run from the knowledge_graph folder:
 """
 import sys
 import subprocess
+#
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Auto-install only what's strictly needed
