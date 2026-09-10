@@ -1,0 +1,315 @@
+Educational Dataset Construction Pipeline
+Detailed methodology for transforming educational textbooks into a structured dataset for Educational
+Knowledge Graph construction and knowledge-gap analysis.
+Purpose: This document describes the current proposed pipeline. The pipeline constructs a reusable dataset before
+Knowledge Graph construction. The final dataset contains two files: concepts.csv and relations.csv.
+
+1. Overall Architecture
+Educational Textbook → Document Parsing → Educational Structure Detection → Structure-Aware Chunking → Concept
+Extraction → Concept Normalization → Definition Extraction → Relation Extraction → Relation Classification →
+Educational Weight Assignment → Dataset Construction → {concepts.csv, relations.csv} → Educational Knowledge Graph
+→ Knowledge Gap Detection
+
+2. Step-by-Step Methodology
+Step 1: Document Parsing
+Convert the textbook into machine-readable content while preserving useful structure.
+• Text content
+• Page numbers
+• Chapter and section headings
+• Paragraph boundaries
+• Tables and formulas
+
+Step 2: Educational Structure Detection
+Identify meaningful educational blocks such as chapters, sections, definitions, explanations, examples, exercises,
+theorems, proofs, algorithms, and summaries. Explicit headings and layout cues can be detected using rules; ambiguous
+blocks may use semantic classification.
+• Chapter
+• Section
+• Definition
+• Explanation
+• Example
+• Exercise
+• Theorem
+• Proof
+• Algorithm
+• Summary
+
+Step 3: Structure-Aware Educational Chunking
+Divide the textbook according to educational boundaries instead of arbitrary fixed token windows. A definition should
+remain intact where possible, while examples and exercises can become separate chunks.
+• Unique chunk ID
+• Chapter and section context
+• Page information
+• Educational boundaries
+
+Step 4: Concept Extraction
+Identify important educational concepts from each chunk. A hybrid approach can generate candidates using NLP or
+keyword methods and selectively use an LLM for semantic refinement.
+• Gradient Descent
+• Loss Function
+• Neural Network
+• Hidden Layer
+
+Step 5: Concept Normalization and Entity Linking
+Merge equivalent expressions and assign one canonical concept name and a unique concept ID.
+• Gradient Descent
+• GD
+• Gradient Descent Algorithm → Canonical concept: Gradient Descent
+
+Step 6: Definition Extraction
+Identify the best textbook-supported definition for each normalized concept. Definitions should be grounded in source
+content rather than freely generated.
+• Concept: Gradient Descent
+• Definition: An optimization algorithm used to minimize a loss function.
+
+Step 7: Relation Extraction
+Identify relationships between concepts from educational content. Preserve the source sentence as evidence.
+• Example: Neural Networks are trained using Gradient Descent.
+• Raw relation: Neural Network — trained using — Gradient Descent
+
+Step 8: Relation Classification
+Map raw natural-language relationships into a controlled ontology containing five predefined relation types.
+• Prerequisite
+• Part-of
+• Application
+• Extension
+• Similarity
+
+Step 9: Educational Weight Assignment
+Assign each accepted relation a numerical weight representing its strength or educational importance. The exact weighting
+methodology should be explicitly defined and experimentally validated. This weight is not the same as LLM confidence.
+• Weighted graph edge
+• Educational relationship strength
+
+Step 10: Dataset Construction
+Store the processed concepts and relationships in two reusable CSV files. These files become the structured dataset used
+for downstream Knowledge Graph construction.
+• concepts.csv
+• relations.csv
+
+3. Controlled Relation Ontology
+
+Restricting relationships to a controlled ontology improves consistency and makes graph traversal easier.
+Relation
+
+Meaning and Direction
+
+Prerequisite
+
+A → B means A should be understood before B.
+
+Part-of
+
+A → B means A is a component or part of B.
+
+Application
+
+A → B means A is applied or used within B.
+
+Extension
+
+A → B means A builds upon or extends B.
+
+Similarity
+
+A ↔ B means A and B are conceptually similar and may be treated as symmetric.
+
+4. Final Dataset Structure
+The current design intentionally keeps the dataset simple and contains only two CSV files.
+
+A. concepts.csv
+Column
+
+Purpose
+
+concept_id
+
+Unique identifier for each canonical concept.
+
+concept_name
+
+Canonical name of the concept.
+
+aliases
+
+Alternative names or equivalent expressions.
+
+concept_type
+
+Type such as Algorithm, Model, Formula, Theory, or Component.
+
+definition
+
+Textbook-supported definition.
+
+chapter
+
+Chapter containing the source occurrence.
+
+section
+
+Section containing the source occurrence.
+
+page
+
+Source page number.
+
+chunk_id
+
+Identifier of the structure-aware source chunk.
+
+evidence
+
+Exact source text supporting the extracted concept.
+
+B. relations.csv
+Column
+
+Purpose
+
+relation_id
+
+Unique identifier for each relation.
+
+source_id
+
+Concept ID from which the relation originates.
+
+target_id
+
+Concept ID to which the relation points.
+
+relation_type
+
+Prerequisite, Part-of, Application, Extension, or Similarity.
+
+weight
+
+Strength or educational importance of the relationship.
+
+page
+
+Page containing supporting evidence.
+
+chunk_id
+
+Identifier of the source chunk.
+
+evidence
+
+Exact source text supporting the relationship.
+
+5. Example Relations
+Source
+
+Target
+
+Relation Type
+
+Meaning
+
+Calculus
+
+Gradient Descent
+
+Prerequisite
+
+Calculus supports understanding Gradient Descent.
+
+Hidden Layer
+
+Neural Network
+
+Part-of
+
+A Hidden Layer is a component of a Neural Network.
+
+Gradient Descent
+
+Neural Network
+
+Application
+
+Gradient Descent is used in training Neural Networks.
+
+Extension
+
+The advanced method builds upon Gradient Descent.
+
+Advanced Gradient Method
+Gradient Descent
+
+Linear Regression
+
+Logistic Regression
+
+Similarity
+
+The concepts share conceptual or structural similarities.
+
+6. Role of the LLM
+The pipeline is not intended to depend completely on an LLM. Deterministic processing should be used wherever possible,
+while an LLM is selectively used for tasks requiring semantic reasoning.
+Component
+
+Preferred Approach
+
+Document parsing
+
+Parser and deterministic document processing
+
+Structure detection
+
+Rules and layout analysis; semantic fallback when ambiguous
+
+Chunking
+
+Structure-aware deterministic algorithm
+
+Concept candidates
+
+NLP/keyword extraction with optional LLM refinement
+
+Concept normalization
+
+Similarity matching and entity linking
+
+Definition extraction
+
+Source retrieval with grounded semantic processing
+
+Relation extraction
+
+Semantic extraction with selective LLM support
+
+Relation classification
+
+Controlled ontology mapping with semantic support
+
+Dataset generation
+
+Deterministic CSV construction
+
+7. Evidence and Traceability
+Every concept and relation should remain traceable to the original textbook. Page number, chunk ID, and evidence text are
+preserved so that extracted knowledge can be checked and explained later.
+
+8. Downstream Use
+• concepts.csv provides the nodes of the Educational Knowledge Graph.
+• relations.csv provides the edges and their weights.
+The resulting graph can support user-prompt concept mapping, localized graph exploration, concept coverage analysis,
+latent knowledge-gap identification, and explainable knowledge recommendations.
+
+9. Proposed Research Contribution
+Proposed contribution statement: The proposed system introduces a structure-aware educational dataset construction
+framework that transforms textbook content into a reusable concept-and-relation dataset. The framework preserves
+educational document structure, performs concept extraction and normalization, maps semantic relationships to a
+controlled educational ontology, and generates weighted relations with source evidence for downstream Educational
+Knowledge Graph construction and knowledge-gap analysis.
+
+10. Current Scope
+The current dataset deliberately focuses on the information essential for Knowledge Graph construction. Educational role
+and confidence/trust scores have been removed from the final CSV design for now. They can later be explored as
+extensions if experimental evaluation shows that they improve extraction quality or knowledge-gap ranking.
+
+

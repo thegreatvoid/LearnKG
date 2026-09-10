@@ -201,7 +201,7 @@ for _, row in dfg.iterrows():
         str(row["source"]),
         str(row["target"]),
         title  = str(row["description"]),
-        label  = str(row["relationship"]).split("|")[0].strip(),
+        label  = str(int(row["weight"])),   # show numeric weight on arrow
         weight = float(row["weight"]),
         value  = float(row["weight"]),    # Pyvis uses 'value' for edge thickness
     )
@@ -278,32 +278,32 @@ var options = {
     "smooth": {
       "enabled": true,
       "type": "curvedCW",
-      "roundness": 0.15
+      "roundness": 0.1
     },
     "font": {
-      "size": 9,
+      "size": 10,
       "align": "middle",
       "strokeWidth": 2,
       "strokeColor": "#ffffff"
     },
-    "scaling": { "min": 1, "max": 12 }
+    "scaling": { "min": 1, "max": 8 }
   },
   "nodes": {
     "font": { "size": 12 },
-    "scaling": { "min": 10, "max": 60 }
+    "scaling": { "min": 10, "max": 50 }
   },
   "physics": {
     "forceAtlas2Based": {
-      "centralGravity": 0.015,
-      "springLength": 120,
-      "springConstant": 0.08,
-      "damping": 0.4,
-      "avoidOverlap": 0.2
+      "centralGravity": 0.003,
+      "springLength": 250,
+      "springConstant": 0.04,
+      "damping": 0.5,
+      "avoidOverlap": 1.0
     },
-    "maxVelocity": 50,
+    "maxVelocity": 60,
     "solver": "forceAtlas2Based",
     "timestep": 0.35,
-    "stabilization": { "iterations": 200 }
+    "stabilization": { "iterations": 300 }
   }
 }
 """)
