@@ -69,7 +69,7 @@ def safe_pagerank(G: nx.DiGraph) -> tuple[dict, str]:
     """
     # Tier 1: numpy eigenvector — fast, no scipy
     try:
-        pr = nx.pagerank_numpy(G, weight="weight")
+        pr = nx.pagerank(G, weight="weight")
         return pr, "PageRank (numpy eigenvector)"
     except Exception as e:
         print(f"    [!] pagerank_numpy failed: {e}")
@@ -125,9 +125,8 @@ if "description" not in dfg1.columns:
 # Sanitize
 dfg1.replace("", np.nan, inplace=True)
 dfg1.dropna(subset=["source", "target", "relationship"], inplace=True)
-dfg1["source"]       = dfg1["source"].astype(str).str.strip().str.lower()
-dfg1["target"]       = dfg1["target"].astype(str).str.strip().str.lower()
-dfg1["relationship"] = dfg1["relationship"].astype(str).str.strip().str.lower()
+for col in ["source", "target", "relationship"]:
+    dfg1[col] = dfg1[col].astype("string").str.strip().str.lower()
 
 print(f"[+] Clean directed relations : {len(dfg1)}")
 print(f"    Weight range             : {dfg1['weight'].min():.1f} – {dfg1['weight'].max():.1f}")
