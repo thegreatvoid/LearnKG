@@ -296,7 +296,7 @@ def run_pipeline(
     }
     """)
 
-    net.show_buttons(filter_=["physics"])
+   # net.show_buttons(filter_=["physics"])
     net.write_html(str(output_html_path))
     print(
         f"[SUCCESS] Directed Knowledge Graph generated at: {output_html_path.resolve()}"
