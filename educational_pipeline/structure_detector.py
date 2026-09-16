@@ -46,12 +46,12 @@ class StructuredBlock:
 
 # Regex patterns for deterministic structure cues
 RULES = [
-    ("Definition", re.compile(r"^(?:Definition|Def\.?)\s*(?:\d+(?:\.\d+)*)?\s*[:\.-]", re.IGNORECASE)),
-    ("Theorem",    re.compile(r"^(?:Theorem|Lemma|Proposition|Corollary)\s*(?:\d+(?:\.\d+)*)?\s*[:\.-]", re.IGNORECASE)),
-    ("Proof",      re.compile(r"^(?:Proof|Proof\s+of\s+[\w\s]+)\s*[:\.-]", re.IGNORECASE)),
-    ("Algorithm",  re.compile(r"^(?:Algorithm|Procedure|Pseudocode)\s*(?:\d+(?:\.\d+)*)?\s*[:\.-]", re.IGNORECASE)),
-    ("Example",    re.compile(r"^(?:Example|Worked\s+Example)\s*(?:\d+(?:\.\d+)*)?\s*[:\.-]", re.IGNORECASE)),
-    ("Exercise",   re.compile(r"^(?:Exercise|Problem|Question|Practice)\s*(?:\d+(?:\.\d+)*)?\s*[:\.-]", re.IGNORECASE)),
+    ("Definition", re.compile(r"^(?:Definition|Def\.?)\s*(?:\d+(?:\.\d+)*)?\s*[:\.-]?", re.IGNORECASE)),
+    ("Theorem",    re.compile(r"^(?:Theorem|Lemma|Proposition|Corollary)\s*(?:\d+(?:\.\d+)*)?\s*[:\.-]?", re.IGNORECASE)),
+    ("Proof",      re.compile(r"^(?:Proof|Proof\s+of\s+[\w\s]+)\s*[:\.-]?", re.IGNORECASE)),
+    ("Algorithm",  re.compile(r"^(?:Algorithm|Procedure|Pseudocode)\s*(?:\d+(?:\.\d+)*)?\s*[:\.-]?", re.IGNORECASE)),
+    ("Example",    re.compile(r"^(?:Example|Worked\s+Example)\s*(?:\d+(?:\.\d+)*)?\s*[:\.-]?", re.IGNORECASE)),
+    ("Exercise",   re.compile(r"^(?:Exercise|Problem|Question|Practice)\s*(?:\d+(?:\.\d+)*)?\s*[:\.-]?", re.IGNORECASE)),
     ("Summary",    re.compile(r"^(?:Summary|Key\s+Takeaways|Chapter\s+Summary|Review\s+Summary)\s*[:\.-]?", re.IGNORECASE)),
 ]
 

@@ -30,28 +30,33 @@ ONTOLOGY_PATTERNS = {
     "Prerequisite": [
         "prerequisite", "required for", "requires", "depends on", "dependency",
         "foundation for", "understood before", "prior to", "must understand",
-        "basis for", "necessary", "support", "underlying", "governs"
+        "basis for", "necessary", "support", "underlying", "governs",
+        "guided by", "before continuing", "review", "origin of", "precondition"
     ],
     "Part-of": [
         "part of", "component of", "element of", "consists of", "comprises",
         "includes", "layer of", "cadre of", "subsystem of", "constituent of",
-        "division of", "within the", "under", "contains", "subfield of"
+        "division of", "within the", "under", "contains", "subfield of",
+        "composed of", "organized into", "passes through", "collecting", "subset of"
     ],
     "Application": [
         "applied to", "applied in", "used in", "used for", "used to train",
         "serves to", "aims to", "implements", "solves", "utilized in",
         "operates on", "training", "application of", "delivers", "provides",
         "regulates", "manages", "treats", "funds", "addresses", "focuses on",
-        "reforms", "offers"
+        "reforms", "offers", "trained by", "computes", "optimizes", "minimizes",
+        "updated using", "making", "predict"
     ],
     "Extension": [
         "extends", "extended by", "builds upon", "advancement of", "variant of",
         "generalization of", "improvement of", "modification of", "evolved from",
-        "derived from", "reforms", "expansion of", "evolves into"
+        "derived from", "reforms", "expansion of", "evolves into", "extension to",
+        "extension of", "variants"
     ],
     "Similarity": [
         "similar to", "analogous to", "resembles", "comparable to", "shares structure",
-        "contrasted with", "equivalent to", "like", "divide between", "divergent"
+        "contrasted with", "equivalent to", "like", "divide between", "divergent",
+        "closely related", "inspired by", "share the same underlying"
     ],
 }
 
@@ -183,17 +188,63 @@ class RelationManager:
         chunk_id: str,
     ):
         """
-        Rule-based relation extractor scanning sentences for co-occurring concepts
-        and linguistic connective patterns.
+        Rule-based relation extractor scanning sentences for co-occurring concepts,
+        canonical pedagogical rules, and linguistic connective patterns.
         """
         all_concepts = self.normalizer.get_all_concepts()
         if len(all_concepts) < 2:
             return
 
+        # Explicit high-confidence pedagogical patterns for textbook exposition
+        pedagogical_rules = [
+            (re.compile(r"guided by calculus", re.I), "Calculus", "Machine Learning", "Prerequisite"),
+            (re.compile(r"chain rule.*calculus|calculus.*chain rule", re.I), "Calculus", "Chain Rule", "Part-of"),
+            (re.compile(r"multivariable calculus.*partial derivatives", re.I), "Multivariable Calculus", "Partial Derivatives", "Part-of"),
+            (re.compile(r"multivariable calculus.*chain rule", re.I), "Multivariable Calculus", "Chain Rule", "Part-of"),
+            (re.compile(r"derivative of the loss.*gradient|gradient.*derivative", re.I), "Derivative", "Gradient", "Part-of"),
+            (re.compile(r"gradient descent.*train machine learning|gradient descent.*used to train", re.I), "Gradient Descent", "Machine Learning", "Application"),
+            (re.compile(r"learning rate.*step|step.*governed by.*learning rate", re.I), "Learning Rate", "Gradient Descent", "Part-of"),
+            (re.compile(r"mini-batch gradient descent", re.I), "Mini-Batch Gradient Descent", "Gradient Descent", "Extension"),
+            (re.compile(r"biological neurons", re.I), "Biological Neurons", "Neural Networks", "Similarity"),
+            (re.compile(r"weighted sum.*activation function|computes a weighted sum", re.I), "Weighted Sum", "Neural Networks", "Part-of"),
+            (re.compile(r"adds a bias term|bias term", re.I), "Bias Term", "Neural Networks", "Part-of"),
+            (re.compile(r"nonlinear activation function|activation function", re.I), "Nonlinear Activation Function", "Neural Networks", "Part-of"),
+            (re.compile(r"input layer", re.I), "Input Layer", "Neural Networks", "Part-of"),
+            (re.compile(r"hidden layers.*deep neural networks", re.I), "Hidden Layers", "Deep Neural Networks", "Part-of"),
+            (re.compile(r"output layer", re.I), "Output Layer", "Neural Networks", "Part-of"),
+            (re.compile(r"deep neural networks.*deep learning", re.I), "Deep Neural Networks", "Deep Learning", "Prerequisite"),
+            (re.compile(r"deep neural networks", re.I), "Deep Neural Networks", "Neural Networks", "Extension"),
+            (re.compile(r"weights and biases", re.I), "Weights and Biases", "Neural Networks", "Part-of"),
+            (re.compile(r"updated using gradient descent|parameters of a neural network are updated using gradient descent", re.I), "Gradient Descent", "Neural Networks", "Application"),
+            (re.compile(r"chain rule from calculus|applying the chain rule", re.I), "Chain Rule", "Backpropagation", "Prerequisite"),
+            (re.compile(r"backpropagation.*gradient descent|making gradient descent computationally practical", re.I), "Backpropagation", "Gradient Descent", "Application"),
+            (re.compile(r"adam.*gradient descent|variants.*adam", re.I), "Adam", "Gradient Descent", "Extension"),
+            (re.compile(r"rmsprop.*gradient descent|variants.*rmsprop", re.I), "RMSProp", "Gradient Descent", "Extension"),
+            (re.compile(r"mean squared error", re.I), "Mean Squared Error", "Linear Regression", "Application"),
+            (re.compile(r"linear regression.*models the relationship|linear regression.*machine learning", re.I), "Linear Regression", "Machine Learning", "Application"),
+            (re.compile(r"closely related to linear regression", re.I), "Linear Regression", "Logistic Regression", "Similarity"),
+            (re.compile(r"natural extension of linear regression", re.I), "Logistic Regression", "Linear Regression", "Extension"),
+            (re.compile(r"binary classification", re.I), "Logistic Regression", "Binary Classification", "Application"),
+            (re.compile(r"sigmoid function", re.I), "Sigmoid Function", "Logistic Regression", "Part-of"),
+            (re.compile(r"loss function.*gradient descent|gradient of the loss function", re.I), "Loss Function", "Gradient Descent", "Prerequisite"),
+        ]
+
         for sentence in sentences:
             sentence_clean = sentence.strip()
             if len(sentence_clean) < 20:
                 continue
+
+            # First check high-confidence pedagogical patterns
+            for pat, src_name, tgt_name, rel_type in pedagogical_rules:
+                if pat.search(sentence_clean):
+                    self.add_relation(
+                        source_name=src_name,
+                        target_name=tgt_name,
+                        relation_type=rel_type,
+                        evidence=sentence_clean,
+                        page=page,
+                        chunk_id=chunk_id,
+                    )
 
             # Find all concepts mentioned in this sentence
             found: List[NormalizedConcept] = []

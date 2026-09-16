@@ -1,0 +1,43 @@
+--- Page 1 ---
+Foundations of Machine Learning
+An Introductory Textbook — Chapter 3: Core Algorithms and Architectures
+
+--- Page 2 ---
+Chapter 3: Core Algorithms and Architectures
+
+3.1 The Role of Calculus in Machine Learning
+
+Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function. This search is guided by calculus, and in particular by the derivative, which tells us how a function's output changes as we make a small change to one of its inputs. When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.
+
+It is difficult to overstate how central this idea is to the field. Nearly every optimization technique used in practice, from the simplest linear model to the largest language model, depends on being able to compute how sensitive the loss is to each parameter. Students who have not yet encountered multivariable calculus are strongly encouraged to review partial derivatives and the chain rule before continuing, since both concepts reappear throughout the remainder of this chapter.
+
+3.2 Gradient Descent
+
+Gradient descent is the optimization algorithm most commonly used to train machine learning models. The procedure is conceptually simple: starting from some initial guess for the model's parameters, repeatedly compute the gradient of the loss function and take a small step in the opposite direction, since the negative gradient points toward decreasing loss. This process is repeated until the loss stops improving meaningfully, at which point the parameters are said to have converged.
+
+The size of each step is governed by a hyperparameter known as the learning rate. If the learning rate is too large, the algorithm may overshoot the minimum and fail to converge; if it is too small, training may take an impractically long time. In practice, gradient descent is rarely applied to the entire training set at once. Instead, most implementations use mini-batch gradient descent, which estimates the gradient from a small, randomly sampled subset of the data at each step, trading a noisier gradient estimate for a significant increase in computational efficiency.
+
+Worked Example
+Suppose a model has a single parameter w and a loss function L(w) = (w - 4)^2. The derivative is dL/dw = 2(w - 4). Starting from w = 0 with a learning rate of 0.1, the first update moves w to 0 - 0.1 * (-8) = 0.8. Repeating this process moves w progressively closer to the minimum at w = 4.
+
+--- Page 3 ---
+3.3 Neural Networks
+
+A neural network is a computational model composed of layers of simple processing units, loosely inspired by networks of biological neurons. Each unit computes a weighted sum of its inputs, adds a bias term, and passes the result through a nonlinear activation function. It is this nonlinearity that allows neural networks to represent complex, non-linear relationships between inputs and outputs; without it, stacking multiple layers would be mathematically equivalent to a single linear transformation.
+
+A typical network is organized into an input layer, one or more hidden layers, and an output layer. The hidden layers sit between the input and output and are responsible for learning increasingly abstract representations of the data as information passes through the network. Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning.
+
+Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.
+
+3.4 Backpropagation
+
+Computing the gradient of the loss with respect to every parameter in a deep network would be computationally infeasible if done naively, since a large network may have millions of individual weights. Backpropagation solves this problem. It is an efficient algorithm for computing gradients that works by applying the chain rule from calculus, propagating the error signal backward from the output layer through each hidden layer in turn.
+
+In effect, backpropagation is not a separate optimization method but a technique for making gradient descent computationally practical for deep networks. The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.
+
+3.5 Logistic and Linear Regression
+
+Before turning to more complex architectures, it is worth revisiting two of the simplest models in machine learning, both of which remain widely used in practice. Linear regression models the relationship between input features and a continuous target variable as a weighted sum of the inputs, and is typically trained by minimizing the mean squared error between predicted and actual values.
+
+--- Page 4 ---
+Logistic regression addresses a different problem: binary classification, where the goal is to predict which of two classes an example belongs to. Despite its name, logistic regression is closely related to linear regression. It computes the same weighted sum of inputs, but then passes that sum through a sigmoid function to produce a value between zero and one, which is interpreted as the probability of belonging to the positive class. Because both models share the same underlying linear structure, logistic regression is often introduced as a natural extension of linear regression to classification problems.

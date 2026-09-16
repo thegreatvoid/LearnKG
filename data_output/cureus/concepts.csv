@@ -1,264 +1,34 @@
 concept_id,concept_name,aliases,concept_type,definition,chapter,section,page,chunk_id,evidence
-C0001,"Abstract 
-India",AI,Component,Abstract  India’s health indicators have improved in recent times but continue to lag behind those of its peer nations.,,,1,e0ec9ba2e52f4809bc665d8d3d633dfc,Abstract  India’s health indicators have improved in recent times but continue to lag behind those of its peer nations.
-C0002,READ,,Component,"The methodology used is the READ approach [3], which is a systematic approach for document analysis in health policy research, consisting of readying one's materials, extracting the data, and analyzing it to distill the findings.",,,2,f3ae740b764941fd9b46b95ce154355c,"The methodology used is the READ approach [3], which is a systematic approach for document analysis in health policy research, consisting of readying one's materials, extracting the data, and analyzing it to distill the findings."
-C0003,WHO,,Component,The country has an estimated active health workers’ density much lower than the WHO recommended thresholds [1].,,,2,f3ae740b764941fd9b46b95ce154355c,The country has an estimated active health workers’ density much lower than the WHO recommended thresholds [1].
-C0004,National Medical Council,NMC,Component,National Medical Council India revamped its inept Medical Commission with a National Medical Council (NMC) in 2019 with the aim of improving the regulation of health professionals (doctors and Community Health Providers) and medical education.,,,6,6229ecdee0cc4d27a457f2d100201619,National Medical Council India revamped its inept Medical Commission with a National Medical Council (NMC) in 2019 with the aim of improving the regulation of health professionals (doctors and Community Health Providers) and medical education.
-C0005,Health PolicyKeywords,,Theory,"Categories: Public Health, Epidemiology/Public Health, Health PolicyKeywords: working conditions, indian public health standards, auxiliary nurse midwives, human resource, health sector reform, india, health policy",,,1,8fed6d36479e4d5bba846d8b050e85a9,"Categories: Public Health, Epidemiology/Public Health, Health PolicyKeywords: working conditions, indian public health standards, auxiliary nurse midwives, human resource, health sector reform, india, health policy"
-C0006,Public Health,,Component,"Categories: Public Health, Epidemiology/Public Health, Health PolicyKeywords: working conditions, indian public health standards, auxiliary nurse midwives, human resource, health sector reform, india, health policy",,,1,8fed6d36479e4d5bba846d8b050e85a9,"Categories: Public Health, Epidemiology/Public Health, Health PolicyKeywords: working conditions, indian public health standards, auxiliary nurse midwives, human resource, health sector reform, india, health policy"
-C0007,"Introduction And Background 
-India",,Component,Introduction And Background  India’s health indicators have improved in recent times but continue to lag behind those of its peer nations.,,,2,f3ae740b764941fd9b46b95ce154355c,Introduction And Background  India’s health indicators have improved in recent times but continue to lag behind those of its peer nations.
-C0008,"Review 
-Overview",,Component,"Review  Overview of the public and private health sectors  The government-funded health sector, which is the provider of healthcare to vulnerable populations, has been chronically underfunded with 1.28% of the GDP.",,,3,05ff804088e148c4a0975cf1da03ef0e,"Review  Overview of the public and private health sectors  The government-funded health sector, which is the provider of healthcare to vulnerable populations, has been chronically underfunded with 1.28% of the GDP."
-C0009,World Health Organization,,Component,"As a consequence, India has 0.7 public hospital beds per 100,000 people [2] now and 0.576 physicians per 1,000 population in 2000 [4], compared to the World Health Organization's recommended doctor-to-population ratio of 1:1,000 [5].",,,3,05ff804088e148c4a0975cf1da03ef0e,"As a consequence, India has 0.7 public hospital beds per 100,000 people [2] now and 0.576 physicians per 1,000 population in 2000 [4], compared to the World Health Organization's recommended doctor-to-population ratio of 1:1,000 [5]."
-C0010,Narayana Health,,Component,,,,3,05ff804088e148c4a0975cf1da03ef0e,
-C0011,GDP,,Component,"Review  Overview of the public and private health sectors  The government-funded health sector, which is the provider of healthcare to vulnerable populations, has been chronically underfunded with 1.28% of the GDP.",,,3,05ff804088e148c4a0975cf1da03ef0e,"Review  Overview of the public and private health sectors  The government-funded health sector, which is the provider of healthcare to vulnerable populations, has been chronically underfunded with 1.28% of the GDP."
-C0012,OOP,,Component,"There has been a marked spike in increased OOP expenditure, which accounted for 62% of total health expenditure (US$60.6 billion out of US$ 97.1 billion) in 2014 [31].",,,5,20084984a89047b89e89e64bd042d1b7,"There has been a marked spike in increased OOP expenditure, which accounted for 62% of total health expenditure (US$60.6 billion out of US$ 97.1 billion) in 2014 [31]."
-C0013,NHM,,Component,"The NHM has sought to address health challenges through five approaches - communitization, flexible financing, improved management through capacity building, monitoring progress against standards, and innovations in human resource management [10].",,,3,8ac28be3c75d459396a9a650ce3e2d58,"The NHM has sought to address health challenges through five approaches - communitization, flexible financing, improved management through capacity building, monitoring progress against standards, and innovations in human resource management [10]."
-C0014,National Health Mission,,Component,"Since the inception of the National Health Mission (NHM) in 2005, the government has aimed to increase the quantum of services provided, but a lack of focus on quality has failed to make a dent in healthcare indicators [6].",,,3,05ff804088e148c4a0975cf1da03ef0e,"Since the inception of the National Health Mission (NHM) in 2005, the government has aimed to increase the quantum of services provided, but a lack of focus on quality has failed to make a dent in healthcare indicators [6]."
-C0015,Accredited Social Health Activists,"ASHA, asha, ashas",Component,"A key cadre has been the female community health workers, Accredited Social Health Activists (ASHA), one for every 1,000 population.",,,3,8ac28be3c75d459396a9a650ce3e2d58,"A key cadre has been the female community health workers, Accredited Social Health Activists (ASHA), one for every 1,000 population."
-C0016,Auxiliary Nurse Midwives,"ANM, anm",Component,"They number a million [11] to date and serve to increase the reach of the Auxiliary Nurse Midwives (ANM), who were meant to serve a population of 5,000 but in reality, serve up to 20,000 people.",,,3,8ac28be3c75d459396a9a650ce3e2d58,"They number a million [11] to date and serve to increase the reach of the Auxiliary Nurse Midwives (ANM), who were meant to serve a population of 5,000 but in reality, serve up to 20,000 people."
-C0017,Primary Health Centers,,Component,The RMAs work at Primary Health Centers and initial evaluation [15] is positive.,,,3,c8532753d01542e587c81824b299c313,The RMAs work at Primary Health Centers and initial evaluation [15] is positive.
-C0018,RMA,,Component,"The RMA [13] is a three-year diploma [13,14] course similar to the physician assistant program in the US.",,,3,c8532753d01542e587c81824b299c313,"The RMA [13] is a three-year diploma [13,14] course similar to the physician assistant program in the US."
-C0019,Rural Medical Assistants,,Component,the Rural Medical Assistants (RMAs) and paramedical personnel.,,,3,c8532753d01542e587c81824b299c313,the Rural Medical Assistants (RMAs) and paramedical personnel.
-C0020,US,,Component,"There has been a marked spike in increased OOP expenditure, which accounted for 62% of total health expenditure (US$60.6 billion out of US$ 97.1 billion) in 2014 [31].",,,5,20084984a89047b89e89e64bd042d1b7,"There has been a marked spike in increased OOP expenditure, which accounted for 62% of total health expenditure (US$60.6 billion out of US$ 97.1 billion) in 2014 [31]."
-C0021,AYUSH,,Component,"Doctors trained in Indian systems of medicine such as Ayurveda, Siddha, and Unani (AYUSH) are trained in bridge courses in allopathic medicine.",,,4,1b25186d52864a8ba7f4f8412e67e187,"Doctors trained in Indian systems of medicine such as Ayurveda, Siddha, and Unani (AYUSH) are trained in bridge courses in allopathic medicine."
-C0022,COVID,,Component,The COVID-19 pandemic has catalyzed the pace and scale of this process and enabled the delivery of healthcare to populations who would have been denied such care otherwise.,,,8,3bb35f6def1149c7989a975e4589d10d,The COVID-19 pandemic has catalyzed the pace and scale of this process and enabled the delivery of healthcare to populations who would have been denied such care otherwise.
-C0023,Ayushman Bharat,,Component,This model can be expanded to scale for the population using the newly launched national health insurance scheme (Ayushman Bharat).,,,7,0015c4975b1c48a98d32d9ad1881a06d,This model can be expanded to scale for the population using the newly launched national health insurance scheme (Ayushman Bharat).
-C0024,SDG,sdgs,Component,"The scheme has the potential [23] to provide stewardship for improved governance and quality control, thereby accelerating India’s progress toward its SDG goals.",,,4,1908190bd960474cac1b51c938e53d13,"The scheme has the potential [23] to provide stewardship for improved governance and quality control, thereby accelerating India’s progress toward its SDG goals."
-C0025,II,,Component,"Since the turn of the century, the sector has become dominated by corporate houses in urban areas and is rapidly expanding to tier II and III cities.",,,5,20084984a89047b89e89e64bd042d1b7,"Since the turn of the century, the sector has become dominated by corporate houses in urban areas and is rapidly expanding to tier II and III cities."
-C0026,III,,Component,"Since the turn of the century, the sector has become dominated by corporate houses in urban areas and is rapidly expanding to tier II and III cities.",,,5,20084984a89047b89e89e64bd042d1b7,"Since the turn of the century, the sector has become dominated by corporate houses in urban areas and is rapidly expanding to tier II and III cities."
-C0027,Medical Commission,,Component,National Medical Council India revamped its inept Medical Commission with a National Medical Council (NMC) in 2019 with the aim of improving the regulation of health professionals (doctors and Community Health Providers) and medical education.,,,6,6229ecdee0cc4d27a457f2d100201619,National Medical Council India revamped its inept Medical Commission with a National Medical Council (NMC) in 2019 with the aim of improving the regulation of health professionals (doctors and Community Health Providers) and medical education.
-C0028,"National Medical Council
-India",,Component,National Medical Council India revamped its inept Medical Commission with a National Medical Council (NMC) in 2019 with the aim of improving the regulation of health professionals (doctors and Community Health Providers) and medical education.,,,6,6229ecdee0cc4d27a457f2d100201619,National Medical Council India revamped its inept Medical Commission with a National Medical Council (NMC) in 2019 with the aim of improving the regulation of health professionals (doctors and Community Health Providers) and medical education.
-C0029,Community Health Providers,,Component,National Medical Council India revamped its inept Medical Commission with a National Medical Council (NMC) in 2019 with the aim of improving the regulation of health professionals (doctors and Community Health Providers) and medical education.,,,6,6229ecdee0cc4d27a457f2d100201619,National Medical Council India revamped its inept Medical Commission with a National Medical Council (NMC) in 2019 with the aim of improving the regulation of health professionals (doctors and Community Health Providers) and medical education.
-C0030,"Recommendations
-Sustain",,Component,Recommendations Sustain the Increase in the Budget for Healthcare The total expenditure on health in India is 3.84% of its GDP [34].,,,6,37d53d595bdf49df85fde9d86c6eae23,Recommendations Sustain the Increase in the Budget for Healthcare The total expenditure on health in India is 3.84% of its GDP [34].
-C0031,Domestic General Government Health,,Component,"In contrast, the Domestic General Government Health Expenditure was US 8.6%, Brazil 4%, and China's 2.9% [35].",,,6,37d53d595bdf49df85fde9d86c6eae23,"In contrast, the Domestic General Government Health Expenditure was US 8.6%, Brazil 4%, and China's 2.9% [35]."
-C0032,National Health Policy,,Theory,The Government of India has allocated about 1.29% of its budget to healthcare in spite of a stated commitment in the National Health Policy 2017 to increase the allocation to 2.5% by 2025.,,,6,37d53d595bdf49df85fde9d86c6eae23,The Government of India has allocated about 1.29% of its budget to healthcare in spite of a stated commitment in the National Health Policy 2017 to increase the allocation to 2.5% by 2025.
-C0033,"Healthcare
-The",,Component,Recommendations Sustain the Increase in the Budget for Healthcare The total expenditure on health in India is 3.84% of its GDP [34].,,,6,37d53d595bdf49df85fde9d86c6eae23,Recommendations Sustain the Increase in the Budget for Healthcare The total expenditure on health in India is 3.84% of its GDP [34].
-C0034,"Improve Efficiency
-The",,Component,Improve Efficiency The public health system is currently unable to utilize even the 1% of the GDP that has traditionally been available to it.,,,6,715fd499cc8d4afa8abe256ab0b3d11e,Improve Efficiency The public health system is currently unable to utilize even the 1% of the GDP that has traditionally been available to it.
-C0035,National Health Protection Mission,,Component,The recently started National Health Protection Mission has limited uptake The majority of Indians (up to 80.9% in urban and 85.9% in rural) still do not have health insurance [38].,,,6,715fd499cc8d4afa8abe256ab0b3d11e,The recently started National Health Protection Mission has limited uptake The majority of Indians (up to 80.9% in urban and 85.9% in rural) still do not have health insurance [38].
-C0036,Practice Regulate,,Component,"Accredit Health Facilities and in Practice Regulate the Private Health Sector The public health sector has revised standards [39] for healthcare infrastructure, personnel, equipment and services for primary, secondary and tertiary care.",,,7,0015c4975b1c48a98d32d9ad1881a06d,"Accredit Health Facilities and in Practice Regulate the Private Health Sector The public health sector has revised standards [39] for healthcare infrastructure, personnel, equipment and services for primary, secondary and tertiary care."
-C0037,"Private Health Sector
-The",,Component,"Accredit Health Facilities and in Practice Regulate the Private Health Sector The public health sector has revised standards [39] for healthcare infrastructure, personnel, equipment and services for primary, secondary and tertiary care.",,,7,0015c4975b1c48a98d32d9ad1881a06d,"Accredit Health Facilities and in Practice Regulate the Private Health Sector The public health sector has revised standards [39] for healthcare infrastructure, personnel, equipment and services for primary, secondary and tertiary care."
-C0038,Accredit Health Facilities,,Component,"Accredit Health Facilities and in Practice Regulate the Private Health Sector The public health sector has revised standards [39] for healthcare infrastructure, personnel, equipment and services for primary, secondary and tertiary care.",,,7,0015c4975b1c48a98d32d9ad1881a06d,"Accredit Health Facilities and in Practice Regulate the Private Health Sector The public health sector has revised standards [39] for healthcare infrastructure, personnel, equipment and services for primary, secondary and tertiary care."
-C0039,Online Training Management Information,,Component,Online Training Management Information Systems have been indigenously developed.,,,7,81e3ca474fed49e182ea7ac4f8e02d7f,Online Training Management Information Systems have been indigenously developed.
-C0040,Adopt Digital Technologies,,Component,"Adopt Digital Technologies at Scale In India, as in the US, digital technology is being used to facilitate its vaccination program.",,,7,81e3ca474fed49e182ea7ac4f8e02d7f,"Adopt Digital Technologies at Scale In India, as in the US, digital technology is being used to facilitate its vaccination program."
-C0041,"Scale
-In India",,Component,"Adopt Digital Technologies at Scale In India, as in the US, digital technology is being used to facilitate its vaccination program.",,,7,81e3ca474fed49e182ea7ac4f8e02d7f,"Adopt Digital Technologies at Scale In India, as in the US, digital technology is being used to facilitate its vaccination program."
-C0042,CT,,Component,AI-embedded logarithms now diagnose COVID-19 disease from chest x-rays and CT scans.,,,8,3bb35f6def1149c7989a975e4589d10d,AI-embedded logarithms now diagnose COVID-19 disease from chest x-rays and CT scans.
-C0043,Income Countries,,Component,"India should expand such application of technology to other portfolios within the health sector, as has been done by the High-Income Countries, where innovations in digital technology are supporting the delivery of vital healthcare.",,,8,3bb35f6def1149c7989a975e4589d10d,"India should expand such application of technology to other portfolios within the health sector, as has been done by the High-Income Countries, where innovations in digital technology are supporting the delivery of vital healthcare."
-C0044,"Conclusions
-The",,Component,"Conclusions The aims, strategy, structure, and service provision by the public and the private health sector are different, and the recommendations made here are an effort to synergize their services for maximizing efficiencies at scale.",,,10,6fe1c01f0fc54e02a4db96c1cf3267eb,"Conclusions The aims, strategy, structure, and service provision by the public and the private health sector are different, and the recommendations made here are an effort to synergize their services for maximizing efficiencies at scale."
-C0045,india's health indicators,,Component,,,,1,,
-C0046,peer nations,,Component,,,,1,,
-C0047,population,,Component,,,,1,,
-C0048,india,,Component,,,,1,,
-C0049,health workers density,,Component,,,,1,,
-C0050,doctors and nurses/midwives,,Component,,,,1,,
-C0051,who threshold,,Component,,,,1,,
-C0052,"44.5 doctors, nurses, and midwives per 10,00 population",,Component,,,,1,,
-C0053,skilled health workforce,,Component,,,,1,,
-C0054,skewed inter-state,,Component,,,,1,,
-C0055,urban-rural,,Component,,,,1,,
-C0056,india's progress toward achieving universal health coverage,,Component,,,,1,,
-C0057,health budget,,Component,,,,1,,
-C0058,federal,,Component,,,,1,,
-C0059,private health sector systems,,Component,,,,1,,
-C0060,public,,Component,,,,1,,
-C0061,medical tourism industry,,Component,,,,1,,
-C0062,health policy,,Component,,,,1,,
-C0063,health sector reform,,Component,,,,1,,
-C0064,epidemiology/public health,,Component,,,,1,,
-C0065,who recommended thresholds,,Component,,,,1,,
-C0066,public-private sector divide,,Component,,,,1,,
-C0067,skilled personnel,,Component,,,,1,,
-C0068,public sector,,Component,,,,1,,
-C0069,private sector,,Component,,,,1,,
-C0070,read approach,,Component,,,,1,,
-C0071,methodology used,,Component,,,,1,,
-C0072,recent increase in the federal health budget,,Component,,,,1,,
-C0073,extensive literature search,,Component,,,,1,,
-C0074,peer-reviewed journals,,Component,,,,1,,
-C0075,56 articles,,Component,,,,1,,
-C0076,corresponding authors' experiential knowledge,,Component,,,,1,,
-C0077,analysis,,Component,,,,1,,
-C0078,government-funded health sector,,Component,,,,1,,
-C0079,public and private health sectors,,Component,,,,1,,
-C0080,vulnerable populations,,Component,,,,1,,
-C0081,public hospital beds,,Component,,,,1,,
-C0082,physicians,,Component,,,,1,,
-C0083,doctor-to-population ratio,,Component,,,,1,,
-C0084,world health organization's recommended,,Component,,,,1,,
-C0085,national health mission (nhm),,Component,,,,1,,
-C0086,government,,Component,,,,1,,
-C0087,quantum of services provided,,Component,,,,1,,
-C0088,quality care,,Component,,,,1,,
-C0089,private health sector,,Component,,,,1,,
-C0090,out-of-pocket (oop) expenditure,,Component,,,,1,,
-C0091,for-profit private health sector,,Component,,,,1,,
-C0092,world-class health facilities,,Component,,,,1,,
-C0093,urban areas,,Component,,,,1,,
-C0094,informal providers,,Component,,,,1,,
-C0095,urban slums,,Component,,,,1,,
-C0096,rural areas,,Component,,,,1,,
-C0097,communities,,Component,,,,1,,
-C0098,social norms,,Component,,,,1,,
-C0099,economic norms,,Component,,,,1,,
-C0100,cadres,,Component,,,,1,,
-C0101,communitization,,Component,,,,1,,
-C0102,nhm strategies,,Component,,,,1,,
-C0103,flexible financing,,Component,,,,1,,
-C0104,improved management through capacity building,,Component,,,,1,,
-C0105,monitoring progress against standards,,Component,,,,1,,
-C0106,innovations in human resource management,,Component,,,,1,,
-C0107,female community health workers,,Component,,,,1,,
-C0108,government employee,,Component,,,,1,,
-C0109,private contractor,,Component,,,,1,,
-C0110,rural medical assistants (rmas),,Component,,,,1,,
-C0111,initial evaluation,,Component,,,,1,,
-C0112,contractors,,Component,,,,1,,
-C0113,doctors,,Component,,,,1,,
-C0114,contractual personnel,,Component,,,,1,,
-C0115,nurses,,Component,,,,1,,
-C0116,ayush doctors,,Component,,,,1,,
-C0117,working conditions,,Component,,,,1,,
-C0118,contractual employees,,Component,,,,1,,
-C0119,lower remuneration,,Component,,,,1,,
-C0120,salary payments,,Component,,,,1,,
-C0121,delayed,,Component,,,,1,,
-C0122,contracts,,Component,,,,1,,
-C0123,temporary nature,,Component,,,,1,,
-C0124,infrastructure,,Component,,,,1,,
-C0125,poor infrastructure,,Component,,,,1,,
-C0126,supply chain issues,,Component,,,,1,,
-C0127,demotivate all employees in public sector,,Component,,,,1,,
-C0128,indian-born physicians,,Component,,,,1,,
-C0129,high-income countries,,Component,,,,1,,
-C0130,largest émigré physician workforce in the world,,Component,,,,1,,
-C0131,financially protected from catastrophic health expenses,,Component,,,,1,,
-C0132,healthcare facilities,,Component,,,,1,,
-C0133,poor,,Component,,,,1,,
-C0134,publicly financed health insurance scheme for the poor,,Component,,,,1,,
-C0135,publicly financed purchasing of services from private providers,,Component,,,,1,,
-C0136,viability concerns,,Component,,,,1,,
-C0137,demotivation,,Component,,,,1,,
-C0138,unmet demand for healthcare services,,Component,,,,1,,
-C0139,patients,,Component,,,,1,,
-C0140,regulation,,Component,,,,1,,
-C0141,quality of care,,Component,,,,1,,
-C0142,corporate houses,,Component,,,,1,,
-C0143,tier ii and iii cities,,Component,,,,1,,
-C0144,out-of-pocket expenditure,,Component,,,,1,,
-C0145,medical tourism,,Component,,,,1,,
-C0146,primary care,,Component,,,,1,,
-C0147,private sector investment in medical colleges,,Component,,,,1,,
-C0148,higher number of medical colleges per population in india compared to other countries,,Component,,,,1,,
-C0149,profitable medical colleges,,Component,,,,1,,
-C0150,high fees of private sector medical colleges,,Component,,,,1,,
-C0151,low fees of government medical colleges,,Component,,,,1,,
-C0152,highly paid doctors graduating from private sector medical colleges,,Component,,,,1,,
-C0153,doctors gravitating towards private sector employment due to low government salaries,,Component,,,,1,,
-C0154,private sector healthcare employment,,Component,,,,1,,
-C0155,highest employer of doctors in india,,Component,,,,1,,
-C0156,performance targets and practice constraints on doctors' professional autonomy in the corporate healthcare sector,,Component,,,,1,,
-C0157,constraints imposed by corporate healthcare sector on doctors' professional autonomy,,Component,,,,1,,
-C0158,star doctors with flourishing practices in the private healthcare sector,,Component,,,,1,,
-C0159,majority of young and early career doctors facing erosion of status and opportunities in the private healthcare sector,,Component,,,,1,,
-C0160,national medical council (nmc),,Component,,,,1,,
-C0161,nmc act,,Component,,,,1,,
-C0162,"interplay between private corporate sector, pharmaceutical industries, medical education, and healthcare services",,Component,,,,1,,
-C0163,universal health coverage,,Component,,,,1,,
-C0164,centralization,,Component,,,,1,,
-C0165,medical education,,Component,,,,1,,
-C0166,state,,Component,,,,1,,
-C0167,total expenditure on health in india,,Component,,,,1,,
-C0168,government of india,,Component,,,,1,,
-C0169,allocated budget to healthcare,,Component,,,,1,,
-C0170,other middle-income countries and its neighbors,,Component,,,,1,,
-C0171,indian government,,Component,,,,1,,
-C0172,just over $30 billion,,Component,,,,1,,
-C0173,oop expenditures by consumers,,Component,,,,1,,
-C0174,limited uptake,,Component,,,,1,,
-C0175,health system standardization,,Component,,,,1,,
-C0176,private health sector regulation,,Component,,,,1,,
-C0177,enforcement of existing rules,,Component,,,,1,,
-C0178,new rules for reasonable costs and cap profit margins,,Component,,,,1,,
-C0179,implementation of land allocation conditions,,Component,,,,1,,
-C0180,medical tourism hub,,Component,,,,1,,
-C0181,health insurance scheme for central government employees,,Component,,,,1,,
-C0182,private health sector utilization,,Component,,,,1,,
-C0183,digital technology,,Component,,,,1,,
-C0184,evin,,Component,,,,1,,
-C0185,online training management information systems,,Component,,,,1,,
-C0186,medical devices,,Component,,,,1,,
-C0187,"wearable, trackable technology",,Component,,,,1,,
-C0188,expanding application of technology to other portfolios within the health sector,,Component,,,,1,,
-C0189,innovations in digital technology supporting delivery of vital healthcare in high-income countries,,Component,,,,1,,
-C0190,covid-19 pandemic catalyzing process and enabling delivery of healthcare,,Component,,,,1,,
-C0191,telemedicine for consultations with healthcare providers,,Component,,,,1,,
-C0192,uptake of telemedicine during covid-19 pandemic,,Component,,,,1,,
-C0193,doctors can now perform an ophthalmic fundal examination online,,Component,,,,1,,
-C0194,remote orthopedic examinations being used successfully,,Component,,,,1,,
-C0195,drones being used to deliver medicines to communities,,Component,,,,1,,
-C0196,manufacturing protective equipment locally using 3d printing,,Component,,,,1,,
-C0197,ai-embedded logarithms now diagnose covid-19 disease from chest x-rays and ct scans,,Component,,,,1,,
-C0198,live register for health personnel and infrastructure,,Component,,,,1,,
-C0199,central government's leadership in the fight for better health for all indians,,Component,,,,1,,
-C0200,accurate data about the quantity and geospatial location of its manpower,,Component,,,,1,,
-C0201,well-equipped personnel,,Component,,,,1,,
-C0202,services they have been trained for,,Component,,,,1,,
-C0203,transparency in creating training schedules,,Component,,,,1,,
-C0204,erratic posting of personnel,,Component,,,,1,,
-C0205,online training,,Component,,,,1,,
-C0206,adoption,,Component,,,,1,,
-C0207,training initiative,,Component,,,,1,,
-C0208,upgrading skills of nurses,,Component,,,,1,,
-C0209,evaluations,,Component,,,,1,,
-C0210,training,,Component,,,,1,,
-C0211,deeper structural problems,,Component,,,,1,,
-C0212,sourcing health personnel,,Component,,,,1,,
-C0213,clinical and social skills,,Component,,,,1,,
-C0214,providing ongoing training,,Component,,,,1,,
-C0215,work environment,,Component,,,,1,,
-C0216,non-hierarchical work environment,,Component,,,,1,,
-C0217,individualized mentoring,,Component,,,,1,,
-C0218,personnel retention,,Component,,,,1,,
-C0219,increasing violence against healthcare personnel,,Component,,,,1,,
-C0220,worrisome new trend,,Component,,,,1,,
-C0221,bad situation,,Component,,,,1,,
-C0222,low physician-to-patient ratio,,Component,,,,1,,
-C0223,results in delays in attending patients,,Component,,,,1,,
-C0224,underpaid physicians,,Component,,,,1,,
-C0225,tempted to take on more patients than they can reasonably serve,,Component,,,,1,,
-C0226,defensive medicine practices,,Component,,,,1,,
-C0227,set in,,Component,,,,1,,
-C0228,overwhelmed physicians,,Component,,,,1,,
-C0229,protect themselves by ordering unnecessary tests and procedures,,Component,,,,1,,
-C0230,unethical practices by pharmaceutical companies,,Component,,,,1,,
-C0231,[54],,Component,,,,1,,
-C0232,intense focus on specialization,,Component,,,,1,,
-C0233,[55],,Component,,,,1,,
-C0234,primary care physicians,,Component,,,,1,,
-C0235,adequately compensated,,Component,,,,1,,
-C0236,private marketplace,,Component,,,,1,,
-C0237,will not be able to solve this,,Component,,,,1,,
-C0238,thoughtful approach to government planning,,Component,,,,1,,
-C0239,can reverse the situation,,Component,,,,1,,
-C0240,"affordable, accessible, quality care",,Component,,,,1,,
-C0241,health system,,Component,,,,1,,
-C0242,transparency,,Component,,,,1,,
-C0243,recommendations made here,,Component,,,,1,,
-C0244,health personnel,,Component,,,,1,,
-C0245,retaining,,Component,,,,1,,
-C0246,strengthening,,Component,,,,1,,
-C0247,health infrastructure,,Component,,,,1,,
-C0248,uniform standards,,Component,,,,1,,
-C0249,implementation,,Component,,,,1,,
-C0250,policy,,Component,,,,1,,
-C0251,overarching,,Component,,,,1,,
-C0252,service provision,,Component,,,,1,,
-C0253,public health sector,,Component,,,,1,,
+C0001,Core Algorithms,,Algorithm,Foundations of Machine Learning An Introductory Textbook — Chapter 3: Core Algorithms and Architectures,,,1,89018253e51d44d4bafec5258ca5ca55,Foundations of Machine Learning An Introductory Textbook — Chapter 3: Core Algorithms and Architectures
+C0002,Machine Learning,,Theory,"Before turning to more complex architectures, it is worth revisiting two of the simplest models in machine learning, both of which remain widely used in practice.",Chapter 3: Core Algorithms and Architectures,3.5 Logistic and Linear Regression,4,7698a64b8cb1499eb5db1fabca19e5cf,"Before turning to more complex architectures, it is worth revisiting two of the simplest models in machine learning, both of which remain widely used in practice."
+C0003,Derivative,,Formula,"This search is guided by calculus, and in particular by the derivative, which tells us how a function's output changes as we make a small change to one of its inputs.",Chapter 3: Core Algorithms and Architectures,3.1 The Role of Calculus in Machine Learning,1,a4b420d1f389497992e8d467fb4cbe87,"This search is guided by calculus, and in particular by the derivative, which tells us how a function's output changes as we make a small change to one of its inputs."
+C0004,Chain Rule,,Component,"Students who have not yet encountered multivariable calculus are strongly encouraged to review partial derivatives and the chain rule before continuing, since both concepts reappear throughout the remainder of this chapter.",Chapter 3: Core Algorithms and Architectures,3.1 The Role of Calculus in Machine Learning,1,a4b420d1f389497992e8d467fb4cbe87,"Students who have not yet encountered multivariable calculus are strongly encouraged to review partial derivatives and the chain rule before continuing, since both concepts reappear throughout the remainder of this chapter."
+C0005,Calculus,,Theory,"It is an efficient algorithm for computing gradients that works by applying the chain rule from calculus, propagating the error signal backward from the output layer through each hidden layer in turn.",Chapter 3: Core Algorithms and Architectures,3.4 Backpropagation,2,90bf9c2df81a442c88def04e7752731a,"It is an efficient algorithm for computing gradients that works by applying the chain rule from calculus, propagating the error signal backward from the output layer through each hidden layer in turn."
+C0006,Gradient,,Formula,"When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",Chapter 3: Core Algorithms and Architectures,3.1 The Role of Calculus in Machine Learning,1,a4b420d1f389497992e8d467fb4cbe87,"When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously."
+C0007,Neural Networks,,Model,"When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",Chapter 3: Core Algorithms and Architectures,3.1 The Role of Calculus in Machine Learning,1,a4b420d1f389497992e8d467fb4cbe87,"When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously."
+C0008,Prediction Error,,Formula,"Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",Chapter 3: Core Algorithms and Architectures,3.1 The Role of Calculus in Machine Learning,1,a4b420d1f389497992e8d467fb4cbe87,"Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function."
+C0009,Multivariable Calculus,,Theory,"Multivariable Calculus is strongly encouraged to review partial derivatives and the chain rule before continuing, since both concepts reappear throughout the remainder of this chapter",Chapter 3: Core Algorithms and Architectures,3.1 The Role of Calculus in Machine Learning,1,a4b420d1f389497992e8d467fb4cbe87,"Students who have not yet encountered multivariable calculus are strongly encouraged to review partial derivatives and the chain rule before continuing, since both concepts reappear throughout the remainder of this chapter."
+C0010,Loss Function,,Formula,"Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",Chapter 3: Core Algorithms and Architectures,3.1 The Role of Calculus in Machine Learning,1,a4b420d1f389497992e8d467fb4cbe87,"Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function."
+C0011,Partial Derivatives,,Formula,"Students who have not yet encountered multivariable calculus are strongly encouraged to review partial derivatives and the chain rule before continuing, since both concepts reappear throughout the remainder of this chapter.",Chapter 3: Core Algorithms and Architectures,3.1 The Role of Calculus in Machine Learning,1,a4b420d1f389497992e8d467fb4cbe87,"Students who have not yet encountered multivariable calculus are strongly encouraged to review partial derivatives and the chain rule before continuing, since both concepts reappear throughout the remainder of this chapter."
+C0012,Mini-Batch Gradient Descent,,Algorithm,"Instead, most implementations use mini-batch gradient descent, which estimates the gradient from a small, randomly sampled subset of the data at each step, trading a noisier gradient estimate for a significant increase in computational efficiency.",Chapter 3: Core Algorithms and Architectures,3.2 Gradient Descent,1,a009f9d255df4fdeb1891893288f0e24,"Instead, most implementations use mini-batch gradient descent, which estimates the gradient from a small, randomly sampled subset of the data at each step, trading a noisier gradient estimate for a significant increase in computational efficiency."
+C0013,Gradient Descent,,Algorithm,"In effect, backpropagation is not a separate optimization method but a technique for making gradient descent computationally practical for deep networks.",Chapter 3: Core Algorithms and Architectures,3.4 Backpropagation,2,90bf9c2df81a442c88def04e7752731a,"In effect, backpropagation is not a separate optimization method but a technique for making gradient descent computationally practical for deep networks."
+C0014,Learning Rate,,Theory,"Starting from w = 0 with a learning rate of 0.1, the first update moves w to 0 - 0.1 * (-8) = 0.8.",Chapter 3: Core Algorithms and Architectures,3.2 Gradient Descent,2,efbf708e22b34e81bd669d6d3ec7a4e4,"Starting from w = 0 with a learning rate of 0.1, the first update moves w to 0 - 0.1 * (-8) = 0.8."
+C0015,Worked Example,,Component,Worked Example Suppose a model has a single parameter w and a loss function L(w) = (w - 4)^2.,Chapter 3: Core Algorithms and Architectures,3.2 Gradient Descent,2,efbf708e22b34e81bd669d6d3ec7a4e4,Worked Example Suppose a model has a single parameter w and a loss function L(w) = (w - 4)^2.
+C0016,Bias Term,,Component,"Each unit computes a weighted sum of its inputs, adds a bias term, and passes the result through a nonlinear activation function.",Chapter 3: Core Algorithms and Architectures,3.3 Neural Networks,2,638e427ee04643dfb12234d02612b3d0,"Each unit computes a weighted sum of its inputs, adds a bias term, and passes the result through a nonlinear activation function."
+C0017,Weights and Biases,,Component,,Chapter 3: Core Algorithms and Architectures,3.3 Neural Networks,2,638e427ee04643dfb12234d02612b3d0,
+C0018,Hidden Layers,,Component,"Hidden Layers is often referred to as deep neural networks, which is the origin of the term deep learning",Chapter 3: Core Algorithms and Architectures,3.3 Neural Networks,2,638e427ee04643dfb12234d02612b3d0,"Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning."
+C0019,Output Layer,,Component,"It is an efficient algorithm for computing gradients that works by applying the chain rule from calculus, propagating the error signal backward from the output layer through each hidden layer in turn.",Chapter 3: Core Algorithms and Architectures,3.4 Backpropagation,2,90bf9c2df81a442c88def04e7752731a,"It is an efficient algorithm for computing gradients that works by applying the chain rule from calculus, propagating the error signal backward from the output layer through each hidden layer in turn."
+C0020,Weighted Sum,,Formula,"Linear regression models the relationship between input features and a continuous target variable as a weighted sum of the inputs, and is typically trained by minimizing the mean squared error between predicted and actual values.",Chapter 3: Core Algorithms and Architectures,3.5 Logistic and Linear Regression,4,7698a64b8cb1499eb5db1fabca19e5cf,"Linear regression models the relationship between input features and a continuous target variable as a weighted sum of the inputs, and is typically trained by minimizing the mean squared error between predicted and actual values."
+C0021,Nonlinear Activation Function,,Formula,"Each unit computes a weighted sum of its inputs, adds a bias term, and passes the result through a nonlinear activation function.",Chapter 3: Core Algorithms and Architectures,3.3 Neural Networks,2,638e427ee04643dfb12234d02612b3d0,"Each unit computes a weighted sum of its inputs, adds a bias term, and passes the result through a nonlinear activation function."
+C0022,Deep Neural Networks,,Model,"Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning.",Chapter 3: Core Algorithms and Architectures,3.3 Neural Networks,2,638e427ee04643dfb12234d02612b3d0,"Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning."
+C0023,Deep Learning,,Theory,"Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning.",Chapter 3: Core Algorithms and Architectures,3.3 Neural Networks,2,638e427ee04643dfb12234d02612b3d0,"Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning."
+C0024,Input Layer,,Component,"A typical network is organized into an input layer, one or more hidden layers, and an output layer.",Chapter 3: Core Algorithms and Architectures,3.3 Neural Networks,2,638e427ee04643dfb12234d02612b3d0,"A typical network is organized into an input layer, one or more hidden layers, and an output layer."
+C0025,Biological Neurons,,Component,"A neural network is a computational model composed of layers of simple processing units, loosely inspired by networks of biological neurons.",Chapter 3: Core Algorithms and Architectures,3.3 Neural Networks,2,638e427ee04643dfb12234d02612b3d0,"A neural network is a computational model composed of layers of simple processing units, loosely inspired by networks of biological neurons."
+C0026,RMSProp,,Algorithm,"The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",Chapter 3: Core Algorithms and Architectures,3.4 Backpropagation,2,90bf9c2df81a442c88def04e7752731a,"The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters."
+C0027,Backpropagation,,Algorithm,Backpropagation is not a separate optimization method but a technique for making gradient descent computationally practical for deep networks,Chapter 3: Core Algorithms and Architectures,3.4 Backpropagation,2,90bf9c2df81a442c88def04e7752731a,"In effect, backpropagation is not a separate optimization method but a technique for making gradient descent computationally practical for deep networks."
+C0028,Adam,,Algorithm,"The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",Chapter 3: Core Algorithms and Architectures,3.4 Backpropagation,2,90bf9c2df81a442c88def04e7752731a,"The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters."
+C0029,Mean Squared Error,,Formula,"Linear regression models the relationship between input features and a continuous target variable as a weighted sum of the inputs, and is typically trained by minimizing the mean squared error between predicted and actual values.",Chapter 3: Core Algorithms and Architectures,3.5 Logistic and Linear Regression,4,7698a64b8cb1499eb5db1fabca19e5cf,"Linear regression models the relationship between input features and a continuous target variable as a weighted sum of the inputs, and is typically trained by minimizing the mean squared error between predicted and actual values."
+C0030,Sigmoid Function,,Formula,"It computes the same weighted sum of inputs, but then passes that sum through a sigmoid function to produce a value between zero and one, which is interpreted as the probability of belonging to the positive class.",Chapter 3: Core Algorithms and Architectures,3.5 Logistic and Linear Regression,4,7698a64b8cb1499eb5db1fabca19e5cf,"It computes the same weighted sum of inputs, but then passes that sum through a sigmoid function to produce a value between zero and one, which is interpreted as the probability of belonging to the positive class."
+C0031,Linear Regression,,Model,"Linear regression models the relationship between input features and a continuous target variable as a weighted sum of the inputs, and is typically trained by minimizing the mean squared error between predicted and actual values.",Chapter 3: Core Algorithms and Architectures,3.5 Logistic and Linear Regression,4,7698a64b8cb1499eb5db1fabca19e5cf,"Linear regression models the relationship between input features and a continuous target variable as a weighted sum of the inputs, and is typically trained by minimizing the mean squared error between predicted and actual values."
+C0032,Binary Classification,,Theory,"Logistic regression addresses a different problem: binary classification, where the goal is to predict which of two classes an example belongs to.",Chapter 3: Core Algorithms and Architectures,3.5 Logistic and Linear Regression,4,7698a64b8cb1499eb5db1fabca19e5cf,"Logistic regression addresses a different problem: binary classification, where the goal is to predict which of two classes an example belongs to."
+C0033,Logistic Regression,,Model,Logistic Regression is closely related to linear regression,Chapter 3: Core Algorithms and Architectures,3.5 Logistic and Linear Regression,4,7698a64b8cb1499eb5db1fabca19e5cf,"Despite its name, logistic regression is closely related to linear regression."

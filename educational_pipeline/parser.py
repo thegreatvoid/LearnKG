@@ -88,6 +88,9 @@ def parse_text_file(filepath: Path) -> List[ParsedBlock]:
         page_match = re.search(r"(?:---\s*Page\s*(\d+)\s*---|\[Page\s*(\d+)\])", text, re.IGNORECASE)
         if page_match:
             estimated_page = int(page_match.group(1) or page_match.group(2))
+            text = re.sub(r"(?:---\s*Page\s*(\d+)\s*---|\[Page\s*(\d+)\])", "", text).strip()
+            if not text:
+                continue
 
         lines = [l.strip() for l in text.splitlines() if l.strip()]
         if lines:
