@@ -42,9 +42,18 @@ def build_educational_graph(
     output_html: Path | str = "./docs/index.html",
     show_edge_labels: bool = False,
     show_edge_tooltips: bool = True,
+    show_edge_weights: bool = True,
+    min_edge_weight: float = 0.3,
 ) -> nx.DiGraph:
     """
     Constructs a NetworkX DiGraph and generates an interactive Pyvis visualization.
+
+    Edge weight is the AHP-derived relevance score in [0, 1] (see
+    relation_extractor.calculate_ahp_weight). Edges below `min_edge_weight`
+    are dropped to keep the rendered graph legible; all remaining edges are
+    drawn at a uniform width rather than being scaled by weight, and (when
+    `show_edge_weights` is True) are labeled with their weight so the score
+    is visible directly on the graph, not just on hover.
     """
     df_concepts = pd.read_csv(concepts_csv, dtype=str).fillna("")
     df_relations = pd.read_csv(relations_csv, dtype=str).fillna("")
@@ -87,10 +96,14 @@ def build_educational_graph(
         src_id = row["source_id"]
         tgt_id = row["target_id"]
         rel_type = row["relation_type"]
-        weight_val = float(row["weight"]) if row["weight"] else 5.0
+        weight_val = float(row["weight"]) if row["weight"] else 0.5
         evidence = row["evidence"]
 
         if src_id not in G.nodes or tgt_id not in G.nodes:
+            continue
+
+        # Drop weak/low-confidence edges to reduce visual clutter
+        if weight_val < min_edge_weight:
             continue
 
         src_name = concept_map[src_id]["concept_name"]
@@ -98,20 +111,24 @@ def build_educational_graph(
 
         edge_attrs = {
             "weight": weight_val,
-            "value": weight_val,
             "relation_type": rel_type,
             "color": RELATION_COLORS.get(rel_type, "#888888"),
         }
 
         if show_edge_tooltips:
             tooltip = f"<b>{src_name}</b> &rarr; <b>{tgt_name}</b><br/>"
-            tooltip += f"<b>Relation:</b> {rel_type} (Weight: {int(weight_val)})<br/>"
+            tooltip += f"<b>Relation:</b> {rel_type} (Weight: {weight_val:.2f})<br/>"
             if evidence:
                 tooltip += f"<i>Evidence:</i> &ldquo;{evidence}&rdquo;"
             edge_attrs["title"] = tooltip
 
+        label_parts = []
         if show_edge_labels:
-            edge_attrs["label"] = rel_type
+            label_parts.append(rel_type)
+        if show_edge_weights:
+            label_parts.append(f"{weight_val:.2f}")
+        if label_parts:
+            edge_attrs["label"] = " | ".join(label_parts)
 
         G.add_edge(src_id, tgt_id, **edge_attrs)
 
@@ -120,7 +137,7 @@ def build_educational_graph(
             edge_attrs_rev = dict(edge_attrs)
             if show_edge_tooltips:
                 tooltip_rev = f"<b>{tgt_name}</b> &harr; <b>{src_name}</b><br/>"
-                tooltip_rev += f"<b>Relation:</b> Similarity (Weight: {int(weight_val)})<br/>"
+                tooltip_rev += f"<b>Relation:</b> Similarity (Weight: {weight_val:.2f})<br/>"
                 if evidence:
                     tooltip_rev += f"<i>Evidence:</i> &ldquo;{evidence}&rdquo;"
                 edge_attrs_rev["title"] = tooltip_rev
@@ -159,6 +176,15 @@ def build_educational_graph(
                 deg = G.degree(nid)
                 G.nodes[nid]["size"] = max(12, min(50, 12 + deg * 4))
 
+    # pyvis.Network.from_nx() auto-derives edge "width" from the "weight"
+    # attribute whenever neither "width" nor "value" is already set. We keep
+    # "weight" on the edge (needed for pagerank sizing above and for the
+    # tooltip) but pin both "width" and "value" to a constant so no
+    # thickness-by-weight scaling leaks into the rendered graph.
+    for _, _, edata in G.edges(data=True):
+        edata["width"] = 1
+        edata["value"] = 1
+
     # Render Pyvis Network
     out_file = Path(output_html)
     out_file.parent.mkdir(parents=True, exist_ok=True)
@@ -177,21 +203,22 @@ def build_educational_graph(
     net.set_options("""
     var options = {
       "edges": {
+        "width": 1,
         "arrows": {
-          "to": { "enabled": true, "scaleFactor": 0.7 }
+          "to": { "enabled": true, "scaleFactor": 0.5 }
         },
         "smooth": {
           "enabled": true,
-          "type": "curvedCW",
-          "roundness": 0.15
+          "type": "continuous",
+          "roundness": 0.1
         },
         "font": {
-          "size": 9,
+          "size": 8,
           "align": "middle",
           "strokeWidth": 2,
           "strokeColor": "#ffffff"
         },
-        "scaling": { "min": 1, "max": 10 }
+        "color": { "opacity": 0.55 }
       },
       "nodes": {
         "font": { "size": 13, "face": "Arial", "strokeWidth": 2, "strokeColor": "#ffffff" },
@@ -199,16 +226,16 @@ def build_educational_graph(
       },
       "physics": {
         "forceAtlas2Based": {
-          "centralGravity": 0.015,
-          "springLength": 130,
-          "springConstant": 0.08,
-          "damping": 0.4,
-          "avoidOverlap": 0.25
+          "centralGravity": 0.01,
+          "springLength": 190,
+          "springConstant": 0.06,
+          "damping": 0.45,
+          "avoidOverlap": 0.6
         },
-        "maxVelocity": 45,
+        "maxVelocity": 40,
         "solver": "forceAtlas2Based",
         "timestep": 0.35,
-        "stabilization": { "iterations": 180 }
+        "stabilization": { "iterations": 220 }
       }
     }
     """)
