@@ -4,6 +4,68 @@ import numpy as np
 from .prompts import extractConcepts
 from .prompts import graphPrompt
 
+# ---------------------------------------------------------------------------
+# AHP-Derived Edge Weight  (Saaty's Analytic Hierarchy Process)
+# ---------------------------------------------------------------------------
+# Pairwise comparison yielded CR ≈ 0.022 < 0.10 → consistent judgments.
+#
+#   Factor  Symbol  AHP weight  Source
+#   ──────  ──────  ──────────  ──────────────────────────────────────────
+#   Semantic Similarity   S    0.52    LLM-assigned weight (1-10, norm.)
+#   Co-occurrence         C    0.24    chunk co-occurrence count (norm.)
+#   Chapter Proximity     P    0.09    shared-chunk ratio proxy (0-1)
+#   Educational Context   E    0.15    educational relationship keyword (0/1)
+#
+AHP_ALPHA = 0.52   # Semantic Similarity
+AHP_BETA  = 0.24   # Co-occurrence
+AHP_GAMMA = 0.09   # Chapter Proximity
+AHP_DELTA = 0.15   # Educational Context
+
+# Keywords that flag an educationally-meaningful relationship
+_EDUCATIONAL_KEYWORDS = {
+    "prerequisite", "explains", "defines", "enables",
+    "introduces", "requires", "extends", "generalizes",
+    "specializes", "applies", "illustrates", "teaches",
+}
+
+
+def ahp_edge_weight(
+    llm_weight: float,
+    cooccurrence_count: float,
+    chunk_overlap_ratio: float,
+    relationship: str,
+) -> float:
+    """
+    Compute AHP-weighted edge score.
+
+    Parameters
+    ----------
+    llm_weight         : LLM-assigned relation strength (1–10 scale).
+    cooccurrence_count : Raw co-occurrence count between the two nodes.
+    chunk_overlap_ratio: Fraction of shared chunks out of all chunks either
+                         node appears in (proxy for Chapter Proximity).
+                         Pass 0.0 when the edge has no proximity signal.
+    relationship       : Relationship predicate string from the LLM.
+
+    Returns
+    -------
+    float in [0, 1] — higher means a stronger / more trustworthy edge.
+    """
+    # S: normalise LLM weight from [1, 10] → [0, 1]
+    S = float(np.clip((llm_weight - 1) / 9.0, 0.0, 1.0))
+
+    # C: normalise co-occurrence count; cap at 5 to avoid outlier dominance
+    C = float(np.clip(cooccurrence_count / 5.0, 0.0, 1.0))
+
+    # P: chapter-proximity proxy already in [0, 1]
+    P = float(np.clip(chunk_overlap_ratio, 0.0, 1.0))
+
+    # E: binary flag — 1 if relationship mentions an educational concept
+    rel_lower = str(relationship).lower()
+    E = 1.0 if any(kw in rel_lower for kw in _EDUCATIONAL_KEYWORDS) else 0.0
+
+    return AHP_ALPHA * S + AHP_BETA * C + AHP_GAMMA * P + AHP_DELTA * E
+
 
 def documents2Dataframe(documents) -> pd.DataFrame:
     """Converts a list of LangChain document chunks into a DataFrame with chunk_ids."""

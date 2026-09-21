@@ -11,9 +11,7 @@ Run from the knowledge_graph folder:
 """
 import sys
 import subprocess
-
-if hasattr(sys.stdout, "reconfigure"):
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+#
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Auto-install only what's strictly needed
@@ -46,6 +44,7 @@ import pandas as pd
 import numpy as np
 import networkx as nx
 from pyvis.network import Network
+from helpers.df_helpers import ahp_edge_weight
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Helpers
@@ -208,21 +207,63 @@ print(f"[+] Proximity edges: {len(dfg2)}")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 3. Merge LLM-direct + Proximity  →  one row per (source, target) pair
+#    Then compute AHP edge weight: 0.52·S + 0.24·C + 0.09·P + 0.15·E
 # ─────────────────────────────────────────────────────────────────────────────
 print("[*] Merging direct + contextual edges ...")
+
+# Build a lookup: node → set of chunk_ids it appears in (for proximity P)
+_node_chunks: dict[str, set] = {}
+for col in ["source", "target"]:
+    for _, row in dfg1.iterrows():
+        node = str(row[col])
+        chunks = set(str(row.get("chunk_id", "")).split(",")) - {""}
+        _node_chunks.setdefault(node, set()).update(chunks)
+
+# Also note co-occurrence counts per (source, target) from proximity edges
+_cooc_count: dict[tuple, float] = {
+    (str(r["source"]), str(r["target"])): float(r["count"])
+    for _, r in dfg2.iterrows()
+}
+
 dfg = pd.concat([dfg1, dfg2], axis=0, ignore_index=True)
 dfg = (
     dfg.groupby(["source", "target"])
     .agg(
         chunk_id    =("chunk_id",     lambda x: ",".join(x.dropna().astype(str))),
         relationship=("relationship", lambda x: " | ".join(x.dropna().unique())),
-        weight      =("weight",       "sum"),
+        llm_weight  =("weight",       "max"),   # best LLM score for this pair
         description =("description",  lambda x: " | ".join(x.dropna().astype(str).unique())),
     )
     .reset_index()
 )
+
+# ── Compute AHP weight per edge ──────────────────────────────────────────────
+def _ahp_row(row) -> float:
+    src, tgt = str(row["source"]), str(row["target"])
+
+    # S — semantic similarity: LLM weight (1-10), already in llm_weight col
+    S_raw = float(row["llm_weight"])
+
+    # C — co-occurrence count (0 if no proximity edge exists)
+    C_raw = _cooc_count.get((src, tgt), 0.0)
+
+    # P — chapter proximity proxy: Jaccard overlap of node chunk sets
+    chunks_src = _node_chunks.get(src, set())
+    chunks_tgt = _node_chunks.get(tgt, set())
+    union  = chunks_src | chunks_tgt
+    P_raw = len(chunks_src & chunks_tgt) / len(union) if union else 0.0
+
+    # E — educational context: derived from relationship predicate
+    return ahp_edge_weight(S_raw, C_raw, P_raw, row["relationship"])
+
+dfg["weight"] = dfg.apply(_ahp_row, axis=1)
+
+# Scale AHP score (0-1) → display weight (1-10) for Pyvis edge thickness
+dfg["weight_display"] = (dfg["weight"] * 9 + 1).round(2)
+
 print(f"[+] Total merged directed edges : {len(dfg)}")
-print(f"    Merged weight range         : {dfg['weight'].min():.1f} – {dfg['weight'].max():.1f}")
+print(f"    AHP weight range (0–1)      : {dfg['weight'].min():.3f} – {dfg['weight'].max():.3f}")
+print(f"    Display weight range (1–10) : {dfg['weight_display'].min():.1f} – {dfg['weight_display'].max():.1f}")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 4. Build nx.DiGraph  (DIRECTED + WEIGHTED)
@@ -258,7 +299,10 @@ for _, row in dfg.iterrows():
     G.add_edge(
         str(row["source"]),
         str(row["target"]),
-        **edge_attrs
+        title  = f"AHP: {row['weight']:.3f} | {row['description']}",
+        label  = f"{row['weight']:.2f}",    # AHP score on arrow
+        weight = float(row["weight_display"]),
+        value  = float(row["weight_display"]),  # Pyvis uses 'value' for thickness
     )
 
 print(f"[+] DiGraph: {G.number_of_nodes()} nodes,  {G.number_of_edges()} directed edges.")
@@ -333,32 +377,32 @@ var options = {
     "smooth": {
       "enabled": true,
       "type": "curvedCW",
-      "roundness": 0.15
+      "roundness": 0.1
     },
     "font": {
-      "size": 9,
+      "size": 10,
       "align": "middle",
       "strokeWidth": 2,
       "strokeColor": "#ffffff"
     },
-    "scaling": { "min": 1, "max": 12 }
+    "scaling": { "min": 1, "max": 8 }
   },
   "nodes": {
     "font": { "size": 12 },
-    "scaling": { "min": 10, "max": 60 }
+    "scaling": { "min": 10, "max": 50 }
   },
   "physics": {
     "forceAtlas2Based": {
-      "centralGravity": 0.015,
-      "springLength": 120,
-      "springConstant": 0.08,
-      "damping": 0.4,
-      "avoidOverlap": 0.2
+      "centralGravity": 0.003,
+      "springLength": 250,
+      "springConstant": 0.04,
+      "damping": 0.5,
+      "avoidOverlap": 1.0
     },
-    "maxVelocity": 50,
+    "maxVelocity": 60,
     "solver": "forceAtlas2Based",
     "timestep": 0.35,
-    "stabilization": { "iterations": 200 }
+    "stabilization": { "iterations": 300 }
   }
 }
 """)
@@ -377,14 +421,15 @@ print(f"  Nodes       : {G.number_of_nodes()}")
 print(f"  Edges       : {G.number_of_edges()} directed edges")
 print(f"  Communities : {len(communities)}")
 print(f"  Node sizing : {pr_source}")
-print(f"  Weights     : ✅  present  (range {dfg['weight'].min():.1f} – {dfg['weight'].max():.1f})")
-print(f"  Edge labels : {'✅  enabled' if SHOW_EDGE_LABELS else '❌  hidden (clean edges)'}")
-print(f"  Tooltips    : {'✅  enabled on hover' if SHOW_EDGE_TOOLTIPS else '❌  disabled'}")
+print(f"  Weights     : ✅  AHP Formula  0.52·S + 0.24·C + 0.09·P + 0.15·E")
+print(f"  AHP range   : {dfg['weight'].min():.3f} – {dfg['weight'].max():.3f}  (0–1 normalised)")
+print(f"  Arrowheads  : ✅  enabled  (arrows.to in Pyvis options)")
+print(f"  Edge labels : ✅  AHP score on each edge")
 print(f"  Colors via  : colorsys stdlib  (no seaborn / scipy)")
 print(f"{'='*62}")
-print("\n  Top 10 highest-weight directed edges:")
+print("\n  Top 10 highest-weight directed edges (by AHP score):")
 top10 = dfg[["source","target","relationship","weight"]].sort_values("weight", ascending=False).head(10)
 for _, r in top10.iterrows():
     rel = r["relationship"].split("|")[0].strip()[:35]
-    print(f"    {r['weight']:6.1f}  {r['source']!r:35s}  →  {r['target']!r:35s}  [{rel}]")
+    print(f"    {r['weight']:.3f}  {r['source']!r:35s}  →  {r['target']!r:35s}  [{rel}]")
 print()
