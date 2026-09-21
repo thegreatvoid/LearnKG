@@ -60,13 +60,73 @@ ONTOLOGY_PATTERNS = {
     ],
 }
 
-BASE_WEIGHTS = {
-    "Prerequisite": 9,
-    "Part-of": 8,
-    "Application": 7,
-    "Extension": 6,
-    "Similarity": 5,
+# AHP-derived factor weights (see project report, CR = 0.022):
+#   Weight = 0.52*SemanticSimilarity + 0.24*Co-occurrence
+#          + 0.09*ChapterProximity  + 0.15*EducationalContext
+AHP_FACTOR_WEIGHTS = {
+    "semantic_similarity": 0.52,
+    "cooccurrence": 0.24,
+    "chapter_proximity": 0.09,
+    "educational_context": 0.15,
 }
+
+
+def _word_set(text: str) -> Set[str]:
+    return set(re.findall(r"[a-zA-Z]{3,}", str(text).lower()))
+
+
+def semantic_similarity(c1: NormalizedConcept, c2: NormalizedConcept) -> float:
+    """Jaccard overlap of definition (falling back to name) word sets — a
+    dependency-free proxy for embedding cosine similarity."""
+    w1 = _word_set(c1.definition) or _word_set(c1.concept_name)
+    w2 = _word_set(c2.definition) or _word_set(c2.concept_name)
+    if not w1 or not w2:
+        return 0.0
+    union = len(w1 | w2)
+    return len(w1 & w2) / union if union else 0.0
+
+
+def chapter_proximity(c1: NormalizedConcept, c2: NormalizedConcept) -> float:
+    try:
+        dist = abs(int(c1.chapter or 0) - int(c2.chapter or 0))
+    except (TypeError, ValueError):
+        dist = 0
+    return 1.0 / (1.0 + dist)
+
+
+def educational_context_score(c1: NormalizedConcept, c2: NormalizedConcept) -> float:
+    score = 0.0
+    if c1.chapter and c1.chapter == c2.chapter:
+        score += 0.6
+    if c1.section and c1.section == c2.section:
+        score += 0.4
+    return score if score else 0.3
+
+
+def calculate_ahp_weight(
+    c1: NormalizedConcept,
+    c2: NormalizedConcept,
+    cooccurrence: float,
+) -> float:
+    """
+    Combines the four AHP-weighted factors into an educational edge weight.
+    Each factor is itself normalized to [0, 1] and the AHP_FACTOR_WEIGHTS sum
+    to 1, so the result is a true relevance score in [0, 1] rather than an
+    arbitrary integer scale (see AHP_FACTOR_WEIGHTS for the derived priority
+    vector, CR = 0.022).
+    """
+    sem_sim = semantic_similarity(c1, c2)
+    cooc = max(0.0, min(1.0, cooccurrence))
+    prox = chapter_proximity(c1, c2)
+    edu = educational_context_score(c1, c2)
+
+    score = (
+        AHP_FACTOR_WEIGHTS["semantic_similarity"] * sem_sim
+        + AHP_FACTOR_WEIGHTS["cooccurrence"] * cooc
+        + AHP_FACTOR_WEIGHTS["chapter_proximity"] * prox
+        + AHP_FACTOR_WEIGHTS["educational_context"] * edu
+    )
+    return round(max(0.0, min(1.0, score)), 4)
 
 
 @dataclass
@@ -75,7 +135,7 @@ class ExtractedRelation:
     source_id: str
     target_id: str
     relation_type: str
-    weight: int
+    weight: float
     page: int
     chunk_id: str
     evidence: str
@@ -102,24 +162,6 @@ def classify_relation(raw_predicate: str) -> str:
     return "Application"
 
 
-def calculate_educational_weight(relation_type: str, evidence: str, explicit_weight: Optional[int] = None) -> int:
-    """
-    Assigns numerical educational importance weight (1 to 10).
-    Base weight depends on relation hierarchy, boosted if emphasized in text.
-    """
-    if explicit_weight and 1 <= explicit_weight <= 10:
-        return explicit_weight
-
-    base = BASE_WEIGHTS.get(relation_type, 6)
-    evidence_lower = evidence.lower()
-
-    # Boost if highlighted as primary, essential, or key factor
-    if any(k in evidence_lower for k in ["critical", "essential", "primary", "key", "central role", "fundamental"]):
-        base = min(10, base + 1)
-
-    return base
-
-
 class RelationManager:
     """Manages relation creation, classification, and ID assignment."""
 
@@ -129,6 +171,9 @@ class RelationManager:
         self._next_id = 1
         # Track unique (source_id, target_id, relation_type) triplets to avoid duplicates
         self._seen: Set[Tuple[str, str, str]] = set()
+        # Counts how many times each concept pair co-occurs in a sentence,
+        # used as the Co-occurrence factor in the AHP edge-weight formula
+        self._pair_cooccurrence: Dict[Tuple[str, str], int] = {}
 
     def _generate_id(self) -> str:
         rid = f"R{self._next_id:04d}"
@@ -143,7 +188,7 @@ class RelationManager:
         evidence: str,
         page: int = 1,
         chunk_id: str = "",
-        weight: Optional[int] = None,
+        weight: Optional[float] = None,
     ) -> Optional[ExtractedRelation]:
         """Validates, classifies, and records an educational relation."""
         src_id = self.normalizer.find_match(source_name)
@@ -155,18 +200,24 @@ class RelationManager:
         # Classify into controlled ontology
         norm_type = classify_relation(relation_type)
 
+        pair_key = (src_id, tgt_id)
+        self._pair_cooccurrence[pair_key] = self._pair_cooccurrence.get(pair_key, 0) + 1
+        cooc_score = min(1.0, self._pair_cooccurrence[pair_key] / 3.0)
+        c1 = self.normalizer.concepts_by_id[src_id]
+        c2 = self.normalizer.concepts_by_id[tgt_id]
+
         key = (src_id, tgt_id, norm_type)
         if key in self._seen:
             # If already exists, bump weight if higher
             for r in self.relations:
                 if (r.source_id, r.target_id, r.relation_type) == key:
-                    new_w = calculate_educational_weight(norm_type, evidence, weight)
+                    new_w = weight if weight is not None and 0.0 <= weight <= 1.0 else calculate_ahp_weight(c1, c2, cooc_score)
                     r.weight = max(r.weight, new_w)
                     return r
             return None
 
         self._seen.add(key)
-        final_weight = calculate_educational_weight(norm_type, evidence, weight)
+        final_weight = weight if weight is not None and 0.0 <= weight <= 1.0 else calculate_ahp_weight(c1, c2, cooc_score)
 
         rel = ExtractedRelation(
             relation_id=self._generate_id(),

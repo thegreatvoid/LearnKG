@@ -6,6 +6,7 @@ Tracks aliases and merges occurrences across the entire corpus.
 """
 
 import re
+import difflib
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Set, Tuple
 
@@ -75,6 +76,16 @@ class ConceptNormalizer:
         first_letters = "".join(w[0].upper() for w in words)
         return s == first_letters
 
+    @staticmethod
+    def _is_fuzzy_match(s1: str, s2: str, threshold: float = 0.87) -> bool:
+        """Catches near-duplicate names/phrasing (e.g. 'Neural Network' vs.
+        'Neural Networks Model') that the plural/acronym rules miss."""
+        if len(s1) < 6 or len(s2) < 6:
+            return False
+        if abs(len(s1) - len(s2)) > 6:
+            return False
+        return difflib.SequenceMatcher(None, s1, s2).ratio() >= threshold
+
     def find_match(self, name: str) -> Optional[str]:
         """Finds existing concept_id for the given name or alias."""
         cleaned = self.clean_name(name)
@@ -93,6 +104,11 @@ class ConceptNormalizer:
             if len(cleaned) <= 5 and cleaned.isupper() and self._is_acronym_match(cleaned, existing_term):
                 return cid
             if len(existing_term) <= 5 and existing_term.isupper() and self._is_acronym_match(existing_term, cleaned):
+                return cid
+
+        # Fuzzy string match as a last resort, to merge near-duplicate phrasing
+        for existing_term, cid in self.lookup.items():
+            if self._is_fuzzy_match(lowered, existing_term):
                 return cid
 
         return None

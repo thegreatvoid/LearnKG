@@ -27,6 +27,7 @@ from .normalizer import ConceptNormalizer
 from .definition_extractor import extract_grounded_definition
 from .relation_extractor import RelationManager
 from .dataset_builder import build_and_save_dataset
+from .graph_stats import compute_graph_statistics
 from .graph_builder import build_educational_graph
 
 
@@ -191,7 +192,9 @@ def run_educational_pipeline(
                 relation_type=r.get("relation_type", "Application"),
                 evidence=r.get("evidence", ""),
                 chunk_id=chunk_id,
-                weight=int(r["weight"]) if r.get("weight") else None,
+                # LLM rates relations 1-10; normalize onto the same [0, 1]
+                # scale as the AHP-derived weight so the two are comparable.
+                weight=(int(r["weight"]) - 1) / 9 if r.get("weight") else None,
             )
 
     # C. Extract sentence-level co-occurrences using the full concept registry
@@ -214,6 +217,16 @@ def run_educational_pipeline(
     )
 
     # -------------------------------------------------------------------------
+    # Compute Graph Statistics (Knowledge Graph Repository cache)
+    # -------------------------------------------------------------------------
+    print("\n[*] Computing Graph Statistics...")
+    concept_stats_csv, graph_summary_json, graph_summary = compute_graph_statistics(
+        concepts_csv=concepts_csv,
+        relations_csv=relations_csv,
+        output_dir=output_path,
+    )
+
+    # -------------------------------------------------------------------------
     # Downstream: Educational Knowledge Graph
     # -------------------------------------------------------------------------
     print("\n[*] Building Downstream Educational Knowledge Graph...")
@@ -231,7 +244,10 @@ def run_educational_pipeline(
     print(f"{'='*65}")
     print(f"  Canonical Concepts : {G.number_of_nodes()}")
     print(f"  Classified Relations: {G.number_of_edges()}")
+    print(f"  Graph Density      : {graph_summary.get('density')}")
+    print(f"  Communities        : {graph_summary.get('communities')}")
     print(f"  Output Datasets    : {concepts_csv.name}, {relations_csv.name}")
+    print(f"  Graph Stats Cache  : {concept_stats_csv.name}, {graph_summary_json.name}")
     print(f"  Interactive Graph  : {Path(output_html).resolve()}")
     print(f"{'='*65}\n")
 

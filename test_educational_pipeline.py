@@ -69,14 +69,25 @@ def run_verification():
     assert target_ids.issubset(concept_ids), f"Dangling target_ids: {target_ids - concept_ids}"
     print(f"  [PASS] Referential integrity satisfied (all source_id and target_id exist in concepts.csv).")
 
-    # 6. Weight bounds
-    assert (df_r["weight"] >= 1).all() and (df_r["weight"] <= 10).all(), "Weights outside [1, 10] range!"
-    print(f"  [PASS] Relation weights valid (min={df_r['weight'].min()}, max={df_r['weight'].max()}).")
+    # 6. Weight bounds (AHP-derived relevance score, normalized to [0, 1])
+    assert (df_r["weight"] >= 0).all() and (df_r["weight"] <= 1).all(), "Weights outside [0, 1] range!"
+    print(f"  [PASS] Relation weights valid (min={df_r['weight'].min():.2f}, max={df_r['weight'].max():.2f}).")
 
     # 7. HTML Visualization Output
     html_path = Path("./docs/index.html")
     assert html_path.exists() and html_path.stat().st_size > 1000, "Visualization HTML not created or empty!"
     print(f"  [PASS] docs/index.html successfully generated ({html_path.stat().st_size:,} bytes).")
+
+    # 8. Graph Statistics Repository
+    stats_csv = concepts_csv.parent / "concept_stats.csv"
+    summary_json = concepts_csv.parent / "graph_summary.json"
+    assert stats_csv.exists(), f"Missing {stats_csv}"
+    assert summary_json.exists(), f"Missing {summary_json}"
+    df_stats = pd.read_csv(stats_csv)
+    assert len(df_stats) == len(df_c), "concept_stats.csv row count doesn't match concepts.csv!"
+    for col in ["pagerank", "degree_centrality", "betweenness_centrality", "clustering_coefficient", "community"]:
+        assert col in df_stats.columns, f"concept_stats.csv missing column: {col}"
+    print(f"  [PASS] Graph statistics computed for all {len(df_stats)} concepts ({stats_csv.name}, {summary_json.name}).")
 
     print("=" * 60)
     print("  ALL VERIFICATION TESTS PASSED SUCCESSFULLY!")

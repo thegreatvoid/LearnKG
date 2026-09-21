@@ -9,6 +9,7 @@ from .chunker import create_structure_aware_chunks, EducationalChunk
 from .normalizer import ConceptNormalizer, NormalizedConcept
 from .relation_extractor import RelationManager, ExtractedRelation, VALID_ONTOLOGY_TYPES
 from .dataset_builder import build_and_save_dataset, CONCEPTS_COLUMNS, RELATIONS_COLUMNS
+from .graph_stats import compute_graph_statistics
 from .graph_builder import build_educational_graph
 
 __all__ = [
@@ -27,5 +28,6 @@ __all__ = [
     "build_and_save_dataset",
     "CONCEPTS_COLUMNS",
     "RELATIONS_COLUMNS",
+    "compute_graph_statistics",
     "build_educational_graph",
 ]
