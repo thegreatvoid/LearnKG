@@ -31,7 +31,7 @@ from .schemas import (
 )
 from .subgraph_builder import build_localized_subgraph
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data_output" / "cureus"
+DATA_DIR = Path(__file__).resolve().parent.parent / "data_output" / "deep_learning"
 
 app = FastAPI(title="KnowledgeGraph AI")
 app.add_middleware(

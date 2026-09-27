@@ -1,0 +1,244 @@
+concept_id,concept_name,aliases,concept_type,definition,chapter,section,page,chunk_id,evidence
+C0001,ICA,,Component,.490 13.2IndependentComponentAnalysis(ICA).,,,6,b74daf97a96a47c5bdbfdb12a6e3208b,.490 13.2IndependentComponentAnalysis(ICA).
+C0002,AB,,Component,"CHAPTER2.LINEARALGEBRA Matrixproductoperationshavemanyusefulpropertiesthatmakemathematical analysis ofmatrices moreconvenient.For example, matrix multiplication is distributive: AB C AB AC(+) = + .",,,51,c2cbb080f14a457e831e17f573338a54,"CHAPTER2.LINEARALGEBRA Matrixproductoperationshavemanyusefulpropertiesthatmakemathematical analysis ofmatrices moreconvenient.For example, matrix multiplication is distributive: AB C AB AC(+) = + ."
+C0003,Xy Matrixderivativesofwithrespecttoy,,Formula,,,,15,c990350956814ee585f34762a6929cca,
+C0004,PQ,,Component,,,,15,c990350956814ee585f34762a6929cca,
+C0005,Calculus,,Theory,,,,15,c990350956814ee585f34762a6929cca,
+C0006,Xy Tensorcontainingderivativesofywithrespectto,,Formula,,,,15,c990350956814ee585f34762a6929cca,
+C0007,DKL,,Component,,,,15,c990350956814ee585f34762a6929cca,
+C0008,AI,AIS,Component,"Ifyouknowthatyourproblemfallsintoan“AI-complete”categorylikeobject recognition,speechrecognition,machinetranslation,andsoon,thenyouarelikely todowellbybeginningwithanappropriatedeeplearningmodel.",,,441,bc02372527e448b2929b3b5f3acf2c3c,"Ifyouknowthatyourproblemfallsintoan“AI-complete”categorylikeobject recognition,speechrecognition,machinetranslation,andsoon,thenyouarelikely todowellbybeginningwithanappropriatedeeplearningmodel."
+C0009,IBM,,Component,,,,18,68e64efe5c9c445883c625ad66640fac,
+C0010,MLP,,Component,,,,21,74b6966989ee46448224f74b989bd078,
+C0011,CAR,,Component,,,,22,567045516fdf400ea60137cab6c3bd50,
+C0012,Deep Learning,,Theory,Applications Part III: Deep Learning Research 13.,,,28,8c61fbfba8ca41bb8dd0da63b6d49d1e,Applications Part III: Deep Learning Research 13.
+C0013,Machine Learning,ML,Theory,"https://see.stanford.edu/materials/aimlcs229/ML-advice.pdf.421 Niesler,T.R.,Whittaker,E.W.D.,andWoodland,P.C.(1998).Comparisonofpart-of- speechandautomaticallyderivedcategory-basedlanguagemodelsforspeechrecognition.",,,776,0f728e56cac04a8f819878fcce3263eb,"https://see.stanford.edu/materials/aimlcs229/ML-advice.pdf.421 Niesler,T.R.,Whittaker,E.W.D.,andWoodland,P.C.(1998).Comparisonofpart-of- speechandautomaticallyderivedcategory-basedlanguagemodelsforspeechrecognition."
+C0014,Applied Math,,Component,Introduction Part I: Applied Math and Machine Learning Basics 2.,,,28,8c61fbfba8ca41bb8dd0da63b6d49d1e,Introduction Part I: Applied Math and Machine Learning Basics 2.
+C0015,Deep Networks,,Model,Machine Learning  Basics Part II: Deep Networks: Modern Practices 6.,,,28,8c61fbfba8ca41bb8dd0da63b6d49d1e,Machine Learning  Basics Part II: Deep Networks: Modern Practices 6.
+C0016,Information Theory,IT,Theory,Probability and  Information Theory 4.,,,28,8c61fbfba8ca41bb8dd0da63b6d49d1e,Probability and  Information Theory 4.
+C0017,Modern Practices,MP,Component,Machine Learning  Basics Part II: Deep Networks: Modern Practices 6.,,,28,8c61fbfba8ca41bb8dd0da63b6d49d1e,Machine Learning  Basics Part II: Deep Networks: Modern Practices 6.
+C0018,Deep Feedforward,,Component,,,,28,8c61fbfba8ca41bb8dd0da63b6d49d1e,
+C0019,Machine Learning Basics,,Theory,Introduction Part I: Applied Math and Machine Learning Basics 2.,,,28,8c61fbfba8ca41bb8dd0da63b6d49d1e,Introduction Part I: Applied Math and Machine Learning Basics 2.
+C0020,Monte Carlo,,Component,,,,28,8c61fbfba8ca41bb8dd0da63b6d49d1e,
+C0021,Deep Generative,,Component,Deep Generative  Models Figure1.6:Thehigh-levelorganizationofthebook.Anarrowfromonechaptertoanother indicatesthattheformerchapterisprerequisitematerialforunderstandingthelatter.,,,28,8c61fbfba8ca41bb8dd0da63b6d49d1e,Deep Generative  Models Figure1.6:Thehigh-levelorganizationofthebook.Anarrowfromonechaptertoanother indicatesthattheformerchapterisprerequisitematerialforunderstandingthelatter.
+C0022,II,,Component,Machine Learning  Basics Part II: Deep Networks: Modern Practices 6.,,,28,8c61fbfba8ca41bb8dd0da63b6d49d1e,Machine Learning  Basics Part II: Deep Networks: Modern Practices 6.
+C0023,III,,Component,"Finally,manydeeplearningalgorithmsprovidesomesortofguaranteeabout theresultsproducedateachstep.Forexample,inpart,wewillseesomeapprox-III imateinferencealgorithmsthatworkbyusingalgebraicsolutionstooptimization problems.",,,456,0d516e1e98be4649ae619e4e3a6cbf8c,"Finally,manydeeplearningalgorithmsprovidesomesortofguaranteeabout theresultsproducedateachstep.Forexample,inpart,wewillseesomeapprox-III imateinferencealgorithmsthatworkbyusingalgebraicsolutionstooptimization problems."
+C0024,Linear Algebra,,Component,,,,28,8c61fbfba8ca41bb8dd0da63b6d49d1e,
+C0025,Probabilistic Models,,Model,Structured  Probabilistic Models 17.,,,28,8c61fbfba8ca41bb8dd0da63b6d49d1e,Structured  Probabilistic Models 17.
+C0026,Deep Learning Research,,Algorithm,Applications Part III: Deep Learning Research 13.,,,28,8c61fbfba8ca41bb8dd0da63b6d49d1e,Applications Part III: Deep Learning Research 13.
+C0027,Linear Factor,,Component,,,,28,8c61fbfba8ca41bb8dd0da63b6d49d1e,
+C0028,Linearmodels,,Model,"Modelsbasedonthef(xw,)usedbytheperceptronandADALINEarecalled linearmodels.Thesemodelsremainsomeofthemostwidelyusedmachine learningmodels,thoughinmanycasestheyaretrainedindiﬀerentwaysthanthe originalmodelsweretrained.",,,31,5d5cc494cd4046beaf32fe386d1f8afd,"Modelsbasedonthef(xw,)usedbytheperceptronandADALINEarecalled linearmodels.Thesemodelsremainsomeofthemostwidelyusedmachine learningmodels,thoughinmanycasestheyaretrainedindiﬀerentwaysthanthe originalmodelsweretrained."
+C0029,NCAP,,Component,,,,34,1e03285c9ce84440b7b8ab24da26967c,
+C0030,CIFAR,,Component,,,,34,1e03285c9ce84440b7b8ab24da26967c,
+C0031,MNIST,,Component,,,,37,5e16bcddedb84990b1dc9515bf4fcdfd,
+C0032,WMT,,Component,,,,37,5e16bcddedb84990b1dc9515bf4fcdfd,
+C0033,ILSVRC,,Component,"ILSVRC classiﬁcationerrorrate Figure1.12:SincedeepnetworksreachedthescalenecessarytocompeteintheImageNet LargeScaleVisualRecognitionChallenge,theyhaveconsistentlywonthecompetition everyyear,andyieldedlowerandlowererrorrateseachtime.",,,46,f205e8e755eb4d138d2940f54143424b,"ILSVRC classiﬁcationerrorrate Figure1.12:SincedeepnetworksreachedthescalenecessarytocompeteintheImageNet LargeScaleVisualRecognitionChallenge,theyhaveconsistentlywonthecompetition everyyear,andyieldedlowerandlowererrorrateseachtime."
+C0034,NIST,,Component,"CHAPTER1.INTRODUCTION Figure1.9:ExampleinputsfromtheMNISTdataset.The“NIST”standsforNational InstituteofStandardsandTechnology,theagencythatoriginallycollectedthisdata.",,,38,79f9344eb6aa42a79f3742102a9c4f8e,"CHAPTER1.INTRODUCTION Figure1.9:ExampleinputsfromtheMNISTdataset.The“NIST”standsforNational InstituteofStandardsandTechnology,theagencythatoriginallycollectedthisdata."
+C0035,GPU,,Component,,,,40,3e6d6b176f714db19c5d5cb75937f02f,
+C0036,OMP,,Component,CHAPTER7.REGULARIZATIONFORDEEPLEARNING OMP-kwiththevalueofkspeciﬁedtoindicatethenumberofnon-zerofeatures allowed.,,,272,374e93a9dd4244e0a23168edc3a55ad1,CHAPTER7.REGULARIZATIONFORDEEPLEARNING OMP-kwiththevalueofkspeciﬁedtoindicatethenumberofnon-zerofeatures allowed.
+C0037,AC,,Component,"CHAPTER2.LINEARALGEBRA Matrixproductoperationshavemanyusefulpropertiesthatmakemathematical analysis ofmatrices moreconvenient.For example, matrix multiplication is distributive: AB C AB AC(+) = + .",,,51,c2cbb080f14a457e831e17f573338a54,"CHAPTER2.LINEARALGEBRA Matrixproductoperationshavemanyusefulpropertiesthatmakemathematical analysis ofmatrices moreconvenient.For example, matrix multiplication is distributive: AB C AB AC(+) = + ."
+C0038,ABC,,Component,(2.6) Itisalsoassociative: ABC ABC( ) = ( ).,,,51,c2cbb080f14a457e831e17f573338a54,(2.6) Itisalsoassociative: ABC ABC( ) = ( ).
+C0039,AA,,Component,"CHAPTER2.LINEARALGEBRA matrixproductsandthetraceoperator.Forexample,thetraceoperatorprovides analternativewayofwritingtheFrobeniusnormofamatrix: ||||AF=  Tr(AA).",,,63,0b0aa0e6ad2c4d569c08a376ed607c8b,"CHAPTER2.LINEARALGEBRA matrixproductsandthetraceoperator.Forexample,thetraceoperatorprovides analternativewayofwritingtheFrobeniusnormofamatrix: ||||AF=  Tr(AA)."
+C0040,AF,,Component,"(2.32) Sometimeswemayalsowishtomeasurethesizeofamatrix.Inthecontext ofdeeplearning,themostcommonwaytodothisiswiththeotherwiseobscure Frobeniusnorm: ||||AF=  i,j A2 i,j, (2.33) whichisanalogoustotheL2normofavector.",,,56,d69c194ef3c9418080e6759c76dde394,"(2.32) Sometimeswemayalsowishtomeasurethesizeofamatrix.Inthecontext ofdeeplearning,themostcommonwaytodothisiswiththeotherwiseobscure Frobeniusnorm: ||||AF=  i,j A2 i,j, (2.33) whichisanalogoustotheL2normofavector."
+C0041,QQ,,Component,,,,60,9d739a3759644463a7d81a0d99d0956d,
+C0042,SVD,,Component,,,,60,9d739a3759644463a7d81a0d99d0956d,
+C0043,UDV,,Component,"(2.42) Thesingularvaluedecompositionissimilar,exceptthistimewewillwriteA asaproductofthreematrices: A UDV= .",,,61,af23fee46e2b40a8b874ba24e5235f71,"(2.42) Thesingularvaluedecompositionissimilar,exceptthistimewewillwriteA asaproductofthreematrices: A UDV= ."
+C0044,VD,,Component,,,,62,d7cca00b91f84902bc30230a531a2ef3,
+C0045,BA,,Component,"(2.52) Thisinvariancetocyclicpermutationholdseveniftheresultingproducthasa diﬀerentshape.Forexample,forA∈Rmn×andB∈Rnm×,wehave Tr( ) = Tr( )AB BA (2.53) eventhoughAB∈Rmm× andBA∈Rnn×.",,,63,0b0aa0e6ad2c4d569c08a376ed607c8b,"(2.52) Thisinvariancetocyclicpermutationholdseveniftheresultingproducthasa diﬀerentshape.Forexample,forA∈Rmn×andB∈Rnm×,wehave Tr( ) = Tr( )AB BA (2.53) eventhoughAB∈Rmm× andBA∈Rnn×."
+C0046,CAB,,Component,,,,63,0b0aa0e6ad2c4d569c08a376ed607c8b,
+C0047,BCA,,Component,,,,63,0b0aa0e6ad2c4d569c08a376ed607c8b,
+C0048,DD,,Component,"(2.66) Usingafurthermatrixmultiplication,wecanalsodeﬁnethePCAreconstruction operation: r gf() = x (()) = x DDx.",,,66,d77fa04824004814a34023e5c1f7f730,"(2.66) Usingafurthermatrixmultiplication,wecanalsodeﬁnethePCAreconstruction operation: r gf() = x (()) = x DDx."
+C0049,PMF,,Component,,,,72,2a1f70e45d8647be84114c870b10d13a,
+C0050,PDF,,Component,,,,74,edfc97192bf74b4a99e80b5a5fd8b9d1,
+C0051,PP,,Component,,,,76,6f7b24443eec41a08053932deae209db,
+C0052,Ix Px,,Component,"Inordertosatisfyallthreeoftheseproperties,wedeﬁnetheself-information ofaneventxtobe= x Ix Px.() = log− () (3.48) Inthisbook,wealwaysuselogtomeanthenaturallogarithm,withbasee.Our deﬁnitionofI(x)isthereforewritteninunitsofnats.Onenatistheamountof 73",,,89,4dc03ee76d124b5eab9931783bd5b630,"Inordertosatisfyallthreeoftheseproperties,wedeﬁnetheself-information ofaneventxtobe= x Ix Px.() = log− () (3.48) Inthisbook,wealwaysuselogtomeanthenaturallogarithm,withbasee.Our deﬁnitionofI(x)isthereforewritteninunitsofnats.Onenatistheamountof 73"
+C0053,QP,,Component,,,,90,623cb01d8fbb44a098030394ecba9f21,
+C0054,KL,,Component,,,,90,623cb01d8fbb44a098030394ecba9f21,
+C0055,HP,,Component,,,,91,c4f9bb217f774f9c91bceffafbc1e1ce,
+C0056,Probability Density,,Component,,,,92,e77186e3a8b74034bd315776ed6d1fde,
+C0057,Minimum Maximum Saddlepoint,,Component,,,,100,8bf71f7467b74c0ab2ec5069f5cb526e,
+C0058,KKT,,Component,"TheKarush–Kuhn–Tucker(KKT)approach1providesaverygeneralso- lutiontoconstrainedoptimization.WiththeKKTapproach,weintroducea newfunctioncalledthegeneralizedLagrangianorgeneralizedLagrange function.",,,110,da01462c4ac741f59816450bb055cafe,"TheKarush–Kuhn–Tucker(KKT)approach1providesaverygeneralso- lutiontoconstrainedoptimization.WiththeKKTapproach,weintroducea newfunctioncalledthegeneralizedLagrangianorgeneralizedLagrange function."
+C0059,"Stochasticgradient
+Descent",,Algorithm,Mostdeeplearning algorithmsare basedonan optimizationalgorithmcalled stochasticgradient descent.Wedescribehowtocombinevariousalgorithmcomponentssuchas 98,,,114,795847a90f834223bff5e81c3991e6b3,Mostdeeplearning algorithmsare basedonan optimizationalgorithmcalled stochasticgradient descent.Wedescribehowtocombinevariousalgorithmcomponentssuchas 98
+C0060,MSE,,Component,"Empirically,cross-validationishighlysuccessfulonmanyreal-worldtasks.Alter- natively,wecanalsocomparethemeansquarederror(MSE)oftheestimates: MSE = [(Eˆθm−θ)2] (5.53) = Bias(ˆθm)2+Var(ˆθm) (5.54) 129",,,145,7d1a1476796e45ee91629f6a043c83a3,"Empirically,cross-validationishighlysuccessfulonmanyreal-worldtasks.Alter- natively,wecanalsocomparethemeansquarederror(MSE)oftheestimates: MSE = [(Eˆθm−θ)2] (5.53) = Bias(ˆθm)2+Var(ˆθm) (5.54) 129"
+C0061,Representationalcapacityofthem,,Component,,,,129,edcc2c2b243d4f49bca987541daf55e1,
+C0062,ADD,,Component,,,,139,4ff99e90898042c886451489a8eb0670,
+C0063,SE,,Component,"Thevarianceofanestimatorissimplythevariance Var(ˆθ) (5.45) wheretherandomvariableisthetrainingset.Alternately,thesquarerootofthe varianceiscalledthe ,denotedstandarderror SE(ˆθ).",,,143,04049adaf5cf40a393c2e69f5c30abbc,"Thevarianceofanestimatorissimplythevariance Var(ˆθ) (5.45) wheretherandomvariableisthetrainingset.Alternately,thesquarerootofthe varianceiscalledthe ,denotedstandarderror SE(ˆθ)."
+C0064,Bias Generalization,,Component,,,,146,e71af7aae6d44fc4a6036a8535c84c39,
+C0065,YX,,Component,,,,149,108ace11d0dc484bbe72c17eba7c8f82,
+C0066,NLL,,Component,,,,149,108ace11d0dc484bbe72c17eba7c8f82,
+C0067,MAP,,Component,,,,154,8e98e83c53ef414ab1f1ca0d1cc84436,
+C0068,Kernel,,Component,,,,157,07dff85445c6401f80c4c6a51e726f33,
+C0069,RBF,,Component,,,,158,3ec787e3748542b4b074dbad90a053ab,
+C0070,XW,,Component,"Mostneuralnetworklayerstaketheformofφ(XW+b)whereφissome ﬁxednonlinearactivationfunctionsuchastherectiﬁedlineartransformation.It isnaturaltowonderwhetherweshouldapplybatchnormalizationtotheinput X,ortothetransformedvalueXW+b.",,,336,68898ebba4c94412a4a4e63e3088eaeb,"Mostneuralnetworklayerstaketheformofφ(XW+b)whereφissome ﬁxednonlinearactivationfunctionsuchastherectiﬁedlineartransformation.It isnaturaltowonderwhetherweshouldapplybatchnormalizationtotheinput X,ortothetransformedvalueXW+b."
+C0071,WW,,Component,U U V V W W o(t−1)o(t−1) h h o o y y L L x x o()to()t o(+1)to(+1)t L(t−1)L(t−1) L()tL()t L(+1)tL(+1)t y(t−1)y(t−1) y()ty()t y(+1)ty(+1)t h(t−1)h(t−1) h()th()t h(+1)th(+1)t x(t−1)x(t−1) x()tx()t x(+1)tx(+1)t W WW W W W W W h( )...h( )...,,,394,c417bc47699049e3b1dca8a200a0364b,U U V V W W o(t−1)o(t−1) h h o o y y L L x x o()to()t o(+1)to(+1)t L(t−1)L(t−1) L()tL()t L(+1)tL(+1)t y(t−1)y(t−1) y()ty()t y(+1)ty(+1)t h(t−1)h(t−1) h()th()t h(+1)th(+1)t x(t−1)x(t−1) x()tx()t x(+1)tx(+1)t W WW W W W W W h( )...h( )...
+C0072,Outputlayer,,Component,,,,185,4be2fb4370c64f81bd50ac4450fb9096,
+C0073,Gradient,,Formula,()and ()usereinforcementlearningtechniques(policy2015Bengioetal.2015a gradient)tolearnaformofconditionaldropoutonblocksofhiddenunitsandget anactualreductionincomputationalcostwithoutimpactingnegativelyonthe qualityoftheapproximation.,,,466,66d1c56d41a84cbb86f082ee3684d80f,()and ()usereinforcementlearningtechniques(policy2015Bengioetal.2015a gradient)tolearnaformofconditionaldropoutonblocksofhiddenunitsandget anactualreductionincomputationalcostwithoutimpactingnegativelyonthe qualityoftheapproximation.
+C0074,JL,,Component,,,,228,8006c742abdd470e8dfd0941c81a9391,
+C0075,Derivative,,Formula,,,,230,d2784883c50048688dd027e5c4088a45,
+C0076,XG,,Component,,,,232,1bcf975ccf62469cbe281c008e6fef97,
+C0077,GG,,Component,,,,233,b86f84ce9a864f97b085680973223e96,
+C0078,JJ,,Component,,,,235,03c32eabea3344e4861e1bdf7749c1cd,
+C0079,MLE,,Component,,,,235,03c32eabea3344e4861e1bdf7749c1cd,
+C0080,GW,,Component,,,,236,b3b761e9e8e24550a5bde6e0dfb2efe1,
+C0081,HJ,,Component,,,,236,b3b761e9e8e24550a5bde6e0dfb2efe1,
+C0082,ABCD,,Component,,,,239,a9744e97bc6440ddbc5a7d01983c0ac8,
+C0083,IQ,,Component,,,,248,22165665e8e142c69230b2f5adfbe6a3,
+C0084,JW,,Component,,,,258,aff957cdcf4742f6836997b89c3a5c4e,
+C0085,255,,Component,Thisproblemcanbesolved eﬃcientlywhenWisconstrainedtobeorthogonal.Thismethodisoftencalled 255,,,271,72f6d813f10844659759f7e5207ecabb,Thisproblemcanbesolved eﬃcientlywhenWisconstrainedtobeorthogonal.Thismethodisoftencalled 255
+C0086,Boosting,,Component,,,,274,dc7fbea4ee984816a811410e19decc27,
+C0087,Neural Networks,,Model,Goodfellow 2014betal.()showedthatoneoftheprimarycausesofthese adversarial examplesis excessive linearity.Neural networks arebuilt out of primarilylinearbuildingblocks.,,,284,1c1ae17836f84bba87c3a50c4de4c0d3,Goodfellow 2014betal.()showedthatoneoftheprimarycausesofthese adversarial examplesis excessive linearity.Neural networks arebuilt out of primarilylinearbuildingblocks.
+C0088,Normal Tangent,,Component,"CHAPTER7.REGULARIZATIONFORDEEPLEARNING x1 x2 Normal Tangent Figure7.9: Illustrationofthemainideaofthetangentpropalgorithm( ,Simardetal.",,,288,edded9024db8449b9708fa5a857486e2,"CHAPTER7.REGULARIZATIONFORDEEPLEARNING x1 x2 Normal Tangent Figure7.9: Illustrationofthemainideaofthetangentpropalgorithm( ,Simardetal."
+C0089,Minibatchorminibatchstochastic,,Component,,,,295,992878d22d3e4e8384aa19499eaa6afa,
+C0090,SGD,,Component,"Currently,themostpopularoptimizationalgorithmsactivelyinuseinclude SGD,SGDwithmomentum,RMSProp,RMSPropwithmomentum,AdaDelta andAdam.Thechoiceofwhichalgorithmtouse,atthispoint,seemstodepend 309",,,325,115d536ae3534eb78fe1dc6e46b4c45d,"Currently,themostpopularoptimizationalgorithmsactivelyinuseinclude SGD,SGDwithmomentum,RMSProp,RMSPropwithmomentum,AdaDelta andAdam.Thechoiceofwhichalgorithmtouse,atthispoint,seemstodepend 309"
+C0091,Thechoiceof Gaussian,,Component,,,,318,1a4d7eb57313490a91781f57dfd8af22,
+C0092,Adam,,Algorithm,,,,324,273e2d69e1f44748a82c838e5205b0e5,
+C0093,RMSProp,,Algorithm,"Currently,themostpopularoptimizationalgorithmsactivelyinuseinclude SGD,SGDwithmomentum,RMSProp,RMSPropwithmomentum,AdaDelta andAdam.Thechoiceofwhichalgorithmtouse,atthispoint,seemstodepend 309",,,325,115d536ae3534eb78fe1dc6e46b4c45d,"Currently,themostpopularoptimizationalgorithmsactivelyinuseinclude SGD,SGDwithmomentum,RMSProp,RMSPropwithmomentum,AdaDelta andAdam.Thechoiceofwhichalgorithmtouse,atthispoint,seemstodepend 309"
+C0094,BFGS,,Component,"8.6.3BFGS TheBroyden–Fletcher–Goldfarb–Shanno(BFGS)algorithmattemptsto bringsomeoftheadvantagesofNewton’smethodwithoutthecomputational burden.In thatrespect, BFGSissimilartotheconjugategradientmethod.",,,332,381742be59044ce987e7a79e24290d77,"8.6.3BFGS TheBroyden–Fletcher–Goldfarb–Shanno(BFGS)algorithmattemptsto bringsomeoftheadvantagesofNewton’smethodwithoutthecomputational burden.In thatrespect, BFGSissimilartotheconjugategradientmethod."
+C0095,Limited Memory,,Component,,,,333,8716abbe2dd6400a885216f51357abff,
+C0096,HW,,Component,"Forexample,considerthecostfunction J,(HW) =  i,j |Hi,j|+  i,j  X W− H 2 i,j .",,,337,2c808f0bf16941649daa5e5368fd336a,"Forexample,considerthecostfunction J,(HW) =  i,j |Hi,j|+  i,j  X W− H 2 i,j ."
+C0097,NP,,Component,,,,344,b07b6ce2fd804baf97d8c778fd56d6e8,
+C0098,Convolution,,Component,,,,346,154143393c0b499e8e8de66844fa5d13,
+C0099,Convolutional Layer,,Component,,,,357,417b6ed52f7742cf8ca9b796430bae72,
+C0100,STAGE,,Component,,,,359,86882a8b11034e97a0c62a844ee17a7a,
+C0101,Output Tensor,,Component,,,,370,0c2a2e59693c42e4b81a4326ff9e3e1b,
+C0102,Input Tensor,,Component,,,,370,0c2a2e59693c42e4b81a4326ff9e3e1b,
+C0103,KV,,Component,,,,373,4736d163671c4c8d883ac02f8c11f42c,
+C0104,KG,,Component,"Todoso,wecanuseafunction h,,s(KG)i,j,k=∂ ∂Vi,j,k J ,(VK) (9.12) =  l,m s.t.",,,373,4736d163671c4c8d883ac02f8c11f42c,"Todoso,wecanuseafunction h,,s(KG)i,j,k=∂ ∂Vi,j,k J ,(VK) (9.12) =  l,m s.t."
+C0105,GV,,Component,,,,373,4736d163671c4c8d883ac02f8c11f42c,
+C0106,VK,,Component,"Todoso,wecanuseafunction h,,s(KG)i,j,k=∂ ∂Vi,j,k J ,(VK) (9.12) =  l,m s.t.",,,373,4736d163671c4c8d883ac02f8c11f42c,"Todoso,wecanuseafunction h,,s(KG)i,j,k=∂ ∂Vi,j,k J ,(VK) (9.12) =  l,m s.t."
+C0107,KE,,Component,,,,374,745373c77f164226a9bc02b287d11239,
+C0108,HE,,Component,,,,374,745373c77f164226a9bc02b287d11239,
+C0109,KH,,Component,,,,374,745373c77f164226a9bc02b287d11239,
+C0110,VW,,Component,whilenotconverged(meanﬁeldinferenceloop)do ˆH(1)←σ  VW(1)+ˆH(2)W(2)  .,,,686,3ab7f339b20d40f59e9eeded74eeffab,whilenotconverged(meanﬁeldinferenceloop)do ˆH(1)←σ  VW(1)+ˆH(2)W(2)  .
+C0111,Singlechannel Multi,,Component,CHAPTER9.CONVOLUTIONALNETWORKS Singlechannel Multi-channel 1-DAudio waveform:The axis we convolveovercorrespondsto time.Wediscretizetimeand measuretheamplitudeofthe waveformoncepertimestep.,,,377,21d8e1cb52434e9eb16c96afebf96b56,CHAPTER9.CONVOLUTIONALNETWORKS Singlechannel Multi-channel 1-DAudio waveform:The axis we convolveovercorrespondsto time.Wediscretizetimeand measuretheamplitudeofthe waveformoncepertimestep.
+C0112,LGN,,Component,,,,382,8adddaad1cad40ff84441ec014e61d67,
+C0113,VL,,Component,,,,402,41d9961c2c0048b3959b999168e68732,
+C0114,UL,,Component,,,,402,41d9961c2c0048b3959b999168e68732,
+C0115,WL,,Component,,,,402,41d9961c2c0048b3959b999168e68732,
+C0116,RNN,,Component,,,,411,4afc38bf27b74969837770cae3eadce5,
+C0117,Reservoircomputing,,Component,,,,420,4cd02a9fdc314a39ad60c6199208fbbd,
+C0118,LSTM,,Component,,,,426,eafc206f12a647c1ac77ac5a752c4139,
+C0119,Reason Caveats,,Component,Reason Caveats Numberofhid- denunits increasedIncreasingthenumberof hiddenunitsincreasesthe representationalcapacity ofthemodel.,,,447,0f1d0d07d48e430489af43a82d1bf939,Reason Caveats Numberofhid- denunits increasedIncreasingthenumberof hiddenunitsincreasesthe representationalcapacity ofthemodel.
+C0120,Grid Random,,Component,,,,449,6517f898187f456999f0c53a45c44fb0,
+C0121,TPE,,Component,,,,452,dee17171679f454dad89b6adaeac684c,
+C0122,NVIDIA,,Component,"NVIDIA’sCUDAprogramminglanguage providedawaytowritethisarbitrarycodeinaC-likelanguage.Withtheir relativelyconvenientprogrammingmodel,massiveparallelism,andhighmemory 445",,,461,6ace1e76d371443994f1caaf29e9f12e,"NVIDIA’sCUDAprogramminglanguage providedawaytowritethisarbitrarycodeinaC-likelanguage.Withtheir relativelyconvenientprogrammingmodel,massiveparallelism,andhighmemory 445"
+C0123,GP,,Component,"CHAPTER12.APPLICATIONS bandwidth,GP-GPUsnowoﬀeranidealplatformforneuralnetworkprogramming.",,,462,9946486c33e34789af3f3b7693182fb5,"CHAPTER12.APPLICATIONS bandwidth,GP-GPUsnowoﬀeranidealplatformforneuralnetworkprogramming."
+C0124,GCN,,Component,"x0 GCN,= 0λ Figure12.1:GCNmapsexamplesontoasphere.(Left)Rawinputdatamayhaveanynorm.",,,472,2dc242463c8a439c9049d361d2b81789,"x0 GCN,= 0λ Figure12.1:GCNmapsexamplesontoasphere.(Left)Rawinputdatamayhaveanynorm."
+C0125,LCN,,Component,,,,473,8df5fab7e228437cbc30a310091e59ab,
+C0126,ASR,,Component,,,,474,c0fbbd9b0d9e4f9da2c0373810973ec2,
+C0127,HMM,,Component,,,,474,c0fbbd9b0d9e4f9da2c0373810973ec2,
+C0128,NLP,,Component,,,,477,3f51c832117a4b57a9271894d074186d,
+C0129,DOGRAN,,Component,"Finally,thelastwordmaybepredictedusingthetypicalcase,ofusingthecondi- tionaldistributionP(AWAYDOGRAN| ).Puttingthistogetherwithequation,12.6 weobtain: P P( ) = THEDOGRANAWAY 3( )THEDOGRANP3( )DOGRANAWAY/P2( )DOGRAN.",,,478,e55c69e1eba945cba17a3045335a68d2,"Finally,thelastwordmaybepredictedusingthetypicalcase,ofusingthecondi- tionaldistributionP(AWAYDOGRAN| ).Puttingthistogetherwithequation,12.6 weobtain: P P( ) = THEDOGRANAWAY 3( )THEDOGRANP3( )DOGRANAWAY/P2( )DOGRAN."
+C0130,MCMC,,Component,,,,504,1e5eb1a61c62447397b1c5cad8f12cd2,
+C0131,PCA,,Component,,,,506,aabaca7d44324cc4bd06345687bc0afb,
+C0132,SFA,,Component,13.3SlowFeatureAnalysis Slowfeatureanalysis(SFA)isalinearfactormodelthatusesinformationfrom 493,,,509,1ff2f014bb24487cb7753dee29af41e7,13.3SlowFeatureAnalysis Slowfeatureanalysis(SFA)isalinearfactormodelthatusesinformationfrom 493
+C0133,DAE,,Component,"14.5DenoisingAutoencoders Thedenoisingautoencoder(DAE)isanautoencoderthatreceivesacorrupted datapointasinputandistrainedtopredicttheoriginal,uncorrupteddatapoint asitsoutput.",,,526,fda559729fe142688fe9b39ddf44ce46,"14.5DenoisingAutoencoders Thedenoisingautoencoder(DAE)isanautoencoderthatreceivesacorrupted datapointasinputandistrainedtopredicttheoriginal,uncorrupteddatapoint asitsoutput."
+C0134,LL,,Component,"CHAPTER14.AUTOENCODERS ˜x˜x LL h h f g x x C(˜xx|) Figure14.3:Thecomputationalgraphofthecostfunctionforadenoisingautoencoder, whichistrainedtoreconstructthecleandatapointxfromitscorruptedversion˜x.",,,527,6912aa2074fc4e50891408248ce502d6,"CHAPTER14.AUTOENCODERS ˜x˜x LL h h f g x x C(˜xx|) Figure14.3:Thecomputationalgraphofthecostfunctionforadenoisingautoencoder, whichistrainedtoreconstructthecleandatapointxfromitscorruptedversion˜x."
+C0135,CAE,,Component,,,,529,fb35791681af4f6e8edd0c4df5a98dd3,
+C0136,PSD,,Component,,,,539,b35725e079a745bbaac6146624c18dc5,
+C0137,XY,,Component,,,,546,a6b762d0e3044f3996b17a25695a21a0,
+C0138,Input Reconstruction,,Component,,,,560,10e28779da0c478986f566a9f821e6ad,
+C0139,SPN,,Component,,,,570,ea74943c409c4bd2af7268023e294113,
+C0140,RGB,,Component,,,,576,3bd2369fe43b4cd1be8702f54446760e,
+C0141,Alice Bob Carol,,Component,,,,580,0ebdf08d8c1f4773858deada417b5dba,
+C0142,EBM,,Component,,,,585,7c4a193eff5047939ea862d875a1470e,
+C0143,Boltzmannmachines,,Component,,,,586,8c441962c1c9483f851467e7d9cc46f6,
+C0144,Structurelearningisdevotedtoth,,Theory,,,,599,8bcc14a96bc8438cb730fcf8cd456160,
+C0145,Loopybeliefpropagation,,Component,,,,602,72f181109e2d47118bb978310c7b8cc7,
+C0146,RBM,,Component,"16.7.1Example:TheRestrictedBoltzmannMachine TherestrictedBoltzmannmachine(RBM)( ,)orSmolensky1986harmonium isthequintessentialexampleofhowgraphicalmodelsareusedfordeeplearning.",,,603,b753be0d219a44e6937702c0c69743b8,"16.7.1Example:TheRestrictedBoltzmannMachine TherestrictedBoltzmannmachine(RBM)( ,)orSmolensky1986harmonium isthequintessentialexampleofhowgraphicalmodelsareusedfordeeplearning."
+C0147,CD,,Component,,,,626,530fcfed9508494a9242bb7ec190aacb,
+C0148,SML,,Component,"ThisincludesCD,SML(PCD),ratio matchingandsoon.Comparedtootherundirectedmodelsusedindeeplearning, theRBMisrelativelystraightforwardtotrainbecausewecancomputeP(h|v) 659",,,675,a08fde4a81634802a877b6fa316febc0,"ThisincludesCD,SML(PCD),ratio matchingandsoon.Comparedtootherundirectedmodelsusedindeeplearning, theRBMisrelativelystraightforwardtotrainbecausewecancomputeP(h|v) 659"
+C0149,PCD,,Component,"ThisincludesCD,SML(PCD),ratio matchingandsoon.Comparedtootherundirectedmodelsusedindeeplearning, theRBMisrelativelystraightforwardtotrainbecausewecancomputeP(h|v) 659",,,675,a08fde4a81634802a877b6fa316febc0,"ThisincludesCD,SML(PCD),ratio matchingandsoon.Comparedtootherundirectedmodelsusedindeeplearning, theRBMisrelativelystraightforwardtotrainbecausewecancomputeP(h|v) 659"
+C0150,GSM,,Component,()foundthat2010 generalizedscorematching(GSM)doesnotworkinhigh dimensionaldiscretespaceswheretheobservedprobabilityofmanyeventsis0.,,,634,511b3053b9a549b68ba73bc39d4d4e99,()foundthat2010 generalizedscorematching(GSM)doesnotworkinhigh dimensionaldiscretespaceswheretheobservedprobabilityofmanyeventsis0.
+C0151,RM,,Component,,,,634,511b3053b9a549b68ba73bc39d4d4e99,
+C0152,NCE,,Component,,,,636,ba4c8845e62a482c8893473217e39ddf,
+C0153,ZB,,Component,,,,639,23e5470a59bc4d919de7793cad943a93,
+C0154,ZA,,Component,,,,639,23e5470a59bc4d919de7793cad943a93,
+C0155,ELBO,,Component,,,,649,6f15a138ca4b40ca8d9e1b61417cff22,
+C0156,EM,,Component,,,,650,a2d326df48134901a3b7ac5503423952,
+C0157,DBN,,Component,"Unlikethedeepbeliefnetwork(DBN), itisanentirelyundirectedmodel.UnliketheRBM,theDBMhasseverallayers oflatentvariables(RBMshavejustone).",,,679,2f2999b7f6e64627bb30076bbad91c67,"Unlikethedeepbeliefnetwork(DBN), itisanentirelyundirectedmodel.UnliketheRBM,theDBMhasseverallayers oflatentvariables(RBMshavejustone)."
+C0158,DBM,,Component,,,,687,21d07290a3b4460bb28261552a9b9e28,
+C0159,JE,,Component,,,,706,65e2c36bca6b42148aa4abdead73674f,
+C0160,GAN,,Component,"Fortunately,GAN learningperformswellwhenthemodelarchitectureandhyperparametersarecare- fullyselected.",,,717,d93596a5552141cf86c7f85da476f455,"Fortunately,GAN learningperformswellwhenthemodelarchitectureandhyperparametersarecare- fullyselected."
+C0161,DCGAN,,Component,,,,717,d93596a5552141cf86c7f85da476f455,
+C0162,NADE,,Component,,,,724,327537fedd624850b242097fd97a098b,
+C0163,Nade-,,Component,,,,725,abe7e571f3e0453f9a78330a17837eea,
+C0164,ICLR,,Component,"BIBLIOGRAPHY Bahdanau,D.,Cho,K.,andBengio,Y.(2015).Neuralmachinetranslationbyjointly learningtoalignandtranslate.In .,,,,,ICLR’2015,arXiv:1409.047325101397418420 465475476,, Bahl,L.R.,Brown,P.,deSouza,P.V.,andMercer,R.L.(1987).",,,738,611396bde97f4fb8b87239de1ae7a63c,"BIBLIOGRAPHY Bahdanau,D.,Cho,K.,andBengio,Y.(2015).Neuralmachinetranslationbyjointly learningtoalignandtranslate.In .,,,,,ICLR’2015,arXiv:1409.047325101397418420 465475476,, Bahl,L.R.,Brown,P.,deSouza,P.V.,andMercer,R.L.(1987)."
+C0165,NIPS,,Component,"284 Brakel,P.,Stroobandt,D.,andSchrauwen,B.(2013).Trainingenergy-basedmodelsfor time-seriesimputation.JournalofMachineLearningResearch,14,2771–2797.,674 698 Brand,M.(2003).Chartingamanifold.In ,pages961–968.MITPress.,NIPS’2002 164 518 727",,,743,0a54f2a319f042f89bec73de90f805a7,"284 Brakel,P.,Stroobandt,D.,andSchrauwen,B.(2013).Trainingenergy-basedmodelsfor time-seriesimputation.JournalofMachineLearningResearch,14,2771–2797.,674 698 Brand,M.(2003).Chartingamanifold.In ,pages961–968.MITPress.,NIPS’2002 164 518 727"
+C0166,COLT,,Component,,,,738,611396bde97f4fb8b87239de1ae7a63c,
+C0167,AAAI,,Component,,,,738,611396bde97f4fb8b87239de1ae7a63c,
+C0168,MA,,Component,"BIBLIOGRAPHY Bengio,Y.andGrandvalet,Y.(2004).Nounbiasedestimatorofthevarianceofk-fold cross-validation.InS.Thrun,L.Saul,andB.Schölkopf,editors,AdvancesinNeural InformationProcessingSystems16(NIPS’03),Cambridge,MA.MITPress,Cambridge.",,,740,5189842a0ff0416b8fe70de58e518c54,"BIBLIOGRAPHY Bengio,Y.andGrandvalet,Y.(2004).Nounbiasedestimatorofthevarianceofk-fold cross-validation.InS.Thrun,L.Saul,andB.Schölkopf,editors,AdvancesinNeural InformationProcessingSystems16(NIPS’03),Cambridge,MA.MITPress,Cambridge."
+C0169,IRO,,Component,,,,739,c99364cec897493a847efbd940078f10,
+C0170,PAMI,,Component,,,,741,f7640f80f3624c629500f672bfef9249,
+C0171,ICML,,Component,"BIBLIOGRAPHY Cho,K.,Raiko,T.,andIlin,A.(2011).Enhancedgradientandadaptivelearningratefor trainingrestrictedBoltzmannmachines.In ,pages105–112.ICML’2011 674 Cho,K.,vanMerriënboer,B.,Gulcehre,C.,Bougares,F.,Schwenk,H.,andBengio,Y.",,,746,3af24fab43244ab88c55abb183b6833d,"BIBLIOGRAPHY Cho,K.,Raiko,T.,andIlin,A.(2011).Enhancedgradientandadaptivelearningratefor trainingrestrictedBoltzmannmachines.In ,pages105–112.ICML’2011 674 Cho,K.,vanMerriënboer,B.,Gulcehre,C.,Bougares,F.,Schwenk,H.,andBengio,Y."
+C0172,NY,,Component,".CambridgeUniversityConvexOptimization Press,NewYork,NY,USA.93 Brady,M.L.,Raghavan,R.,andSlawny,J.(1989).Back-propagationfailstoseparate whereperceptronssucceed.IEEETransactionsonCircuitsandSystems,36,665–674.",,,743,0a54f2a319f042f89bec73de90f805a7,".CambridgeUniversityConvexOptimization Press,NewYork,NY,USA.93 Brady,M.L.,Raghavan,R.,andSlawny,J.(1989).Back-propagationfailstoseparate whereperceptronssucceed.IEEETransactionsonCircuitsandSystems,36,665–674."
+C0173,IEEE,,Component,"Wiley-Interscience.73 Cox,D.andPinto,N.(2011).Beyondsimplefeatures:Alarge-scalefeaturesearch approachtounconstrainedfacerecognition.InAutomaticFace&GestureRecognition andWorkshops(FG2011),2011IEEEInternationalConferenceon,pages8–15.IEEE.",,,748,bed6761a4d8b400083892c53c90a6e7d,"Wiley-Interscience.73 Cox,D.andPinto,N.(2011).Beyondsimplefeatures:Alarge-scalefeaturesearch approachtounconstrainedfacerecognition.InAutomaticFace&GestureRecognition andWorkshops(FG2011),2011IEEEInternationalConferenceon,pages8–15.IEEE."
+C0174,USA,,Component,"(2007).Onlinelearningforoﬀroadrobots:Spatiallabelpropagationtolearnlong-range traversability.InProceedingsofRobotics:ScienceandSystems,Atlanta,GA,USA.453 Hajnal,A.,Maass,W.,Pudlak,P.,Szegedy,M.,andTuran,G.(1993).Thresholdcircuits ofboundeddepth.",,,757,92b1dbc1a952462899f27d43eb1faa57,"(2007).Onlinelearningforoﬀroadrobots:Spatiallabelpropagationtolearnlong-range traversability.InProceedingsofRobotics:ScienceandSystems,Atlanta,GA,USA.453 Hajnal,A.,Maass,W.,Pudlak,P.,Szegedy,M.,andTuran,G.(1993).Thresholdcircuits ofboundeddepth."
+C0175,UK,,Component,,,,743,0a54f2a319f042f89bec73de90f805a7,
+C0176,ACM,,Component,"(2006).Model compression.In Proceedingsofthe12thACMSIGKDDinternationalconferenceonKnowledgediscovery anddatamining,pages535–541.ACM.448 Burda,Y.,Grosse,R.,andSalakhutdinov,R.(2015).Importanceweightedautoencoders.",,,744,c2f443970b744144a14df5cba011d5fd,"(2006).Model compression.In Proceedingsofthe12thACMSIGKDDinternationalconferenceonKnowledgediscovery anddatamining,pages535–541.ACM.448 Burda,Y.,Grosse,R.,andSalakhutdinov,R.(2015).Importanceweightedautoencoders."
+C0177,ICCV,,Component,,,,743,0a54f2a319f042f89bec73de90f805a7,
+C0178,ASRU,,Component,"InAutomaticSpeechRecognitionandUnderstanding(ASRU),2013IEEEWorkshop on,pages291–296.IEEE.194 Carreira-Perpiñan,M.A.andHinton,G.E.(2005).Oncontrastivedivergencelearning.",,,744,c2f443970b744144a14df5cba011d5fd,"InAutomaticSpeechRecognitionandUnderstanding(ASRU),2013IEEEWorkshop on,pages291–296.IEEE.194 Carreira-Perpiñan,M.A.andHinton,G.E.(2005).Oncontrastivedivergencelearning."
+C0179,CA,CAS,Component,"InProceedingsofthe9thInternationalJoint ConferenceonArtiﬁcialIntelligence-Volume1,IJCAI’85,pages238–243,SanFrancisco, CA,USA.MorganKaufmannPublishersInc.17 Tu,K.andHonavar,V.(2011).",,,789,ff7525dabec64902b89b91d58eb1db9b,"InProceedingsofthe9thInternationalJoint ConferenceonArtiﬁcialIntelligence-Volume1,IJCAI’85,pages238–243,SanFrancisco, CA,USA.MorganKaufmannPublishersInc.17 Tu,K.andHonavar,V.(2011)."
+C0180,MIT,,Component,,,,745,280a312a973b44978845be9aa009a9b6,
+C0181,MICRO,,Component,"Microarchitecture(2014b).DaDianNao:Amachine-learningsupercomputer.In (MICRO),201447thAnnualIEEE/ACMInternationalSymposiumon,pages609–622.",,,745,280a312a973b44978845be9aa009a9b6,"Microarchitecture(2014b).DaDianNao:Amachine-learningsupercomputer.In (MICRO),201447thAnnualIEEE/ACMInternationalSymposiumon,pages609–622."
+C0182,IJCNN,,Component,,,,745,280a312a973b44978845be9aa009a9b6,
+C0183,CSUR,,Component,,,,745,280a312a973b44978845be9aa009a9b6,
+C0184,OSDI,,Component,,,,745,280a312a973b44978845be9aa009a9b6,
+C0185,Tenth International,,Component,,,,745,280a312a973b44978845be9aa009a9b6,
+C0186,UCSD,,Component,,,,745,280a312a973b44978845be9aa009a9b6,
+C0187,RR,,Component,,,,747,e0d28752f5c849eb8406c41f363c6807,
+C0188,IDIAP,,Component,,,,747,e0d28752f5c849eb8406c41f363c6807,
+C0189,ICASSP,,Component,"InInternationalConferenceonAcoustics,SpeechandSignalProcessing(ICASSP), pages177–180.463 Ning,F.,Delhomme,D.,LeCun,Y.,Piano,F.,Bottou,L.,andBarbano,P.E.(2005).",,,776,0f728e56cac04a8f819878fcce3263eb,"InInternationalConferenceonAcoustics,SpeechandSignalProcessing(ICASSP), pages177–180.463 Ning,F.,Delhomme,D.,LeCun,Y.,Piano,F.,Bottou,L.,andBarbano,P.E.(2005)."
+C0190,ECCV,,Component,"In .ECCV’146 Zeiler,M.D.,Ranzato,M.,Monga,R.,Mao,M.,Yang,K.,Le,Q.,Nguyen,P.,Senior, A.,Vanhoucke,V.,Dean,J.,andHinton,G.E.(2013).",,,793,a0a3d5a501954e24b625d7a2e192c8e4,"In .ECCV’146 Zeiler,M.D.,Ranzato,M.,Monga,R.,Mao,M.,Yang,K.,Le,Q.,Nguyen,P.,Senior, A.,Vanhoucke,V.,Dean,J.,andHinton,G.E.(2013)."
+C0191,ACL,,Component,"ACL’2014.473 Devroye,L.(2013).Non-UniformRandomVariateGeneration.SpringerLink:Bücher.",,,750,6219b51c098d4592ad27d7691983a0ec,"ACL’2014.473 Devroye,L.(2013).Non-UniformRandomVariateGeneration.SpringerLink:Bücher."
+C0192,NICE,,Component,,,,750,6219b51c098d4592ad27d7691983a0ec,
+C0193,NETL,,Component,,,,751,ea07d4e36e654c778416700215ef5e5d,
+C0194,TR,,Component,"Sequentialmodel-basedoptimization forgeneralalgorithmconﬁguration.In .ExtendedversionasUBCTechreportLION-5 TR-2010-10.436 Hyotyniemi,H.(1996).Turingmachinesarerecurrentneuralnetworks.InSTeP’96,pages 13–24.379 Hyvärinen,A.(1999).",,,761,bf07c03492cd468d8b187e3f322a1da3,"Sequentialmodel-basedoptimization forgeneralalgorithmconﬁguration.In .ExtendedversionasUBCTechreportLION-5 TR-2010-10.436 Hyotyniemi,H.(1996).Turingmachinesarerecurrentneuralnetworks.InSTeP’96,pages 13–24.379 Hyvärinen,A.(1999)."
+C0195,HRI,,Component,,,,754,f52192b775d446499e43b2a9be035d46,
+C0196,DRAW,,Component,,,,756,85d2e51315f44cad8f7629842612157a,
+C0197,ISMIR,,Component,,,,757,92b1dbc1a952462899f27d43eb1faa57,
+C0198,GA,,Component,"(2007).Onlinelearningforoﬀroadrobots:Spatiallabelpropagationtolearnlong-range traversability.InProceedingsofRobotics:ScienceandSystems,Atlanta,GA,USA.453 Hajnal,A.,Maass,W.,Pudlak,P.,Szegedy,M.,andTuran,G.(1993).Thresholdcircuits ofboundeddepth.",,,757,92b1dbc1a952462899f27d43eb1faa57,"(2007).Onlinelearningforoﬀroadrobots:Spatiallabelpropagationtolearnlong-range traversability.InProceedingsofRobotics:ScienceandSystems,Atlanta,GA,USA.453 Hajnal,A.,Maass,W.,Pudlak,P.,Szegedy,M.,andTuran,G.(1993).Thresholdcircuits ofboundeddepth."
+C0199,NAACL,,Component,,,,757,92b1dbc1a952462899f27d43eb1faa57,
+C0200,ICANN,,Component,,,,758,029d347e703945e0820782dd69a49dec,
+C0201,CMU,,Component,,,,759,1cf204be3b994c52a2fb9e8fdcc6e9f2,
+C0202,CS,,Component,,,,759,1cf204be3b994c52a2fb9e8fdcc6e9f2,
+C0203,NJ,,Component,,,,760,a373726d38d941a28e9c52fca26fa1dd,
+C0204,VTLP,,Component,,,,762,81717c6af0bf46839b92ebe00316a609,
+C0205,CVPR,,Component,"523 Kavukcuoglu,K.,Ranzato,M.-A.,Fergus,R.,andLeCun,Y.(2009).Learninginvariant featuresthroughtopographicﬁltermaps.In .CVPR’2009523 Kavukcuoglu,K.,Sermanet,P.,Boureau,Y.-L.,Gregor,K.,Mathieu,M.,andLeCun,Y.",,,764,4640e565587e4b7ab06f8eab39091c96,"523 Kavukcuoglu,K.,Ranzato,M.-A.,Fergus,R.,andLeCun,Y.(2009).Learninginvariant featuresthroughtopographicﬁltermaps.In .CVPR’2009523 Kavukcuoglu,K.,Sermanet,P.,Boureau,Y.-L.,Gregor,K.,Mathieu,M.,andLeCun,Y."
+C0206,EMNLP,,Component,"BIBLIOGRAPHY Wang,Z.,Zhang,J.,Feng,J.,andChen,Z.(2014a).Knowledgegraphandtextjointly embedding.InProc.EMNLP’2014.484 Wang,Z.,Zhang,J.,Feng,J.,andChen,Z.(2014b).",,,791,cde6928b3df44e179b1d937ea39b57bd,"BIBLIOGRAPHY Wang,Z.,Zhang,J.,Feng,J.,andChen,Z.(2014a).Knowledgegraphandtextjointly embedding.InProc.EMNLP’2014.484 Wang,Z.,Zhang,J.,Feng,J.,andChen,Z.(2014b)."
+C0207,NYU,,Component,"Fastinferenceinsparsecoding algorithmswithapplicationstoobjectrecognition.Technicalreport,Computationaland BiologicalLearningLab,CourantInstitute,NYU.TechReportCBLL-TR-2008-12-01.",,,764,4640e565587e4b7ab06f8eab39091c96,"Fastinferenceinsparsecoding algorithmswithapplicationstoobjectrecognition.Technicalreport,Computationaland BiologicalLearningLab,CourantInstitute,NYU.TechReportCBLL-TR-2008-12-01."
+C0208,ASSP,,Component,,,,764,4640e565587e4b7ab06f8eab39091c96,
+C0209,LG,,Component,,,,765,a2199147c9cf41ac937bfbb5e8f6b3bf,
+C0210,REMAP,,Component,,,,765,a2199147c9cf41ac937bfbb5e8f6b3bf,
+C0211,CRG,,Component,,,,767,1795ad58269f4d0791c46b38d37529fc,
+C0212,DC,,Component,,,,767,1795ad58269f4d0791c46b38d37529fc,
+C0213,CESTA,,Component,,,,767,1795ad58269f4d0791c46b38d37529fc,
+C0214,ISCAS,,Component,,,,768,681a6976882a4d46b5d2dfb414d2a9ca,
+C0215,LISA,,Component,,,,769,d5fde2583b1d40c1a682e9f433e32c1e,
+C0216,BIT,,Component,,,,769,d5fde2583b1d40c1a682e9f433e32c1e,
+C0217,UAI,,Component,"ZeitschriftfürOperationsResearch(Theory),,517–545.36 276 Marlin,B.anddeFreitas,N.(2011).Asymptoticeﬃciencyofdeterministicestimatorsfor discreteenergy-basedmodels:Ratiomatchingandpseudolikelihood.In .,UAI’2011617 619 754",,,770,45e1a6e49f2a456d8bcbe1c8fee1a493,"ZeitschriftfürOperationsResearch(Theory),,517–545.36 276 Marlin,B.anddeFreitas,N.(2011).Asymptoticeﬃciencyofdeterministicestimatorsfor discreteenergy-basedmodels:Ratiomatchingandpseudolikelihood.In .,UAI’2011617 619 754"
+C0218,JMLRW,,Component,,,,772,cce213f4b65b49cb9ad0c94af1a5cafd,
+C0219,CP,,Component,,,,772,cce213f4b65b49cb9ad0c94af1a5cafd,
+C0220,Probabilistic Perspective,,Component,,,,774,182ed734e0504327a670b1ec7ce7d650,
+C0221,SIAMJ,,Component,"SIAMJ.ControlandOptimization,,838–855.30(4) 322 Polyak,B.T.(1964).Somemethodsofspeedinguptheconvergenceofiterationmethods.",,,778,8b3ba58573434ceab7246e54272197a6,"SIAMJ.ControlandOptimization,,838–855.30(4) 322 Polyak,B.T.(1964).Somemethodsofspeedinguptheconvergenceofiterationmethods."
+C0222,MWS,,Component,"NeuFlow:dataﬂowvisionprocessingsystem-on-a-chip.InCircuitsandSystems(MWS- CAS),2012IEEE55thInternationalMidwestSymposiumon,pages1044–1047.IEEE.",,,778,8b3ba58573434ceab7246e54272197a6,"NeuFlow:dataﬂowvisionprocessingsystem-on-a-chip.InCircuitsandSystems(MWS- CAS),2012IEEE55thInternationalMidwestSymposiumon,pages1044–1047.IEEE."
+C0223,CVPRW,,Component,,,,778,8b3ba58573434ceab7246e54272197a6,
+C0224,SIGIR,,Component,,,,781,3839ff1cfe1e4be699bfb4a82775df72,
+C0225,ICDAR,,Component,,,,784,bfcd53abfb5d46a9a2f68e885a55a225,
+C0226,SNE,,Component,,,,789,ff7525dabec64902b89b91d58eb1db9b,
+C0227,IJCAI,,Component,"InProceedingsofthe9thInternationalJoint ConferenceonArtiﬁcialIntelligence-Volume1,IJCAI’85,pages238–243,SanFrancisco, CA,USA.MorganKaufmannPublishersInc.17 Tu,K.andHonavar,V.(2011).",,,789,ff7525dabec64902b89b91d58eb1db9b,"InProceedingsofthe9thInternationalJoint ConferenceonArtiﬁcialIntelligence-Volume1,IJCAI’85,pages238–243,SanFrancisco, CA,USA.MorganKaufmannPublishersInc.17 Tu,K.andHonavar,V.(2011)."
+C0228,IRE,,Component,,,,791,cde6928b3df44e179b1d937ea39b57bd,
+C0229,NYC,,Component,,,,791,cde6928b3df44e179b1d937ea39b57bd,
+C0230,ANN,,Component,,,,794,92753edce0f14f6fb531c504f1900da5,
+C0231,BPTT,,Component,,,,794,92753edce0f14f6fb531c504f1900da5,
+C0232,INDEX,,Formula,,,,795,8f11dfd962da463aab3d27638faf08e7,
+C0233,CNN,,Component,,,,795,8f11dfd962da463aab3d27638faf08e7,
+C0234,CTC,,Component,,,,795,8f11dfd962da463aab3d27638faf08e7,
+C0235,FVBN,,Component,,,,796,f07fecb1f1964393bfed8939d618697f,
+C0236,ESN,,Component,,,,796,f07fecb1f1964393bfed8939d618697f,
+C0237,FPCD,,Component,,,,796,f07fecb1f1964393bfed8939d618697f,
+C0238,LAPGAN,,Component,,,,797,d1f1aa9ba67b4076a846817748bfb1e8,
+C0239,NLM,,Component,,,,798,09eee3f2ba924e3db7b03bd2efd7816c,
+C0240,MRF,,Component,,,,798,09eee3f2ba924e3db7b03bd2efd7816c,
+C0241,TDNN,,Component,,,,800,1539d5da732c45c2a1a0f7d0f89214c2,
+C0242,VAE,,Component,,,,801,1108c97864c044919c2fe10234756c0e,

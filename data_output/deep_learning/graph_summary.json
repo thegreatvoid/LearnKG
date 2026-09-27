@@ -1,0 +1,37 @@
+{
+  "nodes": 242,
+  "edges": 783,
+  "density": 0.013425,
+  "avg_degree": 6.4711,
+  "avg_edge_weight": 0.2598,
+  "avg_clustering_coefficient": 0.099257,
+  "weakly_connected_components": 134,
+  "communities": 136,
+  "top_5_by_pagerank": [
+    {
+      "concept_id": "C0232",
+      "concept_name": "INDEX",
+      "pagerank": 0.030023
+    },
+    {
+      "concept_id": "C0171",
+      "concept_name": "ICML",
+      "pagerank": 0.023632
+    },
+    {
+      "concept_id": "C0165",
+      "concept_name": "NIPS",
+      "pagerank": 0.021855
+    },
+    {
+      "concept_id": "C0173",
+      "concept_name": "IEEE",
+      "pagerank": 0.018609
+    },
+    {
+      "concept_id": "C0158",
+      "concept_name": "DBM",
+      "pagerank": 0.014193
+    }
+  ]
+}
