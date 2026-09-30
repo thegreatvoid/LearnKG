@@ -28,35 +28,40 @@ VALID_ONTOLOGY_TYPES = {
 # Linguistic patterns for deterministic ontology mapping
 ONTOLOGY_PATTERNS = {
     "Prerequisite": [
+        # Explicit prerequisite cues
         "prerequisite", "required for", "requires", "depends on", "dependency",
         "foundation for", "understood before", "prior to", "must understand",
-        "basis for", "necessary", "support", "underlying", "governs",
-        "guided by", "before continuing", "review", "origin of", "precondition"
+        "basis for", "underlying", "governs", "guided by",
+        "before continuing", "origin of", "precondition",
+        # Textbook recall/review cues common in geometry textbooks
+        "recall that", "recall from", "as we learned", "building on",
+        "using what we know", "using the fact that", "we need to know",
+        "using our knowledge of", "in order to understand",
+        "using properties of", "relies on", "apply our knowledge",
     ],
     "Part-of": [
         "part of", "component of", "element of", "consists of", "comprises",
-        "includes", "layer of", "cadre of", "subsystem of", "constituent of",
-        "division of", "within the", "under", "contains", "subfield of",
-        "composed of", "organized into", "passes through", "collecting", "subset of"
+        "includes", "subsystem of", "constituent of",
+        "composed of", "subset of", "contained in",
+        "is a type of", "is a kind of",
     ],
     "Application": [
-        "applied to", "applied in", "used in", "used for", "used to train",
+        "applied to", "applied in", "used in", "used for", "used to",
         "serves to", "aims to", "implements", "solves", "utilized in",
-        "operates on", "training", "application of", "delivers", "provides",
-        "regulates", "manages", "treats", "funds", "addresses", "focuses on",
-        "reforms", "offers", "trained by", "computes", "optimizes", "minimizes",
-        "updated using", "making", "predict"
+        "operates on", "application of", "delivers", "provides",
+        "computes", "calculates", "measures", "determines",
+        "find the", "can be used to find",
     ],
     "Extension": [
         "extends", "extended by", "builds upon", "advancement of", "variant of",
         "generalization of", "improvement of", "modification of", "evolved from",
-        "derived from", "reforms", "expansion of", "evolves into", "extension to",
-        "extension of", "variants"
+        "derived from", "expansion of", "evolves into", "extension to",
+        "extension of", "special case of",
     ],
     "Similarity": [
-        "similar to", "analogous to", "resembles", "comparable to", "shares structure",
-        "contrasted with", "equivalent to", "like", "divide between", "divergent",
-        "closely related", "inspired by", "share the same underlying"
+        "similar to", "analogous to", "resembles", "comparable to",
+        "contrasted with", "equivalent to", "closely related",
+        "like", "same as", "congruent to",
     ],
 }
 
@@ -246,38 +251,54 @@ class RelationManager:
         if len(all_concepts) < 2:
             return
 
-        # Explicit high-confidence pedagogical patterns for textbook exposition
+        # Explicit high-confidence pedagogical patterns for geometry textbook exposition
         pedagogical_rules = [
-            (re.compile(r"guided by calculus", re.I), "Calculus", "Machine Learning", "Prerequisite"),
-            (re.compile(r"chain rule.*calculus|calculus.*chain rule", re.I), "Calculus", "Chain Rule", "Part-of"),
-            (re.compile(r"multivariable calculus.*partial derivatives", re.I), "Multivariable Calculus", "Partial Derivatives", "Part-of"),
-            (re.compile(r"multivariable calculus.*chain rule", re.I), "Multivariable Calculus", "Chain Rule", "Part-of"),
-            (re.compile(r"derivative of the loss.*gradient|gradient.*derivative", re.I), "Derivative", "Gradient", "Part-of"),
-            (re.compile(r"gradient descent.*train machine learning|gradient descent.*used to train", re.I), "Gradient Descent", "Machine Learning", "Application"),
-            (re.compile(r"learning rate.*step|step.*governed by.*learning rate", re.I), "Learning Rate", "Gradient Descent", "Part-of"),
-            (re.compile(r"mini-batch gradient descent", re.I), "Mini-Batch Gradient Descent", "Gradient Descent", "Extension"),
-            (re.compile(r"biological neurons", re.I), "Biological Neurons", "Neural Networks", "Similarity"),
-            (re.compile(r"weighted sum.*activation function|computes a weighted sum", re.I), "Weighted Sum", "Neural Networks", "Part-of"),
-            (re.compile(r"adds a bias term|bias term", re.I), "Bias Term", "Neural Networks", "Part-of"),
-            (re.compile(r"nonlinear activation function|activation function", re.I), "Nonlinear Activation Function", "Neural Networks", "Part-of"),
-            (re.compile(r"input layer", re.I), "Input Layer", "Neural Networks", "Part-of"),
-            (re.compile(r"hidden layers.*deep neural networks", re.I), "Hidden Layers", "Deep Neural Networks", "Part-of"),
-            (re.compile(r"output layer", re.I), "Output Layer", "Neural Networks", "Part-of"),
-            (re.compile(r"deep neural networks.*deep learning", re.I), "Deep Neural Networks", "Deep Learning", "Prerequisite"),
-            (re.compile(r"deep neural networks", re.I), "Deep Neural Networks", "Neural Networks", "Extension"),
-            (re.compile(r"weights and biases", re.I), "Weights and Biases", "Neural Networks", "Part-of"),
-            (re.compile(r"updated using gradient descent|parameters of a neural network are updated using gradient descent", re.I), "Gradient Descent", "Neural Networks", "Application"),
-            (re.compile(r"chain rule from calculus|applying the chain rule", re.I), "Chain Rule", "Backpropagation", "Prerequisite"),
-            (re.compile(r"backpropagation.*gradient descent|making gradient descent computationally practical", re.I), "Backpropagation", "Gradient Descent", "Application"),
-            (re.compile(r"adam.*gradient descent|variants.*adam", re.I), "Adam", "Gradient Descent", "Extension"),
-            (re.compile(r"rmsprop.*gradient descent|variants.*rmsprop", re.I), "RMSProp", "Gradient Descent", "Extension"),
-            (re.compile(r"mean squared error", re.I), "Mean Squared Error", "Linear Regression", "Application"),
-            (re.compile(r"linear regression.*models the relationship|linear regression.*machine learning", re.I), "Linear Regression", "Machine Learning", "Application"),
-            (re.compile(r"closely related to linear regression", re.I), "Linear Regression", "Logistic Regression", "Similarity"),
-            (re.compile(r"natural extension of linear regression", re.I), "Logistic Regression", "Linear Regression", "Extension"),
-            (re.compile(r"binary classification", re.I), "Logistic Regression", "Binary Classification", "Application"),
-            (re.compile(r"sigmoid function", re.I), "Sigmoid Function", "Logistic Regression", "Part-of"),
-            (re.compile(r"loss function.*gradient descent|gradient of the loss function", re.I), "Loss Function", "Gradient Descent", "Prerequisite"),
+            # ── Triangle prerequisites ──────────────────────────────────────────────
+            (re.compile(r"pythagorean theorem", re.I), "Pythagorean Theorem", "Right Triangle", "Prerequisite"),
+            (re.compile(r"converse of the pythagorean theorem", re.I), "Right Triangle", "Pythagorean Theorem", "Extension"),
+            (re.compile(r"special right triangles.*45.*60|45.*60.*special right", re.I), "Special Right Triangles", "Right Triangle", "Extension"),
+            (re.compile(r"triangle inequality", re.I), "Triangle", "Line Segment", "Prerequisite"),
+            (re.compile(r"congruent triangles|triangle congruence", re.I), "Congruence", "Triangle", "Application"),
+            (re.compile(r"similar triangles|triangle similarity", re.I), "Similarity", "Triangle", "Application"),
+            # ── Angle prerequisites ─────────────────────────────────────────────────
+            (re.compile(r"sum of interior angles.*polygon|polygon.*sum of interior angles", re.I), "Interior Angle", "Polygon", "Part-of"),
+            (re.compile(r"exterior angle.*triangle|remote interior", re.I), "Exterior Angle", "Triangle", "Part-of"),
+            (re.compile(r"parallel lines.*transversal|transversal.*parallel", re.I), "Parallel", "Transversal", "Prerequisite"),
+            (re.compile(r"alternate interior angles", re.I), "Alternate Interior Angles", "Parallel", "Prerequisite"),
+            (re.compile(r"corresponding angles", re.I), "Corresponding Angles", "Parallel", "Prerequisite"),
+            (re.compile(r"supplementary angles", re.I), "Supplementary", "Angle", "Part-of"),
+            (re.compile(r"complementary angles", re.I), "Complementary", "Angle", "Part-of"),
+            (re.compile(r"vertical angles", re.I), "Vertical Angles", "Angle", "Part-of"),
+            (re.compile(r"linear pair", re.I), "Linear Pair", "Angle", "Part-of"),
+            # ── Circles ─────────────────────────────────────────────────────────────
+            (re.compile(r"inscribed angle.*central angle|central angle.*arc", re.I), "Inscribed Angle", "Central Angle", "Prerequisite"),
+            (re.compile(r"arc length.*circumference|circumference.*arc", re.I), "Arc", "Circumference", "Prerequisite"),
+            (re.compile(r"tangent.*radius.*perpendicular|radius.*tangent", re.I), "Tangent", "Radius", "Prerequisite"),
+            (re.compile(r"secant.*chord|chord.*secant", re.I), "Secant", "Chord", "Similarity"),
+            (re.compile(r"diameter.*radius|two times.*radius", re.I), "Diameter", "Radius", "Part-of"),
+            # ── Quadrilaterals ───────────────────────────────────────────────────────
+            (re.compile(r"rectangle.*parallelogram|rhombus.*parallelogram|square.*parallelogram", re.I), "Parallelogram", "Rectangle", "Extension"),
+            (re.compile(r"isosceles trapezoid", re.I), "Isosceles Triangle", "Trapezoid", "Similarity"),
+            (re.compile(r"kite.*perpendicular diagonals", re.I), "Kite", "Perpendicular", "Prerequisite"),
+            # ── Similarity & proportionality ─────────────────────────────────────────
+            (re.compile(r"scale factor.*dilation|dilation.*scale factor", re.I), "Scale Factor", "Dilation", "Part-of"),
+            (re.compile(r"aa similarity|sas similarity|sss similarity", re.I), "Similarity", "Triangle", "Application"),
+            # ── Coordinate geometry ──────────────────────────────────────────────────
+            (re.compile(r"slope.*parallel|parallel.*slope", re.I), "Slope", "Parallel", "Prerequisite"),
+            (re.compile(r"slope.*perpendicular|perpendicular.*slope", re.I), "Slope", "Perpendicular", "Prerequisite"),
+            (re.compile(r"distance formula", re.I), "Distance Formula", "Coordinate Plane", "Application"),
+            (re.compile(r"midpoint formula", re.I), "Midpoint Formula", "Coordinate Plane", "Application"),
+            # ── 3D geometry ──────────────────────────────────────────────────────────
+            (re.compile(r"surface area.*prism|volume.*prism", re.I), "Prism", "Area", "Prerequisite"),
+            (re.compile(r"surface area.*cylinder|volume.*cylinder", re.I), "Cylinder", "Circle", "Prerequisite"),
+            (re.compile(r"surface area.*sphere|volume.*sphere", re.I), "Sphere", "Circle", "Prerequisite"),
+            (re.compile(r"cross.?section", re.I), "Cross Section", "Plane", "Prerequisite"),
+            # ── Proofs & reasoning ───────────────────────────────────────────────────
+            (re.compile(r"two.?column proof|paragraph proof|flow proof", re.I), "Proof", "Theorem", "Application"),
+            (re.compile(r"inductive reasoning.*conjecture|conjecture.*inductive", re.I), "Inductive Reasoning", "Conjecture", "Prerequisite"),
+            (re.compile(r"deductive reasoning", re.I), "Deductive Reasoning", "Proof", "Prerequisite"),
+            (re.compile(r"trigonometric ratio|sine.*cosine|cosine.*sine", re.I), "Trigonometry", "Right Triangle", "Prerequisite"),
+            (re.compile(r"fractal.*self.?similar|self.?similar.*fractal", re.I), "Fractal", "Self Similarity", "Part-of"),
         ]
 
         for sentence in sentences:

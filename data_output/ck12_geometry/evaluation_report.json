@@ -1,0 +1,201 @@
+{
+  "dataset": "ck12_geometry",
+  "total_gold_pairs": 1681,
+  "positive_gold_pairs": 524,
+  "negative_gold_pairs": 1157,
+  "total_gold_concepts": 89,
+  "matched_gold_concepts": 81,
+  "unmatched_gold_concepts_count": 8,
+  "concept_coverage_percent": 91.01,
+  "unmatched_gold_concepts": [
+    "Collinearity",
+    "Diagonal",
+    "Distance",
+    "Face_(geometry)",
+    "Geometry",
+    "Space_(mathematics)",
+    "Star_polygon",
+    "Tessellation"
+  ],
+  "ambiguous_concept_matches": [],
+  "low_confidence_matches": [],
+  "overall_evaluation": {
+    "TP": 28,
+    "FP": 43,
+    "FN": 496,
+    "TN": 1114,
+    "Precision": 0.3944,
+    "Recall": 0.0534,
+    "F1": 0.0941,
+    "Accuracy": 0.6794
+  },
+  "concept_conditioned_evaluation": {
+    "total_pairs_both_concepts_matched": 1355,
+    "metrics": {
+      "TP": 28,
+      "FP": 43,
+      "FN": 390,
+      "TN": 894,
+      "Precision": 0.3944,
+      "Recall": 0.067,
+      "F1": 0.1145,
+      "Accuracy": 0.6804
+    }
+  },
+  "sample_false_positives": [
+    {
+      "gold_a": "Quadrilateral",
+      "gold_b": "Parallel_(geometry)",
+      "is_gold_prerequisite": false,
+      "matched_a": "Quadrilateral",
+      "matched_b": "Parallel",
+      "both_concepts_matched": true,
+      "extracted_prerequisite": true,
+      "evidence": "Area of a Parallelogram  Recall that a parallelogram is a quadrilateral whose opposite sides are parallel."
+    },
+    {
+      "gold_a": "Circumference",
+      "gold_b": "Arc_(geometry)",
+      "is_gold_prerequisite": false,
+      "matched_a": "Circumference",
+      "matched_b": "Arc",
+      "both_concepts_matched": true,
+      "extracted_prerequisite": true,
+      "evidence": "Arc Length: The length of an arc or a portion of a circle's circumference."
+    },
+    {
+      "gold_a": "Parallel_(geometry)",
+      "gold_b": "Perpendicular",
+      "is_gold_prerequisite": false,
+      "matched_a": "Parallel",
+      "matched_b": "Perpendicular",
+      "both_concepts_matched": true,
+      "extracted_prerequisite": true,
+      "evidence": "Also, recall that two lines are parallel when they are  perpendicular to the same line."
+    },
+    {
+      "gold_a": "Circle",
+      "gold_b": "Two-dimensional_space",
+      "is_gold_prerequisite": false,
+      "matched_a": "Circle",
+      "matched_b": "Coordinate Plane",
+      "both_concepts_matched": true,
+      "extracted_prerequisite": true,
+      "evidence": "Graphing a Circle in the Coordinate Plane  Recall that the definition of a circle is the set of all points that are the same distance from the center."
+    },
+    {
+      "gold_a": "Rhombus",
+      "gold_b": "Kite_(geometry)",
+      "is_gold_prerequisite": false,
+      "matched_a": "Rhombus",
+      "matched_b": "Kite",
+      "both_concepts_matched": true,
+      "extracted_prerequisite": true,
+      "evidence": "P = 8 + 4V2 + 16 + 4V2  P = 24 + 8 V2 w 35.3 units  A = -(4)(8 + 16)  A = 48 units 2  www.ckl2.org  514  Area of a Rhombus and Kite  Recall that a rhombus is an equilateral quadrilateral and a kite has adjacent congruent sides."
+    }
+  ],
+  "sample_false_negatives": [
+    {
+      "gold_a": "Cartesian_coordinate_system",
+      "gold_b": "Line_(geometry)",
+      "is_gold_prerequisite": true,
+      "matched_a": "Coordinate Plane",
+      "matched_b": "Line",
+      "both_concepts_matched": true,
+      "extracted_prerequisite": false,
+      "evidence": null
+    },
+    {
+      "gold_a": "Polygon",
+      "gold_b": "Line_segment",
+      "is_gold_prerequisite": true,
+      "matched_a": "Polygon",
+      "matched_b": "Line Segment",
+      "both_concepts_matched": true,
+      "extracted_prerequisite": false,
+      "evidence": null
+    },
+    {
+      "gold_a": "Grade_(slope)",
+      "gold_b": "Geometry",
+      "is_gold_prerequisite": true,
+      "matched_a": "Slope",
+      "matched_b": null,
+      "both_concepts_matched": false,
+      "extracted_prerequisite": false,
+      "evidence": null
+    },
+    {
+      "gold_a": "Concentric",
+      "gold_b": "Geometry",
+      "is_gold_prerequisite": true,
+      "matched_a": "Concentric",
+      "matched_b": null,
+      "both_concepts_matched": false,
+      "extracted_prerequisite": false,
+      "evidence": null
+    },
+    {
+      "gold_a": "Special_right_triangles",
+      "gold_b": "Right_angle",
+      "is_gold_prerequisite": true,
+      "matched_a": "Special Right Triangles",
+      "matched_b": "Right Triangle",
+      "both_concepts_matched": true,
+      "extracted_prerequisite": false,
+      "evidence": null
+    }
+  ],
+  "sample_true_positives": [
+    {
+      "gold_a": "Two-dimensional_space",
+      "gold_b": "Plane_(geometry)",
+      "is_gold_prerequisite": true,
+      "matched_a": "Coordinate Plane",
+      "matched_b": "Plane",
+      "both_concepts_matched": true,
+      "extracted_prerequisite": true,
+      "evidence": "Slope in the Coordinate Plane  Recall from Algebra I, two points (xi,yi) and (x2,y2) have a slope of m = ( x 2 _ y *y  Different Types of Slope:  143  www.ckl2.org  Positive  'tVt I '  \u00ab*flf  yi  r l/f '  2_L  J J  r _J  /  \"  -V|0."
+    },
+    {
+      "gold_a": "Kite_(geometry)",
+      "gold_b": "Quadrilateral",
+      "is_gold_prerequisite": true,
+      "matched_a": "Kite",
+      "matched_b": "Quadrilateral",
+      "both_concepts_matched": true,
+      "extracted_prerequisite": true,
+      "evidence": "P = 8 + 4V2 + 16 + 4V2  P = 24 + 8 V2 w 35.3 units  A = -(4)(8 + 16)  A = 48 units 2  www.ckl2.org  514  Area of a Rhombus and Kite  Recall that a rhombus is an equilateral quadrilateral and a kite has adjacent congruent sides."
+    },
+    {
+      "gold_a": "Perpendicular",
+      "gold_b": "Line_(geometry)",
+      "is_gold_prerequisite": true,
+      "matched_a": "Perpendicular",
+      "matched_b": "Line",
+      "both_concepts_matched": true,
+      "extracted_prerequisite": true,
+      "evidence": "Recall from Chapter 3 that the shortest distance from a point to a line is the perpendicular length between  them."
+    },
+    {
+      "gold_a": "Parallel_(geometry)",
+      "gold_b": "Line_(geometry)",
+      "is_gold_prerequisite": true,
+      "matched_a": "Parallel",
+      "matched_b": "Line",
+      "both_concepts_matched": true,
+      "extracted_prerequisite": true,
+      "evidence": "Also, recall that two lines are parallel when they are  perpendicular to the same line."
+    },
+    {
+      "gold_a": "Right_angle",
+      "gold_b": "Angle",
+      "is_gold_prerequisite": true,
+      "matched_a": "Right Triangle",
+      "matched_b": "Angle",
+      "both_concepts_matched": true,
+      "extracted_prerequisite": true,
+      "evidence": "Recall that the sides  of a right triangle are the legs (the sides of the right angle) and the hypotenuse (the side opposite the  right angle)."
+    }
+  ]
+}

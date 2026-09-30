@@ -7,8 +7,6 @@ import pandas as pd
 import numpy as np
 import networkx as nx
 from pyvis.network import Network
-from langchain_community.document_loaders import DirectoryLoader, PyPDFLoader, TextLoader
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -353,4 +351,18 @@ def run_pipeline(
 
 
 if __name__ == "__main__":
-    run_pipeline(data_dir="cureus")
+    parser = argparse.ArgumentParser(description="Knowledge Graph Construction Pipeline")
+    parser.add_argument("--pipeline", choices=["educational", "legacy"], default="educational", help="Pipeline type")
+    parser.add_argument("--dataset", default="cureus", help="Dataset folder name in data_input/")
+    parser.add_argument("--model", default="zephyr:latest", help="Ollama model name")
+    parser.add_argument("--no-llm", action="store_true", help="Disable LLM extraction")
+    parser.add_argument("--show-edge-labels", action="store_true", help="Show edge labels in HTML")
+    args = parser.parse_args()
+
+    run_pipeline(
+        data_dir=args.dataset,
+        pipeline_type=args.pipeline,
+        model=args.model,
+        use_llm=not args.no_llm,
+        show_edge_labels=args.show_edge_labels,
+    )

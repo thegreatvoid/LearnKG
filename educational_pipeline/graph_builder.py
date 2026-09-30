@@ -74,7 +74,10 @@ def build_educational_graph(
         chap = row["chapter"]
         page = row["page"]
 
-        tooltip = f"<b>{name}</b> ({ctype})<br/>"
+        # Use concept_name as label; fall back to concept_id so nodes are never blank
+        display_label = name if name and name.strip() else cid
+
+        tooltip = f"<b>{display_label}</b> ({ctype})<br/>"
         if defn:
             tooltip += f"<br/><b>Definition:</b> {defn}<br/>"
         if aliases:
@@ -84,14 +87,14 @@ def build_educational_graph(
 
         G.add_node(
             cid,
-            label=name,
+            label=display_label,
             title=tooltip,
-            concept_name=name,
+            concept_name=display_label,
             concept_type=ctype,
             definition=defn,
         )
 
-    # Add Edges
+    # Add Edges — only between concept IDs that are in concept_map
     for _, row in df_relations.iterrows():
         src_id = row["source_id"]
         tgt_id = row["target_id"]
@@ -99,6 +102,9 @@ def build_educational_graph(
         weight_val = float(row["weight"]) if row["weight"] else 0.5
         evidence = row["evidence"]
 
+        # Skip edges referencing unknown concept IDs (prevents phantom nodes)
+        if src_id not in concept_map or tgt_id not in concept_map:
+            continue
         if src_id not in G.nodes or tgt_id not in G.nodes:
             continue
 
