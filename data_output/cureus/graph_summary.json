@@ -1,37 +1,37 @@
 {
-  "nodes": 33,
-  "edges": 113,
-  "density": 0.107008,
-  "avg_degree": 6.8485,
-  "avg_edge_weight": 0.4749,
-  "avg_clustering_coefficient": 0.275325,
-  "weakly_connected_components": 3,
-  "communities": 5,
+  "nodes": 23,
+  "edges": 90,
+  "density": 0.177866,
+  "avg_degree": 7.8261,
+  "avg_edge_weight": 0.4965,
+  "avg_clustering_coefficient": 0.285213,
+  "weakly_connected_components": 4,
+  "communities": 6,
   "top_5_by_pagerank": [
     {
-      "concept_id": "C0010",
-      "concept_name": "Gradient",
-      "pagerank": 0.08862
-    },
-    {
-      "concept_id": "C0012",
-      "concept_name": "Gradient Descent",
-      "pagerank": 0.074846
-    },
-    {
       "concept_id": "C0007",
+      "concept_name": "Parameter",
+      "pagerank": 0.111272
+    },
+    {
+      "concept_id": "C0009",
       "concept_name": "Neural Networks",
-      "pagerank": 0.074732
+      "pagerank": 0.105688
     },
     {
-      "concept_id": "C0021",
-      "concept_name": "Hidden Layers",
-      "pagerank": 0.050839
+      "concept_id": "C0013",
+      "concept_name": "Gradient Descent",
+      "pagerank": 0.079529
     },
     {
-      "concept_id": "C0008",
+      "concept_id": "C0011",
       "concept_name": "Loss Function",
-      "pagerank": 0.047811
+      "pagerank": 0.074595
+    },
+    {
+      "concept_id": "C0010",
+      "concept_name": "Machine Learning Models",
+      "pagerank": 0.058077
     }
   ]
 }

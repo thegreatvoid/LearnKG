@@ -22,7 +22,7 @@ import networkx as nx
 from .parser import parse_document
 from .structure_detector import detect_educational_structures
 from .chunker import create_structure_aware_chunks
-from .concept_extractor import extract_concepts_for_chunk
+from .concept_extractor import extract_concepts_for_chunk, extract_corpus_key_phrases
 from .normalizer import ConceptNormalizer
 from .definition_extractor import extract_grounded_definition
 from .relation_extractor import RelationManager
@@ -112,6 +112,12 @@ def run_educational_pipeline(
         except ImportError:
             pass
 
+    # Corpus-wide recurring phrases (computed once, from every chunk's text
+    # combined) stand in for a hand-maintained domain term whitelist, so
+    # concept discovery works the same way on any subject matter rather
+    # than only recognizing a fixed, pre-curated vocabulary.
+    corpus_terms = extract_corpus_key_phrases(" ".join(c.text for c in chunks))
+
     # Pass 1: Extract and register concepts from all chunks
     llm_results_by_chunk = {}
     for idx, chunk in enumerate(chunks, 1):
@@ -128,7 +134,7 @@ def run_educational_pipeline(
             except Exception:
                 pass
 
-        extracted = extract_concepts_for_chunk(chunk, llm_concepts=llm_concepts)
+        extracted = extract_concepts_for_chunk(chunk, llm_concepts=llm_concepts, corpus_terms=corpus_terms)
 
         for c in extracted:
             c_name = c["concept_name"]

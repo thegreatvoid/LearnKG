@@ -14,6 +14,7 @@
   --color-related: #0891b2;
   --color-gap: #dc2626;
   --color-supporting: #6b7280;
+  --color-parent: #4f46e5;
 }
 
 :root[data-theme="dark"] {
@@ -30,6 +31,7 @@
   --color-related: #22d3ee;
   --color-gap: #f87171;
   --color-supporting: #9ca3af;
+  --color-parent: #818cf8;
 }
 
 * {

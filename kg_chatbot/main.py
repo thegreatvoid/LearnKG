@@ -10,20 +10,23 @@ resolve as top-level packages).
 """
 
 from pathlib import Path
-from typing import List
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from .answer_generator import TemplateAnswerGenerator, get_answer_generator
+from .comparison import build_comparison_side, build_comparison_summary
 from .concept_matcher import _tokenize, match_concept
 from .conversation import ConversationStore
 from .gap_detector import detect_knowledge_gaps
+from .graph_assembly import assemble_localized_graph
+from .hierarchy import build_parent_chain
+from .intent_classifier import classify_query
 from .kg_adapter import KnowledgeGraph
 from .schemas import (
+    ComparisonResult,
+    ComparisonSideResponse,
     ConceptRef,
-    GraphEdge,
-    GraphNode,
     HealthResponse,
     LocalizedGraph,
     QueryRequest,
@@ -31,7 +34,7 @@ from .schemas import (
 )
 from .subgraph_builder import build_localized_subgraph
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data_output" / "deep_learning"
+DATA_DIR = Path(__file__).resolve().parent.parent / "data_output" / "cureus"
 
 app = FastAPI(title="KnowledgeGraph AI")
 app.add_middleware(
@@ -75,6 +78,10 @@ def query(req: QueryRequest) -> QueryResponse:
 
     conv = conversations.get(req.conversation_id)
 
+    intent = classify_query(req.question)
+    if intent.query_type == "comparison":
+        return _handle_comparison_query(intent, conv)
+
     match = match_concept(req.question, kg)
     if match is None:
         return QueryResponse(
@@ -109,27 +116,8 @@ def query(req: QueryRequest) -> QueryResponse:
     # conversation, so a later question about it stops flagging it as a gap.
     conv.mark_known(center.id)
 
-    graph_nodes: List[GraphNode] = [
-        GraphNode(id=center.id, label=center.label, description=center.description,
-                   type="central", concept_type=center.concept_type)
-    ]
-    graph_edges: List[GraphEdge] = []
-
-    for c in prereqs:
-        node_type = "knowledge_gap" if c.node.id in gap_ids else "prerequisite"
-        graph_nodes.append(GraphNode(
-            id=c.node.id, label=c.node.label, description=c.node.description,
-            type=node_type, concept_type=c.node.concept_type,
-        ))
-        graph_edges.append(GraphEdge(source=c.node.id, target=center.id, type=c.relation_type, weight=c.score))
-
-    for c in related:
-        node_type = "knowledge_gap" if c.node.id in gap_ids else "related"
-        graph_nodes.append(GraphNode(
-            id=c.node.id, label=c.node.label, description=c.node.description,
-            type=node_type, concept_type=c.node.concept_type,
-        ))
-        graph_edges.append(GraphEdge(source=center.id, target=c.node.id, type=c.relation_type, weight=c.score))
+    parent_chain = build_parent_chain(kg, center.id)
+    graph_nodes, graph_edges = assemble_localized_graph(center, prereqs, related, gap_ids, parent_chain)
 
     return QueryResponse(
         answer=answer_text,
@@ -139,4 +127,91 @@ def query(req: QueryRequest) -> QueryResponse:
         knowledge_gaps=gaps,
         localized_graph=LocalizedGraph(nodes=graph_nodes, edges=graph_edges),
         answer_source=source,
+        query_type="normal",
+        parent_chain=[ConceptRef(id=c.id, label=c.label) for c in parent_chain],
+    )
+
+
+def _handle_comparison_query(intent, conv) -> QueryResponse:
+    """COMPARISON_QUERY path (project spec sections 15-20): two
+    independently-built localized graphs (each with its own parent chain,
+    2-hop neighborhood, and knowledge gaps) plus a KG-grounded comparison
+    summary. Falls back to the normal single-concept path if only one side
+    of the comparison actually resolves to a KG concept, since that means
+    the "comparison" phrasing was a false positive."""
+    side_a = build_comparison_side(kg, intent.phrase_a, conv)
+    side_b = build_comparison_side(kg, intent.phrase_b, conv)
+
+    if side_a is None or side_b is None:
+        resolved = side_a or side_b
+        if resolved is None:
+            return QueryResponse(
+                answer=(
+                    "I couldn't confidently match either side of that comparison to a "
+                    "concept in this knowledge graph. Try naming specific terms from the course material."
+                ),
+                key_concept=None,
+                prerequisites=[],
+                related_concepts=[],
+                knowledge_gaps=[],
+                localized_graph=LocalizedGraph(nodes=[], edges=[]),
+                answer_source="template",
+            )
+        # Only one side resolved — answer about that one concept instead of
+        # silently guessing at the other.
+        center = resolved.match.node
+        gap_ids = {g.concept.id for g in resolved.knowledge_gaps}
+        nodes, edges = assemble_localized_graph(
+            center, resolved.prerequisites, resolved.related, gap_ids, resolved.parent_chain
+        )
+        conv.mark_known(center.id)
+        answer_text = TemplateAnswerGenerator().generate(center.label, center, kg.edges_of(center.id), kg.get)
+        return QueryResponse(
+            answer=answer_text,
+            key_concept=ConceptRef(id=center.id, label=center.label),
+            prerequisites=[ConceptRef(id=c.node.id, label=c.node.label) for c in resolved.prerequisites],
+            related_concepts=[ConceptRef(id=c.node.id, label=c.node.label) for c in resolved.related],
+            knowledge_gaps=resolved.knowledge_gaps,
+            localized_graph=LocalizedGraph(nodes=nodes, edges=edges),
+            answer_source="template",
+            query_type="normal",
+            parent_chain=[ConceptRef(id=c.id, label=c.label) for c in resolved.parent_chain],
+        )
+
+    conv.mark_known(side_a.match.node.id)
+    conv.mark_known(side_b.match.node.id)
+
+    def _to_response_side(side) -> ComparisonSideResponse:
+        gap_ids = {g.concept.id for g in side.knowledge_gaps}
+        nodes, edges = assemble_localized_graph(
+            side.match.node, side.prerequisites, side.related, gap_ids, side.parent_chain
+        )
+        return ComparisonSideResponse(
+            concept=ConceptRef(id=side.match.node.id, label=side.match.node.label),
+            parent_chain=[ConceptRef(id=c.id, label=c.label) for c in side.parent_chain],
+            prerequisites=[ConceptRef(id=c.node.id, label=c.node.label) for c in side.prerequisites],
+            related_concepts=[ConceptRef(id=c.node.id, label=c.node.label) for c in side.related],
+            knowledge_gaps=side.knowledge_gaps,
+            graph=LocalizedGraph(nodes=nodes, edges=edges),
+        )
+
+    summary = build_comparison_summary(side_a, side_b)
+    response_a = _to_response_side(side_a)
+    response_b = _to_response_side(side_b)
+
+    answer_text = "\n".join(f"- {line}" for line in summary)
+
+    return QueryResponse(
+        answer=answer_text,
+        # Legacy top-level fields mirror side A so clients that don't yet
+        # know about `comparison` still render something sensible.
+        key_concept=response_a.concept,
+        prerequisites=response_a.prerequisites,
+        related_concepts=response_a.related_concepts,
+        knowledge_gaps=response_a.knowledge_gaps,
+        localized_graph=response_a.graph,
+        answer_source="template",
+        query_type="comparison",
+        parent_chain=response_a.parent_chain,
+        comparison=ComparisonResult(concept_a=response_a, concept_b=response_b, summary=summary),
     )

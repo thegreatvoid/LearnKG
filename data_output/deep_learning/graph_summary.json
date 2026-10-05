@@ -1,37 +1,37 @@
 {
-  "nodes": 242,
-  "edges": 783,
-  "density": 0.013425,
-  "avg_degree": 6.4711,
-  "avg_edge_weight": 0.2598,
-  "avg_clustering_coefficient": 0.099257,
-  "weakly_connected_components": 134,
-  "communities": 136,
+  "nodes": 721,
+  "edges": 5858,
+  "density": 0.011284,
+  "avg_degree": 16.2497,
+  "avg_edge_weight": 0.2614,
+  "avg_clustering_coefficient": 0.119892,
+  "weakly_connected_components": 178,
+  "communities": 180,
   "top_5_by_pagerank": [
     {
-      "concept_id": "C0232",
-      "concept_name": "INDEX",
-      "pagerank": 0.030023
+      "concept_id": "C0013",
+      "concept_name": "Index",
+      "pagerank": 0.01058
     },
     {
-      "concept_id": "C0171",
+      "concept_id": "C0600",
       "concept_name": "ICML",
-      "pagerank": 0.023632
+      "pagerank": 0.009478
     },
     {
-      "concept_id": "C0165",
+      "concept_id": "C0588",
       "concept_name": "NIPS",
-      "pagerank": 0.021855
+      "pagerank": 0.008961
     },
     {
-      "concept_id": "C0173",
-      "concept_name": "IEEE",
-      "pagerank": 0.018609
+      "concept_id": "C0039",
+      "concept_name": "Unfortunately",
+      "pagerank": 0.008934
     },
     {
-      "concept_id": "C0158",
-      "concept_name": "DBM",
-      "pagerank": 0.014193
+      "concept_id": "C0617",
+      "concept_name": "Arxivpreprintarxiv",
+      "pagerank": 0.006656
     }
   ]
 }

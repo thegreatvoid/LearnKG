@@ -11,7 +11,10 @@ const NODE_HEIGHT = 56;
  * one-shot layout on every query response is cheap and keeps the central
  * concept visually anchored relative to its neighbors.
  */
-export function layoutGraph(graph: LocalizedGraph): { nodes: Node[]; edges: Edge[] } {
+export function layoutGraph(
+  graph: LocalizedGraph,
+  options?: { focusId?: string | null; exploredIds?: Set<string> },
+): { nodes: Node[]; edges: Edge[] } {
   const g = new dagre.graphlib.Graph();
   g.setGraph({ rankdir: "TB", nodesep: 60, ranksep: 90 });
   g.setDefaultEdgeLabel(() => ({}));
@@ -25,13 +28,20 @@ export function layoutGraph(graph: LocalizedGraph): { nodes: Node[]; edges: Edge
 
   dagre.layout(g);
 
+  const focusId = options?.focusId ?? null;
+  const exploredIds = options?.exploredIds;
+  // De-emphasize nodes explored in earlier turns once a specific concept is
+  // in focus, so the cumulative learning map still reads as "this is what
+  // I'm learning now vs. what I already covered" (spec section 13).
+  const shouldDim = (id: string) => !!focusId && id !== focusId && !!exploredIds && exploredIds.has(id);
+
   const nodes: Node[] = graph.nodes.map((n) => {
     const pos = g.node(n.id);
     return {
       id: n.id,
       type: "concept",
       position: { x: pos.x - NODE_WIDTH / 2, y: pos.y - NODE_HEIGHT / 2 },
-      data: { node: n },
+      data: { node: n, dimmed: shouldDim(n.id), isFocus: focusId === n.id },
     };
   });
 

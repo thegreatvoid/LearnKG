@@ -6,6 +6,7 @@ export const NODE_TYPE_LABEL: Record<GraphNodeType, string> = {
   related: "Related Concept",
   knowledge_gap: "Possible Knowledge Gap",
   supporting: "Supporting Concept",
+  parent: "Hierarchy / Parent Topic",
 };
 
 export const NODE_TYPE_COLOR_VAR: Record<GraphNodeType, string> = {
@@ -14,6 +15,7 @@ export const NODE_TYPE_COLOR_VAR: Record<GraphNodeType, string> = {
   related: "var(--color-related)",
   knowledge_gap: "var(--color-gap)",
   supporting: "var(--color-supporting)",
+  parent: "var(--color-parent)",
 };
 
 export const CONFIDENCE_COLOR: Record<string, string> = {

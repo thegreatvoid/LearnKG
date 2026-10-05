@@ -1,0 +1,362 @@
+[
+  {
+    "question": "What is Machine Learning?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0001"
+    ],
+    "retrieved_ids": [
+      "C0001"
+    ],
+    "retrieval_hit": true,
+    "answer": "Before turning to more complex architectures, it is worth revisiting two of the simplest models in machine learning, both of which remain widely used in practice. Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Core Algorithms?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0002"
+    ],
+    "retrieved_ids": [
+      "C0002"
+    ],
+    "retrieval_hit": true,
+    "answer": "Foundations of Machine Learning An Introductory Textbook \u2014 Chapter 3: Core Algorithms and Architectures",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Model?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0003"
+    ],
+    "retrieved_ids": [
+      "C0003"
+    ],
+    "retrieval_hit": true,
+    "answer": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously. Nearly every optimization technique used in practice, from the simplest linear model to the largest language model, depends on being able to compute how sensitive the loss is to each parameter.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Machine Learning Models?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0004"
+    ],
+    "retrieved_ids": [
+      "C0004"
+    ],
+    "retrieval_hit": true,
+    "answer": "Machine Learning Models is trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Inputs?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0005"
+    ],
+    "retrieved_ids": [
+      "C0005"
+    ],
+    "retrieval_hit": true,
+    "answer": "Linear regression models the relationship between input features and a continuous target variable as a weighted sum of the inputs, and is typically trained by minimizing the mean squared error between predicted and actual values. Each unit computes a weighted sum of its inputs, adds a bias term, and passes the result through a nonlinear activation function.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Learning Models?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0006"
+    ],
+    "retrieved_ids": [
+      "C0006"
+    ],
+    "retrieval_hit": true,
+    "answer": "Learning Models is trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Parameters?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0007"
+    ],
+    "retrieved_ids": [
+      "C0007"
+    ],
+    "retrieval_hit": true,
+    "answer": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously. Nearly every optimization technique used in practice, from the simplest linear model to the largest language model, depends on being able to compute how sensitive the loss is to each parameter.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Derivative?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0008"
+    ],
+    "retrieved_ids": [
+      "C0008"
+    ],
+    "retrieval_hit": true,
+    "answer": "This search is guided by calculus, and in particular by the derivative, which tells us how a function's output changes as we make a small change to one of its inputs. When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Chain Rule?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0009"
+    ],
+    "retrieved_ids": [
+      "C0009"
+    ],
+    "retrieval_hit": true,
+    "answer": "Students who have not yet encountered multivariable calculus are strongly encouraged to review partial derivatives and the chain rule before continuing, since both concepts reappear throughout the remainder of this chapter.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Loss Function?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0010"
+    ],
+    "retrieved_ids": [
+      "C0010"
+    ],
+    "retrieval_hit": true,
+    "answer": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Neural Networks?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0011"
+    ],
+    "retrieved_ids": [
+      "C0011"
+    ],
+    "retrieval_hit": true,
+    "answer": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously. A neural network is a computational model composed of layers of simple processing units, loosely inspired by networks of biological neurons.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Learning Rate?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0012"
+    ],
+    "retrieved_ids": [
+      "C0012"
+    ],
+    "retrieval_hit": true,
+    "answer": "Starting from w = 0 with a learning rate of 0.1, the first update moves w to 0 - 0.1 * (-8) = 0.8. If the learning rate is too large, the algorithm may overshoot the minimum and fail to converge; if it is too small, training may take an impractically long time.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Training?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0013"
+    ],
+    "retrieved_ids": [
+      "C0013"
+    ],
+    "retrieval_hit": true,
+    "answer": "If the learning rate is too large, the algorithm may overshoot the minimum and fail to converge; if it is too small, training may take an impractically long time. In practice, gradient descent is rarely applied to the entire training set at once.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Gradient Descent?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0014"
+    ],
+    "retrieved_ids": [
+      "C0014"
+    ],
+    "retrieval_hit": true,
+    "answer": "In effect, backpropagation is not a separate optimization method but a technique for making gradient descent computationally practical for deep networks. The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Worked Example?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0015"
+    ],
+    "retrieved_ids": [
+      "C0015"
+    ],
+    "retrieval_hit": true,
+    "answer": "Worked Example Suppose a model has a single parameter w and a loss function L(w) = (w - 4)^2.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Deep Neural Networks?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0016"
+    ],
+    "retrieved_ids": [
+      "C0016"
+    ],
+    "retrieval_hit": true,
+    "answer": "Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Weighted Sum?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0017"
+    ],
+    "retrieved_ids": [
+      "C0017"
+    ],
+    "retrieval_hit": true,
+    "answer": "Linear regression models the relationship between input features and a continuous target variable as a weighted sum of the inputs, and is typically trained by minimizing the mean squared error between predicted and actual values. Each unit computes a weighted sum of its inputs, adds a bias term, and passes the result through a nonlinear activation function.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Output Layer?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0018"
+    ],
+    "retrieved_ids": [
+      "C0018"
+    ],
+    "retrieval_hit": true,
+    "answer": "It is an efficient algorithm for computing gradients that works by applying the chain rule from calculus, propagating the error signal backward from the output layer through each hidden layer in turn. A typical network is organized into an input layer, one or more hidden layers, and an output layer.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Hidden Layers?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0019"
+    ],
+    "retrieved_ids": [
+      "C0019"
+    ],
+    "retrieval_hit": true,
+    "answer": "Hidden Layers is often referred to as deep neural networks, which is the origin of the term deep learning Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is Adam?",
+    "kind": "normal",
+    "expected_ids": [
+      "C0020"
+    ],
+    "retrieved_ids": [
+      "C0020"
+    ],
+    "retrieval_hit": true,
+    "answer": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is the difference between Inputs and Parameters?",
+    "kind": "comparison",
+    "expected_ids": [
+      "C0005",
+      "C0007"
+    ],
+    "retrieved_ids": [
+      "C0005",
+      "C0007"
+    ],
+    "retrieval_hit": true,
+    "answer": "Inputs; Parameters",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is the difference between Model and Linear Regression?",
+    "kind": "comparison",
+    "expected_ids": [
+      "C0003",
+      "C0023"
+    ],
+    "retrieved_ids": [
+      "C0003",
+      "C0023"
+    ],
+    "retrieval_hit": true,
+    "answer": "Model; Linear Regression",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is the difference between Training and Hidden Layers?",
+    "kind": "comparison",
+    "expected_ids": [
+      "C0013",
+      "C0019"
+    ],
+    "retrieved_ids": [
+      "C0013",
+      "C0019"
+    ],
+    "retrieval_hit": true,
+    "answer": "Training; Hidden Layers",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is the difference between Chain Rule and Output Layer?",
+    "kind": "comparison",
+    "expected_ids": [
+      "C0009",
+      "C0018"
+    ],
+    "retrieved_ids": [
+      "C0009",
+      "C0018"
+    ],
+    "retrieval_hit": true,
+    "answer": "Chain Rule; Output Layer",
+    "answer_source": "template",
+    "judge_score": 1
+  },
+  {
+    "question": "What is the difference between Parameters and Hidden Layers?",
+    "kind": "comparison",
+    "expected_ids": [
+      "C0007",
+      "C0019"
+    ],
+    "retrieved_ids": [
+      "C0007",
+      "C0019"
+    ],
+    "retrieval_hit": true,
+    "answer": "Parameters; Hidden Layers",
+    "answer_source": "template",
+    "judge_score": 1
+  }
+]

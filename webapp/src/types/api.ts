@@ -10,7 +10,8 @@ export type GraphNodeType =
   | "prerequisite"
   | "related"
   | "knowledge_gap"
-  | "supporting";
+  | "supporting"
+  | "parent";
 
 export interface GraphNode {
   id: string;
@@ -40,6 +41,23 @@ export interface KnowledgeGap {
   confidence: ConfidenceLevel;
 }
 
+export type QueryType = "normal" | "comparison";
+
+export interface ComparisonSide {
+  concept: ConceptRef;
+  parent_chain: ConceptRef[];
+  prerequisites: ConceptRef[];
+  related_concepts: ConceptRef[];
+  knowledge_gaps: KnowledgeGap[];
+  graph: LocalizedGraph;
+}
+
+export interface ComparisonResult {
+  concept_a: ComparisonSide;
+  concept_b: ComparisonSide;
+  summary: string[];
+}
+
 export interface QueryResponse {
   answer: string;
   key_concept: ConceptRef | null;
@@ -48,6 +66,12 @@ export interface QueryResponse {
   knowledge_gaps: KnowledgeGap[];
   localized_graph: LocalizedGraph;
   answer_source: "ollama" | "template";
+  // Additive (older responses/mocks without these still satisfy the type
+  // since the backend always sends them, but keep them optional here in
+  // case this type is ever used to describe partial/test fixtures).
+  query_type: QueryType;
+  parent_chain: ConceptRef[];
+  comparison: ComparisonResult | null;
 }
 
 export interface QueryRequest {

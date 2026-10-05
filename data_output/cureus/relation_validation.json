@@ -1,0 +1,3009 @@
+{
+  "relations": [
+    {
+      "relation_id": "R0001",
+      "source": "Machine Learning",
+      "target": "Parameter",
+      "relation_type": "Application",
+      "weight": 0.2721,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0002",
+      "source": "Machine Learning",
+      "target": "Learning Models",
+      "relation_type": "Application",
+      "weight": 0.3859,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0003",
+      "source": "Machine Learning",
+      "target": "Machine Learning Models",
+      "relation_type": "Application",
+      "weight": 0.4012,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0004",
+      "source": "Machine Learning",
+      "target": "Loss Function",
+      "relation_type": "Application",
+      "weight": 0.3178,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0005",
+      "source": "Parameter",
+      "target": "Machine Learning",
+      "relation_type": "Application",
+      "weight": 0.2721,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0006",
+      "source": "Parameter",
+      "target": "Learning Models",
+      "relation_type": "Application",
+      "weight": 0.359,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0007",
+      "source": "Parameter",
+      "target": "Machine Learning Models",
+      "relation_type": "Application",
+      "weight": 0.358,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0008",
+      "source": "Parameter",
+      "target": "Loss Function",
+      "relation_type": "Application",
+      "weight": 0.5163,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0009",
+      "source": "Learning Models",
+      "target": "Machine Learning",
+      "relation_type": "Application",
+      "weight": 0.3859,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0010",
+      "source": "Learning Models",
+      "target": "Parameter",
+      "relation_type": "Application",
+      "weight": 0.359,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0011",
+      "source": "Learning Models",
+      "target": "Machine Learning Models",
+      "relation_type": "Application",
+      "weight": 0.8926,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0012",
+      "source": "Learning Models",
+      "target": "Loss Function",
+      "relation_type": "Application",
+      "weight": 0.7657,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0013",
+      "source": "Machine Learning Models",
+      "target": "Machine Learning",
+      "relation_type": "Application",
+      "weight": 0.4012,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0014",
+      "source": "Machine Learning Models",
+      "target": "Parameter",
+      "relation_type": "Application",
+      "weight": 0.358,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0015",
+      "source": "Machine Learning Models",
+      "target": "Learning Models",
+      "relation_type": "Application",
+      "weight": 0.8926,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0016",
+      "source": "Machine Learning Models",
+      "target": "Loss Function",
+      "relation_type": "Application",
+      "weight": 0.7905,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0017",
+      "source": "Loss Function",
+      "target": "Machine Learning",
+      "relation_type": "Application",
+      "weight": 0.3178,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0018",
+      "source": "Loss Function",
+      "target": "Parameter",
+      "relation_type": "Application",
+      "weight": 0.5163,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0019",
+      "source": "Loss Function",
+      "target": "Learning Models",
+      "relation_type": "Application",
+      "weight": 0.7657,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0020",
+      "source": "Loss Function",
+      "target": "Machine Learning Models",
+      "relation_type": "Application",
+      "weight": 0.7905,
+      "evidence": "Most machine learning models are trained by searching for the set of parameters that minimizes some measure of prediction error, commonly called a loss function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0021",
+      "source": "Derivative",
+      "target": "Inputs",
+      "relation_type": "Prerequisite",
+      "weight": 0.298,
+      "evidence": "This search is guided by calculus, and in particular by the derivative, which tells us how a function's output changes as we make a small change to one of its inputs.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0022",
+      "source": "Inputs",
+      "target": "Derivative",
+      "relation_type": "Prerequisite",
+      "weight": 0.298,
+      "evidence": "This search is guided by calculus, and in particular by the derivative, which tells us how a function's output changes as we make a small change to one of its inputs.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0023",
+      "source": "Model",
+      "target": "Derivative",
+      "relation_type": "Part-of",
+      "weight": 0.3442,
+      "evidence": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0024",
+      "source": "Model",
+      "target": "Parameter",
+      "relation_type": "Part-of",
+      "weight": 0.84,
+      "evidence": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0025",
+      "source": "Model",
+      "target": "Neural Networks",
+      "relation_type": "Part-of",
+      "weight": 0.92,
+      "evidence": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0026",
+      "source": "Derivative",
+      "target": "Model",
+      "relation_type": "Part-of",
+      "weight": 0.3442,
+      "evidence": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0027",
+      "source": "Derivative",
+      "target": "Parameter",
+      "relation_type": "Part-of",
+      "weight": 0.3442,
+      "evidence": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0028",
+      "source": "Derivative",
+      "target": "Neural Networks",
+      "relation_type": "Part-of",
+      "weight": 0.3442,
+      "evidence": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0029",
+      "source": "Parameter",
+      "target": "Model",
+      "relation_type": "Part-of",
+      "weight": 0.84,
+      "evidence": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0030",
+      "source": "Parameter",
+      "target": "Derivative",
+      "relation_type": "Part-of",
+      "weight": 0.3442,
+      "evidence": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0031",
+      "source": "Parameter",
+      "target": "Neural Networks",
+      "relation_type": "Part-of",
+      "weight": 0.92,
+      "evidence": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0032",
+      "source": "Neural Networks",
+      "target": "Model",
+      "relation_type": "Part-of",
+      "weight": 0.92,
+      "evidence": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0033",
+      "source": "Neural Networks",
+      "target": "Derivative",
+      "relation_type": "Part-of",
+      "weight": 0.3442,
+      "evidence": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0034",
+      "source": "Neural Networks",
+      "target": "Parameter",
+      "relation_type": "Part-of",
+      "weight": 0.92,
+      "evidence": "When a model has millions of parameters, as modern neural networks often do, the relevant object is not a single derivative but a gradient: a vector collecting the derivative of the loss with respect to every parameter simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0035",
+      "source": "Model",
+      "target": "Parameter",
+      "relation_type": "Prerequisite",
+      "weight": 0.92,
+      "evidence": "Nearly every optimization technique used in practice, from the simplest linear model to the largest language model, depends on being able to compute how sensitive the loss is to each parameter.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0036",
+      "source": "Model",
+      "target": "Parameter",
+      "relation_type": "Application",
+      "weight": 1.0,
+      "evidence": "Nearly every optimization technique used in practice, from the simplest linear model to the largest language model, depends on being able to compute how sensitive the loss is to each parameter.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0037",
+      "source": "Parameter",
+      "target": "Model",
+      "relation_type": "Prerequisite",
+      "weight": 0.92,
+      "evidence": "Nearly every optimization technique used in practice, from the simplest linear model to the largest language model, depends on being able to compute how sensitive the loss is to each parameter.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0038",
+      "source": "Parameter",
+      "target": "Model",
+      "relation_type": "Application",
+      "weight": 1.0,
+      "evidence": "Nearly every optimization technique used in practice, from the simplest linear model to the largest language model, depends on being able to compute how sensitive the loss is to each parameter.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0039",
+      "source": "Gradient Descent",
+      "target": "Machine Learning",
+      "relation_type": "Application",
+      "weight": 0.34,
+      "evidence": "Gradient descent is the optimization algorithm most commonly used to train machine learning models.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0040",
+      "source": "Machine Learning",
+      "target": "Gradient Descent",
+      "relation_type": "Application",
+      "weight": 0.26,
+      "evidence": "Gradient descent is the optimization algorithm most commonly used to train machine learning models.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0041",
+      "source": "Learning Models",
+      "target": "Gradient Descent",
+      "relation_type": "Application",
+      "weight": 0.2758,
+      "evidence": "Gradient descent is the optimization algorithm most commonly used to train machine learning models.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0042",
+      "source": "Machine Learning Models",
+      "target": "Gradient Descent",
+      "relation_type": "Application",
+      "weight": 0.2753,
+      "evidence": "Gradient descent is the optimization algorithm most commonly used to train machine learning models.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0043",
+      "source": "Gradient Descent",
+      "target": "Learning Models",
+      "relation_type": "Application",
+      "weight": 0.2758,
+      "evidence": "Gradient descent is the optimization algorithm most commonly used to train machine learning models.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0044",
+      "source": "Gradient Descent",
+      "target": "Machine Learning Models",
+      "relation_type": "Application",
+      "weight": 0.2753,
+      "evidence": "Gradient descent is the optimization algorithm most commonly used to train machine learning models.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0045",
+      "source": "Loss Function",
+      "target": "Gradient Descent",
+      "relation_type": "Prerequisite",
+      "weight": 0.3544,
+      "evidence": "The procedure is conceptually simple: starting from some initial guess for the model's parameters, repeatedly compute the gradient of the loss function and take a small step in the opposite direction, since the negative gradient points toward decreasing loss.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": false,
+        "ontology_keyword_present": false
+      },
+      "judge_score": 0,
+      "verdict": "flagged"
+    },
+    {
+      "relation_id": "R0046",
+      "source": "Learning Rate",
+      "target": "Gradient Descent",
+      "relation_type": "Part-of",
+      "weight": 0.26,
+      "evidence": "The size of each step is governed by a hyperparameter known as the learning rate.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": false,
+        "ontology_keyword_present": false
+      },
+      "judge_score": 0,
+      "verdict": "flagged"
+    },
+    {
+      "relation_id": "R0047",
+      "source": "Training",
+      "target": "Learning Rate",
+      "relation_type": "Application",
+      "weight": 0.385,
+      "evidence": "If the learning rate is too large, the algorithm may overshoot the minimum and fail to converge; if it is too small, training may take an impractically long time.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0048",
+      "source": "Learning Rate",
+      "target": "Training",
+      "relation_type": "Application",
+      "weight": 0.385,
+      "evidence": "If the learning rate is too large, the algorithm may overshoot the minimum and fail to converge; if it is too small, training may take an impractically long time.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0049",
+      "source": "Training",
+      "target": "Gradient Descent",
+      "relation_type": "Application",
+      "weight": 0.42,
+      "evidence": "In practice, gradient descent is rarely applied to the entire training set at once.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0050",
+      "source": "Gradient Descent",
+      "target": "Training",
+      "relation_type": "Application",
+      "weight": 0.42,
+      "evidence": "In practice, gradient descent is rarely applied to the entire training set at once.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0051",
+      "source": "Model",
+      "target": "Neural Networks",
+      "relation_type": "Similarity",
+      "weight": 1.0,
+      "evidence": "A neural network is a computational model composed of layers of simple processing units, loosely inspired by networks of biological neurons.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0052",
+      "source": "Neural Networks",
+      "target": "Model",
+      "relation_type": "Similarity",
+      "weight": 1.0,
+      "evidence": "A neural network is a computational model composed of layers of simple processing units, loosely inspired by networks of biological neurons.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0053",
+      "source": "Weighted Sum",
+      "target": "Neural Networks",
+      "relation_type": "Part-of",
+      "weight": 0.2708,
+      "evidence": "Each unit computes a weighted sum of its inputs, adds a bias term, and passes the result through a nonlinear activation function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": false,
+        "ontology_keyword_present": false
+      },
+      "judge_score": 0,
+      "verdict": "flagged"
+    },
+    {
+      "relation_id": "R0054",
+      "source": "Inputs",
+      "target": "Weighted Sum",
+      "relation_type": "Application",
+      "weight": 1.0,
+      "evidence": "Each unit computes a weighted sum of its inputs, adds a bias term, and passes the result through a nonlinear activation function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0055",
+      "source": "Weighted Sum",
+      "target": "Inputs",
+      "relation_type": "Application",
+      "weight": 1.0,
+      "evidence": "Each unit computes a weighted sum of its inputs, adds a bias term, and passes the result through a nonlinear activation function.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0056",
+      "source": "Inputs",
+      "target": "Neural Networks",
+      "relation_type": "Similarity",
+      "weight": 0.2708,
+      "evidence": "It is this nonlinearity that allows neural networks to represent complex, non-linear relationships between inputs and outputs; without it, stacking multiple layers would be mathematically equivalent to a single linear transformation.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0057",
+      "source": "Neural Networks",
+      "target": "Inputs",
+      "relation_type": "Similarity",
+      "weight": 0.2708,
+      "evidence": "It is this nonlinearity that allows neural networks to represent complex, non-linear relationships between inputs and outputs; without it, stacking multiple layers would be mathematically equivalent to a single linear transformation.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0058",
+      "source": "Output Layer",
+      "target": "Neural Networks",
+      "relation_type": "Part-of",
+      "weight": 0.3511,
+      "evidence": "A typical network is organized into an input layer, one or more hidden layers, and an output layer.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": false,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 0,
+      "verdict": "flagged"
+    },
+    {
+      "relation_id": "R0059",
+      "source": "Output Layer",
+      "target": "Hidden Layers",
+      "relation_type": "Part-of",
+      "weight": 0.2915,
+      "evidence": "A typical network is organized into an input layer, one or more hidden layers, and an output layer.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0060",
+      "source": "Hidden Layers",
+      "target": "Output Layer",
+      "relation_type": "Part-of",
+      "weight": 0.2915,
+      "evidence": "A typical network is organized into an input layer, one or more hidden layers, and an output layer.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0061",
+      "source": "Hidden Layers",
+      "target": "Deep Neural Networks",
+      "relation_type": "Part-of",
+      "weight": 0.736,
+      "evidence": "Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": false
+      },
+      "judge_score": 0,
+      "verdict": "flagged"
+    },
+    {
+      "relation_id": "R0062",
+      "source": "Deep Neural Networks",
+      "target": "Neural Networks",
+      "relation_type": "Extension",
+      "weight": 0.3343,
+      "evidence": "Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": false
+      },
+      "judge_score": 0,
+      "verdict": "flagged"
+    },
+    {
+      "relation_id": "R0063",
+      "source": "Neural Networks",
+      "target": "Deep Neural Networks",
+      "relation_type": "Prerequisite",
+      "weight": 0.3343,
+      "evidence": "Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0064",
+      "source": "Neural Networks",
+      "target": "Hidden Layers",
+      "relation_type": "Prerequisite",
+      "weight": 0.323,
+      "evidence": "Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0065",
+      "source": "Deep Neural Networks",
+      "target": "Neural Networks",
+      "relation_type": "Prerequisite",
+      "weight": 0.4143,
+      "evidence": "Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0066",
+      "source": "Deep Neural Networks",
+      "target": "Hidden Layers",
+      "relation_type": "Prerequisite",
+      "weight": 0.736,
+      "evidence": "Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0067",
+      "source": "Hidden Layers",
+      "target": "Neural Networks",
+      "relation_type": "Prerequisite",
+      "weight": 0.323,
+      "evidence": "Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0068",
+      "source": "Hidden Layers",
+      "target": "Deep Neural Networks",
+      "relation_type": "Prerequisite",
+      "weight": 0.816,
+      "evidence": "Networks with many hidden layers are often referred to as deep neural networks, which is the origin of the term deep learning.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0069",
+      "source": "Gradient Descent",
+      "target": "Neural Networks",
+      "relation_type": "Application",
+      "weight": 0.4762,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0070",
+      "source": "Parameter",
+      "target": "Neural Networks",
+      "relation_type": "Application",
+      "weight": 1.0,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0071",
+      "source": "Parameter",
+      "target": "Loss Function",
+      "relation_type": "Part-of",
+      "weight": 0.4363,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0072",
+      "source": "Parameter",
+      "target": "Training",
+      "relation_type": "Part-of",
+      "weight": 0.2724,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0073",
+      "source": "Parameter",
+      "target": "Training",
+      "relation_type": "Application",
+      "weight": 0.3524,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0074",
+      "source": "Parameter",
+      "target": "Gradient Descent",
+      "relation_type": "Part-of",
+      "weight": 0.3162,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0075",
+      "source": "Parameter",
+      "target": "Gradient Descent",
+      "relation_type": "Application",
+      "weight": 0.4762,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0076",
+      "source": "Neural Networks",
+      "target": "Parameter",
+      "relation_type": "Application",
+      "weight": 1.0,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0077",
+      "source": "Neural Networks",
+      "target": "Loss Function",
+      "relation_type": "Part-of",
+      "weight": 0.3563,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0078",
+      "source": "Neural Networks",
+      "target": "Loss Function",
+      "relation_type": "Application",
+      "weight": 0.4363,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0079",
+      "source": "Neural Networks",
+      "target": "Training",
+      "relation_type": "Part-of",
+      "weight": 0.2724,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0080",
+      "source": "Neural Networks",
+      "target": "Training",
+      "relation_type": "Application",
+      "weight": 0.3524,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0081",
+      "source": "Neural Networks",
+      "target": "Gradient Descent",
+      "relation_type": "Part-of",
+      "weight": 0.3162,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0082",
+      "source": "Neural Networks",
+      "target": "Gradient Descent",
+      "relation_type": "Application",
+      "weight": 0.3962,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0083",
+      "source": "Loss Function",
+      "target": "Parameter",
+      "relation_type": "Part-of",
+      "weight": 0.4363,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0084",
+      "source": "Loss Function",
+      "target": "Neural Networks",
+      "relation_type": "Part-of",
+      "weight": 0.3563,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0085",
+      "source": "Loss Function",
+      "target": "Neural Networks",
+      "relation_type": "Application",
+      "weight": 0.4363,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0086",
+      "source": "Loss Function",
+      "target": "Training",
+      "relation_type": "Part-of",
+      "weight": 0.2881,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0087",
+      "source": "Loss Function",
+      "target": "Training",
+      "relation_type": "Application",
+      "weight": 0.3681,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0088",
+      "source": "Loss Function",
+      "target": "Gradient Descent",
+      "relation_type": "Part-of",
+      "weight": 0.4344,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0089",
+      "source": "Loss Function",
+      "target": "Gradient Descent",
+      "relation_type": "Application",
+      "weight": 0.4344,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0090",
+      "source": "Training",
+      "target": "Parameter",
+      "relation_type": "Part-of",
+      "weight": 0.2724,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0091",
+      "source": "Training",
+      "target": "Parameter",
+      "relation_type": "Application",
+      "weight": 0.3524,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0092",
+      "source": "Training",
+      "target": "Neural Networks",
+      "relation_type": "Part-of",
+      "weight": 0.2724,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0093",
+      "source": "Training",
+      "target": "Neural Networks",
+      "relation_type": "Application",
+      "weight": 0.3524,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0094",
+      "source": "Training",
+      "target": "Loss Function",
+      "relation_type": "Part-of",
+      "weight": 0.2881,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0095",
+      "source": "Training",
+      "target": "Loss Function",
+      "relation_type": "Application",
+      "weight": 0.3681,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0096",
+      "source": "Training",
+      "target": "Gradient Descent",
+      "relation_type": "Part-of",
+      "weight": 0.34,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0097",
+      "source": "Gradient Descent",
+      "target": "Parameter",
+      "relation_type": "Part-of",
+      "weight": 0.3162,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0098",
+      "source": "Gradient Descent",
+      "target": "Parameter",
+      "relation_type": "Application",
+      "weight": 0.4762,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0099",
+      "source": "Gradient Descent",
+      "target": "Neural Networks",
+      "relation_type": "Part-of",
+      "weight": 0.3962,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0100",
+      "source": "Gradient Descent",
+      "target": "Loss Function",
+      "relation_type": "Part-of",
+      "weight": 0.2744,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0101",
+      "source": "Gradient Descent",
+      "target": "Loss Function",
+      "relation_type": "Application",
+      "weight": 0.3544,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0102",
+      "source": "Gradient Descent",
+      "target": "Training",
+      "relation_type": "Part-of",
+      "weight": 0.34,
+      "evidence": "Training a neural network means finding the weights and biases that minimize the loss function over the training data, and this is where gradient descent reappears: the parameters of a neural network are updated using gradient descent, with the gradient computed across every layer of the network simultaneously.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0103",
+      "source": "Adam",
+      "target": "Gradient Descent",
+      "relation_type": "Extension",
+      "weight": 0.5222,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0104",
+      "source": "RMSProp",
+      "target": "Gradient Descent",
+      "relation_type": "Extension",
+      "weight": 0.5222,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0105",
+      "source": "Parameter",
+      "target": "Gradient Descent",
+      "relation_type": "Extension",
+      "weight": 0.4762,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0106",
+      "source": "Parameter",
+      "target": "Adam",
+      "relation_type": "Application",
+      "weight": 0.2939,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0107",
+      "source": "Parameter",
+      "target": "Adam",
+      "relation_type": "Extension",
+      "weight": 0.3739,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0108",
+      "source": "Parameter",
+      "target": "RMSProp",
+      "relation_type": "Application",
+      "weight": 0.2939,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0109",
+      "source": "Parameter",
+      "target": "RMSProp",
+      "relation_type": "Extension",
+      "weight": 0.3739,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0110",
+      "source": "Gradient Descent",
+      "target": "Parameter",
+      "relation_type": "Extension",
+      "weight": 0.4762,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0111",
+      "source": "Gradient Descent",
+      "target": "Adam",
+      "relation_type": "Application",
+      "weight": 0.3622,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0112",
+      "source": "Gradient Descent",
+      "target": "Adam",
+      "relation_type": "Extension",
+      "weight": 0.4422,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0113",
+      "source": "Gradient Descent",
+      "target": "RMSProp",
+      "relation_type": "Application",
+      "weight": 0.3622,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0114",
+      "source": "Gradient Descent",
+      "target": "RMSProp",
+      "relation_type": "Extension",
+      "weight": 0.4422,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0115",
+      "source": "Adam",
+      "target": "Parameter",
+      "relation_type": "Application",
+      "weight": 0.2939,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0116",
+      "source": "Adam",
+      "target": "Parameter",
+      "relation_type": "Extension",
+      "weight": 0.3739,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0117",
+      "source": "Adam",
+      "target": "Gradient Descent",
+      "relation_type": "Application",
+      "weight": 0.4422,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0118",
+      "source": "Adam",
+      "target": "RMSProp",
+      "relation_type": "Application",
+      "weight": 0.84,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0119",
+      "source": "Adam",
+      "target": "RMSProp",
+      "relation_type": "Extension",
+      "weight": 0.92,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0120",
+      "source": "RMSProp",
+      "target": "Parameter",
+      "relation_type": "Application",
+      "weight": 0.2939,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0121",
+      "source": "RMSProp",
+      "target": "Parameter",
+      "relation_type": "Extension",
+      "weight": 0.3739,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0122",
+      "source": "RMSProp",
+      "target": "Gradient Descent",
+      "relation_type": "Application",
+      "weight": 0.4422,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0123",
+      "source": "RMSProp",
+      "target": "Adam",
+      "relation_type": "Application",
+      "weight": 0.84,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0124",
+      "source": "RMSProp",
+      "target": "Adam",
+      "relation_type": "Extension",
+      "weight": 0.92,
+      "evidence": "The two are almost always used together: backpropagation computes the gradients, and gradient descent (or one of its many variants, such as Adam or RMSProp) uses those gradients to update the parameters.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0125",
+      "source": "Linear Regression",
+      "target": "Machine Learning",
+      "relation_type": "Application",
+      "weight": 0.3454,
+      "evidence": "Linear regression models the relationship between input features and a continuous target variable as a weighted sum of the inputs, and is typically trained by minimizing the mean squared error between predicted and actual values.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": false,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 0,
+      "verdict": "flagged"
+    },
+    {
+      "relation_id": "R0126",
+      "source": "Inputs",
+      "target": "Linear Regression",
+      "relation_type": "Application",
+      "weight": 0.84,
+      "evidence": "Linear regression models the relationship between input features and a continuous target variable as a weighted sum of the inputs, and is typically trained by minimizing the mean squared error between predicted and actual values.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0127",
+      "source": "Weighted Sum",
+      "target": "Linear Regression",
+      "relation_type": "Application",
+      "weight": 0.84,
+      "evidence": "Linear regression models the relationship between input features and a continuous target variable as a weighted sum of the inputs, and is typically trained by minimizing the mean squared error between predicted and actual values.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0128",
+      "source": "Linear Regression",
+      "target": "Inputs",
+      "relation_type": "Application",
+      "weight": 0.84,
+      "evidence": "Linear regression models the relationship between input features and a continuous target variable as a weighted sum of the inputs, and is typically trained by minimizing the mean squared error between predicted and actual values.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0129",
+      "source": "Linear Regression",
+      "target": "Weighted Sum",
+      "relation_type": "Application",
+      "weight": 0.84,
+      "evidence": "Linear regression models the relationship between input features and a continuous target variable as a weighted sum of the inputs, and is typically trained by minimizing the mean squared error between predicted and actual values.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0130",
+      "source": "Linear Regression",
+      "target": "Logistic Regression",
+      "relation_type": "Similarity",
+      "weight": 0.5185,
+      "evidence": "Despite its name, logistic regression is closely related to linear regression.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0131",
+      "source": "Logistic Regression",
+      "target": "Linear Regression",
+      "relation_type": "Similarity",
+      "weight": 0.5185,
+      "evidence": "Despite its name, logistic regression is closely related to linear regression.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0132",
+      "source": "Logistic Regression",
+      "target": "Linear Regression",
+      "relation_type": "Extension",
+      "weight": 0.5185,
+      "evidence": "Because both models share the same underlying linear structure, logistic regression is often introduced as a natural extension of linear regression to classification problems.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0133",
+      "source": "Logistic Regression",
+      "target": "Linear Regression",
+      "relation_type": "Prerequisite",
+      "weight": 0.5185,
+      "evidence": "Because both models share the same underlying linear structure, logistic regression is often introduced as a natural extension of linear regression to classification problems.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0134",
+      "source": "Logistic Regression",
+      "target": "Linear Regression",
+      "relation_type": "Part-of",
+      "weight": 0.5185,
+      "evidence": "Because both models share the same underlying linear structure, logistic regression is often introduced as a natural extension of linear regression to classification problems.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0135",
+      "source": "Linear Regression",
+      "target": "Logistic Regression",
+      "relation_type": "Prerequisite",
+      "weight": 0.5185,
+      "evidence": "Because both models share the same underlying linear structure, logistic regression is often introduced as a natural extension of linear regression to classification problems.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0136",
+      "source": "Linear Regression",
+      "target": "Logistic Regression",
+      "relation_type": "Part-of",
+      "weight": 0.5185,
+      "evidence": "Because both models share the same underlying linear structure, logistic regression is often introduced as a natural extension of linear regression to classification problems.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    },
+    {
+      "relation_id": "R0137",
+      "source": "Linear Regression",
+      "target": "Logistic Regression",
+      "relation_type": "Extension",
+      "weight": 0.5185,
+      "evidence": "Because both models share the same underlying linear structure, logistic regression is often introduced as a natural extension of linear regression to classification problems.",
+      "checks": {
+        "referential_integrity": true,
+        "no_self_loop": true,
+        "no_exact_duplicate": true,
+        "weight_in_range": true,
+        "valid_ontology_type": true,
+        "evidence_present": true,
+        "evidence_mentions_source": true,
+        "evidence_mentions_target": true,
+        "ontology_keyword_present": true
+      },
+      "judge_score": 1,
+      "verdict": "confirmed"
+    }
+  ],
+  "missing_candidates": [
+    {
+      "concept_a": "Machine Learning",
+      "concept_b": "Inputs",
+      "shared_chunk_id": "10d635c786754344a14e1ecf98382cd8"
+    },
+    {
+      "concept_a": "Machine Learning",
+      "concept_b": "Weighted Sum",
+      "shared_chunk_id": "10d635c786754344a14e1ecf98382cd8"
+    },
+    {
+      "concept_a": "Machine Learning",
+      "concept_b": "Logistic Regression",
+      "shared_chunk_id": "10d635c786754344a14e1ecf98382cd8"
+    },
+    {
+      "concept_a": "Inputs",
+      "concept_b": "Logistic Regression",
+      "shared_chunk_id": "10d635c786754344a14e1ecf98382cd8"
+    },
+    {
+      "concept_a": "Weighted Sum",
+      "concept_b": "Logistic Regression",
+      "shared_chunk_id": "10d635c786754344a14e1ecf98382cd8"
+    },
+    {
+      "concept_a": "Model",
+      "concept_b": "Chain Rule",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Model",
+      "concept_b": "Learning Models",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Model",
+      "concept_b": "Machine Learning Models",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Model",
+      "concept_b": "Loss Function",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Derivative",
+      "concept_b": "Chain Rule",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Derivative",
+      "concept_b": "Learning Models",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Derivative",
+      "concept_b": "Machine Learning Models",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Derivative",
+      "concept_b": "Loss Function",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Chain Rule",
+      "concept_b": "Parameter",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Chain Rule",
+      "concept_b": "Learning Models",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Chain Rule",
+      "concept_b": "Neural Networks",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Chain Rule",
+      "concept_b": "Machine Learning Models",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Chain Rule",
+      "concept_b": "Loss Function",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Learning Models",
+      "concept_b": "Neural Networks",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Neural Networks",
+      "concept_b": "Machine Learning Models",
+      "shared_chunk_id": "3c41ca10a34c4688bc16caad94976285"
+    },
+    {
+      "concept_a": "Gradient Descent",
+      "concept_b": "Output Layer",
+      "shared_chunk_id": "252c7c8175bd46209646450763fb0592"
+    },
+    {
+      "concept_a": "Output Layer",
+      "concept_b": "Adam",
+      "shared_chunk_id": "252c7c8175bd46209646450763fb0592"
+    },
+    {
+      "concept_a": "Output Layer",
+      "concept_b": "RMSProp",
+      "shared_chunk_id": "252c7c8175bd46209646450763fb0592"
+    },
+    {
+      "concept_a": "Learning Rate",
+      "concept_b": "Worked Example",
+      "shared_chunk_id": "223f236747e641d88aec7934130ec241"
+    }
+  ],
+  "summary": {
+    "total": 137,
+    "confirmed": 130,
+    "flagged": 7,
+    "missing_candidates": 24
+  }
+}

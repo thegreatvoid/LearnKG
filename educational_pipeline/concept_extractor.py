@@ -8,6 +8,7 @@ Hybrid approach:
 """
 
 import re
+from collections import Counter
 from typing import Dict, List, Set
 from .chunker import EducationalChunk
 
@@ -41,23 +42,84 @@ def infer_concept_type(concept_name: str) -> str:
     return "Component"
 
 
-# Core educational domain terms recognized across textbook chapters
-DOMAIN_TERMS = [
-    "Machine Learning", "Calculus", "Multivariable Calculus", "Derivative",
-    "Partial Derivatives", "Gradient", "Loss Function", "Prediction Error",
-    "Chain Rule", "Gradient Descent", "Learning Rate", "Mini-Batch Gradient Descent",
-    "Neural Networks", "Biological Neurons", "Weighted Sum", "Bias Term",
-    "Nonlinear Activation Function", "Input Layer", "Hidden Layers", "Output Layer",
-    "Deep Neural Networks", "Deep Learning", "Weights and Biases", "Backpropagation",
-    "Adam", "RMSProp", "Linear Regression", "Mean Squared Error", "Logistic Regression",
-    "Binary Classification", "Sigmoid Function",
-]
+# Function words that make a phrase read as a grammatical fragment rather
+# than a noun-phrase concept (e.g. "of the loss", "trained by", "one of
+# its") when left at the edges OR in the middle of an n-gram. Kept separate
+# from STOPWORDS (used elsewhere for single-word filtering) because
+# phrase-boundary filtering needs to be stricter: every word in a candidate
+# phrase must clear this bar, not just the first/last word.
+_PHRASE_STOPWORDS = STOPWORDS | {
+    "of", "with", "by", "for", "at", "into", "onto", "upon", "than", "as", "like",
+    "respect", "its", "it", "one", "every", "each", "both", "some", "any", "other",
+    "same", "between", "which", "who", "whom", "whose", "he", "she", "they", "we",
+    "you", "i", "them", "him", "her", "such", "per", "via", "about", "after",
+    "before", "during", "while", "used", "using", "trained", "moves", "and", "or",
+    "through", "within", "without", "based", "small", "large", "long", "short",
+    "since", "often", "single", "practice", "computes", "passes", "means",
+    "makes", "gives", "takes", "seen", "known", "given", "rather", "instead",
+}
 
 
-def extract_candidate_concepts_from_text(text: str) -> List[str]:
+def extract_corpus_key_phrases(
+    full_text: str,
+    max_len: int = 3,
+    min_count_phrase: int = 2,
+    min_count_word: int = 4,
+    min_word_len: int = 5,
+) -> Set[str]:
+    """
+    Domain-agnostic replacement for a hand-maintained term whitelist: finds
+    terms that recur across the WHOLE document (not just within one chunk),
+    on the theory that a word/phrase a textbook repeats several times is a
+    concept the text actually cares about, regardless of subject matter.
+    This lets the pipeline surface technical terms that never get
+    capitalized in prose (e.g. "loss function", "backpropagation")
+    without hardcoding any per-domain vocabulary — call it once per
+    document and thread the result into every chunk's extraction pass.
+
+    Two signals, both purely frequency-based:
+      - Multi-word phrases (2-`max_len` words): every word must clear
+        `_PHRASE_STOPWORDS` and be >=3 chars, so grammatical fragments
+        built around prepositions/pronouns ("of the loss", "trained by")
+        never qualify — only genuine noun phrases do. Needs >= `min_count_phrase`
+        occurrences.
+      - Single words (>= `min_word_len` chars, not a stopword): a higher
+        `min_count_word` threshold, since unigrams are much more likely to
+        be incidental than a recurring multi-word phrase — this is how
+        single-word technical terms (e.g. "backpropagation") get picked up
+        even though they're too short a unit for the phrase signal above.
+    """
+    words = re.findall(r"[a-zA-Z]+", full_text.lower())
+    counts: Counter = Counter()
+    for n in range(2, max_len + 1):
+        for i in range(len(words) - n + 1):
+            gram = words[i : i + n]
+            if any(len(w) < 3 or w in _PHRASE_STOPWORDS for w in gram):
+                continue
+            counts[" ".join(gram)] += 1
+    multiword_terms = {phrase for phrase, count in counts.items() if count >= min_count_phrase}
+
+    word_counts = Counter(w for w in words if len(w) >= min_word_len and w not in _PHRASE_STOPWORDS)
+    single_words = {w for w, count in word_counts.items() if count >= min_count_word}
+
+    # Drop any single word that's just a component of a phrase already
+    # captured above (e.g. don't keep standalone "gradient"/"descent" once
+    # "gradient descent" itself qualified) — otherwise every multi-word
+    # concept spawns redundant single-word duplicates of its own pieces.
+    phrase_component_words = {w for phrase in multiword_terms for w in phrase.split()}
+    single_words -= phrase_component_words
+
+    return multiword_terms | single_words
+
+
+def extract_candidate_concepts_from_text(text: str, corpus_terms: Set[str] = None) -> List[str]:
     """
     Extracts candidate educational terms using multi-word noun phrase patterns,
-    capitalized phrases, acronyms, and textbook domain terms.
+    capitalized phrases, acronyms, and document-derived recurring phrases.
+    `corpus_terms` (see `extract_corpus_key_phrases`) is computed once per
+    document and passed in here — no fixed, hand-maintained domain
+    vocabulary is used, so this works the same way regardless of subject
+    matter.
     """
     candidates: Set[str] = set()
 
@@ -89,15 +151,20 @@ def extract_candidate_concepts_from_text(text: str) -> List[str]:
         if len(d_clean.split()) <= 3 and d_clean.lower() not in STOPWORDS:
             candidates.add(d_clean.title())
 
-    # 5. Core educational domain terms present in this text
-    for dt in DOMAIN_TERMS:
-        if re.search(rf"\b{re.escape(dt)}\b", text, re.IGNORECASE):
-            candidates.add(dt)
+    # 5. Recurring multi-word phrases from this same document (corpus-driven,
+    # not a hardcoded domain list — see extract_corpus_key_phrases) that
+    # also happen to appear in this specific chunk.
+    if corpus_terms:
+        for term in corpus_terms:
+            if re.search(rf"\b{re.escape(term)}\b", text, re.IGNORECASE):
+                candidates.add(term.title())
 
     return list(candidates)
 
 
-def extract_concepts_for_chunk(chunk: EducationalChunk, llm_concepts: List[dict] = None) -> List[dict]:
+def extract_concepts_for_chunk(
+    chunk: EducationalChunk, llm_concepts: List[dict] = None, corpus_terms: Set[str] = None
+) -> List[dict]:
     """
     Combines rule-based candidates with LLM-extracted concepts.
     Returns list of concept dicts: {concept_name, aliases, concept_type, definition, evidence}
@@ -118,7 +185,7 @@ def extract_concepts_for_chunk(chunk: EducationalChunk, llm_concepts: List[dict]
                 }
 
     # Supplement with deterministic candidates
-    candidates = extract_candidate_concepts_from_text(chunk.text)
+    candidates = extract_candidate_concepts_from_text(chunk.text, corpus_terms=corpus_terms)
     for cand in candidates:
         cand_lower = cand.lower()
         if cand_lower not in results:

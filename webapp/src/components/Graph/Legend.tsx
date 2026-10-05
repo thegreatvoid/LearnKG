@@ -1,7 +1,7 @@
 import { NODE_TYPE_COLOR_VAR, NODE_TYPE_LABEL } from "../../utils/nodeStyles";
 import type { GraphNodeType } from "../../types/api";
 
-const ORDER: GraphNodeType[] = ["central", "prerequisite", "related", "knowledge_gap"];
+const ORDER: GraphNodeType[] = ["parent", "central", "prerequisite", "related", "knowledge_gap"];
 
 export default function Legend() {
   return (
