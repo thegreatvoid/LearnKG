@@ -1,7 +1,16 @@
 */__pycache__
+__pycache__/
+*.py[cod]
+*$py.class
 */.DS_Store
 .DS_Store
 .ipynb_checkpoints/
 # old_notebooks
-.venv
-.vscode
+.venv/
+.vscode/
+
+# Web dependencies and build outputs
+node_modules/
+webapp/node_modules/
+webapp/dist/
+webapp/.vite/
