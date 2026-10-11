@@ -6,12 +6,10 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 import networkx as nx
-import seaborn as sns
 from pyvis.network import Network
-from langchain.document_loaders import DirectoryLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-from helpers.df_helpers import documents2Dataframe, df2Graph, graph2Df
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 
 # ---------------------------------------------------------------------------
@@ -85,15 +83,41 @@ def colors2Community(communities, palette="hls") -> pd.DataFrame:
 
 # ---------------------------------------------------------------------------
 # Main Pipeline
-# ---------------------------------------------------------------------------
+import argparse
+from educational_pipeline import run_educational_pipeline
+
 
 def run_pipeline(
     data_dir="cureus",
+    pipeline_type="educational",
     regenerate=False,
     model="zephyr:latest",
+    use_llm=True,
     output_html="./docs/index.html",
+    show_edge_labels=False,
+    show_edge_tooltips=True,
+    max_edge_label_length=30,
 ):
-    print(f"[*] Starting Knowledge Graph Pipeline for dataset: '{data_dir}'...")
+    if pipeline_type == "educational":
+        print(f"[*] Launching Educational Dataset Construction Pipeline for '{data_dir}'...")
+        return run_educational_pipeline(
+            data_dir=data_dir,
+            model=model,
+            use_llm=use_llm,
+            output_html=output_html,
+            show_edge_labels=show_edge_labels,
+            show_edge_tooltips=show_edge_tooltips,
+        )
+
+    print(f"[*] Starting Legacy Knowledge Graph Pipeline for dataset: '{data_dir}'...")
+
+    try:
+        from langchain.document_loaders import DirectoryLoader
+        from langchain.text_splitter import RecursiveCharacterTextSplitter
+        from helpers.df_helpers import documents2Dataframe, df2Graph, graph2Df
+        import seaborn as sns
+    except ImportError as e:
+        raise ImportError(f"Legacy pipeline requires langchain and seaborn: {e}")
 
     inputdirectory = Path(f"./data_input/{data_dir}")
     outputdirectory = Path(f"./data_output/{data_dir}")
@@ -202,13 +226,27 @@ def run_pipeline(
 
     # Add directed weighted edges
     for _, row in dfg.iterrows():
+        edge_attrs = {
+            "weight": float(row["weight"]),
+            "value":  float(row["weight"]),
+        }
+        if show_edge_tooltips:
+            tooltip = str(row["description"]).strip()
+            if not tooltip and "relationship" in row:
+                tooltip = str(row["relationship"]).strip()
+            if tooltip:
+                edge_attrs["title"] = tooltip
+
+        if show_edge_labels:
+            rel = str(row["relationship"]).split(",")[0].strip()
+            if max_edge_label_length and len(rel) > max_edge_label_length:
+                rel = rel[:max_edge_label_length].strip() + "..."
+            edge_attrs["label"] = rel
+
         G.add_edge(
             str(row["source"]),
             str(row["target"]),
-            title=str(row["description"]),          # tooltip text in Pyvis
-            label=str(row["relationship"]).split(",")[0],  # first predicate as edge label
-            weight=float(row["weight"]),
-            value=float(row["weight"]),             # Pyvis uses 'value' for edge thickness
+            **edge_attrs,
         )
 
     print(f"[+] DiGraph has {G.number_of_nodes()} nodes and {G.number_of_edges()} edges.")
@@ -304,4 +342,19 @@ def run_pipeline(
 
 
 if __name__ == "__main__":
-    run_pipeline()
+    parser = argparse.ArgumentParser(description="Educational Dataset & Knowledge Graph Construction Pipeline")
+    parser.add_argument("--pipeline", choices=["educational", "legacy"], default="educational", help="Pipeline type (default: educational)")
+    parser.add_argument("--dataset", default="cureus", help="Dataset folder name under data_input (default: cureus)")
+    parser.add_argument("--model", default="zephyr:latest", help="Ollama LLM model name")
+    parser.add_argument("--no-llm", action="store_true", help="Disable LLM and use deterministic NLP processing")
+    parser.add_argument("--show-edge-labels", action="store_true", help="Show relation labels on edge lines")
+    args = parser.parse_args()
+
+    run_pipeline(
+        data_dir=args.dataset,
+        pipeline_type=args.pipeline,
+        model=args.model,
+        use_llm=not args.no_llm,
+        show_edge_labels=args.show_edge_labels,
+    )
+
