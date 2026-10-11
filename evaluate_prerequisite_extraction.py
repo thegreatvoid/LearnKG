@@ -252,19 +252,29 @@ def run_evaluation(
         ev = str(row.get("evidence", ""))
         extracted_prereq_edges.setdefault((sid, tid), []).append(ev)
 
-    # Helper to check if edge exists in either direction
-    def has_extracted_prereq(cid1: str, cid2: str) -> Tuple[bool, Optional[str]]:
-        if (cid1, cid2) in extracted_prereq_edges:
-            return True, extracted_prereq_edges[(cid1, cid2)][0]
-        if (cid2, cid1) in extracted_prereq_edges:
-            return True, extracted_prereq_edges[(cid2, cid1)][0]
-        return False, None
+    # Helper to check if edge exists
+    # In AL-CPL: concept_b is prerequisite for concept_a (canonical direction: cid_b -> cid_a)
+    def check_prereq_direction(cid_a: str, cid_b: str) -> Tuple[bool, bool, Optional[str]]:
+        """
+        Returns: (has_directed_match, is_reversed, evidence)
+        - has_directed_match: True if cid_b -> cid_a is in extracted prereq edges (exact canonical)
+        - is_reversed: True if cid_a -> cid_b is in extracted prereq edges (reversed)
+        """
+        directed_match = (cid_b, cid_a) in extracted_prereq_edges
+        reversed_match = (cid_a, cid_b) in extracted_prereq_edges
+        ev = None
+        if directed_match:
+            ev = extracted_prereq_edges[(cid_b, cid_a)][0]
+        elif reversed_match:
+            ev = extracted_prereq_edges[(cid_a, cid_b)][0]
+        return directed_match, reversed_match, ev
 
     # 6. Evaluate all pairs
     tp_pairs = []
     fp_pairs = []
     fn_pairs = []
     tn_pairs = []
+    reversed_pairs = []
 
     # Conditioned evaluation (where both concepts were matched)
     cond_tp = []
@@ -283,13 +293,15 @@ def run_evaluation(
         cid_b = match_b.get("matched_cid")
 
         both_matched = bool(cid_a and cid_b)
-        extracted_pred = False
+        directed_pred = False
+        reversed_pred = False
         evidence_str = None
 
-        if both_matched:
-            # Self-loops in matching are considered non-prerequisite
-            if cid_a != cid_b:
-                extracted_pred, evidence_str = has_extracted_prereq(cid_a, cid_b)
+        if both_matched and cid_a != cid_b:
+            directed_pred, reversed_pred, evidence_str = check_prereq_direction(cid_a, cid_b)
+
+        # Extracted prerequisite prediction (true if either directed or reversed)
+        extracted_pred = directed_pred or reversed_pred
 
         pair_record = {
             "gold_a": ga,
@@ -299,8 +311,13 @@ def run_evaluation(
             "matched_b": match_b.get("matched_concept_name"),
             "both_concepts_matched": both_matched,
             "extracted_prerequisite": extracted_pred,
+            "is_exact_directed_match": directed_pred,
+            "is_reversed_edge": reversed_pred,
             "evidence": evidence_str,
         }
+
+        if reversed_pred and is_gold_prereq:
+            reversed_pairs.append(pair_record)
 
         # Overall confusion matrix
         if extracted_pred:
@@ -328,10 +345,19 @@ def run_evaluation(
                     cond_tn.append(pair_record)
 
     def calc_metrics(tp_len, fp_len, fn_len, tn_len):
+        import math
+        total = tp_len + fp_len + fn_len + tn_len
         prec = tp_len / (tp_len + fp_len) if (tp_len + fp_len) > 0 else 0.0
         rec = tp_len / (tp_len + fn_len) if (tp_len + fn_len) > 0 else 0.0
         f1 = (2 * prec * rec) / (prec + rec) if (prec + rec) > 0 else 0.0
-        acc = (tp_len + tn_len) / (tp_len + fp_len + fn_len + tn_len) if (tp_len + fp_len + fn_len + tn_len) > 0 else 0.0
+        acc = (tp_len + tn_len) / total if total > 0 else 0.0
+        spec = tn_len / (tn_len + fp_len) if (tn_len + fp_len) > 0 else 0.0
+        bal_acc = (rec + spec) / 2.0
+        npv = tn_len / (tn_len + fn_len) if (tn_len + fn_len) > 0 else 0.0
+        fpr = fp_len / (fp_len + tn_len) if (fp_len + tn_len) > 0 else 0.0
+        fnr = fn_len / (fn_len + tp_len) if (fn_len + tp_len) > 0 else 0.0
+        mcc_denom = math.sqrt((tp_len + fp_len) * (tp_len + fn_len) * (tn_len + fp_len) * (tn_len + fn_len))
+        mcc = ((tp_len * tn_len) - (fp_len * fn_len)) / mcc_denom if mcc_denom > 0 else 0.0
         return {
             "TP": tp_len,
             "FP": fp_len,
@@ -341,10 +367,27 @@ def run_evaluation(
             "Recall": round(rec, 4),
             "F1": round(f1, 4),
             "Accuracy": round(acc, 4),
+            "Specificity": round(spec, 4),
+            "Balanced_Accuracy": round(bal_acc, 4),
+            "NPV": round(npv, 4),
+            "FPR": round(fpr, 4),
+            "FNR": round(fnr, 4),
+            "MCC": round(mcc, 4),
         }
 
     overall_metrics = calc_metrics(len(tp_pairs), len(fp_pairs), len(fn_pairs), len(tn_pairs))
     conditioned_metrics = calc_metrics(len(cond_tp), len(cond_fp), len(cond_fn), len(cond_tn))
+
+    # Graph structural metrics
+    import networkx as nx
+    G_prereq = nx.DiGraph()
+    for (u, v) in extracted_prereq_edges.keys():
+        G_prereq.add_edge(u, v)
+    is_dag = nx.is_directed_acyclic_graph(G_prereq) if G_prereq.number_of_nodes() > 0 else True
+    cycle_list = list(nx.simple_cycles(G_prereq)) if not is_dag else []
+
+    # Relation type breakdown
+    rel_type_counts = relations_df["relation_type"].value_counts().to_dict()
 
     report = {
         "dataset": dataset_name,
@@ -355,6 +398,14 @@ def run_evaluation(
         "matched_gold_concepts": matched_gold_count,
         "unmatched_gold_concepts_count": len(unmatched_gold),
         "concept_coverage_percent": round(coverage_pct, 2),
+        "ontology_relations_distribution": rel_type_counts,
+        "prerequisite_graph_structure": {
+            "prerequisite_nodes": G_prereq.number_of_nodes(),
+            "prerequisite_edges": G_prereq.number_of_edges(),
+            "is_DAG": is_dag,
+            "cycle_count": len(cycle_list),
+            "reversed_gold_edges_count": len(reversed_pairs),
+        },
         "unmatched_gold_concepts": unmatched_gold,
         "ambiguous_concept_matches": ambiguous_matches,
         "low_confidence_matches": low_conf_matches,
@@ -363,6 +414,7 @@ def run_evaluation(
             "total_pairs_both_concepts_matched": len(cond_tp) + len(cond_fp) + len(cond_fn) + len(cond_tn),
             "metrics": conditioned_metrics,
         },
+        "reversed_edges_sample": reversed_pairs[:5],
         "sample_false_positives": fp_pairs[:5],
         "sample_false_negatives": fn_pairs[:5],
         "sample_true_positives": tp_pairs[:5],
@@ -380,23 +432,40 @@ def run_evaluation(
     print("      EXTERNAL VALIDATION REPORT: PREREQUISITE EXTRACTION")
     print("=" * 65)
     print(f"Benchmark Dataset        : AL-CPL Geometry (github.com/harrylclc/AL-CPL-dataset)")
-    print(f"Evaluated Textbook       : CK-12 Basic Geometry (unmodified rule-based pipeline)")
+    print(f"Evaluated Textbook       : CK-12 Basic Geometry")
     print(f"Total Gold Concept Pairs : {len(gold_df)} (Pos: {report['positive_gold_pairs']}, Neg: {report['negative_gold_pairs']})")
     print(f"Gold Concepts Coverage   : {matched_gold_count}/{len(gold_concepts)} ({coverage_pct:.1f}%)")
     print(f"Coverage Gap (Unmatched) : {len(unmatched_gold)} concepts")
     print("-" * 65)
-    print("OVERALL METRICS (All 1,681 Gold Pairs):")
-    print(f"  Precision : {overall_metrics['Precision']:.4f}")
-    print(f"  Recall    : {overall_metrics['Recall']:.4f}")
-    print(f"  F1-Score  : {overall_metrics['F1']:.4f}")
-    print(f"  Confusion Matrix : TP={overall_metrics['TP']}, FP={overall_metrics['FP']}, FN={overall_metrics['FN']}, TN={overall_metrics['TN']}")
+    print("ONTOLOGY DISTRIBUTION IN EXTRACTED KG:")
+    for rtype, rcount in rel_type_counts.items():
+        print(f"  {rtype:<20}: {rcount} edges ({rcount/len(relations_df)*100:.1f}%)")
+    print("-" * 65)
+    print("OVERALL CLASSIFICATION METRICS (All 1,681 Gold Pairs):")
+    print(f"  Precision         : {overall_metrics['Precision']:.4f}")
+    print(f"  Recall            : {overall_metrics['Recall']:.4f}")
+    print(f"  F1-Score          : {overall_metrics['F1']:.4f}")
+    print(f"  Accuracy          : {overall_metrics['Accuracy']:.4f}")
+    print(f"  Specificity (TNR) : {overall_metrics['Specificity']:.4f}")
+    print(f"  Balanced Accuracy : {overall_metrics['Balanced_Accuracy']:.4f}")
+    print(f"  MCC               : {overall_metrics['MCC']:.4f}")
+    print(f"  Confusion Matrix  : TP={overall_metrics['TP']}, FP={overall_metrics['FP']}, FN={overall_metrics['FN']}, TN={overall_metrics['TN']}")
     print("-" * 65)
     print("CONCEPT-CONDITIONED METRICS (Pairs where both concepts are matched):")
-    print(f"  Evaluated Pairs : {report['concept_conditioned_evaluation']['total_pairs_both_concepts_matched']}")
-    print(f"  Precision       : {conditioned_metrics['Precision']:.4f}")
-    print(f"  Recall          : {conditioned_metrics['Recall']:.4f}")
-    print(f"  F1-Score        : {conditioned_metrics['F1']:.4f}")
-    print(f"  Confusion Matrix: TP={conditioned_metrics['TP']}, FP={conditioned_metrics['FP']}, FN={conditioned_metrics['FN']}, TN={conditioned_metrics['TN']}")
+    print(f"  Evaluated Pairs   : {report['concept_conditioned_evaluation']['total_pairs_both_concepts_matched']}")
+    print(f"  Precision         : {conditioned_metrics['Precision']:.4f}")
+    print(f"  Recall            : {conditioned_metrics['Recall']:.4f}")
+    print(f"  F1-Score          : {conditioned_metrics['F1']:.4f}")
+    print(f"  Accuracy          : {conditioned_metrics['Accuracy']:.4f}")
+    print(f"  Specificity (TNR) : {conditioned_metrics['Specificity']:.4f}")
+    print(f"  Balanced Accuracy : {conditioned_metrics['Balanced_Accuracy']:.4f}")
+    print(f"  MCC               : {conditioned_metrics['MCC']:.4f}")
+    print(f"  Confusion Matrix  : TP={conditioned_metrics['TP']}, FP={conditioned_metrics['FP']}, FN={conditioned_metrics['FN']}, TN={conditioned_metrics['TN']}")
+    print("-" * 65)
+    print("STRUCTURAL VALIDITY (Prerequisite Subgraph):")
+    print(f"  Is Directed Acyclic Graph (DAG) : {is_dag}")
+    print(f"  Cycles in Prerequisite Subgraph : {len(cycle_list)}")
+    print(f"  Reversed Gold Edges Count       : {len(reversed_pairs)}")
     print("=" * 65 + "\n")
 
     return report

@@ -127,18 +127,9 @@ def run_pipeline(
     # 1. Load Documents
     # ------------------------------------------------------------------
     print(f"[*] Loading documents from {inputdirectory}...")
-    documents = []
-    for file_path in inputdirectory.rglob("*"):
-        if file_path.is_file():
-            if file_path.suffix.lower() == ".pdf":
-                print(f"    - Loading PDF: {file_path.name}")
-                loader = PyPDFLoader(str(file_path))
-                documents.extend(loader.load())
-            elif file_path.suffix.lower() == ".txt":
-                print(f"    - Loading TXT: {file_path.name}")
-                loader = TextLoader(str(file_path))
-                documents.extend(loader.load())
-    print(f"[+] Loaded {len(documents)} document chunk(s).")
+    loader = DirectoryLoader(str(inputdirectory), show_progress=True)
+    documents = loader.load()
+    print(f"[+] Loaded {len(documents)} document(s).")
 
     # ------------------------------------------------------------------
     # 2. Text Splitting
@@ -343,7 +334,7 @@ def run_pipeline(
     }
     """)
 
-    # net.show_buttons(filter_=["physics"])
+   # net.show_buttons(filter_=["physics"])
     net.write_html(str(output_html_path))
     print(
         f"[SUCCESS] Directed Knowledge Graph generated at: {output_html_path.resolve()}"
@@ -351,12 +342,12 @@ def run_pipeline(
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Knowledge Graph Construction Pipeline")
-    parser.add_argument("--pipeline", choices=["educational", "legacy"], default="educational", help="Pipeline type")
-    parser.add_argument("--dataset", default="cureus", help="Dataset folder name in data_input/")
-    parser.add_argument("--model", default="zephyr:latest", help="Ollama model name")
-    parser.add_argument("--no-llm", action="store_true", help="Disable LLM extraction")
-    parser.add_argument("--show-edge-labels", action="store_true", help="Show edge labels in HTML")
+    parser = argparse.ArgumentParser(description="Educational Dataset & Knowledge Graph Construction Pipeline")
+    parser.add_argument("--pipeline", choices=["educational", "legacy"], default="educational", help="Pipeline type (default: educational)")
+    parser.add_argument("--dataset", default="cureus", help="Dataset folder name under data_input (default: cureus)")
+    parser.add_argument("--model", default="zephyr:latest", help="Ollama LLM model name")
+    parser.add_argument("--no-llm", action="store_true", help="Disable LLM and use deterministic NLP processing")
+    parser.add_argument("--show-edge-labels", action="store_true", help="Show relation labels on edge lines")
     args = parser.parse_args()
 
     run_pipeline(
@@ -366,3 +357,4 @@ if __name__ == "__main__":
         use_llm=not args.no_llm,
         show_edge_labels=args.show_edge_labels,
     )
+

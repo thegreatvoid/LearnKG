@@ -1,0 +1,15 @@
+pandas>=2.1.3
+numpy>=1.26.2
+networkx>=3.2.1
+seaborn>=0.13.0
+jupyterlab>=4.0.8
+langchain==0.0.335
+pypdf>=3.17.0
+pyvis>=0.3.1
+tqdm>=4.38
+yachalk>=0.1.5
+unstructured>=0.10.30
+unstructured[pdf]
+unstructured-inference
+scipy
+matplotlib

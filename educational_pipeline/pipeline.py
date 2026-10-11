@@ -27,7 +27,6 @@ from .normalizer import ConceptNormalizer
 from .definition_extractor import extract_grounded_definition
 from .relation_extractor import RelationManager
 from .dataset_builder import build_and_save_dataset
-from .graph_stats import compute_graph_statistics
 from .graph_builder import build_educational_graph
 
 
@@ -38,6 +37,8 @@ def run_educational_pipeline(
     output_html: str = "./docs/index.html",
     model: Optional[str] = "zephyr:latest",
     use_llm: bool = True,
+    use_neural_model: bool = True,
+    neural_threshold: float = -0.5,
     show_edge_labels: bool = False,
     show_edge_tooltips: bool = True,
 ) -> Tuple[Path, Path, nx.DiGraph]:
@@ -192,9 +193,7 @@ def run_educational_pipeline(
                 relation_type=r.get("relation_type", "Application"),
                 evidence=r.get("evidence", ""),
                 chunk_id=chunk_id,
-                # LLM rates relations 1-10; normalize onto the same [0, 1]
-                # scale as the AHP-derived weight so the two are comparable.
-                weight=(int(r["weight"]) - 1) / 9 if r.get("weight") else None,
+                weight=int(r["weight"]) if r.get("weight") else None,
             )
 
     # C. Extract sentence-level co-occurrences using the full concept registry
@@ -206,6 +205,25 @@ def run_educational_pipeline(
             chunk_id=chunk.chunk_id,
         )
 
+    # D. Extract Neural Prerequisite Relations using Cross-Encoder on GPU
+    if use_neural_model:
+        try:
+            from .neural_prerequisite_extractor import NeuralPrerequisiteExtractor
+            extractor = NeuralPrerequisiteExtractor(threshold=neural_threshold)
+            neural_rels = extractor.extract_prerequisites(normalizer=normalizer, chunks=chunks)
+            for nr in neural_rels:
+                relation_manager.add_relation(
+                    source_name=nr["source_name"],
+                    target_name=nr["target_name"],
+                    relation_type=nr["relation_type"],
+                    evidence=nr["evidence"],
+                    page=nr.get("page", 1),
+                    chunk_id=nr.get("chunk_id", ""),
+                    weight=nr.get("weight", None),
+                )
+        except Exception as e:
+            print(f"[-] Neural extraction skipped due to error: {e}")
+
     # -------------------------------------------------------------------------
     # Step 10: Dataset Construction ({concepts.csv, relations.csv})
     # -------------------------------------------------------------------------
@@ -213,16 +231,6 @@ def run_educational_pipeline(
     concepts_csv, relations_csv = build_and_save_dataset(
         normalizer=normalizer,
         relation_manager=relation_manager,
-        output_dir=output_path,
-    )
-
-    # -------------------------------------------------------------------------
-    # Compute Graph Statistics (Knowledge Graph Repository cache)
-    # -------------------------------------------------------------------------
-    print("\n[*] Computing Graph Statistics...")
-    concept_stats_csv, graph_summary_json, graph_summary = compute_graph_statistics(
-        concepts_csv=concepts_csv,
-        relations_csv=relations_csv,
         output_dir=output_path,
     )
 
@@ -244,10 +252,7 @@ def run_educational_pipeline(
     print(f"{'='*65}")
     print(f"  Canonical Concepts : {G.number_of_nodes()}")
     print(f"  Classified Relations: {G.number_of_edges()}")
-    print(f"  Graph Density      : {graph_summary.get('density')}")
-    print(f"  Communities        : {graph_summary.get('communities')}")
     print(f"  Output Datasets    : {concepts_csv.name}, {relations_csv.name}")
-    print(f"  Graph Stats Cache  : {concept_stats_csv.name}, {graph_summary_json.name}")
     print(f"  Interactive Graph  : {Path(output_html).resolve()}")
     print(f"{'='*65}\n")
 
