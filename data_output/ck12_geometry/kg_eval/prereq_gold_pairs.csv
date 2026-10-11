@@ -1,0 +1,1682 @@
+concept,prereq,label,kg_concept,kg_prereq_concept,matched,located,kg_prereq,kg_any_relation,kg_undirected,kg_closure,book_order,cooccurrence,cooc_x_order,refd_text
+Parallelogram,Rotational_symmetry,0,Parallelogram,Rotational Symmetry,True,True,0.0,0.0,0.0,0.0,-0.40966053680318815,0.0,0.0,0.0
+Angle,Isosceles_triangle,0,Angle,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,-0.05344024583473376,1.0,0.0,-0.48717948717948717
+Angle,Pythagorean_theorem,0,Angle,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,-0.586882412253325,0.0,0.0,0.0
+Edge_(geometry),Acute_and_obtuse_triangles,0,,Acute Triangle,False,True,0.0,0.0,0.0,0.0,0.7412973543957363,0.0,0.0,0.0
+Cartesian_coordinate_system,Line_(geometry),1,,Line,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Polygon,Line_segment,1,Polygon,Line Segment,True,True,0.0,0.0,0.0,0.0,0.11989244730398041,0.0,0.0,0.0
+Angle,Two-dimensional_space,0,Angle,Plane,True,True,0.0,0.0,0.0,0.0,0.062274931579200075,0.0,0.0,0.0
+Point_(geometry),Two-dimensional_space,0,Point,Plane,True,True,0.0,0.0,0.0,0.0,-0.000912277332309022,4.0,0.0,-0.3666666666666667
+Grade_(slope),Geometry,1,Slope,,False,True,0.0,0.0,0.0,0.0,0.3153598694002977,0.0,0.0,0.0
+Quadrilateral,Parallel_(geometry),0,Quadrilateral,Parallel,True,True,0.0,0.0,0.0,0.0,-0.09972631680030729,3.0,0.0,0.2785714285714286
+Perpendicular,Cone,0,Perpendicular,Cone,True,True,0.0,0.0,0.0,0.0,-0.656119460315936,0.0,0.0,0.0
+Line_segment,Bisection,0,Line Segment,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,-0.03764344360685649,0.0,0.0,0.0
+Angle,Collinearity,0,Angle,,False,True,0.0,0.0,0.0,0.0,-0.928650309694147,1.0,0.0,-0.9871794871794872
+Midpoint,Arc_(geometry),0,Midpoint,Arc,True,True,0.0,0.0,0.0,0.0,-0.6868488020358189,0.0,0.0,0.0
+Edge_(geometry),Isosceles_triangle,0,,Isosceles Triangle,False,True,0.0,0.0,0.0,0.0,0.7484515292648966,0.0,0.0,0.0
+Edge_(geometry),Internal_and_external_angle,0,,Interior Angle,False,True,0.0,0.0,0.0,0.0,0.71277668411197,0.0,0.0,0.0
+Rectangle,Right_triangle,0,Rectangle,Right Triangle,True,True,0.0,0.0,0.0,0.0,0.427810054256494,0.0,0.0,0.0
+Vertex_(geometry),Pythagorean_theorem,0,Vertex,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,-0.5808805876986604,0.0,0.0,0.0
+Rotational_symmetry,Prism_(geometry),0,Rotational Symmetry,Prism,True,True,0.0,0.0,0.0,0.0,0.07442262447784126,0.0,0.0,0.0
+Concentric,Geometry,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Circle,Cross_section_(geometry),0,Circle,Cross Section,True,True,0.0,0.0,0.0,0.0,-0.1683391751092332,0.0,0.0,0.0
+Parallelogram,Circumference,0,Parallelogram,Circumference,True,True,0.0,0.0,0.0,0.0,-0.305564891727085,0.0,0.0,0.0
+Pythagorean_theorem,Pythagorean_triple,0,Pythagorean Theorem,,False,True,0.0,0.0,0.0,0.0,-0.015460700052816056,1.0,0.0,-0.8
+Similarity_(geometry),Sphere,0,Similarity,Sphere,True,True,0.0,0.0,0.0,0.0,-0.332068948960484,0.0,0.0,0.0
+Special_right_triangles,Right_angle,1,Special Right Triangles,Right Triangle,True,True,0.0,0.0,0.0,0.0,0.5985979737840303,0.0,0.0,0.0
+Quadrilateral,Internal_and_external_angle,0,Quadrilateral,Interior Angle,True,True,0.0,0.0,0.0,0.0,-0.007730350026408028,0.0,0.0,0.0
+Pythagorean_triple,Pythagorean_theorem,1,,Pythagorean Theorem,False,True,0.0,0.0,0.0,0.0,0.015460700052816056,1.0,1.0,0.8
+Circle,Geometry,1,Circle,,False,True,0.0,0.0,0.0,0.0,0.7145052095837134,0.0,0.0,0.0
+Point_(geometry),Quadrilateral,0,Point,Quadrilateral,True,True,0.0,0.0,0.0,0.0,-0.1445719498727613,0.0,0.0,0.0
+Pythagorean_triple,Right_triangle,1,,Right Triangle,False,True,0.0,0.0,0.0,0.0,0.5391559033946319,0.0,0.0,0.0
+Radius,Sine,0,Radius,Sine,True,True,0.0,0.0,0.0,0.0,0.024295385797282375,0.0,0.0,0.0
+Line_segment,Pythagorean_triple,0,Line Segment,,False,True,0.0,0.0,0.0,0.0,-0.6483891102895281,0.0,0.0,0.0
+Line_(geometry),Diameter,0,Line,Diameter,True,True,0.0,0.0,0.0,0.0,-0.7204590195419408,0.0,0.0,0.0
+Quadrilateral,Collinearity,0,Quadrilateral,,False,True,0.0,0.0,0.0,0.0,-0.8472655687328948,0.0,0.0,0.0
+Two-dimensional_space,Nonagon,0,Plane,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Circle,Vertex_(geometry),0,Circle,Vertex,True,True,0.0,0.0,0.0,0.0,0.6427714025063619,1.0,1.0,-0.07619047619047618
+Two-dimensional_space,Plane_(geometry),1,Plane,Plane,False,True,0.0,0.0,0.0,0.0,0.0,8.0,0.0,0.0
+Dodecagon,Angle,1,,Angle,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Vertex_(geometry),Heptagon,0,Vertex,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Chord_(geometry),Angle,0,Chord,Angle,True,True,0.0,0.0,0.0,0.0,0.6583281317520526,3.0,3.0,0.23426573426573424
+Symmetry,Parallelogram,0,Symmetry,Parallelogram,True,True,0.0,0.0,0.0,0.0,0.4052912085273923,0.0,0.0,0.0
+Cylinder_(geometry),Perpendicular,0,Cylinder,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.6390262639842512,0.0,0.0,0.0
+Coordinate_system,Geometry,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Circle,Bisection,0,Circle,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,0.6571757814375571,0.0,0.0,0.0
+Polygon,Octagon,0,Polygon,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Perpendicular,Coordinate_system,0,Perpendicular,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Midpoint,Altitude_(triangle),0,Midpoint,Altitude,True,True,0.0,0.0,0.0,0.0,-0.42824218562442984,0.0,0.0,0.0
+Point_(geometry),Star_polygon,0,Point,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_(geometry),Pyramid_(geometry),0,Line,Pyramid,True,True,0.0,0.0,0.0,0.0,-0.8694002976904979,0.0,0.0,0.0
+Edge_(geometry),Right_triangle,0,,Right Triangle,False,True,0.0,0.0,0.0,0.0,0.7387045661881212,0.0,0.0,0.0
+Bisection,Triangle,0,Perpendicular Bisector,Triangle,True,True,0.0,0.0,0.0,0.0,-0.053536275027608396,1.0,0.0,0.08181818181818182
+Parallelogram,Angle,1,Parallelogram,Angle,True,True,0.0,0.0,0.0,0.0,0.4677581984923417,3.0,3.0,0.19230769230769232
+Point_(geometry),Hexagon,0,Point,Hexagon,True,True,0.0,0.0,0.0,0.0,-0.147404811062563,0.0,0.0,0.0
+Dodecagon,Polyhedron,0,,Polyhedron,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Kite_(geometry),Angle,1,Kite,Angle,True,True,0.0,0.0,0.0,0.0,0.5078503865175014,0.0,0.0,0.0
+Circumference,Arc_(geometry),0,Circumference,Arc,True,True,0.0,0.0,1.0,0.0,0.09919815623949681,2.0,2.0,0.5238095238095237
+Line_(geometry),Convex_polygon,0,Line,,False,True,0.0,0.0,0.0,0.0,-0.5248475536563115,0.0,0.0,0.0
+Convex_polygon,Geometry,1,,,False,True,0.0,0.0,0.0,0.0,0.5277764440389878,0.0,0.0,0.0
+Parallel_(geometry),Perpendicular,0,Parallel,Perpendicular,True,True,0.0,0.0,0.0,0.0,-0.0006241897536851203,2.0,0.0,-0.024999999999999994
+Line_segment,Vertex_(geometry),0,Line Segment,Vertex,True,True,0.0,0.0,0.0,0.0,-0.05204782253805157,0.0,0.0,0.0
+Scale_factor,Scaling_(geometry),0,Scale Factor,Scale Factor,False,True,0.0,0.0,0.0,0.0,0.0,3.0,0.0,0.0
+Line_segment,Dodecagon,0,Line Segment,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Rhombus,Perpendicular,0,Rhombus,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.30983819081000624,1.0,1.0,0.10416666666666666
+Pentagon,Edge_(geometry),1,Pentagon,,False,True,0.0,0.0,0.0,0.0,-0.7189705670523839,0.0,0.0,0.0
+Perpendicular,Angle,1,Perpendicular,Angle,True,True,0.0,0.0,0.0,0.0,0.18173524751524464,3.0,3.0,0.14903846153846154
+Parallel_(geometry),Angle,0,Parallel,Angle,True,True,0.0,0.0,0.0,0.0,0.1811110577615595,5.0,5.0,0.1858974358974359
+Perpendicular,Two-dimensional_space,0,Perpendicular,Plane,True,True,0.0,0.0,0.0,0.0,0.24401017909444472,0.0,0.0,0.0
+Rectangle,Point_(geometry),1,Rectangle,Point,True,True,0.0,0.0,0.0,0.0,0.5541844720795122,0.0,0.0,0.0
+Diameter,Radius,1,Diameter,Radius,True,True,0.0,0.0,0.0,0.0,0.0031689633648629184,1.0,1.0,0.20833333333333331
+Midpoint,Plane_(geometry),0,Midpoint,Plane,True,True,0.0,0.0,0.0,0.0,0.04955106352331109,0.0,0.0,0.0
+Rhombus,Edge_(geometry),1,Rhombus,,False,True,0.0,0.0,0.0,0.0,-0.3103183367743794,0.0,0.0,0.0
+Vertex_(geometry),Nonagon,0,Vertex,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Tangent,Sine,0,Tangent,Sine,True,True,0.0,0.0,0.0,0.0,0.000864262735871705,1.0,1.0,-0.375
+Right_triangle,Polygon,1,Right Triangle,Polygon,True,True,0.0,0.0,0.0,0.0,-0.010659240409084362,0.0,0.0,0.0
+Point_(geometry),Secant_line,0,Point,Secant,True,True,0.0,0.0,0.0,0.0,-0.781101454842272,3.0,0.0,-0.5
+Reflection_symmetry,Line_(geometry),1,Line Symmetry,Line,True,True,0.0,0.0,0.0,0.0,0.9358524991597446,1.0,1.0,0.22777777777777777
+Line_segment,Pentagon,0,Line Segment,Pentagon,True,True,0.0,0.0,0.0,0.0,-0.1289672060306333,0.0,0.0,0.0
+Parallel_(geometry),Skew_lines,0,Parallel,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Acute_and_obtuse_triangles,Vertex_(geometry),1,Acute Triangle,Vertex,True,True,0.0,0.0,0.0,0.0,0.054592596149229365,0.0,0.0,0.0
+Quadrilateral,Triangle_inequality,0,Quadrilateral,,False,True,0.0,0.0,0.0,0.0,-0.3556921304076439,0.0,0.0,0.0
+Line_(geometry),Plane_(geometry),0,Line,Plane,True,True,0.0,0.0,0.0,0.0,-0.0005281605608104864,4.0,0.0,-0.4111111111111111
+Chord_(geometry),Pythagorean_theorem,0,Chord,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,0.07144571949872762,0.0,0.0,0.0
+Rotational_symmetry,Trapezoid,0,Rotational Symmetry,Trapezoid,True,True,0.0,0.0,0.0,0.0,0.3702885677245883,0.0,0.0,0.0
+Rhombus,Parallelogram,1,Rhombus,Parallelogram,True,True,0.0,0.0,0.0,0.0,0.023815239832909205,1.0,1.0,0.08974358974358973
+Acute_and_obtuse_triangles,Triangle,1,Acute Triangle,Triangle,True,True,0.0,0.0,0.0,0.0,0.015460700052816056,2.0,2.0,0.9636363636363636
+Trigonometric_functions,Line_(geometry),1,Trigonometry,Line,True,True,0.0,0.0,0.0,0.0,0.6486291832717146,0.0,0.0,0.0
+Parallelogram,Convex_polygon,0,Parallelogram,,False,True,0.0,0.0,0.0,0.0,0.005713736976040717,0.0,0.0,0.0
+Arc_length,Distance,1,Arc Length,,False,True,0.0,0.0,0.0,0.0,0.8010755269601959,0.0,0.0,0.0
+Circle,Diameter,0,Circle,Diameter,True,True,0.0,0.0,0.0,0.0,-0.008882700340903635,1.0,0.0,-0.26666666666666666
+Rhombus,Vertex_(geometry),1,Rhombus,Vertex,True,True,0.0,0.0,0.0,0.0,0.4855716137705863,0.0,0.0,0.0
+Edge_(geometry),Trigonometric_functions,0,,Trigonometry,False,True,0.0,0.0,0.0,0.0,0.21606568396792625,0.0,0.0,0.0
+Geometry,Star_polygon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Acute_and_obtuse_triangles,Polygon,1,Acute Triangle,Polygon,True,True,0.0,0.0,0.0,0.0,-0.013252028616699477,0.0,0.0,0.0
+Right_angle,Geometry,1,Right Triangle,,False,True,0.0,0.0,0.0,0.0,0.08378547078311807,0.0,0.0,0.0
+Sine,Trigonometric_functions,1,Sine,Trigonometry,True,True,0.0,0.0,0.0,0.0,0.04436548710808086,2.0,2.0,0.7142857142857143
+Edge_(geometry),Hendecagon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Polygon,Right_triangle,0,Polygon,Right Triangle,True,True,0.0,0.0,0.0,0.0,0.010659240409084362,0.0,0.0,0.0
+Circle,Sine,0,Circle,Sine,True,True,0.0,0.0,0.0,0.0,0.018581648821241657,0.0,0.0,0.0
+Altitude_(triangle),Geometry,1,Altitude,,False,True,0.0,0.0,0.0,0.0,0.4812503000912277,0.0,0.0,0.0
+Line_(geometry),Kite_(geometry),0,Line,Kite,True,True,0.0,0.0,0.0,0.0,-0.5706534786575119,0.0,0.0,0.0
+Inverse_trigonometric_functions,Line_segment,1,Inverse Trigonometric,Line Segment,True,True,0.0,0.0,0.0,0.0,0.6915062178902386,0.0,0.0,0.0
+Equilateral_triangle,Angle,1,Equilateral Triangle,Angle,True,True,0.0,0.0,0.0,0.0,0.05099150141643059,2.0,2.0,0.37435897435897436
+Midpoint,Point_(geometry),1,Midpoint,Point,True,True,0.0,0.0,0.0,0.0,0.05046334085562011,1.0,1.0,0.10952380952380952
+Chord_(geometry),Sine,0,Chord,Sine,True,True,0.0,0.0,0.0,0.0,0.02813655351226773,0.0,0.0,0.0
+Line_(geometry),Reflection_symmetry,0,Line,Line Symmetry,True,True,0.0,0.0,0.0,0.0,-0.9358524991597446,1.0,0.0,-0.22777777777777777
+Right_triangle,Altitude_(triangle),0,Right Triangle,Altitude,True,True,0.0,0.0,0.0,0.0,-0.3523311086570317,0.0,0.0,0.0
+Heptagon,Radius,0,,Radius,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Collinearity,Cone,0,,Cone,False,True,0.0,0.0,0.0,0.0,0.09079560186296634,0.0,0.0,0.0
+Trapezoid,Geometry,1,Trapezoid,,False,True,0.0,0.0,0.0,0.0,0.5728621500936285,0.0,0.0,0.0
+Line_segment,Collinearity,0,Line Segment,,False,True,0.0,0.0,0.0,0.0,-0.974696307677534,0.0,0.0,0.0
+Circle,Two-dimensional_space,0,Circle,Plane,True,True,0.0,0.0,0.0,0.0,0.7110481586402266,0.0,0.0,0.0
+Polyhedron,Geometry,1,Polyhedron,,False,True,0.0,0.0,0.0,0.0,0.863350458539396,0.0,0.0,0.0
+Polyhedron,Point_(geometry),1,Polyhedron,Point,True,True,0.0,0.0,0.0,0.0,0.8608056849282182,0.0,0.0,0.0
+Angle,Reflection_(mathematics),0,Angle,Reflection,True,True,0.0,0.0,0.0,0.0,-0.8966725884668939,0.0,0.0,0.0
+Cross_section_(geometry),Geometry,1,Cross Section,,False,True,0.0,0.0,0.0,0.0,0.8828443846929467,0.0,0.0,0.0
+Triangle,Arc_length,0,Triangle,Arc Length,True,True,0.0,0.0,0.0,0.0,-0.7290536323042205,0.0,0.0,0.0
+Polygon,Quadrilateral,0,Polygon,Quadrilateral,True,True,0.0,0.0,0.0,0.0,-0.00753829164065876,1.0,0.0,-0.08403361344537814
+Translation_(geometry),Distance,0,Translation,,False,True,0.0,0.0,0.0,0.0,0.9121813031161473,1.0,1.0,-0.05714285714285716
+Line_(geometry),Prism_(geometry),0,Line,Prism,True,True,0.0,0.0,0.0,0.0,-0.8657992029576992,0.0,0.0,0.0
+Equilateral_triangle,Geometry,1,Equilateral Triangle,,False,True,0.0,0.0,0.0,0.0,0.1167234839391175,0.0,0.0,0.0
+Polygon,Rectangle,0,Polygon,Rectangle,True,True,0.0,0.0,0.0,0.0,-0.4171508138474096,0.0,0.0,0.0
+Octagon,Line_segment,1,,Line Segment,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Geometry,Cylinder_(geometry),0,,Cylinder,False,True,0.0,0.0,0.0,0.0,-0.8864934940221827,0.0,0.0,0.0
+Perpendicular,Trapezoid,0,Perpendicular,Trapezoid,True,True,0.0,0.0,0.0,0.0,-0.3253949200556969,0.0,0.0,0.0
+Symmetry,Translation_(geometry),0,Symmetry,Translation,True,True,0.0,0.0,0.0,0.0,-0.012243722091515821,0.0,0.0,0.0
+Point_(geometry),Angle_bisector_theorem,0,Point,Angle Bisector,True,True,0.0,0.0,0.0,0.0,-0.46238056369136216,1.0,0.0,-0.4666666666666667
+Triangle_inequality,Arc_length,0,,Arc Length,False,True,0.0,0.0,0.0,0.0,-0.3371104815864023,0.0,0.0,0.0
+Vertex_(geometry),Polygon,0,Vertex,Polygon,True,True,0.0,0.0,0.0,0.0,-0.06784462476592884,0.0,0.0,0.0
+Diameter,Line_segment,1,Diameter,Line Segment,True,True,0.0,0.0,0.0,0.0,0.7037019253853172,0.0,0.0,0.0
+Vertex_(geometry),Altitude_(triangle),0,Vertex,Altitude,True,True,0.0,0.0,0.0,0.0,-0.4095164930138762,1.0,0.0,-0.19047619047619047
+Line_(geometry),Secant_line,0,Line,Secant,True,True,0.0,0.0,0.0,0.0,-0.7807173380707735,1.0,0.0,-0.17777777777777778
+Circumference,Polygon,0,Circumference,Polygon,True,True,0.0,0.0,0.0,0.0,0.6994766408988332,0.0,0.0,0.0
+Polyhedron,Line_(geometry),1,Polyhedron,Line,True,True,0.0,0.0,0.0,0.0,0.8604215681567197,0.0,0.0,0.0
+Cylinder_(geometry),Tangent,0,Cylinder,Tangent,True,True,0.0,0.0,0.0,0.0,0.18970567052383924,0.0,0.0,0.0
+Geometry,Decagon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Polygon,Hendecagon,0,Polygon,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Angle,Distance,0,Angle,,False,True,0.0,0.0,0.0,0.0,0.02688817400489749,1.0,1.0,-0.18717948717948718
+Bisection,Congruence_(geometry),0,Perpendicular Bisector,Congruence,True,True,0.0,0.0,0.0,0.0,-0.15513516108897105,0.0,0.0,0.0
+Geometry,Square,0,,Square,False,True,0.0,0.0,0.0,0.0,-0.5580256397944975,0.0,0.0,0.0
+Decagon,Edge_(geometry),1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Altitude_(triangle),Line_(geometry),1,Altitude,Line,True,True,0.0,0.0,0.0,0.0,0.4783214097085514,0.0,0.0,0.0
+Rotation_(mathematics),Distance,0,Rotation,,False,True,0.0,0.0,0.0,0.0,0.9067556537187305,0.0,0.0,0.0
+Vertex_(geometry),Star_polygon,0,Vertex,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_(geometry),Angle,0,Line,Angle,True,True,0.0,0.0,0.0,0.0,-0.06280309214001056,13.0,0.0,0.1222222222222222
+Self-similarity,Similarity_(geometry),1,,Similarity,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Rhombus,Square,0,Rhombus,Square,True,True,0.0,0.0,0.0,0.0,-0.0007202189465597542,2.0,0.0,0.08333333333333331
+Altitude_(triangle),Point_(geometry),1,Altitude,Point,True,True,0.0,0.0,0.0,0.0,0.47870552648004994,1.0,1.0,0.3
+Edge_(geometry),Line_(geometry),1,,Line,False,True,0.0,0.0,0.0,0.0,0.8646948672396408,0.0,0.0,0.0
+Reflection_symmetry,Reflection_(mathematics),1,Line Symmetry,Reflection,True,True,0.0,0.0,0.0,0.0,-0.023623181447159938,0.0,0.0,0.0
+Pythagorean_theorem,Arc_length,0,Pythagorean Theorem,Arc Length,True,True,0.0,0.0,0.0,0.0,-0.1873049407019734,0.0,0.0,0.0
+Geometry,Prism_(geometry),0,,Prism,False,True,0.0,0.0,0.0,0.0,-0.8687280933403755,0.0,0.0,0.0
+Trigonometric_functions,Chord_(geometry),0,Trigonometry,Chord,True,True,0.0,0.0,0.0,0.0,-0.07250204062034858,0.0,0.0,0.0
+Acute_and_obtuse_triangles,Right_triangle,0,Acute Triangle,Right Triangle,True,True,0.0,0.0,0.0,0.0,-0.002592788207615115,0.0,0.0,0.0
+Cylinder_(geometry),Radius,0,Cylinder,Radius,True,True,0.0,0.0,0.0,0.0,0.1662745474624286,1.0,1.0,0.20833333333333331
+Inverse_trigonometric_functions,Tangent,0,Inverse Trigonometric,Tangent,True,True,0.0,0.0,0.0,0.0,0.014404378931195084,0.0,0.0,0.0
+Geometry,Symmetry,0,,Symmetry,False,True,0.0,0.0,0.0,0.0,-0.9387813895424209,0.0,0.0,0.0
+Angle_bisector_theorem,Point_(geometry),1,Angle Bisector,Point,True,True,0.0,0.0,0.0,0.0,0.46238056369136216,1.0,1.0,0.4666666666666667
+Rotation_(mathematics),Rigid_transformation,0,Rotation,,False,True,0.0,0.0,0.0,0.0,0.00864262735871705,0.0,0.0,0.0
+Star_polygon,Vertex_(geometry),1,,Vertex,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Convex_polygon,Point_(geometry),1,,Point,False,True,0.0,0.0,0.0,0.0,0.52523167042781,0.0,0.0,0.0
+Point_(geometry),Radius,0,Point,Radius,True,True,0.0,0.0,0.0,0.0,-0.7176741729485764,2.0,0.0,-0.18333333333333335
+Cylinder_(geometry),Polyhedron,0,Cylinder,Polyhedron,True,True,0.0,0.0,0.0,0.0,0.023143035482786768,0.0,0.0,0.0
+Pythagorean_triple,Line_(geometry),1,,Line,False,True,0.0,0.0,0.0,0.0,0.6651462044461516,0.0,0.0,0.0
+Parallel_(geometry),Tangent,0,Parallel,Tangent,True,True,0.0,0.0,0.0,0.0,-0.4499447832140971,0.0,0.0,0.0
+Line_segment,Arc_(geometry),0,Line Segment,Arc,True,True,0.0,0.0,0.0,0.0,-0.7201709319633168,0.0,0.0,0.0
+Reflection_symmetry,Geometry,1,Line Symmetry,,False,True,0.0,0.0,0.0,0.0,0.9387813895424209,0.0,0.0,0.0
+Polygon,Rhombus,0,Polygon,Rhombus,True,True,0.0,0.0,0.0,0.0,-0.41772698900465743,0.0,0.0,0.0
+Point_(geometry),Isosceles_triangle,0,Point,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,-0.11662745474624286,0.0,0.0,0.0
+Triangle,Altitude_(triangle),0,Triangle,Altitude,True,True,0.0,0.0,0.0,0.0,-0.3703845969174629,0.0,0.0,0.0
+Line_(geometry),Trapezoid,0,Line,Trapezoid,True,True,0.0,0.0,0.0,0.0,-0.5699332597109521,0.0,0.0,0.0
+Rhombus,Sine,0,Rhombus,Sine,True,True,0.0,0.0,0.0,0.0,-0.138618139914534,0.0,0.0,0.0
+Line_(geometry),Pythagorean_triple,0,Line,,False,True,0.0,0.0,0.0,0.0,-0.6651462044461516,0.0,0.0,0.0
+Cartesian_coordinate_system,Two-dimensional_space,1,,Plane,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Special_right_triangles,Line_segment,1,Special Right Triangles,Line Segment,True,True,0.0,0.0,0.0,0.0,0.6626974600278485,0.0,0.0,0.0
+Vertex_(geometry),Pyramid_(geometry),0,Vertex,Pyramid,True,True,0.0,0.0,0.0,0.0,-0.8005953809958227,0.0,0.0,0.0
+Geometry,Midpoint,0,,Midpoint,False,True,0.0,0.0,0.0,0.0,-0.05300811446679791,0.0,0.0,0.0
+Special_right_triangles,Circle,0,Special Right Triangles,Circle,True,True,0.0,0.0,0.0,0.0,-0.03212176501656504,0.0,0.0,0.0
+Pentagon,Point_(geometry),1,Pentagon,Point,True,True,0.0,0.0,0.0,0.0,0.14610841695875545,0.0,0.0,0.0
+Right_triangle,Isosceles_triangle,0,Right Triangle,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,0.00974696307677534,0.0,0.0,0.0
+Pythagorean_triple,Polygon,1,,Polygon,False,True,0.0,0.0,0.0,0.0,0.5284966629855476,0.0,0.0,0.0
+Angle_bisector_theorem,Geometry,1,Angle Bisector,,False,True,0.0,0.0,0.0,0.0,0.46492533730254,0.0,0.0,0.0
+Circle,Slope,0,Circle,Slope,True,True,0.0,0.0,0.0,0.0,0.39914534018341574,0.0,0.0,0.0
+Geometry,Similarity_(geometry),0,,Similarity,False,True,0.0,0.0,0.0,0.0,-0.5882268209535699,0.0,0.0,0.0
+Point_(geometry),Midpoint,0,Point,Midpoint,True,True,0.0,0.0,0.0,0.0,-0.05046334085562011,1.0,0.0,-0.10952380952380952
+Line_(geometry),Decagon,0,Line,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Point_(geometry),Arc_length,0,Point,Arc Length,True,True,0.0,0.0,0.0,0.0,-0.8373745618668075,0.0,0.0,0.0
+Angle,Perpendicular,0,Angle,Perpendicular,True,True,0.0,0.0,0.0,0.0,-0.18173524751524464,3.0,0.0,-0.14903846153846154
+Nonagon,Line_segment,1,,Line Segment,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Reflection_(mathematics),Circle,0,Reflection,Circle,True,True,0.0,0.0,0.0,0.0,0.24789936140586738,0.0,0.0,0.0
+Perpendicular,Vertex_(geometry),0,Perpendicular,Vertex,True,True,0.0,0.0,0.0,0.0,0.17573342296058,2.0,2.0,-0.1607142857142857
+Vertex_(geometry),Rectangle,0,Vertex,Rectangle,True,True,0.0,0.0,0.0,0.0,-0.48499543861333844,0.0,0.0,0.0
+Square,Trapezoid,0,Square,Trapezoid,True,True,0.0,0.0,0.0,0.0,-0.014836510299130936,0.0,0.0,0.0
+Rhombus,Kite_(geometry),0,Rhombus,Kite,True,True,0.0,0.0,0.0,0.0,-0.016276948192250444,1.0,0.0,-0.033333333333333354
+Rotational_symmetry,Line_(geometry),1,Rotational Symmetry,Line,True,True,0.0,0.0,0.0,0.0,0.9402218274355404,0.0,0.0,0.0
+Inverse_trigonometric_functions,Geometry,1,Inverse Trigonometric,,False,True,0.0,0.0,0.0,0.0,0.7111922024295386,0.0,0.0,0.0
+Perpendicular,Internal_and_external_angle,0,Perpendicular,Interior Angle,True,True,0.0,0.0,0.0,0.0,0.09262015652758439,0.0,0.0,0.0
+Quadrilateral,Reflection_symmetry,0,Quadrilateral,Line Symmetry,True,True,0.0,0.0,0.0,0.0,-0.7916646660584817,0.0,0.0,0.0
+Similarity_(geometry),Polygon,0,Similarity,Polygon,True,True,0.0,0.0,0.0,0.0,0.44864838911028954,0.0,0.0,0.0
+Vertex_(geometry),Prism_(geometry),0,Vertex,Prism,True,True,0.0,0.0,0.0,0.0,-0.7969942862630239,0.0,0.0,0.0
+Point_(geometry),Geometry,1,Point,,False,True,0.0,0.0,0.0,0.0,0.002544773611177798,1.0,1.0,-0.3
+Rhombus,Triangle,0,Rhombus,Triangle,True,True,0.0,0.0,0.0,0.0,0.44643971767417295,0.0,0.0,0.0
+Circle,Internal_and_external_angle,0,Circle,Interior Angle,True,True,0.0,0.0,0.0,0.0,0.5596581360733663,0.0,0.0,0.0
+Isosceles_triangle,Geometry,1,Isosceles Triangle,,False,True,0.0,0.0,0.0,0.0,0.11917222835742065,0.0,0.0,0.0
+Pythagorean_triple,Angle,1,,Angle,False,True,0.0,0.0,0.0,0.0,0.602343112306141,0.0,0.0,0.0
+Polyhedron,Diagonal,0,Polyhedron,,False,True,0.0,0.0,0.0,0.0,0.33365343064291547,0.0,0.0,0.0
+Reflection_symmetry,Point_(geometry),1,Line Symmetry,Point,True,True,0.0,0.0,0.0,0.0,0.9362366159312431,0.0,0.0,0.0
+Parallelogram,Rectangle,0,Parallelogram,Rectangle,True,True,0.0,0.0,0.0,0.0,-0.023239064675661402,1.0,0.0,-0.12307692307692308
+Face_(geometry),Plane_(geometry),0,,Plane,False,True,0.0,0.0,0.0,0.0,0.8633984731358333,0.0,0.0,0.0
+Parallelogram,Line_segment,1,Parallelogram,Line Segment,True,True,0.0,0.0,0.0,0.0,0.5138041964757286,0.0,0.0,0.0
+Collinearity,Midpoint,0,,Midpoint,False,True,0.0,0.0,0.0,0.0,0.941374177750036,0.0,0.0,0.0
+Right_triangle,Diameter,0,Right Triangle,Diameter,True,True,0.0,0.0,0.0,0.0,-0.594468718490421,0.0,0.0,0.0
+Circumference,Distance,0,Circumference,,False,True,0.0,0.0,0.0,0.0,0.8002112642243242,0.0,0.0,0.0
+Arc_(geometry),Diameter,0,Arc,Diameter,True,True,0.0,0.0,0.0,0.0,0.016469006577999712,1.0,1.0,-0.26190476190476186
+Rhombus,Geometry,1,Rhombus,,False,True,0.0,0.0,0.0,0.0,0.5573054208479378,0.0,0.0,0.0
+Cartesian_coordinate_system,Angle,1,,Angle,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Parallel_(geometry),Circle,0,Parallel,Circle,True,True,0.0,0.0,0.0,0.0,-0.467662169299467,0.0,0.0,0.0
+Perpendicular,Chord_(geometry),0,Perpendicular,Chord,True,True,0.0,0.0,0.0,0.0,-0.476592884236808,2.0,0.0,-0.05681818181818182
+Point_(geometry),Transversal_(geometry),0,Point,Transversal,True,True,0.0,0.0,0.0,0.0,-0.2524607480674125,0.0,0.0,0.0
+Tangent,Isosceles_triangle,0,Tangent,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,0.5776155951409229,0.0,0.0,0.0
+Angle,Transversal_(geometry),0,Angle,Transversal,True,True,0.0,0.0,0.0,0.0,-0.1892735391559034,9.0,0.0,-0.7027972027972028
+Equilateral_triangle,Line_(geometry),1,Equilateral Triangle,Line,True,True,0.0,0.0,0.0,0.0,0.11379459355644116,0.0,0.0,0.0
+Trapezoid,Line_(geometry),1,Trapezoid,Line,True,True,0.0,0.0,0.0,0.0,0.5699332597109521,0.0,0.0,0.0
+Line_(geometry),Rectangle,0,Line,Rectangle,True,True,0.0,0.0,0.0,0.0,-0.5538003553080136,0.0,0.0,0.0
+Bisection,Line_segment,1,Perpendicular Bisector,Line Segment,True,True,0.0,0.0,0.0,0.0,0.03764344360685649,0.0,0.0,0.0
+Geometry,Pentagon,0,,Pentagon,False,True,0.0,0.0,0.0,0.0,-0.14865319056993326,0.0,0.0,0.0
+Right_angle,Rectangle,0,Right Triangle,Rectangle,True,True,0.0,0.0,0.0,0.0,-0.4729437749075719,1.0,0.0,0.04999999999999999
+Rectangle,Translation_(geometry),0,Rectangle,Translation,True,True,0.0,0.0,0.0,0.0,-0.3942958659432467,0.0,0.0,0.0
+Similarity_(geometry),Circle,0,Similarity,Circle,True,True,0.0,0.0,0.0,0.0,-0.12627838863014357,0.0,0.0,0.0
+Congruence_(geometry),Vertex_(geometry),1,Congruence,Vertex,True,True,0.0,0.0,0.0,0.0,0.14073078215777596,0.0,0.0,0.0
+Right_angle,Triangle,0,Right Triangle,Triangle,True,True,0.0,0.0,0.0,0.0,-0.027080232390646757,0.0,0.0,0.0
+Point_(geometry),Decagon,0,Point,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_(geometry),Angle_bisector_theorem,0,Line,Angle Bisector,True,True,0.0,0.0,0.0,0.0,-0.46199644691986363,0.0,0.0,0.0
+Exterior_angle_theorem,Midpoint,0,Exterior Angle,Midpoint,True,True,0.0,0.0,0.0,0.0,0.2954338118788112,0.0,0.0,0.0
+Square,Symmetry,0,Square,Symmetry,True,True,0.0,0.0,0.0,0.0,-0.38075574974792337,0.0,0.0,0.0
+Perpendicular,Angle_bisector_theorem,0,Perpendicular,Angle Bisector,True,True,0.0,0.0,0.0,0.0,-0.21745810726460843,0.0,0.0,0.0
+Symmetry,Geometry,1,Symmetry,,False,True,0.0,0.0,0.0,0.0,0.9387813895424209,0.0,0.0,0.0
+Angle,Right_angle,0,Angle,Right Triangle,True,True,0.0,0.0,0.0,0.0,-0.018053488260431173,4.0,0.0,-0.9487179487179487
+Prism_(geometry),Distance,0,Prism,,False,True,0.0,0.0,0.0,0.0,0.829884284822586,0.0,0.0,0.0
+Midpoint,Angle,0,Midpoint,Angle,True,True,0.0,0.0,0.0,0.0,-0.01272386805588899,0.0,0.0,0.0
+Line_(geometry),Midpoint,0,Line,Midpoint,True,True,0.0,0.0,0.0,0.0,-0.050079224084121576,1.0,0.0,-0.12063492063492062
+Heptagon,Polygon,1,,Polygon,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Square,Octagon,0,Square,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Radius,Sphere,0,Radius,Sphere,True,True,0.0,0.0,0.0,0.0,-0.20007682335429972,2.0,0.0,-0.25
+Diameter,Line_(geometry),1,Diameter,Line,True,True,0.0,0.0,0.0,0.0,0.7204590195419408,0.0,0.0,0.0
+Line_segment,Rhombus,0,Line Segment,Rhombus,True,True,0.0,0.0,0.0,0.0,-0.5376194363086378,0.0,0.0,0.0
+Point_(geometry),Tangent,0,Point,Tangent,True,True,0.0,0.0,0.0,0.0,-0.6942430498871657,3.0,0.0,-0.275
+Point_(geometry),Diameter,0,Point,Diameter,True,True,0.0,0.0,0.0,0.0,-0.7208431363134393,0.0,0.0,0.0
+Rectangle,Polygon,1,Rectangle,Polygon,True,True,0.0,0.0,0.0,0.0,0.4171508138474096,0.0,0.0,0.0
+Bisection,Diagonal,0,Perpendicular Bisector,,False,True,0.0,0.0,0.0,0.0,-0.4723675997503241,1.0,0.0,-0.024999999999999994
+Polygon,Angle,1,Polygon,Angle,True,True,0.0,0.0,0.0,0.0,0.07384644932059346,6.0,6.0,0.27601809954751133
+Prism_(geometry),Line_(geometry),1,Prism,Line,True,True,0.0,0.0,0.0,0.0,0.8657992029576992,0.0,0.0,0.0
+Symmetry,Rotational_symmetry,0,Symmetry,Rotational Symmetry,True,True,0.0,0.0,0.0,0.0,-0.004369328275795842,1.0,0.0,-0.75
+Collinearity,Tangent,0,,Tangent,False,True,0.0,0.0,0.0,0.0,0.29759446871849043,0.0,0.0,0.0
+Diagonal,Edge_(geometry),1,,,False,True,0.0,0.0,0.0,0.0,-0.33792672972583665,0.0,0.0,0.0
+Line_(geometry),Tangent,0,Line,Tangent,True,True,0.0,0.0,0.0,0.0,-0.6938589331156672,3.0,0.0,-0.30833333333333335
+Triangle,Point_(geometry),1,Triangle,Point,True,True,0.0,0.0,0.0,0.0,0.10832092956258703,1.0,1.0,-0.015151515151515152
+Triangle_inequality,Line_(geometry),1,,Line,False,True,0.0,0.0,0.0,0.0,0.49987996350890673,0.0,0.0,0.0
+Angle,Trigonometric_functions,0,Angle,Trigonometry,True,True,0.0,0.0,0.0,0.0,-0.585826091131704,2.0,0.0,-0.26007326007326004
+Circle,Decagon,0,Circle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Vertex_(geometry),Triangle_inequality,0,Vertex,,False,True,0.0,0.0,0.0,0.0,-0.43107504681423153,0.0,0.0,0.0
+Polygon,Nonagon,0,Polygon,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Geometry,Tangent,0,,Tangent,False,True,0.0,0.0,0.0,0.0,-0.6967878234983435,0.0,0.0,0.0
+Acute_and_obtuse_triangles,Edge_(geometry),1,Acute Triangle,,False,True,0.0,0.0,0.0,0.0,-0.7412973543957363,0.0,0.0,0.0
+Triangle,Equilateral_triangle,0,Triangle,Equilateral Triangle,True,True,0.0,0.0,0.0,0.0,-0.0058577807653526675,5.0,0.0,-0.9090909090909091
+Angle,Square,0,Angle,Square,True,True,0.0,0.0,0.0,0.0,-0.4922936572718106,0.0,0.0,0.0
+Triangle,Triangle_inequality,0,Triangle,,False,True,0.0,0.0,0.0,0.0,-0.3919431507178182,1.0,0.0,-0.9818181818181818
+Vertex_(geometry),Parallelogram,0,Vertex,Parallelogram,True,True,0.0,0.0,0.0,0.0,-0.46175637393767704,0.0,0.0,0.0
+Line_segment,Congruence_(geometry),0,Line Segment,Congruence,True,True,0.0,0.0,0.0,0.0,-0.19277860469582753,0.0,0.0,0.0
+Triangle,Pythagorean_theorem,0,Triangle,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,-0.541748691602247,2.0,0.0,-0.36363636363636365
+Edge_(geometry),Pythagorean_triple,0,,,False,True,0.0,0.0,0.0,0.0,0.19954866279348923,0.0,0.0,0.0
+Line_segment,Inverse_trigonometric_functions,0,Line Segment,Inverse Trigonometric,True,True,0.0,0.0,0.0,0.0,-0.6915062178902386,0.0,0.0,0.0
+Collinearity,Altitude_(triangle),0,,Altitude,False,True,0.0,0.0,0.0,0.0,0.5131319921256062,0.0,0.0,0.0
+Line_segment,Quadrilateral,0,Line Segment,Quadrilateral,True,True,0.0,0.0,0.0,0.0,-0.12743073894463916,0.0,0.0,0.0
+Pentagon,Diagonal,0,Pentagon,,False,True,0.0,0.0,0.0,0.0,-0.3810438373265473,0.0,0.0,0.0
+Bisection,Parallelogram,0,Perpendicular Bisector,Parallelogram,True,True,0.0,0.0,0.0,0.0,-0.47616075286887216,0.0,0.0,0.0
+Two-dimensional_space,Coordinate_system,0,Plane,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Trigonometric_functions,Tangent,0,Trigonometry,Tangent,True,True,0.0,0.0,0.0,0.0,-0.04522974984395256,2.0,0.0,0.0357142857142857
+Dodecagon,Geometry,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Hendecagon,Line_(geometry),1,,Line,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Geometry,Radius,0,,Radius,False,True,0.0,0.0,0.0,0.0,-0.7202189465597542,0.0,0.0,0.0
+Rotation_(mathematics),Space_(mathematics),0,Rotation,,False,True,0.0,0.0,0.0,0.0,0.023143035482786768,0.0,0.0,0.0
+Rotation_(mathematics),Rotational_symmetry,0,Rotation,Rotational Symmetry,True,True,0.0,0.0,0.0,0.0,0.0024487444183031643,1.0,1.0,-0.8
+Angle,Acute_and_obtuse_triangles,0,Angle,Acute Triangle,True,True,0.0,0.0,0.0,0.0,-0.06059442070389398,2.0,0.0,-0.9743589743589743
+Diameter,Distance,0,Diameter,,False,True,0.0,0.0,0.0,0.0,0.6845441014068276,0.0,0.0,0.0
+Transversal_(geometry),Congruence_(geometry),0,Transversal,Congruence,True,True,0.0,0.0,0.0,0.0,0.04254093244346281,0.0,0.0,0.0
+Pythagorean_theorem,Isosceles_triangle,0,Pythagorean Theorem,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,0.5334421664185912,0.0,0.0,0.0
+Decagon,Line_segment,1,,Line Segment,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_segment,Right_triangle,0,Line Segment,Right Triangle,True,True,0.0,0.0,0.0,0.0,-0.10923320689489605,0.0,0.0,0.0
+Edge_(geometry),Point_(geometry),1,,Point,False,True,0.0,0.0,0.0,0.0,0.8650789840111394,0.0,0.0,0.0
+Dodecagon,Hexagon,0,,Hexagon,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Point_(geometry),Rotational_symmetry,0,Point,Rotational Symmetry,True,True,0.0,0.0,0.0,0.0,-0.9406059442070389,0.0,0.0,0.0
+Sine,Cartesian_coordinate_system,0,Sine,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Pythagorean_theorem,Point_(geometry),1,Pythagorean Theorem,Point,True,True,0.0,0.0,0.0,0.0,0.6500696211648341,0.0,0.0,0.0
+Edge_(geometry),Star_polygon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Radius,Line_(geometry),1,Radius,Line,True,True,0.0,0.0,0.0,0.0,0.7172900561770779,1.0,1.0,0.10277777777777777
+Convex_polygon,Angle,1,,Angle,False,True,0.0,0.0,0.0,0.0,0.46204446151630096,1.0,1.0,0.9871794871794872
+Sphere,Polyhedron,0,Sphere,Polyhedron,True,True,0.0,0.0,0.0,0.0,0.05694531137465789,0.0,0.0,0.0
+Trigonometric_functions,Right_triangle,0,Trigonometry,Right Triangle,True,True,1.3094999999999999,1.3094999999999999,1.0,1.0,0.522638882220195,2.0,2.0,0.0
+Polygon,Hexagon,0,Polygon,Hexagon,True,True,0.0,0.0,0.0,0.0,-0.01037115283046046,0.0,0.0,0.0
+Square,Circle,0,Square,Circle,True,True,0.0,0.0,0.0,0.0,-0.15647956978921593,0.0,0.0,0.0
+Tangent,Triangle,1,Tangent,Triangle,True,True,0.0,0.0,0.0,0.0,0.5859221203245787,0.0,0.0,0.0
+Geometry,Hendecagon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Heptagon,Edge_(geometry),1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Rectangle,Vertex_(geometry),1,Rectangle,Vertex,True,True,0.0,0.0,0.0,0.0,0.48499543861333844,0.0,0.0,0.0
+Reflection_symmetry,Perpendicular,0,Line Symmetry,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.6913141595044894,0.0,0.0,0.0
+Reflection_symmetry,Rotational_symmetry,0,Line Symmetry,Rotational Symmetry,True,True,0.0,0.0,0.0,0.0,-0.004369328275795842,1.0,0.0,-0.75
+Point_(geometry),Vertex_(geometry),0,Point,Vertex,True,True,0.0,0.0,0.0,0.0,-0.06918903346617372,2.0,0.0,-0.21904761904761905
+Prism_(geometry),Parallelogram,0,Prism,Parallelogram,True,True,0.0,0.0,0.0,0.0,0.3352379123253469,1.0,1.0,0.12307692307692308
+Rotation_(mathematics),Point_(geometry),1,Rotation,Point,True,True,0.0,0.0,0.0,0.0,0.9430546886253421,1.0,1.0,0.16666666666666669
+Rigid_transformation,Line_(geometry),1,,Line,False,True,0.0,0.0,0.0,0.0,0.9340279444951265,0.0,0.0,0.0
+Collinearity,Distance,0,,,False,True,0.0,0.0,0.0,0.0,0.9555384836990445,1.0,1.0,0.8
+Rhombus,Line_segment,1,Rhombus,Line Segment,True,True,0.0,0.0,0.0,0.0,0.5376194363086378,0.0,0.0,0.0
+Polygon,Pentagon,0,Polygon,Pentagon,True,True,0.0,0.0,0.0,0.0,-0.009074758726652903,0.0,0.0,0.0
+Kite_(geometry),Quadrilateral,1,Kite,Quadrilateral,True,True,0.0,0.0,0.0,0.0,0.4264656455562491,0.0,0.0,0.0
+Vertex_(geometry),Point_(geometry),1,Vertex,Point,True,True,0.0,0.0,0.0,0.0,0.06918903346617372,2.0,2.0,0.21904761904761905
+Parallelogram,Tessellation,0,Parallelogram,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Geometry,Bisection,0,,Perpendicular Bisector,False,True,0.0,0.0,0.0,0.0,-0.05732942814615643,0.0,0.0,0.0
+Right_triangle,Tangent,0,Right Triangle,Tangent,True,True,0.0,0.0,0.0,0.0,-0.5678686320641475,0.0,0.0,0.0
+Angle,Circumference,0,Angle,Circumference,True,True,0.0,0.0,0.0,0.0,-0.7733230902194267,0.0,0.0,0.0
+Sine,Line_segment,1,Sine,Line Segment,True,True,0.0,0.0,0.0,0.0,0.6762375762231718,0.0,0.0,0.0
+Tangent,Edge_(geometry),1,Tangent,,False,True,0.0,0.0,0.0,0.0,-0.1708359341239737,0.0,0.0,0.0
+Edge_(geometry),Convex_polygon,0,,,False,True,0.0,0.0,0.0,0.0,0.3398473135833293,0.0,0.0,0.0
+Pythagorean_theorem,Rigid_transformation,0,Pythagorean Theorem,,False,True,0.0,0.0,0.0,0.0,-0.28434244010179094,0.0,0.0,0.0
+Pyramid_(geometry),Line_(geometry),1,Pyramid,Line,True,True,0.0,0.0,0.0,0.0,0.8694002976904979,0.0,0.0,0.0
+Two-dimensional_space,Point_(geometry),1,Plane,Point,True,True,0.0,0.0,0.0,0.0,0.000912277332309022,4.0,4.0,0.3666666666666667
+Polygon,Exterior_angle_theorem,0,Polygon,Exterior Angle,True,True,0.0,0.0,0.0,0.0,-0.20886349450232872,0.0,0.0,0.0
+Arc_length,Circle,1,Arc Length,Circle,True,True,0.0,0.0,0.0,0.0,0.12541412589427187,0.0,0.0,0.0
+Point_(geometry),Nonagon,0,Point,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Acute_and_obtuse_triangles,Point_(geometry),1,Acute Triangle,Point,True,True,0.0,0.0,0.0,0.0,0.12378162961540308,0.0,0.0,0.0
+Two-dimensional_space,Star_polygon,0,Plane,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_(geometry),Square,0,Line,Square,True,True,0.0,0.0,0.0,0.0,-0.5550967494118212,0.0,0.0,0.0
+Secant_line,Chord_(geometry),0,Secant,Chord,True,True,0.0,1.38,0.0,0.0,0.05958611417871033,2.0,2.0,0.2181818181818182
+Acute_and_obtuse_triangles,Pyramid_(geometry),0,Acute Triangle,Pyramid,True,True,0.0,0.0,0.0,0.0,-0.7460027848465933,0.0,0.0,0.0
+Midpoint,Angle_bisector_theorem,0,Midpoint,Angle Bisector,True,True,0.0,0.0,0.0,0.0,-0.41191722283574206,0.0,0.0,0.0
+Line_(geometry),Radius,0,Line,Radius,True,True,0.0,0.0,0.0,0.0,-0.7172900561770779,1.0,0.0,-0.10277777777777777
+Acute_and_obtuse_triangles,Tangent,0,Acute Triangle,Tangent,True,True,0.0,0.0,0.0,0.0,-0.5704614202717626,0.0,0.0,0.0
+Prism_(geometry),Line_segment,1,Prism,Line Segment,True,True,0.0,0.0,0.0,0.0,0.8490421088010756,0.0,0.0,0.0
+Line_segment,Octagon,0,Line Segment,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Vertex_(geometry),Internal_and_external_angle,0,Vertex,Interior Angle,True,True,0.0,0.0,0.0,0.0,-0.08311326643299563,0.0,0.0,0.0
+Point_(geometry),Hendecagon,0,Point,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Geometry,Inverse_trigonometric_functions,0,,Inverse Trigonometric,False,True,0.0,0.0,0.0,0.0,-0.7111922024295386,0.0,0.0,0.0
+Point_(geometry),Angle,0,Point,Angle,True,True,0.0,0.0,0.0,0.0,-0.0631872089115091,5.0,0.0,0.10256410256410256
+Line_segment,Cylinder_(geometry),0,Line Segment,Cylinder,True,True,0.0,0.0,0.0,0.0,-0.8668075094828828,0.0,0.0,0.0
+Line_segment,Similarity_(geometry),0,Line Segment,Similarity,True,True,0.0,0.0,0.0,0.0,-0.5685408364142699,0.0,0.0,0.0
+Geometry,Special_right_triangles,0,,Special Right Triangles,False,True,0.0,0.0,0.0,0.0,-0.6823834445671484,0.0,0.0,0.0
+Hexagon,Angle,1,Hexagon,Angle,True,True,0.0,0.0,0.0,0.0,0.08421760215105392,0.0,0.0,0.0
+Polyhedron,Vertex_(geometry),1,Polyhedron,Vertex,True,True,0.0,0.0,0.0,0.0,0.7916166514620444,0.0,0.0,0.0
+Triangle_inequality,Parallelogram,0,,Parallelogram,False,True,0.0,0.0,0.0,0.0,-0.030681327123445526,0.0,0.0,0.0
+Plane_(geometry),Skew_lines,0,Plane,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Plane_(geometry),Coordinate_system,0,Plane,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Radius,Geometry,1,Radius,,False,True,0.0,0.0,0.0,0.0,0.7202189465597542,0.0,0.0,0.0
+Equilateral_triangle,Square,0,Equilateral Triangle,Square,True,True,0.0,0.0,0.0,0.0,-0.44130215585538,0.0,0.0,0.0
+Parallel_(geometry),Point_(geometry),1,Parallel,Point,True,True,0.0,0.0,0.0,0.0,0.24429826667306861,0.0,0.0,0.0
+Similarity_(geometry),Square,0,Similarity,Square,True,True,0.0,0.0,0.0,0.0,0.030201181159072357,0.0,0.0,0.0
+Angle,Hendecagon,0,Angle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Tessellation,Vertex_(geometry),0,,Vertex,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Angle_bisector_theorem,Sine,0,Angle Bisector,Sine,True,True,0.0,0.0,0.0,0.0,-0.23099822345993182,0.0,0.0,0.0
+Prism_(geometry),Parallel_(geometry),1,Prism,Parallel,True,True,0.0,0.0,0.0,0.0,0.6218850530561291,1.0,1.0,0.15000000000000002
+Tessellation,Kite_(geometry),0,,Kite,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Point_(geometry),Rectangle,0,Point,Rectangle,True,True,0.0,0.0,0.0,0.0,-0.5541844720795122,0.0,0.0,0.0
+Angle_bisector_theorem,Edge_(geometry),1,Angle Bisector,,False,True,0.0,0.0,0.0,0.0,-0.4026984203197772,0.0,0.0,0.0
+Pythagorean_theorem,Altitude_(triangle),0,Pythagorean Theorem,Altitude,True,True,0.0,0.0,0.0,0.0,0.17136409468478417,0.0,0.0,0.0
+Bisection,Line_(geometry),1,Perpendicular Bisector,Line,True,True,0.0,0.0,0.0,0.0,0.0544005377634801,1.0,1.0,0.07777777777777778
+Diagonal,Point_(geometry),1,,Point,False,True,0.0,0.0,0.0,0.0,0.5271522542853028,0.0,0.0,0.0
+Concentric,Sphere,0,,Sphere,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Altitude_(triangle),Bisection,0,Altitude,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,0.4239208719450713,0.0,0.0,0.0
+Square,Coordinate_system,0,Square,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Parallelogram,Pythagorean_theorem,0,Parallelogram,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,-0.11912421376098334,0.0,0.0,0.0
+Parallel_(geometry),Distance,0,Parallel,,False,True,0.0,0.0,0.0,0.0,0.20799923176645702,0.0,0.0,0.0
+Edge_(geometry),Inverse_trigonometric_functions,0,,Inverse Trigonometric,False,True,0.0,0.0,0.0,0.0,0.1564315551927786,0.0,0.0,0.0
+Cylinder_(geometry),Concentric,0,Cylinder,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Rotational_symmetry,Cone,0,Rotational Symmetry,Cone,True,True,0.0,0.0,0.0,0.0,0.039564027464349165,0.0,0.0,0.0
+Geometry,Parallelogram,0,,Parallelogram,False,True,0.0,0.0,0.0,0.0,-0.5334901810150285,0.0,0.0,0.0
+Decagon,Polygon,1,,Polygon,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Pythagorean_triple,Geometry,1,,,False,True,0.0,0.0,0.0,0.0,0.668075094828828,0.0,0.0,0.0
+Pythagorean_triple,Right_angle,1,,Right Triangle,False,True,0.0,0.0,0.0,0.0,0.5842896240457099,0.0,0.0,0.0
+Special_right_triangles,Pythagorean_theorem,0,Special Right Triangles,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,0.029769049791136506,0.0,0.0,0.0
+Congruence_(geometry),Geometry,1,Congruence,,False,True,0.0,0.0,0.0,0.0,0.21246458923512748,0.0,0.0,0.0
+Collinearity,Chord_(geometry),0,,Chord,False,True,0.0,0.0,0.0,0.0,0.2703221779420944,0.0,0.0,0.0
+Distance,Arc_length,0,,Arc Length,False,True,0.0,0.0,0.0,0.0,-0.8010755269601959,0.0,0.0,0.0
+Similarity_(geometry),Midpoint,0,Similarity,Midpoint,True,True,0.0,0.0,0.0,0.0,0.535218706486772,0.0,0.0,0.0
+Circle,Cone,0,Circle,Cone,True,True,0.0,0.0,0.0,0.0,-0.18908148077015413,0.0,0.0,0.0
+Convex_polygon,Pyramid_(geometry),0,,Pyramid,False,True,0.0,0.0,0.0,0.0,-0.3445527440341864,0.0,0.0,0.0
+Geometry,Perpendicular,0,,Perpendicular,False,True,0.0,0.0,0.0,0.0,-0.24746723003793153,0.0,0.0,0.0
+Angle_bisector_theorem,Triangle,1,Angle Bisector,Triangle,True,True,0.0,0.0,0.0,0.0,0.35405963412877517,1.0,1.0,0.4818181818181818
+Polygon,Pyramid_(geometry),0,Polygon,Pyramid,True,True,0.0,0.0,0.0,0.0,-0.7327507562298939,0.0,0.0,0.0
+Point_(geometry),Reflection_symmetry,0,Point,Line Symmetry,True,True,0.0,0.0,0.0,0.0,-0.9362366159312431,0.0,0.0,0.0
+Pythagorean_triple,Vertex_(geometry),1,,Vertex,False,True,0.0,0.0,0.0,0.0,0.5963412877514764,0.0,0.0,0.0
+Triangle_inequality,Geometry,1,,,False,True,0.0,0.0,0.0,0.0,0.502808853891583,0.0,0.0,0.0
+Isosceles_triangle,Line_segment,1,Isosceles Triangle,Line Segment,True,True,0.0,0.0,0.0,0.0,0.09948624381812071,0.0,0.0,0.0
+Right_triangle,Circle,0,Right Triangle,Circle,True,True,0.0,0.0,0.0,0.0,-0.5855860181495175,0.0,0.0,0.0
+Cartesian_coordinate_system,Distance,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Angle,Circle,0,Angle,Circle,True,True,0.0,0.0,0.0,0.0,-0.6487732270610266,1.0,0.0,-0.05384615384615385
+Similarity_(geometry),Reflection_(mathematics),0,Similarity,Reflection,True,True,0.0,0.0,0.0,0.0,-0.37417775003601095,0.0,0.0,0.0
+Triangle,Sphere,0,Triangle,Sphere,True,True,0.0,0.0,0.0,0.0,-0.8094300667402891,0.0,0.0,0.0
+Convex_polygon,Kite_(geometry),0,,Kite,False,True,0.0,0.0,0.0,0.0,-0.045805925001200364,0.0,0.0,0.0
+Diameter,Geometry,1,Diameter,,False,True,0.0,0.0,0.0,0.0,0.7233879099246171,0.0,0.0,0.0
+Midpoint,Line_segment,1,Midpoint,Line Segment,True,True,0.0,0.0,0.0,0.0,0.03332212992749796,0.0,0.0,0.0
+Edge_(geometry),Special_right_triangles,0,,Special Right Triangles,False,True,0.0,0.0,0.0,0.0,0.18524031305516878,0.0,0.0,0.0
+Tangent,Pyramid_(geometry),0,Tangent,Pyramid,True,True,0.0,0.0,0.0,0.0,-0.17554136457483074,0.0,0.0,0.0
+Two-dimensional_space,Sphere,0,Plane,Sphere,True,True,0.0,0.0,0.0,0.0,-0.916838718970567,0.0,0.0,0.0
+Rectangle,Square,0,Rectangle,Square,True,True,0.0,0.0,0.0,0.0,-0.0012963941038075576,2.0,0.0,0.15000000000000002
+Face_(geometry),Symmetry,0,,Symmetry,False,True,0.0,0.0,0.0,0.0,-0.07192586546310079,0.0,0.0,0.0
+Secant_line,Line_(geometry),1,Secant,Line,True,True,0.0,0.0,0.0,0.0,0.7807173380707735,1.0,1.0,0.17777777777777778
+Polyhedron,Polygon,1,Polyhedron,Polygon,True,True,0.0,0.0,0.0,0.0,0.7237720266961156,1.0,1.0,0.4411764705882353
+Vertex_(geometry),Inverse_trigonometric_functions,0,Vertex,Inverse Trigonometric,True,True,0.0,0.0,0.0,0.0,-0.6394583953521871,0.0,0.0,0.0
+Perpendicular,Cartesian_coordinate_system,0,Perpendicular,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Circle,Diagonal,0,Circle,,False,True,0.0,0.0,0.0,0.0,0.18480818168723293,0.0,0.0,0.0
+Dodecagon,Point_(geometry),1,,Point,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Triangle_inequality,Pythagorean_triple,0,,,False,True,0.0,0.0,0.0,0.0,-0.16526624093724493,0.0,0.0,0.0
+Grade_(slope),Angle,1,Slope,Angle,True,True,0.0,0.0,0.0,0.0,0.24962788687761078,0.0,0.0,0.0
+Pyramid_(geometry),Angle,1,Pyramid,Angle,True,True,0.0,0.0,0.0,0.0,0.8065972055504873,0.0,0.0,0.0
+Sine,Edge_(geometry),1,Sine,,False,True,0.0,0.0,0.0,0.0,-0.1717001968598454,0.0,0.0,0.0
+Edge_(geometry),Sine,0,,Sine,False,True,0.0,0.0,0.0,0.0,0.1717001968598454,0.0,0.0,0.0
+Line_(geometry),Hexagon,0,Line,Hexagon,True,True,0.0,0.0,0.0,0.0,-0.14702069429106449,0.0,0.0,0.0
+Point_(geometry),Coordinate_system,0,Point,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Isosceles_triangle,Vertex_(geometry),1,Isosceles Triangle,Vertex,True,True,0.0,0.0,0.0,0.0,0.04743842128006914,0.0,0.0,0.0
+Edge_(geometry),Diagonal,0,,,False,True,0.0,0.0,0.0,0.0,0.33792672972583665,0.0,0.0,0.0
+Perpendicular,Line_(geometry),1,Perpendicular,Line,True,True,0.0,0.0,0.0,0.0,0.2445383396552552,8.0,8.0,0.3222222222222222
+Point_(geometry),Convex_polygon,0,Point,,False,True,0.0,0.0,0.0,0.0,-0.52523167042781,0.0,0.0,0.0
+Angle_bisector_theorem,Perpendicular,1,Angle Bisector,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.21745810726460843,0.0,0.0,0.0
+Triangle_inequality,Right_triangle,0,,Right Triangle,False,True,0.0,0.0,0.0,0.0,0.37388966245738703,0.0,0.0,0.0
+Similarity_(geometry),Pythagorean_triple,0,Similarity,,False,True,0.0,0.0,0.0,0.0,-0.07984827387525807,0.0,0.0,0.0
+Pentagon,Vertex_(geometry),1,Pentagon,Vertex,True,True,0.0,0.0,0.0,0.0,0.07691938349258175,0.0,0.0,0.0
+Congruence_(geometry),Sphere,0,Congruence,Sphere,True,True,0.0,0.0,0.0,0.0,-0.7078311806789264,0.0,0.0,0.0
+Altitude_(triangle),Tangent,0,Altitude,Tangent,True,True,0.0,0.0,0.0,0.0,-0.21553752340711577,0.0,0.0,0.0
+Tangent,Polygon,1,Tangent,Polygon,True,True,0.0,0.0,0.0,0.0,0.5572093916550631,0.0,0.0,0.0
+Collinearity,Point_(geometry),1,,Point,False,True,0.0,0.0,0.0,0.0,0.9918375186056562,0.0,0.0,0.0
+Cylinder_(geometry),Coordinate_system,0,Cylinder,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Diameter,Kite_(geometry),0,Diameter,Kite,True,True,0.0,0.0,0.0,0.0,0.14980554088442888,0.0,0.0,0.0
+Congruence_(geometry),Line_segment,1,Congruence,Line Segment,True,True,0.0,0.0,0.0,0.0,0.19277860469582753,0.0,0.0,0.0
+Geometry,Rectangle,0,,Rectangle,False,True,0.0,0.0,0.0,0.0,-0.5567292456906899,0.0,0.0,0.0
+Rectangle,Sphere,0,Rectangle,Sphere,True,True,0.0,0.0,0.0,0.0,-0.3635665242233639,0.0,0.0,0.0
+Diameter,Point_(geometry),1,Diameter,Point,True,True,0.0,0.0,0.0,0.0,0.7208431363134393,0.0,0.0,0.0
+Point_(geometry),Polyhedron,0,Point,Polyhedron,True,True,0.0,0.0,0.0,0.0,-0.8608056849282182,0.0,0.0,0.0
+Square,Edge_(geometry),1,Square,,False,True,0.0,0.0,0.0,0.0,-0.30959811782781965,0.0,0.0,0.0
+Circle,Secant_line,0,Circle,Secant,True,True,0.0,0.0,0.0,0.0,-0.0691410188697364,1.0,0.0,-0.13333333333333336
+Diameter,Decagon,0,Diameter,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Prism_(geometry),Polygon,1,Prism,Polygon,True,True,0.0,0.0,0.0,0.0,0.7291496614970951,0.0,0.0,0.0
+Right_angle,Trapezoid,0,Right Triangle,Trapezoid,True,True,0.0,0.0,0.0,0.0,-0.4890766793105104,0.0,0.0,0.0
+Line_segment,Internal_and_external_angle,0,Line Segment,Interior Angle,True,True,0.0,0.0,0.0,0.0,-0.1351610889710472,0.0,0.0,0.0
+Line_(geometry),Special_right_triangles,0,Line,Special Right Triangles,True,True,0.0,0.0,0.0,0.0,-0.6794545541844721,0.0,0.0,0.0
+Rhombus,Line_(geometry),1,Rhombus,Line,True,True,0.0,0.0,0.0,0.0,0.5543765304652615,0.0,0.0,0.0
+Inverse_trigonometric_functions,Angle,1,Inverse Trigonometric,Angle,True,True,0.0,0.0,0.0,0.0,0.6454602199068517,1.0,1.0,0.9871794871794872
+Edge_(geometry),Square,0,,Square,False,True,0.0,0.0,0.0,0.0,0.30959811782781965,0.0,0.0,0.0
+Congruence_(geometry),Diameter,0,Congruence,Diameter,True,True,0.0,0.0,0.0,0.0,-0.5109233206894896,0.0,0.0,0.0
+Pyramid_(geometry),Scaling_(geometry),0,Pyramid,Scale Factor,True,True,0.0,0.0,0.0,0.0,0.27473952081432756,0.0,0.0,0.0
+Parallel_(geometry),Line_(geometry),1,Parallel,Line,True,True,0.0,0.0,0.0,0.0,0.24391414990157007,14.0,14.0,0.38888888888888884
+Special_right_triangles,Triangle,1,Special Right Triangles,Triangle,True,True,0.0,0.0,0.0,0.0,0.5715177413933836,1.0,1.0,0.9818181818181818
+Right_triangle,Pythagorean_triple,0,Right Triangle,,False,True,0.0,0.0,0.0,0.0,-0.5391559033946319,0.0,0.0,0.0
+Special_right_triangles,Pythagorean_triple,0,Special Right Triangles,,False,True,0.0,0.0,0.0,0.0,0.01430834973832045,0.0,0.0,0.0
+Tangent,Kite_(geometry),0,Tangent,Kite,True,True,0.0,0.0,0.0,0.0,0.12320545445815528,0.0,0.0,0.0
+Decagon,Angle,1,,Angle,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_(geometry),Quadrilateral,0,Line,Quadrilateral,True,True,0.0,0.0,0.0,0.0,-0.1441878331012628,0.0,0.0,0.0
+Radius,Line_segment,1,Radius,Line Segment,True,True,0.0,0.0,0.0,0.0,0.7005329620204542,0.0,0.0,0.0
+Edge_(geometry),Decagon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Angle_bisector_theorem,Line_segment,1,Angle Bisector,Line Segment,True,True,0.0,0.0,0.0,0.0,0.44523935276324,0.0,0.0,0.0
+Line_segment,Parallel_(geometry),0,Line Segment,Parallel,True,True,0.0,0.0,0.0,0.0,-0.22715705574494646,0.0,0.0,0.0
+Exterior_angle_theorem,Angle,1,Exterior Angle,Angle,True,True,0.0,0.0,0.0,0.0,0.2827099438229222,1.0,1.0,0.9871794871794872
+Perpendicular,Quadrilateral,0,Perpendicular,Quadrilateral,True,True,0.0,0.0,0.0,0.0,0.10035050655399241,0.0,0.0,0.0
+Cone,Cartesian_coordinate_system,0,Cone,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Arc_length,Slope,0,Arc Length,Slope,True,True,0.0,0.0,0.0,0.0,0.5245594660776877,0.0,0.0,0.0
+Circle,Convex_polygon,0,Circle,,False,True,0.0,0.0,0.0,0.0,0.1867287655447256,0.0,0.0,0.0
+Point_(geometry),Equilateral_triangle,0,Point,Equilateral Triangle,True,True,0.0,0.0,0.0,0.0,-0.11417871032793969,0.0,0.0,0.0
+Distance,Cartesian_coordinate_system,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Right_angle,Angle,1,Right Triangle,Angle,True,True,0.0,0.0,0.0,0.0,0.018053488260431173,4.0,4.0,0.9487179487179487
+Circle,Radius,0,Circle,Radius,True,True,0.0,0.0,0.0,0.0,-0.005713736976040717,3.0,0.0,-0.175
+Heptagon,Geometry,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Angle_bisector_theorem,Midpoint,1,Angle Bisector,Midpoint,True,True,0.0,0.0,0.0,0.0,0.41191722283574206,0.0,0.0,0.0
+Congruence_(geometry),Isosceles_triangle,0,Congruence,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,0.09329236087770683,0.0,0.0,0.0
+Arc_(geometry),Chord_(geometry),0,Arc,Chord,True,True,0.0,0.0,0.0,0.0,0.015796802227877275,2.0,2.0,-0.038961038961038974
+Geometry,Sine,0,,Sine,False,True,0.0,0.0,0.0,0.0,-0.6959235607624717,0.0,0.0,0.0
+Square,Reflection_symmetry,0,Square,Line Symmetry,True,True,0.0,0.0,0.0,0.0,-0.38075574974792337,0.0,0.0,0.0
+Geometry,Line_(geometry),0,,Line,False,True,0.0,0.0,0.0,0.0,-0.0029288903826763337,1.0,0.0,0.3111111111111111
+Triangle,Geometry,1,Triangle,,False,True,0.0,0.0,0.0,0.0,0.11086570317376482,0.0,0.0,0.0
+Inverse_trigonometric_functions,Pythagorean_theorem,0,Inverse Trigonometric,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,0.05857780765352667,0.0,0.0,0.0
+Hendecagon,Line_segment,1,,Line Segment,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Circle,Polygon,0,Circle,Polygon,True,True,0.0,0.0,0.0,0.0,0.5749267777404331,0.0,0.0,0.0
+Star_polygon,Line_segment,1,,Line Segment,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cartesian_coordinate_system,Perpendicular,1,,Perpendicular,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Edge_(geometry),Face_(geometry),0,,,False,True,0.0,0.0,0.0,0.0,0.0007682335429970711,2.0,2.0,0.5
+Pentagon,Polygon,1,Pentagon,Polygon,True,True,0.0,0.0,0.0,0.0,0.009074758726652903,0.0,0.0,0.0
+Hendecagon,Vertex_(geometry),1,,Vertex,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Geometry,Tessellation,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Internal_and_external_angle,Line_segment,1,Interior Angle,Line Segment,True,True,0.0,0.0,0.0,0.0,0.1351610889710472,0.0,0.0,0.0
+Coordinate_system,Plane_(geometry),1,,Plane,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Polyhedron,Angle,1,Polyhedron,Angle,True,True,0.0,0.0,0.0,0.0,0.7976184760167091,0.0,0.0,0.0
+Vertex_(geometry),Diagonal,0,Vertex,,False,True,0.0,0.0,0.0,0.0,-0.457963220819129,0.0,0.0,0.0
+Special_right_triangles,Vertex_(geometry),1,Special Right Triangles,Vertex,True,True,0.0,0.0,0.0,0.0,0.610649637489797,0.0,0.0,0.0
+Transversal_(geometry),Internal_and_external_angle,0,Transversal,Interior Angle,True,True,0.0,0.0,0.0,0.0,0.10015844816824315,6.0,6.0,-0.054545454545454564
+Midpoint,Trapezoid,0,Midpoint,Trapezoid,True,True,0.0,0.0,0.0,0.0,-0.5198540356268305,0.0,0.0,0.0
+Slope,Line_(geometry),1,Slope,Line,True,True,0.0,0.0,0.0,0.0,0.31243097901762135,3.0,3.0,0.9333333333333333
+Two-dimensional_space,Decagon,0,Plane,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Midpoint,Isosceles_triangle,0,Midpoint,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,-0.06616411389062275,0.0,0.0,0.0
+Polyhedron,Prism_(geometry),0,Polyhedron,Prism,True,True,0.0,0.0,0.0,0.0,-0.005377634800979498,0.0,0.0,0.0
+Geometry,Point_(geometry),0,,Point,False,True,0.0,0.0,0.0,0.0,-0.002544773611177798,1.0,0.0,0.3
+Cone,Geometry,1,Cone,,False,True,0.0,0.0,0.0,0.0,0.9035866903538676,0.0,0.0,0.0
+Square,Pythagorean_theorem,0,Square,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,-0.09458875498151438,2.0,0.0,-0.15000000000000002
+Plane_(geometry),Tessellation,0,Plane,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Triangle,Tessellation,0,Triangle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Similarity_(geometry),Self-similarity,0,Similarity,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_segment,Cross_section_(geometry),0,Line Segment,Cross Section,True,True,0.0,0.0,0.0,0.0,-0.8631584001536468,0.0,0.0,0.0
+Geometry,Rigid_transformation,0,,,False,True,0.0,0.0,0.0,0.0,-0.9369568348778029,0.0,0.0,0.0
+Polyhedron,Coordinate_system,0,Polyhedron,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Star_polygon,Angle,1,,Angle,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Parallelogram,Parallel_(geometry),1,Parallelogram,Parallel,True,True,0.0,0.0,0.0,0.0,0.2866471407307822,3.0,3.0,0.08076923076923079
+Pentagon,Rotational_symmetry,0,Pentagon,Rotational Symmetry,True,True,0.0,0.0,0.0,0.0,-0.7944975272482835,0.0,0.0,0.0
+Point_(geometry),Chord_(geometry),0,Point,Chord,True,True,0.0,0.0,0.0,0.0,-0.7215153406635617,0.0,0.0,0.0
+Polygon,Kite_(geometry),0,Polygon,Kite,True,True,0.0,0.0,0.0,0.0,-0.4340039371969079,0.0,0.0,0.0
+Right_triangle,Triangle,1,Right Triangle,Triangle,True,True,0.0,0.0,0.0,0.0,0.018053488260431173,7.0,7.0,0.8727272727272728
+Trigonometric_functions,Inverse_trigonometric_functions,0,Trigonometry,Inverse Trigonometric,True,True,0.0,0.0,0.0,0.0,-0.05963412877514764,1.0,0.0,-0.8571428571428572
+Vertex_(geometry),Hexagon,0,Vertex,Hexagon,True,True,0.0,0.0,0.0,0.0,-0.0782157775963893,0.0,0.0,0.0
+Angle,Space_(mathematics),0,Angle,,False,True,0.0,0.0,0.0,0.0,-0.8567244442310462,0.0,0.0,0.0
+Line_(geometry),Rhombus,0,Line,Rhombus,True,True,0.0,0.0,0.0,0.0,-0.5543765304652615,0.0,0.0,0.0
+Point_(geometry),Sine,0,Point,Sine,True,True,0.0,0.0,0.0,0.0,-0.693378787151294,0.0,0.0,0.0
+Geometry,Two-dimensional_space,0,,Plane,False,True,0.0,0.0,0.0,0.0,-0.00345705094348682,1.0,0.0,0.20833333333333331
+Reflection_symmetry,Trapezoid,0,Line Symmetry,Trapezoid,True,True,0.0,0.0,0.0,0.0,0.36591923944879245,0.0,0.0,0.0
+Diagonal,Angle,1,,Angle,False,True,0.0,0.0,0.0,0.0,0.4639650453737936,1.0,1.0,0.11217948717948718
+Right_triangle,Geometry,1,Right Triangle,,False,True,0.0,0.0,0.0,0.0,0.128919191434196,0.0,0.0,0.0
+Line_(geometry),Distance,0,Line,,False,True,0.0,0.0,0.0,0.0,-0.03591491813511308,1.0,0.0,-0.17777777777777778
+Quadrilateral,Square,0,Quadrilateral,Square,True,True,0.0,0.0,0.0,0.0,-0.4109089163105584,0.0,0.0,0.0
+Edge_(geometry),Vertex_(geometry),1,,Vertex,False,True,0.0,0.0,0.0,0.0,0.7958899505449657,0.0,0.0,0.0
+Translation_(geometry),Rigid_transformation,0,Translation,,False,True,0.0,0.0,0.0,0.0,0.014068276756133865,0.0,0.0,0.0
+Polygon,Space_(mathematics),0,Polygon,,False,True,0.0,0.0,0.0,0.0,-0.7828779949104527,0.0,0.0,0.0
+Polyhedron,Reflection_symmetry,0,Polyhedron,Line Symmetry,True,True,0.0,0.0,0.0,0.0,-0.07543093100302492,0.0,0.0,0.0
+Symmetry,Rhombus,0,Symmetry,Rhombus,True,True,0.0,0.0,0.0,0.0,0.38147596869448314,0.0,0.0,0.0
+Point_(geometry),Congruence_(geometry),0,Point,Congruence,True,True,0.0,0.0,0.0,0.0,-0.20991981562394968,0.0,0.0,0.0
+Angle,Sine,0,Angle,Sine,True,True,0.0,0.0,0.0,0.0,-0.6301915782397849,0.0,0.0,0.0
+Vertex_(geometry),Isosceles_triangle,0,Vertex,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,-0.04743842128006914,0.0,0.0,0.0
+Line_segment,Kite_(geometry),0,Line Segment,Kite,True,True,0.0,0.0,0.0,0.0,-0.5538963845008883,0.0,0.0,0.0
+Vertex_(geometry),Equilateral_triangle,0,Vertex,Equilateral Triangle,True,True,0.0,0.0,0.0,0.0,-0.04498967686176598,0.0,0.0,0.0
+Geometry,Arc_(geometry),0,,Arc,False,True,0.0,0.0,0.0,0.0,-0.7398569165026168,0.0,0.0,0.0
+Vertex_(geometry),Exterior_angle_theorem,0,Vertex,Exterior Angle,True,True,0.0,0.0,0.0,0.0,-0.27670811926825756,0.0,0.0,0.0
+Line_segment,Altitude_(triangle),0,Line Segment,Altitude,True,True,0.0,0.0,0.0,0.0,-0.4615643155519278,0.0,0.0,0.0
+Symmetry,Rigid_transformation,0,Symmetry,,False,True,0.0,0.0,0.0,0.0,0.001824554664618044,0.0,0.0,0.0
+Nonagon,Angle,1,,Angle,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Rectangle,Line_(geometry),1,Rectangle,Line,True,True,0.0,0.0,0.0,0.0,0.5538003553080136,0.0,0.0,0.0
+Radius,Cartesian_coordinate_system,0,Radius,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Collinearity,Rectangle,0,,Rectangle,False,True,0.0,0.0,0.0,0.0,0.43765304652614395,0.0,0.0,0.0
+Polyhedron,Cross_section_(geometry),0,Polyhedron,Cross Section,True,True,0.0,0.0,0.0,0.0,-0.01949392615355068,0.0,0.0,0.0
+Triangle,Trigonometric_functions,0,Triangle,Trigonometry,True,True,0.0,0.0,0.0,0.0,-0.5406923704806261,2.0,0.0,-0.24935064935064932
+Perpendicular,Isosceles_triangle,0,Perpendicular,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,0.12829500168051086,0.0,0.0,0.0
+Vertex_(geometry),Square,0,Vertex,Square,True,True,0.0,0.0,0.0,0.0,-0.486291832717146,0.0,0.0,0.0
+Edge_(geometry),Hexagon,0,,Hexagon,False,True,0.0,0.0,0.0,0.0,0.7176741729485764,0.0,0.0,0.0
+Angle,Equilateral_triangle,0,Angle,Equilateral Triangle,True,True,0.0,0.0,0.0,0.0,-0.05099150141643059,2.0,0.0,-0.37435897435897436
+Radius,Polygon,0,Radius,Polygon,True,True,0.0,0.0,0.0,0.0,0.5806405147164738,0.0,0.0,0.0
+Triangle_inequality,Distance,0,,,False,True,0.0,0.0,0.0,0.0,0.4639650453737936,0.0,0.0,0.0
+Geometry,Quadrilateral,0,,Quadrilateral,False,True,0.0,0.0,0.0,0.0,-0.14711672348393912,0.0,0.0,0.0
+Triangle,Acute_and_obtuse_triangles,0,Triangle,Acute Triangle,True,True,0.0,0.0,0.0,0.0,-0.015460700052816056,2.0,0.0,-0.9636363636363636
+Diameter,Perpendicular,0,Diameter,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.47592067988668557,1.0,1.0,0.2708333333333333
+Bisection,Isosceles_triangle,0,Perpendicular Bisector,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,-0.061842800211264225,0.0,0.0,0.0
+Symmetry,Trapezoid,0,Symmetry,Trapezoid,True,True,0.0,0.0,0.0,0.0,0.36591923944879245,0.0,0.0,0.0
+Geometry,Reflection_(mathematics),0,,Reflection,False,True,0.0,0.0,0.0,0.0,-0.9624045709895809,0.0,0.0,0.0
+Isosceles_triangle,Equilateral_triangle,0,Isosceles Triangle,Equilateral Triangle,True,True,0.0,0.0,0.0,0.0,0.0024487444183031643,0.0,0.0,0.0
+Square,Right_angle,1,Square,Right Triangle,True,True,0.0,0.0,0.0,0.0,0.47424016901137944,0.0,0.0,0.0
+Point_(geometry),Special_right_triangles,0,Point,Special Right Triangles,True,True,0.0,0.0,0.0,0.0,-0.6798386709559706,0.0,0.0,0.0
+Pentagon,Angle,1,Pentagon,Angle,True,True,0.0,0.0,0.0,0.0,0.08292120804724637,0.0,0.0,0.0
+Parallel_(geometry),Square,0,Parallel,Square,True,True,0.0,0.0,0.0,0.0,-0.3111825995102511,0.0,0.0,0.0
+Angle,Special_right_triangles,0,Angle,Special Right Triangles,True,True,0.0,0.0,0.0,0.0,-0.6166514620444615,0.0,0.0,0.0
+Pythagorean_theorem,Parallelogram,0,Pythagorean Theorem,Parallelogram,True,True,0.0,0.0,0.0,0.0,0.11912421376098334,0.0,0.0,0.0
+Rigid_transformation,Point_(geometry),1,,Point,False,True,0.0,0.0,0.0,0.0,0.934412061266625,0.0,0.0,0.0
+Triangle,Hexagon,0,Triangle,Hexagon,True,True,0.0,0.0,0.0,0.0,-0.03908388149997599,0.0,0.0,0.0
+Triangle,Plane_(geometry),0,Triangle,Plane,True,True,0.0,0.0,0.0,0.0,0.107408652230278,0.0,0.0,0.0
+Line_(geometry),Collinearity,0,Line,,False,True,0.0,0.0,0.0,0.0,-0.9914534018341575,0.0,0.0,0.0
+Reflection_symmetry,Symmetry,1,Line Symmetry,Symmetry,True,True,0.0,0.0,0.0,0.0,0.0,4.0,0.0,0.0
+Line_(geometry),Skew_lines,0,Line,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Pyramid_(geometry),Sphere,0,Pyramid,Sphere,True,True,0.0,0.0,0.0,0.0,-0.047966581840879624,0.0,0.0,0.0
+Exterior_angle_theorem,Edge_(geometry),1,Exterior Angle,,False,True,0.0,0.0,0.0,0.0,-0.5191818312767081,0.0,0.0,0.0
+Geometry,Kite_(geometry),0,,Kite,False,True,0.0,0.0,0.0,0.0,-0.5735823690401882,0.0,0.0,0.0
+Point_(geometry),Rigid_transformation,0,Point,,False,True,0.0,0.0,0.0,0.0,-0.934412061266625,0.0,0.0,0.0
+Special_right_triangles,Isosceles_triangle,0,Special Right Triangles,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,0.5632112162097278,0.0,0.0,0.0
+Decagon,Line_(geometry),1,,Line,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Coordinate_system,Right_angle,0,,Right Triangle,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Pythagorean_theorem,Perpendicular,0,Pythagorean Theorem,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.4051471647380804,0.0,0.0,0.0
+Circle,Distance,0,Circle,,False,True,0.0,0.0,0.0,0.0,0.6756614010659241,0.0,0.0,0.0
+Nonagon,Vertex_(geometry),1,,Vertex,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Bisection,Tangent,0,Perpendicular Bisector,Tangent,True,True,0.0,0.0,0.0,0.0,-0.6394583953521871,0.0,0.0,0.0
+Polyhedron,Rhombus,0,Polyhedron,Rhombus,True,True,0.0,0.0,0.0,0.0,0.3060450376914582,0.0,0.0,0.0
+Tessellation,Hexagon,0,,Hexagon,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Rhombus,Cone,0,Rhombus,Cone,True,True,0.0,0.0,0.0,0.0,-0.3462812695059298,0.0,0.0,0.0
+Acute_and_obtuse_triangles,Altitude_(triangle),0,Acute Triangle,Altitude,True,True,0.0,0.0,0.0,0.0,-0.35492389686464687,0.0,0.0,0.0
+Triangle,Convex_polygon,0,Triangle,,False,True,0.0,0.0,0.0,0.0,-0.416910740865223,0.0,0.0,0.0
+Edge_(geometry),Tangent,0,,Tangent,False,True,0.0,0.0,0.0,0.0,0.1708359341239737,0.0,0.0,0.0
+Sphere,Circle,1,Sphere,Circle,True,True,1.3497,1.3497,1.0,1.0,0.20579056033034043,0.0,0.0,0.0
+Rhombus,Circle,0,Rhombus,Circle,True,True,0.0,0.0,0.0,0.0,-0.15719978873577567,0.0,0.0,0.0
+Symmetry,Quadrilateral,0,Symmetry,Quadrilateral,True,True,0.0,0.0,0.0,0.0,0.7916646660584817,0.0,0.0,0.0
+Collinearity,Sphere,0,,Sphere,False,True,0.0,0.0,0.0,0.0,0.07408652230278004,0.0,0.0,0.0
+Heptagon,Point_(geometry),1,,Point,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_segment,Prism_(geometry),0,Line Segment,Prism,True,True,0.0,0.0,0.0,0.0,-0.8490421088010756,0.0,0.0,0.0
+Hexagon,Geometry,1,Hexagon,,False,True,0.0,0.0,0.0,0.0,0.1499495846737408,0.0,0.0,0.0
+Pyramid_(geometry),Edge_(geometry),1,Pyramid,,False,True,0.0,0.0,0.0,0.0,0.004705430450857061,0.0,0.0,0.0
+Cross_section_(geometry),Plane_(geometry),1,Cross Section,Plane,True,True,1.2843,1.2843,1.0,1.0,0.8793873337494599,1.0,1.0,0.875
+Quadrilateral,Tessellation,0,Quadrilateral,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Vertex_(geometry),Geometry,1,Vertex,,False,True,0.0,0.0,0.0,0.0,0.07173380707735151,0.0,0.0,0.0
+Angle,Diagonal,0,Angle,,False,True,0.0,0.0,0.0,0.0,-0.4639650453737936,1.0,0.0,-0.11217948717948718
+Congruence_(geometry),Line_(geometry),1,Congruence,Line,True,True,0.0,0.0,0.0,0.0,0.20953569885245116,0.0,0.0,0.0
+Point_(geometry),Diagonal,0,Point,,False,True,0.0,0.0,0.0,0.0,-0.5271522542853028,0.0,0.0,0.0
+Nonagon,Point_(geometry),1,,Point,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Angle,Internal_and_external_angle,0,Angle,Interior Angle,True,True,0.0,0.0,0.0,0.0,-0.08911509098766025,10.0,0.0,-0.8717948717948718
+Rotation_(mathematics),Angle,1,Rotation,Angle,True,True,0.0,0.0,0.0,0.0,0.8798674797138331,1.0,1.0,0.18717948717948718
+Tangent,Distance,0,Tangent,,False,True,0.0,0.0,0.0,0.0,0.6579440149805541,0.0,0.0,0.0
+Point_(geometry),Acute_and_obtuse_triangles,0,Point,Acute Triangle,True,True,0.0,0.0,0.0,0.0,-0.12378162961540308,0.0,0.0,0.0
+Cartesian_coordinate_system,Point_(geometry),1,,Point,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Polygon,Concentric,0,Polygon,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Point_(geometry),Octagon,0,Point,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Triangle_inequality,Line_segment,1,,Line Segment,False,True,0.0,0.0,0.0,0.0,0.4831228693522831,0.0,0.0,0.0
+Angle,Tangent,0,Angle,Tangent,True,True,0.0,0.0,0.0,0.0,-0.6310558409756566,1.0,0.0,-0.11217948717948718
+Point_(geometry),Line_(geometry),0,Point,Line,True,True,0.0,0.0,0.0,0.0,-0.00038411677149853557,11.0,0.0,0.1222222222222222
+Pentagon,Decagon,0,Pentagon,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Geometry,Trapezoid,0,,Trapezoid,False,True,0.0,0.0,0.0,0.0,-0.5728621500936285,0.0,0.0,0.0
+Bisection,Chord_(geometry),0,Perpendicular Bisector,Chord,True,True,0.0,0.0,0.0,0.0,-0.6667306861285831,1.0,0.0,0.009090909090909094
+Decagon,Point_(geometry),1,,Point,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Rotation_(mathematics),Symmetry,1,Rotation,Symmetry,True,True,0.0,0.0,0.0,0.0,0.006818072694099006,1.0,1.0,-0.04999999999999999
+Acute_and_obtuse_triangles,Geometry,1,Acute Triangle,,False,True,0.0,0.0,0.0,0.0,0.12632640322658087,0.0,0.0,0.0
+Pythagorean_theorem,Rectangle,0,Pythagorean Theorem,Rectangle,True,True,0.0,0.0,0.0,0.0,0.09588514908532193,0.0,0.0,0.0
+Pythagorean_theorem,Line_segment,1,Pythagorean Theorem,Line Segment,True,True,0.0,0.0,0.0,0.0,0.632928410236712,0.0,0.0,0.0
+Exterior_angle_theorem,Geometry,1,Exterior Angle,,False,True,0.0,0.0,0.0,0.0,0.34844192634560905,0.0,0.0,0.0
+Symmetry,Prism_(geometry),0,Symmetry,Prism,True,True,0.0,0.0,0.0,0.0,0.07005329620204542,0.0,0.0,0.0
+Exterior_angle_theorem,Point_(geometry),1,Exterior Angle,Point,True,True,0.0,0.0,0.0,0.0,0.3458971527344313,0.0,0.0,0.0
+Rectangle,Quadrilateral,1,Rectangle,Quadrilateral,True,True,0.0,0.0,0.0,0.0,0.4096125222067509,0.0,0.0,0.0
+Geometry,Concentric,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Coordinate_system,Distance,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Angle,Quadrilateral,0,Angle,Quadrilateral,True,True,0.0,0.0,0.0,0.0,-0.08138474096125221,1.0,0.0,-0.13003663003663002
+Altitude_(triangle),Equilateral_triangle,0,Altitude,Equilateral Triangle,True,True,0.0,0.0,0.0,0.0,0.36452681615211024,0.0,0.0,0.0
+Vertex_(geometry),Decagon,0,Vertex,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Perpendicular,Tangent,0,Perpendicular,Tangent,True,True,0.0,0.0,0.0,0.0,-0.449320593460412,1.0,0.0,-0.0625
+Rectangle,Internal_and_external_angle,0,Rectangle,Interior Angle,True,True,0.0,0.0,0.0,0.0,0.40188217218034283,0.0,0.0,0.0
+Square,Perpendicular,0,Square,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.310558409756566,0.0,0.0,0.0
+Geometry,Right_angle,0,,Right Triangle,False,True,0.0,0.0,0.0,0.0,-0.08378547078311807,0.0,0.0,0.0
+Rectangle,Pyramid_(geometry),0,Rectangle,Pyramid,True,True,0.0,0.0,0.0,0.0,-0.3155999423824843,0.0,0.0,0.0
+Polygon,Point_(geometry),1,Polygon,Point,True,True,0.0,0.0,0.0,0.0,0.13703365823210256,0.0,0.0,0.0
+Vertex_(geometry),Trigonometric_functions,0,Vertex,Trigonometry,True,True,0.0,0.0,0.0,0.0,-0.5798242665770394,0.0,0.0,0.0
+Line_(geometry),Sphere,0,Line,Sphere,True,True,0.0,0.0,0.0,0.0,-0.9173668795313775,0.0,0.0,0.0
+Midpoint,Coordinate_system,0,Midpoint,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_segment,Convex_polygon,0,Line Segment,,False,True,0.0,0.0,0.0,0.0,-0.5080904594996879,0.0,0.0,0.0
+Radius,Distance,0,Radius,,False,True,0.0,0.0,0.0,0.0,0.6813751380419648,0.0,0.0,0.0
+Triangle,Edge_(geometry),1,Triangle,,False,True,0.0,0.0,0.0,0.0,-0.7567580544485524,0.0,0.0,0.0
+Angle,Rigid_transformation,0,Angle,,False,True,0.0,0.0,0.0,0.0,-0.8712248523551159,0.0,0.0,0.0
+Triangle,Similarity_(geometry),0,Triangle,Similarity,True,True,0.0,0.0,0.0,0.0,-0.47736111777980506,3.0,0.0,-0.5454545454545454
+Line_segment,Pyramid_(geometry),0,Line Segment,Pyramid,True,True,0.0,0.0,0.0,0.0,-0.8526432035338743,0.0,0.0,0.0
+Tangent,Point_(geometry),1,Tangent,Point,True,True,0.0,0.0,0.0,0.0,0.6942430498871657,3.0,3.0,0.275
+Point_(geometry),Circle,0,Point,Circle,True,True,0.0,0.0,0.0,0.0,-0.7119604359725357,4.0,0.0,-0.13333333333333333
+Vertex_(geometry),Special_right_triangles,0,Vertex,Special Right Triangles,True,True,0.0,0.0,0.0,0.0,-0.610649637489797,0.0,0.0,0.0
+Reflection_(mathematics),Symmetry,1,Reflection,Symmetry,True,True,0.0,0.0,0.0,0.0,0.023623181447159938,0.0,0.0,0.0
+Reflection_symmetry,Kite_(geometry),0,Line Symmetry,Kite,True,True,0.0,0.0,0.0,0.0,0.3651990205022327,0.0,0.0,0.0
+Pyramid_(geometry),Triangle,0,Pyramid,Triangle,True,True,0.0,0.0,0.0,0.0,0.7614634848994094,0.0,0.0,0.0
+Pyramid_(geometry),Geometry,1,Pyramid,,False,True,0.0,0.0,0.0,0.0,0.8723291880731743,0.0,0.0,0.0
+Geometry,Self-similarity,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Quadrilateral,Line_(geometry),1,Quadrilateral,Line,True,True,0.0,0.0,0.0,0.0,0.1441878331012628,0.0,0.0,0.0
+Bisection,Perpendicular,1,Perpendicular Bisector,Perpendicular,True,True,0.0,0.0,1.0,0.0,-0.1901378018917751,6.0,0.0,0.22499999999999998
+Face_(geometry),Square,0,,Square,False,True,0.0,0.0,0.0,0.0,0.3088298842848226,0.0,0.0,0.0
+Tangent,Trigonometric_functions,1,Tangent,Trigonometry,True,True,0.0,0.0,0.0,0.0,0.04522974984395256,2.0,2.0,-0.0357142857142857
+Circle,Chord_(geometry),0,Circle,Chord,True,True,0.0,0.0,0.0,0.0,-0.009554904691026073,3.0,0.0,-0.0727272727272727
+Kite_(geometry),Vertex_(geometry),1,Kite,Vertex,True,True,0.0,0.0,0.0,0.0,0.5018485619628367,0.0,0.0,0.0
+Tessellation,Plane_(geometry),1,,Plane,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_segment,Polygon,0,Line Segment,Polygon,True,True,0.0,0.0,0.0,0.0,-0.11989244730398041,0.0,0.0,0.0
+Diameter,Bisection,0,Diameter,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,0.6660584817784606,0.0,0.0,0.0
+Line_segment,Rectangle,0,Line Segment,Rectangle,True,True,0.0,0.0,0.0,0.0,-0.53704326115139,0.0,0.0,0.0
+Line_(geometry),Right_angle,0,Line,Right Triangle,True,True,0.0,0.0,0.0,0.0,-0.08085658040044173,1.0,0.0,-0.22777777777777777
+Rotational_symmetry,Scale_factor,0,Rotational Symmetry,Scale Factor,True,True,0.0,0.0,0.0,0.0,0.34556105055937003,0.0,0.0,0.0
+Equilateral_triangle,Polygon,1,Equilateral Triangle,Polygon,True,True,0.0,0.0,0.0,0.0,-0.022854947904162867,0.0,0.0,0.0
+Square,Parallel_(geometry),1,Square,Parallel,True,True,0.0,0.0,0.0,0.0,0.3111825995102511,0.0,0.0,0.0
+Right_angle,Right_triangle,0,Right Triangle,Right Triangle,False,True,0.0,0.0,0.0,0.0,-0.04513372065107793,0.0,0.0,0.0
+Congruence_(geometry),Distance,0,Congruence,,False,True,0.0,0.0,0.0,0.0,0.17362078071733808,0.0,0.0,0.0
+Concentric,Equilateral_triangle,0,,Equilateral Triangle,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Congruence_(geometry),Reflection_(mathematics),0,Congruence,Reflection,True,True,0.0,0.0,0.0,0.0,-0.7499399817544533,0.0,0.0,0.0
+Geometry,Equilateral_triangle,0,,Equilateral Triangle,False,True,0.0,0.0,0.0,0.0,-0.1167234839391175,0.0,0.0,0.0
+Circle,Acute_and_obtuse_triangles,0,Circle,Acute Triangle,True,True,0.0,0.0,0.0,0.0,0.5881788063571326,0.0,0.0,0.0
+Geometry,Dodecagon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Triangle,Pythagorean_triple,0,Triangle,,False,True,0.0,0.0,0.0,0.0,-0.5572093916550631,0.0,0.0,0.0
+Trigonometric_functions,Circle,0,Trigonometry,Circle,True,True,0.0,0.0,0.0,0.0,-0.06294713592932251,0.0,0.0,0.0
+Rhombus,Congruence_(geometry),0,Rhombus,Congruence,True,True,0.0,0.0,0.0,0.0,0.3448408316128103,0.0,0.0,0.0
+Square,Acute_and_obtuse_triangles,0,Square,Acute Triangle,True,True,0.0,0.0,0.0,0.0,0.43169923656791664,0.0,0.0,0.0
+Congruence_(geometry),Tessellation,0,Congruence,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Inverse_trigonometric_functions,Triangle,1,Inverse Trigonometric,Triangle,True,True,0.0,0.0,0.0,0.0,0.6003264992557737,0.0,0.0,0.0
+Line_(geometry),Parallelogram,0,Line,Parallelogram,True,True,0.0,0.0,0.0,0.0,-0.5305612906323522,0.0,0.0,0.0
+Acute_and_obtuse_triangles,Line_segment,1,Acute Triangle,Line Segment,True,True,0.0,0.0,0.0,0.0,0.10664041868728093,0.0,0.0,0.0
+Angle,Pythagorean_triple,0,Angle,,False,True,0.0,0.0,0.0,0.0,-0.602343112306141,0.0,0.0,0.0
+Pythagorean_theorem,Trigonometric_functions,0,Pythagorean Theorem,Trigonometry,True,True,0.0,0.0,0.0,0.0,0.0010563211216209729,0.0,0.0,0.0
+Trigonometric_functions,Line_segment,1,Trigonometry,Line Segment,True,True,0.0,0.0,0.0,0.0,0.631872089115091,0.0,0.0,0.0
+Rigid_transformation,Distance,0,,,False,True,0.0,0.0,0.0,0.0,0.8981130263600134,0.0,0.0,0.0
+Circle,Sphere,0,Circle,Sphere,True,True,0.0,0.0,1.0,0.0,-0.20579056033034043,0.0,0.0,0.0
+Line_segment,Polyhedron,0,Line Segment,Polyhedron,True,True,0.0,0.0,0.0,0.0,-0.843664474000096,0.0,0.0,0.0
+Convex_polygon,Trapezoid,0,,Trapezoid,False,True,0.0,0.0,0.0,0.0,-0.04508570605464061,0.0,0.0,0.0
+Special_right_triangles,Line_(geometry),1,Special Right Triangles,Line,True,True,0.0,0.0,0.0,0.0,0.6794545541844721,0.0,0.0,0.0
+Rhombus,Polygon,1,Rhombus,Polygon,True,True,0.0,0.0,0.0,0.0,0.41772698900465743,0.0,0.0,0.0
+Rotation_(mathematics),Reflection_(mathematics),0,Rotation,Reflection,True,True,0.0,0.0,0.0,0.0,-0.016805108753060932,1.0,0.0,0.05714285714285716
+Cylinder_(geometry),Angle,0,Cylinder,Angle,True,True,0.0,0.0,0.0,0.0,0.8207615114994958,0.0,0.0,0.0
+Rectangle,Bisection,0,Rectangle,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,0.49939981754453355,0.0,0.0,0.0
+Rotation_(mathematics),Cartesian_coordinate_system,0,Rotation,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Point_(geometry),Bisection,0,Point,Perpendicular Bisector,True,True,1.4031,1.4031,1.0,1.0,-0.05478465453497863,4.0,0.0,-0.2666666666666667
+Skew_lines,Line_(geometry),1,,Line,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Edge_(geometry),Octagon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_(geometry),Diagonal,0,Line,,False,True,0.0,0.0,0.0,0.0,-0.5267681375138042,0.0,0.0,0.0
+Sine,Line_(geometry),1,Sine,Line,True,True,0.0,0.0,0.0,0.0,0.6929946703797955,0.0,0.0,0.0
+Point_(geometry),Sphere,0,Point,Sphere,True,True,0.0,0.0,0.0,0.0,-0.917750996302876,1.0,0.0,-0.21666666666666667
+Octagon,Edge_(geometry),1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Exterior_angle_theorem,Triangle,1,Exterior Angle,Triangle,True,True,0.0,1.3805,0.0,0.0,0.23757622317184424,1.0,1.0,0.9818181818181818
+Grade_(slope),Point_(geometry),1,Slope,Point,True,True,0.0,0.0,0.0,0.0,0.31281509578911987,0.0,0.0,0.0
+Similarity_(geometry),Isosceles_triangle,0,Similarity,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,0.46905459259614923,0.0,0.0,0.0
+Hendecagon,Polygon,1,,Polygon,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Tessellation,Polygon,0,,Polygon,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Dodecagon,Line_(geometry),1,,Line,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cross_section_(geometry),Cylinder_(geometry),0,Cross Section,Cylinder,True,True,0.0,0.0,0.0,0.0,-0.003649109329236088,0.0,0.0,0.0
+Pythagorean_theorem,Two-dimensional_space,0,Pythagorean Theorem,Plane,True,True,0.0,0.0,0.0,0.0,0.6491573438325251,0.0,0.0,0.0
+Prism_(geometry),Congruence_(geometry),0,Prism,Congruence,True,True,0.0,0.0,0.0,0.0,0.656263504105248,0.0,0.0,0.0
+Rotational_symmetry,Perpendicular,0,Rotational Symmetry,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.6956834877802852,0.0,0.0,0.0
+Trigonometric_functions,Distance,0,Trigonometry,,False,True,0.0,0.0,0.0,0.0,0.6127142651366015,0.0,0.0,0.0
+Line_(geometry),Polyhedron,0,Line,Polyhedron,True,True,0.0,0.0,0.0,0.0,-0.8604215681567197,0.0,0.0,0.0
+Diameter,Chord_(geometry),1,Diameter,Chord,True,True,0.0,0.0,0.0,0.0,-0.0006722043501224373,2.0,0.0,0.4848484848484848
+Line_segment,Exterior_angle_theorem,0,Line Segment,Exterior Angle,True,True,0.0,0.0,0.0,0.0,-0.3287559418063091,0.0,0.0,0.0
+Geometry,Rhombus,0,,Rhombus,False,True,0.0,0.0,0.0,0.0,-0.5573054208479378,0.0,0.0,0.0
+Quadrilateral,Edge_(geometry),1,Quadrilateral,,False,True,0.0,0.0,0.0,0.0,-0.720507034138378,0.0,0.0,0.0
+Point_(geometry),Pythagorean_triple,0,Point,,False,True,0.0,0.0,0.0,0.0,-0.6655303212176502,0.0,0.0,0.0
+Rectangle,Edge_(geometry),1,Rectangle,,False,True,0.0,0.0,0.0,0.0,-0.3108945119316272,0.0,0.0,0.0
+Transversal_(geometry),Line_(geometry),1,Transversal,Line,True,True,0.0,0.0,0.0,0.0,0.25207663129591396,11.0,11.0,0.7555555555555555
+Chord_(geometry),Diameter,0,Chord,Diameter,True,True,0.0,0.0,0.0,0.0,0.0006722043501224373,2.0,2.0,-0.4848484848484848
+Reflection_(mathematics),Point_(geometry),1,Reflection,Point,True,True,0.0,0.0,0.0,0.0,0.959859797378403,0.0,0.0,0.0
+Geometry,Rotational_symmetry,0,,Rotational Symmetry,False,True,0.0,0.0,0.0,0.0,-0.9431507178182167,0.0,0.0,0.0
+Line_segment,Equilateral_triangle,0,Line Segment,Equilateral Triangle,True,True,0.0,0.0,0.0,0.0,-0.09703749939981754,0.0,0.0,0.0
+Dodecagon,Line_segment,1,,Line Segment,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Collinearity,Triangle_inequality,0,,,False,True,0.0,0.0,0.0,0.0,0.49157343832525086,0.0,0.0,0.0
+Edge_(geometry),Heptagon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Inverse_trigonometric_functions,Point_(geometry),1,Inverse Trigonometric,Point,True,True,0.0,0.0,0.0,0.0,0.7086474288183607,0.0,0.0,0.0
+Triangle,Circle,0,Triangle,Circle,True,True,0.0,0.0,0.0,0.0,-0.6036395064099487,0.0,0.0,0.0
+Trigonometric_functions,Sine,0,Trigonometry,Sine,True,True,0.0,0.0,0.0,0.0,-0.04436548710808086,2.0,0.0,-0.7142857142857143
+Heptagon,Two-dimensional_space,0,,Plane,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Quadrilateral,Convex_polygon,0,Quadrilateral,,False,True,0.0,0.0,0.0,0.0,-0.3806597205550487,0.0,0.0,0.0
+Rhombus,Tangent,0,Rhombus,Tangent,True,True,0.0,0.0,0.0,0.0,-0.13948240265040573,0.0,0.0,0.0
+Trigonometric_functions,Similarity_(geometry),0,Trigonometry,Similarity,True,True,0.0,0.0,0.0,0.0,0.06333125270082104,0.0,0.0,0.0
+Line_(geometry),Right_triangle,0,Line,Right Triangle,True,True,0.0,0.0,0.0,0.0,-0.12599030105151965,0.0,0.0,0.0
+Geometry,Pythagorean_theorem,0,,Pythagorean Theorem,False,True,0.0,0.0,0.0,0.0,-0.6526143947760119,0.0,0.0,0.0
+Line_segment,Hexagon,0,Line Segment,Hexagon,True,True,0.0,0.0,0.0,0.0,-0.13026360013444088,0.0,0.0,0.0
+Edge_(geometry),Rectangle,0,,Rectangle,False,True,0.0,0.0,0.0,0.0,0.3108945119316272,0.0,0.0,0.0
+Internal_and_external_angle,Edge_(geometry),1,Interior Angle,,False,True,0.0,0.0,0.0,0.0,-0.71277668411197,0.0,0.0,0.0
+Polygon,Isosceles_triangle,0,Polygon,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,0.0204062034858597,0.0,0.0,0.0
+Two-dimensional_space,Geometry,1,Plane,,False,True,0.0,0.0,0.0,0.0,0.00345705094348682,1.0,1.0,-0.20833333333333331
+Radius,Diameter,0,Radius,Diameter,True,True,0.0,0.0,0.0,0.0,-0.0031689633648629184,1.0,0.0,-0.20833333333333331
+Rotational_symmetry,Rhombus,0,Rotational Symmetry,Rhombus,True,True,0.0,0.0,0.0,0.0,0.385845296970279,0.0,0.0,0.0
+Similarity_(geometry),Space_(mathematics),0,Similarity,,False,True,0.0,0.0,0.0,0.0,-0.33422960580016325,0.0,0.0,0.0
+Line_(geometry),Equilateral_triangle,0,Line,Equilateral Triangle,True,True,0.0,0.0,0.0,0.0,-0.11379459355644116,0.0,0.0,0.0
+Circle,Trapezoid,0,Circle,Trapezoid,True,True,0.0,0.0,0.0,0.0,0.141643059490085,0.0,0.0,0.0
+Octagon,Point_(geometry),1,,Point,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Geometry,Triangle_inequality,0,,,False,True,0.0,0.0,0.0,0.0,-0.502808853891583,0.0,0.0,0.0
+Grade_(slope),Distance,0,Slope,,False,True,0.0,0.0,0.0,0.0,0.2765160608825083,0.0,0.0,0.0
+Octagon,Line_(geometry),1,,Line,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Polygon,Square,0,Polygon,Square,True,True,0.0,0.0,0.0,0.0,-0.41844720795121715,1.0,0.0,-0.0661764705882353
+Angle,Coordinate_system,0,Angle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Right_angle,Point_(geometry),1,Right Triangle,Point,True,True,0.0,0.0,0.0,0.0,0.08124069717194027,0.0,0.0,0.0
+Parallel_(geometry),Slope,0,Parallel,Slope,True,True,1.2386,1.2386,1.0,1.0,-0.06851682911605128,1.0,0.0,-0.2833333333333333
+Dodecagon,Polygon,1,,Polygon,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Prism_(geometry),Polyhedron,1,Prism,Polyhedron,True,True,0.0,0.0,0.0,0.0,0.005377634800979498,0.0,0.0,0.0
+Vertex_(geometry),Angle_bisector_theorem,0,Vertex,Angle Bisector,True,True,0.0,0.0,0.0,0.0,-0.39319153022518843,0.0,0.0,0.0
+Transversal_(geometry),Plane_(geometry),1,Transversal,Plane,True,True,0.0,0.0,0.0,0.0,0.25154847073510345,0.0,0.0,0.0
+Internal_and_external_angle,Polygon,1,Interior Angle,Polygon,True,True,0.0,1.2602,0.0,0.0,0.015268641667066788,3.0,3.0,0.12352941176470586
+Line_segment,Triangle,0,Line Segment,Triangle,True,True,0.0,0.0,1.0,0.0,-0.09117971863446488,0.0,0.0,0.0
+Similarity_(geometry),Right_triangle,0,Similarity,Right Triangle,True,True,0.0,0.0,0.0,0.0,0.4593076295193739,0.0,0.0,0.0
+Plane_(geometry),Geometry,1,Plane,,False,True,0.0,0.0,0.0,0.0,0.00345705094348682,1.0,1.0,-0.20833333333333331
+Line_(geometry),Circle,0,Line,Circle,True,True,0.0,0.0,0.0,0.0,-0.7115763192010371,3.0,0.0,-0.13333333333333336
+Perpendicular,Slope,0,Perpendicular,Slope,True,True,1.215,1.215,1.0,1.0,-0.06789263936236616,1.0,0.0,-0.2708333333333333
+Rhombus,Trapezoid,0,Rhombus,Trapezoid,True,True,0.0,0.0,0.0,0.0,-0.01555672924569069,1.0,0.0,-0.033333333333333354
+Line_(geometry),Trigonometric_functions,0,Line,Trigonometry,True,True,0.0,0.0,0.0,0.0,-0.6486291832717146,0.0,0.0,0.0
+Tangent,Arc_length,0,Tangent,Arc Length,True,True,0.0,0.0,0.0,0.0,-0.1431315119796418,0.0,0.0,0.0
+Diagonal,Kite_(geometry),0,,Kite,False,True,0.0,0.0,0.0,0.0,-0.043885341143707686,2.0,0.0,-0.15000000000000002
+Quadrilateral,Rectangle,0,Quadrilateral,Rectangle,True,True,0.0,0.0,0.0,0.0,-0.4096125222067509,0.0,0.0,0.0
+Triangle_inequality,Edge_(geometry),1,,,False,True,0.0,0.0,0.0,0.0,-0.36481490373073416,0.0,0.0,0.0
+Parallelogram,Face_(geometry),0,Parallelogram,,False,True,0.0,0.0,0.0,0.0,-0.33336534306429155,1.0,0.0,-0.17307692307692307
+Quadrilateral,Midpoint,0,Quadrilateral,Midpoint,True,True,0.0,0.0,0.0,0.0,0.09410860901714121,0.0,0.0,0.0
+Quadrilateral,Rhombus,0,Quadrilateral,Rhombus,True,True,0.0,0.0,0.0,0.0,-0.41018869736399866,0.0,0.0,0.0
+Rectangle,Triangle,0,Rectangle,Triangle,True,True,0.0,0.0,0.0,0.0,0.44586354251692517,0.0,0.0,0.0
+Geometry,Edge_(geometry),0,,,False,True,0.0,0.0,0.0,0.0,-0.8676237576223171,0.0,0.0,0.0
+Similarity_(geometry),Rotation_(mathematics),0,Similarity,Rotation,True,True,0.0,0.0,0.0,0.0,-0.35737264128295004,0.0,0.0,0.0
+Exterior_angle_theorem,Sphere,0,Exterior Angle,Sphere,True,True,0.0,0.0,0.0,0.0,-0.5718538435684448,0.0,0.0,0.0
+Rotational_symmetry,Equilateral_triangle,0,Rotational Symmetry,Equilateral Triangle,True,True,0.0,0.0,0.0,0.0,0.8264272338790992,0.0,0.0,0.0
+Edge_(geometry),Kite_(geometry),0,,Kite,False,True,0.0,0.0,0.0,0.0,0.29404138858212897,0.0,0.0,0.0
+Triangle_inequality,Angle,1,,Angle,False,True,0.0,0.0,0.0,0.0,0.43707687136889617,0.0,0.0,0.0
+Special_right_triangles,Right_triangle,1,Special Right Triangles,Right Triangle,True,True,0.0,0.0,0.0,0.0,0.5534642531329524,1.0,1.0,0.8571428571428572
+Line_(geometry),Internal_and_external_angle,0,Line,Interior Angle,True,True,0.0,0.0,0.0,0.0,-0.1519181831276708,6.0,0.0,-0.4666666666666667
+Star_polygon,Line_(geometry),1,,Line,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Edge_(geometry),Altitude_(triangle),0,,Altitude,False,True,0.0,0.0,0.0,0.0,0.3863734575310894,0.0,0.0,0.0
+Geometry,Slope,0,,Slope,False,True,0.0,0.0,0.0,0.0,-0.3153598694002977,0.0,0.0,0.0
+Point_(geometry),Kite_(geometry),0,Point,Kite,True,True,0.0,0.0,0.0,0.0,-0.5710375954290104,0.0,0.0,0.0
+Arc_length,Tangent,0,Arc Length,Tangent,True,True,0.0,0.0,0.0,0.0,0.1431315119796418,0.0,0.0,0.0
+Circle,Triangle,0,Circle,Triangle,True,True,0.0,0.0,0.0,0.0,0.6036395064099487,0.0,0.0,0.0
+Pythagorean_theorem,Similarity_(geometry),0,Pythagorean Theorem,Similarity,True,True,0.0,0.0,0.0,0.0,0.06438757382244202,0.0,0.0,0.0
+Star_polygon,Point_(geometry),1,,Point,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Right_triangle,Sine,0,Right Triangle,Sine,True,True,0.0,0.0,0.0,0.0,-0.5670043693282758,0.0,0.0,0.0
+Midpoint,Right_triangle,0,Midpoint,Right Triangle,True,True,0.0,0.0,0.0,0.0,-0.07591107696739809,0.0,0.0,0.0
+Plane_(geometry),Cartesian_coordinate_system,0,Plane,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Diameter,Sphere,0,Diameter,Sphere,True,True,0.0,0.0,0.0,0.0,-0.1969078599894368,0.0,0.0,0.0
+Angle,Inverse_trigonometric_functions,0,Angle,Inverse Trigonometric,True,True,0.0,0.0,0.0,0.0,-0.6454602199068517,1.0,0.0,-0.9871794871794872
+Rigid_transformation,Angle,1,,Angle,False,True,0.0,0.0,0.0,0.0,0.8712248523551159,0.0,0.0,0.0
+Square,Angle,1,Square,Angle,True,True,0.0,0.0,0.0,0.0,0.4922936572718106,0.0,0.0,0.0
+Geometry,Triangle,0,,Triangle,False,True,0.0,0.0,0.0,0.0,-0.11086570317376482,0.0,0.0,0.0
+Quadrilateral,Hexagon,0,Quadrilateral,Hexagon,True,True,0.0,0.0,0.0,0.0,-0.0028328611898017,0.0,0.0,0.0
+Line_(geometry),Geometry,1,Line,,False,True,0.0,0.0,0.0,0.0,0.0029288903826763337,1.0,1.0,-0.3111111111111111
+Line_segment,Heptagon,0,Line Segment,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Angle_bisector_theorem,Line_(geometry),1,Angle Bisector,Line,True,True,0.0,0.0,0.0,0.0,0.46199644691986363,0.0,0.0,0.0
+Translation_(geometry),Coordinate_system,0,Translation,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Angle,Star_polygon,0,Angle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Vertex_(geometry),Pythagorean_triple,0,Vertex,,False,True,0.0,0.0,0.0,0.0,-0.5963412877514764,0.0,0.0,0.0
+Angle,Line_(geometry),1,Angle,Line,True,True,0.0,0.0,0.0,0.0,0.06280309214001056,13.0,13.0,-0.1222222222222222
+Arc_(geometry),Plane_(geometry),0,Arc,Plane,True,True,0.0,0.0,0.0,0.0,0.73639986555913,0.0,0.0,0.0
+Angle,Reflection_symmetry,0,Angle,Line Symmetry,True,True,0.0,0.0,0.0,0.0,-0.873049407019734,0.0,0.0,0.0
+Midpoint,Tangent,0,Midpoint,Tangent,True,True,0.0,0.0,0.0,0.0,-0.6437797090315456,0.0,0.0,0.0
+Vertex_(geometry),Sine,0,Vertex,Sine,True,True,0.0,0.0,0.0,0.0,-0.6241897536851203,0.0,0.0,0.0
+Angle,Rotation_(mathematics),0,Angle,Rotation,True,True,0.0,0.0,0.0,0.0,-0.8798674797138331,1.0,0.0,-0.18717948717948718
+Triangle_inequality,Pythagorean_theorem,0,,Pythagorean Theorem,False,True,0.0,0.0,0.0,0.0,-0.14980554088442888,0.0,0.0,0.0
+Angle,Polygon,0,Angle,Polygon,True,True,0.0,0.0,0.0,0.0,-0.07384644932059346,6.0,0.0,-0.27601809954751133
+Square,Line_(geometry),1,Square,Line,True,True,0.0,0.0,0.0,0.0,0.5550967494118212,0.0,0.0,0.0
+Line_segment,Pythagorean_theorem,0,Line Segment,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,-0.632928410236712,0.0,0.0,0.0
+Quadrilateral,Parallelogram,0,Quadrilateral,Parallelogram,True,True,0.0,0.0,0.0,0.0,-0.3863734575310894,3.0,0.0,0.19780219780219777
+Line_(geometry),Octagon,0,Line,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Polygon,Polyhedron,0,Polygon,Polyhedron,True,True,0.0,0.0,0.0,0.0,-0.7237720266961156,1.0,0.0,-0.4411764705882353
+Polygon,Inverse_trigonometric_functions,0,Polygon,Inverse Trigonometric,True,True,0.0,0.0,0.0,0.0,-0.5716137705862582,0.0,0.0,0.0
+Rhombus,Face_(geometry),0,Rhombus,,False,True,0.0,0.0,0.0,0.0,-0.3095501032313823,0.0,0.0,0.0
+Congruence_(geometry),Cartesian_coordinate_system,0,Congruence,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Face_(geometry),Rhombus,0,,Rhombus,False,True,0.0,0.0,0.0,0.0,0.3095501032313823,0.0,0.0,0.0
+Pyramid_(geometry),Plane_(geometry),0,Pyramid,Plane,True,True,0.0,0.0,0.0,0.0,0.8688721371296875,0.0,0.0,0.0
+Polygon,Convex_polygon,0,Polygon,,False,True,0.0,0.0,0.0,0.0,-0.3881980121957075,1.0,0.0,-0.9411764705882353
+Line_segment,Distance,0,Line Segment,,False,True,0.0,0.0,0.0,0.0,-0.01915782397848946,0.0,0.0,0.0
+Two-dimensional_space,Hendecagon,0,Plane,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Bisection,Trapezoid,0,Perpendicular Bisector,Trapezoid,True,True,0.0,0.0,0.0,0.0,-0.515532721947472,0.0,0.0,0.0
+Point_(geometry),Parallelogram,0,Point,Parallelogram,True,True,0.0,0.0,0.0,0.0,-0.5309454074038508,0.0,0.0,0.0
+Congruence_(geometry),Polygon,1,Congruence,Polygon,True,True,0.0,0.0,0.0,0.0,0.07288615739184712,0.0,0.0,0.0
+Square,Rectangle,1,Square,Rectangle,True,True,0.0,0.0,0.0,0.0,0.0012963941038075576,2.0,2.0,-0.15000000000000002
+Line_segment,Radius,0,Line Segment,Radius,True,True,0.0,0.0,0.0,0.0,-0.7005329620204542,0.0,0.0,0.0
+Vertex_(geometry),Edge_(geometry),0,Vertex,,False,True,0.0,0.0,0.0,0.0,-0.7958899505449657,0.0,0.0,0.0
+Angle,Polyhedron,0,Angle,Polyhedron,True,True,0.0,0.0,0.0,0.0,-0.7976184760167091,0.0,0.0,0.0
+Line_(geometry),Line_segment,0,Line,Line Segment,True,True,0.0,0.0,0.0,0.0,-0.016757094156623614,2.0,0.0,-0.9555555555555556
+Skew_lines,Parallel_(geometry),1,,Parallel,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_segment,Line_(geometry),1,Line Segment,Line,True,True,0.0,0.0,0.0,0.0,0.016757094156623614,2.0,2.0,0.9555555555555556
+Parallelogram,Rhombus,0,Parallelogram,Rhombus,True,True,0.0,0.0,0.0,0.0,-0.023815239832909205,1.0,0.0,-0.08974358974358973
+Trapezoid,Parallelogram,0,Trapezoid,Parallelogram,True,True,0.0,0.0,0.0,0.0,0.0393719690785999,0.0,0.0,0.0
+Trigonometric_functions,Angle,1,Trigonometry,Angle,True,True,0.0,0.0,0.0,0.0,0.585826091131704,2.0,2.0,0.26007326007326004
+Secant_line,Tangent,0,Secant,Tangent,True,True,0.0,0.0,0.0,0.0,0.08685840495510636,2.0,2.0,0.15000000000000002
+Right_angle,Perpendicular,0,Right Triangle,Perpendicular,True,True,0.0,0.0,0.0,0.0,-0.16368175925481346,1.0,0.0,0.1875
+Arc_(geometry),Perpendicular,0,Arc,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.4923896864646853,1.0,1.0,0.008928571428571425
+Geometry,Congruence_(geometry),0,,Congruence,False,True,0.0,0.0,0.0,0.0,-0.21246458923512748,0.0,0.0,0.0
+Pythagorean_theorem,Right_triangle,1,Pythagorean Theorem,Right Triangle,True,True,1.94,1.94,1.0,1.0,0.523695203341816,2.0,2.0,0.11428571428571432
+Rhombus,Rectangle,0,Rhombus,Rectangle,True,True,0.0,0.0,0.0,0.0,0.0005761751572478034,2.0,2.0,-0.06666666666666671
+Congruence_(geometry),Edge_(geometry),1,Congruence,,False,True,0.0,0.0,0.0,0.0,-0.6551591683871897,0.0,0.0,0.0
+Angle,Convex_polygon,0,Angle,,False,True,0.0,0.0,0.0,0.0,-0.46204446151630096,1.0,0.0,-0.9871794871794872
+Triangle,Perpendicular,0,Triangle,Perpendicular,True,True,0.0,0.0,0.0,0.0,-0.1366015268641667,0.0,0.0,0.0
+Parallel_(geometry),Geometry,1,Parallel,,False,True,0.0,0.0,0.0,0.0,0.24684304028424642,0.0,0.0,0.0
+Rigid_transformation,Symmetry,1,,Symmetry,False,True,0.0,0.0,0.0,0.0,-0.001824554664618044,0.0,0.0,0.0
+Rectangle,Symmetry,0,Rectangle,Symmetry,True,True,0.0,0.0,0.0,0.0,-0.3820521438517309,0.0,0.0,0.0
+Pentagon,Convex_polygon,0,Pentagon,,False,True,0.0,0.0,0.0,0.0,-0.37912325346905457,0.0,0.0,0.0
+Bisection,Point_(geometry),1,Perpendicular Bisector,Point,True,True,0.0,0.0,1.0,0.0,0.05478465453497863,4.0,4.0,0.2666666666666667
+Geometry,Circle,0,,Circle,False,True,0.0,0.0,0.0,0.0,-0.7145052095837134,0.0,0.0,0.0
+Similarity_(geometry),Translation_(geometry),0,Similarity,Translation,True,True,0.0,0.0,0.0,0.0,-0.36279829068036684,0.0,0.0,0.0
+Coordinate_system,Arc_length,0,,Arc Length,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Square,Line_segment,1,Square,Line Segment,True,True,0.0,0.0,0.0,0.0,0.5383396552551976,0.0,0.0,0.0
+Altitude_(triangle),Congruence_(geometry),0,Altitude,Congruence,True,True,0.0,0.0,0.0,0.0,0.26878571085610026,0.0,0.0,0.0
+Isosceles_triangle,Triangle,1,Isosceles Triangle,Triangle,True,True,0.0,0.0,0.0,0.0,0.008306525183655832,2.0,2.0,0.9636363636363636
+Special_right_triangles,Rectangle,0,Special Right Triangles,Rectangle,True,True,0.0,0.0,0.0,0.0,0.12565419887645846,0.0,0.0,0.0
+Square,Polygon,1,Square,Polygon,True,True,0.0,0.0,0.0,0.0,0.41844720795121715,1.0,1.0,0.0661764705882353
+Convex_polygon,Polygon,1,,Polygon,False,True,0.0,0.0,0.0,0.0,0.3881980121957075,1.0,1.0,0.9411764705882353
+Point_(geometry),Inverse_trigonometric_functions,0,Point,Inverse Trigonometric,True,True,0.0,0.0,0.0,0.0,-0.7086474288183607,0.0,0.0,0.0
+Right_angle,Line_(geometry),1,Right Triangle,Line,True,True,0.0,0.0,0.0,0.0,0.08085658040044173,1.0,1.0,0.22777777777777777
+Grade_(slope),Sine,0,Slope,Sine,True,True,0.0,0.0,0.0,0.0,-0.3805636913621741,0.0,0.0,0.0
+Angle,Vertex_(geometry),0,Angle,Vertex,True,True,0.0,0.0,0.0,0.0,-0.006001824554664618,3.0,0.0,-0.39010989010989006
+Bisection,Midpoint,1,Perpendicular Bisector,Midpoint,True,True,0.0,0.0,0.0,0.0,0.004321313679358525,2.0,2.0,-0.08571428571428569
+Rotation_(mathematics),Geometry,1,Rotation,,False,True,0.0,0.0,0.0,0.0,0.9455994622365199,0.0,0.0,0.0
+Congruence_(geometry),Coordinate_system,0,Congruence,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Parallel_(geometry),Rhombus,0,Parallel,Rhombus,True,True,0.0,0.0,0.0,0.0,-0.31046238056369135,0.0,0.0,0.0
+Right_angle,Coordinate_system,0,Right Triangle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Coordinate_system,Cartesian_coordinate_system,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Edge_(geometry),Rhombus,0,,Rhombus,False,True,0.0,0.0,0.0,0.0,0.3103183367743794,0.0,0.0,0.0
+Reflection_symmetry,Triangle,0,Line Symmetry,Triangle,True,True,0.0,0.0,0.0,0.0,0.8279156863686561,0.0,0.0,0.0
+Equilateral_triangle,Vertex_(geometry),1,Equilateral Triangle,Vertex,True,True,0.0,0.0,0.0,0.0,0.04498967686176598,0.0,0.0,0.0
+Pentagon,Dodecagon,0,Pentagon,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Pythagorean_theorem,Vertex_(geometry),1,Pythagorean Theorem,Vertex,True,True,0.0,0.0,0.0,0.0,0.5808805876986604,0.0,0.0,0.0
+Kite_(geometry),Line_(geometry),1,Kite,Line,True,True,0.0,0.0,0.0,0.0,0.5706534786575119,0.0,0.0,0.0
+Rhombus,Diagonal,0,Rhombus,,False,True,0.0,0.0,0.0,0.0,0.027608392951457242,2.0,2.0,0.08333333333333331
+Heptagon,Line_segment,1,,Line Segment,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Hexagon,Vertex_(geometry),1,Hexagon,Vertex,True,True,0.0,0.0,0.0,0.0,0.0782157775963893,0.0,0.0,0.0
+Polygon,Parallelogram,0,Polygon,Parallelogram,True,True,0.0,0.0,0.0,0.0,-0.3939117491717482,0.0,0.0,0.0
+Secant_line,Geometry,1,Secant,,False,True,0.0,0.0,0.0,0.0,0.7836462284534499,0.0,0.0,0.0
+Pythagorean_theorem,Cone,0,Pythagorean Theorem,Cone,True,True,0.0,0.0,0.0,0.0,-0.25097229557785566,0.0,0.0,0.0
+Parallelogram,Congruence_(geometry),0,Parallelogram,Congruence,True,True,0.0,0.0,0.0,0.0,0.3210255917799011,0.0,0.0,0.0
+Rhombus,Quadrilateral,1,Rhombus,Quadrilateral,True,True,0.0,0.0,0.0,0.0,0.41018869736399866,0.0,0.0,0.0
+Polygon,Two-dimensional_space,0,Polygon,Plane,True,True,0.0,0.0,0.0,0.0,0.13612138089979353,1.0,1.0,-0.0661764705882353
+Point_(geometry),Pyramid_(geometry),0,Point,Pyramid,True,True,0.0,0.0,0.0,0.0,-0.8697844144619965,0.0,0.0,0.0
+Right_triangle,Point_(geometry),1,Right Triangle,Point,True,True,0.0,0.0,0.0,0.0,0.1263744178230182,0.0,0.0,0.0
+Scaling_(geometry),Scale_factor,1,Scale Factor,Scale Factor,False,True,0.0,0.0,0.0,0.0,0.0,3.0,0.0,0.0
+Rotational_symmetry,Quadrilateral,0,Rotational Symmetry,Quadrilateral,True,True,0.0,0.0,0.0,0.0,0.7960339943342776,0.0,0.0,0.0
+Isosceles_triangle,Edge_(geometry),1,Isosceles Triangle,,False,True,0.0,0.0,0.0,0.0,-0.7484515292648966,0.0,0.0,0.0
+Plane_(geometry),Two-dimensional_space,0,Plane,Plane,False,True,0.0,0.0,0.0,0.0,0.0,8.0,0.0,0.0
+Perpendicular,Congruence_(geometry),0,Perpendicular,Congruence,True,True,0.0,0.0,0.0,0.0,0.035002640802804054,0.0,0.0,0.0
+Edge_(geometry),Pythagorean_theorem,0,,Pythagorean Theorem,False,True,0.0,0.0,0.0,0.0,0.21500936284630529,0.0,0.0,0.0
+Radius,Coordinate_system,0,Radius,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Polyhedron,Edge_(geometry),1,Polyhedron,,False,True,0.0,0.0,0.0,0.0,-0.0042732990829212085,1.0,0.0,0.0
+Symmetry,Perpendicular,0,Symmetry,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.6913141595044894,0.0,0.0,0.0
+Geometry,Octagon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Angle,Sphere,0,Angle,Sphere,True,True,0.0,0.0,0.0,0.0,-0.854563787391367,0.0,0.0,0.0
+Square,Geometry,1,Square,,False,True,0.0,0.0,0.0,0.0,0.5580256397944975,0.0,0.0,0.0
+Exterior_angle_theorem,Line_segment,1,Exterior Angle,Line Segment,True,True,0.0,0.0,0.0,0.0,0.3287559418063091,0.0,0.0,0.0
+Point_(geometry),Polygon,0,Point,Polygon,True,True,0.0,0.0,0.0,0.0,-0.13703365823210256,0.0,0.0,0.0
+Similarity_(geometry),Angle,0,Similarity,Angle,True,True,0.0,1.5862,0.0,0.0,0.522494838430883,2.0,2.0,0.37435897435897436
+Edge_(geometry),Angle_bisector_theorem,0,,Angle Bisector,False,True,0.0,0.0,0.0,0.0,0.4026984203197772,0.0,0.0,0.0
+Polyhedron,Tessellation,0,Polyhedron,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Pyramid_(geometry),Cone,0,Pyramid,Cone,True,True,0.0,0.0,0.0,0.0,-0.03125750228069333,1.0,0.0,-0.08333333333333331
+Point_(geometry),Space_(mathematics),0,Point,,False,True,0.0,0.0,0.0,0.0,-0.9199116531425553,1.0,0.0,-0.9666666666666667
+Pythagorean_theorem,Sphere,0,Pythagorean Theorem,Sphere,True,True,0.0,0.0,0.0,0.0,-0.26768137513804197,0.0,0.0,0.0
+Rotational_symmetry,Midpoint,0,Rotational Symmetry,Midpoint,True,True,0.0,0.0,0.0,0.0,0.8901426033514188,0.0,0.0,0.0
+Circle,Cartesian_coordinate_system,0,Circle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Pythagorean_triple,Line_segment,1,,Line Segment,False,True,0.0,0.0,0.0,0.0,0.6483891102895281,0.0,0.0,0.0
+Sine,Geometry,1,Sine,,False,True,0.0,0.0,0.0,0.0,0.6959235607624717,0.0,0.0,0.0
+Tangent,Angle,1,Tangent,Angle,True,True,0.0,0.0,0.0,0.0,0.6310558409756566,1.0,1.0,0.11217948717948718
+Square,Hexagon,0,Square,Hexagon,True,True,0.0,0.0,0.0,0.0,0.40807605512075673,0.0,0.0,0.0
+Line_(geometry),Inverse_trigonometric_functions,0,Line,Inverse Trigonometric,True,True,0.0,0.0,0.0,0.0,-0.7082633120468622,0.0,0.0,0.0
+Point_(geometry),Square,0,Point,Square,True,True,0.0,0.0,0.0,0.0,-0.5554808661833197,0.0,0.0,0.0
+Angle,Triangle_inequality,0,Angle,,False,True,0.0,0.0,0.0,0.0,-0.43707687136889617,0.0,0.0,0.0
+Line_segment,Translation_(geometry),0,Line Segment,Translation,True,True,0.0,0.0,0.0,0.0,-0.9313391270946367,0.0,0.0,0.0
+Vertex_(geometry),Right_triangle,0,Vertex,Right Triangle,True,True,0.0,0.0,0.0,0.0,-0.05718538435684448,0.0,0.0,0.0
+Geometry,Trigonometric_functions,0,,Trigonometry,False,True,0.0,0.0,0.0,0.0,-0.6515580736543909,0.0,0.0,0.0
+Reflection_(mathematics),Rigid_transformation,0,Reflection,,False,True,0.0,0.0,0.0,0.0,0.02544773611177798,1.0,1.0,-0.35714285714285715
+Rectangle,Right_angle,1,Rectangle,Right Triangle,True,True,0.0,0.0,0.0,0.0,0.4729437749075719,1.0,1.0,-0.04999999999999999
+Triangle_inequality,Internal_and_external_angle,0,,Interior Angle,False,True,0.0,0.0,0.0,0.0,0.3479617803812359,0.0,0.0,0.0
+Angle,Cone,0,Angle,Cone,True,True,0.0,0.0,0.0,0.0,-0.8378547078311807,0.0,0.0,0.0
+Chord_(geometry),Point_(geometry),1,Chord,Point,True,True,0.0,0.0,0.0,0.0,0.7215153406635617,0.0,0.0,0.0
+Reflection_(mathematics),Cartesian_coordinate_system,0,Reflection,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Point_(geometry),Line_segment,0,Point,Line Segment,True,True,0.0,0.0,0.0,0.0,-0.01714121092812215,1.0,0.0,-0.4666666666666667
+Line_segment,Trigonometric_functions,0,Line Segment,Trigonometry,True,True,0.0,0.0,0.0,0.0,-0.631872089115091,0.0,0.0,0.0
+Triangle,Isosceles_triangle,0,Triangle,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,-0.008306525183655832,2.0,0.0,-0.9636363636363636
+Pythagorean_theorem,Edge_(geometry),1,Pythagorean Theorem,,False,True,0.0,0.0,0.0,0.0,-0.21500936284630529,0.0,0.0,0.0
+Self-similarity,Symmetry,1,,Symmetry,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Altitude_(triangle),Triangle,1,Altitude,Triangle,True,True,0.0,0.0,0.0,0.0,0.3703845969174629,0.0,0.0,0.0
+Tangent,Cross_section_(geometry),0,Tangent,Cross Section,True,True,0.0,0.0,0.0,0.0,-0.18605656119460315,0.0,0.0,0.0
+Sine,Point_(geometry),1,Sine,Point,True,True,0.0,0.0,0.0,0.0,0.693378787151294,0.0,0.0,0.0
+Geometry,Hexagon,0,,Hexagon,False,True,0.0,0.0,0.0,0.0,-0.1499495846737408,0.0,0.0,0.0
+Square,Circumference,0,Square,Circumference,True,True,0.0,0.0,0.0,0.0,-0.28102943294761606,0.0,0.0,0.0
+Convex_polygon,Edge_(geometry),1,,,False,True,0.0,0.0,0.0,0.0,-0.3398473135833293,0.0,0.0,0.0
+Kite_(geometry),Point_(geometry),1,Kite,Point,True,True,0.0,0.0,0.0,0.0,0.5710375954290104,0.0,0.0,0.0
+Face_(geometry),Polygon,0,,Polygon,False,True,0.0,0.0,0.0,0.0,0.7272770922360398,1.0,1.0,0.19117647058823528
+Polygon,Symmetry,0,Polygon,Symmetry,True,True,0.0,0.0,0.0,0.0,-0.7992029576991405,0.0,0.0,0.0
+Rhombus,Internal_and_external_angle,0,Rhombus,Interior Angle,True,True,0.0,0.0,0.0,0.0,0.4024583473375906,0.0,0.0,0.0
+Right_angle,Pythagorean_triple,0,Right Triangle,,False,True,0.0,0.0,0.0,0.0,-0.5842896240457099,0.0,0.0,0.0
+Collinearity,Plane_(geometry),0,,Plane,False,True,0.0,0.0,0.0,0.0,0.9909252412733471,0.0,0.0,0.0
+Point_(geometry),Exterior_angle_theorem,0,Point,Exterior Angle,True,True,0.0,0.0,0.0,0.0,-0.3458971527344313,0.0,0.0,0.0
+Perpendicular,Skew_lines,0,Perpendicular,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Reflection_(mathematics),Line_(geometry),1,Reflection,Line,True,True,0.0,0.0,0.0,0.0,0.9594756806069045,4.0,4.0,0.4825396825396825
+Rectangle,Trapezoid,0,Rectangle,Trapezoid,True,True,0.0,0.0,0.0,0.0,-0.01613290440293849,0.0,0.0,0.0
+Square,Kite_(geometry),0,Square,Kite,True,True,0.0,0.0,0.0,0.0,-0.01555672924569069,0.0,0.0,0.0
+Polygon,Altitude_(triangle),0,Polygon,Altitude,True,True,0.0,0.0,0.0,0.0,-0.3416718682479474,0.0,0.0,0.0
+Internal_and_external_angle,Vertex_(geometry),1,Interior Angle,Vertex,True,True,0.0,0.0,0.0,0.0,0.08311326643299563,0.0,0.0,0.0
+Diameter,Arc_length,0,Diameter,Arc Length,True,True,0.0,0.0,0.0,0.0,-0.11653142555336822,0.0,0.0,0.0
+Rotational_symmetry,Point_(geometry),1,Rotational Symmetry,Point,True,True,0.0,0.0,0.0,0.0,0.9406059442070389,0.0,0.0,0.0
+Angle,Congruence_(geometry),0,Angle,Congruence,True,True,0.0,0.0,0.0,0.0,-0.1467326067124406,3.0,0.0,-0.2948717948717948
+Circle,Coordinate_system,0,Circle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Translation_(geometry),Scaling_(geometry),0,Translation,Scale Factor,True,True,0.0,0.0,0.0,0.0,0.35343544437509,0.0,0.0,0.0
+Vertex_(geometry),Quadrilateral,0,Vertex,Quadrilateral,True,True,0.0,0.0,0.0,0.0,-0.0753829164065876,0.0,0.0,0.0
+Angle,Angle_bisector_theorem,0,Angle,Angle Bisector,True,True,0.0,0.0,0.0,0.0,-0.39919335477985307,2.0,0.0,-0.9743589743589743
+Line_(geometry),Cartesian_coordinate_system,0,Line,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Vertex_(geometry),Hendecagon,0,Vertex,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Reflection_(mathematics),Geometry,1,Reflection,,False,True,0.0,0.0,0.0,0.0,0.9624045709895809,0.0,0.0,0.0
+Right_angle,Cartesian_coordinate_system,0,Right Triangle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cartesian_coordinate_system,Geometry,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_segment,Cone,0,Line Segment,Cone,True,True,0.0,0.0,0.0,0.0,-0.8839007058145676,0.0,0.0,0.0
+Quadrilateral,Distance,0,Quadrilateral,,False,True,0.0,0.0,0.0,0.0,0.10827291496614971,0.0,0.0,0.0
+Parallelogram,Right_triangle,0,Parallelogram,Right Triangle,True,True,0.0,0.0,0.0,0.0,0.4045709895808326,0.0,0.0,0.0
+Rhombus,Convex_polygon,0,Rhombus,,False,True,0.0,0.0,0.0,0.0,0.02952897680894992,0.0,0.0,0.0
+Angle_bisector_theorem,Polygon,1,Angle Bisector,Polygon,True,True,0.0,0.0,0.0,0.0,0.3253469054592596,0.0,0.0,0.0
+Isosceles_triangle,Acute_and_obtuse_triangles,0,Isosceles Triangle,Acute Triangle,True,True,0.0,0.0,0.0,0.0,-0.007154174869160225,0.0,0.0,0.0
+Polygon,Star_polygon,0,Polygon,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Rigid_transformation,Reflection_(mathematics),1,,Reflection,False,True,0.0,0.0,0.0,0.0,-0.02544773611177798,1.0,0.0,0.35714285714285715
+Polyhedron,Pyramid_(geometry),0,Polyhedron,Pyramid,True,True,0.0,0.0,0.0,0.0,-0.00897872953377827,0.0,0.0,0.0
+Bisection,Angle_bisector_theorem,0,Perpendicular Bisector,Angle Bisector,True,True,0.0,0.0,1.0,0.0,-0.40759590915638355,2.0,0.0,-0.8
+Cylinder_(geometry),Circle,1,Cylinder,Circle,True,True,1.215,1.215,1.0,1.0,0.1719882844384693,0.0,0.0,0.0
+Transversal_(geometry),Perpendicular,0,Transversal,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.00753829164065876,1.0,1.0,0.02840909090909091
+Polyhedron,Line_segment,1,Polyhedron,Line Segment,True,True,0.0,0.0,0.0,0.0,0.843664474000096,0.0,0.0,0.0
+Symmetry,Star_polygon,0,Symmetry,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Arc_length,Arc_(geometry),1,Arc Length,Arc,True,True,0.0,0.0,0.0,0.0,0.10006241897536851,2.0,2.0,0.8571428571428572
+Trigonometric_functions,Point_(geometry),1,Trigonometry,Point,True,True,0.0,0.0,0.0,0.0,0.6490133000432131,0.0,0.0,0.0
+Star_polygon,Edge_(geometry),1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_segment,Skew_lines,0,Line Segment,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Diagonal,Isosceles_triangle,0,,Isosceles Triangle,False,True,0.0,0.0,0.0,0.0,0.41052479953905985,0.0,0.0,0.0
+Congruence_(geometry),Space_(mathematics),0,Congruence,,False,True,0.0,0.0,0.0,0.0,-0.7099918375186056,0.0,0.0,0.0
+Line_segment,Point_(geometry),1,Line Segment,Point,True,True,0.0,0.0,0.0,0.0,0.01714121092812215,1.0,1.0,0.4666666666666667
+Perpendicular,Line_segment,0,Perpendicular,Line Segment,True,True,0.0,0.0,0.0,0.0,0.22778124549863157,0.0,0.0,0.0
+Line_(geometry),Triangle_inequality,0,Line,,False,True,0.0,0.0,0.0,0.0,-0.49987996350890673,0.0,0.0,0.0
+Chord_(geometry),Line_(geometry),1,Chord,Line,True,True,0.0,0.0,0.0,0.0,0.7211312238920632,0.0,0.0,0.0
+Kite_(geometry),Edge_(geometry),1,Kite,,False,True,0.0,0.0,0.0,0.0,-0.29404138858212897,0.0,0.0,0.0
+Parallelogram,Tangent,0,Parallelogram,Tangent,True,True,0.0,0.0,0.0,0.0,-0.16329764248331494,0.0,0.0,0.0
+Polygon,Cross_section_(geometry),0,Polygon,Cross Section,True,True,0.0,0.0,0.0,0.0,-0.7432659528496663,0.0,0.0,0.0
+Altitude_(triangle),Polygon,1,Altitude,Polygon,True,True,0.0,0.0,0.0,0.0,0.3416718682479474,0.0,0.0,0.0
+Line_(geometry),Rotational_symmetry,0,Line,Rotational Symmetry,True,True,0.0,0.0,0.0,0.0,-0.9402218274355404,0.0,0.0,0.0
+Similarity_(geometry),Rhombus,0,Similarity,Rhombus,True,True,0.0,0.0,0.0,0.0,0.030921400105632112,0.0,0.0,0.0
+Polygon,Pythagorean_triple,0,Polygon,,False,True,0.0,0.0,0.0,0.0,-0.5284966629855476,0.0,0.0,0.0
+Edge_(geometry),Polygon,0,,Polygon,False,True,0.0,0.0,0.0,0.0,0.7280453257790368,1.0,1.0,0.4411764705882353
+Diagonal,Square,0,,Square,False,True,0.0,0.0,0.0,0.0,-0.028328611898016998,0.0,0.0,0.0
+Face_(geometry),Tessellation,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Triangle_inequality,Triangle,1,,Triangle,False,True,0.0,0.0,0.0,0.0,0.3919431507178182,1.0,1.0,0.9818181818181818
+Quadrilateral,Vertex_(geometry),1,Quadrilateral,Vertex,True,True,0.0,0.0,0.0,0.0,0.0753829164065876,0.0,0.0,0.0
+Prism_(geometry),Square,0,Prism,Square,True,True,0.0,0.0,0.0,0.0,0.31070245354587794,0.0,0.0,0.0
+Midpoint,Line_(geometry),1,Midpoint,Line,True,True,0.0,0.0,0.0,0.0,0.050079224084121576,1.0,1.0,0.12063492063492062
+Geometry,Plane_(geometry),0,,Plane,False,True,0.0,0.0,0.0,0.0,-0.00345705094348682,1.0,0.0,0.20833333333333331
+Rectangle,Perpendicular,0,Rectangle,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.30926201565275846,0.0,0.0,0.0
+Slope,Tangent,0,Slope,Tangent,True,True,0.0,0.0,0.0,0.0,-0.3814279540980458,0.0,0.0,0.0
+Congruence_(geometry),Rhombus,0,Congruence,Rhombus,True,True,0.0,0.0,0.0,0.0,-0.3448408316128103,0.0,0.0,0.0
+Hendecagon,Geometry,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Pentagon,Prism_(geometry),0,Pentagon,Prism,True,True,0.0,0.0,0.0,0.0,-0.7200749027704422,0.0,0.0,0.0
+Edge_(geometry),Congruence_(geometry),0,,Congruence,False,True,0.0,0.0,0.0,0.0,0.6551591683871897,0.0,0.0,0.0
+Tangent,Hexagon,0,Tangent,Hexagon,True,True,0.0,0.0,0.0,0.0,0.5468382388246027,0.0,0.0,0.0
+Circle,Tangent,0,Circle,Tangent,True,True,0.0,0.0,0.0,0.0,0.017717386085369952,2.0,2.0,-0.11666666666666667
+Triangle,Coordinate_system,0,Triangle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Pythagorean_theorem,Congruence_(geometry),0,Pythagorean Theorem,Congruence,True,True,0.0,0.0,0.0,0.0,0.44014980554088445,0.0,0.0,0.0
+Point_(geometry),Cartesian_coordinate_system,0,Point,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Self-similarity,Geometry,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Right_triangle,Right_angle,1,Right Triangle,Right Triangle,False,True,0.0,0.0,0.0,0.0,0.04513372065107793,0.0,0.0,0.0
+Circle,Cylinder_(geometry),0,Circle,Cylinder,True,True,0.0,0.0,1.0,0.0,-0.1719882844384693,0.0,0.0,0.0
+Octagon,Angle,1,,Angle,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Arc_(geometry),Geometry,1,Arc,,False,True,0.0,0.0,0.0,0.0,0.7398569165026168,0.0,0.0,0.0
+Polyhedron,Symmetry,0,Polyhedron,Symmetry,True,True,0.0,0.0,0.0,0.0,-0.07543093100302492,0.0,0.0,0.0
+Point_(geometry),Rotation_(mathematics),0,Point,Rotation,True,True,0.0,0.0,0.0,0.0,-0.9430546886253421,1.0,0.0,-0.16666666666666669
+Point_(geometry),Trapezoid,0,Point,Trapezoid,True,True,0.0,0.0,0.0,0.0,-0.5703173764824506,0.0,0.0,0.0
+Geometry,Angle,0,,Angle,False,True,0.0,0.0,0.0,0.0,-0.0657319825226869,0.0,0.0,0.0
+Diameter,Parallelogram,0,Diameter,Parallelogram,True,True,0.0,0.0,0.0,0.0,0.1898977289095885,0.0,0.0,0.0
+Line_segment,Geometry,1,Line Segment,,False,True,0.0,0.0,0.0,0.0,0.01968598453929995,0.0,0.0,0.0
+Tangent,Line_(geometry),1,Tangent,Line,True,True,0.0,0.0,0.0,0.0,0.6938589331156672,3.0,3.0,0.30833333333333335
+Pythagorean_theorem,Distance,0,Pythagorean Theorem,,False,True,0.0,0.0,0.0,0.0,0.6137705862582225,0.0,0.0,0.0
+Parallelogram,Internal_and_external_angle,0,Parallelogram,Interior Angle,True,True,0.0,0.0,0.0,0.0,0.37864310750468144,0.0,0.0,0.0
+Internal_and_external_angle,Exterior_angle_theorem,0,Interior Angle,Exterior Angle,True,True,0.0,0.0,0.0,0.0,-0.19359485283526193,1.0,0.0,-0.9
+Slope,Secant_line,0,Slope,Secant,True,True,0.0,0.0,0.0,0.0,-0.46828635905315213,0.0,0.0,0.0
+Internal_and_external_angle,Line_(geometry),1,Interior Angle,Line,True,True,0.0,0.0,0.0,0.0,0.1519181831276708,6.0,6.0,0.4666666666666667
+Circle,Angle_bisector_theorem,0,Circle,Angle Bisector,True,True,0.0,0.0,0.0,0.0,0.24957987228117348,0.0,0.0,0.0
+Angle,Bisection,0,Angle,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,0.008402554376530466,5.0,5.0,-0.4358974358974359
+Vertex_(geometry),Face_(geometry),0,Vertex,,False,True,0.0,0.0,0.0,0.0,-0.7951217170019687,0.0,0.0,0.0
+Slope,Geometry,1,Slope,,False,True,0.0,0.0,0.0,0.0,0.3153598694002977,0.0,0.0,0.0
+Angle,Cartesian_coordinate_system,0,Angle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Midpoint,Chord_(geometry),0,Midpoint,Chord,True,True,0.0,0.0,0.0,0.0,-0.6710519998079416,0.0,0.0,0.0
+Polygon,Prism_(geometry),0,Polygon,Prism,True,True,0.0,0.0,0.0,0.0,-0.7291496614970951,0.0,0.0,0.0
+Prism_(geometry),Geometry,1,Prism,,False,True,0.0,0.0,0.0,0.0,0.8687280933403755,0.0,0.0,0.0
+Radius,Angle,0,Radius,Angle,True,True,0.0,0.0,0.0,0.0,0.6544869640370673,0.0,0.0,0.0
+Triangle_inequality,Vertex_(geometry),1,,Vertex,False,True,0.0,0.0,0.0,0.0,0.43107504681423153,0.0,0.0,0.0
+Right_triangle,Arc_length,0,Right Triangle,Arc Length,True,True,0.0,0.0,0.0,0.0,-0.7110001440437893,0.0,0.0,0.0
+Pentagon,Line_(geometry),1,Pentagon,Line,True,True,0.0,0.0,0.0,0.0,0.14572430018725693,0.0,0.0,0.0
+Exterior_angle_theorem,Internal_and_external_angle,1,Exterior Angle,Interior Angle,True,True,0.0,0.0,0.0,0.0,0.19359485283526193,1.0,1.0,0.9
+Acute_and_obtuse_triangles,Hexagon,0,Acute Triangle,Hexagon,True,True,0.0,0.0,0.0,0.0,-0.023623181447159938,0.0,0.0,0.0
+Triangle,Right_triangle,0,Triangle,Right Triangle,True,True,0.0,0.0,0.0,0.0,-0.018053488260431173,7.0,0.0,-0.8727272727272728
+Hexagon,Line_segment,1,Hexagon,Line Segment,True,True,0.0,0.0,0.0,0.0,0.13026360013444088,0.0,0.0,0.0
+Congruence_(geometry),Point_(geometry),1,Congruence,Point,True,True,0.0,0.0,0.0,0.0,0.20991981562394968,0.0,0.0,0.0
+Trigonometric_functions,Cartesian_coordinate_system,0,Trigonometry,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Right_angle,Square,0,Right Triangle,Square,True,True,0.0,0.0,0.0,0.0,-0.47424016901137944,0.0,0.0,0.0
+Altitude_(triangle),Vertex_(geometry),1,Altitude,Vertex,True,True,0.0,0.0,0.0,0.0,0.4095164930138762,1.0,1.0,0.19047619047619047
+Similarity_(geometry),Altitude_(triangle),0,Similarity,Altitude,True,True,0.0,0.0,0.0,0.0,0.10697652086234215,0.0,0.0,0.0
+Translation_(geometry),Cartesian_coordinate_system,0,Translation,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Right_triangle,Acute_and_obtuse_triangles,0,Right Triangle,Acute Triangle,True,True,0.0,0.0,0.0,0.0,0.002592788207615115,0.0,0.0,0.0
+Line_(geometry),Congruence_(geometry),0,Line,Congruence,True,True,0.0,0.0,0.0,0.0,-0.20953569885245116,0.0,0.0,0.0
+Geometry,Cone,0,,Cone,False,True,0.0,0.0,0.0,0.0,-0.9035866903538676,0.0,0.0,0.0
+Altitude_(triangle),Isosceles_triangle,0,Altitude,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,0.36207807173380707,0.0,0.0,0.0
+Triangle,Inverse_trigonometric_functions,0,Triangle,Inverse Trigonometric,True,True,0.0,0.0,0.0,0.0,-0.6003264992557737,0.0,0.0,0.0
+Rotation_(mathematics),Sphere,0,Rotation,Sphere,True,True,0.0,0.0,0.0,0.0,0.02530369232246603,0.0,0.0,0.0
+Nonagon,Line_(geometry),1,,Line,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Quadrilateral,Polygon,1,Quadrilateral,Polygon,True,True,0.0,0.0,0.0,0.0,0.00753829164065876,1.0,1.0,0.08403361344537814
+Pythagorean_theorem,Sine,0,Pythagorean Theorem,Sine,True,True,0.0,0.0,0.0,0.0,-0.04330916598645988,0.0,0.0,0.0
+Edge_(geometry),Triangle_inequality,0,,,False,True,0.0,0.0,0.0,0.0,0.36481490373073416,0.0,0.0,0.0
+Equilateral_triangle,Line_segment,1,Equilateral Triangle,Line Segment,True,True,0.0,0.0,0.0,0.0,0.09703749939981754,0.0,0.0,0.0
+Pythagorean_theorem,Line_(geometry),1,Pythagorean Theorem,Line,True,True,0.0,0.0,0.0,0.0,0.6496855043933356,0.0,0.0,0.0
+Point_(geometry),Reflection_(mathematics),0,Point,Reflection,True,True,0.0,0.0,0.0,0.0,-0.959859797378403,0.0,0.0,0.0
+Circumference,Radius,0,Circumference,Radius,True,True,0.0,0.0,0.0,0.0,0.11883612618235943,1.0,1.0,0.20833333333333331
+Rotational_symmetry,Tessellation,0,Rotational Symmetry,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Hendecagon,Edge_(geometry),1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Perpendicular,Distance,0,Perpendicular,,False,True,0.0,0.0,0.0,0.0,0.20862342152014213,1.0,1.0,-0.1375
+Rectangle,Rotational_symmetry,0,Rectangle,Rotational Symmetry,True,True,0.0,0.0,0.0,0.0,-0.38642147212752676,0.0,0.0,0.0
+Polyhedron,Cartesian_coordinate_system,0,Polyhedron,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Point_(geometry),Dodecagon,0,Point,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_(geometry),Isosceles_triangle,0,Line,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,-0.11624333797474433,0.0,0.0,0.0
+Triangle,Polygon,1,Triangle,Polygon,True,True,0.0,0.0,0.0,0.0,-0.028712728669515533,0.0,0.0,0.0
+Triangle_inequality,Sphere,0,,Sphere,False,True,0.0,0.0,0.0,0.0,-0.41748691602247084,0.0,0.0,0.0
+Diagonal,Convex_polygon,0,,,False,True,0.0,0.0,0.0,0.0,0.0019205838574926778,0.0,0.0,0.0
+Space_(mathematics),Cartesian_coordinate_system,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_(geometry),Rigid_transformation,0,Line,,False,True,0.0,0.0,0.0,0.0,-0.9340279444951265,0.0,0.0,0.0
+Geometry,Sphere,0,,Sphere,False,True,0.0,0.0,0.0,0.0,-0.9202957699140538,0.0,0.0,0.0
+Reflection_(mathematics),Angle,1,Reflection,Angle,True,True,0.0,0.0,0.0,0.0,0.8966725884668939,0.0,0.0,0.0
+Point_(geometry),Pentagon,0,Point,Pentagon,True,True,0.0,0.0,0.0,0.0,-0.14610841695875545,0.0,0.0,0.0
+Point_(geometry),Collinearity,0,Point,,False,True,0.0,0.0,0.0,0.0,-0.9918375186056562,0.0,0.0,0.0
+Line_(geometry),Chord_(geometry),0,Line,Chord,True,True,0.0,0.0,0.0,0.0,-0.7211312238920632,0.0,0.0,0.0
+Isosceles_triangle,Angle,1,Isosceles Triangle,Angle,True,True,0.0,0.0,0.0,0.0,0.05344024583473376,1.0,1.0,0.48717948717948717
+Diameter,Tangent,0,Diameter,Tangent,True,True,0.0,0.0,0.0,0.0,0.026600086426273588,0.0,0.0,0.0
+Equilateral_triangle,Bisection,0,Equilateral Triangle,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,0.05939405579296106,0.0,0.0,0.0
+Edge_(geometry),Triangle,0,,Triangle,False,True,0.0,0.0,0.0,0.0,0.7567580544485524,0.0,0.0,0.0
+Right_triangle,Line_(geometry),1,Right Triangle,Line,True,True,0.0,0.0,0.0,0.0,0.12599030105151965,0.0,0.0,0.0
+Parallel_(geometry),Transversal_(geometry),0,Parallel,Transversal,True,True,0.0,0.0,1.0,0.0,-0.00816248139434388,6.0,0.0,-0.24545454545454543
+Triangle_inequality,Circle,0,,Circle,False,True,0.0,0.0,0.0,0.0,-0.2116963556921304,0.0,0.0,0.0
+Rotational_symmetry,Geometry,1,Rotational Symmetry,,False,True,0.0,0.0,0.0,0.0,0.9431507178182167,0.0,0.0,0.0
+Vertex_(geometry),Congruence_(geometry),0,Vertex,Congruence,True,True,0.0,0.0,0.0,0.0,-0.14073078215777596,0.0,0.0,0.0
+Angle,Decagon,0,Angle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Circumference,Arc_length,0,Circumference,Arc Length,True,True,0.0,0.0,0.0,0.0,-0.000864262735871705,2.0,0.0,-0.33333333333333337
+Prism_(geometry),Edge_(geometry),1,Prism,,False,True,0.0,0.0,0.0,0.0,0.0011043357180582898,0.0,0.0,0.0
+Square,Parallelogram,1,Square,Parallelogram,True,True,0.0,0.0,0.0,0.0,0.024535458779468958,0.0,0.0,0.0
+Internal_and_external_angle,Point_(geometry),1,Interior Angle,Point,True,True,0.0,0.0,0.0,0.0,0.15230229989916935,0.0,0.0,0.0
+Line_(geometry),Heptagon,0,Line,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Vertex_(geometry),Skew_lines,0,Vertex,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Two-dimensional_space,Octagon,0,Plane,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Reflection_symmetry,Angle,1,Line Symmetry,Angle,True,True,0.0,0.0,0.0,0.0,0.873049407019734,0.0,0.0,0.0
+Plane_(geometry),Transversal_(geometry),0,Plane,Transversal,True,True,0.0,0.0,0.0,0.0,-0.25154847073510345,0.0,0.0,0.0
+Right_angle,Special_right_triangles,0,Right Triangle,Special Right Triangles,True,True,0.0,0.0,0.0,0.0,-0.5985979737840303,0.0,0.0,0.0
+Geometry,Diagonal,0,,,False,True,0.0,0.0,0.0,0.0,-0.5296970278964805,0.0,0.0,0.0
+Rhombus,Circumference,0,Rhombus,Circumference,True,True,0.0,0.0,0.0,0.0,-0.28174965189417583,0.0,0.0,0.0
+Parallelogram,Slope,0,Parallelogram,Slope,True,True,0.0,0.0,0.0,0.0,0.21813031161473087,0.0,0.0,0.0
+Symmetry,Similarity_(geometry),0,Symmetry,Similarity,True,True,0.0,0.0,0.0,0.0,0.35055456858885103,0.0,0.0,0.0
+Angle,Triangle,0,Angle,Triangle,True,True,0.0,0.0,0.0,0.0,-0.04513372065107793,21.0,0.0,-0.11258741258741262
+Angle,Trapezoid,0,Angle,Trapezoid,True,True,0.0,0.0,0.0,0.0,-0.5071301675709415,0.0,0.0,0.0
+Equilateral_triangle,Altitude_(triangle),0,Equilateral Triangle,Altitude,True,True,0.0,0.0,0.0,0.0,-0.36452681615211024,0.0,0.0,0.0
+Pythagorean_theorem,Polygon,1,Pythagorean Theorem,Polygon,True,True,0.0,0.0,0.0,0.0,0.5130359629327316,0.0,0.0,0.0
+Parallelogram,Kite_(geometry),0,Parallelogram,Kite,True,True,0.0,0.0,0.0,0.0,-0.040092188025159646,0.0,0.0,0.0
+Geometry,Pythagorean_triple,0,,,False,True,0.0,0.0,0.0,0.0,-0.668075094828828,0.0,0.0,0.0
+Trigonometric_functions,Vertex_(geometry),1,Trigonometry,Vertex,True,True,0.0,0.0,0.0,0.0,0.5798242665770394,0.0,0.0,0.0
+Midpoint,Diagonal,0,Midpoint,,False,True,0.0,0.0,0.0,0.0,-0.4766889134296826,0.0,0.0,0.0
+Line_segment,Edge_(geometry),0,Line Segment,,False,True,0.0,0.0,0.0,0.0,-0.8479377730830172,0.0,0.0,0.0
+Rectangle,Two-dimensional_space,0,Rectangle,Plane,True,True,0.0,0.0,0.0,0.0,0.5532721947472031,0.0,0.0,0.0
+Parallel_(geometry),Parallelogram,0,Parallel,Parallelogram,True,True,0.0,0.0,0.0,0.0,-0.2866471407307822,3.0,0.0,-0.08076923076923079
+Angle,Geometry,1,Angle,,False,True,0.0,0.0,0.0,0.0,0.0657319825226869,0.0,0.0,0.0
+Vertex_(geometry),Triangle,0,Vertex,Triangle,True,True,0.0,0.0,0.0,0.0,-0.03913189609641331,0.0,0.0,0.0
+Arc_(geometry),Tangent,0,Arc,Tangent,True,True,0.0,0.0,0.0,0.0,0.0430690930042733,0.0,0.0,0.0
+Slope,Distance,0,Slope,,False,True,0.0,0.0,0.0,0.0,0.2765160608825083,0.0,0.0,0.0
+Geometry,Polygon,0,,Polygon,False,True,0.0,0.0,0.0,0.0,-0.13957843184328037,0.0,0.0,0.0
+Point_(geometry),Parallel_(geometry),0,Point,Parallel,True,True,0.0,0.0,0.0,0.0,-0.24429826667306861,0.0,0.0,0.0
+Distance,Altitude_(triangle),0,,Altitude,False,True,0.0,0.0,0.0,0.0,-0.4424064915734383,0.0,0.0,0.0
+Polyhedron,Trapezoid,0,Polyhedron,Trapezoid,True,True,0.0,0.0,0.0,0.0,0.2904883084457675,0.0,0.0,0.0
+Quadrilateral,Angle,1,Quadrilateral,Angle,True,True,0.0,0.0,0.0,0.0,0.08138474096125221,1.0,1.0,0.13003663003663002
+Hexagon,Edge_(geometry),1,Hexagon,,False,True,0.0,0.0,0.0,0.0,-0.7176741729485764,0.0,0.0,0.0
+Rectangle,Line_segment,1,Rectangle,Line Segment,True,True,0.0,0.0,0.0,0.0,0.53704326115139,0.0,0.0,0.0
+Circumference,Sphere,0,Circumference,Sphere,True,True,0.0,0.0,0.0,0.0,-0.08124069717194027,0.0,0.0,0.0
+Similarity_(geometry),Sine,0,Similarity,Sine,True,True,0.0,0.0,0.0,0.0,-0.1076967398089019,0.0,0.0,0.0
+Circumference,Rhombus,0,Circumference,Rhombus,True,True,0.0,0.0,0.0,0.0,0.28174965189417583,0.0,0.0,0.0
+Geometry,Secant_line,0,,Secant,False,True,0.0,0.0,0.0,0.0,-0.7836462284534499,0.0,0.0,0.0
+Angle,Rectangle,0,Angle,Rectangle,True,True,0.0,0.0,0.0,0.0,-0.4909972631680031,1.0,0.0,-0.18717948717948718
+Arc_length,Geometry,1,Arc Length,,False,True,0.0,0.0,0.0,0.0,0.8399193354779854,0.0,0.0,0.0
+Line_segment,Angle_bisector_theorem,0,Line Segment,Angle Bisector,True,True,0.0,0.0,0.0,0.0,-0.44523935276324,0.0,0.0,0.0
+Angle,Skew_lines,0,Angle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Bisection,Acute_and_obtuse_triangles,0,Perpendicular Bisector,Acute Triangle,True,True,0.0,0.0,0.0,0.0,-0.06899697508042445,0.0,0.0,0.0
+Prism_(geometry),Perpendicular,0,Prism,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.6212608633024439,0.0,0.0,0.0
+Congruence_(geometry),Similarity_(geometry),0,Congruence,Similarity,True,True,0.0,0.0,0.0,0.0,-0.3757622317184424,0.0,0.0,0.0
+Line_(geometry),Pentagon,0,Line,Pentagon,True,True,0.0,0.0,0.0,0.0,-0.14572430018725693,0.0,0.0,0.0
+Right_triangle,Vertex_(geometry),1,Right Triangle,Vertex,True,True,0.0,0.0,0.0,0.0,0.05718538435684448,0.0,0.0,0.0
+Exterior_angle_theorem,Vertex_(geometry),1,Exterior Angle,Vertex,True,True,0.0,0.0,0.0,0.0,0.27670811926825756,0.0,0.0,0.0
+Congruence_(geometry),Translation_(geometry),0,Congruence,Translation,True,True,0.0,0.0,0.0,0.0,-0.7385605223988092,0.0,0.0,0.0
+Star_polygon,Geometry,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Perpendicular,Altitude_(triangle),0,Perpendicular,Altitude,True,True,0.0,0.0,0.0,0.0,-0.2337830700532962,1.0,0.0,-0.2708333333333333
+Angle,Tessellation,0,Angle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Vertex_(geometry),Pentagon,0,Vertex,Pentagon,True,True,0.0,0.0,0.0,0.0,-0.07691938349258175,0.0,0.0,0.0
+Triangle,Angle,1,Triangle,Angle,True,True,0.0,1.4443,0.0,0.0,0.04513372065107793,21.0,21.0,0.11258741258741262
+Circle,Circumference,0,Circle,Circumference,True,True,0.0,0.0,0.0,0.0,-0.12454986315840015,1.0,0.0,-0.26666666666666666
+Parallel_(geometry),Plane_(geometry),0,Parallel,Plane,True,True,0.0,0.0,0.0,0.0,0.24338598934075958,1.0,1.0,-0.075
+Bisection,Rhombus,0,Perpendicular Bisector,Rhombus,True,True,0.0,0.0,0.0,0.0,-0.49997599270178134,1.0,0.0,-0.06666666666666665
+Convex_polygon,Rhombus,0,,Rhombus,False,True,0.0,0.0,0.0,0.0,-0.02952897680894992,0.0,0.0,0.0
+Angle,Heptagon,0,Angle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_(geometry),Exterior_angle_theorem,0,Line,Exterior Angle,True,True,0.0,0.0,0.0,0.0,-0.34551303596293276,0.0,0.0,0.0
+Tangent,Cone,0,Tangent,Cone,True,True,0.0,0.0,0.0,0.0,-0.20679886685552407,0.0,0.0,0.0
+Radius,Point_(geometry),1,Radius,Point,True,True,0.0,0.0,0.0,0.0,0.7176741729485764,2.0,2.0,0.18333333333333335
+Square,Point_(geometry),1,Square,Point,True,True,0.0,0.0,0.0,0.0,0.5554808661833197,0.0,0.0,0.0
+Diagonal,Geometry,1,,,False,True,0.0,0.0,0.0,0.0,0.5296970278964805,0.0,0.0,0.0
+Rotation_(mathematics),Reflection_symmetry,0,Rotation,Line Symmetry,True,True,0.0,0.0,0.0,0.0,0.006818072694099006,1.0,1.0,-0.04999999999999999
+Pentagon,Circle,0,Pentagon,Circle,True,True,0.0,0.0,0.0,0.0,-0.5658520190137802,0.0,0.0,0.0
+Rotation_(mathematics),Line_(geometry),1,Rotation,Line,True,True,0.0,0.0,0.0,0.0,0.9426705718538436,1.0,1.0,0.17777777777777778
+Isosceles_triangle,Polygon,1,Isosceles Triangle,Polygon,True,True,0.0,0.0,0.0,0.0,-0.0204062034858597,0.0,0.0,0.0
+Tangent,Acute_and_obtuse_triangles,0,Tangent,Acute Triangle,True,True,0.0,0.0,0.0,0.0,0.5704614202717626,0.0,0.0,0.0
+Line_(geometry),Reflection_(mathematics),0,Line,Reflection,True,True,0.0,0.0,0.0,0.0,-0.9594756806069045,4.0,0.0,-0.4825396825396825
+Collinearity,Geometry,1,,,False,True,0.0,0.0,0.0,0.0,0.9943822922168339,0.0,0.0,0.0
+Geometry,Cartesian_coordinate_system,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Similarity_(geometry),Equilateral_triangle,0,Similarity,Equilateral Triangle,True,True,0.0,0.0,0.0,0.0,0.4715033370144524,0.0,0.0,0.0
+Triangle,Distance,0,Triangle,,False,True,0.0,0.0,0.0,0.0,0.07202189465597542,0.0,0.0,0.0
+Star_polygon,Octagon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Polygon,Dodecagon,0,Polygon,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Concentric,Circle,0,,Circle,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Equilateral_triangle,Triangle,1,Equilateral Triangle,Triangle,True,True,0.0,0.0,0.0,0.0,0.0058577807653526675,5.0,5.0,0.9090909090909091
+Polygon,Vertex_(geometry),1,Polygon,Vertex,True,True,0.0,0.0,0.0,0.0,0.06784462476592884,0.0,0.0,0.0
+Rhombus,Midpoint,0,Rhombus,Midpoint,True,True,0.0,0.0,0.0,0.0,0.5042973063811399,0.0,0.0,0.0
+Polygon,Internal_and_external_angle,0,Polygon,Interior Angle,True,True,0.0,0.0,0.0,0.0,-0.015268641667066788,3.0,0.0,-0.12352941176470586
+Sine,Polygon,1,Sine,Polygon,True,True,0.0,0.0,0.0,0.0,0.5563451289191914,0.0,0.0,0.0
+Triangle,Sine,0,Triangle,Sine,True,True,0.0,0.0,0.0,0.0,-0.585057857588707,0.0,0.0,0.0
+Angle,Exterior_angle_theorem,0,Angle,Exterior Angle,True,True,0.0,0.0,0.0,0.0,-0.2827099438229222,1.0,0.0,-0.9871794871794872
+Nonagon,Geometry,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cylinder_(geometry),Diameter,0,Cylinder,Diameter,True,True,0.0,0.0,0.0,0.0,0.16310558409756565,0.0,0.0,0.0
+Internal_and_external_angle,Star_polygon,0,Interior Angle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Dodecagon,Vertex_(geometry),1,,Vertex,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Perpendicular,Cross_section_(geometry),0,Perpendicular,Cross Section,True,True,0.0,0.0,0.0,0.0,-0.6353771546550151,0.0,0.0,0.0
+Pentagon,Internal_and_external_angle,0,Pentagon,Interior Angle,True,True,0.0,0.0,0.0,0.0,-0.006193882940413886,0.0,0.0,0.0
+Skew_lines,Point_(geometry),1,,Point,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Pythagorean_theorem,Acute_and_obtuse_triangles,0,Pythagorean Theorem,Acute Triangle,True,True,0.0,0.0,0.0,0.0,0.5262879915494311,0.0,0.0,0.0
+Altitude_(triangle),Circle,0,Altitude,Circle,True,True,0.0,0.0,0.0,0.0,-0.23325490949248573,0.0,0.0,0.0
+Symmetry,Scaling_(geometry),0,Symmetry,Scale Factor,True,True,0.0,0.0,0.0,0.0,0.3411917222835742,0.0,0.0,0.0
+Slope,Point_(geometry),1,Slope,Point,True,True,0.0,0.0,0.0,0.0,0.31281509578911987,0.0,0.0,0.0
+Plane_(geometry),Sphere,0,Plane,Sphere,True,True,0.0,0.0,0.0,0.0,-0.916838718970567,0.0,0.0,0.0
+Inverse_trigonometric_functions,Edge_(geometry),1,Inverse Trigonometric,,False,True,0.0,0.0,0.0,0.0,-0.1564315551927786,0.0,0.0,0.0
+Rotation_(mathematics),Plane_(geometry),0,Rotation,Plane,True,True,0.0,0.0,0.0,0.0,0.9421424112930331,0.0,0.0,0.0
+Right_triangle,Line_segment,1,Right Triangle,Line Segment,True,True,0.0,0.0,0.0,0.0,0.10923320689489605,0.0,0.0,0.0
+Polyhedron,Face_(geometry),1,Polyhedron,,False,True,0.0,0.0,0.0,0.0,-0.003505065539924137,1.0,0.0,0.25
+Line_segment,Isosceles_triangle,0,Line Segment,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,-0.09948624381812071,0.0,0.0,0.0
+Geometry,Line_segment,0,,Line Segment,False,True,0.0,0.0,0.0,0.0,-0.01968598453929995,0.0,0.0,0.0
+Parallelogram,Line_(geometry),1,Parallelogram,Line,True,True,0.0,0.0,0.0,0.0,0.5305612906323522,0.0,0.0,0.0
+Radius,Cone,0,Radius,Cone,True,True,0.0,0.0,0.0,0.0,-0.1833677437941134,1.0,0.0,-0.20833333333333331
+Star_polygon,Decagon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Arc_length,Radius,0,Arc Length,Radius,True,True,0.0,0.0,0.0,0.0,0.11970038891823115,0.0,0.0,0.0
+Pentagon,Geometry,1,Pentagon,,False,True,0.0,0.0,0.0,0.0,0.14865319056993326,0.0,0.0,0.0
+Exterior_angle_theorem,Circle,0,Exterior Angle,Circle,True,True,0.0,0.0,0.0,0.0,-0.3660632832381044,0.0,0.0,0.0
+Point_(geometry),Rhombus,0,Point,Rhombus,True,True,0.0,0.0,0.0,0.0,-0.55476064723676,0.0,0.0,0.0
+Circumference,Geometry,1,Circumference,,False,True,0.0,0.0,0.0,0.0,0.8390550727421136,0.0,0.0,0.0
+Angle,Altitude_(triangle),0,Angle,Altitude,True,True,0.0,0.0,0.0,0.0,-0.41551831756854085,0.0,0.0,0.0
+Rigid_transformation,Translation_(geometry),1,,Translation,False,True,0.0,0.0,0.0,0.0,-0.014068276756133865,0.0,0.0,0.0
+Point_(geometry),Altitude_(triangle),0,Point,Altitude,True,True,0.0,0.0,0.0,0.0,-0.47870552648004994,1.0,0.0,-0.3
+Point_(geometry),Plane_(geometry),0,Point,Plane,True,True,0.0,0.0,0.0,0.0,-0.000912277332309022,4.0,0.0,-0.3666666666666667
+Star_polygon,Tessellation,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Angle,Hexagon,0,Angle,Hexagon,True,True,0.0,0.0,0.0,0.0,-0.08421760215105392,0.0,0.0,0.0
+Geometry,Parallel_(geometry),0,,Parallel,False,True,0.0,0.0,0.0,0.0,-0.24684304028424642,0.0,0.0,0.0
+Tessellation,Sphere,0,,Sphere,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Edge_(geometry),Tessellation,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Isosceles_triangle,Rhombus,0,Isosceles Triangle,Rhombus,True,True,0.0,0.0,0.0,0.0,-0.43813319249051713,0.0,0.0,0.0
+Perpendicular,Kite_(geometry),0,Perpendicular,Kite,True,True,0.0,0.0,0.0,0.0,-0.3261151390022567,1.0,0.0,-0.1375
+Trigonometric_functions,Geometry,1,Trigonometry,,False,True,0.0,0.0,0.0,0.0,0.6515580736543909,0.0,0.0,0.0
+Symmetry,Reflection_symmetry,0,Symmetry,Line Symmetry,True,True,0.0,0.0,0.0,0.0,0.0,4.0,0.0,0.0
+Similarity_(geometry),Distance,0,Similarity,,False,True,0.0,0.0,0.0,0.0,0.5493830124357805,0.0,0.0,0.0
+Pythagorean_theorem,Angle,1,Pythagorean Theorem,Angle,True,True,0.0,0.0,0.0,0.0,0.586882412253325,0.0,0.0,0.0
+Line_(geometry),Triangle,0,Line,Triangle,True,True,0.0,0.0,0.0,0.0,-0.1079368127910885,1.0,0.0,0.004040404040404042
+Reflection_symmetry,Distance,0,Line Symmetry,,False,True,0.0,0.0,0.0,0.0,0.8999375810246315,0.0,0.0,0.0
+Diagonal,Polygon,1,,Polygon,False,True,0.0,0.0,0.0,0.0,0.39011859605320015,0.0,0.0,0.0
+Rectangle,Similarity_(geometry),0,Rectangle,Similarity,True,True,0.0,0.0,0.0,0.0,-0.03149757526287991,0.0,0.0,0.0
+Line_segment,Special_right_triangles,0,Line Segment,Special Right Triangles,True,True,0.0,0.0,0.0,0.0,-0.6626974600278485,0.0,0.0,0.0
+Geometry,Translation_(geometry),0,,Translation,False,True,0.0,0.0,0.0,0.0,-0.9510251116339368,0.0,0.0,0.0
+Angle,Octagon,0,Angle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Square,Two-dimensional_space,0,Square,Plane,True,True,0.0,0.0,0.0,0.0,0.5545685888510107,0.0,0.0,0.0
+Circle,Perpendicular,0,Circle,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.4670379795457819,0.0,0.0,0.0
+Triangle,Diameter,0,Triangle,Diameter,True,True,0.0,0.0,0.0,0.0,-0.6125222067508522,0.0,0.0,0.0
+Symmetry,Self-similarity,0,Symmetry,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Quadrilateral,Line_segment,1,Quadrilateral,Line Segment,True,True,0.0,0.0,0.0,0.0,0.12743073894463916,0.0,0.0,0.0
+Line_(geometry),Rotation_(mathematics),0,Line,Rotation,True,True,0.0,0.0,0.0,0.0,-0.9426705718538436,1.0,0.0,-0.17777777777777778
+Triangle,Congruence_(geometry),0,Triangle,Congruence,True,True,0.0,0.0,0.0,0.0,-0.10159888606136265,8.0,0.0,-0.7434343434343433
+Equilateral_triangle,Pythagorean_theorem,0,Equilateral Triangle,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,-0.5358909108368944,0.0,0.0,0.0
+Midpoint,Bisection,0,Midpoint,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,-0.004321313679358525,2.0,0.0,0.08571428571428569
+Triangle,Angle_bisector_theorem,0,Triangle,Angle Bisector,True,True,0.0,0.0,0.0,0.0,-0.35405963412877517,1.0,0.0,-0.4818181818181818
+Point_(geometry),Skew_lines,0,Point,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Prism_(geometry),Rectangle,0,Prism,Rectangle,True,True,0.0,0.0,0.0,0.0,0.3119988476496855,0.0,0.0,0.0
+Translation_(geometry),Symmetry,1,Translation,Symmetry,True,True,0.0,0.0,0.0,0.0,0.012243722091515821,0.0,0.0,0.0
+Polygon,Line_(geometry),1,Polygon,Line,True,True,0.0,0.0,0.0,0.0,0.136649541460604,0.0,0.0,0.0
+Line_(geometry),Parallel_(geometry),0,Line,Parallel,True,True,0.0,0.0,0.0,0.0,-0.24391414990157007,14.0,0.0,-0.38888888888888884
+Internal_and_external_angle,Angle,1,Interior Angle,Angle,True,True,0.0,0.0,0.0,0.0,0.08911509098766025,10.0,10.0,0.8717948717948718
+Special_right_triangles,Point_(geometry),1,Special Right Triangles,Point,True,True,0.0,0.0,0.0,0.0,0.6798386709559706,0.0,0.0,0.0
+Dodecagon,Two-dimensional_space,0,,Plane,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Pyramid_(geometry),Isosceles_triangle,0,Pyramid,Isosceles Triangle,True,True,0.0,0.0,0.0,0.0,0.7531569597157536,0.0,0.0,0.0
+Pentagon,Line_segment,1,Pentagon,Line Segment,True,True,0.0,0.0,0.0,0.0,0.1289672060306333,0.0,0.0,0.0
+Altitude_(triangle),Acute_and_obtuse_triangles,0,Altitude,Acute Triangle,True,True,0.0,0.0,0.0,0.0,0.35492389686464687,0.0,0.0,0.0
+Parallelogram,Polygon,1,Parallelogram,Polygon,True,True,0.0,0.0,0.0,0.0,0.3939117491717482,0.0,0.0,0.0
+Pentagon,Quadrilateral,0,Pentagon,Quadrilateral,True,True,0.0,0.0,0.0,0.0,0.0015364670859941423,0.0,0.0,0.0
+Congruence_(geometry),Face_(geometry),0,Congruence,,False,True,0.0,0.0,0.0,0.0,-0.6543909348441926,0.0,0.0,0.0
+Kite_(geometry),Polygon,1,Kite,Polygon,True,True,0.0,0.0,0.0,0.0,0.4340039371969079,0.0,0.0,0.0
+Triangle,Tangent,0,Triangle,Tangent,True,True,0.0,0.0,0.0,0.0,-0.5859221203245787,0.0,0.0,0.0
+Line_segment,Decagon,0,Line Segment,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Coordinate_system,Sine,0,,Sine,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Angle,Prism_(geometry),0,Angle,Prism,True,True,0.0,0.0,0.0,0.0,-0.8029961108176886,0.0,0.0,0.0
+Reflection_symmetry,Circle,0,Line Symmetry,Circle,True,True,0.0,0.0,0.0,0.0,0.22427617995870744,0.0,0.0,0.0
+Arc_(geometry),Arc_length,0,Arc,Arc Length,True,True,0.0,0.0,0.0,0.0,-0.10006241897536851,2.0,0.0,-0.8571428571428572
+Perpendicular,Pyramid_(geometry),0,Perpendicular,Pyramid,True,True,0.0,0.0,0.0,0.0,-0.6248619580352427,0.0,0.0,0.0
+Tangent,Line_segment,1,Tangent,Line Segment,True,True,0.0,0.0,0.0,0.0,0.6771018389590435,0.0,0.0,0.0
+Arc_(geometry),Circle,1,Arc,Circle,True,True,0.0,0.0,0.0,0.0,0.025351706918903347,3.0,3.0,0.014285714285714263
+Right_triangle,Angle,1,Right Triangle,Angle,True,True,0.0,0.0,0.0,0.0,0.0631872089115091,2.0,2.0,0.26007326007326004
+Transversal_(geometry),Point_(geometry),1,Transversal,Point,True,True,0.0,0.0,0.0,0.0,0.2524607480674125,0.0,0.0,0.0
+Line_segment,Tangent,0,Line Segment,Tangent,True,True,0.0,0.0,0.0,0.0,-0.6771018389590435,0.0,0.0,0.0
+Pyramid_(geometry),Rhombus,0,Pyramid,Rhombus,True,True,0.0,0.0,0.0,0.0,0.31502376722523645,0.0,0.0,0.0
+Prism_(geometry),Angle,1,Prism,Angle,True,True,0.0,0.0,0.0,0.0,0.8029961108176886,0.0,0.0,0.0
+Rectangle,Parallel_(geometry),1,Rectangle,Parallel,True,True,0.0,0.0,0.0,0.0,0.30988620540644357,0.0,0.0,0.0
+Line_(geometry),Polygon,0,Line,Polygon,True,True,0.0,0.0,0.0,0.0,-0.136649541460604,0.0,0.0,0.0
+Quadrilateral,Geometry,1,Quadrilateral,,False,True,0.0,0.0,0.0,0.0,0.14711672348393912,0.0,0.0,0.0
+Quadrilateral,Point_(geometry),1,Quadrilateral,Point,True,True,0.0,0.0,0.0,0.0,0.1445719498727613,0.0,0.0,0.0
+Line_(geometry),Pythagorean_theorem,0,Line,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,-0.6496855043933356,0.0,0.0,0.0
+Plane_(geometry),Line_(geometry),0,Plane,Line,True,True,0.0,0.0,0.0,0.0,0.0005281605608104864,4.0,4.0,0.4111111111111111
+Grade_(slope),Line_(geometry),1,Slope,Line,True,True,0.0,0.0,0.0,0.0,0.31243097901762135,3.0,3.0,0.9333333333333333
+Rotational_symmetry,Symmetry,1,Rotational Symmetry,Symmetry,True,True,0.0,0.0,0.0,0.0,0.004369328275795842,1.0,1.0,0.75
+Edge_(geometry),Exterior_angle_theorem,0,,Exterior Angle,False,True,0.0,0.0,0.0,0.0,0.5191818312767081,0.0,0.0,0.0
+Line_(geometry),Dodecagon,0,Line,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Point_(geometry),Edge_(geometry),0,Point,,False,True,0.0,0.0,0.0,0.0,-0.8650789840111394,0.0,0.0,0.0
+Pythagorean_theorem,Right_angle,1,Pythagorean Theorem,Right Triangle,True,True,1.94,1.94,1.0,1.0,0.5688289239928939,0.0,0.0,0.0
+Octagon,Geometry,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Equilateral_triangle,Tessellation,0,Equilateral Triangle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Square,Bisection,0,Square,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,0.5006962116483411,0.0,0.0,0.0
+Coordinate_system,Two-dimensional_space,1,,Plane,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Equilateral_triangle,Pyramid_(geometry),0,Equilateral Triangle,Pyramid,True,True,0.0,0.0,0.0,0.0,-0.7556057041340567,0.0,0.0,0.0
+Rectangle,Circle,0,Rectangle,Circle,True,True,0.0,0.0,0.0,0.0,-0.15777596389302348,0.0,0.0,0.0
+Plane_(geometry),Cross_section_(geometry),0,Plane,Cross Section,True,True,0.0,0.0,1.0,0.0,-0.8793873337494599,1.0,0.0,-0.875
+Square,Vertex_(geometry),1,Square,Vertex,True,True,0.0,0.0,0.0,0.0,0.486291832717146,0.0,0.0,0.0
+Triangle,Bisection,0,Triangle,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,0.053536275027608396,1.0,1.0,-0.08181818181818182
+Triangle,Cartesian_coordinate_system,0,Triangle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_(geometry),Altitude_(triangle),0,Line,Altitude,True,True,0.0,0.0,0.0,0.0,-0.4783214097085514,0.0,0.0,0.0
+Polygon,Pythagorean_theorem,0,Polygon,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,-0.5130359629327316,0.0,0.0,0.0
+Line_segment,Diameter,0,Line Segment,Diameter,True,True,0.0,0.0,0.0,0.0,-0.7037019253853172,0.0,0.0,0.0
+Altitude_(triangle),Trigonometric_functions,0,Altitude,Trigonometry,True,True,0.0,0.0,0.0,0.0,-0.1703077735631632,0.0,0.0,0.0
+Parallelogram,Diagonal,0,Parallelogram,,False,True,0.0,0.0,0.0,0.0,0.0037931531185480386,2.0,2.0,-0.09615384615384615
+Point_(geometry),Right_triangle,0,Point,Right Triangle,True,True,0.0,0.0,0.0,0.0,-0.1263744178230182,0.0,0.0,0.0
+Dodecagon,Edge_(geometry),1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Angle,Right_triangle,0,Angle,Right Triangle,True,True,0.0,0.0,0.0,0.0,-0.0631872089115091,2.0,0.0,-0.26007326007326004
+Pentagon,Hexagon,0,Pentagon,Hexagon,True,True,0.0,0.0,0.0,0.0,-0.0012963941038075576,0.0,0.0,0.0
+Face_(geometry),Line_segment,0,,Line Segment,False,True,0.0,0.0,0.0,0.0,0.8471695395400202,0.0,0.0,0.0
+Parallel_(geometry),Congruence_(geometry),0,Parallel,Congruence,True,True,0.0,0.0,0.0,0.0,0.034378451049118935,0.0,0.0,0.0
+Polygon,Diagonal,0,Polygon,,False,True,0.0,0.0,0.0,0.0,-0.39011859605320015,0.0,0.0,0.0
+Inverse_trigonometric_functions,Right_triangle,0,Inverse Trigonometric,Right Triangle,True,True,0.0,0.0,0.0,0.0,0.5822730109953426,0.0,0.0,0.0
+Midpoint,Triangle,0,Midpoint,Triangle,True,True,0.0,0.0,0.0,0.0,-0.05785758870696692,1.0,0.0,0.12467532467532466
+Sine,Angle,1,Sine,Angle,True,True,0.0,0.0,0.0,0.0,0.6301915782397849,0.0,0.0,0.0
+Tangent,Geometry,1,Tangent,,False,True,0.0,0.0,0.0,0.0,0.6967878234983435,0.0,0.0,0.0
+Geometry,Pyramid_(geometry),0,,Pyramid,False,True,0.0,0.0,0.0,0.0,-0.8723291880731743,0.0,0.0,0.0
+Cartesian_coordinate_system,Coordinate_system,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Geometry,Rotation_(mathematics),0,,Rotation,False,True,0.0,0.0,0.0,0.0,-0.9455994622365199,0.0,0.0,0.0
+Face_(geometry),Prism_(geometry),0,,Prism,False,True,0.0,0.0,0.0,0.0,-0.0018725692610553608,1.0,0.0,0.04999999999999999
+Geometry,Face_(geometry),0,,,False,True,0.0,0.0,0.0,0.0,-0.8668555240793201,0.0,0.0,0.0
+Prism_(geometry),Vertex_(geometry),1,Prism,Vertex,True,True,0.0,0.0,0.0,0.0,0.7969942862630239,0.0,0.0,0.0
+Congruence_(geometry),Angle,1,Congruence,Angle,True,True,0.0,1.94,0.0,0.0,0.1467326067124406,3.0,3.0,0.2948717948717948
+Parallelogram,Edge_(geometry),1,Parallelogram,,False,True,0.0,0.0,0.0,0.0,-0.3341335766072886,0.0,0.0,0.0
+Line_(geometry),Nonagon,0,Line,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Polygon,Triangle,0,Polygon,Triangle,True,True,0.0,0.0,0.0,0.0,0.028712728669515533,0.0,0.0,0.0
+Convex_polygon,Diameter,0,,Diameter,False,True,0.0,0.0,0.0,0.0,-0.19561146588562922,0.0,0.0,0.0
+Trigonometric_functions,Polygon,1,Trigonometry,Polygon,True,True,0.0,0.0,0.0,0.0,0.5119796418111106,0.0,0.0,0.0
+Square,Tessellation,0,Square,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Pentagon,Special_right_triangles,0,Pentagon,Special Right Triangles,True,True,0.0,0.0,0.0,0.0,-0.5337302539972152,0.0,0.0,0.0
+Pentagon,Two-dimensional_space,0,Pentagon,Plane,True,True,0.0,0.0,0.0,0.0,0.14519613962644645,0.0,0.0,0.0
+Heptagon,Vertex_(geometry),1,,Vertex,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Rotational_symmetry,Angle,1,Rotational Symmetry,Angle,True,True,0.0,0.0,0.0,0.0,0.8774187352955298,0.0,0.0,0.0
+Pyramid_(geometry),Line_segment,1,Pyramid,Line Segment,True,True,0.0,0.0,0.0,0.0,0.8526432035338743,0.0,0.0,0.0
+Similarity_(geometry),Trapezoid,0,Similarity,Trapezoid,True,True,0.0,0.0,0.0,0.0,0.015364670859941422,0.0,0.0,0.0
+Reflection_(mathematics),Two-dimensional_space,0,Reflection,Plane,True,True,0.0,0.0,0.0,0.0,0.958947520046094,0.0,0.0,0.0
+Right_angle,Pythagorean_theorem,0,Right Triangle,Pythagorean Theorem,True,True,0.0,1.8599999999999999,1.0,0.0,-0.5688289239928939,0.0,0.0,0.0
+Line_(geometry),Edge_(geometry),0,Line,,False,True,0.0,0.0,0.0,0.0,-0.8646948672396408,0.0,0.0,0.0
+Circle,Rotational_symmetry,0,Circle,Rotational Symmetry,True,True,0.0,0.0,0.0,0.0,-0.22864550823450328,0.0,0.0,0.0
+Quadrilateral,Circle,0,Quadrilateral,Circle,True,True,0.0,0.0,0.0,0.0,-0.5673884860997743,0.0,0.0,0.0
+Cylinder_(geometry),Distance,0,Cylinder,,False,True,0.0,0.0,0.0,0.0,0.8476496855043933,0.0,0.0,0.0
+Line_segment,Nonagon,0,Line Segment,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_(geometry),Sine,0,Line,Sine,True,True,0.0,0.0,0.0,0.0,-0.6929946703797955,0.0,0.0,0.0
+Geometry,Grade_(slope),0,,Slope,False,True,0.0,0.0,0.0,0.0,-0.3153598694002977,0.0,0.0,0.0
+Congruence_(geometry),Circle,0,Congruence,Circle,True,True,0.0,0.0,0.0,0.0,-0.502040620348586,0.0,0.0,0.0
+Inverse_trigonometric_functions,Trigonometric_functions,1,Inverse Trigonometric,Trigonometry,True,True,0.0,0.0,0.0,0.0,0.05963412877514764,1.0,1.0,0.8571428571428572
+Trigonometric_functions,Edge_(geometry),1,Trigonometry,,False,True,0.0,0.0,0.0,0.0,-0.21606568396792625,0.0,0.0,0.0
+Point_(geometry),Slope,0,Point,Slope,True,True,0.0,0.0,0.0,0.0,-0.31281509578911987,0.0,0.0,0.0
+Circle,Arc_(geometry),0,Circle,Arc,True,True,0.0,0.0,0.0,0.0,-0.025351706918903347,3.0,0.0,-0.014285714285714263
+Internal_and_external_angle,Transversal_(geometry),0,Interior Angle,Transversal,True,True,0.0,0.0,0.0,0.0,-0.10015844816824315,6.0,0.0,0.054545454545454564
+Chord_(geometry),Geometry,1,Chord,,False,True,0.0,0.0,0.0,0.0,0.7240601142747395,0.0,0.0,0.0
+Angle_bisector_theorem,Altitude_(triangle),0,Angle Bisector,Altitude,True,True,0.0,0.0,0.0,0.0,-0.01632496278868776,0.0,0.0,0.0
+Vertex_(geometry),Kite_(geometry),0,Vertex,Kite,True,True,0.0,0.0,0.0,0.0,-0.5018485619628367,0.0,0.0,0.0
+Circle,Pythagorean_theorem,0,Circle,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,0.06189081480770154,0.0,0.0,0.0
+Coordinate_system,Point_(geometry),1,,Point,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_segment,Hendecagon,0,Line Segment,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Decagon,Geometry,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Geometry,Diameter,0,,Diameter,False,True,0.0,0.0,0.0,0.0,-0.7233879099246171,0.0,0.0,0.0
+Polygon,Equilateral_triangle,0,Polygon,Equilateral Triangle,True,True,0.0,0.0,0.0,0.0,0.022854947904162867,0.0,0.0,0.0
+Edge_(geometry),Line_segment,1,,Line Segment,False,True,0.0,0.0,0.0,0.0,0.8479377730830172,0.0,0.0,0.0
+Point_(geometry),Triangle_inequality,0,Point,,False,True,0.0,0.0,0.0,0.0,-0.5002640802804053,0.0,0.0,0.0
+Rigid_transformation,Rotation_(mathematics),1,,Rotation,False,True,0.0,0.0,0.0,0.0,-0.00864262735871705,0.0,0.0,0.0
+Square,Quadrilateral,1,Square,Quadrilateral,True,True,0.0,0.0,0.0,0.0,0.4109089163105584,0.0,0.0,0.0
+Triangle_inequality,Cone,0,,Cone,False,True,0.0,0.0,0.0,0.0,-0.40077783646228454,0.0,0.0,0.0
+Trapezoid,Angle,1,Trapezoid,Angle,True,True,0.0,0.0,0.0,0.0,0.5071301675709415,0.0,0.0,0.0
+Geometry,Angle_bisector_theorem,0,,Angle Bisector,False,True,0.0,0.0,0.0,0.0,-0.46492533730254,0.0,0.0,0.0
+Edge_(geometry),Polyhedron,0,,Polyhedron,False,True,0.0,0.0,0.0,0.0,0.0042732990829212085,1.0,1.0,0.0
+Heptagon,Angle,1,,Angle,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Rectangle,Parallelogram,1,Rectangle,Parallelogram,True,True,0.0,1.3321,0.0,0.0,0.023239064675661402,1.0,1.0,0.12307692307692308
+Similarity_(geometry),Scale_factor,0,Similarity,Scale Factor,True,True,0.0,0.0,0.0,0.0,-0.009362846305276805,0.0,0.0,0.0
+Radius,Circle,1,Radius,Circle,True,True,0.0,0.0,0.0,0.0,0.005713736976040717,3.0,3.0,0.175
+Rigid_transformation,Geometry,1,,,False,True,0.0,0.0,0.0,0.0,0.9369568348778029,0.0,0.0,0.0
+Quadrilateral,Diagonal,0,Quadrilateral,,False,True,0.0,0.0,0.0,0.0,-0.3825803044125414,1.0,0.0,0.01785714285714285
+Slope,Grade_(slope),0,Slope,Slope,False,True,0.0,0.0,0.0,0.0,0.0,3.0,0.0,0.0
+Cone,Polygon,0,Cone,Polygon,True,True,0.0,0.0,0.0,0.0,0.7640082585105872,0.0,0.0,0.0
+Coordinate_system,Sphere,0,,Sphere,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Rectangle,Angle,1,Rectangle,Angle,True,True,0.0,0.0,0.0,0.0,0.4909972631680031,1.0,1.0,0.18717948717948718
+Pythagorean_theorem,Convex_polygon,0,Pythagorean Theorem,,False,True,0.0,0.0,0.0,0.0,0.12483795073702406,0.0,0.0,0.0
+Pythagorean_theorem,Triangle,1,Pythagorean Theorem,Triangle,True,True,0.0,0.0,0.0,0.0,0.541748691602247,2.0,2.0,0.36363636363636365
+Sphere,Geometry,1,Sphere,,False,True,0.0,0.0,0.0,0.0,0.9202957699140538,0.0,0.0,0.0
+Geometry,Vertex_(geometry),0,,Vertex,False,True,0.0,0.0,0.0,0.0,-0.07173380707735151,0.0,0.0,0.0
+Angle,Nonagon,0,Angle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Edge_(geometry),Quadrilateral,0,,Quadrilateral,False,True,0.0,0.0,0.0,0.0,0.720507034138378,0.0,0.0,0.0
+Angle,Dodecagon,0,Angle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Collinearity,Hexagon,0,,Hexagon,False,True,0.0,0.0,0.0,0.0,0.8444327075430931,0.0,0.0,0.0
+Geometry,Acute_and_obtuse_triangles,0,,Acute Triangle,False,True,0.0,0.0,0.0,0.0,-0.12632640322658087,0.0,0.0,0.0
+Rhombus,Parallel_(geometry),1,Rhombus,Parallel,True,True,0.0,0.0,0.0,0.0,0.31046238056369135,0.0,0.0,0.0
+Geometry,Transversal_(geometry),0,,Transversal,False,True,0.0,0.0,0.0,0.0,-0.2550055216785903,0.0,0.0,0.0
+Pythagorean_triple,Triangle,1,,Triangle,False,True,0.0,0.0,0.0,0.0,0.5572093916550631,0.0,0.0,0.0
+Geometry,Arc_length,0,,Arc Length,False,True,0.0,0.0,0.0,0.0,-0.8399193354779854,0.0,0.0,0.0
+Polygon,Sphere,0,Polygon,Sphere,True,True,0.0,0.0,0.0,0.0,-0.7807173380707735,0.0,0.0,0.0
+Hendecagon,Angle,1,,Angle,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Equilateral_triangle,Right_triangle,0,Equilateral Triangle,Right Triangle,True,True,0.0,0.0,0.0,0.0,-0.012195707495078504,0.0,0.0,0.0
+Secant_line,Point_(geometry),1,Secant,Point,True,True,0.0,0.0,0.0,0.0,0.781101454842272,3.0,3.0,0.5
+Line_segment,Angle,0,Line Segment,Angle,True,True,0.0,0.0,0.0,0.0,-0.046045997983386946,0.0,0.0,0.0
+Prism_(geometry),Cross_section_(geometry),0,Prism,Cross Section,True,True,0.0,0.0,0.0,0.0,-0.014116291352571182,0.0,0.0,0.0
+Geometry,Coordinate_system,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Polygon,Rotational_symmetry,0,Polygon,Rotational Symmetry,True,True,0.0,0.0,0.0,0.0,-0.8035722859749364,0.0,0.0,0.0
+Triangle,Rectangle,0,Triangle,Rectangle,True,True,0.0,0.0,0.0,0.0,-0.44586354251692517,0.0,0.0,0.0
+Transversal_(geometry),Angle,1,Transversal,Angle,True,True,0.0,0.0,0.0,0.0,0.1892735391559034,9.0,9.0,0.7027972027972028
+Inverse_trigonometric_functions,Line_(geometry),1,Inverse Trigonometric,Line,True,True,0.0,0.0,0.0,0.0,0.7082633120468622,0.0,0.0,0.0
+Bisection,Collinearity,0,Perpendicular Bisector,,False,True,0.0,0.0,0.0,0.0,-0.9370528640706774,0.0,0.0,0.0
+Prism_(geometry),Point_(geometry),1,Prism,Point,True,True,0.0,0.0,0.0,0.0,0.8661833197291977,0.0,0.0,0.0
+Parallelogram,Distance,0,Parallelogram,,False,True,0.0,0.0,0.0,0.0,0.49464637249723914,0.0,0.0,0.0
+Circumference,Trapezoid,0,Circumference,Trapezoid,True,True,0.0,0.0,0.0,0.0,0.26619292264848515,0.0,0.0,0.0
+Arc_(geometry),Angle,0,Arc,Angle,True,True,0.0,0.0,0.0,0.0,0.6741249339799299,3.0,3.0,0.1758241758241758
+Symmetry,Altitude_(triangle),0,Symmetry,Altitude,True,True,0.0,0.0,0.0,0.0,0.45753108945119314,0.0,0.0,0.0
+Line_(geometry),Grade_(slope),0,Line,Slope,True,True,0.0,0.0,0.0,0.0,-0.31243097901762135,3.0,0.0,-0.9333333333333333
+Right_triangle,Distance,0,Right Triangle,,False,True,0.0,0.0,0.0,0.0,0.09007538291640659,0.0,0.0,0.0
+Altitude_(triangle),Right_triangle,0,Altitude,Right Triangle,True,True,0.0,0.0,0.0,0.0,0.3523311086570317,0.0,0.0,0.0
+Bisection,Internal_and_external_angle,0,Perpendicular Bisector,Interior Angle,True,True,0.0,0.0,0.0,0.0,-0.09751764536419072,0.0,0.0,0.0
+Quadrilateral,Tangent,0,Quadrilateral,Tangent,True,True,0.0,0.0,0.0,0.0,-0.5496711000144043,0.0,0.0,0.0
+Polygon,Geometry,1,Polygon,,False,True,0.0,0.0,0.0,0.0,0.13957843184328037,0.0,0.0,0.0
+Circumference,Circle,1,Circumference,Circle,True,True,0.0,0.0,0.0,0.0,0.12454986315840015,1.0,1.0,0.26666666666666666
+Rectangle,Midpoint,0,Rectangle,Midpoint,True,True,0.0,0.0,0.0,0.0,0.5037211312238921,0.0,0.0,0.0
+Isosceles_triangle,Kite_(geometry),0,Isosceles Triangle,Kite,True,True,0.0,0.0,0.0,0.0,-0.4544101406827676,0.0,0.0,0.0
+Point_(geometry),Triangle,0,Point,Triangle,True,True,0.0,0.0,0.0,0.0,-0.10832092956258703,1.0,0.0,0.015151515151515152
+Inverse_trigonometric_functions,Polygon,1,Inverse Trigonometric,Polygon,True,True,0.0,0.0,0.0,0.0,0.5716137705862582,0.0,0.0,0.0
+Face_(geometry),Polyhedron,0,,Polyhedron,False,True,0.0,0.0,0.0,0.0,0.003505065539924137,1.0,1.0,-0.25
+Polygon,Heptagon,0,Polygon,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Bisection,Convex_polygon,0,Perpendicular Bisector,,False,True,0.0,0.0,0.0,0.0,-0.47044701589283144,0.0,0.0,0.0
+Star_polygon,Hexagon,0,,Hexagon,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Congruence_(geometry),Sine,0,Congruence,Sine,True,True,0.0,0.0,0.0,0.0,-0.4834589715273443,0.0,0.0,0.0
+Geometry,Cross_section_(geometry),0,,Cross Section,False,True,0.0,0.0,0.0,0.0,-0.8828443846929467,0.0,0.0,0.0
+Right_triangle,Kite_(geometry),0,Right Triangle,Kite,True,True,0.0,0.0,0.0,0.0,-0.4446631776059922,0.0,0.0,0.0
+Diagonal,Vertex_(geometry),1,,Vertex,False,True,0.0,0.0,0.0,0.0,0.457963220819129,0.0,0.0,0.0
+Geometry,Right_triangle,0,,Right Triangle,False,True,0.0,0.0,0.0,0.0,-0.128919191434196,0.0,0.0,0.0
+Midpoint,Polygon,0,Midpoint,Polygon,True,True,0.0,0.0,0.0,0.0,-0.08657031737648245,0.0,0.0,0.0
+Diagonal,Line_segment,1,,Line Segment,False,True,0.0,0.0,0.0,0.0,0.5100110433571806,0.0,0.0,0.0
+Rectangle,Tessellation,0,Rectangle,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Trigonometric_functions,Triangle,1,Trigonometry,Triangle,True,True,0.0,0.0,0.0,0.0,0.5406923704806261,2.0,2.0,0.24935064935064932
+Edge_(geometry),Dodecagon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Diameter,Midpoint,0,Diameter,Midpoint,True,True,0.0,0.0,0.0,0.0,0.6703797954578192,0.0,0.0,0.0
+Triangle,Line_(geometry),1,Triangle,Line,True,True,0.0,0.0,0.0,0.0,0.1079368127910885,1.0,1.0,-0.004040404040404042
+Triangle,Exterior_angle_theorem,0,Triangle,Exterior Angle,True,True,0.0,0.0,0.0,0.0,-0.23757622317184424,1.0,0.0,-0.9818181818181818
+Sine,Triangle,1,Sine,Triangle,True,True,0.0,0.0,0.0,0.0,0.585057857588707,0.0,0.0,0.0
+Point_(geometry),Internal_and_external_angle,0,Point,Interior Angle,True,True,0.0,0.0,0.0,0.0,-0.15230229989916935,0.0,0.0,0.0
+Perpendicular,Bisection,0,Perpendicular,Perpendicular Bisector,True,True,1.407,1.407,1.0,1.0,0.1901378018917751,6.0,6.0,-0.22499999999999998
+Trigonometric_functions,Radius,0,Trigonometry,Radius,True,True,0.0,0.0,0.0,0.0,-0.06866087290536323,0.0,0.0,0.0
+Prism_(geometry),Cylinder_(geometry),0,Prism,Cylinder,True,True,0.0,1.3873,0.0,0.0,-0.01776540068180727,2.0,0.0,-0.2666666666666666
+Line_(geometry),Point_(geometry),1,Line,Point,True,True,0.0,0.0,0.0,0.0,0.00038411677149853557,11.0,11.0,-0.1222222222222222
+Quadrilateral,Trapezoid,0,Quadrilateral,Trapezoid,True,True,0.0,0.0,0.0,0.0,-0.42574542660968934,1.0,0.0,-0.05714285714285716
+Rotational_symmetry,Rotation_(mathematics),1,Rotational Symmetry,Rotation,True,True,0.0,0.0,0.0,0.0,-0.0024487444183031643,1.0,0.0,0.8
+Convex_polygon,Vertex_(geometry),1,,Vertex,False,True,0.0,0.0,0.0,0.0,0.4560426369616363,0.0,0.0,0.0
+Reflection_(mathematics),Perpendicular,0,Reflection,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.7149373409516493,0.0,0.0,0.0
+Point_(geometry),Perpendicular,0,Point,Perpendicular,True,True,0.0,0.0,0.0,0.0,-0.24492245642675373,4.0,0.0,-0.11666666666666667
+Vertex_(geometry),Acute_and_obtuse_triangles,0,Vertex,Acute Triangle,True,True,0.0,0.0,0.0,0.0,-0.054592596149229365,0.0,0.0,0.0
+Cylinder_(geometry),Sphere,0,Cylinder,Sphere,True,True,0.0,0.0,0.0,0.0,-0.03380227589187113,0.0,0.0,0.0
+Acute_and_obtuse_triangles,Angle,1,Acute Triangle,Angle,True,True,0.0,0.0,0.0,0.0,0.06059442070389398,2.0,2.0,0.9743589743589743
+Geometry,Altitude_(triangle),0,,Altitude,False,True,0.0,0.0,0.0,0.0,-0.4812503000912277,0.0,0.0,0.0
+Edge_(geometry),Geometry,1,,,False,True,0.0,0.0,0.0,0.0,0.8676237576223171,0.0,0.0,0.0
+Point_(geometry),Heptagon,0,Point,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Vertex_(geometry),Dodecagon,0,Vertex,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_(geometry),Slope,0,Line,Slope,True,True,0.0,0.0,0.0,0.0,-0.31243097901762135,3.0,0.0,-0.9333333333333333
+Trapezoid,Point_(geometry),1,Trapezoid,Point,True,True,0.0,0.0,0.0,0.0,0.5703173764824506,0.0,0.0,0.0
+Pentagon,Star_polygon,0,Pentagon,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Parallelogram,Geometry,1,Parallelogram,,False,True,0.0,0.0,0.0,0.0,0.5334901810150285,0.0,0.0,0.0
+Angle_bisector_theorem,Angle,1,Angle Bisector,Angle,True,True,0.0,0.0,0.0,0.0,0.39919335477985307,2.0,2.0,0.9743589743589743
+Kite_(geometry),Geometry,1,Kite,,False,True,0.0,0.0,0.0,0.0,0.5735823690401882,0.0,0.0,0.0
+Polygon,Decagon,0,Polygon,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Scaling_(geometry),Similarity_(geometry),0,Scale Factor,Similarity,True,True,0.0,0.0,0.0,0.0,0.009362846305276805,0.0,0.0,0.0
+Triangle,Midpoint,0,Triangle,Midpoint,True,True,0.0,0.0,0.0,0.0,0.05785758870696692,1.0,1.0,-0.12467532467532466
+Cartesian_coordinate_system,Plane_(geometry),1,,Plane,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Quadrilateral,Bisection,0,Quadrilateral,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,0.08978729533778268,0.0,0.0,0.0
+Angle,Grade_(slope),0,Angle,Slope,True,True,0.0,0.0,0.0,0.0,-0.24962788687761078,0.0,0.0,0.0
+Point_(geometry),Grade_(slope),0,Point,Slope,True,True,0.0,0.0,0.0,0.0,-0.31281509578911987,0.0,0.0,0.0
+Right_triangle,Square,0,Right Triangle,Square,True,True,0.0,0.0,0.0,0.0,-0.42910644836030154,2.0,0.0,0.0357142857142857
+Circle,Arc_length,0,Circle,Arc Length,True,True,0.0,0.0,0.0,0.0,-0.12541412589427187,0.0,0.0,0.0
+Skew_lines,Plane_(geometry),1,,Plane,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Triangle_inequality,Polygon,1,,Polygon,False,True,0.0,0.0,0.0,0.0,0.3632304220483027,0.0,0.0,0.0
+Hexagon,Polygon,1,Hexagon,Polygon,True,True,0.0,0.0,0.0,0.0,0.01037115283046046,0.0,0.0,0.0
+Prism_(geometry),Face_(geometry),1,Prism,,False,True,0.0,0.0,0.0,0.0,0.0018725692610553608,1.0,1.0,-0.04999999999999999
+Line_(geometry),Transversal_(geometry),0,Line,Transversal,True,True,0.0,0.0,0.0,0.0,-0.25207663129591396,11.0,0.0,-0.7555555555555555
+Point_(geometry),Pythagorean_theorem,0,Point,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,-0.6500696211648341,0.0,0.0,0.0
+Edge_(geometry),Pyramid_(geometry),0,,Pyramid,False,True,0.0,0.0,0.0,0.0,-0.004705430450857061,0.0,0.0,0.0
+Line_segment,Star_polygon,0,Line Segment,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Symmetry,Rotation_(mathematics),0,Symmetry,Rotation,True,True,0.0,0.0,0.0,0.0,-0.006818072694099006,1.0,0.0,0.04999999999999999
+Angle,Rhombus,0,Angle,Rhombus,True,True,0.0,0.0,0.0,0.0,-0.49157343832525086,1.0,0.0,-0.15384615384615383
+Cylinder_(geometry),Cone,0,Cylinder,Cone,True,True,0.0,0.0,0.0,0.0,-0.017093196331684834,0.0,0.0,0.0
+Pythagorean_triple,Edge_(geometry),1,,,False,True,0.0,0.0,0.0,0.0,-0.19954866279348923,0.0,0.0,0.0
+Geometry,Internal_and_external_angle,0,,Interior Angle,False,True,0.0,0.0,0.0,0.0,-0.15484707351034716,0.0,0.0,0.0
+Midpoint,Geometry,1,Midpoint,,False,True,0.0,0.0,0.0,0.0,0.05300811446679791,0.0,0.0,0.0
+Convex_polygon,Tessellation,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Midpoint,Vertex_(geometry),0,Midpoint,Vertex,True,True,0.0,0.0,0.0,0.0,-0.01872569261055361,2.0,0.0,0.0
+Bisection,Circle,0,Perpendicular Bisector,Circle,True,True,0.0,0.0,0.0,0.0,-0.6571757814375571,0.0,0.0,0.0
+Geometry,Circumference,0,,Circumference,False,True,0.0,0.0,0.0,0.0,-0.8390550727421136,0.0,0.0,0.0
+Rectangle,Geometry,1,Rectangle,,False,True,0.0,0.0,0.0,0.0,0.5567292456906899,0.0,0.0,0.0
+Polygon,Special_right_triangles,0,Polygon,Special Right Triangles,True,True,0.0,0.0,0.0,0.0,-0.542805012723868,0.0,0.0,0.0
+Two-dimensional_space,Hexagon,0,Plane,Hexagon,True,True,0.0,0.0,0.0,0.0,-0.146492533730254,0.0,0.0,0.0
+Angle,Diameter,0,Angle,Diameter,True,True,0.0,0.0,0.0,0.0,-0.6576559274019302,0.0,0.0,0.0
+Geometry,Collinearity,0,,,False,True,0.0,0.0,0.0,0.0,-0.9943822922168339,0.0,0.0,0.0
+Diagonal,Line_(geometry),1,,Line,False,True,0.0,0.0,0.0,0.0,0.5267681375138042,0.0,0.0,0.0
+Acute_and_obtuse_triangles,Equilateral_triangle,0,Acute Triangle,Equilateral Triangle,True,True,0.0,0.0,0.0,0.0,0.00960291928746339,0.0,0.0,0.0
+Midpoint,Distance,0,Midpoint,,False,True,0.0,0.0,0.0,0.0,0.014164305949008499,0.0,0.0,0.0
+Line_(geometry),Perpendicular,0,Line,Perpendicular,True,True,0.0,0.0,0.0,0.0,-0.2445383396552552,8.0,0.0,-0.3222222222222222
+Geometry,Reflection_symmetry,0,,Line Symmetry,False,True,0.0,0.0,0.0,0.0,-0.9387813895424209,0.0,0.0,0.0
+Point_(geometry),Right_angle,0,Point,Right Triangle,True,True,0.0,0.0,0.0,0.0,-0.08124069717194027,0.0,0.0,0.0
+Perpendicular,Diagonal,0,Perpendicular,,False,True,0.0,0.0,0.0,0.0,-0.282229797858549,2.0,0.0,-0.125
+Midpoint,Circle,0,Midpoint,Circle,True,True,0.0,0.0,0.0,0.0,-0.6614970951169156,0.0,0.0,0.0
+Tessellation,Symmetry,0,,Symmetry,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Tangent,Grade_(slope),0,Tangent,Slope,True,True,0.0,0.0,0.0,0.0,0.3814279540980458,0.0,0.0,0.0
+Parallelogram,Triangle,0,Parallelogram,Triangle,True,True,0.0,0.0,0.0,0.0,0.4226244778412637,1.0,1.0,0.058741258741258746
+Line_(geometry),Hendecagon,0,Line,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Face_(geometry),Geometry,1,,,False,True,0.0,0.0,0.0,0.0,0.8668555240793201,0.0,0.0,0.0
+Rotation_(mathematics),Translation_(geometry),0,Rotation,Translation,True,True,0.0,0.0,0.0,0.0,-0.005425649397416815,0.0,0.0,0.0
+Special_right_triangles,Edge_(geometry),1,Special Right Triangles,,False,True,0.0,0.0,0.0,0.0,-0.18524031305516878,0.0,0.0,0.0
+Convex_polygon,Isosceles_triangle,0,,Isosceles Triangle,False,True,0.0,0.0,0.0,0.0,0.4086042156815672,0.0,0.0,0.0
+Octagon,Vertex_(geometry),1,,Vertex,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_segment,Chord_(geometry),0,Line Segment,Chord,True,True,0.0,0.0,0.0,0.0,-0.7043741297354396,0.0,0.0,0.0
+Triangle,Vertex_(geometry),1,Triangle,Vertex,True,True,0.0,0.0,0.0,0.0,0.03913189609641331,0.0,0.0,0.0
+Equilateral_triangle,Reflection_symmetry,0,Equilateral Triangle,Line Symmetry,True,True,0.0,0.0,0.0,0.0,-0.8220579056033034,0.0,0.0,0.0
+Equilateral_triangle,Hexagon,0,Equilateral Triangle,Hexagon,True,True,0.0,0.0,0.0,0.0,-0.03322610073462333,0.0,0.0,0.0
+Geometry,Nonagon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Special_right_triangles,Angle,1,Special Right Triangles,Angle,True,True,0.0,0.0,0.0,0.0,0.6166514620444615,0.0,0.0,0.0
+Triangle,Quadrilateral,0,Triangle,Quadrilateral,True,True,0.0,0.0,0.0,0.0,-0.03625102031017429,0.0,0.0,0.0
+Parallel_(geometry),Sphere,0,Parallel,Sphere,True,True,0.0,0.0,0.0,0.0,-0.6734527296298075,0.0,0.0,0.0
+Polygon,Trigonometric_functions,0,Polygon,Trigonometry,True,True,0.0,0.0,0.0,0.0,-0.5119796418111106,0.0,0.0,0.0
+Line_segment,Sine,0,Line Segment,Sine,True,True,0.0,0.0,0.0,0.0,-0.6762375762231718,0.0,0.0,0.0
+Angle,Kite_(geometry),0,Angle,Kite,True,True,0.0,0.0,0.0,0.0,-0.5078503865175014,0.0,0.0,0.0
+Arc_length,Angle,0,Arc Length,Angle,True,True,0.0,0.0,0.0,0.0,0.7741873529552984,0.0,0.0,0.0
+Two-dimensional_space,Cartesian_coordinate_system,0,Plane,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Perpendicular,Acute_and_obtuse_triangles,0,Perpendicular,Acute Triangle,True,True,0.0,0.0,0.0,0.0,0.12114082681135065,0.0,0.0,0.0
+Altitude_(triangle),Line_segment,1,Altitude,Line Segment,True,True,0.0,0.0,0.0,0.0,0.4615643155519278,0.0,0.0,0.0
+Rectangle,Convex_polygon,0,Rectangle,,False,True,0.0,0.0,0.0,0.0,0.028952801651702116,0.0,0.0,0.0
+Edge_(geometry),Prism_(geometry),0,,Prism,False,True,0.0,0.0,0.0,0.0,-0.0011043357180582898,0.0,0.0,0.0
+Equilateral_triangle,Edge_(geometry),1,Equilateral Triangle,,False,True,0.0,0.0,0.0,0.0,-0.7509002736831997,0.0,0.0,0.0
+Vertex_(geometry),Octagon,0,Vertex,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Slope,Sine,0,Slope,Sine,True,True,0.0,0.0,0.0,0.0,-0.3805636913621741,0.0,0.0,0.0
+Square,Distance,0,Square,,False,True,0.0,0.0,0.0,0.0,0.5191818312767081,0.0,0.0,0.0
+Distance,Parallel_(geometry),0,,Parallel,False,True,0.0,0.0,0.0,0.0,-0.20799923176645702,0.0,0.0,0.0
+Reflection_(mathematics),Distance,0,Reflection,,False,True,0.0,0.0,0.0,0.0,0.9235607624717914,0.0,0.0,0.0
+Pythagorean_triple,Point_(geometry),1,,Point,False,True,0.0,0.0,0.0,0.0,0.6655303212176502,0.0,0.0,0.0
+Polygon,Triangle_inequality,0,Polygon,,False,True,0.0,0.0,0.0,0.0,-0.3632304220483027,0.0,0.0,0.0
+Collinearity,Circle,0,,Circle,False,True,0.0,0.0,0.0,0.0,0.27987708263312044,0.0,0.0,0.0
+Special_right_triangles,Polygon,1,Special Right Triangles,Polygon,True,True,0.0,0.0,0.0,0.0,0.542805012723868,0.0,0.0,0.0
+Rhombus,Point_(geometry),1,Rhombus,Point,True,True,0.0,0.0,0.0,0.0,0.55476064723676,0.0,0.0,0.0
+Cylinder_(geometry),Cross_section_(geometry),0,Cylinder,Cross Section,True,True,0.0,0.0,0.0,0.0,0.003649109329236088,0.0,0.0,0.0
+Geometry,Polyhedron,0,,Polyhedron,False,True,0.0,0.0,0.0,0.0,-0.863350458539396,0.0,0.0,0.0
+Hendecagon,Point_(geometry),1,,Point,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Nonagon,Edge_(geometry),1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Convex_polygon,Line_segment,1,,Line Segment,False,True,0.0,0.0,0.0,0.0,0.5080904594996879,0.0,0.0,0.0
+Grade_(slope),Slope,1,Slope,Slope,False,True,0.0,0.0,0.0,0.0,0.0,3.0,0.0,0.0
+Rotation_(mathematics),Circle,0,Rotation,Circle,True,True,0.0,0.0,0.0,0.0,0.23109425265280645,0.0,0.0,0.0
+Diagonal,Rectangle,0,,Rectangle,False,True,0.0,0.0,0.0,0.0,-0.02703221779420944,1.0,0.0,-0.07500000000000001
+Quadrilateral,Kite_(geometry),0,Quadrilateral,Kite,True,True,0.0,0.0,0.0,0.0,-0.4264656455562491,0.0,0.0,0.0
+Altitude_(triangle),Perpendicular,1,Altitude,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.2337830700532962,1.0,1.0,0.2708333333333333
+Circumference,Pythagorean_theorem,0,Circumference,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,0.1864406779661017,0.0,0.0,0.0
+Geometry,Chord_(geometry),0,,Chord,False,True,0.0,0.0,0.0,0.0,-0.7240601142747395,0.0,0.0,0.0
+Octagon,Rotational_symmetry,0,,Rotational Symmetry,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Geometry,Convex_polygon,0,,,False,True,0.0,0.0,0.0,0.0,-0.5277764440389878,0.0,0.0,0.0
+Scale_factor,Distance,0,Scale Factor,,False,True,0.0,0.0,0.0,0.0,0.5587458587410573,0.0,0.0,0.0
+Internal_and_external_angle,Convex_polygon,0,Interior Angle,,False,True,0.0,0.0,0.0,0.0,-0.3729293705286407,1.0,0.0,-0.9
+Chord_(geometry),Line_segment,1,Chord,Line Segment,True,True,0.0,0.0,0.0,0.0,0.7043741297354396,0.0,0.0,0.0
+Altitude_(triangle),Angle,1,Altitude,Angle,True,True,0.0,0.0,0.0,0.0,0.41551831756854085,0.0,0.0,0.0
+Chord_(geometry),Circle,1,Chord,Circle,True,True,0.0,0.0,0.0,0.0,0.009554904691026073,3.0,3.0,0.0727272727272727
+Symmetry,Reflection_(mathematics),0,Symmetry,Reflection,True,True,0.0,0.0,0.0,0.0,-0.023623181447159938,0.0,0.0,0.0
+Skew_lines,Geometry,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Diameter,Circle,1,Diameter,Circle,True,True,0.0,0.0,0.0,0.0,0.008882700340903635,1.0,1.0,0.26666666666666666
+Right_triangle,Pythagorean_theorem,0,Right Triangle,Pythagorean Theorem,True,True,0.0,1.8599999999999999,1.0,0.0,-0.523695203341816,2.0,0.0,-0.11428571428571432
+Symmetry,Bisection,0,Symmetry,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,0.8814519613962645,0.0,0.0,0.0
+Tessellation,Geometry,1,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Line_(geometry),Star_polygon,0,Line,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Right_triangle,Rectangle,0,Right Triangle,Rectangle,True,True,0.0,0.0,0.0,0.0,-0.427810054256494,0.0,0.0,0.0
+Geometry,Heptagon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Angle,Pyramid_(geometry),0,Angle,Pyramid,True,True,0.0,0.0,0.0,0.0,-0.8065972055504873,0.0,0.0,0.0
+Heptagon,Line_(geometry),1,,Line,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Midpoint,Acute_and_obtuse_triangles,0,Midpoint,Acute Triangle,True,True,0.0,0.0,0.0,0.0,-0.07331828875978297,0.0,0.0,0.0
+Arc_(geometry),Bisection,0,Arc,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,0.6825274883564604,0.0,0.0,0.0
+Slope,Angle,0,Slope,Angle,True,True,0.0,0.0,0.0,0.0,0.24962788687761078,0.0,0.0,0.0
+Cone,Circle,1,Cone,Circle,True,True,0.0,0.0,0.0,0.0,0.18908148077015413,0.0,0.0,0.0
+Kite_(geometry),Line_segment,1,Kite,Line Segment,True,True,0.0,0.0,0.0,0.0,0.5538963845008883,0.0,0.0,0.0
+Rectangle,Reflection_symmetry,0,Rectangle,Line Symmetry,True,True,0.0,0.0,0.0,0.0,-0.3820521438517309,0.0,0.0,0.0
+Angle_bisector_theorem,Vertex_(geometry),1,Angle Bisector,Vertex,True,True,0.0,0.0,0.0,0.0,0.39319153022518843,0.0,0.0,0.0
+Chord_(geometry),Arc_length,0,Chord,Arc Length,True,True,0.0,0.0,0.0,0.0,-0.1158592212032458,0.0,0.0,0.0
+Parallel_(geometry),Rectangle,0,Parallel,Rectangle,True,True,0.0,0.0,0.0,0.0,-0.30988620540644357,0.0,0.0,0.0
+Dodecagon,Star_polygon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Octagon,Polygon,1,,Polygon,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Perpendicular,Plane_(geometry),0,Perpendicular,Plane,True,True,0.0,0.0,0.0,0.0,0.24401017909444472,0.0,0.0,0.0
+Special_right_triangles,Midpoint,0,Special Right Triangles,Midpoint,True,True,0.0,0.0,0.0,0.0,0.6293753301003505,0.0,0.0,0.0
+Midpoint,Convex_polygon,0,Midpoint,,False,True,0.0,0.0,0.0,0.0,-0.47476832957218995,0.0,0.0,0.0
+Line_segment,Parallelogram,0,Line Segment,Parallelogram,True,True,0.0,0.0,0.0,0.0,-0.5138041964757286,0.0,0.0,0.0
+Polygon,Angle_bisector_theorem,0,Polygon,Angle Bisector,True,True,0.0,0.0,0.0,0.0,-0.3253469054592596,0.0,0.0,0.0
+Midpoint,Perpendicular,0,Midpoint,Perpendicular,True,True,0.0,0.0,0.0,0.0,-0.19445911557113363,1.0,0.0,0.08035714285714285
+Reflection_(mathematics),Rotation_(mathematics),1,Reflection,Rotation,True,True,0.0,0.0,0.0,0.0,0.016805108753060932,1.0,1.0,-0.05714285714285716
+Isosceles_triangle,Point_(geometry),1,Isosceles Triangle,Point,True,True,0.0,0.0,0.0,0.0,0.11662745474624286,0.0,0.0,0.0
+Geometry,Exterior_angle_theorem,0,,Exterior Angle,False,True,0.0,0.0,0.0,0.0,-0.34844192634560905,0.0,0.0,0.0
+Triangle,Special_right_triangles,0,Triangle,Special Right Triangles,True,True,0.0,0.0,0.0,0.0,-0.5715177413933836,1.0,0.0,-0.9818181818181818
+Exterior_angle_theorem,Polygon,1,Exterior Angle,Polygon,True,True,0.0,0.0,0.0,0.0,0.20886349450232872,0.0,0.0,0.0
+Bisection,Kite_(geometry),0,Perpendicular Bisector,Kite,True,True,0.0,0.0,0.0,0.0,-0.5162529408940317,0.0,0.0,0.0
+Line_(geometry),Acute_and_obtuse_triangles,0,Line,Acute Triangle,True,True,0.0,0.0,0.0,0.0,-0.12339751284390454,0.0,0.0,0.0
+Perpendicular,Right_triangle,0,Perpendicular,Right Triangle,True,True,0.0,0.0,0.0,0.0,0.11854803860373554,0.0,0.0,0.0
+Diagonal,Rhombus,0,,Rhombus,False,True,0.0,0.0,0.0,0.0,-0.027608392951457242,2.0,0.0,-0.08333333333333331
+Line_segment,Square,0,Line Segment,Square,True,True,0.0,0.0,0.0,0.0,-0.5383396552551976,0.0,0.0,0.0
+Point_(geometry),Prism_(geometry),0,Point,Prism,True,True,0.0,0.0,0.0,0.0,-0.8661833197291977,0.0,0.0,0.0
+Pythagorean_theorem,Geometry,1,Pythagorean Theorem,,False,True,0.0,0.0,0.0,0.0,0.6526143947760119,0.0,0.0,0.0
+Isosceles_triangle,Line_(geometry),1,Isosceles Triangle,Line,True,True,0.0,0.0,0.0,0.0,0.11624333797474433,0.0,0.0,0.0
+Vertex_(geometry),Sphere,0,Vertex,Sphere,True,True,0.0,0.0,0.0,0.0,-0.8485619628367024,0.0,0.0,0.0
+Parallelogram,Point_(geometry),1,Parallelogram,Point,True,True,0.0,0.0,0.0,0.0,0.5309454074038508,0.0,0.0,0.0
+Arc_length,Polygon,0,Arc Length,Polygon,True,True,0.0,0.0,0.0,0.0,0.7003409036347049,0.0,0.0,0.0
+Trapezoid,Triangle,0,Trapezoid,Triangle,True,True,0.0,0.0,0.0,0.0,0.46199644691986363,0.0,0.0,0.0
+Sine,Vertex_(geometry),1,Sine,Vertex,True,True,0.0,0.0,0.0,0.0,0.6241897536851203,0.0,0.0,0.0
+Polygon,Congruence_(geometry),0,Polygon,Congruence,True,True,0.0,0.0,0.0,0.0,-0.07288615739184712,0.0,0.0,0.0
+Line_segment,Diagonal,0,Line Segment,,False,True,0.0,0.0,0.0,0.0,-0.5100110433571806,0.0,0.0,0.0
+Pyramid_(geometry),Point_(geometry),1,Pyramid,Point,True,True,0.0,0.0,0.0,0.0,0.8697844144619965,0.0,0.0,0.0
+Edge_(geometry),Parallelogram,0,,Parallelogram,False,True,0.0,0.0,0.0,0.0,0.3341335766072886,0.0,0.0,0.0
+Angle,Pentagon,0,Angle,Pentagon,True,True,0.0,0.0,0.0,0.0,-0.08292120804724637,0.0,0.0,0.0
+Pyramid_(geometry),Polygon,1,Pyramid,Polygon,True,True,0.0,0.0,0.0,0.0,0.7327507562298939,0.0,0.0,0.0
+Midpoint,Symmetry,0,Midpoint,Symmetry,True,True,0.0,0.0,0.0,0.0,-0.885773275075623,0.0,0.0,0.0
+Line_segment,Acute_and_obtuse_triangles,0,Line Segment,Acute Triangle,True,True,0.0,0.0,0.0,0.0,-0.10664041868728093,0.0,0.0,0.0
+Point_(geometry),Trigonometric_functions,0,Point,Trigonometry,True,True,0.0,0.0,0.0,0.0,-0.6490133000432131,0.0,0.0,0.0
+Perpendicular,Point_(geometry),1,Perpendicular,Point,True,True,0.0,0.0,0.0,0.0,0.24492245642675373,4.0,4.0,0.11666666666666667
+Right_triangle,Bisection,0,Right Triangle,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,0.07158976328803957,0.0,0.0,0.0
+Perpendicular,Geometry,1,Perpendicular,,False,True,0.0,0.0,0.0,0.0,0.24746723003793153,0.0,0.0,0.0
+Reflection_(mathematics),Reflection_symmetry,0,Reflection,Line Symmetry,True,True,0.0,0.0,0.0,0.0,0.023623181447159938,0.0,0.0,0.0
+Special_right_triangles,Trigonometric_functions,0,Special Right Triangles,Trigonometry,True,True,0.0,0.0,0.0,0.0,0.03082537091275748,0.0,0.0,0.0
+Radius,Perpendicular,0,Radius,Perpendicular,True,True,0.0,0.0,0.0,0.0,0.47275171652182263,1.0,1.0,0.0625
+Rhombus,Polyhedron,0,Rhombus,Polyhedron,True,True,0.0,0.0,0.0,0.0,-0.3060450376914582,0.0,0.0,0.0
+Angle_bisector_theorem,Bisection,1,Angle Bisector,Perpendicular Bisector,True,True,1.4083,1.4083,1.0,1.0,0.40759590915638355,2.0,2.0,0.8
+Line_segment,Triangle_inequality,0,Line Segment,,False,True,0.0,0.0,0.0,0.0,-0.4831228693522831,0.0,0.0,0.0
+Polyhedron,Star_polygon,0,Polyhedron,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Parallelogram,Square,0,Parallelogram,Square,True,True,0.0,0.0,0.0,0.0,-0.024535458779468958,0.0,0.0,0.0
+Altitude_(triangle),Edge_(geometry),1,Altitude,,False,True,0.0,0.0,0.0,0.0,-0.3863734575310894,0.0,0.0,0.0
+Right_triangle,Edge_(geometry),1,Right Triangle,,False,True,0.0,0.0,0.0,0.0,-0.7387045661881212,0.0,0.0,0.0
+Geometry,Distance,0,,,False,True,0.0,0.0,0.0,0.0,-0.03884380851778941,0.0,0.0,0.0
+Cylinder_(geometry),Geometry,1,Cylinder,,False,True,0.0,0.0,0.0,0.0,0.8864934940221827,0.0,0.0,0.0
+Line_segment,Midpoint,0,Line Segment,Midpoint,True,True,0.0,0.0,0.0,0.0,-0.03332212992749796,0.0,0.0,0.0
+Acute_and_obtuse_triangles,Line_(geometry),1,Acute Triangle,Line,True,True,0.0,0.0,0.0,0.0,0.12339751284390454,0.0,0.0,0.0
+Triangle,Rhombus,0,Triangle,Rhombus,True,True,0.0,0.0,0.0,0.0,-0.44643971767417295,0.0,0.0,0.0
+Line_segment,Arc_length,0,Line Segment,Arc Length,True,True,0.0,0.0,0.0,0.0,-0.8202333509386853,0.0,0.0,0.0
+Triangle,Internal_and_external_angle,0,Triangle,Interior Angle,True,True,0.0,0.0,0.0,0.0,-0.04398137033658232,1.0,0.0,-0.08181818181818182
+Angle_bisector_theorem,Internal_and_external_angle,0,Angle Bisector,Interior Angle,True,True,0.0,0.0,0.0,0.0,0.31007826379219283,0.0,0.0,0.0
+Star_polygon,Polygon,1,,Polygon,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Decagon,Vertex_(geometry),1,,Vertex,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Two-dimensional_space,Equilateral_triangle,0,Plane,Equilateral Triangle,True,True,0.0,0.0,0.0,0.0,-0.11326643299563068,0.0,0.0,0.0
+Internal_and_external_angle,Geometry,1,Interior Angle,,False,True,0.0,0.0,0.0,0.0,0.15484707351034716,0.0,0.0,0.0
+Inverse_trigonometric_functions,Sine,1,Inverse Trigonometric,Sine,True,True,0.0,0.0,0.0,0.0,0.015268641667066788,0.0,0.0,0.0
+Inverse_trigonometric_functions,Vertex_(geometry),1,Inverse Trigonometric,Vertex,True,True,0.0,0.0,0.0,0.0,0.6394583953521871,0.0,0.0,0.0
+Square,Convex_polygon,0,Square,,False,True,0.0,0.0,0.0,0.0,0.030249195755509675,0.0,0.0,0.0
+Exterior_angle_theorem,Line_(geometry),1,Exterior Angle,Line,True,True,0.0,0.0,0.0,0.0,0.34551303596293276,0.0,0.0,0.0
+Right_triangle,Special_right_triangles,0,Right Triangle,Special Right Triangles,True,True,0.0,0.0,0.0,0.0,-0.5534642531329524,1.0,0.0,-0.8571428571428572
+Transversal_(geometry),Geometry,1,Transversal,,False,True,0.0,0.0,0.0,0.0,0.2550055216785903,0.0,0.0,0.0
+Kite_(geometry),Rectangle,0,Kite,Rectangle,True,True,0.0,0.0,0.0,0.0,0.016853123349498247,0.0,0.0,0.0
+Trapezoid,Diagonal,0,Trapezoid,,False,True,0.0,0.0,0.0,0.0,0.04316512219714793,0.0,0.0,0.0
+Equilateral_triangle,Point_(geometry),1,Equilateral Triangle,Point,True,True,0.0,0.0,0.0,0.0,0.11417871032793969,0.0,0.0,0.0
+Polygon,Tangent,0,Polygon,Tangent,True,True,0.0,0.0,0.0,0.0,-0.5572093916550631,0.0,0.0,0.0
+Vertex_(geometry),Tangent,0,Vertex,Tangent,True,True,0.0,0.0,0.0,0.0,-0.625054016420992,0.0,0.0,0.0
+Triangle,Line_segment,1,Triangle,Line Segment,True,True,1.215,1.215,1.0,1.0,0.09117971863446488,0.0,0.0,0.0
+Parallelogram,Midpoint,0,Parallelogram,Midpoint,True,True,0.0,0.0,0.0,0.0,0.48048206654823067,0.0,0.0,0.0
+Symmetry,Circle,0,Symmetry,Circle,True,True,0.0,0.0,0.0,0.0,0.22427617995870744,0.0,0.0,0.0
+Coordinate_system,Radius,0,,Radius,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Vertex_(geometry),Rhombus,0,Vertex,Rhombus,True,True,0.0,0.0,0.0,0.0,-0.4855716137705863,0.0,0.0,0.0
+Translation_(geometry),Geometry,1,Translation,,False,True,0.0,0.0,0.0,0.0,0.9510251116339368,0.0,0.0,0.0
+Arc_length,Sphere,0,Arc Length,Sphere,True,True,0.0,0.0,0.0,0.0,-0.08037643443606857,0.0,0.0,0.0
+Convex_polygon,Line_(geometry),1,,Line,False,True,0.0,0.0,0.0,0.0,0.5248475536563115,0.0,0.0,0.0
+Inverse_trigonometric_functions,Circle,0,Inverse Trigonometric,Circle,True,True,0.0,0.0,0.0,0.0,-0.0033130071541748692,0.0,0.0,0.0
+Vertex_(geometry),Convex_polygon,0,Vertex,,False,True,0.0,0.0,0.0,0.0,-0.4560426369616363,0.0,0.0,0.0
+Polygon,Sine,0,Polygon,Sine,True,True,0.0,0.0,0.0,0.0,-0.5563451289191914,0.0,0.0,0.0
+Line_segment,Circle,0,Line Segment,Circle,True,True,0.0,0.0,0.0,0.0,-0.6948192250444135,0.0,0.0,0.0
+Geometry,Skew_lines,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Hexagon,Line_(geometry),1,Hexagon,Line,True,True,0.0,0.0,0.0,0.0,0.14702069429106449,0.0,0.0,0.0
+Collinearity,Line_(geometry),1,,Line,False,True,0.0,0.0,0.0,0.0,0.9914534018341575,0.0,0.0,0.0
+Nonagon,Polygon,1,,Polygon,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Bisection,Geometry,1,Perpendicular Bisector,,False,True,0.0,0.0,0.0,0.0,0.05732942814615643,0.0,0.0,0.0
+Polyhedron,Sphere,0,Polyhedron,Sphere,True,True,0.0,0.0,0.0,0.0,-0.05694531137465789,0.0,0.0,0.0
+Angle,Parallelogram,0,Angle,Parallelogram,True,True,0.0,0.0,0.0,0.0,-0.4677581984923417,3.0,0.0,-0.19230769230769232
+Pyramid_(geometry),Vertex_(geometry),1,Pyramid,Vertex,True,True,0.0,0.0,0.0,0.0,0.8005953809958227,0.0,0.0,0.0
+Triangle_inequality,Point_(geometry),1,,Point,False,True,0.0,0.0,0.0,0.0,0.5002640802804053,0.0,0.0,0.0
+Rhombus,Angle,1,Rhombus,Angle,True,True,0.0,0.0,0.0,0.0,0.49157343832525086,1.0,1.0,0.15384615384615383
+Hexagon,Point_(geometry),1,Hexagon,Point,True,True,0.0,0.0,0.0,0.0,0.147404811062563,0.0,0.0,0.0
+Rotational_symmetry,Distance,0,Rotational Symmetry,,False,True,0.0,0.0,0.0,0.0,0.9043069093004273,0.0,0.0,0.0
+Edge_(geometry),Equilateral_triangle,0,,Equilateral Triangle,False,True,0.0,0.0,0.0,0.0,0.7509002736831997,0.0,0.0,0.0
+Special_right_triangles,Geometry,1,Special Right Triangles,,False,True,0.0,0.0,0.0,0.0,0.6823834445671484,0.0,0.0,0.0
+Slope,Trigonometric_functions,0,Slope,Trigonometry,True,True,0.0,0.0,0.0,0.0,-0.33619820425409325,0.0,0.0,0.0
+Trigonometric_functions,Secant_line,0,Trigonometry,Secant,True,True,0.0,0.0,0.0,0.0,-0.13208815479905892,0.0,0.0,0.0
+Vertex_(geometry),Polyhedron,0,Vertex,Polyhedron,True,True,0.0,0.0,0.0,0.0,-0.7916166514620444,0.0,0.0,0.0
+Altitude_(triangle),Distance,1,Altitude,,False,True,0.0,0.0,0.0,0.0,0.4424064915734383,0.0,0.0,0.0
+Geometry,Isosceles_triangle,0,,Isosceles Triangle,False,True,0.0,0.0,0.0,0.0,-0.11917222835742065,0.0,0.0,0.0
+Square,Rhombus,0,Square,Rhombus,True,True,0.0,0.0,0.0,0.0,0.0007202189465597542,2.0,2.0,-0.08333333333333331
+Parallelogram,Quadrilateral,1,Parallelogram,Quadrilateral,True,True,0.0,0.0,0.0,0.0,0.3863734575310894,3.0,3.0,-0.19780219780219777
+Tangent,Vertex_(geometry),1,Tangent,Vertex,True,True,0.0,0.0,0.0,0.0,0.625054016420992,0.0,0.0,0.0
+Edge_(geometry),Pentagon,0,,Pentagon,False,True,0.0,0.0,0.0,0.0,0.7189705670523839,0.0,0.0,0.0
+Triangle,Parallelogram,0,Triangle,Parallelogram,True,True,0.0,0.0,0.0,0.0,-0.4226244778412637,1.0,0.0,-0.058741258741258746
+Reflection_symmetry,Rotation_(mathematics),1,Line Symmetry,Rotation,True,True,0.0,0.0,0.0,0.0,-0.006818072694099006,1.0,0.0,0.04999999999999999
+Angle,Rotational_symmetry,0,Angle,Rotational Symmetry,True,True,0.0,0.0,0.0,0.0,-0.8774187352955298,0.0,0.0,0.0
+Diameter,Circumference,0,Diameter,Circumference,True,True,0.0,0.0,0.0,0.0,-0.11566716281749652,1.0,0.0,0.0
+Angle,Point_(geometry),1,Angle,Point,True,True,0.0,0.0,0.0,0.0,0.0631872089115091,5.0,5.0,-0.10256410256410256
+Square,Rotational_symmetry,0,Square,Rotational Symmetry,True,True,0.0,0.0,0.0,0.0,-0.3851250780237192,0.0,0.0,0.0
+Sine,Inverse_trigonometric_functions,0,Sine,Inverse Trigonometric,True,True,0.0,0.0,0.0,0.0,-0.015268641667066788,0.0,0.0,0.0
+Diameter,Pythagorean_theorem,0,Diameter,Pythagorean Theorem,True,True,0.0,0.0,0.0,0.0,0.07077351514860518,0.0,0.0,0.0
+Line_(geometry),Bisection,0,Line,Perpendicular Bisector,True,True,0.0,0.0,0.0,0.0,-0.0544005377634801,1.0,0.0,-0.07777777777777778
+Polygon,Acute_and_obtuse_triangles,0,Polygon,Acute Triangle,True,True,0.0,0.0,0.0,0.0,0.013252028616699477,0.0,0.0,0.0
+Parallelogram,Vertex_(geometry),1,Parallelogram,Vertex,True,True,0.0,0.0,0.0,0.0,0.46175637393767704,0.0,0.0,0.0
+Polygon,Edge_(geometry),1,Polygon,,False,True,0.0,0.0,0.0,0.0,-0.7280453257790368,1.0,0.0,-0.4411764705882353
+Parallel_(geometry),Prism_(geometry),0,Parallel,Prism,True,True,0.0,0.0,0.0,0.0,-0.6218850530561291,1.0,0.0,-0.15000000000000002
+Bisection,Angle,1,Perpendicular Bisector,Angle,True,True,0.0,0.0,0.0,0.0,-0.008402554376530466,5.0,0.0,0.4358974358974359
+Similarity_(geometry),Geometry,1,Similarity,,False,True,0.0,0.0,0.0,0.0,0.5882268209535699,0.0,0.0,0.0
+Edge_(geometry),Nonagon,0,,,False,False,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,365 @@
+relation_id,source_id,target_id,relation_type,weight,page,chunk_id,evidence,weight_source,cooccurrence_count,semantic_similarity,chapter_proximity,educational_context
+R0001,C0017,C0021,Part-of,0.2497,1,95e44b272825437d8be41fba22c229cf,An angle is formed by two rays with a common endpoint called the vertex.,ahp,1,0.0667,1.0,0.3
+R0002,C0165,C0017,Application,0.2367,1,95e44b272825437d8be41fba22c229cf,Right angles measure exactly 90 degrees.,ahp,1,0.0417,1.0,0.3
+R0003,C0026,C0020,Application,0.2762,1,95e44b272825437d8be41fba22c229cf,A linear pair is two adjacent angles that form a straight line.,ahp,1,0.1176,1.0,0.3
+R0004,C0024,C0020,Application,0.28,1,95e44b272825437d8be41fba22c229cf,Vertical angles are the opposite angles formed when two lines intersect.,ahp,1,0.125,1.0,0.3
+R0005,C0028,C0027,Application,0.315,1,8330efe39345401db8cec1fee2f68900,,ahp,1,0.1923,1.0,0.3
+R0006,C0029,C0027,Application,0.315,1,8330efe39345401db8cec1fee2f68900,,ahp,1,0.1923,1.0,0.3
+R0007,C0030,C0027,Application,0.2456,1,8330efe39345401db8cec1fee2f68900,,ahp,1,0.0588,1.0,0.3
+R0008,C0031,C0027,Application,0.321,1,8330efe39345401db8cec1fee2f68900,,ahp,2,0.05,1.0,0.3
+R0009,C0032,C0027,Application,0.78,1,8330efe39345401db8cec1fee2f68900,,ahp,1,1.0,1.0,0.6
+R0010,C0033,C0027,Application,0.321,1,8330efe39345401db8cec1fee2f68900,,ahp,2,0.05,1.0,0.3
+R0011,C0035,C0034,Application,0.215,1,8330efe39345401db8cec1fee2f68900,,ahp,1,0.0,1.0,0.3
+R0012,C0036,C0034,Application,0.215,1,8330efe39345401db8cec1fee2f68900,,ahp,1,0.0,1.0,0.3
+R0013,C0037,C0034,Application,0.215,1,8330efe39345401db8cec1fee2f68900,,ahp,1,0.0,1.0,0.3
+R0014,C0038,C0034,Application,0.2697,1,8330efe39345401db8cec1fee2f68900,,ahp,1,0.1053,1.0,0.3
+R0015,C0042,C0045,Application,0.26,1,598e28e50eb94759913e07b0f69e41d2,Inductive reasoning uses specific examples to make a general conclusion called a conjecture.,ahp,1,0.0,1.0,0.6
+R0016,C0043,C0045,Similarity,0.26,1,598e28e50eb94759913e07b0f69e41d2,,ahp,1,0.0,1.0,0.6
+R0017,C0044,C0042,Application,0.26,1,598e28e50eb94759913e07b0f69e41d2,,ahp,1,0.0,1.0,0.6
+R0018,C0045,C0039,Extension,0.215,1,598e28e50eb94759913e07b0f69e41d2,,ahp,1,0.0,1.0,0.3
+R0019,C0047,C0046,Part-of,0.38,1,598e28e50eb94759913e07b0f69e41d2,,ahp,1,0.2308,1.0,0.6
+R0020,C0048,C0046,Part-of,0.38,1,598e28e50eb94759913e07b0f69e41d2,,ahp,1,0.2308,1.0,0.6
+R0021,C0049,C0046,Similarity,0.4086,1,598e28e50eb94759913e07b0f69e41d2,,ahp,1,0.2857,1.0,0.6
+R0022,C0050,C0046,Similarity,0.4086,1,598e28e50eb94759913e07b0f69e41d2,,ahp,1,0.2857,1.0,0.6
+R0023,C0051,C0046,Similarity,0.2947,1,598e28e50eb94759913e07b0f69e41d2,,ahp,1,0.0667,1.0,0.6
+R0024,C0052,C0046,Similarity,0.3178,1,598e28e50eb94759913e07b0f69e41d2,,ahp,1,0.1111,1.0,0.6
+R0025,C0056,C0010,Application,0.319,1,326f8f562b1341d8868a173ee5971daa,,ahp,1,0.2,1.0,0.3
+R0026,C0057,C0010,Part-of,0.2497,1,326f8f562b1341d8868a173ee5971daa,,ahp,1,0.0667,1.0,0.3
+R0027,C0056,C0057,Application,0.2623,1,326f8f562b1341d8868a173ee5971daa,,ahp,1,0.0909,1.0,0.3
+R0028,C0058,C0056,Application,0.26,1,326f8f562b1341d8868a173ee5971daa,,ahp,1,0.0,1.0,0.6
+R0029,C0059,C0058,Application,0.2971,1,326f8f562b1341d8868a173ee5971daa,,ahp,1,0.0714,1.0,0.6
+R0030,C0060,C0058,Application,0.26,1,326f8f562b1341d8868a173ee5971daa,,ahp,1,0.0,1.0,0.6
+R0031,C0061,C0058,Application,0.3073,1,326f8f562b1341d8868a173ee5971daa,,ahp,1,0.0909,1.0,0.6
+R0032,C0062,C0065,Application,0.3838,1,1d60558a244947629b5c29d6d5401474,"If two parallel lines are cut by a transversal, then corresponding angles are congruent.",ahp,1,0.2381,1.0,0.6
+R0033,C0062,C0066,Application,0.3178,1,1d60558a244947629b5c29d6d5401474,"If two parallel lines are cut by a transversal, then alternate interior angles are congruent.",ahp,1,0.1111,1.0,0.6
+R0034,C0062,C0067,Application,0.3178,1,1d60558a244947629b5c29d6d5401474,"If two parallel lines are cut by a transversal, then alternate exterior angles are congruent.",ahp,1,0.1111,1.0,0.6
+R0035,C0062,C0068,Application,0.3518,1,1d60558a244947629b5c29d6d5401474,,ahp,1,0.1765,1.0,0.6
+R0036,C0064,C0065,Application,0.3518,1,0b8e7741a7794a6584362c8f2239edb6,Corresponding angles postulate,ahp,1,0.1765,1.0,0.6
+R0037,C0062,C0065,Prerequisite,0.4638,1,0b8e7741a7794a6584362c8f2239edb6,"If two lines are parallel, then corresponding angles are congruent.",ahp,2,0.2381,1.0,0.6
+R0038,C0010,C0071,Application,0.3545,1,0b8e7741a7794a6584362c8f2239edb6,Perpendicular bisector is a line that passes through the midpoint of a segment and is perpendicular to the segment.,ahp,1,0.1818,1.0,0.6
+R0039,C0072,C0063,Application,0.2906,1,0b8e7741a7794a6584362c8f2239edb6,Perpendicular lines have slopes that are negative reciprocals of each other.,ahp,1,0.0588,1.0,0.6
+R0040,C0072,C0071,Application,0.2602,1,0b8e7741a7794a6584362c8f2239edb6,The slope of a line perpendicular to a segment is the negative reciprocal of the slope of the segment.,ahp,1,0.087,1.0,0.3
+R0041,C0075,C0027,Part-of,0.3125,1,557b39e17b7f417990560249e86c4ab7,,ahp,1,0.1875,1.0,0.3
+R0042,C0076,C0027,Part-of,0.267,1,557b39e17b7f417990560249e86c4ab7,,ahp,1,0.1,1.0,0.3
+R0043,C0028,C0027,Extension,0.395,1,557b39e17b7f417990560249e86c4ab7,,ahp,2,0.1923,1.0,0.3
+R0044,C0077,C0034,Part-of,0.215,1,557b39e17b7f417990560249e86c4ab7,,ahp,1,0.0,1.0,0.3
+R0045,C0078,C0082,Extension,0.4409,1,557b39e17b7f417990560249e86c4ab7,,ahp,1,0.3478,1.0,0.6
+R0046,C0079,C0082,Extension,0.52,1,557b39e17b7f417990560249e86c4ab7,,ahp,1,0.5,1.0,0.6
+R0047,C0080,C0027,Application,0.241,1,557b39e17b7f417990560249e86c4ab7,,ahp,1,0.05,1.0,0.3
+R0048,C0090,C0091,Application,0.6825,1,ac22778675fd4432954cba99c413b2ec,,ahp,1,0.8125,1.0,0.6
+R0049,C0090,C0092,Application,0.4875,1,ac22778675fd4432954cba99c413b2ec,,ahp,1,0.4375,1.0,0.6
+R0050,C0091,C0092,Application,0.4516,1,ac22778675fd4432954cba99c413b2ec,,ahp,1,0.3684,1.0,0.6
+R0051,C0092,C0093,Extension,0.4225,1,ac22778675fd4432954cba99c413b2ec,,ahp,1,0.3125,1.0,0.6
+R0052,C0093,C0028,Application,0.5337,1,ac22778675fd4432954cba99c413b2ec,,ahp,1,0.5263,1.0,0.6
+R0053,C0096,C0027,Application,0.2398,1,dcc5ef57dc414b30aae08912c0b4a2ca,A midsegment of a triangle is a segment connecting the midpoints of two sides of a triangle.,ahp,1,0.0476,1.0,0.3
+R0054,C0071,C0057,Application,0.2424,1,dcc5ef57dc414b30aae08912c0b4a2ca,,ahp,1,0.0526,1.0,0.3
+R0055,C0097,C0005,Application,0.3095,1,dcc5ef57dc414b30aae08912c0b4a2ca,,ahp,1,0.1818,1.0,0.3
+R0056,C0098,C0027,Application,0.2697,1,dcc5ef57dc414b30aae08912c0b4a2ca,The circumcenter of a triangle is the point of concurrency of its perpendicular bisectors.,ahp,1,0.1053,1.0,0.3
+R0057,C0099,C0027,Application,0.2697,1,dcc5ef57dc414b30aae08912c0b4a2ca,The incenter of a triangle is the point of concurrency of its angle bisectors.,ahp,1,0.1053,1.0,0.3
+R0058,C0100,C0021,Application,0.3518,1,dcc5ef57dc414b30aae08912c0b4a2ca,,ahp,1,0.1765,1.0,0.6
+R0059,C0101,C0027,Application,0.2623,1,dcc5ef57dc414b30aae08912c0b4a2ca,An altitude of a triangle is a perpendicular segment from a vertex to the opposite side or its extension.,ahp,1,0.0909,1.0,0.3
+R0060,C0102,C0027,Application,0.2728,1,dcc5ef57dc414b30aae08912c0b4a2ca,The orthocenter of a triangle is the point of concurrency of its altitudes.,ahp,1,0.1111,1.0,0.3
+R0061,C0104,C0027,Application,0.267,1,dcc5ef57dc414b30aae08912c0b4a2ca,The centroid of a triangle is the point of concurrency of its medians and is also the center of gravity of the triangle.,ahp,1,0.1,1.0,0.3
+R0062,C0071,C0057,Prerequisite,0.3224,1,dcc5ef57dc414b30aae08912c0b4a2ca,Any point on the perpendicular bisector of a segment is equidistant from the endpoints.,ahp,2,0.0526,1.0,0.3
+R0063,C0097,C0017,Prerequisite,0.2989,1,dcc5ef57dc414b30aae08912c0b4a2ca,Any point on the angle bisector is equidistant from the sides of the angle.,ahp,1,0.1613,1.0,0.3
+R0064,C0105,C0027,Application,0.293,1,2a5a2a3681db424783029c531e47a9ff,"In a triangle, the sum of any two sides is greater than the third side.",ahp,1,0.15,1.0,0.3
+R0065,C0106,C0017,Part-of,0.2774,1,2a5a2a3681db424783029c531e47a9ff,Longer sides are opposite larger angles.,ahp,1,0.12,1.0,0.3
+R0066,C0107,C0027,Application,0.2535,1,2a5a2a3681db424783029c531e47a9ff,"If two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",ahp,1,0.0741,1.0,0.3
+R0067,C0107,C0027,Extension,0.3335,1,2a5a2a3681db424783029c531e47a9ff,"If two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",ahp,2,0.0741,1.0,0.3
+R0068,C0106,C0027,Application,0.3224,1,2a5a2a3681db424783029c531e47a9ff,Longer sides are opposite larger angles.,ahp,2,0.0526,1.0,0.3
+R0069,C0105,C0107,Prerequisite,0.416,1,2a5a2a3681db424783029c531e47a9ff,The triangle inequality theorem states that the sum of any two sides is greater than the third side.,ahp,1,0.3,1.0,0.6
+R0070,C0106,C0107,Prerequisite,0.4044,1,2a5a2a3681db424783029c531e47a9ff,Longer sides are opposite larger angles.,ahp,1,0.2778,1.0,0.6
+R0071,C0109,C0110,Extension,0.26,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.0,1.0,0.6
+R0072,C0109,C0111,Extension,0.3343,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.1429,1.0,0.6
+R0073,C0109,C0019,Extension,0.215,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.0,1.0,0.3
+R0074,C0109,C0114,Extension,0.3504,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.1739,1.0,0.6
+R0075,C0109,C0115,Similarity,0.3545,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.1818,1.0,0.6
+R0076,C0109,C0112,Part-of,0.26,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.0,1.0,0.6
+R0077,C0109,C0114,Prerequisite,0.4304,1,d739acfacd184742ba4e3691970b1a16,,ahp,2,0.1739,1.0,0.6
+R0078,C0114,C0109,Extension,0.3504,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.1739,1.0,0.6
+R0079,C0114,C0112,Application,0.26,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.0,1.0,0.6
+R0080,C0114,C0115,Similarity,0.323,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.1212,1.0,0.6
+R0081,C0115,C0109,Similarity,0.3545,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.1818,1.0,0.6
+R0082,C0115,C0114,Similarity,0.323,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.1212,1.0,0.6
+R0083,C0115,C0096,Application,0.3504,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.1739,1.0,0.6
+R0084,C0115,C0116,Application,0.2623,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.0909,1.0,0.3
+R0085,C0117,C0109,Similarity,0.4333,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.3333,1.0,0.6
+R0086,C0117,C0114,Similarity,0.325,1,d739acfacd184742ba4e3691970b1a16,,ahp,1,0.125,1.0,0.6
+R0087,C0125,C0124,Application,0.3178,1,985d0dfb7a0d4301903505c37f8f3530,,ahp,1,0.1111,1.0,0.6
+R0088,C0125,C0135,Part-of,0.3033,1,985d0dfb7a0d4301903505c37f8f3530,,ahp,1,0.0833,1.0,0.6
+R0089,C0129,C0127,Prerequisite,0.3518,1,985d0dfb7a0d4301903505c37f8f3530,,ahp,1,0.1765,1.0,0.6
+R0090,C0130,C0127,Prerequisite,0.4333,1,985d0dfb7a0d4301903505c37f8f3530,,ahp,1,0.3333,1.0,0.6
+R0091,C0131,C0127,Prerequisite,0.468,1,985d0dfb7a0d4301903505c37f8f3530,,ahp,1,0.4,1.0,0.6
+R0092,C0132,C0127,Prerequisite,0.3095,1,985d0dfb7a0d4301903505c37f8f3530,,ahp,1,0.0952,1.0,0.6
+R0093,C0133,C0127,Prerequisite,0.26,1,985d0dfb7a0d4301903505c37f8f3530,,ahp,1,0.0,1.0,0.6
+R0094,C0128,C0127,Prerequisite,0.2424,1,985d0dfb7a0d4301903505c37f8f3530,,ahp,1,0.0526,1.0,0.3
+R0095,C0137,C0032,Application,0.62,1,a01285ffef4d49129e28880e62aa98c0,"The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs.",ahp,1,0.6923,1.0,0.6
+R0096,C0138,C0032,Application,0.4516,1,a01285ffef4d49129e28880e62aa98c0,"The converse of the Pythagorean theorem states that if the square of one side equals the sum of the squares of the other two sides, then the triangle is a right triangle.",ahp,1,0.3684,1.0,0.6
+R0097,C0139,C0137,Extension,0.2906,1,a01285ffef4d49129e28880e62aa98c0,,ahp,1,0.0588,1.0,0.6
+R0098,C0142,C0032,Application,0.312,1,a01285ffef4d49129e28880e62aa98c0,Trigonometry is the study of the relationships between sides and angles of right triangles.,ahp,1,0.1,1.0,0.6
+R0099,C0144,C0142,Part-of,0.5943,1,a01285ffef4d49129e28880e62aa98c0,The tangent ratio is opposite over adjacent.,ahp,1,0.6429,1.0,0.6
+R0100,C0143,C0142,Part-of,0.3293,1,a01285ffef4d49129e28880e62aa98c0,SOH CAH TOA is the mnemonic to remember these ratios.,ahp,1,0.1333,1.0,0.6
+R0101,C0153,C0154,Application,0.347,1,0395047714854f7d9fab98a80019faad,The radius is a segment from the center to any point on the circle.,ahp,2,0.1,1.0,0.3
+R0102,C0153,C0155,Application,0.347,1,0395047714854f7d9fab98a80019faad,The diameter is a chord passing through the center.,ahp,2,0.1,1.0,0.3
+R0103,C0153,C0156,Application,0.2906,1,0395047714854f7d9fab98a80019faad,A chord is a segment passing through the circle.,ahp,1,0.0588,1.0,0.6
+R0104,C0153,C0157,Application,0.2889,1,0395047714854f7d9fab98a80019faad,A tangent line touches a circle at exactly one point called the point of tangency.,ahp,1,0.0556,1.0,0.6
+R0105,C0158,C0153,Part-of,0.26,1,0395047714854f7d9fab98a80019faad,A central angle is an angle formed by two radii.,ahp,1,0.0,1.0,0.6
+R0106,C0159,C0153,Part-of,0.347,1,0395047714854f7d9fab98a80019faad,An arc is a portion of a circle.,ahp,2,0.1,1.0,0.3
+R0107,C0160,C0153,Part-of,0.26,1,0395047714854f7d9fab98a80019faad,A minor arc is less than 180 degrees.,ahp,1,0.0,1.0,0.6
+R0108,C0161,C0153,Part-of,0.26,1,0395047714854f7d9fab98a80019faad,A major arc is greater than 180 degrees.,ahp,1,0.0,1.0,0.6
+R0109,C0162,C0153,Part-of,0.26,1,0395047714854f7d9fab98a80019faad,The arc addition postulate states that adjacent arc measures can be added. Congruent arcs have equal measures and are in the same circle.,ahp,1,0.0,1.0,0.6
+R0110,C0163,C0156,Application,0.3343,1,0395047714854f7d9fab98a80019faad,An inscribed angle is an angle formed by two chords with the vertex on the circle.,ahp,1,0.1429,1.0,0.6
+R0111,C0163,C0153,Application,0.312,1,0395047714854f7d9fab98a80019faad,An inscribed angle is an angle formed by two chords with the vertex on the circle.,ahp,1,0.1,1.0,0.6
+R0112,C0165,C0153,Application,0.26,1,0395047714854f7d9fab98a80019faad,An angle inscribed in a semicircle is a right angle.,ahp,1,0.0,1.0,0.6
+R0113,C0156,C0153,Application,0.2906,1,0271f8e6c27147beba1e4a8e4adfd697,A chord is a component of a circle.,ahp,1,0.0588,1.0,0.6
+R0114,C0167,C0153,Application,0.2906,1,0271f8e6c27147beba1e4a8e4adfd697,A secant is a component of a circle.,ahp,1,0.0588,1.0,0.6
+R0115,C0168,C0156,Application,0.34,1,0271f8e6c27147beba1e4a8e4adfd697,The intercepted arc is a component of a chord.,ahp,2,0.0,1.0,0.6
+R0116,C0168,C0153,Application,0.2906,1,0271f8e6c27147beba1e4a8e4adfd697,The intercepted arc is a component of a circle.,ahp,1,0.0588,1.0,0.6
+R0117,C0169,C0153,Application,0.3771,1,0271f8e6c27147beba1e4a8e4adfd697,An external point is a component of a circle.,ahp,2,0.0714,1.0,0.6
+R0118,C0057,C0156,Application,0.8533,1,0271f8e6c27147beba1e4a8e4adfd697,A segment is a component of a chord.,ahp,3,0.8333,1.0,0.6
+R0119,C0057,C0153,Application,0.42,1,0271f8e6c27147beba1e4a8e4adfd697,A segment is a component of a circle.,ahp,3,0.0,1.0,0.6
+R0120,C0156,C0153,Prerequisite,0.3706,1,0271f8e6c27147beba1e4a8e4adfd697,Chords are intersecting line segments connecting two points on a circle.,ahp,2,0.0588,1.0,0.6
+R0121,C0167,C0153,Prerequisite,0.3706,1,0271f8e6c27147beba1e4a8e4adfd697,Secants are intersecting line segments connecting two points outside a circle.,ahp,2,0.0588,1.0,0.6
+R0122,C0057,C0156,Part-of,0.7733,1,0271f8e6c27147beba1e4a8e4adfd697,A segment is a part of a chord.,ahp,2,0.8333,1.0,0.6
+R0123,C0057,C0153,Part-of,0.34,1,0271f8e6c27147beba1e4a8e4adfd697,A segment is a part of a circle.,ahp,2,0.0,1.0,0.6
+R0124,C0169,C0167,Application,0.325,1,0271f8e6c27147beba1e4a8e4adfd697,"When two chords intersect inside a circle,",ahp,1,0.125,1.0,0.6
+R0125,C0128,C0034,Application,0.2826,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The perimeter of a polygon is the sum of its sides.,ahp,1,0.0435,1.0,0.6
+R0126,C0116,C0122,Application,0.2623,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The area of a rectangle is base times height.,ahp,1,0.0909,1.0,0.3
+R0127,C0171,C0122,Application,0.2623,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The area of a rectangle is base times height.,ahp,1,0.0909,1.0,0.3
+R0128,C0109,C0116,Part-of,0.215,1,2fb919f5c54e4ce2b1aabaafafcf64d8,A parallelogram is a quadrilateral with opposite sides of equal length.,ahp,1,0.0,1.0,0.3
+R0129,C0109,C0171,Part-of,0.215,1,2fb919f5c54e4ce2b1aabaafafcf64d8,A parallelogram is a quadrilateral with opposite sides of equal length.,ahp,1,0.0,1.0,0.3
+R0130,C0121,C0116,Part-of,0.215,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The area of a trapezoid is one half times the sum of the bases times the height.,ahp,1,0.0,1.0,0.3
+R0131,C0121,C0116,Similarity,0.295,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The area of a trapezoid is one half times the sum of the bases times the height.,ahp,2,0.0,1.0,0.3
+R0132,C0121,C0171,Part-of,0.215,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The area of a trapezoid is one half times the sum of the bases times the height.,ahp,1,0.0,1.0,0.3
+R0133,C0118,C0116,Part-of,0.215,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The area of a rhombus is one half times the product of the diagonals.,ahp,1,0.0,1.0,0.3
+R0134,C0118,C0171,Part-of,0.215,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The area of a rhombus is one half times the product of the diagonals.,ahp,1,0.0,1.0,0.3
+R0135,C0117,C0116,Part-of,0.215,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The area of a kite is one half times the product of the diagonals.,ahp,1,0.0,1.0,0.3
+R0136,C0117,C0171,Part-of,0.215,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The area of a kite is one half times the product of the diagonals.,ahp,1,0.0,1.0,0.3
+R0137,C0172,C0153,Part-of,0.241,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The area of a sector is the arc measure divided by 360 times the area of the circle.,ahp,1,0.05,1.0,0.3
+R0138,C0172,C0159,Application,0.3575,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The area of a sector is the arc measure divided by 360 times the area of the circle.,ahp,1,0.1875,1.0,0.6
+R0139,C0172,C0153,Similarity,0.321,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The area of a sector is the arc measure divided by 360 times the area of the circle.,ahp,2,0.05,1.0,0.3
+R0140,C0126,C0127,Application,0.2843,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The ratio of the areas of similar polygons is the square of the scale factor.,ahp,1,0.1333,1.0,0.3
+R0141,C0159,C0153,Similarity,0.427,1,2fb919f5c54e4ce2b1aabaafafcf64d8,An arc is a portion of the circumference.,ahp,3,0.1,1.0,0.3
+R0142,C0174,C0153,Part-of,0.241,1,2fb919f5c54e4ce2b1aabaafafcf64d8,An arc length is a portion of the circumference equal to the arc measure divided by 360 times the circumference.,ahp,1,0.05,1.0,0.3
+R0143,C0174,C0153,Similarity,0.321,1,2fb919f5c54e4ce2b1aabaafafcf64d8,An arc length is a portion of the circumference equal to the arc measure divided by 360 times the circumference.,ahp,2,0.05,1.0,0.3
+R0144,C0127,C0153,Similarity,0.215,1,2fb919f5c54e4ce2b1aabaafafcf64d8,The ratio of the areas of similar polygons is the square of the scale factor.,ahp,1,0.0,1.0,0.3
+R0145,C0177,C0178,Application,0.4129,1,ce24992c70584b3d9933eae0e864e5c7,A prism is a type of polyhedron.,ahp,1,0.2941,1.0,0.6
+R0146,C0177,C0179,Application,0.455,1,ce24992c70584b3d9933eae0e864e5c7,A pyramid is a type of polyhedron.,ahp,1,0.375,1.0,0.6
+R0147,C0178,C0181,Application,0.2947,1,ce24992c70584b3d9933eae0e864e5c7,A cross section is the intersection of a prism with a plane.,ahp,1,0.0667,1.0,0.6
+R0148,C0179,C0181,Application,0.2947,1,ce24992c70584b3d9933eae0e864e5c7,A cross section is the intersection of a pyramid with a plane.,ahp,1,0.0667,1.0,0.6
+R0149,C0178,C0182,Application,0.26,1,ce24992c70584b3d9933eae0e864e5c7,The lateral area of a prism is the perimeter of the base times the height.,ahp,1,0.0,1.0,0.6
+R0150,C0179,C0182,Application,0.2925,1,ce24992c70584b3d9933eae0e864e5c7,The lateral area of a regular pyramid is one half times the perimeter of the base times the slant height.,ahp,1,0.0625,1.0,0.6
+R0151,C0178,C0183,Application,0.325,1,ce24992c70584b3d9933eae0e864e5c7,The surface area is the lateral area plus two times the area of the base.,ahp,1,0.125,1.0,0.6
+R0152,C0179,C0183,Application,0.2906,1,ce24992c70584b3d9933eae0e864e5c7,The surface area is the lateral area plus the base area.,ahp,1,0.0588,1.0,0.6
+R0153,C0178,C0184,Application,0.325,1,ce24992c70584b3d9933eae0e864e5c7,The volume is the area of the base times the height.,ahp,1,0.125,1.0,0.6
+R0154,C0179,C0184,Application,0.325,1,ce24992c70584b3d9933eae0e864e5c7,The volume is one third times base area times height.,ahp,1,0.125,1.0,0.6
+R0155,C0185,C0182,Application,0.26,1,ce24992c70584b3d9933eae0e864e5c7,The lateral area is pi times radius squared times height.,ahp,1,0.0,1.0,0.6
+R0156,C0185,C0183,Application,0.3033,1,ce24992c70584b3d9933eae0e864e5c7,The surface area is 2 pi radius squared plus 2 pi radius times height.,ahp,1,0.0833,1.0,0.6
+R0157,C0185,C0184,Application,0.3545,1,ce24992c70584b3d9933eae0e864e5c7,The volume is pi times radius squared times height.,ahp,1,0.1818,1.0,0.6
+R0158,C0177,C0191,Similarity,0.26,1,ce24992c70584b3d9933eae0e864e5c7,Both a polyhedron and a sphere are three-dimensional figures.,ahp,1,0.0,1.0,0.6
+R0159,C0196,C0184,Part-of,0.3033,1,446af1bfbf0649889322cee9bd66d4af,Volume and surface area are computed by combining the solids appropriately.,ahp,1,0.0833,1.0,0.6
+R0160,C0196,C0183,Part-of,0.3545,1,446af1bfbf0649889322cee9bd66d4af,Volume and surface area are computed by combining the solids appropriately.,ahp,1,0.1818,1.0,0.6
+R0161,C0201,C0200,Application,0.38,1,829101c59fe54934869d1d0f4da6cc5f,A vector describes the direction and magnitude of a translation.,ahp,1,0.2308,1.0,0.6
+R0162,C0202,C0203,Application,0.34,1,829101c59fe54934869d1d0f4da6cc5f,Each point maps to an equidistant point on the other side of the line.,ahp,1,0.1538,1.0,0.6
+R0163,C0205,C0204,Application,0.728,1,829101c59fe54934869d1d0f4da6cc5f,A rotation turns a figure around a fixed point called the center of rotation.,ahp,1,0.9,1.0,0.6
+R0164,C0207,C0202,Application,0.26,1,829101c59fe54934869d1d0f4da6cc5f,"Isometries preserve angle measure, betweenness, collinearity, and distance.",ahp,1,0.0,1.0,0.6
+R0165,C0207,C0200,Application,0.2925,1,829101c59fe54934869d1d0f4da6cc5f,"Isometries preserve angle measure, betweenness, collinearity, and distance.",ahp,1,0.0625,1.0,0.6
+R0166,C0202,C0206,Application,0.39,1,829101c59fe54934869d1d0f4da6cc5f,The composition of two reflections over parallel lines is a translation.,ahp,1,0.25,1.0,0.6
+R0167,C0202,C0207,Application,0.26,1,829101c59fe54934869d1d0f4da6cc5f,"Isometries preserve angle measure, betweenness, collinearity, and distance.",ahp,1,0.0,1.0,0.6
+R0168,C0204,C0206,Application,0.2906,1,829101c59fe54934869d1d0f4da6cc5f,The composition of two reflections over intersecting lines is a rotation.,ahp,1,0.0588,1.0,0.6
+R0169,C0204,C0207,Application,0.2906,1,829101c59fe54934869d1d0f4da6cc5f,"Isometries preserve angle measure, betweenness, collinearity, and distance.",ahp,1,0.0588,1.0,0.6
+R0170,C0017,C0022,Part-of,0.292,1,95e44b272825437d8be41fba22c229cf,1.4 Angle Pairs Complementary angles are two angles whose measures sum to 90 degrees.,ahp,1,0.1481,1.0,0.3
+R0171,C0017,C0019,Part-of,0.3113,1,95e44b272825437d8be41fba22c229cf,Supplementary angles are two angles whose measures sum to 180 degrees.,ahp,1,0.1852,1.0,0.3
+R0172,C0017,C0026,Part-of,0.2728,1,95e44b272825437d8be41fba22c229cf,A linear pair is two adjacent angles that form a straight line.,ahp,1,0.1111,1.0,0.3
+R0173,C0017,C0024,Part-of,0.3335,1,95e44b272825437d8be41fba22c229cf,Vertical angles are the opposite angles formed when two lines intersect.,ahp,2,0.0741,1.0,0.3
+R0174,C0034,C0123,Part-of,0.2602,2,8330efe39345401db8cec1fee2f68900,The sum of interior angles of a polygon with n sides is (n minus 2) times 180 degrees.,ahp,1,0.087,1.0,0.3
+R0175,C0045,C0042,Prerequisite,0.26,2,598e28e50eb94759913e07b0f69e41d2,2.1 Inductive Reasoning Inductive reasoning uses specific examples to make a general conclusion called a conjecture.,ahp,1,0.0,1.0,0.6
+R0176,C0055,C0058,Prerequisite,0.3212,2,598e28e50eb94759913e07b0f69e41d2,"2.3 Deductive Reasoning Deductive reasoning uses facts, definitions, accepted properties and laws of logic to form a logical argument.",ahp,1,0.1176,1.0,0.6
+R0177,C0017,C0053,Similarity,0.94,2,598e28e50eb94759913e07b0f69e41d2,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,ahp,8,1.0,1.0,0.6
+R0178,C0017,C0054,Similarity,0.4298,2,598e28e50eb94759913e07b0f69e41d2,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,ahp,2,0.2593,1.0,0.3
+R0179,C0017,C0057,Similarity,0.3158,2,598e28e50eb94759913e07b0f69e41d2,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,ahp,2,0.04,1.0,0.3
+R0180,C0017,C0110,Similarity,0.4679,2,598e28e50eb94759913e07b0f69e41d2,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,ahp,12,0.1786,1.0,0.3
+R0181,C0053,C0054,Similarity,0.4298,2,598e28e50eb94759913e07b0f69e41d2,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,ahp,2,0.2593,1.0,0.3
+R0182,C0053,C0057,Similarity,0.3158,2,598e28e50eb94759913e07b0f69e41d2,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,ahp,2,0.04,1.0,0.3
+R0183,C0053,C0110,Similarity,0.4679,2,598e28e50eb94759913e07b0f69e41d2,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,ahp,10,0.1786,1.0,0.3
+R0184,C0054,C0057,Similarity,0.3256,2,598e28e50eb94759913e07b0f69e41d2,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,ahp,2,0.0588,1.0,0.3
+R0185,C0054,C0110,Similarity,0.3659,2,598e28e50eb94759913e07b0f69e41d2,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,ahp,2,0.1364,1.0,0.3
+R0186,C0057,C0110,Similarity,0.3275,2,598e28e50eb94759913e07b0f69e41d2,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,ahp,2,0.0625,1.0,0.3
+R0187,C0039,C0058,Application,0.315,3,326f8f562b1341d8868a173ee5971daa,A two-column proof lists statements in one column and reasons in another.,ahp,2,0.0385,1.0,0.3
+R0188,C0069,C0065,Prerequisite,0.4713,3,1d60558a244947629b5c29d6d5401474,Corresponding angles are in the same position at each intersection.,ahp,4,0.1852,1.0,0.3
+R0189,C0069,C0066,Prerequisite,0.3383,3,1d60558a244947629b5c29d6d5401474,Alternate interior angles are between the lines on opposite sides of the transversal.,ahp,2,0.0833,1.0,0.3
+R0190,C0069,C0064,Prerequisite,0.4695,3,1d60558a244947629b5c29d6d5401474,"3.2 Properties of Parallel Lines The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.",ahp,6,0.1818,1.0,0.3
+R0191,C0073,C0069,Prerequisite,0.2386,3,0b8e7741a7794a6584362c8f2239edb6,Parallel lines have equal slopes.,ahp,1,0.0455,1.0,0.3
+R0192,C0073,C0070,Prerequisite,0.215,3,0b8e7741a7794a6584362c8f2239edb6,Perpendicular lines have slopes that are negative reciprocals of each other.,ahp,1,0.0,1.0,0.3
+R0193,C0027,C0087,Part-of,0.3805,4,557b39e17b7f417990560249e86c4ab7,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.",ahp,1,0.3182,1.0,0.3
+R0194,C0027,C0053,Application,0.4443,4,557b39e17b7f417990560249e86c4ab7,The corresponding parts of congruent triangles are congruent is abbreviated CPCTC.,ahp,7,0.1333,1.0,0.3
+R0195,C0014,C0027,Similarity,0.4443,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,8,0.1333,1.0,0.3
+R0196,C0014,C0053,Similarity,0.94,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,6,1.0,1.0,0.6
+R0197,C0014,C0082,Similarity,0.94,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,4,1.0,1.0,0.6
+R0198,C0014,C0084,Similarity,0.732,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,4,0.6,1.0,0.6
+R0199,C0014,C0085,Similarity,0.732,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,4,0.6,1.0,0.6
+R0200,C0014,C0110,Similarity,0.4679,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,8,0.1786,1.0,0.3
+R0201,C0027,C0053,Similarity,0.4443,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,11,0.1333,1.0,0.3
+R0202,C0027,C0082,Similarity,0.4443,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,4,0.1333,1.0,0.3
+R0203,C0027,C0084,Similarity,0.4493,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,4,0.1429,1.0,0.3
+R0204,C0027,C0085,Similarity,0.4493,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,4,0.1429,1.0,0.3
+R0205,C0027,C0110,Similarity,0.3967,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,12,0.0417,1.0,0.3
+R0206,C0053,C0082,Similarity,0.94,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,4,1.0,1.0,0.6
+R0207,C0053,C0084,Similarity,0.652,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,2,0.6,1.0,0.6
+R0208,C0053,C0085,Similarity,0.652,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,2,0.6,1.0,0.6
+R0209,C0082,C0084,Similarity,0.652,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,2,0.6,1.0,0.6
+R0210,C0082,C0085,Similarity,0.652,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,2,0.6,1.0,0.6
+R0211,C0082,C0110,Similarity,0.4679,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,4,0.1786,1.0,0.3
+R0212,C0084,C0085,Similarity,0.94,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,4,1.0,1.0,0.6
+R0213,C0084,C0110,Similarity,0.452,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,4,0.1481,1.0,0.3
+R0214,C0085,C0110,Similarity,0.452,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",ahp,4,0.1481,1.0,0.3
+R0215,C0014,C0017,Similarity,0.94,4,557b39e17b7f417990560249e86c4ab7,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",ahp,6,1.0,1.0,0.6
+R0216,C0014,C0080,Similarity,0.4232,4,557b39e17b7f417990560249e86c4ab7,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",ahp,2,0.16,1.0,0.6
+R0217,C0017,C0027,Similarity,0.4443,4,557b39e17b7f417990560249e86c4ab7,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",ahp,10,0.1333,1.0,0.3
+R0218,C0017,C0080,Similarity,0.5032,4,557b39e17b7f417990560249e86c4ab7,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",ahp,4,0.16,1.0,0.6
+R0219,C0027,C0080,Similarity,0.401,4,557b39e17b7f417990560249e86c4ab7,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",ahp,4,0.05,1.0,0.3
+R0220,C0053,C0080,Similarity,0.4232,4,557b39e17b7f417990560249e86c4ab7,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",ahp,2,0.16,1.0,0.6
+R0221,C0080,C0110,Similarity,0.4328,4,557b39e17b7f417990560249e86c4ab7,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",ahp,4,0.1111,1.0,0.3
+R0222,C0014,C0090,Similarity,0.6236,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,0.5455,1.0,0.6
+R0223,C0014,C0094,Similarity,0.86,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,1.0,1.0,0.6
+R0224,C0014,C0095,Similarity,0.86,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,1.0,1.0,0.6
+R0225,C0017,C0082,Similarity,0.86,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,1.0,1.0,0.6
+R0226,C0017,C0090,Similarity,0.6236,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,0.5455,1.0,0.6
+R0227,C0017,C0094,Similarity,0.86,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,1.0,1.0,0.6
+R0228,C0017,C0095,Similarity,0.86,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,1.0,1.0,0.6
+R0229,C0027,C0090,Similarity,0.3383,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,0.0833,1.0,0.3
+R0230,C0027,C0094,Similarity,0.3643,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,0.1333,1.0,0.3
+R0231,C0027,C0095,Similarity,0.3643,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,0.1333,1.0,0.3
+R0232,C0053,C0090,Similarity,0.6236,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,0.5455,1.0,0.6
+R0233,C0053,C0094,Similarity,0.86,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,1.0,1.0,0.6
+R0234,C0053,C0095,Similarity,0.86,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,1.0,1.0,0.6
+R0235,C0082,C0090,Similarity,0.6236,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,0.5455,1.0,0.6
+R0236,C0082,C0094,Similarity,0.86,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,1.0,1.0,0.6
+R0237,C0082,C0095,Similarity,0.86,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,1.0,1.0,0.6
+R0238,C0090,C0094,Similarity,0.6236,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,0.5455,1.0,0.6
+R0239,C0090,C0095,Similarity,0.6236,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,0.5455,1.0,0.6
+R0240,C0090,C0110,Similarity,0.425,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,0.25,1.0,0.3
+R0241,C0094,C0095,Similarity,0.86,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,1.0,1.0,0.6
+R0242,C0094,C0110,Similarity,0.3879,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,0.1786,1.0,0.3
+R0243,C0095,C0110,Similarity,0.3879,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",ahp,2,0.1786,1.0,0.3
+R0244,C0017,C0039,Similarity,0.7736,4,ac22778675fd4432954cba99c413b2ec,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",ahp,4,0.68,1.0,0.6
+R0245,C0027,C0039,Similarity,0.4647,4,ac22778675fd4432954cba99c413b2ec,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",ahp,4,0.1724,1.0,0.3
+R0246,C0039,C0053,Similarity,0.6936,4,ac22778675fd4432954cba99c413b2ec,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",ahp,2,0.68,1.0,0.6
+R0247,C0039,C0110,Similarity,0.4679,4,ac22778675fd4432954cba99c413b2ec,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",ahp,4,0.1786,1.0,0.3
+R0248,C0004,C0027,Prerequisite,0.215,5,2a5a2a3681db424783029c531e47a9ff,5.4 Inequalities in Triangles The triangle inequality theorem states that the sum of any two sides must be greater than the third side.,ahp,1,0.0,1.0,0.3
+R0249,C0017,C0107,Similarity,0.515,5,2a5a2a3681db424783029c531e47a9ff,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",ahp,2,0.4231,1.0,0.3
+R0250,C0027,C0107,Similarity,0.3335,5,2a5a2a3681db424783029c531e47a9ff,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",ahp,2,0.0741,1.0,0.3
+R0251,C0039,C0080,Similarity,0.4232,5,2a5a2a3681db424783029c531e47a9ff,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",ahp,2,0.16,1.0,0.6
+R0252,C0039,C0107,Similarity,0.515,5,2a5a2a3681db424783029c531e47a9ff,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",ahp,2,0.4231,1.0,0.3
+R0253,C0080,C0107,Similarity,0.4318,5,2a5a2a3681db424783029c531e47a9ff,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",ahp,2,0.2632,1.0,0.3
+R0254,C0107,C0110,Similarity,0.3817,5,2a5a2a3681db424783029c531e47a9ff,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",ahp,2,0.1667,1.0,0.3
+R0255,C0109,C0122,Extension,0.4267,5,d739acfacd184742ba4e3691970b1a16,"6.4 Rectangles, Rhombuses, and Squares A rectangle is a parallelogram with four right angles.",ahp,2,0.1667,1.0,0.6
+R0256,C0014,C0136,Similarity,0.5862,6,985d0dfb7a0d4301903505c37f8f3530,"7.3 Similarity by AA, SSS, SAS The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",ahp,2,0.56,1.0,0.3
+R0257,C0017,C0084,Similarity,0.652,6,985d0dfb7a0d4301903505c37f8f3530,"7.3 Similarity by AA, SSS, SAS The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",ahp,2,0.6,1.0,0.6
+R0258,C0017,C0085,Similarity,0.652,6,985d0dfb7a0d4301903505c37f8f3530,"7.3 Similarity by AA, SSS, SAS The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",ahp,2,0.6,1.0,0.6
+R0259,C0017,C0136,Similarity,0.5862,6,985d0dfb7a0d4301903505c37f8f3530,"7.3 Similarity by AA, SSS, SAS The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",ahp,2,0.56,1.0,0.3
+R0260,C0027,C0136,Similarity,0.372,6,985d0dfb7a0d4301903505c37f8f3530,"7.3 Similarity by AA, SSS, SAS The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",ahp,2,0.1481,1.0,0.3
+R0261,C0084,C0136,Similarity,0.5767,6,985d0dfb7a0d4301903505c37f8f3530,"7.3 Similarity by AA, SSS, SAS The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",ahp,2,0.5417,1.0,0.3
+R0262,C0085,C0136,Similarity,0.5767,6,985d0dfb7a0d4301903505c37f8f3530,"7.3 Similarity by AA, SSS, SAS The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",ahp,2,0.5417,1.0,0.3
+R0263,C0110,C0136,Similarity,0.375,6,985d0dfb7a0d4301903505c37f8f3530,"7.3 Similarity by AA, SSS, SAS The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",ahp,2,0.1538,1.0,0.3
+R0264,C0032,C0137,Prerequisite,0.78,6,a01285ffef4d49129e28880e62aa98c0,"8.1 The Pythagorean Theorem The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs.",ahp,4,0.6923,1.0,0.6
+R0265,C0137,C0032,Extension,0.78,6,a01285ffef4d49129e28880e62aa98c0,"The converse of the Pythagorean theorem states that if the square of one side equals the sum of the squares of the other two sides, then the triangle is a right triangle.",ahp,3,0.6923,1.0,0.6
+R0266,C0032,C0142,Prerequisite,0.312,6,a01285ffef4d49129e28880e62aa98c0,"8.4 Sine, Cosine, and Tangent Ratios Trigonometry is the study of the relationships between sides and angles of right triangles.",ahp,1,0.1,1.0,0.6
+R0267,C0158,C0163,Prerequisite,0.4018,7,0395047714854f7d9fab98a80019faad,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.,ahp,1,0.2727,1.0,0.6
+R0268,C0156,C0167,Similarity,0.6,7,0271f8e6c27147beba1e4a8e4adfd697,"9.5 Angles from Chords, Secants, and Tangents A secant is a line that intersects a circle at two points.",ahp,2,0.5,1.0,0.6
+R0269,C0176,C0159,Prerequisite,0.86,8,2fb919f5c54e4ce2b1aabaafafcf64d8,10.4 Circumference and Arc Length The circumference of a circle is two pi times the radius or pi times the diameter.,ahp,2,1.0,1.0,0.6
+R0270,C0003,C0181,Prerequisite,0.2893,8,ce24992c70584b3d9933eae0e864e5c7,A cross section is the intersection of a solid with a plane.,ahp,1,0.1429,1.0,0.3
+R0271,C0175,C0178,Prerequisite,0.2906,8,ce24992c70584b3d9933eae0e864e5c7,The volume of a prism is the area of the base times the height.,ahp,1,0.0588,1.0,0.6
+R0272,C0116,C0178,Similarity,0.295,8,ce24992c70584b3d9933eae0e864e5c7,A cylinder is like a prism with circular bases.,ahp,2,0.0,1.0,0.3
+R0273,C0116,C0185,Similarity,0.295,8,ce24992c70584b3d9933eae0e864e5c7,A cylinder is like a prism with circular bases.,ahp,2,0.0,1.0,0.3
+R0274,C0178,C0185,Similarity,0.5567,8,ce24992c70584b3d9933eae0e864e5c7,A cylinder is like a prism with circular bases.,ahp,2,0.4167,1.0,0.6
+R0275,C0153,C0185,Prerequisite,0.215,8,ce24992c70584b3d9933eae0e864e5c7,The volume of a cylinder is pi times radius squared times height.,ahp,1,0.0,1.0,0.3
+R0276,C0153,C0191,Prerequisite,0.3224,8,ce24992c70584b3d9933eae0e864e5c7,The surface area of a sphere is 4 pi radius squared.,ahp,2,0.0526,1.0,0.3
+R0277,C0091,C0094,Prerequisite,0.8808,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",provided,1,0.48,1.0,0.6
+R0278,C0076,C0087,Prerequisite,0.8756,4,557b39e17b7f417990560249e86c4ab7,Alternate exterior angles are outside the lines on opposite sides of the transversal.,provided,1,0.1905,1.0,0.6
+R0279,C0090,C0095,Prerequisite,0.8701,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",provided,3,0.5455,1.0,0.6
+R0280,C0090,C0082,Prerequisite,0.8498,4,ac22778675fd4432954cba99c413b2ec,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,1,0.5455,1.0,0.6
+R0281,C0091,C0082,Prerequisite,0.8433,4,ac22778675fd4432954cba99c413b2ec,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,1,0.48,1.0,0.6
+R0282,C0130,C0131,Prerequisite,0.836,6,985d0dfb7a0d4301903505c37f8f3530,The side angle side similarity theorem states that if two sides are proportional and the included angles are congruent then triangles are similar.,provided,1,0.4615,1.0,0.6
+R0283,C0091,C0090,Prerequisite,0.8302,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",provided,1,0.8125,1.0,0.6
+R0284,C0090,C0094,Prerequisite,0.8273,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",provided,3,0.5455,1.0,0.6
+R0285,C0091,C0095,Prerequisite,0.8147,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",provided,1,0.48,1.0,0.6
+R0286,C0092,C0082,Prerequisite,0.7996,4,ac22778675fd4432954cba99c413b2ec,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,1,0.24,1.0,0.6
+R0287,C0090,C0053,Prerequisite,0.7942,4,ac22778675fd4432954cba99c413b2ec,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,provided,1,0.5455,1.0,0.6
+R0288,C0092,C0090,Prerequisite,0.7768,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",provided,1,0.4375,1.0,0.6
+R0289,C0076,C0081,Prerequisite,0.7699,4,557b39e17b7f417990560249e86c4ab7,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.",provided,1,0.1905,1.0,0.6
+R0290,C0090,C0014,Prerequisite,0.7655,4,ac22778675fd4432954cba99c413b2ec,A ruler postulate states that the points on a line can be matched with real numbers.,provided,1,0.5455,1.0,0.6
+R0291,C0092,C0095,Prerequisite,0.7634,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",provided,1,0.24,1.0,0.6
+R0292,C0091,C0053,Prerequisite,0.7608,4,ac22778675fd4432954cba99c413b2ec,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,provided,1,0.48,1.0,0.6
+R0293,C0067,C0087,Prerequisite,0.7577,4,557b39e17b7f417990560249e86c4ab7,Alternate exterior angles are outside the lines on opposite sides of the transversal.,provided,1,0.0952,1.0,0.3
+R0294,C0092,C0094,Prerequisite,0.7493,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",provided,1,0.24,1.0,0.6
+R0295,C0090,C0017,Prerequisite,0.7432,4,ac22778675fd4432954cba99c413b2ec,1.3 Rays and Angles A ray has one endpoint and extends in one direction.,provided,1,0.5455,1.0,0.6
+R0296,C0091,C0014,Prerequisite,0.7338,4,ac22778675fd4432954cba99c413b2ec,A ruler postulate states that the points on a line can be matched with real numbers.,provided,1,0.48,1.0,0.6
+R0297,C0075,C0039,Prerequisite,0.7307,4,ac22778675fd4432954cba99c413b2ec,The triangle angle sum theorem states that the sum of the angles in any triangle is 180 degrees.,provided,1,0.125,1.0,0.6
+R0298,C0092,C0053,Prerequisite,0.7246,4,ac22778675fd4432954cba99c413b2ec,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,provided,1,0.24,1.0,0.6
+R0299,C0091,C0017,Prerequisite,0.7152,4,ac22778675fd4432954cba99c413b2ec,1.3 Rays and Angles A ray has one endpoint and extends in one direction.,provided,1,0.48,1.0,0.6
+R0300,C0132,C0135,Prerequisite,0.6981,6,985d0dfb7a0d4301903505c37f8f3530,"7.4 Proportionality Relationships The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally.",provided,1,0.7368,1.0,0.6
+R0301,C0093,C0029,Prerequisite,0.6959,4,ac22778675fd4432954cba99c413b2ec,An isosceles triangle has at least two congruent sides.,provided,1,0.5263,1.0,0.6
+R0302,C0092,C0014,Prerequisite,0.6931,4,ac22778675fd4432954cba99c413b2ec,A ruler postulate states that the points on a line can be matched with real numbers.,provided,1,0.24,1.0,0.6
+R0303,C0078,C0084,Prerequisite,0.6856,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,1,0.5263,1.0,0.6
+R0304,C0092,C0017,Prerequisite,0.6779,4,ac22778675fd4432954cba99c413b2ec,1.3 Rays and Angles A ray has one endpoint and extends in one direction.,provided,1,0.24,1.0,0.6
+R0305,C0075,C0083,Prerequisite,0.6734,4,557b39e17b7f417990560249e86c4ab7,4.1 Triangle Sums The triangle angle sum theorem states that the sum of the angles of a triangle is 180 degrees.,provided,1,0.4545,1.0,0.6
+R0306,C0132,C0134,Prerequisite,0.6605,6,985d0dfb7a0d4301903505c37f8f3530,"7.4 Proportionality Relationships The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally.",provided,1,0.7368,1.0,0.6
+R0307,C0068,C0019,Prerequisite,0.6543,3,1d60558a244947629b5c29d6d5401474,Supplementary angles are two angles whose measures sum to 180 degrees.,provided,1,0.6364,1.0,0.6
+R0308,C0079,C0085,Prerequisite,0.6418,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,1,0.4167,1.0,0.6
+R0309,C0133,C0015,Prerequisite,0.6307,6,985d0dfb7a0d4301903505c37f8f3530,A segment bisector is any figure that intersects a segment at its midpoint.,provided,1,0.7273,1.0,0.6
+R0310,C0140,C0149,Prerequisite,0.6228,6,a01285ffef4d49129e28880e62aa98c0,8.3 Special Right Triangles A 45 45 90 triangle has legs that are congruent and a hypotenuse that is the leg times the square root of 2.,provided,1,0.7647,1.0,0.6
+R0311,C0093,C0028,Prerequisite,0.5807,4,ac22778675fd4432954cba99c413b2ec,An equilateral triangle has three congruent sides.,provided,2,0.5263,1.0,0.6
+R0312,C0078,C0085,Prerequisite,0.5802,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,1,0.5263,1.0,0.6
+R0313,C0129,C0136,Prerequisite,0.5502,6,985d0dfb7a0d4301903505c37f8f3530,"7.3 Similarity by AA, SSS, SAS The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",provided,1,0.6111,1.0,0.6
+R0314,C0079,C0084,Prerequisite,0.5385,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,1,0.4167,1.0,0.6
+R0315,C0114,C0118,Prerequisite,0.5185,5,d739acfacd184742ba4e3691970b1a16,"6.4 Rectangles, Rhombuses, and Squares A rectangle is a parallelogram with four right angles.",provided,1,0.3158,1.0,0.6
+R0316,C0132,C0069,Prerequisite,0.512,6,985d0dfb7a0d4301903505c37f8f3530,3.1 Lines and Angles Parallel lines are lines in the same plane that never intersect.,provided,1,0.7368,1.0,0.6
+R0317,C0113,C0109,Prerequisite,0.5042,5,d739acfacd184742ba4e3691970b1a16,6.2 Properties of Parallelograms A parallelogram is a quadrilateral with both pairs of opposite sides parallel.,provided,1,0.1667,1.0,0.6
+R0318,C0081,C0087,Prerequisite,0.4743,4,557b39e17b7f417990560249e86c4ab7,Alternate exterior angles are outside the lines on opposite sides of the transversal.,provided,1,1.0,1.0,0.6
+R0319,C0188,C0189,Prerequisite,0.4675,8,ce24992c70584b3d9933eae0e864e5c7,The lateral area plus the base area.,provided,1,0.1818,1.0,0.6
+R0320,C0092,C0091,Prerequisite,0.4598,4,ac22778675fd4432954cba99c413b2ec,"When two angles and a non-included side of one triangle are congruent to the corresponding parts of another triangle, the triangles are congruent.",provided,1,0.3684,1.0,0.6
+R0321,C0115,C0117,Prerequisite,0.4509,5,d739acfacd184742ba4e3691970b1a16,6.5 Trapezoids and Kites A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases.,provided,1,0.1304,1.0,0.6
+R0322,C0079,C0082,Prerequisite,0.4339,4,ac22778675fd4432954cba99c413b2ec,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,2,0.5,1.0,0.6
+R0323,C0078,C0082,Prerequisite,0.4301,4,ac22778675fd4432954cba99c413b2ec,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,2,0.3478,1.0,0.6
+R0324,C0115,C0121,Prerequisite,0.4239,5,d739acfacd184742ba4e3691970b1a16,6.5 Trapezoids and Kites A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases.,provided,1,0.5556,1.0,0.6
+R0325,C0071,C0097,Prerequisite,0.4083,5,dcc5ef57dc414b30aae08912c0b4a2ca,5.2 Perpendicular Bisectors and Angle Bisectors The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.,provided,1,1.0,1.0,0.6
+R0326,C0071,C0070,Prerequisite,0.407,5,dcc5ef57dc414b30aae08912c0b4a2ca,Perpendicular lines intersect at a right angle.,provided,1,1.0,1.0,0.6
+R0327,C0071,C0001,Prerequisite,0.4031,5,dcc5ef57dc414b30aae08912c0b4a2ca,"CK-12 Basic Geometry Concepts Chapter 1: Basics of Geometry  1.1 Points, Lines, and Planes A point is a location with no dimension.",provided,1,1.0,1.0,0.6
+R0328,C0082,C0053,Prerequisite,0.3947,4,ac22778675fd4432954cba99c413b2ec,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,provided,1,1.0,1.0,0.6
+R0329,C0009,C0110,Prerequisite,0.3884,5,d739acfacd184742ba4e3691970b1a16,Congruent segments are segments that have the same length.,provided,1,0.2,1.0,0.3
+R0330,C0097,C0133,Prerequisite,0.3877,6,985d0dfb7a0d4301903505c37f8f3530,The angle bisector theorem states that any point on the angle bisector is equidistant from the sides of the angle.,provided,1,0.15,1.0,0.3
+R0331,C0091,C0084,Prerequisite,0.3834,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,1,0.3462,1.0,0.6
+R0332,C0114,C0122,Prerequisite,0.3787,5,d739acfacd184742ba4e3691970b1a16,"6.4 Rectangles, Rhombuses, and Squares A rectangle is a parallelogram with four right angles.",provided,1,0.3158,1.0,0.6
+R0333,C0091,C0085,Prerequisite,0.3783,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,1,0.3462,1.0,0.6
+R0334,C0186,C0185,Prerequisite,0.3645,8,ce24992c70584b3d9933eae0e864e5c7,11.3 Prisms and Cylinders The lateral area of a prism is the perimeter of the base times the height.,provided,1,0.0,1.0,0.6
+R0335,C0186,C0182,Prerequisite,0.3576,8,ce24992c70584b3d9933eae0e864e5c7,11.3 Prisms and Cylinders The lateral area of a prism is the perimeter of the base times the height.,provided,1,0.125,1.0,0.6
+R0336,C0011,C0015,Prerequisite,0.345,6,985d0dfb7a0d4301903505c37f8f3530,A segment bisector is any figure that intersects a segment at its midpoint.,provided,1,0.0588,1.0,0.3
+R0337,C0143,C0147,Prerequisite,0.3217,6,a01285ffef4d49129e28880e62aa98c0,SOH CAH TOA is the mnemonic to remember these ratios.,provided,1,0.3333,1.0,0.6
+R0338,C0143,C0148,Prerequisite,0.3182,6,a01285ffef4d49129e28880e62aa98c0,SOH CAH TOA is the mnemonic to remember these ratios.,provided,1,0.3333,1.0,0.6
+R0339,C0097,C0015,Prerequisite,0.3176,6,985d0dfb7a0d4301903505c37f8f3530,A segment bisector is any figure that intersects a segment at its midpoint.,provided,1,0.3,1.0,0.3
+R0340,C0067,C0066,Prerequisite,0.3143,3,1d60558a244947629b5c29d6d5401474,Alternate interior angles are between the lines on opposite sides of the transversal.,provided,1,0.75,1.0,0.6
+R0341,C0114,C0120,Prerequisite,0.3052,6,a01285ffef4d49129e28880e62aa98c0,"6.4 Rectangles, Rhombuses, and Squares A rectangle is a parallelogram with four right angles.",provided,1,0.0667,1.0,0.3
+R0342,C0054,C0053,Prerequisite,0.3007,4,ac22778675fd4432954cba99c413b2ec,2.4 Algebraic and Congruence Properties The reflexive property states that a segment or angle is congruent to itself.,provided,1,0.2593,1.0,0.3
+R0343,C0186,C0128,Prerequisite,0.2984,8,ce24992c70584b3d9933eae0e864e5c7,The perimeters of similar polygons have the same ratio as their corresponding sides.,provided,1,0.0769,1.0,0.6
+R0344,C0067,C0076,Prerequisite,0.2979,4,557b39e17b7f417990560249e86c4ab7,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.",provided,1,0.1429,1.0,0.3
+R0345,C0174,C0173,Prerequisite,0.2973,8,2fb919f5c54e4ce2b1aabaafafcf64d8,The arc addition postulate states that adjacent arc measures can be added.,provided,1,1.0,1.0,0.6
+R0346,C0082,C0095,Prerequisite,0.2896,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",provided,3,1.0,1.0,0.6
+R0347,C0041,C0003,Prerequisite,0.2886,2,8330efe39345401db8cec1fee2f68900,"CK-12 Basic Geometry Concepts Chapter 1: Basics of Geometry  1.1 Points, Lines, and Planes A point is a location with no dimension.",provided,1,1.0,1.0,0.3
+R0348,C0082,C0094,Prerequisite,0.2841,4,ac22778675fd4432954cba99c413b2ec,"4.4 Triangle Congruence using ASA, AAS, and HL The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",provided,3,1.0,1.0,0.6
+R0349,C0077,C0089,Prerequisite,0.2811,4,557b39e17b7f417990560249e86c4ab7,4.2 Congruent Figures Congruent polygons are polygons where all corresponding parts are congruent.,provided,1,0.6667,1.0,0.6
+R0350,C0078,C0079,Prerequisite,0.2787,4,557b39e17b7f417990560249e86c4ab7,"If two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",provided,1,0.5625,1.0,0.6
+R0351,C0082,C0014,Prerequisite,0.2703,4,ac22778675fd4432954cba99c413b2ec,A ruler postulate states that the points on a line can be matched with real numbers.,provided,1,1.0,1.0,0.6
+R0352,C0134,C0135,Prerequisite,0.2669,6,985d0dfb7a0d4301903505c37f8f3530,"7.4 Proportionality Relationships The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally.",provided,1,1.0,1.0,0.6
+R0353,C0188,C0187,Prerequisite,0.2635,8,ce24992c70584b3d9933eae0e864e5c7,11.4 Pyramids and Cones The lateral area of a regular pyramid is one half times the perimeter of the base times the slant height.,provided,1,0.0667,1.0,0.6
+R0354,C0066,C0087,Prerequisite,0.2625,4,557b39e17b7f417990560249e86c4ab7,Alternate exterior angles are outside the lines on opposite sides of the transversal.,provided,1,0.0952,1.0,0.3
+R0355,C0092,C0085,Prerequisite,0.2542,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,1,0.2609,1.0,0.6
+R0356,C0082,C0084,Prerequisite,0.249,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,3,0.6,1.0,0.6
+R0357,C0092,C0084,Prerequisite,0.2475,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,1,0.2609,1.0,0.6
+R0358,C0090,C0084,Prerequisite,0.2464,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,1,0.3913,1.0,0.6
+R0359,C0144,C0146,Prerequisite,0.2425,6,a01285ffef4d49129e28880e62aa98c0,"8.4 Sine, Cosine, and Tangent Ratios Trigonometry is the study of the relationships between sides and angles of right triangles.",provided,1,1.0,1.0,0.6
+R0360,C0013,C0014,Prerequisite,0.2331,4,ac22778675fd4432954cba99c413b2ec,A ruler postulate states that the points on a line can be matched with real numbers.,provided,1,0.0357,1.0,0.3
+R0361,C0082,C0085,Prerequisite,0.2325,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,3,0.6,1.0,0.6
+R0362,C0090,C0085,Prerequisite,0.2323,4,557b39e17b7f417990560249e86c4ab7,"4.3 Triangle Congruence using SSS and SAS The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",provided,1,0.3913,1.0,0.6
+R0363,C0089,C0110,Prerequisite,0.2287,5,d739acfacd184742ba4e3691970b1a16,Congruent segments are segments that have the same length.,provided,1,0.1765,1.0,0.3
+R0364,C0082,C0017,Prerequisite,0.228,4,ac22778675fd4432954cba99c413b2ec,1.3 Rays and Angles A ray has one endpoint and extends in one direction.,provided,1,1.0,1.0,0.6

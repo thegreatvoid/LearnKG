@@ -1,0 +1,226 @@
+{
+  "kg_dir": "data_output\\ck12_geometry",
+  "concepts": 130,
+  "concepts_located_in_text": 130,
+  "concepts_not_located": [],
+  "sections_detected": 59,
+  "by_relation_type": {
+    "Application": {
+      "n_edges": 2,
+      "expected_direction": "none",
+      "char": {
+        "forward": 2,
+        "backward": 0,
+        "tie": 0,
+        "unlocated": 0,
+        "forward_rate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "p_vs_random": 0.5
+      },
+      "section": {
+        "forward": 2,
+        "backward": 0,
+        "tie": 0,
+        "unlocated": 0,
+        "forward_rate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "p_vs_random": 0.5
+      }
+    },
+    "Extension": {
+      "n_edges": 2,
+      "expected_direction": "backward",
+      "char": {
+        "forward": 1,
+        "backward": 1,
+        "tie": 0,
+        "unlocated": 0,
+        "forward_rate": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "p_vs_random": 1.0
+      },
+      "section": {
+        "forward": 1,
+        "backward": 1,
+        "tie": 0,
+        "unlocated": 0,
+        "forward_rate": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "p_vs_random": 1.0
+      }
+    },
+    "Part-of": {
+      "n_edges": 6,
+      "expected_direction": "none",
+      "char": {
+        "forward": 6,
+        "backward": 0,
+        "tie": 0,
+        "unlocated": 0,
+        "forward_rate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "p_vs_random": 0.03125
+      },
+      "section": {
+        "forward": 5,
+        "backward": 0,
+        "tie": 1,
+        "unlocated": 0,
+        "forward_rate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "p_vs_random": 0.0625
+      }
+    },
+    "Prerequisite": {
+      "n_edges": 34,
+      "expected_direction": "forward",
+      "char": {
+        "forward": 18,
+        "backward": 13,
+        "tie": 3,
+        "unlocated": 0,
+        "forward_rate": 0.5806451612903226,
+        "ci95": [
+          0.3870967741935484,
+          0.7419354838709677
+        ],
+        "p_vs_random": 0.47312965989112854
+      },
+      "section": {
+        "forward": 14,
+        "backward": 12,
+        "tie": 8,
+        "unlocated": 0,
+        "forward_rate": 0.5384615384615384,
+        "ci95": [
+          0.34615384615384615,
+          0.7307692307692307
+        ],
+        "p_vs_random": 0.8450189828872681
+      }
+    },
+    "Similarity": {
+      "n_edges": 46,
+      "expected_direction": "none",
+      "char": {
+        "forward": 41,
+        "backward": 4,
+        "tie": 1,
+        "unlocated": 0,
+        "forward_rate": 0.9111111111111111,
+        "ci95": [
+          0.8222222222222222,
+          0.9777777777777777
+        ],
+        "p_vs_random": 9.334883088740753e-09
+      },
+      "section": {
+        "forward": 39,
+        "backward": 1,
+        "tie": 6,
+        "unlocated": 0,
+        "forward_rate": 0.975,
+        "ci95": [
+          0.925,
+          1.0
+        ],
+        "p_vs_random": 7.457856554538012e-11
+      }
+    }
+  },
+  "prereq_closure_agreement": {
+    "forward": 20,
+    "backward": 18,
+    "tie": 3,
+    "unlocated": 0,
+    "forward_rate": 0.5263157894736842,
+    "ci95": [
+      0.3684210526315789,
+      0.6842105263157895
+    ],
+    "p_vs_random": 0.8714146793645341
+  },
+  "prereq_depth_vs_position": {
+    "n_nodes": 48,
+    "kendall_tau_b": -0.04224091095712907,
+    "p_value": 0.7143349514895999,
+    "max_depth": 3
+  },
+  "prereq_weight_auc_forward": {
+    "n": 31,
+    "n_forward": 18,
+    "roc_auc": 0.4829059829059829
+  },
+  "gold_reference": {
+    "gold_positive": {
+      "char": {
+        "forward": 394,
+        "backward": 46,
+        "tie": 4,
+        "unlocated": 80,
+        "forward_rate": 0.8954545454545455,
+        "ci95": [
+          0.8681818181818182,
+          0.9227272727272727
+        ],
+        "p_vs_random": 5.022748017742774e-70
+      },
+      "section": {
+        "forward": 370,
+        "backward": 41,
+        "tie": 33,
+        "unlocated": 80,
+        "forward_rate": 0.9002433090024331,
+        "ci95": [
+          0.8686131386861314,
+          0.9294403892944039
+        ],
+        "p_vs_random": 2.371595692942383e-67
+      }
+    },
+    "gold_negative": {
+      "char": {
+        "forward": 321,
+        "backward": 668,
+        "tie": 4,
+        "unlocated": 164,
+        "forward_rate": 0.32457027300303337,
+        "ci95": [
+          0.2972699696663296,
+          0.3538928210313448
+        ],
+        "p_vs_random": 1.0177048566781316e-28
+      },
+      "section": {
+        "forward": 300,
+        "backward": 628,
+        "tie": 65,
+        "unlocated": 164,
+        "forward_rate": 0.3232758620689655,
+        "ci95": [
+          0.2952586206896552,
+          0.35344827586206895
+        ],
+        "p_vs_random": 2.0017279249115638e-27
+      }
+    }
+  }
+}

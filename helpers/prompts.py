@@ -3,6 +3,7 @@ from yachalk import chalk
 sys.path.append("..")
 
 import json
+import re
 import ollama.client as client
 
 

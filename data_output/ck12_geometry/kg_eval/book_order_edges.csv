@@ -1,0 +1,91 @@
+relation_id,source_name,target_name,relation_type,weight,source_pos,target_pos,dir_char,dir_section
+R0001,Angle,Complementary,Part-of,0.292,1381,1910,forward,forward
+R0002,Angle,Supplementary,Part-of,0.3113,1381,1980,forward,forward
+R0003,Angle,Linear Pair,Part-of,0.2728,1381,2053,forward,forward
+R0004,Angle,Vertical Angles,Part-of,0.3335,1381,2115,forward,forward
+R0005,Polygon,Interior Angle,Part-of,0.2602,2919,3237,forward,tie
+R0006,Conjecture,Inductive Reasoning,Prerequisite,0.2971,3451,3350,backward,tie
+R0007,Deductive Reasoning,Proof,Prerequisite,0.3178,4118,3339,backward,backward
+R0008,Angle,Congruence,Similarity,0.94,1381,4437,forward,forward
+R0009,Angle,Congruence Properties,Similarity,0.4298,1381,4437,forward,forward
+R0010,Congruence,Congruence Properties,Similarity,0.4298,4437,4437,tie,tie
+R0011,Theorem,Proof,Application,0.3143,2828,3339,forward,forward
+R0012,Parallel,Corresponding Angles,Prerequisite,0.46,5153,5452,forward,forward
+R0013,Parallel,Alternate Interior Angles,Prerequisite,0.335,5153,5520,forward,forward
+R0014,Parallel,Transversal,Prerequisite,0.488,5153,5323,forward,forward
+R0015,Slope,Parallel,Prerequisite,0.2386,6580,5153,backward,backward
+R0016,Slope,Perpendicular,Prerequisite,0.215,6580,5166,backward,backward
+R0017,Triangle,Exterior Angle,Part-of,0.3805,2321,5616,forward,forward
+R0018,Triangle,Congruence,Application,0.4443,2321,4437,forward,forward
+R0019,Postulate,Triangle,Similarity,0.4443,976,2321,forward,forward
+R0020,Postulate,Congruence,Similarity,0.94,976,4437,forward,forward
+R0021,Postulate,SAS,Similarity,0.732,976,7814,forward,forward
+R0022,Postulate,SSS,Similarity,0.732,976,7806,forward,forward
+R0023,Postulate,Triangle Congruence,Similarity,0.94,976,7780,forward,forward
+R0024,Triangle,Congruence,Similarity,0.4443,2321,4437,forward,forward
+R0025,Triangle,SAS,Similarity,0.4493,2321,7814,forward,forward
+R0026,Triangle,SSS,Similarity,0.4493,2321,7806,forward,forward
+R0027,Triangle,Triangle Congruence,Similarity,0.4443,2321,7780,forward,forward
+R0028,Congruence,SAS,Similarity,0.652,4437,7814,forward,forward
+R0029,Congruence,SSS,Similarity,0.652,4437,7806,forward,forward
+R0030,Congruence,Triangle Congruence,Similarity,0.94,4437,7780,forward,forward
+R0031,SAS,SSS,Similarity,0.94,7814,7806,backward,tie
+R0032,SAS,Triangle Congruence,Similarity,0.652,7814,7780,backward,tie
+R0033,SSS,Triangle Congruence,Similarity,0.652,7806,7780,backward,tie
+R0034,Postulate,Angle,Similarity,0.94,976,1381,forward,forward
+R0035,Angle,Triangle,Similarity,0.4443,1381,2321,forward,forward
+R0036,Postulate,ASA,Similarity,0.86,976,8271,forward,forward
+R0037,Postulate,AAS,Similarity,0.86,976,8276,forward,forward
+R0038,Angle,Triangle Congruence,Similarity,0.86,1381,7780,forward,forward
+R0039,Angle,ASA,Similarity,0.86,1381,8271,forward,forward
+R0040,Angle,AAS,Similarity,0.86,1381,8276,forward,forward
+R0041,Triangle,ASA,Similarity,0.3643,2321,8271,forward,forward
+R0042,Triangle,AAS,Similarity,0.3643,2321,8276,forward,forward
+R0043,Congruence,ASA,Similarity,0.86,4437,8271,forward,forward
+R0044,Congruence,AAS,Similarity,0.86,4437,8276,forward,forward
+R0045,Triangle Congruence,ASA,Similarity,0.86,7780,8271,forward,forward
+R0046,Triangle Congruence,AAS,Similarity,0.86,7780,8276,forward,forward
+R0047,ASA,AAS,Similarity,0.86,8271,8276,forward,tie
+R0048,Angle,Theorem,Similarity,0.7736,1381,2828,forward,forward
+R0049,Triangle,Theorem,Similarity,0.4647,2321,2828,forward,tie
+R0050,Theorem,Congruence,Similarity,0.6936,2828,4437,forward,forward
+R0051,Line Segment,Triangle,Prerequisite,0.215,422,2321,forward,forward
+R0052,Parallelogram,Rectangle,Extension,0.3321,11123,11607,forward,forward
+R0053,Postulate,Similarity,Similarity,0.5862,976,12263,forward,forward
+R0054,Angle,SAS,Similarity,0.652,1381,7814,forward,forward
+R0055,Angle,SSS,Similarity,0.652,1381,7806,forward,forward
+R0056,Angle,Similarity,Similarity,0.5862,1381,12263,forward,forward
+R0057,Triangle,Similarity,Similarity,0.372,2321,12263,forward,forward
+R0058,SAS,Similarity,Similarity,0.5767,7814,12263,forward,forward
+R0059,SSS,Similarity,Similarity,0.5767,7806,12263,forward,forward
+R0060,Right Triangle,Pythagorean Theorem,Prerequisite,0.94,2697,13604,forward,forward
+R0061,Pythagorean Theorem,Right Triangle,Extension,0.86,13604,2697,backward,backward
+R0062,Right Triangle,Trigonometry,Prerequisite,0.3095,2697,13582,forward,forward
+R0063,Central Angle,Inscribed Angles,Prerequisite,0.39,15428,15976,forward,forward
+R0064,Chord,Secant,Similarity,0.38,15092,16333,forward,forward
+R0065,Circumference,Arc,Prerequisite,0.86,17487,15421,backward,backward
+R0066,Plane,Cross Section,Prerequisite,0.2843,84,18399,forward,forward
+R0067,Area,Prism,Prerequisite,0.416,16872,18105,forward,forward
+R0068,Bases,Cylinder,Similarity,0.3562,12042,18475,forward,forward
+R0069,Bases,Prism,Similarity,0.295,12042,18105,forward,forward
+R0070,Cylinder,Prism,Similarity,0.3873,18475,18105,backward,backward
+R0071,Circle,Cylinder,Prerequisite,0.215,14893,18475,forward,forward
+R0072,Circle,Sphere,Prerequisite,0.3497,14893,19179,forward,forward
+R0073,Remote Interior Angles,Exterior Angle,Prerequisite,0.4743,7400,5616,backward,backward
+R0074,Perpendicular Bisector,Angle Bisector,Prerequisite,0.4083,6930,9540,forward,forward
+R0075,Perpendicular Bisector,Perpendicular,Prerequisite,0.407,6930,5166,backward,backward
+R0076,Perpendicular Bisector,Point,Prerequisite,0.4031,6930,65,backward,backward
+R0077,Triangle Congruence,Congruence,Prerequisite,0.3947,7780,4437,backward,backward
+R0078,Angle Bisector,Bisector,Prerequisite,0.3176,9540,1206,backward,backward
+R0079,Congruence Properties,Congruence,Prerequisite,0.3007,4437,4437,tie,tie
+R0080,Triangle Congruence,ASA,Prerequisite,0.2896,7780,8271,forward,forward
+R0081,Classifying Polygons,Plane,Prerequisite,0.2886,2907,84,backward,backward
+R0082,Triangle Congruence,AAS,Prerequisite,0.2841,7780,8276,forward,forward
+R0083,Triangle Congruence,Postulate,Prerequisite,0.2703,7780,976,backward,backward
+R0084,Proportionality Relationships,Proportionality,Prerequisite,0.2669,13239,13239,tie,tie
+R0085,Alternate Interior Angles,Exterior Angle,Prerequisite,0.2625,5520,5616,forward,tie
+R0086,Triangle Congruence,SSS,Prerequisite,0.249,7780,7806,forward,tie
+R0087,Exploring Symmetry,Line Symmetry,Prerequisite,0.246,19554,19586,forward,tie
+R0088,Tangent Ratio,Tangent,Prerequisite,0.2425,14524,14524,tie,tie
+R0089,Triangle Congruence,SAS,Prerequisite,0.2325,7780,7814,forward,tie
+R0090,Triangle Congruence,Angle,Prerequisite,0.228,7780,1381,backward,backward
