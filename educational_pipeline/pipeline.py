@@ -37,6 +37,8 @@ def run_educational_pipeline(
     output_html: str = "./docs/index.html",
     model: Optional[str] = "zephyr:latest",
     use_llm: bool = True,
+    use_neural_model: bool = True,
+    neural_threshold: float = -0.5,
     show_edge_labels: bool = False,
     show_edge_tooltips: bool = True,
 ) -> Tuple[Path, Path, nx.DiGraph]:
@@ -202,6 +204,25 @@ def run_educational_pipeline(
             page=chunk.page,
             chunk_id=chunk.chunk_id,
         )
+
+    # D. Extract Neural Prerequisite Relations using Cross-Encoder on GPU
+    if use_neural_model:
+        try:
+            from .neural_prerequisite_extractor import NeuralPrerequisiteExtractor
+            extractor = NeuralPrerequisiteExtractor(threshold=neural_threshold)
+            neural_rels = extractor.extract_prerequisites(normalizer=normalizer, chunks=chunks)
+            for nr in neural_rels:
+                relation_manager.add_relation(
+                    source_name=nr["source_name"],
+                    target_name=nr["target_name"],
+                    relation_type=nr["relation_type"],
+                    evidence=nr["evidence"],
+                    page=nr.get("page", 1),
+                    chunk_id=nr.get("chunk_id", ""),
+                    weight=nr.get("weight", None),
+                )
+        except Exception as e:
+            print(f"[-] Neural extraction skipped due to error: {e}")
 
     # -------------------------------------------------------------------------
     # Step 10: Dataset Construction ({concepts.csv, relations.csv})

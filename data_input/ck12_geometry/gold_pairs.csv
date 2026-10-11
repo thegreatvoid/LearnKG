@@ -1,0 +1,134 @@
+concept_a,concept_b,relation_type,chapter,note
+point,line,Prerequisite,1,Points are needed to define lines
+point,plane,Prerequisite,1,Points are needed to define planes
+line,plane,Prerequisite,1,Lines lie within planes
+line segment,line,Part-of,1,Line segment is part of a line
+ray,line,Part-of,1,Ray is part of a line
+collinear points,line,Part-of,1,Collinear points lie on same line
+coplanar points,plane,Part-of,1,Coplanar points lie on same plane
+midpoint,line segment,Part-of,1,Midpoint is on a segment
+segment bisector,midpoint,Application,1,Bisector intersects at midpoint
+angle,ray,Prerequisite,1,Rays form angles
+vertex,angle,Part-of,1,Vertex is endpoint of the rays forming angle
+acute angle,angle,Part-of,1,Acute angle is a type of angle
+right angle,angle,Part-of,1,Right angle is a type of angle
+obtuse angle,angle,Part-of,1,Obtuse angle is a type of angle
+straight angle,angle,Part-of,1,Straight angle is a type of angle
+complementary angles,angle,Part-of,1,Complementary pair of angles
+supplementary angles,angle,Part-of,1,Supplementary pair of angles
+vertical angles,angle,Prerequisite,1,Vertical angles formed by two intersecting lines
+linear pair,supplementary angles,Extension,1,Linear pair is a specific supplementary pair
+triangle,line segment,Prerequisite,1,Triangle is made of segments
+right angle,triangle,Prerequisite,1,Right angle needed to classify right triangle
+equilateral triangle,triangle,Part-of,1,Equilateral is a type of triangle
+isosceles triangle,triangle,Part-of,1,Isosceles is a type of triangle
+scalene triangle,triangle,Part-of,1,Scalene is a type of triangle
+acute triangle,triangle,Part-of,1,Acute is a type of triangle
+right triangle,triangle,Part-of,1,Right is a type of triangle
+obtuse triangle,triangle,Part-of,1,Obtuse is a type of triangle
+polygon,line segment,Prerequisite,1,Polygon made of segments
+triangle,polygon,Part-of,1,Triangle is a polygon
+quadrilateral,polygon,Part-of,1,Quadrilateral is a polygon
+regular polygon,polygon,Extension,1,Regular polygon is a special polygon
+inductive reasoning,conjecture,Application,2,Inductive reasoning produces conjectures
+counterexample,conjecture,Application,2,Counterexample disproves conjecture
+conditional statement,hypothesis,Prerequisite,2,Conditional statement has hypothesis
+conditional statement,conclusion,Prerequisite,2,Conditional statement has conclusion
+converse,conditional statement,Extension,2,Converse derived from conditional
+contrapositive,conditional statement,Extension,2,Contrapositive derived from conditional
+deductive reasoning,law of detachment,Application,2,Deductive reasoning uses law of detachment
+deductive reasoning,law of syllogism,Application,2,Deductive reasoning uses law of syllogism
+reflexive property,congruence,Application,2,Reflexive property used in congruence proofs
+transitive property,congruence,Application,2,Transitive property used in congruence
+parallel lines,line,Prerequisite,3,Parallel lines are two lines
+transversal,parallel lines,Application,3,Transversal intersects parallel lines
+corresponding angles,parallel lines,Application,3,Corresponding angles formed by parallel lines and transversal
+alternate interior angles,parallel lines,Application,3,Alternate interior angles formed by parallel lines
+alternate exterior angles,parallel lines,Application,3,Alternate exterior angles formed by parallel lines
+perpendicular lines,right angle,Prerequisite,3,Perpendicular lines form right angles
+perpendicular bisector,midpoint,Application,3,Perpendicular bisector meets segment at midpoint
+slope,parallel lines,Application,3,Parallel lines have equal slopes
+triangle angle sum theorem,triangle,Application,4,Applies to any triangle
+exterior angle theorem,triangle angle sum theorem,Extension,4,Derived from triangle angle sum
+congruent figures,polygon,Prerequisite,4,Congruence applies to polygons
+SSS congruence,triangle,Application,4,SSS postulate proves triangle congruence
+SAS congruence,triangle,Application,4,SAS postulate proves triangle congruence
+ASA congruence,triangle,Application,4,ASA postulate proves triangle congruence
+AAS congruence,triangle,Application,4,AAS theorem proves triangle congruence
+hypotenuse leg,right triangle,Application,4,HL theorem is for right triangles
+CPCTC,congruent figures,Application,4,CPCTC used after proving congruence
+isosceles triangle theorem,isosceles triangle,Application,4,Theorem about isosceles triangles
+equilateral triangle,isosceles triangle,Extension,4,Equilateral is special case of isosceles
+midsegment,midpoint,Prerequisite,5,Midsegment connects midpoints
+midsegment,parallel lines,Application,5,Midsegment is parallel to base
+circumcenter,perpendicular bisector,Application,5,Circumcenter is intersection of perpendicular bisectors
+incenter,angle bisector,Application,5,Incenter is intersection of angle bisectors
+centroid,median,Application,5,Centroid is intersection of medians
+orthocenter,altitude,Application,5,Orthocenter is intersection of altitudes
+triangle inequality theorem,triangle,Application,5,Inequality theorem applies to triangles
+interior angle sum,polygon,Application,6,Interior angle sum formula for polygons
+exterior angle sum,polygon,Application,6,Exterior angle sum for convex polygons
+diagonal,polygon,Prerequisite,6,Diagonal connects non-adjacent vertices
+parallelogram,parallel lines,Prerequisite,6,Parallelogram has two pairs of parallel lines
+rectangle,parallelogram,Extension,6,Rectangle is a special parallelogram
+rhombus,parallelogram,Extension,6,Rhombus is a special parallelogram
+square,rectangle,Extension,6,Square is a special rectangle
+square,rhombus,Extension,6,Square is also a rhombus
+trapezoid,quadrilateral,Part-of,6,Trapezoid is a quadrilateral
+kite,quadrilateral,Part-of,6,Kite is a quadrilateral
+ratio,proportion,Prerequisite,7,Ratios are used in proportions
+scale factor,similar polygons,Application,7,Scale factor measures similarity
+similar polygons,proportion,Application,7,Similar polygons have proportional sides
+AA similarity,triangle,Application,7,AA postulate proves triangle similarity
+SSS similarity,triangle,Application,7,SSS theorem proves triangle similarity
+SAS similarity,triangle,Application,7,SAS theorem proves triangle similarity
+Pythagorean theorem,right triangle,Application,8,Applies to right triangles
+Pythagorean theorem,hypotenuse,Prerequisite,8,Pythagorean theorem involves hypotenuse
+45-45-90 triangle,right triangle,Part-of,8,Special case of right triangle
+30-60-90 triangle,right triangle,Part-of,8,Special case of right triangle
+sine,right triangle,Application,8,Sine ratio used in right triangles
+cosine,right triangle,Application,8,Cosine ratio used in right triangles
+tangent,right triangle,Application,8,Tangent ratio used in right triangles
+trigonometry,Pythagorean theorem,Extension,8,Trigonometry extends right triangle concepts
+circle,radius,Prerequisite,9,Radius defines circle
+circle,center,Prerequisite,9,Center defines circle
+chord,circle,Part-of,9,Chord is part of circle
+diameter,chord,Extension,9,Diameter is a special chord
+tangent line,radius,Application,9,Tangent perpendicular to radius
+arc,central angle,Application,9,Central angle defines arc
+inscribed angle,arc,Application,9,Inscribed angle subtends arc
+inscribed angle theorem,inscribed angle,Application,9,Theorem about inscribed angles
+secant,circle,Application,9,Secant intersects circle at two points
+perimeter,polygon,Application,10,Perimeter is sum of sides of polygon
+area,polygon,Application,10,Area measures interior of polygon
+area of triangle,triangle,Application,10,Formula for triangle area
+area of parallelogram,parallelogram,Application,10,Formula for parallelogram area
+area of trapezoid,trapezoid,Application,10,Formula for trapezoid area
+circumference,circle,Application,10,Circumference is perimeter of circle
+arc length,arc,Application,10,Arc length is portion of circumference
+area of circle,radius,Application,10,Area formula uses radius
+area of sector,arc,Application,10,Sector area uses arc measure
+polyhedron,polygon,Prerequisite,11,Polyhedron faces are polygons
+prism,polyhedron,Part-of,11,Prism is a type of polyhedron
+pyramid,polyhedron,Part-of,11,Pyramid is a type of polyhedron
+Euler's formula,polyhedron,Application,11,Euler's formula applies to polyhedra
+surface area,prism,Application,11,Surface area of a prism
+volume,prism,Application,11,Volume of a prism
+cylinder,circle,Prerequisite,11,Cylinder has circular bases
+volume of cylinder,cylinder,Application,11,Volume formula for cylinder
+cone,circle,Prerequisite,11,Cone has circular base
+volume of cone,cone,Application,11,Volume formula for cone
+volume of pyramid,pyramid,Application,11,Volume formula for pyramid
+sphere,circle,Extension,11,Sphere is 3D version of circle
+surface area of sphere,sphere,Application,11,Surface area formula for sphere
+volume of sphere,sphere,Application,11,Volume formula for sphere
+line symmetry,reflection,Application,12,Line symmetry related to reflection
+rotational symmetry,rotation,Application,12,Rotational symmetry related to rotation
+translation,vector,Application,12,Translation uses vector
+isometry,transformation,Prerequisite,12,Isometry is a distance-preserving transformation
+reflection,isometry,Part-of,12,Reflection is an isometry
+rotation,isometry,Part-of,12,Rotation is an isometry
+translation,isometry,Part-of,12,Translation is an isometry
+glide reflection,reflection,Part-of,12,Glide reflection combines reflection and translation
+glide reflection,translation,Part-of,12,Glide reflection combines reflection and translation
+composition of transformations,isometry,Application,12,Composition of isometries is an isometry

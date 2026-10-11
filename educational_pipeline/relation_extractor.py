@@ -250,55 +250,55 @@ class RelationManager:
         all_concepts = self.normalizer.get_all_concepts()
         if len(all_concepts) < 2:
             return
-
         # Explicit high-confidence pedagogical patterns for geometry textbook exposition
+        # In this ontology, (A -> B, "Prerequisite") means A must be understood BEFORE B.
         pedagogical_rules = [
             # ── Triangle prerequisites ──────────────────────────────────────────────
-            (re.compile(r"pythagorean theorem", re.I), "Pythagorean Theorem", "Right Triangle", "Prerequisite"),
-            (re.compile(r"converse of the pythagorean theorem", re.I), "Right Triangle", "Pythagorean Theorem", "Extension"),
-            (re.compile(r"special right triangles.*45.*60|45.*60.*special right", re.I), "Special Right Triangles", "Right Triangle", "Extension"),
-            (re.compile(r"triangle inequality", re.I), "Triangle", "Line Segment", "Prerequisite"),
-            (re.compile(r"congruent triangles|triangle congruence", re.I), "Congruence", "Triangle", "Application"),
-            (re.compile(r"similar triangles|triangle similarity", re.I), "Similarity", "Triangle", "Application"),
+            (re.compile(r"pythagorean theorem", re.I), "Right Triangle", "Pythagorean Theorem", "Prerequisite"),
+            (re.compile(r"converse of the pythagorean theorem", re.I), "Pythagorean Theorem", "Right Triangle", "Extension"),
+            (re.compile(r"special right triangles.*45.*60|45.*60.*special right", re.I), "Right Triangle", "Special Right Triangles", "Extension"),
+            (re.compile(r"triangle inequality", re.I), "Line Segment", "Triangle", "Prerequisite"),
+            (re.compile(r"congruent triangles|triangle congruence", re.I), "Triangle", "Congruence", "Application"),
+            (re.compile(r"similar triangles|triangle similarity", re.I), "Triangle", "Similarity", "Application"),
             # ── Angle prerequisites ─────────────────────────────────────────────────
-            (re.compile(r"sum of interior angles.*polygon|polygon.*sum of interior angles", re.I), "Interior Angle", "Polygon", "Part-of"),
-            (re.compile(r"exterior angle.*triangle|remote interior", re.I), "Exterior Angle", "Triangle", "Part-of"),
+            (re.compile(r"sum of interior angles.*polygon|polygon.*sum of interior angles", re.I), "Polygon", "Interior Angle", "Part-of"),
+            (re.compile(r"exterior angle.*triangle|remote interior", re.I), "Triangle", "Exterior Angle", "Part-of"),
             (re.compile(r"parallel lines.*transversal|transversal.*parallel", re.I), "Parallel", "Transversal", "Prerequisite"),
-            (re.compile(r"alternate interior angles", re.I), "Alternate Interior Angles", "Parallel", "Prerequisite"),
-            (re.compile(r"corresponding angles", re.I), "Corresponding Angles", "Parallel", "Prerequisite"),
-            (re.compile(r"supplementary angles", re.I), "Supplementary", "Angle", "Part-of"),
-            (re.compile(r"complementary angles", re.I), "Complementary", "Angle", "Part-of"),
-            (re.compile(r"vertical angles", re.I), "Vertical Angles", "Angle", "Part-of"),
-            (re.compile(r"linear pair", re.I), "Linear Pair", "Angle", "Part-of"),
+            (re.compile(r"alternate interior angles", re.I), "Parallel", "Alternate Interior Angles", "Prerequisite"),
+            (re.compile(r"corresponding angles", re.I), "Parallel", "Corresponding Angles", "Prerequisite"),
+            (re.compile(r"supplementary angles", re.I), "Angle", "Supplementary", "Part-of"),
+            (re.compile(r"complementary angles", re.I), "Angle", "Complementary", "Part-of"),
+            (re.compile(r"vertical angles", re.I), "Angle", "Vertical Angles", "Part-of"),
+            (re.compile(r"linear pair", re.I), "Angle", "Linear Pair", "Part-of"),
             # ── Circles ─────────────────────────────────────────────────────────────
-            (re.compile(r"inscribed angle.*central angle|central angle.*arc", re.I), "Inscribed Angle", "Central Angle", "Prerequisite"),
-            (re.compile(r"arc length.*circumference|circumference.*arc", re.I), "Arc", "Circumference", "Prerequisite"),
-            (re.compile(r"tangent.*radius.*perpendicular|radius.*tangent", re.I), "Tangent", "Radius", "Prerequisite"),
-            (re.compile(r"secant.*chord|chord.*secant", re.I), "Secant", "Chord", "Similarity"),
-            (re.compile(r"diameter.*radius|two times.*radius", re.I), "Diameter", "Radius", "Part-of"),
+            (re.compile(r"inscribed angle.*central angle|central angle.*arc", re.I), "Central Angle", "Inscribed Angle", "Prerequisite"),
+            (re.compile(r"arc length.*circumference|circumference.*arc", re.I), "Circumference", "Arc", "Prerequisite"),
+            (re.compile(r"tangent.*radius.*perpendicular|radius.*tangent", re.I), "Radius", "Tangent", "Prerequisite"),
+            (re.compile(r"secant.*chord|chord.*secant", re.I), "Chord", "Secant", "Similarity"),
+            (re.compile(r"diameter.*radius|two times.*radius", re.I), "Radius", "Diameter", "Part-of"),
             # ── Quadrilaterals ───────────────────────────────────────────────────────
             (re.compile(r"rectangle.*parallelogram|rhombus.*parallelogram|square.*parallelogram", re.I), "Parallelogram", "Rectangle", "Extension"),
             (re.compile(r"isosceles trapezoid", re.I), "Isosceles Triangle", "Trapezoid", "Similarity"),
-            (re.compile(r"kite.*perpendicular diagonals", re.I), "Kite", "Perpendicular", "Prerequisite"),
+            (re.compile(r"kite.*perpendicular diagonals", re.I), "Perpendicular", "Kite", "Prerequisite"),
             # ── Similarity & proportionality ─────────────────────────────────────────
             (re.compile(r"scale factor.*dilation|dilation.*scale factor", re.I), "Scale Factor", "Dilation", "Part-of"),
-            (re.compile(r"aa similarity|sas similarity|sss similarity", re.I), "Similarity", "Triangle", "Application"),
+            (re.compile(r"aa similarity|sas similarity|sss similarity", re.I), "Triangle", "Similarity", "Application"),
             # ── Coordinate geometry ──────────────────────────────────────────────────
             (re.compile(r"slope.*parallel|parallel.*slope", re.I), "Slope", "Parallel", "Prerequisite"),
             (re.compile(r"slope.*perpendicular|perpendicular.*slope", re.I), "Slope", "Perpendicular", "Prerequisite"),
-            (re.compile(r"distance formula", re.I), "Distance Formula", "Coordinate Plane", "Application"),
-            (re.compile(r"midpoint formula", re.I), "Midpoint Formula", "Coordinate Plane", "Application"),
+            (re.compile(r"distance formula", re.I), "Coordinate Plane", "Distance Formula", "Application"),
+            (re.compile(r"midpoint formula", re.I), "Coordinate Plane", "Midpoint Formula", "Application"),
             # ── 3D geometry ──────────────────────────────────────────────────────────
-            (re.compile(r"surface area.*prism|volume.*prism", re.I), "Prism", "Area", "Prerequisite"),
-            (re.compile(r"surface area.*cylinder|volume.*cylinder", re.I), "Cylinder", "Circle", "Prerequisite"),
-            (re.compile(r"surface area.*sphere|volume.*sphere", re.I), "Sphere", "Circle", "Prerequisite"),
-            (re.compile(r"cross.?section", re.I), "Cross Section", "Plane", "Prerequisite"),
+            (re.compile(r"surface area.*prism|volume.*prism", re.I), "Area", "Prism", "Prerequisite"),
+            (re.compile(r"surface area.*cylinder|volume.*cylinder", re.I), "Circle", "Cylinder", "Prerequisite"),
+            (re.compile(r"surface area.*sphere|volume.*sphere", re.I), "Circle", "Sphere", "Prerequisite"),
+            (re.compile(r"cross.?section", re.I), "Plane", "Cross Section", "Prerequisite"),
             # ── Proofs & reasoning ───────────────────────────────────────────────────
-            (re.compile(r"two.?column proof|paragraph proof|flow proof", re.I), "Proof", "Theorem", "Application"),
-            (re.compile(r"inductive reasoning.*conjecture|conjecture.*inductive", re.I), "Inductive Reasoning", "Conjecture", "Prerequisite"),
+            (re.compile(r"two.?column proof|paragraph proof|flow proof", re.I), "Theorem", "Proof", "Application"),
+            (re.compile(r"inductive reasoning.*conjecture|conjecture.*inductive", re.I), "Conjecture", "Inductive Reasoning", "Prerequisite"),
             (re.compile(r"deductive reasoning", re.I), "Deductive Reasoning", "Proof", "Prerequisite"),
-            (re.compile(r"trigonometric ratio|sine.*cosine|cosine.*sine", re.I), "Trigonometry", "Right Triangle", "Prerequisite"),
-            (re.compile(r"fractal.*self.?similar|self.?similar.*fractal", re.I), "Fractal", "Self Similarity", "Part-of"),
+            (re.compile(r"trigonometric ratio|sine.*cosine|cosine.*sine", re.I), "Right Triangle", "Trigonometry", "Prerequisite"),
+            (re.compile(r"fractal.*self.?similar|self.?similar.*fractal", re.I), "Self Similarity", "Fractal", "Part-of"),
         ]
 
         for sentence in sentences:
@@ -331,17 +331,43 @@ class RelationManager:
             # If at least 2 distinct concepts appear in the same sentence
             if len(found) >= 2:
                 for i in range(len(found)):
-                    for j in range(len(found)):
-                        if i == j:
-                            continue
+                    for j in range(i + 1, len(found)):
                         c1 = found[i]
                         c2 = found[j]
 
                         # Check linguistic patterns between c1 and c2
                         s_lower = sentence_clean.lower()
                         for ont, keywords in ONTOLOGY_PATTERNS.items():
+                            matched_kw = False
                             for kw in keywords:
                                 if kw in s_lower:
+                                    matched_kw = True
+                                    break
+                            if matched_kw:
+                                if ont == "Prerequisite":
+                                    # Enforce asymmetric direction: earlier concept -> later concept
+                                    if (c1.page, c1.concept_id) <= (c2.page, c2.concept_id):
+                                        src_c, tgt_c = c1, c2
+                                    else:
+                                        src_c, tgt_c = c2, c1
+                                    self.add_relation(
+                                        source_name=src_c.concept_name,
+                                        target_name=tgt_c.concept_name,
+                                        relation_type="Prerequisite",
+                                        evidence=sentence_clean,
+                                        page=page,
+                                        chunk_id=chunk_id,
+                                    )
+                                elif ont == "Similarity":
+                                    # Symmetric relation
+                                    self.add_relation(
+                                        source_name=c1.concept_name,
+                                        target_name=c2.concept_name,
+                                        relation_type="Similarity",
+                                        evidence=sentence_clean,
+                                        page=page,
+                                        chunk_id=chunk_id,
+                                    )
                                     self.add_relation(
                                         source_name=c1.concept_name,
                                         target_name=c2.concept_name,
@@ -350,4 +376,4 @@ class RelationManager:
                                         page=page,
                                         chunk_id=chunk_id,
                                     )
-                                    break
+                                break
