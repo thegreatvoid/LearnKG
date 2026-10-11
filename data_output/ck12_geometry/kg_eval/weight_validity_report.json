@@ -1,0 +1,86 @@
+{
+  "n_rated": 90,
+  "overall": {
+    "n": 90,
+    "rho": 0.04868983479411955,
+    "ci95": [
+      -0.15505483492120067,
+      0.2552179638521464
+    ],
+    "reliable": true
+  },
+  "per_relation_type": {
+    "Application": {
+      "n": 2,
+      "rho": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "reliable": false
+    },
+    "Extension": {
+      "n": 2,
+      "rho": NaN,
+      "ci95": [
+        NaN,
+        NaN
+      ],
+      "reliable": false
+    },
+    "Part-of": {
+      "n": 6,
+      "rho": -0.2070196678027063,
+      "ci95": [
+        -0.9486832980505139,
+        0.6599120175960899
+      ],
+      "reliable": false
+    },
+    "Prerequisite": {
+      "n": 34,
+      "rho": -0.025521350809751923,
+      "ci95": [
+        -0.3801891894166825,
+        0.3303110010907152
+      ],
+      "reliable": true
+    },
+    "Similarity": {
+      "n": 46,
+      "rho": -0.0932518368297728,
+      "ci95": [
+        -0.3705827298371082,
+        0.204050758033808
+      ],
+      "reliable": true
+    }
+  },
+  "weight_tiers": {
+    "high": {
+      "n": 29,
+      "mean_rating": 3.6551724137931036,
+      "frac_rating_ge4": 0.6551724137931034,
+      "concepts_covered": 13,
+      "gold_prereq_hits": 0,
+      "frac_supported": 0.6551724137931034
+    },
+    "low": {
+      "n": 30,
+      "mean_rating": 3.5,
+      "frac_rating_ge4": 0.6,
+      "concepts_covered": 46,
+      "gold_prereq_hits": 0,
+      "frac_supported": 0.5666666666666667
+    },
+    "mid": {
+      "n": 31,
+      "mean_rating": 3.6451612903225805,
+      "frac_rating_ge4": 0.6774193548387096,
+      "concepts_covered": 31,
+      "gold_prereq_hits": 0,
+      "frac_supported": 0.5483870967741935
+    }
+  },
+  "caveat": "Ratings come from an LLM judge; correlation with them is evidence about the weight's alignment with that construct, not proof the weights improve the KG. See ablation (C)."
+}

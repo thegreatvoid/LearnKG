@@ -13,3 +13,4 @@ unstructured[pdf]
 unstructured-inference
 scipy
 matplotlib
+anthropic

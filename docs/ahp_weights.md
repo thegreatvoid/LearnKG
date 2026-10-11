@@ -42,18 +42,29 @@ $$\text{weight} = 0.52 \cdot S + 0.24 \cdot C + 0.09 \cdot P + 0.15 \cdot E$$
 
 ## Implementation
 
+Source of truth: `educational_pipeline/relation_extractor.py` (`ahp_components`, `calculate_ahp_weight`).
+The factors are lightweight, dependency-free proxies, each normalised to [0, 1]; the four AHP weights sum to 1,
+so the edge weight is in [0, 1].
+
 ### Factor Derivation in Code
 
 | Factor | How it is computed |
 |---|---|
-| **S** | `(llm_weight - 1) / 9.0` — normalises LLM score from [1,10] → [0,1] |
-| **C** | `cooccurrence_count / 5.0` — normalises count, capped at 5 |
-| **P** | Jaccard index: `|shared_chunks| / |union_chunks|` between source & target node chunk sets |
-| **E** | `1.0` if relationship contains any of: *prerequisite, explains, defines, enables, introduces, requires, extends, generalizes, specializes, applies, illustrates, teaches* |
+| **S** | Jaccard overlap of the two concepts' definition word sets (falls back to the concept name if a definition is empty). A proxy for embedding cosine similarity. |
+| **C** | `min(1, cooccurrence_count / 3)`, where `cooccurrence_count` is how many times the ordered concept pair has been extracted so far (sentence-level co-mentions, rule/LLM/neural extractions). |
+| **P** | `1 / (1 + |chapter_a - chapter_b|)`; a missing chapter counts as 0. |
+| **E** | `0.6` if both concepts are in the same chapter, plus `0.4` if they are in the same section; `0.3` if neither matches. |
 
-### Output
+An extractor may supply its own weight in [0, 1] (e.g. the neural prerequisite extractor). That value is used
+instead of the formula (`weight_source = "provided"`). Weights outside [0, 1] (such as raw 1-10 LLM scores) are
+ignored and the formula is used. When the same edge is extracted again, the higher weight is kept.
 
-- Raw AHP score: **[0, 1]** — stored as `weight` column
-- Display weight: **[1, 10]** — stored as `weight_display`, used for Pyvis edge thickness
-- Edge tooltip shows: `AHP: 0.XXX | <description>`
-- Edge label shows: `0.XX` (AHP score)
+### Output columns (`relations.csv`)
+
+| Column | Meaning |
+|---|---|
+| `weight` | Final edge weight in [0, 1] |
+| `weight_source` | `ahp` (formula) or `provided` (extractor-supplied). Weighting ablations are only valid on `ahp` edges. |
+| `cooccurrence_count` | Raw pair count behind **C** (before the `/3` cap) |
+| `semantic_similarity`, `chapter_proximity`, `educational_context` | Factors S, P, E for the stored edge, so the weight can be recomputed and ablated exactly |
+

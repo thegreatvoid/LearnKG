@@ -1,0 +1,100 @@
+{
+  "structural": {
+    "duplicate_edge": {
+      "count": 0,
+      "examples": []
+    },
+    "duplicate_concept_name": {
+      "count": 0,
+      "examples": []
+    },
+    "cycle_Prerequisite": {
+      "count": 0,
+      "examples": []
+    },
+    "cycle_Part-of": {
+      "count": 0,
+      "examples": []
+    },
+    "malformed": {
+      "count": 0,
+      "examples": []
+    },
+    "invalid_reference": {
+      "count": 0,
+      "examples": []
+    },
+    "self_loop": {
+      "count": 0,
+      "examples": []
+    },
+    "duplicate_relation_id": {
+      "count": 0,
+      "examples": []
+    }
+  },
+  "coverage": {
+    "concepts_total": 130,
+    "concepts_in_any_edge": 61,
+    "concept_edge_participation": 0.46923076923076923,
+    "source_sentences": 314,
+    "sentences_mentioning_a_kg_concept": 241,
+    "of_those_with_an_edge_concept": 202,
+    "sentences_used_as_edge_evidence": 64,
+    "gold_prereq_pairs": 24,
+    "gold_recalled_directed": 0,
+    "gold_recalled_undirected": 2,
+    "gold_recall_directed": 0.0
+  },
+  "bigs": {
+    "bigs_to_graph": 0.46569663286209106,
+    "bigs_from_graph": 0.2828001379966736,
+    "sym_bigs": 0.387612764783405,
+    "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+    "n_doc_units": 314,
+    "n_triples": 90,
+    "note": "cosine distances; lower is better. relation_type is used as the predicate."
+  },
+  "judged_support": {
+    "n": 88,
+    "counts": {
+      "Supported": 53,
+      "Contradicted": 12,
+      "Insufficient evidence": 23
+    },
+    "rates": {
+      "Supported": 0.6022727272727273,
+      "Contradicted": 0.13636363636363635,
+      "Insufficient evidence": 0.26136363636363635
+    },
+    "by_relation_type": {
+      "Application": {
+        "Insufficient evidence": 1,
+        "Supported": 1
+      },
+      "Extension": {
+        "Supported": 1,
+        "Insufficient evidence": 1
+      },
+      "Part-of": {
+        "Supported": 5,
+        "Contradicted": 1
+      },
+      "Prerequisite": {
+        "Supported": 13,
+        "Insufficient evidence": 16,
+        "Contradicted": 5
+      },
+      "Similarity": {
+        "Supported": 33,
+        "Contradicted": 6,
+        "Insufficient evidence": 5
+      }
+    }
+  },
+  "bigs_distance_by_judged_label": {
+    "Supported": 0.27389697421271847,
+    "Contradicted": 0.3025027612845103,
+    "Insufficient evidence": 0.28431796509286633
+  }
+}

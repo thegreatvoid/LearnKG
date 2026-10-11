@@ -105,7 +105,7 @@ def build_educational_graph(
 
         if show_edge_tooltips:
             tooltip = f"<b>{src_name}</b> &rarr; <b>{tgt_name}</b><br/>"
-            tooltip += f"<b>Relation:</b> {rel_type} (Weight: {int(weight_val)})<br/>"
+            tooltip += f"<b>Relation:</b> {rel_type} (Weight: {weight_val:.2f})<br/>"
             if evidence:
                 tooltip += f"<i>Evidence:</i> &ldquo;{evidence}&rdquo;"
             edge_attrs["title"] = tooltip
@@ -120,7 +120,7 @@ def build_educational_graph(
             edge_attrs_rev = dict(edge_attrs)
             if show_edge_tooltips:
                 tooltip_rev = f"<b>{tgt_name}</b> &harr; <b>{src_name}</b><br/>"
-                tooltip_rev += f"<b>Relation:</b> Similarity (Weight: {int(weight_val)})<br/>"
+                tooltip_rev += f"<b>Relation:</b> Similarity (Weight: {weight_val:.2f})<br/>"
                 if evidence:
                     tooltip_rev += f"<i>Evidence:</i> &ldquo;{evidence}&rdquo;"
                 edge_attrs_rev["title"] = tooltip_rev

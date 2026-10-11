@@ -4,7 +4,8 @@ Compiles and writes the final structured educational dataset into two CSV files:
   1. concepts.csv
      Columns: [concept_id, concept_name, aliases, concept_type, definition, chapter, section, page, chunk_id, evidence]
   2. relations.csv
-     Columns: [relation_id, source_id, target_id, relation_type, weight, page, chunk_id, evidence]
+     Columns: [relation_id, source_id, target_id, relation_type, weight, page, chunk_id, evidence,
+                weight_source, cooccurrence_count, semantic_similarity, chapter_proximity, educational_context]
 """
 
 from pathlib import Path
@@ -36,6 +37,11 @@ RELATIONS_COLUMNS = [
     "page",
     "chunk_id",
     "evidence",
+    "weight_source",
+    "cooccurrence_count",
+    "semantic_similarity",
+    "chapter_proximity",
+    "educational_context",
 ]
 
 
@@ -86,6 +92,11 @@ def build_and_save_dataset(
             "page": r.page,
             "chunk_id": r.chunk_id,
             "evidence": r.evidence.replace("\n", " ").strip(),
+            "weight_source": r.weight_source,
+            "cooccurrence_count": r.cooccurrence_count,
+            "semantic_similarity": round(r.semantic_similarity, 4),
+            "chapter_proximity": round(r.chapter_proximity, 4),
+            "educational_context": round(r.educational_context, 4),
         })
 
     df_relations = pd.DataFrame(relation_rows, columns=RELATIONS_COLUMNS)

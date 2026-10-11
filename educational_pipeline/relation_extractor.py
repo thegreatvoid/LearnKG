@@ -113,6 +113,14 @@ def calculate_ahp_weight(
     c2: NormalizedConcept,
     cooccurrence: float,
 ) -> float:
+    return ahp_components(c1, c2, cooccurrence)[1]
+
+
+def ahp_components(
+    c1: NormalizedConcept,
+    c2: NormalizedConcept,
+    cooccurrence: float,
+) -> Tuple[Dict[str, float], float]:
     """
     Combines the four AHP-weighted factors into an educational edge weight.
     Each factor is itself normalized to [0, 1] and the AHP_FACTOR_WEIGHTS sum
@@ -131,7 +139,13 @@ def calculate_ahp_weight(
         + AHP_FACTOR_WEIGHTS["chapter_proximity"] * prox
         + AHP_FACTOR_WEIGHTS["educational_context"] * edu
     )
-    return round(max(0.0, min(1.0, score)), 4)
+    components = {
+        "semantic_similarity": sem_sim,
+        "cooccurrence": cooc,
+        "chapter_proximity": prox,
+        "educational_context": edu,
+    }
+    return components, round(max(0.0, min(1.0, score)), 4)
 
 
 @dataclass
@@ -144,6 +158,12 @@ class ExtractedRelation:
     page: int
     chunk_id: str
     evidence: str
+    # Provenance of the weight, so weighting ablations can be recomputed exactly.
+    weight_source: str = "ahp"  # "ahp" = computed by the formula, "provided" = supplied by an extractor
+    cooccurrence_count: int = 0  # raw count of times this ordered pair was extracted (before /3 cap)
+    semantic_similarity: float = 0.0
+    chapter_proximity: float = 0.0
+    educational_context: float = 0.0
 
 
 def classify_relation(raw_predicate: str) -> str:
@@ -212,27 +232,41 @@ class RelationManager:
         c2 = self.normalizer.concepts_by_id[tgt_id]
 
         key = (src_id, tgt_id, norm_type)
+        count = self._pair_cooccurrence[pair_key]
+        comps, ahp_w = ahp_components(c1, c2, cooc_score)
+        provided = weight is not None and 0.0 <= weight <= 1.0
+        new_w = weight if provided else ahp_w
+
         if key in self._seen:
-            # If already exists, bump weight if higher
+            # If already exists, bump weight if higher; always keep the latest co-occurrence count
             for r in self.relations:
                 if (r.source_id, r.target_id, r.relation_type) == key:
-                    new_w = weight if weight is not None and 0.0 <= weight <= 1.0 else calculate_ahp_weight(c1, c2, cooc_score)
-                    r.weight = max(r.weight, new_w)
+                    r.cooccurrence_count = count
+                    if new_w > r.weight:
+                        r.weight = new_w
+                        r.weight_source = "provided" if provided else "ahp"
+                    r.semantic_similarity = comps["semantic_similarity"]
+                    r.chapter_proximity = comps["chapter_proximity"]
+                    r.educational_context = comps["educational_context"]
                     return r
             return None
 
         self._seen.add(key)
-        final_weight = weight if weight is not None and 0.0 <= weight <= 1.0 else calculate_ahp_weight(c1, c2, cooc_score)
 
         rel = ExtractedRelation(
             relation_id=self._generate_id(),
             source_id=src_id,
             target_id=tgt_id,
             relation_type=norm_type,
-            weight=final_weight,
+            weight=new_w,
             page=page,
             chunk_id=chunk_id,
             evidence=evidence.strip(),
+            weight_source="provided" if provided else "ahp",
+            cooccurrence_count=count,
+            semantic_similarity=comps["semantic_similarity"],
+            chapter_proximity=comps["chapter_proximity"],
+            educational_context=comps["educational_context"],
         )
         self.relations.append(rel)
         return rel
