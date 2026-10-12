@@ -15,6 +15,8 @@ Predictors, all scored on the same pairs:
   book_order       B first mentioned before A in the textbook
   cooccurrence     A and B mentioned in the same sentence (undirected)
   cooc_x_order     co-occurrence count, only when B appears before A
+  kg_pairscore     (only if <kg-dir>/pair_scores.csv exists) LLM score that B is a prerequisite of A for
+                   EVERY scored pair, so AUC is over a continuous score; F1 uses --pair-threshold
   refd_text        RefD (Liang et al. 2015) adapted to textbook sentences:
                    |S_A & S_B|/|S_A| - |S_A & S_B|/|S_B|
 
@@ -82,9 +84,13 @@ def kg_edge_maps(relations: pd.DataFrame):
     return prereq, any_rel, G
 
 
-def score_pairs(gold, concepts, relations, text):
+def score_pairs(gold, concepts, relations, text, pair_scores=None):
     concepts_by_id, term_to_cid, normalizer = build_extracted_concept_index(concepts)
     prereq, any_rel, G = kg_edge_maps(relations)
+    ps = {}
+    if pair_scores is not None:
+        ps = {(a, b): float(v) for a, b, v in zip(pair_scores["source_id"], pair_scores["target_id"],
+                                                   pair_scores["score_Prerequisite"])}
     sentences = split_sentences(text)
 
     names = sorted(set(gold["concept"]) | set(gold["prereq"]))
@@ -110,6 +116,7 @@ def score_pairs(gold, concepts, relations, text):
         r["kg_prereq"] = prereq.get((cb, ca), 0.0) + 1.0 if matched and (cb, ca) in prereq else 0.0
         r["kg_any_relation"] = any_rel.get((cb, ca), 0.0) + 1.0 if matched and (cb, ca) in any_rel else 0.0
         r["kg_undirected"] = 1.0 if matched and ((cb, ca) in prereq or (ca, cb) in prereq) else 0.0
+        r["kg_pairscore"] = ps.get((cb, ca), 0.0) if matched else 0.0
         r["kg_closure"] = 0.0
         if matched and cb in G and ca in G and nx.has_path(G, cb, ca):
             r["kg_closure"] = 1.0 / nx.shortest_path_length(G, cb, ca)
@@ -126,13 +133,14 @@ def score_pairs(gold, concepts, relations, text):
     return pd.DataFrame(rows), match
 
 
-def evaluate(df: pd.DataFrame, predictors, reps: int):
+def evaluate(df: pd.DataFrame, predictors, reps: int, thresholds=None):
+    thresholds = thresholds or {}
     labels = df["label"].tolist()
     out = {"n_pairs": len(df), "n_positive": int(sum(labels)),
            "prevalence": sum(labels) / len(labels) if labels else float("nan")}
     for name in predictors:
         scores = df[name].tolist()
-        pred = [int(s > 0) for s in scores]
+        pred = [int(s > thresholds.get(name, 0)) for s in scores]
         m = prf(pred, labels)
         m["f1_ci95"] = bootstrap_ci(lambda idx: prf([pred[i] for i in idx], [labels[i] for i in idx])["f1"], len(df), reps)
         m["roc_auc"] = auc(scores, labels)
@@ -166,6 +174,7 @@ def main():
     ap.add_argument("--kg-dir", type=Path, default=DEFAULT_KG_DIR, help="folder with concepts.csv and relations.csv")
     ap.add_argument("--source", type=Path, default=DEFAULT_SOURCE, help="textbook .txt")
     ap.add_argument("--out", type=Path, default=None, help="output folder (default: <kg-dir>/kg_eval)")
+    ap.add_argument("--pair-threshold", type=float, default=0.5, help="threshold on kg_pairscore for P/R/F1")
     ap.add_argument("--reps", type=int, default=1000, help="bootstrap resamples")
     args = ap.parse_args()
     out_dir = args.out or args.kg_dir / "kg_eval"
@@ -174,11 +183,15 @@ def main():
     concepts, relations = load_kg(args.kg_dir)
     gold = load_alcpl()
     text = read_source(args.source)
-    df, match = score_pairs(gold, concepts, relations, text)
+    ps_path = args.kg_dir / "pair_scores.csv"
+    pair_scores = pd.read_csv(ps_path, dtype={"source_id": str, "target_id": str}) if ps_path.exists() else None
+    df, match = score_pairs(gold, concepts, relations, text, pair_scores)
 
+    kg_preds = KG_PREDICTORS + (["kg_pairscore"] if pair_scores is not None else [])
+    th = {"kg_pairscore": args.pair_threshold}
     main_set = df[df["matched"] & df["located"]]
-    res_main = evaluate(main_set, KG_PREDICTORS + BASELINES, args.reps)
-    res_e2e = evaluate(df, KG_PREDICTORS, args.reps)
+    res_main = evaluate(main_set, kg_preds + BASELINES, args.reps, th)
+    res_e2e = evaluate(df, kg_preds, args.reps, th)
 
     n_gold = len(match)
     n_matched = sum(1 for m in match.values() if m["cid"])
@@ -206,8 +219,8 @@ def main():
 
     print(f"Gold concepts matched to KG: {n_matched}/{n_gold};  pairs matched: {report['pairs_matched']}/{len(df)};"
           f"  located in text: {report['pairs_located_in_text']}")
-    print_table("MAIN (matched & located pairs)", res_main, KG_PREDICTORS + BASELINES)
-    print_table("END-TO-END (all AL-CPL pairs, KG only)", res_e2e, KG_PREDICTORS)
+    print_table("MAIN (matched & located pairs)", res_main, kg_preds + BASELINES)
+    print_table("END-TO-END (all AL-CPL pairs, KG only)", res_e2e, kg_preds)
     w = report["kg_prereq_weight_only"]
     print(f"\nWeight-only AUC among pairs with a KG Prerequisite edge: {fmt(w['roc_auc'])} (n={w['n']}, positives={w['n_positive']})")
     print(f"Gold positives with a KG Prerequisite edge pointing the WRONG way: {report['kg_prereq_edges_reversed_vs_gold']}")
