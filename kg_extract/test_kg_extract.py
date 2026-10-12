@@ -84,6 +84,48 @@ def test_pair_scoring_votes_and_order_swap():
     assert abs(scores[(a, b)]["Prerequisite"] - 0.5) < 1e-9 and abs(scores[(b, a)]["Prerequisite"] - 0.5) < 1e-9
 
 
+def test_heading_terms_keep_topic_nouns():
+    from kg_extract.concepts import heading_terms
+    assert heading_terms("4.5 Isosceles and Equilateral Triangles") == [
+        ("Isosceles Triangles", "heading"), ("Equilateral Triangles", "heading")]
+    assert heading_terms("3.2 Properties of Parallel Lines") == [("Properties", "heading_part"), ("Parallel Lines", "heading")]
+    assert heading_terms("1.5 Classifying Triangles") == [("Triangles", "heading")]
+
+
+def test_definition_patterns():
+    from kg_extract.concepts import rule_candidates
+    text = ("A ray is part of a line. Two angles that are not adjacent are called remote interior angles. "
+            "SOH CAH TOA is the mnemonic for the ratios. A protractor is used to measure angles. "
+            "Angles are called acute when they are small.")
+    got = {k for k, v in rule_candidates(chunk(text, section=""), None).items() if "definition" in v["cues"]}
+    assert {"ray", "remote interior angles"} <= got
+    assert not got & {"remote", "soh cah toa", "protractor", "gles", "angles"}
+
+
+def test_candidate_report_and_defined_single_word_kept():
+    text = "A ray is part of a line. The sides of a figure meet."
+    norm, rep = extract_concepts([chunk(text, section="")], None, text)
+    assert "ray" in {c.concept_name.lower() for c in norm.get_all_concepts()}
+    assert {"name", "cues", "freq", "salience", "dropped"} <= set(rep["candidates"][0])
+
+
+def test_concept_precision_judge(tmp_path=None):
+    import tempfile
+    import pandas as pd
+    from kg_eval.concept_quality import judge_concepts, precision_report
+    concepts = pd.DataFrame({"concept_name": ["ray", "times", "rays"], "evidence": ["A ray is part of a line.", "", ""],
+                             "definition": ["", "", ""]})
+    be = FakeBackend([{"judgments": [{"name": "ray", "verdict": "concept", "same_as": ""},
+                                     {"name": "times", "verdict": "not_concept", "same_as": ""},
+                                     {"name": "rays", "verdict": "duplicate", "same_as": "ray"}]}])
+    be.model = "fake"
+    cache = Path(tempfile.mkdtemp()) / "cache.jsonl"
+    rep = precision_report(judge_concepts(concepts, be, "geometry", cache))
+    assert rep["judged"] == 3 and abs(rep["concept_precision"] - 1 / 3) < 1e-9 and rep["not_concept"] == ["times"]
+    judge_concepts(concepts, be, "geometry", cache)  # second run is served from the cache
+    assert be.calls == 1
+
+
 if __name__ == "__main__":
     for n, f in list(globals().items()):
         if n.startswith("test_"):

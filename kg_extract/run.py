@@ -101,7 +101,8 @@ def main():
 
     normalizer, rep = extract_concepts(chunks, None if args.no_llm_concepts else backend, full_text,
                                        top_k=args.top_k, nlp=nlp, ground=not args.no_ground, counters=counters)
-    print(f"[concepts] {rep} counters={dict(counters)}")
+    pd.DataFrame(rep.pop("candidates")).to_csv(out / "concept_candidates.csv", index=False)
+    print(f"[concepts] {rep} counters={dict(counters)} (all candidates: {out / 'concept_candidates.csv'})")
     cands = generate_candidates(normalizer, chunks, args.per_concept, args.max_pairs, args.embed_neighbors, args.hubs)
     print(f"[pairs] {len(cands)} candidate pairs")
     if args.candidates_only:
