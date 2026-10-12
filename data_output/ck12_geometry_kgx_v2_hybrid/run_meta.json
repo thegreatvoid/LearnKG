@@ -1,0 +1,15 @@
+{
+  "source_run": "data_output\\ck12_geometry_kgx_v2",
+  "uses_book_order": true,
+  "signals": [
+    "order",
+    "cooc",
+    "refd",
+    "llm_rel"
+  ],
+  "top_k": 3,
+  "prerequisite_edges": 518,
+  "llm_edges_kept": 151,
+  "total_edges": 669,
+  "concepts": 204
+}

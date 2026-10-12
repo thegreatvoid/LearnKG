@@ -1,0 +1,424 @@
+name,cues,freq,salience,general_zipf,dropped
+angle,definition+llm+np,105,9.163,4.38,
+line,definition+llm+np,44,8.307,5.49,
+Arc Length,definition+heading+llm+np,1,8.193,4.21,
+Angles,heading+heading_part+np,105,8.163,3.9,
+point,definition+llm+np,36,8.111,5.54,
+Parallel lines,heading+llm+np,8,7.697,4.27,
+Triangles,heading+np,55,7.525,3.27,
+Lines,heading+np,44,7.307,4.95,
+arc,definition+llm+np,14,7.208,4.21,
+polygon,definition+llm+np,13,7.139,3.04,
+Points,heading+np,36,7.111,5.23,
+Distance,heading+llm+np,4,7.109,4.85,
+circle,definition+llm+np,12,7.065,4.55,
+ratio,definition+llm+np,11,6.985,4.37,
+parallelogram,definition+llm+np,10,6.898,2.18,
+square,definition+llm+np,10,6.898,4.84,
+Similar Polygons,heading+llm+np,3,6.886,2.73,
+Pythagorean Theorem,heading+llm+np,3,6.886,2.57,
+chord,definition+llm+np,9,6.803,3.65,
+segments,heading+np,24,6.719,3.98,
+diagonal,definition+llm+np,8,6.697,3.36,
+radius,definition+llm+np,8,6.697,3.86,
+Perpendicular lines,heading+llm+np,2,6.599,3.29,
+plane,definition+llm+np,7,6.579,4.72,
+triangle,definition+np,55,6.525,3.93,
+perpendicular bisector,definition+llm+np,6,6.446,1.58,
+congruent,llm+np,48,6.392,2.69,
+right triangle,definition+llm+np,5,6.292,3.93,
+Arcs,heading+np,14,6.208,3.26,
+Deductive Reasoning,heading+llm+np,1,6.193,2.65,
+Polygons,heading+np,13,6.139,2.73,
+ray,definition+llm+np,4,6.109,4.69,
+equilateral triangle,definition+llm+np,4,6.109,2.35,
+proof,definition+llm+np,4,6.109,4.7,
+included angle,definition+llm+np,4,6.109,4.38,
+rectangle,definition+llm+np,4,6.109,3.24,
+rhombus,definition+llm+np,4,6.109,2.12,
+secant,definition+llm+np,4,6.109,1.86,
+prism,definition+llm+np,4,6.109,3.44,
+surface area,definition+llm+np,4,6.109,4.83,
+Circles,heading+np,12,6.065,4.13,
+Ratios,heading+np,11,5.985,3.63,
+Parallelograms,heading+np,10,5.898,1.62,
+Squares,heading+np,10,5.898,3.73,
+intersection,definition+llm+np,3,5.886,3.88,
+conjecture,definition+llm+np,3,5.886,3.35,
+slope,definition+llm+np,3,5.886,3.9,
+median,definition+llm+np,3,5.886,4.05,
+trapezoid,definition+llm+np,3,5.886,2.27,
+kite,definition+llm+np,3,5.886,3.55,
+scale factor,definition+llm+np,3,5.886,4.67,
+diameter,definition+llm+np,3,5.886,4.08,
+inscribed angle,definition+llm+np,3,5.886,3.38,
+pyramid,definition+llm+np,3,5.886,3.75,
+sphere,definition+llm+np,3,5.886,3.91,
+Chords,heading+np,9,5.803,3.5,
+Reflections,heading+np,9,5.803,3.67,
+line segment,definition+llm+np,2,5.599,4.26,
+Vertical angles,definition+llm+np,2,5.599,3.9,
+isosceles triangle,definition+llm+np,2,5.599,2.21,
+centroid,definition+llm+np,2,5.599,2.17,
+altitude,definition+llm+np,2,5.599,3.92,
+proportion,definition+llm+np,2,5.599,4.11,
+central angle,definition+llm+np,2,5.599,4.38,
+semicircle,definition+llm+np,2,5.599,2.27,
+sector,definition+llm+np,2,5.599,4.66,
+Planes,heading+np,7,5.579,4.16,
+Perpendicular Bisectors,heading+np,6,5.446,1.31,
+Angle Bisectors,heading+np,5,5.292,1.31,
+Solids,heading+np,5,5.292,3.33,
+Translations,heading+np,5,5.292,3.72,
+Rotations,heading+np,5,5.292,3.19,
+segment bisector,definition+llm+np,1,5.193,1.58,
+linear pair,definition+llm+np,1,5.193,4.12,
+scalene triangle,definition+llm+np,1,5.193,1.62,
+acute triangle,definition+llm+np,1,5.193,3.93,
+obtuse triangle,definition+llm+np,1,5.193,3.04,
+regular polygon,definition+llm+np,1,5.193,3.04,
+counterexample,definition+llm+np,1,5.193,2.18,
+conditional statement,definition+llm+np,1,5.193,3.59,
+biconditional statement,definition+llm+np,1,5.193,1.13,
+paragraph proof,definition+llm+np,1,5.193,4.03,
+circumcenter,definition+llm+np,1,5.193,0.0,
+incenter,definition+llm+np,1,5.193,0.0,
+orthocenter,definition+llm+np,1,5.193,0.0,
+Pythagorean triple,definition+llm+np,1,5.193,2.57,
+minor arc,definition+llm+np,1,5.193,4.21,
+major arc,definition+llm+np,1,5.193,4.21,
+polyhedron,definition+llm+np,1,5.193,2.06,
+net,definition+llm+np,1,5.193,4.76,
+cross section,definition+llm+np,1,5.193,5.0,
+glide reflection,definition+llm+np,1,5.193,3.33,
+rays,heading+np,4,5.109,4.03,
+Equilateral Triangles,heading+np,4,5.109,2.35,
+Rectangles,heading+np,4,5.109,2.8,
+Secants,heading+np,4,5.109,0.0,
+Tangents,heading+np,4,5.109,2.49,
+Prisms,heading+np,4,5.109,2.61,
+degree,llm,21,5.091,4.94,
+transversal,definition+np,12,5.065,2.24,
+Medians,heading+np,3,4.886,2.29,
+Trapezoids,heading+np,3,4.886,1.53,
+Kites,heading+np,3,4.886,2.96,
+Inscribed Angles,heading+np,3,4.886,3.38,
+Pyramids,heading+np,3,4.886,3.33,
+Spheres,heading+np,3,4.886,3.41,
+Symmetry,heading+np,3,4.886,3.51,
+sides,np,75,4.831,4.73,weak_single_word
+reflection,llm+np,9,4.803,4.17,
+midpoint,llm+np,8,4.697,2.85,
+center,definition+np,8,4.697,5.19,
+diagonals,llm+np,8,4.697,2.34,
+midsegment of a triangle,definition+llm,1,4.693,0.0,
+area of a sector,definition+llm,1,4.693,4.66,
+order of symmetry,definition+llm,1,4.693,3.51,
+Inductive Reasoning,heading+np,2,4.599,2.9,
+Altitudes,heading+np,2,4.599,3.16,
+Proportions,heading+np,2,4.599,3.66,
+Tangent Lines,heading+np,2,4.599,3.19,
+Sectors,heading+np,2,4.599,4.07,
+Cylinders,heading+np,2,4.599,3.46,
+Cones,heading+np,2,4.599,3.39,
+vertex,definition+np,7,4.579,3.21,
+volume,llm+np,6,4.446,4.76,
+quadrilateral,definition+np,5,4.292,2.37,
+conclusion,definition+np,5,4.292,4.4,
+converse,heading_part+llm+np,5,4.292,3.48,
+bases,definition+np,5,4.292,4.18,
+translation,llm+np,5,4.292,4.39,
+states,np,43,4.284,5.52,weak_single_word
+Conditional Statements,heading+np,1,4.193,3.59,
+Tangent Ratios,heading+np,1,4.193,3.19,
+Polyhedrons,heading+np,1,4.193,1.03,
+Composite Solids,heading+np,1,4.193,3.33,
+Transformations,heading+np,1,4.193,3.4,
+right angle,llm+np,4,4.109,4.38,
+hypothesis,definition+np,4,4.109,3.87,
+midsegment,llm+np,4,4.109,0.0,
+perimeter,llm+np,4,4.109,3.68,
+isometries,llm+np,4,4.109,1.36,
+Isosceles Triangles,heading,2,4.099,2.21,
+Circumference,llm+np,3,3.886,3.18,
+supplementary,llm,5,3.792,3.36,
+segment,np,24,3.719,4.26,weak_single_word
+Lines Parallel,heading,1,3.693,4.27,
+Sine Ratios,heading,1,3.693,3.1,
+Cosine Ratios,heading,1,3.693,2.51,
+area,np,22,3.635,5.46,weak_single_word
+Areas,heading_part+np,22,3.635,5.15,weak_single_word
+bisect,llm,4,3.609,1.91,
+Congruent segments,llm+np,2,3.599,2.69,
+triangle angle sum theorem,llm+np,2,3.599,3.71,
+inverse,llm+np,2,3.599,3.42,
+corresponding angles postulate,llm+np,2,3.599,2.6,
+exterior angle theorem,llm+np,2,3.599,3.71,
+angle bisector theorem,llm+np,2,3.599,1.58,
+tangent line,llm+np,2,3.599,3.19,
+cylinder,definition+np,2,3.599,3.99,
+cone,definition+np,2,3.599,3.83,
+degrees,np,21,3.591,4.54,weak_single_word
+sum,np,17,3.39,4.34,weak_single_word
+measure,np,15,3.273,4.65,weak_single_word
+measures,np,15,3.273,4.67,weak_single_word
+CK-12 Basic Geometry Concepts,llm+np,1,3.193,3.34,
+Collinear points,llm+np,1,3.193,1.96,
+Coplanar points,llm+np,1,3.193,1.9,
+ruler postulate,llm+np,1,3.193,2.6,
+protractor,llm+np,1,3.193,2.06,
+Complementary angles,llm+np,1,3.193,3.56,
+Supplementary angles,llm+np,1,3.193,3.36,
+pentagon,definition+np,1,3.193,3.7,
+hexagon,definition+np,1,3.193,2.84,
+reflexive property,llm+np,1,3.193,2.84,
+symmetric property,llm+np,1,3.193,3.21,
+transitive property,llm+np,1,3.193,2.76,
+substitution property,llm+np,1,3.193,3.41,
+two-column proof,llm+np,1,3.193,4.33,
+flowchart proof,llm+np,1,3.193,2.58,
+midpoint theorem,llm+np,1,3.193,2.85,
+perpendicular transversal theorem,llm+np,1,3.193,2.24,
+remote interior angles,definition+np,1,3.193,3.9,
+Congruent polygons,llm+np,1,3.193,2.69,
+congruent triangles,llm+np,1,3.193,2.69,
+CPCTC,llm+np,1,3.193,0.0,
+hypotenuse leg congruence theorem,llm+np,1,3.193,2.16,
+triangle midsegment theorem,llm+np,1,3.193,0.0,
+perpendicular bisector theorem,llm+np,1,3.193,1.58,
+triangle inequality theorem,llm+np,1,3.193,3.71,
+interior angle sum,llm+np,1,3.193,4.34,
+exterior angle sum,llm+np,1,3.193,3.91,
+cross products,llm+np,1,3.193,5.0,
+angle angle similarity postulate,llm+np,1,3.193,2.6,
+triangle proportionality theorem,llm+np,1,3.193,2.65,
+Trigonometry,definition+np,1,3.193,2.76,
+Congruent arcs,llm+np,1,3.193,2.69,
+line symmetry,llm+np,1,3.193,3.51,
+rotational symmetry,llm+np,1,3.193,3.23,
+vector,llm+np,1,3.193,3.99,
+rigid transformation,llm+np,1,3.193,3.75,
+base,np,13,3.139,5.05,weak_single_word
+Adjacent angles,llm,2,3.099,3.9,
+point of tangency,llm,2,3.099,1.49,
+line of reflection,llm,2,3.099,4.17,
+interior,np,12,3.065,4.55,weak_single_word
+interior angles,np,10,2.898,3.9,
+height,np,10,2.898,4.53,weak_single_word
+opposite sides,np,9,2.803,4.62,weak_common_phrase
+leg,np,9,2.803,4.66,weak_single_word
+legs,np,9,2.803,4.67,weak_single_word
+midpoints,np,8,2.697,1.7,
+Parts,heading_part+np,8,2.697,5.07,weak_single_word
+distance between two points,definition,1,2.693,4.85,
+midpoint of a segment,definition,1,2.693,2.85,
+segment addition postulate,llm,1,2.693,2.6,
+angle addition postulate,llm,1,2.693,2.6,
+acute angle,llm,1,2.693,4.0,
+obtuse angle,llm,1,2.693,3.04,
+straight angle,llm,1,2.693,4.38,
+sum of interior angles,llm,1,2.693,3.9,
+contrapositive,llm,1,2.693,1.47,
+Law of detachment,llm,1,2.693,3.46,
+Law of syllogism,llm,1,2.693,2.12,
+alternate interior angles theorem,llm,1,2.693,3.71,
+alternate exterior angles theorem,llm,1,2.693,3.71,
+co-interior angles theorem,llm,1,2.693,3.71,
+corollary,llm,1,2.693,2.74,
+isosceles triangle theorem,llm,1,2.693,2.21,
+equiangular,llm,1,2.693,1.22,
+side angle relationship,llm,1,2.693,4.38,
+hinge theorem,llm,1,2.693,3.32,
+ratio of corresponding sides,definition,1,2.693,4.13,
+arc addition postulate,llm,1,2.693,2.6,
+inscribed angle theorem,llm,1,2.693,3.38,
+perimeter of a polygon,definition,1,2.693,3.04,
+area of a rectangle,llm,1,2.693,3.24,
+area of a parallelogram,llm,1,2.693,2.18,
+area of a triangle,llm,1,2.693,3.93,
+area of a circle,llm,1,2.693,4.55,
+volume of a prism,definition,1,2.693,3.44,
+composite solid,definition,1,2.693,3.94,
+center of rotation,llm,1,2.693,4.08,
+angle of rotation,llm,1,2.693,4.08,
+endpoints,np,7,2.579,2.74,
+endpoint,np,7,2.579,2.93,
+hypotenuse,np,7,2.579,2.16,
+directions,np,6,2.446,4.23,weak_single_word
+direction,np,6,2.446,4.93,weak_single_word
+statement,np,6,2.446,4.97,weak_single_word
+statements,np,6,2.446,4.51,weak_single_word
+Corresponding angles,np,6,2.446,3.9,
+exterior angle,np,6,2.446,3.91,
+length,np,5,2.292,4.77,weak_single_word
+congruent sides,np,5,2.292,2.69,
+Properties,heading_part+np,5,2.292,4.65,weak_single_word
+corresponding sides,np,5,2.292,4.13,
+congruence,np,5,2.292,2.44,
+right triangles,np,5,2.292,3.27,
+angle bisector,np,5,2.292,1.58,
+pairs,np,5,2.292,4.11,weak_single_word
+products,np,5,2.292,5.04,weak_single_word
+rotation,np,5,2.292,4.08,weak_single_word
+angle measure,np,5,2.292,4.38,
+opposite angles,np,4,2.109,3.9,
+Proofs,heading_part+np,4,2.109,3.37,
+corresponding parts,np,4,2.109,4.13,
+Midsegments,heading_part+np,4,2.109,0.0,
+concurrency,np,4,2.109,2.59,
+right angles,np,4,2.109,3.9,
+perimeters,np,4,2.109,2.35,
+included angles,np,4,2.109,3.9,
+lateral area,np,4,2.109,3.75,
+composition,heading_part+np,4,2.109,4.33,weak_single_word
+Acute,np,3,1.886,4.0,weak_single_word
+Obtuse,np,3,1.886,3.04,
+laws,np,3,1.886,4.89,weak_single_word
+law,np,3,1.886,5.46,weak_single_word
+Alternate interior angles,np,3,1.886,3.9,top_k
+Alternate exterior angles,np,3,1.886,3.9,
+Co-interior angles,np,3,1.886,3.9,top_k
+slopes,np,3,1.886,3.79,weak_single_word
+Similarity,heading_part+np,3,1.886,3.58,weak_single_word
+short leg,np,3,1.886,4.66,weak_common_phrase
+external point,np,3,1.886,4.52,weak_common_phrase
+arc measure,np,3,1.886,4.21,top_k
+vertices,np,3,1.886,2.96,
+pi radius,np,3,1.886,3.86,
+Quadrilaterals,heading_part,5,1.792,1.65,top_k
+geometry,np,2,1.599,3.88,weak_single_word
+difference,np,2,1.599,5.01,weak_single_word
+ABC,np,2,1.599,4.24,weak_single_word
+Patterns,np,2,1.599,4.41,weak_single_word
+logical argument,np,2,1.599,4.14,top_k
+column,np,2,1.599,4.33,weak_single_word
+perpendicular segment,np,2,1.599,3.29,top_k
+Isosceles,np,2,1.599,2.21,top_k
+similarity theorem,np,2,1.599,3.58,top_k
+square root,np,2,1.599,4.41,top_k
+relationships,np,2,1.599,4.68,weak_single_word
+tangency,np,2,1.599,1.49,top_k
+radii,np,2,1.599,2.55,top_k
+portion,np,2,1.599,4.53,weak_single_word
+intercepted arcs,np,2,1.599,3.26,top_k
+apex,np,2,1.599,3.71,weak_single_word
+base area,np,2,1.599,5.05,weak_common_phrase
+location,np,1,1.193,4.86,weak_single_word
+dimension,np,1,1.193,4.02,weak_single_word
+dot,np,1,1.193,4.05,weak_single_word
+straight one-dimensional figure,np,1,1.193,4.03,top_k
+thickness,np,1,1.193,3.75,weak_single_word
+undefined terms,np,1,1.193,3.04,top_k
+absolute value,np,1,1.193,4.54,weak_common_phrase
+coordinates,np,1,1.193,3.82,weak_single_word
+real numbers,np,1,1.193,4.98,weak_common_phrase
+segment addition,np,1,1.193,4.26,top_k
+common endpoint,np,1,1.193,2.93,top_k
+angle addition,np,1,1.193,4.38,top_k
+ABD,np,1,1.193,3.14,weak_single_word
+DBC,np,1,1.193,2.11,weak_single_word
+Right angles measure,np,1,1.193,3.9,top_k
+Straight angles measure,np,1,1.193,3.9,top_k
+straight line,np,1,1.193,5.04,weak_common_phrase
+common interior points,np,1,1.193,4.55,weak_common_phrase
+closed figure,np,1,1.193,4.9,weak_common_phrase
+closed plane figure,np,1,1.193,4.72,weak_common_phrase
+straight sides,np,1,1.193,4.73,weak_common_phrase
+specific examples,np,1,1.193,4.63,weak_common_phrase
+general conclusion,np,1,1.193,4.4,top_k
+unproven statement,np,1,1.193,2.95,top_k
+observations,np,1,1.193,4.02,weak_single_word
+contrapositive negates,np,1,1.193,1.47,top_k
+switches,np,1,1.193,3.84,weak_single_word
+facts,np,1,1.193,4.72,weak_single_word
+definitions,np,1,1.193,3.82,weak_single_word
+accepted properties,np,1,1.193,4.65,weak_common_phrase
+logic,np,1,1.193,4.36,weak_single_word
+detachment,np,1,1.193,3.46,top_k
+syllogism,np,1,1.193,2.12,top_k
+expression,np,1,1.193,4.55,weak_single_word
+reasons,np,1,1.193,4.93,weak_single_word
+sentences,np,1,1.193,4.13,weak_single_word
+boxes,np,1,1.193,4.34,weak_single_word
+arrows,np,1,1.193,3.8,weak_single_word
+coplanar lines,np,1,1.193,1.9,top_k
+position,np,1,1.193,5.21,weak_single_word
+steepness,np,1,1.193,2.09,top_k
+equal slopes,np,1,1.193,3.79,top_k
+negative reciprocals,np,1,1.193,1.68,top_k
+non-adjacent interior angles,np,1,1.193,3.9,top_k
+given sides,np,1,1.193,4.73,weak_common_phrase
+gravity,np,1,1.193,4.21,weak_single_word
+extension,np,1,1.193,4.46,weak_single_word
+Inequalities,heading_part+np,1,1.193,3.24,top_k
+angle relationship,np,1,1.193,4.38,top_k
+longer sides,np,1,1.193,4.73,weak_common_phrase
+opposite larger angles,np,1,1.193,3.9,top_k
+convex polygon,np,1,1.193,3.04,top_k
+non-adjacent vertices,np,1,1.193,2.96,top_k
+Consecutive angles,np,1,1.193,3.9,top_k
+parallel sides,np,1,1.193,4.27,top_k
+average,np,1,1.193,5.16,weak_single_word
+base lengths,np,1,1.193,3.92,top_k
+consecutive pairs,np,1,1.193,4.11,top_k
+comparison,np,1,1.193,4.51,weak_single_word
+quantities,np,1,1.193,3.86,weak_single_word
+equation,np,1,1.193,4.02,weak_single_word
+corresponding measurements,np,1,1.193,4.05,top_k
+similar figures,np,1,1.193,4.73,weak_common_phrase
+congruent corresponding angles,np,1,1.193,2.69,top_k
+proportional corresponding sides,np,1,1.193,3.6,top_k
+Sine,np,1,1.193,3.1,top_k
+Cosine,np,1,1.193,2.51,top_k
+study,np,1,1.193,5.26,weak_single_word
+sine ratio,np,1,1.193,3.1,top_k
+cosine ratio,np,1,1.193,2.51,top_k
+tangent ratio,np,1,1.193,3.19,top_k
+SOH CAH TOA,np,1,1.193,2.25,top_k
+inverse trigonometric functions,np,1,1.193,2.44,top_k
+center point,np,1,1.193,5.19,weak_common_phrase
+tangent segments,np,1,1.193,3.19,top_k
+arc addition,np,1,1.193,4.21,top_k
+adjacent arc measures,np,1,1.193,4.12,top_k
+equal measures,np,1,1.193,4.65,weak_common_phrase
+Congruent chords,np,1,1.193,2.69,top_k
+inscribed quadrilateral,np,1,1.193,2.37,top_k
+external segment,np,1,1.193,4.26,top_k
+pie-shaped region,np,1,1.193,4.19,top_k
+three-dimensional figure,np,1,1.193,4.03,top_k
+flat polygon,np,1,1.193,3.04,top_k
+straight edges,np,1,1.193,4.09,top_k
+congruent parallel bases,np,1,1.193,2.69,top_k
+triangular,np,1,1.193,3.42,top_k
+faces meeting,np,1,1.193,4.59,weak_common_phrase
+circular bases,np,1,1.193,3.96,top_k
+regular pyramid,np,1,1.193,3.75,top_k
+slant height,np,1,1.193,3.18,top_k
+circular base,np,1,1.193,3.96,top_k
+space,np,1,1.193,5.23,weak_single_word
+order,np,1,1.193,5.49,weak_single_word
+magnitude,np,1,1.193,4.0,weak_single_word
+size,np,1,1.193,5.13,weak_single_word
+shape,np,1,1.193,4.72,weak_single_word
+equidistant point,np,1,1.193,2.45,top_k
+fixed point,np,1,1.193,4.7,weak_common_phrase
+intersecting lines,np,1,1.193,2.89,top_k
+Angle Pairs,heading_part+np,0,0.5,4.11,min_freq
+Classifying Triangles,np,0,0.5,2.95,min_freq
+Classifying Polygons,np,0,0.5,2.73,min_freq
+Proving Lines Parallel,np,0,0.5,4.0,min_freq
+Triangle Sums,heading_part+np,0,0.5,3.9,min_freq
+Congruent Figures,heading_part+np,0,0.5,2.69,min_freq
+Triangle Congruence,heading_part+np,0,0.5,2.44,min_freq
+SSS,heading_part+np,0,0.5,2.85,min_freq
+SAS,heading_part+np,0,0.5,3.47,min_freq
+ASA,heading_part+np,0,0.5,3.44,min_freq
+AAS,heading_part+np,0,0.5,2.85,min_freq
+Proving Quadrilaterals,np,0,0.5,1.65,min_freq
+Rhombuses,heading_part+np,0,0.5,0.0,min_freq
+Proportionality Relationships,heading_part+np,0,0.5,2.65,min_freq
+Special Right Triangles,heading_part+np,0,0.5,3.27,min_freq
+Segment Lengths,heading_part+np,0,0.5,3.92,min_freq
+Representing Solids,np,0,0.5,3.33,min_freq
+Exploring Symmetry,np,0,0.5,3.51,min_freq
+Congruence Properties,heading_part,0,0.0,2.44,min_freq

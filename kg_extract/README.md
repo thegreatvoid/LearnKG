@@ -43,12 +43,9 @@ Offline unit tests: `python kg_extract/test_kg_extract.py`.
 - Rule/spaCy noise ("times", "states", "sum", "half", "sides", "remote", "properties", chapter titles) is removed by the noise filters above, with concept recall up rather than down. Remaining noise without the LLM stage: some generic phrases ("logical argument", "common endpoint"), adjectives tagged as nouns ("triangular", "Isosceles"), "SOH CAH TOA", irregular plurals not merged with their singular ("radii", "vertices"). Precision is not measured yet: run `concept_quality --judge-model` with a model different from the extractor's.
 - Smoke test (8 pairs, 3B model): the whole path ran with 16/16 successful LLM calls and a valid `pair_scores.csv`; the result itself is not meaningful.
 
-## Next steps
+## Status and next steps
 
-1. Run on Colab T4 with `qwen2.5:7b-instruct`: `python -m kg_extract.run --data-dir ck12_geometry --model qwen2.5:7b-instruct --hubs 10 --samples 2` (see `kg_eval/README.md` section 7 for the Colab recipe; add `pip install spacy wordfreq && python -m spacy download en_core_web_sm`), 3 runs, then the three `kg_eval` commands above.
-2. Compare `kg_pairscore` AUC with `book_order` (0.86) and the old KG (0.51). Success = clearly above 0.5 without book order.
-3. Ablations: `--no-ground`, `--samples 1/2/3`, `--no-llm-concepts`, hubs 0/10/40.
-4. Other AL-CPL subjects (needs `--pairs/--preqs` and subject synonym maps in `kg_eval/prereq_gold.py`, `kg_eval/data.py`).
+Full results, the Colab recipe and the plan are in `kg_eval/README.md` (sections 5, 7.1 and 9). In short (2026-10-13): runs 1, 2 and v2 (`qwen2.5:7b-instruct`, Colab T4) all score at chance on AL-CPL from the LLM pair votes alone (ROC-AUC 0.50), and their Prerequisite edges lean backward. The hybrid builder below is what works; on v2 it gives the best graph so far. Next: validate the concept-precision judge, decide the LLM pair vote's role, recover lost single-word concepts, seeded replicates, then other AL-CPL subjects.
 
 ## Hybrid KG construction (`kg_extract/hybrid.py`) and first result
 
@@ -65,3 +62,5 @@ Result on CK-12 geometry (run 1 input; AL-CPL, matched and located pairs, n=1061
 | previous best KG (LLM pair vote) | | | 0.03 | 0.505 |
 
 Caveats: the AUC gain over book order is small and the confidence intervals overlap; top-k=3 and equal signal weights were fixed a priori (not tuned on gold) but this is one book; concept noise from spaCy chunks ("states", "times", "sum") is still present and shows up as hubs in the graph; the graph is dense (562 Prerequisite edges for 209 concepts).
+
+Result on v2 (`data_output/ck12_geometry_kgx_v2_hybrid`, after the parser fix and concept noise filters; n=989): kg_closure P 0.83, R 0.71, **F1 0.768 [0.73, 0.80]**, ROC-AUC 0.827; kg_pairscore ROC-AUC 0.874 [0.85, 0.89]; book_order baseline F1 0.712, ROC-AUC 0.855. On the same 1681 pairs for both (end_to_end), closure F1 is 0.539 for v2 vs 0.529 for run 1. Details in `kg_eval/README.md` 5.4.

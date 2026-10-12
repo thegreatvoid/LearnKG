@@ -1,0 +1,229 @@
+{
+  "kg_dir": "data_output\\ck12_geometry_kgx_v2",
+  "concepts": 204,
+  "concepts_located_in_text": 202,
+  "concepts_not_located": [
+    "Cosine Ratios",
+    "Sine Ratios"
+  ],
+  "sections_detected": 59,
+  "by_relation_type": {
+    "Application": {
+      "n_edges": 228,
+      "expected_direction": "none",
+      "char": {
+        "forward": 116,
+        "backward": 112,
+        "tie": 0,
+        "unlocated": 0,
+        "forward_rate": 0.5087719298245614,
+        "ci95": [
+          0.44298245614035087,
+          0.5745614035087719
+        ],
+        "p_vs_random": 0.8425681064325891
+      },
+      "section": {
+        "forward": 91,
+        "backward": 99,
+        "tie": 38,
+        "unlocated": 0,
+        "forward_rate": 0.4789473684210526,
+        "ci95": [
+          0.4105263157894737,
+          0.5526315789473685
+        ],
+        "p_vs_random": 0.6116873356949422
+      }
+    },
+    "Extension": {
+      "n_edges": 43,
+      "expected_direction": "backward",
+      "char": {
+        "forward": 20,
+        "backward": 21,
+        "tie": 2,
+        "unlocated": 0,
+        "forward_rate": 0.4878048780487805,
+        "ci95": [
+          0.3170731707317073,
+          0.6341463414634146
+        ],
+        "p_vs_random": 1.0
+      },
+      "section": {
+        "forward": 11,
+        "backward": 14,
+        "tie": 18,
+        "unlocated": 0,
+        "forward_rate": 0.44,
+        "ci95": [
+          0.24,
+          0.64
+        ],
+        "p_vs_random": 0.6900379657745361
+      }
+    },
+    "Part-of": {
+      "n_edges": 216,
+      "expected_direction": "none",
+      "char": {
+        "forward": 73,
+        "backward": 142,
+        "tie": 0,
+        "unlocated": 1,
+        "forward_rate": 0.3395348837209302,
+        "ci95": [
+          0.2744186046511628,
+          0.4046511627906977
+        ],
+        "p_vs_random": 2.9277101604597936e-06
+      },
+      "section": {
+        "forward": 49,
+        "backward": 116,
+        "tie": 50,
+        "unlocated": 1,
+        "forward_rate": 0.296969696969697,
+        "ci95": [
+          0.23030303030303031,
+          0.36363636363636365
+        ],
+        "p_vs_random": 1.9072175895127716e-07
+      }
+    },
+    "Prerequisite": {
+      "n_edges": 54,
+      "expected_direction": "forward",
+      "char": {
+        "forward": 21,
+        "backward": 31,
+        "tie": 2,
+        "unlocated": 0,
+        "forward_rate": 0.40384615384615385,
+        "ci95": [
+          0.2692307692307692,
+          0.5384615384615384
+        ],
+        "p_vs_random": 0.21160856876151612
+      },
+      "section": {
+        "forward": 15,
+        "backward": 23,
+        "tie": 16,
+        "unlocated": 0,
+        "forward_rate": 0.39473684210526316,
+        "ci95": [
+          0.23684210526315788,
+          0.5526315789473685
+        ],
+        "p_vs_random": 0.2558750795433298
+      }
+    },
+    "Similarity": {
+      "n_edges": 4,
+      "expected_direction": "none",
+      "char": {
+        "forward": 2,
+        "backward": 2,
+        "tie": 0,
+        "unlocated": 0,
+        "forward_rate": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "p_vs_random": 1.0
+      },
+      "section": {
+        "forward": 2,
+        "backward": 1,
+        "tie": 1,
+        "unlocated": 0,
+        "forward_rate": 0.6666666666666666,
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "p_vs_random": 1.0
+      }
+    }
+  },
+  "prereq_closure_agreement": {
+    "forward": 72,
+    "backward": 41,
+    "tie": 2,
+    "unlocated": 0,
+    "forward_rate": 0.6371681415929203,
+    "ci95": [
+      0.5486725663716814,
+      0.7256637168141593
+    ],
+    "p_vs_random": 0.0045535564660325704
+  },
+  "prereq_depth_vs_position": {
+    "n_nodes": 65,
+    "kendall_tau_b": -0.022359054002615397,
+    "p_value": 0.816907925954585,
+    "max_depth": 3
+  },
+  "prereq_weight_auc_forward": {
+    "n": 52,
+    "n_forward": 21,
+    "roc_auc": 0.5
+  },
+  "gold_reference": {
+    "gold_positive": {
+      "char": {
+        "forward": 394,
+        "backward": 46,
+        "tie": 4,
+        "unlocated": 80,
+        "forward_rate": 0.8954545454545455,
+        "ci95": [
+          0.8681818181818182,
+          0.9227272727272727
+        ],
+        "p_vs_random": 5.022748017742774e-70
+      },
+      "section": {
+        "forward": 370,
+        "backward": 41,
+        "tie": 33,
+        "unlocated": 80,
+        "forward_rate": 0.9002433090024331,
+        "ci95": [
+          0.8686131386861314,
+          0.9294403892944039
+        ],
+        "p_vs_random": 2.371595692942383e-67
+      }
+    },
+    "gold_negative": {
+      "char": {
+        "forward": 321,
+        "backward": 668,
+        "tie": 4,
+        "unlocated": 164,
+        "forward_rate": 0.32457027300303337,
+        "ci95": [
+          0.2972699696663296,
+          0.3538928210313448
+        ],
+        "p_vs_random": 1.0177048566781316e-28
+      },
+      "section": {
+        "forward": 300,
+        "backward": 628,
+        "tie": 65,
+        "unlocated": 164,
+        "forward_rate": 0.3232758620689655,
+        "ci95": [
+          0.2952586206896552,
+          0.35344827586206895
+        ],
+        "p_vs_random": 2.0017279249115638e-27
+      }
+    }
+  }
+}

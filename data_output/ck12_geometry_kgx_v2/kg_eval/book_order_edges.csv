@@ -1,0 +1,546 @@
+relation_id,source_name,target_name,relation_type,weight,source_pos,target_pos,dir_char,dir_section
+R0001,acute angle,angle,Prerequisite,0.5,1714.0,1381.0,backward,tie
+R0002,acute angle,angle measure,Prerequisite,0.5,1714.0,20694.0,forward,forward
+R0003,acute angle,degree,Prerequisite,0.5,1714.0,1538.0,backward,tie
+R0004,acute angle,triangle,Part-of,0.5,1714.0,2321.0,forward,forward
+R0005,acute triangle,angle,Part-of,0.5,2643.0,1381.0,backward,backward
+R0006,acute triangle,degree,Application,0.5,2643.0,1538.0,backward,backward
+R0007,acute triangle,polygon,Part-of,0.5,2643.0,2919.0,forward,forward
+R0008,acute triangle,triangle,Part-of,0.5,2643.0,2321.0,backward,tie
+R0009,Adjacent angles,angle,Part-of,1.0,2072.0,1381.0,backward,backward
+R0010,Adjacent angles,linear pair,Extension,0.5,2072.0,2053.0,backward,tie
+R0011,Adjacent angles,vertex,Part-of,0.5,2072.0,1506.0,backward,backward
+R0012,Alternate exterior angles,alternate exterior angles theorem,Application,0.5,5606.0,6110.0,forward,forward
+R0013,Alternate exterior angles,angle,Application,0.5,5606.0,1381.0,backward,backward
+R0014,Alternate exterior angles,transversal,Application,0.5,5606.0,5323.0,backward,tie
+R0015,alternate exterior angles theorem,angle,Application,0.5,6110.0,1381.0,backward,backward
+R0016,alternate exterior angles theorem,congruent,Prerequisite,0.5,6110.0,1053.0,backward,backward
+R0017,alternate exterior angles theorem,line,Application,0.5,6110.0,73.0,backward,backward
+R0018,alternate exterior angles theorem,transversal,Application,0.5,6110.0,5323.0,backward,backward
+R0019,alternate interior angles theorem,angle,Application,0.5,5966.0,1381.0,backward,backward
+R0020,alternate interior angles theorem,congruent,Prerequisite,0.5,5966.0,1053.0,backward,backward
+R0021,alternate interior angles theorem,transversal,Application,0.5,5966.0,5323.0,backward,backward
+R0022,altitude,median,Similarity,0.5,10035.0,10023.0,backward,tie
+R0023,altitude,midpoint,Part-of,0.5,10035.0,1116.0,backward,backward
+R0024,altitude,orthocenter,Application,0.5,10035.0,10391.0,forward,tie
+R0025,altitude,segments,Part-of,0.5,10035.0,780.0,backward,backward
+R0026,altitude,triangle,Part-of,0.5,10035.0,2321.0,backward,backward
+R0027,altitude,vertex,Part-of,0.5,10035.0,1506.0,backward,backward
+R0028,angle,angle addition postulate,Application,0.5,1381.0,1591.0,forward,tie
+R0029,angle,angle angle similarity postulate,Extension,0.5,1381.0,12822.0,forward,forward
+R0030,angle,angle bisector,Application,0.5,1381.0,9540.0,forward,forward
+R0031,angle,angle bisector theorem,Application,0.5,1381.0,9695.0,forward,forward
+R0032,angle,angle measure,Application,0.5,1381.0,20694.0,forward,forward
+R0033,angle,center of rotation,Application,0.5,1381.0,20385.0,forward,forward
+R0034,angle,co-interior angles theorem,Application,0.5,1381.0,6254.0,forward,forward
+R0035,angle,Complementary angles,Application,0.5,1381.0,1910.0,forward,forward
+R0036,angle,Corresponding angles,Application,0.5,1381.0,5452.0,forward,forward
+R0037,angle,corresponding angles postulate,Application,0.5,1381.0,5830.0,forward,forward
+R0038,angle,degree,Application,0.5,1381.0,1538.0,forward,tie
+R0039,angle,equilateral triangle,Application,0.5,1381.0,2443.0,forward,forward
+R0040,angle,exterior angle sum,Application,0.5,1381.0,10978.0,forward,forward
+R0041,angle,incenter,Part-of,0.5,1381.0,9923.0,forward,forward
+R0042,angle,included angle,Extension,0.5,1381.0,8050.0,forward,forward
+R0043,angle,inscribed angle,Part-of,0.5,1381.0,15976.0,forward,forward
+R0044,angle,interior angle sum,Application,0.5,1381.0,10897.0,forward,forward
+R0045,angle,isometries,Application,0.5,1381.0,20038.0,forward,forward
+R0046,angle,linear pair,Application,0.5,1381.0,2053.0,forward,forward
+R0047,angle,obtuse angle,Extension,0.5,1381.0,1798.0,forward,tie
+R0048,angle,obtuse triangle,Application,0.5,1381.0,2750.0,forward,forward
+R0049,angle,Parallel lines,Application,0.5,1381.0,5208.0,forward,forward
+R0050,angle,parallelogram,Application,0.5,1381.0,11123.0,forward,forward
+R0051,angle,ray,Part-of,1.0,1381.0,514.0,backward,backward
+R0052,angle,regular polygon,Application,0.5,1381.0,3160.0,forward,forward
+R0053,angle,right angle,Prerequisite,0.5,1381.0,1757.0,forward,tie
+R0054,angle,Rotations,Application,0.5,1381.0,20317.0,forward,forward
+R0055,angle,straight angle,Part-of,0.5,1381.0,1848.0,forward,tie
+R0056,angle,sum of interior angles,Application,0.5,1381.0,3230.0,forward,forward
+R0057,angle,Supplementary angles,Application,0.5,1381.0,1980.0,forward,forward
+R0058,angle,transversal,Application,0.5,1381.0,5323.0,forward,forward
+R0059,angle,triangle angle sum theorem,Application,0.5,1381.0,2809.0,forward,forward
+R0060,angle,Trigonometry,Application,0.5,1381.0,13582.0,forward,forward
+R0061,angle,vertex,Part-of,0.5,1381.0,1506.0,forward,tie
+R0062,angle,Vertical angles,Extension,0.5,1381.0,2115.0,forward,forward
+R0063,angle angle similarity postulate,congruent,Prerequisite,0.5,12822.0,1053.0,backward,backward
+R0064,angle angle similarity postulate,triangle,Application,0.5,12822.0,2321.0,backward,backward
+R0065,angle bisector,endpoint,Part-of,0.5,9540.0,473.0,backward,backward
+R0066,angle bisector,incenter,Application,0.5,9540.0,9923.0,forward,tie
+R0067,angle bisector,perpendicular bisector,Prerequisite,0.5,9540.0,6930.0,backward,backward
+R0068,angle bisector,perpendicular bisector theorem,Extension,0.5,9540.0,9560.0,forward,tie
+R0069,angle bisector,point,Application,0.9,9540.0,65.0,backward,backward
+R0070,angle bisector,segments,Application,0.5,9540.0,780.0,backward,backward
+R0071,angle bisector theorem,angle bisector,Extension,0.5,9695.0,9540.0,backward,tie
+R0072,angle bisector theorem,triangle,Application,1.0,9695.0,2321.0,backward,backward
+R0073,angle measure,isometries,Prerequisite,0.5,20694.0,20038.0,backward,backward
+R0074,angle measure,obtuse angle,Application,0.5,20694.0,1798.0,backward,backward
+R0075,angle measure,straight angle,Application,0.5,20694.0,1848.0,backward,backward
+R0076,angle of rotation,center of rotation,Part-of,0.5,20410.0,20385.0,backward,tie
+R0077,angle of rotation,Rotations,Part-of,0.5,20410.0,20317.0,backward,tie
+R0078,arc,angle,Application,0.5,15421.0,1381.0,backward,backward
+R0079,arc,arc addition postulate,Application,0.5,15421.0,15628.0,forward,tie
+R0080,arc,Arc Length,Application,0.5,15421.0,17505.0,forward,forward
+R0081,arc,area of a sector,Application,0.5,15421.0,17869.0,forward,forward
+R0082,arc,circle,Part-of,0.5,15421.0,14893.0,backward,backward
+R0083,arc,Congruent arcs,Extension,0.5,15421.0,15699.0,forward,tie
+R0084,arc,inscribed angle,Application,0.5,15421.0,15976.0,forward,forward
+R0085,arc,inscribed angle theorem,Application,0.5,15421.0,16080.0,forward,forward
+R0086,arc,major arc,Extension,0.5,15421.0,15548.0,forward,tie
+R0087,arc,minor arc,Extension,0.5,15421.0,15510.0,forward,tie
+R0088,arc,sector,Part-of,0.5,15421.0,17739.0,forward,forward
+R0089,arc addition postulate,circle,Application,0.9,15628.0,14893.0,backward,backward
+R0090,Arc Length,circle,Part-of,0.5,17505.0,14893.0,backward,backward
+R0091,Arc Length,Circumference,Part-of,0.5,17505.0,17487.0,backward,tie
+R0092,area of a circle,circle,Part-of,0.5,17751.0,14893.0,backward,backward
+R0093,area of a circle,radius,Part-of,0.5,17751.0,15012.0,backward,backward
+R0094,area of a parallelogram,parallelogram,Part-of,0.5,17014.0,11123.0,backward,backward
+R0095,area of a parallelogram,polygon,Part-of,0.5,17014.0,2919.0,backward,backward
+R0096,area of a rectangle,rectangle,Application,0.5,16968.0,11607.0,backward,backward
+R0097,area of a sector,circle,Part-of,0.5,17869.0,14893.0,backward,backward
+R0098,area of a sector,sector,Application,0.5,17869.0,17739.0,backward,tie
+R0099,area of a triangle,triangle,Part-of,0.5,17064.0,2321.0,backward,backward
+R0100,bases,kite,Part-of,0.5,12042.0,11958.0,backward,tie
+R0101,bases,polygon,Part-of,0.5,12042.0,2919.0,backward,backward
+R0102,bases,quadrilateral,Part-of,0.5,12042.0,3076.0,backward,backward
+R0103,bases,trapezoid,Part-of,0.5,12042.0,11943.0,backward,tie
+R0104,biconditional statement,converse,Part-of,0.5,4004.0,3837.0,backward,tie
+R0105,bisect,diagonal,Application,1.0,11406.0,11044.0,backward,backward
+R0106,bisect,parallelogram,Extension,0.5,11406.0,11123.0,backward,tie
+R0107,bisect,rhombus,Application,0.5,11406.0,11619.0,forward,forward
+R0108,center,circle,Part-of,0.5,10186.0,14893.0,forward,forward
+R0109,center,median,Part-of,0.5,10186.0,10023.0,backward,tie
+R0110,center,radius,Part-of,0.5,10186.0,15012.0,forward,forward
+R0111,center,sphere,Part-of,0.5,10186.0,19179.0,forward,forward
+R0112,center,triangle,Part-of,1.0,10186.0,2321.0,backward,backward
+R0113,center of rotation,Rotations,Part-of,0.5,20385.0,20317.0,backward,tie
+R0114,central angle,angle,Part-of,1.0,15428.0,1381.0,backward,backward
+R0115,central angle,circle,Part-of,1.0,15428.0,14893.0,backward,backward
+R0116,central angle,inscribed angle theorem,Application,0.5,15428.0,16080.0,forward,forward
+R0117,centroid,concurrency,Part-of,0.5,10123.0,9839.0,backward,backward
+R0118,centroid,median,Part-of,0.5,10123.0,10023.0,backward,tie
+R0119,centroid,point,Part-of,0.5,10123.0,65.0,backward,backward
+R0120,centroid,triangle,Part-of,1.0,10123.0,2321.0,backward,backward
+R0121,chord,circle,Part-of,1.0,15092.0,14893.0,backward,backward
+R0122,circle,circumcenter,Part-of,0.5,14893.0,9810.0,backward,backward
+R0123,circle,Distance,Prerequisite,0.5,14893.0,821.0,backward,backward
+R0124,circle,inscribed angle theorem,Application,0.5,14893.0,16080.0,forward,forward
+R0125,circle,line,Part-of,0.5,14893.0,73.0,backward,backward
+R0126,circle,minor arc,Part-of,0.5,14893.0,15510.0,forward,forward
+R0127,circle,sector,Part-of,0.5,14893.0,17739.0,forward,forward
+R0128,circle,segments,Part-of,0.5,14893.0,780.0,backward,backward
+R0129,circle,Tangents,Part-of,0.5,14893.0,16346.0,forward,forward
+R0130,circumcenter,perpendicular bisector,Part-of,0.5,9810.0,6930.0,backward,backward
+R0131,circumcenter,point,Part-of,0.5,9810.0,65.0,backward,backward
+R0132,circumcenter,vertex,Part-of,0.5,9810.0,1506.0,backward,backward
+R0133,Circumference,diameter,Part-of,0.5,17487.0,15078.0,backward,backward
+R0134,Circumference,radius,Part-of,0.5,17487.0,15012.0,backward,backward
+R0135,CK-12 Basic Geometry Concepts,polygon,Part-of,0.5,0.0,2919.0,forward,forward
+R0136,co-interior angles theorem,supplementary,Application,0.5,6254.0,1980.0,backward,backward
+R0137,co-interior angles theorem,transversal,Application,0.5,6254.0,5323.0,backward,backward
+R0138,Collinear points,line,Part-of,0.5,605.0,73.0,backward,tie
+R0139,Complementary angles,degree,Prerequisite,0.5,1910.0,1538.0,backward,backward
+R0140,composite solid,Solids,Part-of,0.5,19371.0,18330.0,backward,backward
+R0141,conclusion,hypothesis,Part-of,0.5,3431.0,3720.0,forward,forward
+R0142,concurrency,center,Part-of,0.5,9839.0,10186.0,forward,forward
+R0143,concurrency,circle,Part-of,0.5,9839.0,14893.0,forward,forward
+R0144,concurrency,incenter,Extension,0.5,9839.0,9923.0,forward,tie
+R0145,concurrency,orthocenter,Part-of,0.5,9839.0,10391.0,forward,forward
+R0146,concurrency,perpendicular bisector,Part-of,0.5,9839.0,6930.0,backward,backward
+R0147,concurrency,vertex,Part-of,0.5,9839.0,1506.0,backward,backward
+R0148,conditional statement,conclusion,Part-of,0.5,3639.0,3431.0,backward,backward
+R0149,conditional statement,hypothesis,Part-of,0.5,3639.0,3720.0,forward,tie
+R0150,cone,polygon,Part-of,0.5,18831.0,2919.0,backward,backward
+R0151,cone,pyramid,Extension,0.5,18831.0,18180.0,backward,backward
+R0152,congruence,congruent,Prerequisite,0.5,4437.0,1053.0,backward,backward
+R0153,congruence,triangle,Application,1.0,4437.0,2321.0,backward,backward
+R0154,congruent,Congruent arcs,Similarity,0.5,1053.0,15699.0,forward,forward
+R0155,congruent,Congruent polygons,Extension,0.5,1053.0,7532.0,forward,forward
+R0156,congruent,Congruent segments,Extension,0.5,1053.0,1053.0,tie,tie
+R0157,congruent,hinge theorem,Prerequisite,0.5,1053.0,10671.0,forward,forward
+R0158,congruent,hypotenuse leg congruence theorem,Prerequisite,0.5,1053.0,8687.0,forward,forward
+R0159,congruent,isosceles triangle,Application,0.5,1053.0,2494.0,forward,forward
+R0160,congruent,isosceles triangle theorem,Application,0.5,1053.0,8886.0,forward,forward
+R0161,congruent,midpoint of a segment,Application,0.5,1053.0,1116.0,forward,tie
+R0162,congruent,point,Extension,0.85,1053.0,65.0,backward,backward
+R0163,congruent,point of tangency,Application,0.925,1053.0,15246.0,forward,forward
+R0164,congruent,rhombus,Prerequisite,0.5,1053.0,11619.0,forward,forward
+R0165,congruent,Similar Polygons,Prerequisite,0.5,1053.0,12539.0,forward,forward
+R0166,congruent,tangent line,Application,0.95,1053.0,14927.0,forward,forward
+R0167,congruent,Tangents,Application,0.95,1053.0,16346.0,forward,forward
+R0168,congruent,Vertical angles,Similarity,0.8,1053.0,2115.0,forward,forward
+R0169,Congruent arcs,circle,Extension,0.5,15699.0,14893.0,backward,backward
+R0170,Congruent polygons,polygon,Part-of,0.5,7532.0,2919.0,backward,backward
+R0171,Congruent segments,midpoint,Part-of,0.5,1053.0,1116.0,forward,tie
+R0172,Congruent segments,midpoint of a segment,Part-of,0.5,1053.0,1116.0,forward,tie
+R0173,Congruent segments,segments,Part-of,0.5,1053.0,780.0,backward,backward
+R0174,congruent sides,congruent,Part-of,0.5,2474.0,1053.0,backward,backward
+R0175,congruent sides,isosceles triangle,Part-of,0.5,2474.0,2494.0,forward,tie
+R0176,congruent sides,scalene triangle,Prerequisite,0.5,2474.0,2549.0,forward,tie
+R0177,congruent sides,triangle,Part-of,0.5,2474.0,2321.0,backward,tie
+R0178,congruent triangles,corresponding parts,Application,0.5,7636.0,7574.0,backward,tie
+R0179,congruent triangles,CPCTC,Application,0.5,7636.0,7685.0,forward,tie
+R0180,conjecture,counterexample,Application,0.5,3451.0,3465.0,forward,tie
+R0181,conjecture,Inductive Reasoning,Application,0.5,3451.0,3350.0,backward,tie
+R0182,Coplanar points,plane,Part-of,0.5,660.0,84.0,backward,tie
+R0183,corollary,angle,Application,0.5,7428.0,1381.0,backward,backward
+R0184,corollary,degree,Application,0.5,7428.0,1538.0,backward,backward
+R0185,corollary,equilateral triangle,Application,0.5,7428.0,2443.0,backward,backward
+R0186,Corresponding angles,corresponding angles postulate,Extension,0.5,5452.0,5830.0,forward,forward
+R0187,Corresponding angles,intersection,Application,1.0,5452.0,718.0,backward,backward
+R0188,Corresponding angles,Lines Parallel,Application,0.5,5452.0,6397.0,forward,forward
+R0189,Corresponding angles,transversal,Application,0.5,5452.0,5323.0,backward,tie
+R0190,corresponding angles postulate,congruent,Application,0.5,5830.0,1053.0,backward,backward
+R0191,corresponding angles postulate,converse,Application,0.5,5830.0,3837.0,backward,backward
+R0192,corresponding angles postulate,line,Application,1.0,5830.0,73.0,backward,backward
+R0193,corresponding angles postulate,Lines Parallel,Application,0.5,5830.0,6397.0,forward,forward
+R0194,corresponding angles postulate,transversal,Application,0.5,5830.0,5323.0,backward,backward
+R0195,corresponding parts,Congruent polygons,Prerequisite,0.5,7574.0,7532.0,backward,tie
+R0196,corresponding parts,CPCTC,Application,0.5,7574.0,7685.0,forward,tie
+R0197,corresponding parts,polygon,Part-of,0.5,7574.0,2919.0,backward,backward
+R0198,corresponding parts,triangle,Application,0.95,7574.0,2321.0,backward,backward
+R0199,corresponding sides,congruent triangles,Prerequisite,0.5,7729.0,7636.0,backward,tie
+R0200,corresponding sides,polygon,Similarity,0.825,7729.0,2919.0,backward,backward
+R0201,CPCTC,congruent,Application,0.5,7685.0,1053.0,backward,backward
+R0202,CPCTC,triangle,Application,0.5,7685.0,2321.0,backward,backward
+R0203,cross products,proportion,Prerequisite,0.5,12412.0,12290.0,backward,tie
+R0204,cross section,intersection,Part-of,0.5,18399.0,718.0,backward,backward
+R0205,cross section,plane,Application,0.5,18399.0,84.0,backward,backward
+R0206,cross section,Solids,Application,0.5,18399.0,18330.0,backward,tie
+R0207,cylinder,prism,Extension,0.95,18475.0,18105.0,backward,backward
+R0208,cylinder,volume,Application,0.5,18475.0,17980.0,backward,backward
+R0209,degree,alternate interior angles theorem,Application,0.5,1538.0,5966.0,forward,forward
+R0210,degree,angle addition postulate,Application,0.5,1538.0,1591.0,forward,tie
+R0211,degree,angle measure,Prerequisite,0.5,1538.0,20694.0,forward,forward
+R0212,degree,area of a sector,Application,0.5,1538.0,17869.0,forward,forward
+R0213,degree,center of rotation,Application,0.5,1538.0,20385.0,forward,forward
+R0214,degree,central angle,Application,0.5,1538.0,15428.0,forward,forward
+R0215,degree,circle,Application,0.5,1538.0,14893.0,forward,forward
+R0216,degree,Congruent arcs,Application,0.5,1538.0,15699.0,forward,forward
+R0217,degree,exterior angle sum,Application,0.5,1538.0,10978.0,forward,forward
+R0218,degree,exterior angle theorem,Application,0.5,1538.0,7269.0,forward,forward
+R0219,degree,interior angle sum,Application,0.5,1538.0,10897.0,forward,forward
+R0220,degree,isosceles triangle theorem,Application,0.5,1538.0,8886.0,forward,forward
+R0221,degree,major arc,Extension,0.5,1538.0,15548.0,forward,forward
+R0222,degree,minor arc,Application,0.5,1538.0,15510.0,forward,forward
+R0223,degree,Obtuse,Application,0.5,1538.0,1798.0,forward,tie
+R0224,degree,obtuse angle,Application,0.5,1538.0,1798.0,forward,tie
+R0225,degree,obtuse triangle,Application,0.5,1538.0,2750.0,forward,forward
+R0226,degree,protractor,Application,0.5,1538.0,1549.0,forward,tie
+R0227,degree,right angle,Application,0.5,1538.0,1757.0,forward,tie
+R0228,degree,rotational symmetry,Application,0.5,1538.0,19655.0,forward,forward
+R0229,degree,semicircle,Extension,0.5,1538.0,15589.0,forward,forward
+R0230,degree,straight angle,Application,0.5,1538.0,1848.0,forward,tie
+R0231,degree,sum of interior angles,Application,0.5,1538.0,3230.0,forward,forward
+R0232,degree,Supplementary angles,Application,0.5,1538.0,1980.0,forward,forward
+R0233,degree,triangle,Application,0.5,1538.0,2321.0,forward,forward
+R0234,degree,triangle angle sum theorem,Application,0.5,1538.0,2809.0,forward,forward
+R0235,diagonal,polygon,Part-of,0.5,11044.0,2919.0,backward,backward
+R0236,diagonal,rectangle,Application,0.5,11044.0,11607.0,forward,forward
+R0237,diagonal,rhombus,Part-of,0.5,11044.0,11619.0,forward,forward
+R0238,diagonal,segments,Part-of,0.5,11044.0,780.0,backward,backward
+R0239,diagonal,vertices,Part-of,0.5,11044.0,11094.0,forward,tie
+R0240,diameter,center,Part-of,1.0,15078.0,10186.0,backward,backward
+R0241,diameter,chord,Part-of,1.0,15078.0,15092.0,forward,tie
+R0242,diameter,circle,Part-of,0.95,15078.0,14893.0,backward,backward
+R0243,diameter,segments,Part-of,0.5,15078.0,780.0,backward,backward
+R0244,Distance,isometries,Application,0.5,821.0,20038.0,forward,forward
+R0245,Distance,translation,Application,0.5,821.0,19819.0,forward,forward
+R0246,distance between two points,Distance,Extension,0.5,880.0,821.0,backward,tie
+R0247,distance between two points,point,Application,0.5,880.0,65.0,backward,backward
+R0248,distance between two points,triangle,Application,0.5,880.0,2321.0,forward,forward
+R0249,endpoint,line,Part-of,0.5,473.0,73.0,backward,tie
+R0250,endpoint,line segment,Part-of,0.5,473.0,422.0,backward,tie
+R0251,endpoint,perpendicular bisector,Part-of,0.5,473.0,6930.0,forward,forward
+R0252,endpoint,perpendicular bisector theorem,Part-of,0.5,473.0,9560.0,forward,forward
+R0253,endpoint,ray,Part-of,0.5,473.0,514.0,forward,tie
+R0254,endpoint,segments,Part-of,0.5,473.0,780.0,forward,tie
+R0255,endpoint,vertex,Part-of,0.5,473.0,1506.0,forward,forward
+R0256,equiangular,equilateral triangle,Part-of,0.5,9163.0,2443.0,backward,backward
+R0257,equiangular,triangle,Part-of,0.5,9163.0,2321.0,backward,backward
+R0258,equilateral triangle,congruent,Prerequisite,0.5,2443.0,1053.0,backward,backward
+R0259,equilateral triangle,congruent sides,Part-of,0.5,2443.0,2474.0,forward,tie
+R0260,equilateral triangle,isosceles triangle,Part-of,0.5,2443.0,2494.0,forward,tie
+R0261,equilateral triangle,isosceles triangle theorem,Extension,0.5,2443.0,8886.0,forward,forward
+R0262,equilateral triangle,triangle,Part-of,0.5,2443.0,2321.0,backward,tie
+R0263,exterior angle,angle,Application,0.9,5616.0,1381.0,backward,backward
+R0264,exterior angle,exterior angle sum,Extension,0.5,5616.0,10978.0,forward,forward
+R0265,exterior angle,exterior angle theorem,Extension,0.5,5616.0,7269.0,forward,forward
+R0266,exterior angle,interior angles,Application,0.5,5616.0,3237.0,backward,backward
+R0267,exterior angle,remote interior angles,Part-of,0.5,5616.0,7400.0,forward,forward
+R0268,exterior angle,triangle,Application,1.0,5616.0,2321.0,backward,backward
+R0269,exterior angle sum,polygon,Part-of,0.5,10978.0,2919.0,backward,backward
+R0270,exterior angle theorem,angle,Application,0.9,7269.0,1381.0,backward,backward
+R0271,exterior angle theorem,interior angles,Application,0.5,7269.0,3237.0,backward,backward
+R0272,exterior angle theorem,remote interior angles,Part-of,0.5,7269.0,7400.0,forward,tie
+R0273,exterior angle theorem,triangle,Application,1.0,7269.0,2321.0,backward,backward
+R0274,flowchart proof,proof,Application,0.5,5003.0,3339.0,backward,backward
+R0275,glide reflection,line,Part-of,1.0,20568.0,73.0,backward,backward
+R0276,glide reflection,line of reflection,Part-of,0.5,20568.0,20119.0,backward,backward
+R0277,glide reflection,reflection,Part-of,0.5,20568.0,20056.0,backward,backward
+R0278,glide reflection,Transformations,Application,0.5,20568.0,19532.0,backward,backward
+R0279,glide reflection,translation,Part-of,0.5,20568.0,19819.0,backward,backward
+R0280,hexagon,polygon,Part-of,0.95,3135.0,2919.0,backward,tie
+R0281,hinge theorem,angle,Application,0.5,10671.0,1381.0,backward,backward
+R0282,hinge theorem,included angle,Application,1.0,10671.0,8050.0,backward,backward
+R0283,hinge theorem,triangle,Application,0.5,10671.0,2321.0,backward,backward
+R0284,hypotenuse,congruence,Application,0.5,8687.0,4437.0,backward,backward
+R0285,hypotenuse,hypotenuse leg congruence theorem,Prerequisite,0.5,8687.0,8687.0,tie,tie
+R0286,hypotenuse,Pythagorean Theorem,Application,0.5,8687.0,13604.0,forward,forward
+R0287,hypotenuse,right triangle,Application,0.5,8687.0,2697.0,backward,backward
+R0288,hypotenuse leg congruence theorem,congruence,Application,0.5,8687.0,4437.0,backward,backward
+R0289,hypotenuse leg congruence theorem,right triangle,Application,0.5,8687.0,2697.0,backward,backward
+R0290,hypotenuse leg congruence theorem,triangle,Application,1.0,8687.0,2321.0,backward,backward
+R0291,hypothesis,converse,Application,0.5,3720.0,3837.0,forward,tie
+R0292,incenter,point,Prerequisite,0.5,9923.0,65.0,backward,backward
+R0293,included angle,triangle,Application,0.5,8050.0,2321.0,backward,backward
+R0294,Inductive Reasoning,conclusion,Application,0.5,3350.0,3431.0,forward,tie
+R0295,inscribed angle,central angle,Extension,0.5,15976.0,15428.0,backward,backward
+R0296,inscribed angle,chord,Application,0.5,15976.0,15092.0,backward,backward
+R0297,inscribed angle,circle,Application,0.5,15976.0,14893.0,backward,backward
+R0298,inscribed angle,inscribed angle theorem,Application,0.5,15976.0,16080.0,forward,tie
+R0299,inscribed angle,vertex,Part-of,1.0,15976.0,1506.0,backward,backward
+R0300,inscribed angle theorem,angle,Application,1.0,16080.0,1381.0,backward,backward
+R0301,interior angle sum,interior angles,Extension,0.5,10897.0,3237.0,backward,backward
+R0302,interior angle sum,polygon,Prerequisite,0.5,10897.0,2919.0,backward,backward
+R0303,interior angles,angle,Prerequisite,0.5,3237.0,1381.0,backward,backward
+R0304,interior angles,degree,Application,0.5,3237.0,1538.0,backward,backward
+R0305,interior angles,polygon,Prerequisite,0.5,3237.0,2919.0,backward,tie
+R0306,intersection,line,Application,0.5,718.0,73.0,backward,tie
+R0307,intersection,plane,Application,1.0,718.0,84.0,backward,tie
+R0308,intersection,point,Part-of,0.5,718.0,65.0,backward,tie
+R0309,inverse,conclusion,Application,0.5,3904.0,3431.0,backward,backward
+R0310,inverse,hypothesis,Application,1.0,3904.0,3720.0,backward,tie
+R0311,isometries,reflection,Application,0.5,20038.0,20056.0,forward,forward
+R0312,isosceles triangle,isosceles triangle theorem,Application,0.5,2494.0,8886.0,forward,forward
+R0313,isosceles triangle,triangle,Part-of,0.5,2494.0,2321.0,backward,tie
+R0314,isosceles triangle theorem,angle,Application,1.0,8886.0,1381.0,backward,backward
+R0315,isosceles triangle theorem,triangle,Part-of,0.5,8886.0,2321.0,backward,backward
+R0316,kite,congruent sides,Application,0.5,11958.0,2474.0,backward,backward
+R0317,kite,diagonal,Application,0.5,11958.0,11044.0,backward,backward
+R0318,kite,quadrilateral,Prerequisite,0.5,11958.0,3076.0,backward,backward
+R0319,kite,trapezoid,Prerequisite,0.5,11958.0,11943.0,backward,tie
+R0320,lateral area,cylinder,Extension,0.5,18489.0,18475.0,backward,tie
+R0321,lateral area,perimeter,Part-of,0.5,18489.0,12705.0,backward,backward
+R0322,lateral area,prism,Part-of,0.5,18489.0,18105.0,backward,backward
+R0323,lateral area,pyramid,Application,0.5,18489.0,18180.0,backward,backward
+R0324,line,alternate interior angles theorem,Application,0.5,73.0,5966.0,forward,forward
+R0325,line,co-interior angles theorem,Prerequisite,0.5,73.0,6254.0,forward,forward
+R0326,line,Distance,Application,0.5,73.0,821.0,forward,forward
+R0327,line,distance between two points,Application,0.5,73.0,880.0,forward,forward
+R0328,line,line segment,Part-of,0.5,73.0,422.0,forward,tie
+R0329,line,linear pair,Part-of,0.5,73.0,2053.0,forward,forward
+R0330,line,perpendicular bisector,Part-of,0.5,73.0,6930.0,forward,forward
+R0331,line,perpendicular bisector theorem,Application,0.5,73.0,9560.0,forward,forward
+R0332,line,perpendicular transversal theorem,Application,0.5,73.0,6779.0,forward,forward
+R0333,line,ray,Part-of,0.5,73.0,514.0,forward,tie
+R0334,line,reflection,Application,0.5,73.0,20056.0,forward,forward
+R0335,line,ruler postulate,Application,0.5,73.0,970.0,forward,forward
+R0336,line,segment bisector,Part-of,0.5,73.0,1198.0,forward,forward
+R0337,line,segments,Part-of,0.5,73.0,780.0,forward,tie
+R0338,line,slope,Application,0.5,73.0,6580.0,forward,forward
+R0339,line,tangent line,Part-of,0.5,73.0,14927.0,forward,forward
+R0340,line,Tangents,Part-of,0.5,73.0,16346.0,forward,forward
+R0341,line,Transformations,Part-of,0.5,73.0,19532.0,forward,forward
+R0342,line of reflection,line,Application,0.5,20119.0,73.0,backward,backward
+R0343,line of reflection,reflection,Part-of,0.5,20119.0,20056.0,backward,tie
+R0344,line of reflection,Transformations,Application,0.5,20119.0,19532.0,backward,backward
+R0345,line segment,polygon,Part-of,0.5,422.0,2919.0,forward,forward
+R0346,line segment,segments,Part-of,0.5,422.0,780.0,forward,tie
+R0347,Lines Parallel,congruent,Prerequisite,0.5,6397.0,1053.0,backward,backward
+R0348,Lines Parallel,converse,Extension,0.9,6397.0,3837.0,backward,backward
+R0349,Lines Parallel,line,Part-of,0.5,6397.0,73.0,backward,backward
+R0350,Lines Parallel,transversal,Application,0.5,6397.0,5323.0,backward,backward
+R0351,major arc,circle,Part-of,0.5,15548.0,14893.0,backward,backward
+R0352,median,midpoint,Part-of,0.5,10023.0,1116.0,backward,backward
+R0353,median,point,Extension,0.825,10023.0,65.0,backward,backward
+R0354,median,segments,Part-of,0.5,10023.0,780.0,backward,backward
+R0355,median,triangle,Part-of,0.5,10023.0,2321.0,backward,backward
+R0356,median,vertex,Part-of,0.5,10023.0,1506.0,backward,backward
+R0357,midpoint,congruent,Prerequisite,0.5,1116.0,1053.0,backward,tie
+R0358,midpoint,midpoint of a segment,Prerequisite,0.5,1116.0,1116.0,tie,tie
+R0359,midpoint,point,Prerequisite,0.5,1116.0,65.0,backward,backward
+R0360,midpoint,segment bisector,Part-of,0.5,1116.0,1198.0,forward,tie
+R0361,midpoint,segments,Part-of,0.5,1116.0,780.0,backward,backward
+R0362,midpoint,triangle,Part-of,1.0,1116.0,2321.0,forward,forward
+R0363,midpoint of a segment,point,Part-of,1.0,1116.0,65.0,backward,backward
+R0364,midpoint of a segment,segments,Part-of,0.5,1116.0,780.0,backward,backward
+R0365,midpoint theorem,midpoint,Prerequisite,0.5,5046.0,1116.0,backward,backward
+R0366,midpoint theorem,segments,Part-of,0.5,5046.0,780.0,backward,backward
+R0367,midpoint theorem,triangle,Part-of,0.5,5046.0,2321.0,backward,backward
+R0368,midsegment,midpoint,Part-of,0.5,9280.0,1116.0,backward,backward
+R0369,midsegment,segments,Part-of,0.5,9280.0,780.0,backward,backward
+R0370,midsegment,triangle,Part-of,1.0,9280.0,2321.0,backward,backward
+R0371,midsegment,triangle midsegment theorem,Application,0.5,9280.0,9388.0,forward,tie
+R0372,midsegment of a triangle,midpoint,Part-of,0.5,9307.0,1116.0,backward,backward
+R0373,midsegment of a triangle,segments,Part-of,0.5,9307.0,780.0,backward,backward
+R0374,midsegment of a triangle,triangle,Part-of,1.0,9307.0,2321.0,backward,backward
+R0375,net,Solids,Application,0.5,18339.0,18330.0,backward,tie
+R0376,Obtuse,angle,Part-of,0.5,1798.0,1381.0,backward,tie
+R0377,Obtuse,angle measure,Prerequisite,0.5,1798.0,20694.0,forward,forward
+R0378,Obtuse,obtuse triangle,Part-of,0.5,1798.0,2750.0,forward,forward
+R0379,obtuse triangle,polygon,Part-of,0.5,2750.0,2919.0,forward,forward
+R0380,obtuse triangle,triangle,Part-of,0.5,2750.0,2321.0,backward,tie
+R0381,opposite angles,angle,Part-of,0.5,2139.0,1381.0,backward,backward
+R0382,opposite angles,line,Application,0.5,2139.0,73.0,backward,backward
+R0383,opposite angles,parallelogram,Application,0.5,2139.0,11123.0,forward,forward
+R0384,opposite angles,supplementary,Extension,0.5,2139.0,1980.0,backward,tie
+R0385,orthocenter,triangle,Part-of,0.5,10391.0,2321.0,backward,backward
+R0386,Parallel lines,Alternate exterior angles,Application,0.5,5208.0,5606.0,forward,tie
+R0387,Parallel lines,alternate exterior angles theorem,Prerequisite,0.5,5208.0,6110.0,forward,forward
+R0388,Parallel lines,alternate interior angles theorem,Prerequisite,0.5,5208.0,5966.0,forward,forward
+R0389,Parallel lines,co-interior angles theorem,Prerequisite,0.5,5208.0,6254.0,forward,forward
+R0390,Parallel lines,line,Part-of,0.5,5208.0,73.0,backward,backward
+R0391,Parallel lines,perpendicular transversal theorem,Application,0.5,5208.0,6779.0,forward,forward
+R0392,Parallel lines,slope,Prerequisite,0.5,5208.0,6580.0,forward,forward
+R0393,Parallel lines,transversal,Application,0.5,5208.0,5323.0,forward,tie
+R0394,parallelogram,congruent,Part-of,0.5,11123.0,1053.0,backward,backward
+R0395,parallelogram,diagonal,Part-of,0.5,11123.0,11044.0,backward,backward
+R0396,parallelogram,polygon,Part-of,0.5,11123.0,2919.0,backward,backward
+R0397,parallelogram,prism,Part-of,0.5,11123.0,18105.0,forward,forward
+R0398,parallelogram,quadrilateral,Part-of,0.5,11123.0,3076.0,backward,backward
+R0399,parallelogram,rectangle,Part-of,0.5,11123.0,11607.0,forward,forward
+R0400,parallelogram,rhombus,Part-of,0.5,11123.0,11619.0,forward,forward
+R0401,parallelogram,square,Part-of,0.5,11123.0,11634.0,forward,forward
+R0402,pentagon,polygon,Part-of,0.95,3108.0,2919.0,backward,tie
+R0403,perimeter,corresponding sides,Extension,0.5,12705.0,7729.0,backward,backward
+R0404,perimeter,polygon,Part-of,0.5,12705.0,2919.0,backward,backward
+R0405,perimeter,prism,Application,0.5,12705.0,18105.0,forward,forward
+R0406,perimeter,ratio,Application,0.5,12705.0,10264.0,backward,backward
+R0407,perimeter,Similar Polygons,Extension,0.5,12705.0,12539.0,backward,tie
+R0408,perimeter of a polygon,perimeter,Prerequisite,0.5,16916.0,12705.0,backward,backward
+R0409,perimeter of a polygon,polygon,Part-of,0.5,16916.0,2919.0,backward,backward
+R0410,perimeter of a polygon,triangle,Part-of,0.5,16916.0,2321.0,backward,backward
+R0411,perpendicular bisector,bisect,Part-of,0.5,6930.0,11406.0,forward,forward
+R0412,perpendicular bisector,perpendicular bisector theorem,Prerequisite,0.5,6930.0,9560.0,forward,forward
+R0413,perpendicular bisector,rhombus,Application,0.5,6930.0,11619.0,forward,forward
+R0414,perpendicular bisector,segments,Part-of,0.5,6930.0,780.0,backward,backward
+R0415,perpendicular bisector,triangle,Application,0.5,6930.0,2321.0,backward,backward
+R0416,perpendicular bisector theorem,segments,Part-of,0.5,9560.0,780.0,backward,backward
+R0417,Perpendicular lines,line,Prerequisite,0.5,5166.0,73.0,backward,backward
+R0418,Perpendicular lines,right angle,Application,0.5,5166.0,1757.0,backward,backward
+R0419,Perpendicular lines,slope,Prerequisite,0.5,5166.0,6580.0,forward,forward
+R0420,perpendicular transversal theorem,transversal,Application,0.5,6779.0,5323.0,backward,backward
+R0421,pi radius,surface area,Application,0.5,19141.0,17963.0,backward,backward
+R0422,plane,polygon,Part-of,0.5,84.0,2919.0,forward,forward
+R0423,plane,segments,Application,0.5,84.0,780.0,forward,tie
+R0424,point,Collinear points,Extension,0.5,65.0,605.0,forward,tie
+R0425,point of tangency,circle,Application,0.5,15246.0,14893.0,backward,backward
+R0426,point of tangency,line,Application,0.5,15246.0,73.0,backward,backward
+R0427,point of tangency,radius,Application,0.5,15246.0,15012.0,backward,tie
+R0428,point of tangency,tangent line,Part-of,0.5,15246.0,14927.0,backward,tie
+R0429,point of tangency,Tangents,Part-of,0.5,15246.0,16346.0,forward,forward
+R0430,polygon,area of a triangle,Application,0.5,2919.0,17064.0,forward,forward
+R0431,polygon,exterior angle theorem,Application,0.5,2919.0,7269.0,forward,forward
+R0432,polygon,included angle,Application,0.5,2919.0,8050.0,forward,forward
+R0433,polygon,quadrilateral,Part-of,0.5,2919.0,3076.0,forward,tie
+R0434,polygon,rectangle,Part-of,0.5,2919.0,11607.0,forward,forward
+R0435,polygon,sum of interior angles,Application,0.5,2919.0,3230.0,forward,tie
+R0436,polyhedron,triangle,Part-of,0.5,17993.0,2321.0,backward,backward
+R0437,polyhedron,vertices,Part-of,0.5,17993.0,11094.0,backward,backward
+R0438,prism,bases,Part-of,0.5,18105.0,12042.0,backward,backward
+R0439,prism,volume of a prism,Application,0.5,18105.0,18638.0,forward,forward
+R0440,proof,congruent,Application,0.5,3339.0,1053.0,backward,backward
+R0441,proof,paragraph proof,Application,0.5,3339.0,4960.0,forward,forward
+R0442,proportion,ratio,Part-of,0.5,12290.0,10264.0,backward,backward
+R0443,protractor,angle,Application,1.0,1549.0,1381.0,backward,tie
+R0444,pyramid,perimeter,Part-of,0.5,18180.0,12705.0,backward,backward
+R0445,pyramid,polygon,Part-of,0.5,18180.0,2919.0,backward,backward
+R0446,pyramid,triangle,Part-of,0.5,18180.0,2321.0,backward,backward
+R0447,Pythagorean Theorem,converse,Application,0.5,13604.0,3837.0,backward,backward
+R0448,Pythagorean Theorem,Pythagorean triple,Extension,0.5,13604.0,13926.0,forward,tie
+R0449,Pythagorean Theorem,right triangle,Prerequisite,0.5,13604.0,2697.0,backward,backward
+R0450,Pythagorean Theorem,triangle,Application,0.5,13604.0,2321.0,backward,backward
+R0451,quadrilateral,trapezoid,Part-of,0.5,3076.0,11943.0,forward,forward
+R0452,radius,circle,Part-of,1.0,15012.0,14893.0,backward,backward
+R0453,radius,pi radius,Application,0.5,15012.0,19141.0,forward,forward
+R0454,radius,sector,Part-of,0.5,15012.0,17739.0,forward,forward
+R0455,radius,segments,Part-of,1.0,15012.0,780.0,backward,backward
+R0456,radius,sphere,Part-of,1.0,15012.0,19179.0,forward,forward
+R0457,radius,surface area,Part-of,0.5,15012.0,17963.0,forward,forward
+R0458,radius,tangent line,Application,0.5,15012.0,14927.0,backward,tie
+R0459,radius,volume,Application,0.5,15012.0,17980.0,forward,forward
+R0460,ratio,ratio of corresponding sides,Application,0.5,10264.0,12651.0,forward,forward
+R0461,ratio,scale factor,Part-of,0.5,10264.0,12458.0,forward,forward
+R0462,ratio,Similar Polygons,Application,0.5,10264.0,12539.0,forward,forward
+R0463,ratio of corresponding sides,corresponding sides,Extension,0.5,12651.0,7729.0,backward,backward
+R0464,ratio of corresponding sides,scale factor,Prerequisite,0.5,12651.0,12458.0,backward,backward
+R0465,ray,vertex,Part-of,0.5,514.0,1506.0,forward,forward
+R0466,rectangle,angle,Part-of,0.5,11607.0,1381.0,backward,backward
+R0467,rectangle,rhombus,Extension,0.5,11607.0,11619.0,forward,tie
+R0468,rectangle,square,Part-of,0.5,11607.0,11634.0,forward,tie
+R0469,reflection,rigid transformation,Application,0.5,20056.0,19526.0,backward,backward
+R0470,reflection,Rotations,Application,0.5,20056.0,20317.0,forward,forward
+R0471,reflection,Transformations,Extension,0.5,20056.0,19532.0,backward,backward
+R0472,reflection,translation,Application,0.5,20056.0,19819.0,backward,backward
+R0473,reflection,triangle,Application,0.5,20056.0,2321.0,backward,backward
+R0474,reflexive property,angle,Application,0.5,4463.0,1381.0,backward,backward
+R0475,reflexive property,congruent,Part-of,0.5,4463.0,1053.0,backward,backward
+R0476,reflexive property,segments,Part-of,0.5,4463.0,780.0,backward,backward
+R0477,regular polygon,triangle,Part-of,0.5,3160.0,2321.0,backward,backward
+R0478,remote interior angles,angle,Application,1.0,7400.0,1381.0,backward,backward
+R0479,remote interior angles,interior angles,Application,0.5,7400.0,3237.0,backward,backward
+R0480,remote interior angles,triangle,Application,1.0,7400.0,2321.0,backward,backward
+R0481,rhombus,angle,Application,1.0,11619.0,1381.0,backward,backward
+R0482,rhombus,congruent sides,Extension,0.5,11619.0,2474.0,backward,backward
+R0483,rhombus,square,Part-of,0.5,11619.0,11634.0,forward,tie
+R0484,right angle,parallelogram,Part-of,0.5,1757.0,11123.0,forward,forward
+R0485,right angle,rectangle,Prerequisite,0.5,1757.0,11607.0,forward,forward
+R0486,right angle,square,Part-of,0.5,1757.0,11634.0,forward,forward
+R0487,right triangle,congruence,Application,0.5,2697.0,4437.0,forward,forward
+R0488,right triangle,congruent,Application,0.5,2697.0,1053.0,backward,backward
+R0489,right triangle,triangle,Part-of,0.5,2697.0,2321.0,backward,tie
+R0490,right triangle,Trigonometry,Application,0.5,2697.0,13582.0,forward,forward
+R0491,rigid transformation,Transformations,Part-of,0.5,19526.0,19532.0,forward,tie
+R0492,rotational symmetry,Rotations,Application,0.5,19655.0,20317.0,forward,forward
+R0493,Rotations,center,Part-of,0.5,20317.0,10186.0,backward,backward
+R0494,Rotations,isometries,Application,1.0,20317.0,20038.0,backward,backward
+R0495,Rotations,triangle,Application,0.5,20317.0,2321.0,backward,backward
+R0496,scale factor,corresponding sides,Extension,0.5,12458.0,7729.0,backward,backward
+R0497,scale factor,Similar Polygons,Application,0.9,12458.0,12539.0,forward,forward
+R0498,scalene triangle,congruent,Prerequisite,0.5,2549.0,1053.0,backward,backward
+R0499,scalene triangle,triangle,Part-of,0.5,2549.0,2321.0,backward,tie
+R0500,secant,circle,Part-of,1.0,16333.0,14893.0,backward,backward
+R0501,secant,Tangents,Part-of,1.0,16333.0,16346.0,forward,tie
+R0502,sector,area of a circle,Prerequisite,0.5,17739.0,17751.0,forward,tie
+R0503,segment addition postulate,segments,Part-of,0.5,1276.0,780.0,backward,backward
+R0504,segment bisector,segments,Part-of,1.0,1198.0,780.0,backward,backward
+R0505,semicircle,circle,Part-of,0.5,15589.0,14893.0,backward,backward
+R0506,side angle relationship,angle,Application,1.0,10590.0,1381.0,backward,backward
+R0507,side angle relationship,triangle,Application,0.5,10590.0,2321.0,backward,backward
+R0508,Similar Polygons,angle,Part-of,0.5,12539.0,1381.0,backward,backward
+R0509,Similar Polygons,Corresponding angles,Part-of,0.5,12539.0,5452.0,backward,backward
+R0510,Similar Polygons,corresponding sides,Extension,0.5,12539.0,7729.0,backward,backward
+R0511,Similar Polygons,polygon,Part-of,0.5,12539.0,2919.0,backward,backward
+R0512,Sine Ratios,ratio,Part-of,0.5,,10264.0,unlocated,unlocated
+R0513,sphere,pi radius,Application,0.5,19179.0,19141.0,backward,backward
+R0514,sphere,surface area,Application,0.5,19179.0,17963.0,backward,backward
+R0515,sphere,volume,Application,0.5,19179.0,17980.0,backward,backward
+R0516,sum of interior angles,triangle,Application,0.5,3230.0,2321.0,backward,backward
+R0517,supplementary,quadrilateral,Extension,0.9,1980.0,3076.0,forward,forward
+R0518,supplementary,Supplementary angles,Extension,0.5,1980.0,1980.0,tie,tie
+R0519,Symmetry,line symmetry,Prerequisite,0.5,19564.0,19586.0,forward,tie
+R0520,Symmetry,order of symmetry,Prerequisite,0.5,19564.0,19745.0,forward,tie
+R0521,Symmetry,rotational symmetry,Prerequisite,0.5,19564.0,19655.0,forward,tie
+R0522,tangent line,circle,Application,0.5,14927.0,14893.0,backward,backward
+R0523,Tangent Ratios,Trigonometry,Prerequisite,0.5,14524.0,13582.0,backward,backward
+R0524,Tangents,tangent line,Part-of,0.5,16346.0,14927.0,backward,backward
+R0525,Transformations,translation,Part-of,0.5,19532.0,19819.0,forward,forward
+R0526,translation,isometries,Part-of,1.0,19819.0,20038.0,forward,tie
+R0527,translation,point,Application,0.9,19819.0,65.0,backward,backward
+R0528,translation,vector,Application,0.5,19819.0,19920.0,forward,tie
+R0529,transversal,line,Application,0.5,5323.0,73.0,backward,backward
+R0530,transversal,plane,Part-of,0.5,5323.0,84.0,backward,backward
+R0531,triangle,polygon,Part-of,1.0,2321.0,2919.0,forward,forward
+R0532,triangle,triangle angle sum theorem,Application,0.5,2321.0,2809.0,forward,tie
+R0533,triangle,triangle inequality theorem,Application,0.5,2321.0,10484.0,forward,forward
+R0534,triangle,vertex,Part-of,0.5,2321.0,1506.0,backward,backward
+R0535,triangle midsegment theorem,triangle,Application,0.5,9388.0,2321.0,backward,backward
+R0536,triangle proportionality theorem,line,Application,0.5,13273.0,73.0,backward,backward
+R0537,triangle proportionality theorem,triangle,Application,0.5,13273.0,2321.0,backward,backward
+R0538,Trigonometry,triangle,Part-of,0.5,13582.0,2321.0,backward,backward
+R0539,two-column proof,proof,Application,1.0,4886.0,3339.0,backward,backward
+R0540,vertex,point,Prerequisite,0.5,1506.0,65.0,backward,backward
+R0541,Vertical angles,line,Application,0.5,2115.0,73.0,backward,backward
+R0542,vertices,polygon,Part-of,0.5,11094.0,2919.0,backward,backward
+R0543,vertices,triangle,Part-of,0.5,11094.0,2321.0,backward,backward
+R0544,volume,pi radius,Application,0.5,17980.0,19141.0,forward,forward
+R0545,volume,volume of a prism,Application,0.5,17980.0,18638.0,forward,forward

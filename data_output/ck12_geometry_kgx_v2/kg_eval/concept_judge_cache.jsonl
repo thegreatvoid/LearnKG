@@ -1,0 +1,204 @@
+{"key": "llama3.1:8b|geometry|acute angle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|acute triangle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|adjacent angles", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|alternate exterior angles", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|alternate exterior angles theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|alternate interior angles theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|altitude", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|angle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|angle addition postulate", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|angle angle similarity postulate", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|angle bisector", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|angle bisector theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|angle measure", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|angle of rotation", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|arc", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|arc addition postulate", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|arc length", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|area of a circle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|area of a parallelogram", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|area of a rectangle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|area of a sector", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|area of a triangle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|bases", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|biconditional statement", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|bisect", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|center", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|center of rotation", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|central angle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|centroid", "verdict": "concept", "same_as": "center"}
+{"key": "llama3.1:8b|geometry|chord", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|circle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|circumcenter", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|circumference", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|ck-12 basic geometry concepts", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|co-interior angles theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|collinear points", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|complementary angles", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|composite solid", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|conclusion", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|concurrency", "verdict": "concept", "same_as": "circumcenter"}
+{"key": "llama3.1:8b|geometry|conditional statement", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|cone", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|congruence", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|congruent", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|congruent arcs", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|congruent polygons", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|congruent segments", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|congruent sides", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|congruent triangles", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|conjecture", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|contrapositive", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|converse", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|coplanar points", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|corollary", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|corresponding angles", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|corresponding angles postulate", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|corresponding parts", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|corresponding sides", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|cosine ratios", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|counterexample", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|cpctc", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|cross products", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|cross section", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|cylinder", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|deductive reasoning", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|degree", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|diagonal", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|diameter", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|distance", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|distance between two points", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|endpoint", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|equiangular", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|equilateral triangle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|exterior angle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|exterior angle sum", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|exterior angle theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|flowchart proof", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|glide reflection", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|hexagon", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|hinge theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|hypotenuse", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|hypotenuse leg congruence theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|hypothesis", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|incenter", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|included angle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|inductive reasoning", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|inscribed angle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|inscribed angle theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|interior angle sum", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|interior angles", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|intersection", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|inverse", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|isometries", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|isosceles triangle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|isosceles triangle theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|kite", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|lateral area", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|law of detachment", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|law of syllogism", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|line", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|line of reflection", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|line segment", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|line symmetry", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|linear pair", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|lines parallel", "verdict": "not_concept", "same_as": "Parallel lines"}
+{"key": "llama3.1:8b|geometry|major arc", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|median", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|midpoint", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|midpoint of a segment", "verdict": "not_concept", "same_as": "midpoint"}
+{"key": "llama3.1:8b|geometry|midpoint theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|midsegment", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|midsegment of a triangle", "verdict": "not_concept", "same_as": "midsegment"}
+{"key": "llama3.1:8b|geometry|minor arc", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|net", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|obtuse", "verdict": "not_concept", "same_as": "obtuse angle"}
+{"key": "llama3.1:8b|geometry|obtuse angle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|obtuse triangle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|opposite angles", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|order of symmetry", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|orthocenter", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|paragraph proof", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|parallel lines", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|parallelogram", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|pentagon", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|perimeter", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|perimeter of a polygon", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|perpendicular bisector", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|perpendicular bisector theorem", "verdict": "concept", "same_as": "perpendicular bisector"}
+{"key": "llama3.1:8b|geometry|perpendicular lines", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|perpendicular transversal theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|pi radius", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|plane", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|point", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|point of tangency", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|polygon", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|polyhedron", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|prism", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|proof", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|proportion", "verdict": "not_concept", "same_as": "ratio"}
+{"key": "llama3.1:8b|geometry|protractor", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|pyramid", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|pythagorean theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|pythagorean triple", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|quadrilateral", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|radius", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|ratio", "verdict": "not_concept", "same_as": "proportion"}
+{"key": "llama3.1:8b|geometry|ratio of corresponding sides", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|ray", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|rectangle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|reflection", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|reflexive property", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|regular polygon", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|remote interior angles", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|rhombus", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|right angle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|right triangle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|rigid transformation", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|rotational symmetry", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|rotations", "verdict": "not_concept", "same_as": "rotational symmetry"}
+{"key": "llama3.1:8b|geometry|ruler postulate", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|scale factor", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|scalene triangle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|secant", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|sector", "verdict": "not_concept", "same_as": "area of a circle"}
+{"key": "llama3.1:8b|geometry|segment addition postulate", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|segment bisector", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|segments", "verdict": "not_concept", "same_as": "line segment"}
+{"key": "llama3.1:8b|geometry|semicircle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|side angle relationship", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|similar polygons", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|sine ratios", "verdict": "not_concept", "same_as": "trigonometric ratios"}
+{"key": "llama3.1:8b|geometry|slope", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|solids", "verdict": "not_concept", "same_as": "3D object"}
+{"key": "llama3.1:8b|geometry|sphere", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|square", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|straight angle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|substitution property", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|sum of interior angles", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|supplementary", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|supplementary angles", "verdict": "not_concept", "same_as": "supplementary"}
+{"key": "llama3.1:8b|geometry|surface area", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|symmetric property", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|symmetry", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|tangent line", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|tangent ratios", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|tangents", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|transformations", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|transitive property", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|translation", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|transversal", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|trapezoid", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|triangle", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|triangle angle sum theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|triangle inequality theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|triangle midsegment theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|triangle proportionality theorem", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|trigonometry", "verdict": "not_concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|two-column proof", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|vector", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|vertex", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|vertical angles", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|vertices", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|volume", "verdict": "concept", "same_as": ""}
+{"key": "llama3.1:8b|geometry|volume of a prism", "verdict": "concept", "same_as": ""}

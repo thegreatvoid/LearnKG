@@ -1,0 +1,3001 @@
+source_id,target_id,source_name,target_name,score_Prerequisite,score_Part-of,score_Application,score_Extension,score_Similarity,n_samples,cooccurrence_count
+C0008,C0192,angle,triangle,0.0,0.5,0.0,0.0,0.0,2,21
+C0192,C0008,triangle,angle,0.0,0.5,0.0,0.0,0.0,2,21
+C0008,C0044,angle,congruent,0.0,0.0,0.0,0.0,0.4,2,18
+C0044,C0008,congruent,angle,0.0,0.0,0.0,0.0,0.0,2,18
+C0008,C0066,angle,degree,0.0,0.0,0.5,0.0,0.0,2,17
+C0066,C0008,degree,angle,0.0,0.0,0.5,0.0,0.0,2,17
+C0044,C0192,congruent,triangle,0.0,0.0,0.45,0.0,0.0,2,16
+C0192,C0044,triangle,congruent,0.0,0.0,0.0,0.45,0.0,2,16
+C0100,C0133,line,point,0.0,0.45,0.0,0.0,0.0,2,11
+C0133,C0100,point,line,0.0,0.45,0.0,0.0,0.0,2,11
+C0008,C0100,angle,line,0.0,0.0,0.0,0.425,0.0,2,13
+C0100,C0008,line,angle,0.0,0.0,0.45,0.0,0.0,2,13
+C0100,C0190,line,transversal,0.0,0.0,0.0,0.0,0.0,2,11
+C0190,C0100,transversal,line,0.0,0.5,0.5,0.0,0.0,2,11
+C0133,C0167,point,segments,0.0,0.0,0.0,0.0,0.0,2,8
+C0167,C0133,segments,point,0.0,0.45,0.0,0.0,0.0,2,8
+C0100,C0122,line,Parallel lines,0.0,0.45,0.0,0.0,0.0,2,9
+C0122,C0100,Parallel lines,line,0.0,0.5,0.0,0.0,0.0,2,9
+C0008,C0190,angle,transversal,0.0,0.0,0.5,0.0,0.0,2,9
+C0190,C0008,transversal,angle,0.0,0.0,0.5,0.0,0.0,2,9
+C0008,C0090,angle,interior angles,0.0,0.0,0.0,0.45,0.0,2,7
+C0090,C0008,interior angles,angle,0.5,0.0,0.0,0.0,0.0,2,7
+C0043,C0192,congruence,triangle,0.0,0.0,1.0,0.0,0.0,2,7
+C0192,C0043,triangle,congruence,0.0,0.0,0.0,0.0,0.0,2,7
+C0156,C0192,right triangle,triangle,0.0,0.5,0.0,0.0,0.0,2,6
+C0192,C0156,triangle,right triangle,0.0,0.45,0.0,0.0,0.0,2,6
+C0108,C0167,midpoint,segments,0.0,0.5,0.0,0.0,0.0,2,6
+C0167,C0108,segments,midpoint,0.0,0.45,0.0,0.0,0.0,2,6
+C0066,C0192,degree,triangle,0.0,0.0,0.5,0.0,0.0,2,7
+C0192,C0066,triangle,degree,0.0,0.0,0.45,0.0,0.0,2,7
+C0100,C0167,line,segments,0.0,0.5,0.0,0.0,0.0,2,5
+C0167,C0100,segments,line,0.0,0.5,0.0,0.0,0.0,2,5
+C0008,C0179,angle,supplementary,0.0,0.0,0.0,0.0,0.0,2,5
+C0179,C0008,supplementary,angle,0.0,0.0,0.45,0.0,0.0,2,5
+C0008,C0200,angle,vertex,0.0,0.5,0.0,0.0,0.0,2,3
+C0200,C0008,vertex,angle,0.0,0.5,0.0,0.0,0.0,2,3
+C0044,C0123,congruent,parallelogram,0.0,0.0,0.0,0.45,0.0,2,5
+C0123,C0044,parallelogram,congruent,0.0,0.5,0.0,0.0,0.0,2,5
+C0026,C0133,center,point,0.0,0.425,0.0,0.0,0.0,2,5
+C0133,C0026,point,center,0.0,0.425,0.0,0.0,0.0,2,5
+C0043,C0044,congruence,congruent,0.5,0.0,0.0,0.0,0.0,2,5
+C0044,C0043,congruent,congruence,0.0,0.0,0.0,0.45,0.0,2,5
+C0044,C0048,congruent,congruent sides,0.0,0.0,0.0,0.45,0.0,2,5
+C0048,C0044,congruent sides,congruent,0.0,0.5,0.0,0.0,0.0,2,5
+C0073,C0192,equilateral triangle,triangle,0.0,0.5,0.0,0.0,0.0,2,5
+C0192,C0073,triangle,equilateral triangle,0.0,0.5,0.0,0.0,0.0,2,5
+C0008,C0013,angle,angle measure,0.0,0.0,0.5,0.0,0.0,2,5
+C0013,C0008,angle measure,angle,0.0,0.0,0.45,0.0,0.0,2,5
+C0008,C0135,angle,polygon,0.0,0.0,0.0,0.45,0.0,2,6
+C0135,C0008,polygon,angle,0.0,0.0,0.0,0.45,0.0,2,6
+C0135,C0170,polygon,Similar Polygons,0.0,0.0,0.0,0.45,0.0,2,5
+C0170,C0135,Similar Polygons,polygon,0.0,0.5,0.0,0.0,0.0,2,5
+C0044,C0167,congruent,segments,0.0,0.0,0.0,0.45,0.0,2,4
+C0167,C0044,segments,congruent,0.0,0.0,0.0,0.45,0.0,2,4
+C0031,C0133,circle,point,0.0,0.45,0.0,0.0,0.0,2,4
+C0133,C0031,point,circle,0.0,0.45,0.0,0.0,0.0,2,4
+C0008,C0055,angle,Corresponding angles,0.0,0.0,0.5,0.0,0.0,2,4
+C0055,C0008,Corresponding angles,angle,0.0,0.5,0.0,0.0,0.0,2,4
+C0008,C0118,angle,opposite angles,0.0,0.0,0.0,0.45,0.0,2,4
+C0118,C0008,opposite angles,angle,0.0,0.5,0.0,0.0,0.0,2,4
+C0008,C0074,angle,exterior angle,0.0,0.0,0.0,0.0,0.0,2,4
+C0074,C0008,exterior angle,angle,0.0,0.0,0.9,0.0,0.0,2,4
+C0023,C0191,bases,trapezoid,0.0,0.5,0.0,0.0,0.0,2,3
+C0191,C0023,trapezoid,bases,0.0,0.5,0.0,0.0,0.0,2,3
+C0008,C0155,angle,right angle,0.5,0.0,0.0,0.0,0.0,2,4
+C0155,C0008,right angle,angle,0.5,0.0,0.0,0.0,0.0,2,4
+C0081,C0192,hypotenuse,triangle,0.0,0.45,0.0,0.0,0.0,2,4
+C0192,C0081,triangle,hypotenuse,0.0,0.45,0.0,0.0,0.0,2,4
+C0031,C0186,circle,Tangents,0.0,0.5,0.0,0.0,0.0,2,2
+C0186,C0031,Tangents,circle,0.0,0.5,0.0,0.0,0.0,2,2
+C0100,C0150,line,reflection,0.0,0.0,0.5,0.0,0.0,2,4
+C0150,C0100,reflection,line,0.0,0.5,0.0,0.0,0.0,2,4
+C0044,C0057,congruent,corresponding parts,0.0,0.0,0.0,0.45,0.0,2,4
+C0057,C0044,corresponding parts,congruent,0.0,0.0,0.0,0.45,0.0,2,4
+C0008,C0085,angle,included angle,0.0,0.0,0.0,0.5,0.0,2,4
+C0085,C0008,included angle,angle,0.0,0.5,0.0,0.0,0.0,2,4
+C0039,C0083,conclusion,hypothesis,0.0,0.5,0.0,0.0,0.0,2,3
+C0083,C0039,hypothesis,conclusion,0.0,0.5,0.0,0.0,0.0,2,3
+C0008,C0133,angle,point,0.0,0.0,0.0,0.0,0.0,2,5
+C0133,C0008,point,angle,0.0,0.0,0.0,0.0,0.0,2,5
+C0008,C0011,angle,angle bisector,0.0,0.0,0.5,0.0,0.0,2,4
+C0011,C0008,angle bisector,angle,0.0,0.0,0.5,0.0,0.0,2,4
+C0081,C0156,hypotenuse,right triangle,0.0,0.0,0.5,0.0,0.0,2,2
+C0156,C0081,right triangle,hypotenuse,0.0,0.5,0.0,0.0,0.0,2,2
+C0040,C0133,concurrency,point,0.0,0.0,0.0,0.45,0.0,2,4
+C0133,C0040,point,concurrency,0.0,0.0,0.0,0.0,0.0,2,4
+C0031,C0184,circle,tangent line,0.0,0.0,0.0,0.0,0.0,2,2
+C0184,C0031,tangent line,circle,0.0,0.5,0.5,0.0,0.0,2,2
+C0025,C0123,bisect,parallelogram,0.0,0.5,0.0,0.5,0.0,2,2
+C0123,C0025,parallelogram,bisect,0.0,0.0,0.0,0.0,0.0,2,2
+C0030,C0031,chord,circle,0.0,1.0,0.0,0.0,0.0,2,3
+C0031,C0030,circle,chord,0.0,0.0,0.0,0.0,0.0,2,3
+C0101,C0150,line of reflection,reflection,0.0,0.5,0.0,0.0,0.0,2,2
+C0150,C0101,reflection,line of reflection,0.0,0.5,0.0,0.0,0.0,2,2
+C0031,C0100,circle,line,0.0,0.5,0.0,0.0,0.0,2,3
+C0100,C0031,line,circle,0.0,0.5,0.0,0.0,0.0,2,3
+C0074,C0076,exterior angle,exterior angle theorem,0.0,0.0,0.0,0.5,0.0,2,2
+C0076,C0074,exterior angle theorem,exterior angle,0.0,0.0,0.0,0.0,0.0,2,2
+C0122,C0190,Parallel lines,transversal,0.0,0.0,0.5,0.0,0.0,2,5
+C0190,C0122,transversal,Parallel lines,0.0,0.0,0.5,0.0,0.0,2,5
+C0096,C0191,kite,trapezoid,0.5,0.0,0.0,0.0,0.0,2,2
+C0191,C0096,trapezoid,kite,0.0,0.5,0.0,0.0,0.0,2,2
+C0163,C0186,secant,Tangents,0.0,1.0,0.0,0.0,0.0,2,2
+C0186,C0163,Tangents,secant,0.0,0.0,0.0,0.0,0.0,2,2
+C0134,C0184,point of tangency,tangent line,0.0,0.5,0.0,0.0,0.0,2,2
+C0184,C0134,tangent line,point of tangency,0.0,0.5,0.0,0.0,0.0,2,2
+C0175,C0192,square,triangle,0.0,0.0,0.425,0.0,0.0,2,5
+C0192,C0175,triangle,square,0.0,0.0,0.0,0.0,0.0,2,5
+C0133,C0186,point,Tangents,0.0,0.45,0.0,0.0,0.0,2,3
+C0186,C0133,Tangents,point,0.0,0.45,0.0,0.0,0.0,2,3
+C0031,C0145,circle,radius,0.0,0.0,0.0,0.0,0.0,2,3
+C0145,C0031,radius,circle,0.0,1.0,0.0,0.0,0.0,2,3
+C0064,C0137,cylinder,prism,0.0,0.0,0.0,0.95,0.0,2,2
+C0137,C0064,prism,cylinder,0.0,0.0,0.0,0.0,0.0,2,2
+C0044,C0100,congruent,line,0.0,0.0,0.0,0.0,0.0,2,4
+C0100,C0044,line,congruent,0.0,0.0,0.0,0.0,0.0,2,4
+C0149,C0175,rectangle,square,0.0,0.5,0.0,0.0,0.0,2,2
+C0175,C0149,square,rectangle,0.0,0.5,0.0,0.0,0.0,2,2
+C0008,C0015,angle,arc,0.0,0.0,0.0,0.45,0.0,2,3
+C0015,C0008,arc,angle,0.0,0.0,0.5,0.0,0.0,2,3
+C0139,C0146,proportion,ratio,0.0,0.5,0.0,0.0,0.0,2,2
+C0146,C0139,ratio,proportion,0.0,0.0,0.0,0.5,0.0,2,2
+C0100,C0129,line,Perpendicular lines,0.0,0.0,0.45,0.0,0.0,2,3
+C0129,C0100,Perpendicular lines,line,0.5,0.0,0.0,0.0,0.0,2,3
+C0071,C0100,endpoint,line,0.0,0.5,0.0,0.0,0.0,2,3
+C0100,C0071,line,endpoint,0.0,0.5,0.0,0.0,0.0,2,3
+C0069,C0133,Distance,point,0.0,0.45,0.0,0.0,0.0,2,3
+C0133,C0069,point,Distance,0.0,0.0,0.4,0.0,0.0,2,3
+C0030,C0167,chord,segments,0.0,0.45,0.0,0.0,0.0,2,3
+C0167,C0030,segments,chord,0.0,0.45,0.0,0.0,0.0,2,3
+C0100,C0186,line,Tangents,0.0,0.5,0.0,0.0,0.0,2,3
+C0186,C0100,Tangents,line,0.0,0.5,0.0,0.0,0.0,2,3
+C0133,C0163,point,secant,0.0,0.0,0.0,0.0,0.0,2,3
+C0163,C0133,secant,point,0.0,0.45,0.0,0.0,0.0,2,3
+C0048,C0192,congruent sides,triangle,0.0,0.5,0.0,0.0,0.0,2,3
+C0192,C0048,triangle,congruent sides,0.0,0.0,0.0,0.45,0.0,2,3
+C0025,C0067,bisect,diagonal,0.0,0.0,1.0,0.0,0.0,2,3
+C0067,C0025,diagonal,bisect,0.0,0.0,0.0,0.0,0.0,2,3
+C0145,C0203,radius,volume,0.0,0.0,0.5,0.0,0.0,2,3
+C0203,C0145,volume,radius,0.0,0.45,0.0,0.0,0.0,2,3
+C0100,C0172,line,slope,0.0,0.0,0.5,0.0,0.0,2,3
+C0172,C0100,slope,line,0.0,0.5,0.0,0.0,0.0,2,3
+C0091,C0167,intersection,segments,0.0,0.0,0.0,0.0,0.0,2,1
+C0167,C0091,segments,intersection,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0087,angle,inscribed angle,0.0,0.5,0.0,0.0,0.0,2,3
+C0087,C0008,inscribed angle,angle,0.0,0.5,0.0,0.0,0.0,2,3
+C0111,C0192,midsegment,triangle,0.0,1.0,0.0,0.0,0.0,2,3
+C0192,C0111,triangle,midsegment,0.0,0.0,0.0,0.0,0.0,2,3
+C0146,C0161,ratio,scale factor,0.0,0.5,0.0,0.0,0.0,2,3
+C0161,C0146,scale factor,ratio,0.0,0.5,0.0,0.0,0.0,2,3
+C0044,C0133,congruent,point,0.0,0.0,0.0,0.85,0.0,2,2
+C0133,C0044,point,congruent,0.0,0.0,0.0,0.0,0.0,2,2
+C0148,C0167,ray,segments,0.0,0.0,0.0,0.0,0.0,2,1
+C0167,C0148,segments,ray,0.0,0.0,0.0,0.0,0.0,2,1
+C0100,C0184,line,tangent line,0.0,0.5,0.0,0.0,0.0,2,3
+C0184,C0100,tangent line,line,0.0,0.5,0.0,0.0,0.0,2,3
+C0123,C0144,parallelogram,quadrilateral,0.0,0.5,0.0,0.0,0.0,2,3
+C0144,C0123,quadrilateral,parallelogram,0.0,0.5,0.0,0.0,0.0,2,3
+C0071,C0148,endpoint,ray,0.0,0.5,0.0,0.0,0.0,2,3
+C0148,C0071,ray,endpoint,0.0,0.5,0.0,0.0,0.0,2,3
+C0131,C0181,pi radius,surface area,0.0,0.0,0.5,0.0,0.0,2,1
+C0181,C0131,surface area,pi radius,0.0,0.5,0.0,0.0,0.0,2,1
+C0044,C0190,congruent,transversal,0.0,0.0,0.0,0.0,0.0,2,4
+C0190,C0044,transversal,congruent,0.0,0.0,0.45,0.0,0.0,2,4
+C0131,C0145,pi radius,radius,0.0,0.0,0.45,0.0,0.0,2,3
+C0145,C0131,radius,pi radius,0.0,0.0,0.5,0.0,0.0,2,3
+C0071,C0167,endpoint,segments,0.0,0.5,0.0,0.0,0.0,2,4
+C0167,C0071,segments,endpoint,0.0,0.5,0.0,0.0,0.0,2,4
+C0008,C0122,angle,Parallel lines,0.0,0.0,0.5,0.0,0.0,2,4
+C0122,C0008,Parallel lines,angle,0.0,0.0,0.45,0.0,0.0,2,4
+C0008,C0058,angle,corresponding sides,0.0,0.0,0.0,0.0,0.0,2,2
+C0058,C0008,corresponding sides,angle,0.0,0.0,0.0,0.0,0.0,2,2
+C0127,C0128,perpendicular bisector,perpendicular bisector theorem,0.5,0.0,0.0,0.0,0.0,2,1
+C0128,C0127,perpendicular bisector theorem,perpendicular bisector,0.0,0.0,0.0,0.5,0.0,2,1
+C0091,C0148,intersection,ray,0.0,0.0,0.0,0.0,0.0,2,1
+C0148,C0091,ray,intersection,0.0,0.0,0.0,0.0,0.0,2,1
+C0081,C0082,hypotenuse,hypotenuse leg congruence theorem,0.5,0.0,0.0,0.0,0.0,2,1
+C0082,C0081,hypotenuse leg congruence theorem,hypotenuse,0.0,0.5,0.0,0.0,0.0,2,1
+C0052,C0192,converse,triangle,0.0,0.0,0.45,0.0,0.0,2,2
+C0192,C0052,triangle,converse,0.0,0.0,0.0,0.0,0.0,2,2
+C0147,C0161,ratio of corresponding sides,scale factor,0.5,0.0,0.0,0.0,0.0,2,1
+C0161,C0147,scale factor,ratio of corresponding sides,0.0,0.0,0.0,0.0,0.0,2,1
+C0111,C0112,midsegment,midsegment of a triangle,0.0,0.0,0.0,0.0,0.0,2,1
+C0112,C0111,midsegment of a triangle,midsegment,0.0,0.0,0.0,0.0,0.0,2,1
+C0115,C0116,Obtuse,obtuse angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0116,C0115,obtuse angle,Obtuse,0.0,0.0,0.0,0.0,0.0,2,1
+C0114,C0173,net,Solids,0.0,0.0,0.5,0.0,0.0,2,1
+C0173,C0114,Solids,net,0.0,0.0,0.0,0.0,0.0,2,1
+C0032,C0040,circumcenter,concurrency,0.0,0.0,0.0,0.0,0.0,2,1
+C0040,C0032,concurrency,circumcenter,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0073,angle,equilateral triangle,0.0,0.0,0.5,0.0,0.0,2,2
+C0073,C0008,equilateral triangle,angle,0.0,0.0,0.5,0.0,0.0,2,2
+C0184,C0186,tangent line,Tangents,0.0,0.0,0.0,0.45,0.0,2,3
+C0186,C0184,Tangents,tangent line,0.0,0.5,0.0,0.0,0.0,2,3
+C0097,C0137,lateral area,prism,0.0,0.5,0.0,0.0,0.0,2,1
+C0137,C0097,prism,lateral area,0.0,0.0,0.0,0.0,0.0,2,1
+C0014,C0159,angle of rotation,Rotations,0.0,0.5,0.0,0.0,0.0,2,1
+C0159,C0014,Rotations,angle of rotation,0.0,0.5,0.0,0.0,0.0,2,1
+C0090,C0178,interior angles,sum of interior angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0178,C0090,sum of interior angles,interior angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0076,C0153,exterior angle theorem,remote interior angles,0.0,0.5,0.0,0.0,0.0,2,1
+C0153,C0076,remote interior angles,exterior angle theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0108,C0111,midpoint,midsegment,0.0,0.0,0.0,0.0,0.0,2,1
+C0111,C0108,midsegment,midpoint,0.0,0.5,0.0,0.0,0.0,2,1
+C0044,C0058,congruent,corresponding sides,0.0,0.0,0.0,0.45,0.0,2,2
+C0058,C0044,corresponding sides,congruent,0.0,0.0,0.0,0.0,0.0,2,2
+C0149,C0155,rectangle,right angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0155,C0149,right angle,rectangle,0.5,0.5,0.0,0.0,0.0,2,1
+C0007,C0107,altitude,median,0.0,0.0,0.0,0.0,0.5,2,1
+C0107,C0007,median,altitude,0.0,0.0,0.0,0.0,0.0,2,1
+C0108,C0112,midpoint,midsegment of a triangle,0.0,0.0,0.0,0.0,0.0,2,1
+C0112,C0108,midsegment of a triangle,midpoint,0.0,0.5,0.0,0.0,0.0,2,1
+C0011,C0127,angle bisector,perpendicular bisector,0.5,0.0,0.0,0.0,0.0,2,1
+C0127,C0011,perpendicular bisector,angle bisector,0.0,0.0,0.0,0.5,0.0,2,1
+C0039,C0041,conclusion,conditional statement,0.0,0.0,0.0,0.0,0.0,2,1
+C0041,C0039,conditional statement,conclusion,0.0,0.5,0.0,0.0,0.0,2,1
+C0066,C0090,degree,interior angles,0.0,0.0,0.45,0.0,0.0,2,2
+C0090,C0066,interior angles,degree,0.0,0.0,0.5,0.0,0.0,2,2
+C0042,C0141,cone,pyramid,0.0,0.0,0.0,0.5,0.0,2,1
+C0141,C0042,pyramid,cone,0.0,0.0,0.0,0.5,0.0,2,1
+C0118,C0201,opposite angles,Vertical angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0201,C0118,Vertical angles,opposite angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0069,C0070,Distance,distance between two points,0.0,0.0,0.0,0.0,0.0,2,1
+C0070,C0069,distance between two points,Distance,0.0,0.0,0.0,0.5,0.0,2,1
+C0014,C0027,angle of rotation,center of rotation,0.0,0.5,0.0,0.0,0.0,2,1
+C0027,C0014,center of rotation,angle of rotation,0.0,0.5,0.0,0.0,0.0,2,1
+C0136,C0202,polyhedron,vertices,0.0,0.5,0.0,0.0,0.0,2,1
+C0202,C0136,vertices,polyhedron,0.0,0.5,0.0,0.0,0.0,2,1
+C0046,C0057,Congruent polygons,corresponding parts,0.0,0.0,0.0,0.0,0.0,2,1
+C0057,C0046,corresponding parts,Congruent polygons,0.5,0.0,0.0,0.5,0.0,2,1
+C0082,C0156,hypotenuse leg congruence theorem,right triangle,0.0,0.0,0.5,0.0,0.0,2,1
+C0156,C0082,right triangle,hypotenuse leg congruence theorem,0.5,0.0,0.0,0.0,0.0,2,1
+C0041,C0083,conditional statement,hypothesis,0.0,0.5,0.0,0.0,0.0,2,1
+C0083,C0041,hypothesis,conditional statement,0.0,0.0,0.0,0.0,0.0,2,1
+C0074,C0153,exterior angle,remote interior angles,0.0,0.5,0.0,0.0,0.0,2,1
+C0153,C0074,remote interior angles,exterior angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0027,C0159,center of rotation,Rotations,0.0,0.5,0.0,0.0,0.0,2,1
+C0159,C0027,Rotations,center of rotation,0.0,0.5,0.0,0.0,0.0,2,1
+C0013,C0093,angle measure,isometries,0.5,0.0,0.0,0.0,0.5,2,1
+C0093,C0013,isometries,angle measure,0.0,0.0,0.0,0.0,0.0,2,1
+C0026,C0029,center,centroid,0.0,0.0,0.0,0.0,0.0,2,1
+C0029,C0026,centroid,center,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0028,angle,central angle,0.0,0.0,0.0,0.0,0.0,2,2
+C0028,C0008,central angle,angle,0.0,1.0,0.0,0.0,0.0,2,2
+C0008,C0127,angle,perpendicular bisector,0.0,0.0,0.0,0.45,0.0,2,2
+C0127,C0008,perpendicular bisector,angle,0.0,0.0,0.0,0.45,0.0,2,2
+C0133,C0145,point,radius,0.0,0.425,0.0,0.0,0.0,2,2
+C0145,C0133,radius,point,0.0,0.45,0.0,0.0,0.0,2,2
+C0100,C0102,line,line segment,0.0,0.5,0.0,0.0,0.0,2,2
+C0102,C0100,line segment,line,0.0,0.5,0.0,0.0,0.0,2,2
+C0094,C0192,isosceles triangle,triangle,0.0,0.5,0.0,0.0,0.0,2,2
+C0192,C0094,triangle,isosceles triangle,0.0,0.5,0.0,0.0,0.0,2,2
+C0125,C0135,perimeter,polygon,0.0,0.5,0.0,0.0,0.0,2,2
+C0135,C0125,polygon,perimeter,0.0,0.0,0.5,0.0,0.0,2,2
+C0056,C0100,corresponding angles postulate,line,0.0,0.0,1.0,0.0,0.0,2,2
+C0100,C0056,line,corresponding angles postulate,0.0,0.0,0.0,0.0,0.0,2,2
+C0090,C0100,interior angles,line,0.0,0.0,0.0,0.0,0.0,2,4
+C0100,C0090,line,interior angles,0.0,0.0,0.45,0.0,0.0,2,4
+C0127,C0133,perpendicular bisector,point,0.0,0.0,0.45,0.0,0.0,2,2
+C0133,C0127,point,perpendicular bisector,0.0,0.0,0.0,0.0,0.0,2,2
+C0004,C0100,Alternate exterior angles,line,0.0,0.0,0.45,0.0,0.0,2,2
+C0100,C0004,line,Alternate exterior angles,0.0,0.0,0.0,0.0,0.0,2,2
+C0008,C0052,angle,converse,0.0,0.0,0.0,0.0,0.0,2,2
+C0052,C0008,converse,angle,0.0,0.0,0.45,0.0,0.0,2,2
+C0004,C0190,Alternate exterior angles,transversal,0.0,0.0,0.5,0.0,0.0,2,2
+C0190,C0004,transversal,Alternate exterior angles,0.0,0.0,0.5,0.0,0.0,2,2
+C0008,C0056,angle,corresponding angles postulate,0.0,0.0,0.5,0.0,0.0,2,2
+C0056,C0008,corresponding angles postulate,angle,0.0,0.0,0.5,0.0,0.0,2,2
+C0044,C0052,congruent,converse,0.0,0.0,0.0,0.0,0.425,2,2
+C0052,C0044,converse,congruent,0.0,0.0,0.45,0.0,0.0,2,2
+C0192,C0193,triangle,triangle angle sum theorem,0.0,0.0,0.5,0.0,0.0,2,2
+C0193,C0192,triangle angle sum theorem,triangle,0.0,0.0,0.5,0.0,0.0,2,2
+C0058,C0192,corresponding sides,triangle,0.0,0.0,0.45,0.0,0.0,2,2
+C0192,C0058,triangle,corresponding sides,0.0,0.0,0.45,0.0,0.0,2,2
+C0142,C0192,Pythagorean Theorem,triangle,0.0,0.0,0.5,0.45,0.0,2,2
+C0192,C0142,triangle,Pythagorean Theorem,0.0,0.0,0.0,0.0,0.0,2,2
+C0090,C0135,interior angles,polygon,0.5,0.0,0.0,0.0,0.0,2,2
+C0135,C0090,polygon,interior angles,0.0,0.0,0.5,0.0,0.0,2,2
+C0056,C0190,corresponding angles postulate,transversal,0.0,0.0,0.5,0.0,0.0,2,2
+C0190,C0056,transversal,corresponding angles postulate,0.0,0.0,0.5,0.0,0.0,2,2
+C0090,C0190,interior angles,transversal,0.0,0.0,0.0,0.0,0.0,2,4
+C0190,C0090,transversal,interior angles,0.0,0.0,0.0,0.0,0.0,2,4
+C0008,C0115,angle,Obtuse,0.0,0.0,0.0,0.45,0.0,2,2
+C0115,C0008,Obtuse,angle,0.0,0.5,0.0,0.0,0.0,2,2
+C0100,C0132,line,plane,0.0,0.45,0.0,0.0,0.0,2,4
+C0132,C0100,plane,line,0.0,0.45,0.0,0.0,0.0,2,4
+C0066,C0115,degree,Obtuse,0.0,0.0,0.5,0.0,0.0,2,2
+C0115,C0066,Obtuse,degree,0.5,0.0,0.0,0.0,0.0,2,2
+C0102,C0167,line segment,segments,0.0,0.5,0.0,0.0,0.0,2,2
+C0167,C0102,segments,line segment,0.0,0.5,0.0,0.0,0.0,2,2
+C0008,C0076,angle,exterior angle theorem,0.0,0.0,0.0,0.0,0.0,2,2
+C0076,C0008,exterior angle theorem,angle,0.0,0.0,0.9,0.0,0.0,2,2
+C0044,C0094,congruent,isosceles triangle,0.5,0.0,0.5,0.0,0.0,2,2
+C0094,C0044,isosceles triangle,congruent,0.0,0.0,0.0,0.0,0.0,2,2
+C0100,C0101,line,line of reflection,0.0,0.0,0.0,0.0,0.0,2,2
+C0101,C0100,line of reflection,line,0.0,0.5,0.5,0.0,0.0,2,2
+C0008,C0012,angle,angle bisector theorem,0.0,0.0,0.5,0.0,0.0,2,2
+C0012,C0008,angle bisector theorem,angle,0.0,0.0,0.5,0.0,0.0,2,2
+C0044,C0135,congruent,polygon,0.0,0.0,0.0,0.45,0.0,2,3
+C0135,C0044,polygon,congruent,0.0,0.0,0.0,0.45,0.0,2,3
+C0044,C0081,congruent,hypotenuse,0.0,0.0,0.425,0.0,0.0,2,2
+C0081,C0044,hypotenuse,congruent,0.0,0.0,0.45,0.0,0.0,2,2
+C0008,C0193,angle,triangle angle sum theorem,0.0,0.0,0.5,0.0,0.0,2,2
+C0193,C0008,triangle angle sum theorem,angle,0.0,0.0,0.5,0.0,0.0,2,2
+C0044,C0056,congruent,corresponding angles postulate,0.0,0.0,0.0,0.0,0.0,2,2
+C0056,C0044,corresponding angles postulate,congruent,0.0,0.0,0.5,0.0,0.0,2,2
+C0066,C0193,degree,triangle angle sum theorem,0.0,0.0,0.5,0.0,0.0,2,2
+C0193,C0066,triangle angle sum theorem,degree,0.0,0.0,0.5,0.0,0.0,2,2
+C0004,C0008,Alternate exterior angles,angle,0.0,0.0,0.5,0.0,0.0,2,2
+C0008,C0004,angle,Alternate exterior angles,0.0,0.0,0.45,0.0,0.0,2,2
+C0127,C0167,perpendicular bisector,segments,0.0,0.5,0.0,0.0,0.0,2,2
+C0167,C0127,segments,perpendicular bisector,0.0,0.5,0.0,0.0,0.0,2,2
+C0015,C0031,arc,circle,0.0,0.5,0.0,0.0,0.0,2,3
+C0031,C0015,circle,arc,0.0,0.5,0.0,0.0,0.0,2,3
+C0030,C0186,chord,Tangents,0.0,0.0,0.0,0.0,0.0,2,2
+C0186,C0030,Tangents,chord,0.0,0.45,0.0,0.0,0.0,2,2
+C0047,C0167,Congruent segments,segments,0.0,0.5,0.0,0.5,0.0,2,2
+C0167,C0047,segments,Congruent segments,0.0,0.0,0.0,0.0,0.0,2,2
+C0067,C0123,diagonal,parallelogram,0.0,0.0,0.45,0.0,0.0,2,2
+C0123,C0067,parallelogram,diagonal,0.0,0.5,0.0,0.0,0.0,2,2
+C0100,C0134,line,point of tangency,0.0,0.0,0.0,0.0,0.0,2,2
+C0134,C0100,point of tangency,line,0.0,0.5,0.5,0.0,0.0,2,2
+C0003,C0008,Adjacent angles,angle,0.0,1.0,0.0,0.0,0.0,2,2
+C0008,C0003,angle,Adjacent angles,0.0,0.0,0.0,0.0,0.0,2,2
+C0044,C0047,congruent,Congruent segments,0.0,0.0,0.0,0.5,0.0,2,2
+C0047,C0044,Congruent segments,congruent,0.0,0.0,0.0,0.45,0.0,2,2
+C0026,C0031,center,circle,0.0,0.5,0.0,0.0,0.0,2,2
+C0031,C0026,circle,center,0.0,0.5,0.0,0.0,0.0,2,2
+C0013,C0066,angle measure,degree,0.0,0.0,0.45,0.0,0.0,2,4
+C0066,C0013,degree,angle measure,0.5,0.0,0.0,0.0,0.0,2,4
+C0008,C0163,angle,secant,0.0,0.0,0.45,0.0,0.0,2,2
+C0163,C0008,secant,angle,0.0,0.0,0.45,0.0,0.0,2,2
+C0031,C0164,circle,sector,0.0,0.5,0.0,0.0,0.0,2,2
+C0164,C0031,sector,circle,0.0,0.5,0.0,0.0,0.0,2,2
+C0133,C0184,point,tangent line,0.0,0.45,0.0,0.0,0.0,2,2
+C0184,C0133,tangent line,point,0.0,0.0,0.0,0.0,0.0,2,2
+C0008,C0148,angle,ray,0.0,1.0,0.0,0.0,0.0,2,2
+C0148,C0008,ray,angle,0.0,0.0,0.0,0.0,0.0,2,2
+C0008,C0201,angle,Vertical angles,0.0,0.0,0.0,0.5,0.0,2,2
+C0201,C0008,Vertical angles,angle,0.0,0.5,0.0,0.0,0.0,2,2
+C0091,C0132,intersection,plane,0.0,0.0,1.0,0.0,0.0,2,2
+C0132,C0091,plane,intersection,0.0,0.0,0.0,0.0,0.0,2,2
+C0011,C0133,angle bisector,point,0.0,0.0,0.9,0.0,0.0,2,2
+C0133,C0011,point,angle bisector,0.0,0.0,0.0,0.0,0.0,2,2
+C0132,C0133,plane,point,0.0,0.45,0.0,0.0,0.0,2,4
+C0133,C0132,point,plane,0.0,0.0,0.0,0.425,0.0,2,4
+C0133,C0134,point,point of tangency,0.45,0.45,0.0,0.0,0.0,2,2
+C0134,C0133,point of tangency,point,0.0,0.0,0.0,0.0,0.0,2,2
+C0100,C0148,line,ray,0.0,0.5,0.0,0.0,0.0,2,2
+C0148,C0100,ray,line,0.0,0.5,0.0,0.0,0.0,2,2
+C0031,C0167,circle,segments,0.0,0.5,0.0,0.0,0.0,2,3
+C0167,C0031,segments,circle,0.0,0.5,0.0,0.0,0.0,2,3
+C0055,C0056,Corresponding angles,corresponding angles postulate,0.0,0.0,0.0,0.5,0.0,2,2
+C0056,C0055,corresponding angles postulate,Corresponding angles,0.5,0.0,0.0,0.0,0.0,2,2
+C0097,C0125,lateral area,perimeter,0.0,0.5,0.0,0.0,0.0,2,2
+C0125,C0097,perimeter,lateral area,0.0,0.0,0.45,0.0,0.0,2,2
+C0011,C0012,angle bisector,angle bisector theorem,0.0,0.0,0.0,0.0,0.0,2,2
+C0012,C0011,angle bisector theorem,angle bisector,0.0,0.5,0.0,0.5,0.0,2,2
+C0023,C0096,bases,kite,0.0,0.5,0.0,0.0,0.0,2,0
+C0096,C0023,kite,bases,0.0,0.5,0.0,0.0,0.0,2,0
+C0142,C0175,Pythagorean Theorem,square,0.0,0.0,0.45,0.0,0.0,2,2
+C0175,C0142,square,Pythagorean Theorem,0.0,0.0,0.425,0.0,0.0,2,2
+C0131,C0203,pi radius,volume,0.0,0.0,0.0,0.0,0.0,2,2
+C0203,C0131,volume,pi radius,0.0,0.45,0.5,0.0,0.0,2,2
+C0004,C0074,Alternate exterior angles,exterior angle,0.0,0.0,0.0,0.45,0.0,2,2
+C0074,C0004,exterior angle,Alternate exterior angles,0.0,0.0,0.0,0.0,0.0,2,2
+C0071,C0102,endpoint,line segment,0.0,0.5,0.0,0.0,0.0,2,2
+C0102,C0071,line segment,endpoint,0.0,0.5,0.0,0.0,0.0,2,2
+C0066,C0135,degree,polygon,0.0,0.0,0.45,0.0,0.0,2,3
+C0135,C0066,polygon,degree,0.0,0.0,0.45,0.0,0.0,2,3
+C0030,C0068,chord,diameter,0.0,0.0,0.0,0.0,0.0,2,2
+C0068,C0030,diameter,chord,0.0,1.0,0.0,0.0,0.0,2,2
+C0030,C0163,chord,secant,0.0,0.45,0.0,0.0,0.0,2,2
+C0163,C0030,secant,chord,0.0,0.45,0.0,0.0,0.0,2,2
+C0044,C0156,congruent,right triangle,0.0,0.0,0.45,0.0,0.0,2,1
+C0156,C0044,right triangle,congruent,0.0,0.0,0.5,0.0,0.0,2,1
+C0008,C0043,angle,congruence,0.0,0.0,0.0,0.45,0.0,2,3
+C0043,C0008,congruence,angle,0.0,0.0,0.0,0.45,0.0,2,3
+C0015,C0017,arc,Arc Length,0.0,0.0,0.5,0.0,0.0,2,2
+C0017,C0015,Arc Length,arc,0.0,0.5,0.0,0.0,0.0,2,2
+C0146,C0185,ratio,Tangent Ratios,0.0,0.0,0.45,0.0,0.0,2,2
+C0185,C0146,Tangent Ratios,ratio,0.0,0.0,0.45,0.0,0.0,2,2
+C0155,C0175,right angle,square,0.0,0.5,0.0,0.0,0.0,2,0
+C0175,C0155,square,right angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0058,C0170,corresponding sides,Similar Polygons,0.0,0.0,0.0,0.45,0.0,2,2
+C0170,C0058,Similar Polygons,corresponding sides,0.0,0.0,0.0,0.5,0.0,2,2
+C0134,C0186,point of tangency,Tangents,0.0,0.5,0.0,0.0,0.0,2,2
+C0186,C0134,Tangents,point of tangency,0.0,0.5,0.0,0.0,0.0,2,2
+C0044,C0055,congruent,Corresponding angles,0.0,0.0,0.0,0.0,0.425,2,3
+C0055,C0044,Corresponding angles,congruent,0.0,0.0,0.0,0.45,0.0,2,3
+C0107,C0200,median,vertex,0.0,0.5,0.0,0.0,0.0,2,2
+C0200,C0107,vertex,median,0.0,0.5,0.0,0.0,0.0,2,2
+C0064,C0097,cylinder,lateral area,0.0,0.0,0.0,0.0,0.0,2,0
+C0097,C0064,lateral area,cylinder,0.0,0.0,0.0,0.5,0.0,2,0
+C0142,C0156,Pythagorean Theorem,right triangle,0.5,0.0,0.0,0.0,0.0,2,2
+C0156,C0142,right triangle,Pythagorean Theorem,0.0,0.0,0.5,0.0,0.0,2,2
+C0029,C0107,centroid,median,0.0,0.5,0.0,0.0,0.0,2,2
+C0107,C0029,median,centroid,0.0,0.5,0.0,0.0,0.0,2,2
+C0107,C0108,median,midpoint,0.0,0.5,0.0,0.0,0.0,2,2
+C0108,C0107,midpoint,median,0.0,0.5,0.0,0.0,0.0,2,2
+C0185,C0186,Tangent Ratios,Tangents,0.0,0.0,0.45,0.0,0.0,2,2
+C0186,C0185,Tangents,Tangent Ratios,0.0,0.0,0.0,0.0,0.0,2,2
+C0017,C0033,Arc Length,Circumference,0.0,0.5,0.0,0.0,0.0,2,2
+C0033,C0017,Circumference,Arc Length,0.0,0.0,0.5,0.0,0.0,2,2
+C0085,C0192,included angle,triangle,0.0,0.0,0.5,0.0,0.0,2,3
+C0192,C0085,triangle,included angle,0.0,0.0,0.5,0.0,0.0,2,3
+C0038,C0173,composite solid,Solids,0.0,0.5,0.0,0.0,0.0,2,2
+C0173,C0038,Solids,composite solid,0.0,0.0,0.0,0.45,0.0,2,2
+C0131,C0174,pi radius,sphere,0.0,0.0,0.45,0.0,0.0,2,2
+C0174,C0131,sphere,pi radius,0.0,0.0,0.5,0.0,0.0,2,2
+C0044,C0085,congruent,included angle,0.0,0.0,0.425,0.0,0.0,2,3
+C0085,C0044,included angle,congruent,0.0,0.0,0.0,0.425,0.0,2,3
+C0057,C0192,corresponding parts,triangle,0.0,0.0,0.95,0.0,0.0,2,3
+C0192,C0057,triangle,corresponding parts,0.0,0.0,0.0,0.0,0.0,2,3
+C0074,C0090,exterior angle,interior angles,0.0,0.0,0.5,0.0,0.0,2,1
+C0090,C0074,interior angles,exterior angle,0.0,0.0,0.0,0.45,0.0,2,1
+C0133,C0189,point,translation,0.0,0.0,0.0,0.0,0.0,2,1
+C0189,C0133,translation,point,0.0,0.0,0.9,0.0,0.0,2,1
+C0008,C0123,angle,parallelogram,0.0,0.0,0.5,0.0,0.0,2,3
+C0123,C0008,parallelogram,angle,0.0,0.0,0.0,0.0,0.0,2,3
+C0108,C0192,midpoint,triangle,0.0,1.0,0.0,0.0,0.0,2,1
+C0192,C0108,triangle,midpoint,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0093,angle,isometries,0.0,0.0,0.5,0.0,0.0,2,1
+C0093,C0008,isometries,angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0008,C0071,angle,endpoint,0.0,0.5,0.0,0.0,0.0,2,1
+C0071,C0008,endpoint,angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0008,C0030,angle,chord,0.0,0.0,0.45,0.0,0.0,2,3
+C0030,C0008,chord,angle,0.0,0.0,0.45,0.0,0.0,2,3
+C0091,C0100,intersection,line,0.0,0.0,0.5,0.0,0.0,2,1
+C0100,C0091,line,intersection,0.0,0.0,0.5,0.0,0.0,2,1
+C0044,C0122,congruent,Parallel lines,0.0,0.0,0.0,0.0,0.0,2,3
+C0122,C0044,Parallel lines,congruent,0.0,0.0,0.0,0.0,0.0,2,3
+C0135,C0202,polygon,vertices,0.0,0.45,0.0,0.0,0.0,2,1
+C0202,C0135,vertices,polygon,0.0,0.5,0.0,0.0,0.0,2,1
+C0031,C0163,circle,secant,0.0,0.0,0.0,0.0,0.0,2,1
+C0163,C0031,secant,circle,0.0,1.0,0.0,0.0,0.0,2,1
+C0044,C0073,congruent,equilateral triangle,0.0,0.0,0.45,0.0,0.0,2,1
+C0073,C0044,equilateral triangle,congruent,0.5,0.0,0.0,0.0,0.0,2,1
+C0008,C0167,angle,segments,0.0,0.0,0.0,0.425,0.0,2,2
+C0167,C0008,segments,angle,0.0,0.0,0.0,0.0,0.0,2,2
+C0008,C0186,angle,Tangents,0.0,0.0,0.425,0.0,0.0,2,1
+C0186,C0008,Tangents,angle,0.0,0.0,0.45,0.0,0.0,2,1
+C0044,C0186,congruent,Tangents,0.0,0.0,0.95,0.0,0.0,2,1
+C0186,C0044,Tangents,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0133,C0160,point,ruler postulate,0.0,0.0,0.4,0.0,0.0,2,1
+C0160,C0133,ruler postulate,point,0.0,0.0,0.0,0.0,0.0,2,1
+C0066,C0075,degree,exterior angle sum,0.0,0.0,0.5,0.0,0.0,2,1
+C0075,C0066,exterior angle sum,degree,0.0,0.0,0.5,0.0,0.0,2,1
+C0133,C0174,point,sphere,0.0,0.0,0.0,0.0,0.0,2,1
+C0174,C0133,sphere,point,0.0,0.0,0.0,0.0,0.0,2,1
+C0022,C0192,area of a triangle,triangle,0.0,0.5,0.0,0.0,0.0,2,1
+C0192,C0022,triangle,area of a triangle,0.0,0.0,0.5,0.0,0.0,2,1
+C0010,C0044,angle angle similarity postulate,congruent,0.5,0.0,0.0,0.0,0.0,2,1
+C0044,C0010,congruent,angle angle similarity postulate,0.0,0.0,0.0,0.0,0.0,2,1
+C0001,C0066,acute angle,degree,0.5,0.0,0.0,0.0,0.0,2,1
+C0066,C0001,degree,acute angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0008,C0010,angle,angle angle similarity postulate,0.5,0.0,0.0,0.5,0.0,2,1
+C0010,C0008,angle angle similarity postulate,angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0036,C0100,Collinear points,line,0.0,0.5,0.0,0.0,0.0,2,1
+C0100,C0036,line,Collinear points,0.0,0.5,0.0,0.0,0.0,2,1
+C0008,C0151,angle,reflexive property,0.0,0.0,0.0,0.0,0.0,2,1
+C0151,C0008,reflexive property,angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0044,C0080,congruent,hinge theorem,0.5,0.0,0.0,0.0,0.0,2,1
+C0080,C0044,hinge theorem,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0031,C0134,circle,point of tangency,0.0,0.0,0.0,0.0,0.0,2,1
+C0134,C0031,point of tangency,circle,0.0,0.5,0.5,0.0,0.0,2,1
+C0084,C0133,incenter,point,0.5,0.0,0.0,0.0,0.0,2,1
+C0133,C0084,point,incenter,0.0,0.0,0.0,0.0,0.0,2,1
+C0044,C0095,congruent,isosceles triangle theorem,0.5,0.0,0.5,0.0,0.0,2,1
+C0095,C0044,isosceles triangle theorem,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0044,C0162,congruent,scalene triangle,0.0,0.0,0.0,0.0,0.4,2,1
+C0162,C0044,scalene triangle,congruent,0.5,0.0,0.0,0.0,0.0,2,1
+C0044,C0046,congruent,Congruent polygons,0.0,0.0,0.0,0.5,0.0,2,1
+C0046,C0044,Congruent polygons,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0117,angle,obtuse triangle,0.0,0.0,0.5,0.0,0.0,2,1
+C0117,C0008,obtuse triangle,angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0006,C0008,alternate interior angles theorem,angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0008,C0006,angle,alternate interior angles theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0005,C0008,alternate exterior angles theorem,angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0008,C0005,angle,alternate exterior angles theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0100,C0118,line,opposite angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0118,C0100,opposite angles,line,0.0,0.5,0.5,0.0,0.0,2,1
+C0008,C0009,angle,angle addition postulate,0.0,0.0,0.5,0.0,0.0,2,1
+C0009,C0008,angle addition postulate,angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0100,C0104,line,linear pair,0.0,0.5,0.0,0.0,0.0,2,1
+C0104,C0100,linear pair,line,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0054,angle,corollary,0.0,0.0,0.0,0.0,0.0,2,1
+C0054,C0008,corollary,angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0054,C0066,corollary,degree,0.0,0.0,0.5,0.0,0.0,2,1
+C0066,C0054,degree,corollary,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0104,angle,linear pair,0.0,0.0,0.5,0.0,0.0,2,1
+C0104,C0008,linear pair,angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0095,C0192,isosceles triangle theorem,triangle,0.0,0.5,0.5,0.0,0.0,2,1
+C0192,C0095,triangle,isosceles triangle theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0109,C0167,midpoint of a segment,segments,0.0,0.5,0.0,0.0,0.0,2,1
+C0167,C0109,segments,midpoint of a segment,0.0,0.5,0.0,0.0,0.0,2,1
+C0074,C0192,exterior angle,triangle,0.0,0.0,1.0,0.0,0.0,2,1
+C0192,C0074,triangle,exterior angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0035,C0190,co-interior angles theorem,transversal,0.0,0.0,0.5,0.0,0.0,2,1
+C0190,C0035,transversal,co-interior angles theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0031,C0033,circle,Circumference,0.0,0.5,0.0,0.0,0.0,2,1
+C0033,C0031,Circumference,circle,0.0,0.5,0.0,0.0,0.0,2,1
+C0118,C0179,opposite angles,supplementary,0.0,0.0,0.0,0.5,0.4,2,1
+C0179,C0118,supplementary,opposite angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0066,C0158,degree,rotational symmetry,0.0,0.0,0.5,0.0,0.0,2,1
+C0158,C0066,rotational symmetry,degree,0.5,0.0,0.0,0.0,0.0,2,1
+C0145,C0167,radius,segments,0.0,1.0,0.0,0.0,0.0,2,1
+C0167,C0145,segments,radius,0.0,0.0,0.0,0.0,0.0,2,1
+C0029,C0133,centroid,point,0.0,0.5,0.0,0.0,0.0,2,1
+C0133,C0029,point,centroid,0.0,0.425,0.0,0.0,0.0,2,1
+C0192,C0196,triangle,triangle proportionality theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0196,C0192,triangle proportionality theorem,triangle,0.0,0.5,0.5,0.0,0.0,2,1
+C0031,C0045,circle,Congruent arcs,0.0,0.0,0.0,0.0,0.0,2,1
+C0045,C0031,Congruent arcs,circle,0.0,0.5,0.0,0.5,0.0,2,1
+C0008,C0159,angle,Rotations,0.0,0.0,0.5,0.0,0.0,2,1
+C0159,C0008,Rotations,angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0037,C0066,Complementary angles,degree,0.5,0.0,0.0,0.0,0.0,2,1
+C0066,C0037,degree,Complementary angles,0.0,0.0,0.5,0.0,0.0,2,1
+C0044,C0109,congruent,midpoint of a segment,0.0,0.0,0.5,0.0,0.0,2,1
+C0109,C0044,midpoint of a segment,congruent,0.5,0.0,0.0,0.0,0.0,2,1
+C0008,C0084,angle,incenter,0.0,0.5,0.0,0.0,0.0,2,1
+C0084,C0008,incenter,angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0008,C0169,angle,side angle relationship,0.0,0.0,0.0,0.0,0.0,2,1
+C0169,C0008,side angle relationship,angle,0.0,0.0,1.0,0.0,0.0,2,1
+C0112,C0192,midsegment of a triangle,triangle,0.0,1.0,0.0,0.0,0.0,2,1
+C0192,C0112,triangle,midsegment of a triangle,0.0,0.0,0.0,0.0,0.0,2,1
+C0192,C0194,triangle,triangle inequality theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0194,C0192,triangle inequality theorem,triangle,0.5,0.0,0.0,0.0,0.0,2,1
+C0126,C0135,perimeter of a polygon,polygon,0.0,0.5,0.5,0.0,0.0,2,1
+C0135,C0126,polygon,perimeter of a polygon,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0178,angle,sum of interior angles,0.5,0.0,0.5,0.0,0.0,2,1
+C0178,C0008,sum of interior angles,angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0035,angle,co-interior angles theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0035,C0008,co-interior angles theorem,angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0110,C0167,midpoint theorem,segments,0.0,0.5,0.0,0.0,0.0,2,1
+C0167,C0110,segments,midpoint theorem,0.0,0.5,0.0,0.0,0.0,2,1
+C0008,C0037,angle,Complementary angles,0.5,0.0,0.5,0.0,0.0,2,1
+C0037,C0008,Complementary angles,angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0120,C0133,orthocenter,point,0.0,0.45,0.0,0.0,0.0,2,1
+C0133,C0120,point,orthocenter,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0152,angle,regular polygon,0.0,0.0,0.5,0.0,0.0,2,1
+C0152,C0008,regular polygon,angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0089,angle,interior angle sum,0.5,0.0,0.5,0.0,0.0,2,1
+C0089,C0008,interior angle sum,angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0014,C0133,angle of rotation,point,0.0,0.4,0.0,0.0,0.0,2,1
+C0133,C0014,point,angle of rotation,0.0,0.425,0.0,0.0,0.0,2,1
+C0005,C0044,alternate exterior angles theorem,congruent,0.5,0.0,0.0,0.0,0.0,2,1
+C0044,C0005,congruent,alternate exterior angles theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0070,C0133,distance between two points,point,0.0,0.0,0.5,0.0,0.0,2,1
+C0133,C0070,point,distance between two points,0.0,0.0,0.0,0.0,0.0,2,1
+C0026,C0192,center,triangle,0.0,1.0,0.0,0.0,0.0,2,1
+C0192,C0026,triangle,center,0.0,0.0,0.0,0.0,0.0,2,1
+C0018,C0031,area of a circle,circle,0.0,0.5,0.0,0.0,0.0,2,1
+C0031,C0018,circle,area of a circle,0.0,0.0,0.5,0.0,0.0,2,1
+C0075,C0135,exterior angle sum,polygon,0.0,0.5,0.5,0.0,0.0,2,1
+C0135,C0075,polygon,exterior angle sum,0.0,0.0,0.0,0.0,0.0,2,1
+C0165,C0167,segment addition postulate,segments,0.0,0.5,0.5,0.0,0.0,2,1
+C0167,C0165,segments,segment addition postulate,0.0,0.0,0.0,0.0,0.0,2,1
+C0053,C0133,Coplanar points,point,0.0,0.0,0.0,0.0,0.0,2,1
+C0133,C0053,point,Coplanar points,0.0,0.0,0.0,0.45,0.0,2,1
+C0072,C0192,equiangular,triangle,0.0,0.5,0.0,0.0,0.0,2,1
+C0192,C0072,triangle,equiangular,0.0,0.5,0.0,0.0,0.0,2,1
+C0162,C0192,scalene triangle,triangle,0.0,0.5,0.0,0.0,0.0,2,1
+C0192,C0162,triangle,scalene triangle,0.0,0.0,0.0,0.5,0.0,2,1
+C0021,C0031,area of a sector,circle,0.0,0.5,0.5,0.0,0.0,2,1
+C0031,C0021,circle,area of a sector,0.0,0.0,0.0,0.0,0.0,2,1
+C0078,C0100,glide reflection,line,0.0,1.0,0.0,0.0,0.0,2,1
+C0100,C0078,line,glide reflection,0.0,0.0,0.0,0.0,0.0,2,1
+C0002,C0066,acute triangle,degree,0.0,0.0,0.5,0.0,0.0,2,1
+C0066,C0002,degree,acute triangle,0.0,0.0,0.5,0.0,0.0,2,1
+C0044,C0061,congruent,CPCTC,0.0,0.0,0.0,0.45,0.0,2,1
+C0061,C0044,CPCTC,congruent,0.0,0.0,0.5,0.0,0.0,2,1
+C0049,C0192,congruent triangles,triangle,0.0,0.0,0.45,0.0,0.0,2,1
+C0192,C0049,triangle,congruent triangles,0.0,0.0,0.45,0.0,0.0,2,1
+C0008,C0149,angle,rectangle,0.0,0.0,0.0,0.0,0.0,2,1
+C0149,C0008,rectangle,angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0008,C0153,angle,remote interior angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0153,C0008,remote interior angles,angle,0.0,0.0,1.0,0.0,0.0,2,1
+C0112,C0167,midsegment of a triangle,segments,0.0,0.5,0.0,0.0,0.0,2,1
+C0167,C0112,segments,midsegment of a triangle,0.0,0.5,0.0,0.0,0.0,2,1
+C0044,C0152,congruent,regular polygon,0.45,0.0,0.0,0.45,0.0,2,1
+C0152,C0044,regular polygon,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0066,C0168,degree,semicircle,0.5,0.0,0.0,0.5,0.0,2,1
+C0168,C0066,semicircle,degree,0.0,0.0,0.0,0.0,0.0,2,1
+C0067,C0167,diagonal,segments,0.0,0.5,0.0,0.0,0.0,2,1
+C0167,C0067,segments,diagonal,0.0,0.5,0.0,0.0,0.0,2,1
+C0117,C0192,obtuse triangle,triangle,0.0,0.5,0.0,0.0,0.0,2,1
+C0192,C0117,triangle,obtuse triangle,0.0,0.0,0.0,0.5,0.0,2,1
+C0044,C0045,congruent,Congruent arcs,0.0,0.0,0.0,0.0,0.5,2,1
+C0045,C0044,Congruent arcs,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0003,C0133,Adjacent angles,point,0.0,0.0,0.0,0.0,0.0,2,1
+C0133,C0003,point,Adjacent angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0044,C0151,congruent,reflexive property,0.0,0.0,0.0,0.0,0.4,2,1
+C0151,C0044,reflexive property,congruent,0.0,0.5,0.0,0.0,0.0,2,1
+C0109,C0133,midpoint of a segment,point,0.0,1.0,0.0,0.0,0.0,2,1
+C0133,C0109,point,midpoint of a segment,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0116,angle,obtuse angle,0.0,0.0,0.0,0.5,0.0,2,1
+C0116,C0008,obtuse angle,angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0008,C0088,angle,inscribed angle theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0088,C0008,inscribed angle theorem,angle,0.0,0.0,1.0,0.0,0.0,2,1
+C0132,C0167,plane,segments,0.0,0.0,0.5,0.0,0.0,2,1
+C0167,C0132,segments,plane,0.0,0.0,0.0,0.0,0.0,2,1
+C0145,C0181,radius,surface area,0.0,0.5,0.0,0.0,0.0,2,1
+C0181,C0145,surface area,radius,0.0,0.5,0.0,0.0,0.0,2,1
+C0006,C0100,alternate interior angles theorem,line,0.0,0.0,0.0,0.0,0.0,2,1
+C0100,C0006,line,alternate interior angles theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0005,C0100,alternate exterior angles theorem,line,0.0,0.0,0.5,0.0,0.0,2,1
+C0100,C0005,line,alternate exterior angles theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0027,angle,center of rotation,0.0,0.0,0.5,0.0,0.0,2,1
+C0027,C0008,center of rotation,angle,0.0,0.0,0.45,0.0,0.0,2,1
+C0066,C0117,degree,obtuse triangle,0.0,0.0,0.5,0.0,0.0,2,1
+C0117,C0066,obtuse triangle,degree,0.0,0.0,0.5,0.0,0.0,2,1
+C0128,C0167,perpendicular bisector theorem,segments,0.0,0.5,0.5,0.0,0.0,2,1
+C0167,C0128,segments,perpendicular bisector theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0005,C0190,alternate exterior angles theorem,transversal,0.0,0.0,0.5,0.0,0.0,2,1
+C0190,C0005,transversal,alternate exterior angles theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0192,C0197,triangle,Trigonometry,0.0,0.0,0.0,0.45,0.0,2,1
+C0197,C0192,Trigonometry,triangle,0.0,0.5,0.0,0.0,0.0,2,1
+C0138,C0167,proof,segments,0.0,0.0,0.4,0.0,0.0,2,1
+C0167,C0138,segments,proof,0.0,0.0,0.45,0.0,0.0,2,1
+C0008,C0197,angle,Trigonometry,0.0,0.0,0.5,0.0,0.0,2,1
+C0197,C0008,Trigonometry,angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0135,C0178,polygon,sum of interior angles,0.5,0.0,0.5,0.0,0.0,2,1
+C0178,C0135,sum of interior angles,polygon,0.0,0.0,0.0,0.0,0.0,2,1
+C0044,C0049,congruent,congruent triangles,0.0,0.0,0.45,0.0,0.0,2,1
+C0049,C0044,congruent triangles,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0066,C0113,degree,minor arc,0.5,0.0,0.5,0.0,0.0,2,1
+C0113,C0066,minor arc,degree,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0140,angle,protractor,0.0,0.0,0.0,0.0,0.0,2,1
+C0140,C0008,protractor,angle,0.0,0.0,1.0,0.0,0.0,2,1
+C0002,C0192,acute triangle,triangle,0.0,0.5,0.0,0.0,0.0,2,1
+C0192,C0002,triangle,acute triangle,0.0,0.0,0.0,0.5,0.0,2,1
+C0135,C0152,polygon,regular polygon,0.0,0.5,0.0,0.0,0.0,2,1
+C0152,C0135,regular polygon,polygon,0.0,0.5,0.0,0.0,0.0,2,1
+C0089,C0135,interior angle sum,polygon,0.5,0.0,0.0,0.0,0.0,2,1
+C0135,C0089,polygon,interior angle sum,0.0,0.0,0.5,0.0,0.0,2,1
+C0100,C0130,line,perpendicular transversal theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0130,C0100,perpendicular transversal theorem,line,0.0,0.0,0.5,0.0,0.0,2,1
+C0008,C0180,angle,Supplementary angles,0.5,0.0,0.5,0.0,0.0,2,1
+C0180,C0008,Supplementary angles,angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0066,C0116,degree,obtuse angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0116,C0066,obtuse angle,degree,0.5,0.0,0.0,0.0,0.0,2,1
+C0135,C0136,polygon,polyhedron,0.0,0.5,0.0,0.0,0.0,2,1
+C0136,C0135,polyhedron,polygon,0.0,0.5,0.0,0.0,0.0,2,1
+C0100,C0196,line,triangle proportionality theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0196,C0100,triangle proportionality theorem,line,0.0,0.5,0.5,0.0,0.0,2,1
+C0012,C0192,angle bisector theorem,triangle,0.0,0.0,1.0,0.0,0.0,2,1
+C0192,C0012,triangle,angle bisector theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0014,angle,angle of rotation,0.0,0.5,0.0,0.0,0.0,2,1
+C0014,C0008,angle of rotation,angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0008,C0095,angle,isosceles triangle theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0095,C0008,isosceles triangle theorem,angle,0.0,0.0,1.0,0.0,0.0,2,1
+C0008,C0176,angle,straight angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0176,C0008,straight angle,angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0057,C0135,corresponding parts,polygon,0.0,0.5,0.0,0.0,0.0,2,1
+C0135,C0057,polygon,corresponding parts,0.0,0.0,0.5,0.0,0.0,2,1
+C0082,C0192,hypotenuse leg congruence theorem,triangle,0.0,0.0,1.0,0.0,0.0,2,1
+C0192,C0082,triangle,hypotenuse leg congruence theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0031,C0087,circle,inscribed angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0087,C0031,inscribed angle,circle,0.0,0.5,0.5,0.0,0.0,2,1
+C0002,C0008,acute triangle,angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0008,C0002,angle,acute triangle,0.0,0.0,0.5,0.0,0.0,2,1
+C0111,C0167,midsegment,segments,0.0,0.5,0.0,0.0,0.0,2,1
+C0167,C0111,segments,midsegment,0.0,0.5,0.0,0.0,0.0,2,1
+C0008,C0170,angle,Similar Polygons,0.0,0.0,0.0,0.0,0.4,2,1
+C0170,C0008,Similar Polygons,angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0006,C0044,alternate interior angles theorem,congruent,0.5,0.0,0.0,0.0,0.0,2,1
+C0044,C0006,congruent,alternate interior angles theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0091,C0133,intersection,point,0.0,0.5,0.0,0.0,0.0,2,1
+C0133,C0091,point,intersection,0.0,0.45,0.0,0.0,0.0,2,1
+C0066,C0180,degree,Supplementary angles,0.5,0.0,0.5,0.0,0.0,2,1
+C0180,C0066,Supplementary angles,degree,0.0,0.0,0.0,0.0,0.0,2,1
+C0133,C0148,point,ray,0.0,0.0,0.0,0.0,0.0,2,1
+C0148,C0133,ray,point,0.0,0.45,0.0,0.0,0.0,2,1
+C0107,C0167,median,segments,0.0,0.5,0.0,0.0,0.0,2,1
+C0167,C0107,segments,median,0.0,0.5,0.0,0.0,0.0,2,1
+C0133,C0159,point,Rotations,0.0,0.0,0.0,0.0,0.0,2,1
+C0159,C0133,Rotations,point,0.0,0.4,0.0,0.0,0.0,2,1
+C0066,C0176,degree,straight angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0176,C0066,straight angle,degree,0.0,0.0,0.5,0.0,0.0,2,1
+C0100,C0105,line,Lines Parallel,0.0,0.0,0.45,0.0,0.0,2,1
+C0105,C0100,Lines Parallel,line,0.0,0.5,0.0,0.0,0.0,2,1
+C0066,C0178,degree,sum of interior angles,0.0,0.0,0.5,0.0,0.0,2,1
+C0178,C0066,sum of interior angles,degree,0.0,0.0,0.5,0.0,0.0,2,1
+C0044,C0082,congruent,hypotenuse leg congruence theorem,0.5,0.0,0.45,0.0,0.0,2,1
+C0082,C0044,hypotenuse leg congruence theorem,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0044,C0170,congruent,Similar Polygons,0.5,0.0,0.0,0.0,0.45,2,1
+C0170,C0044,Similar Polygons,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0076,C0192,exterior angle theorem,triangle,0.0,0.0,1.0,0.0,0.0,2,1
+C0192,C0076,triangle,exterior angle theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0066,C0089,degree,interior angle sum,0.0,0.0,0.5,0.0,0.0,2,1
+C0089,C0066,interior angle sum,degree,0.0,0.0,0.5,0.0,0.0,2,1
+C0061,C0192,CPCTC,triangle,0.0,0.0,0.5,0.0,0.0,2,1
+C0192,C0061,triangle,CPCTC,0.0,0.0,0.0,0.0,0.0,2,1
+C0027,C0133,center of rotation,point,0.0,0.0,0.0,0.0,0.0,2,1
+C0133,C0027,point,center of rotation,0.0,0.425,0.0,0.0,0.0,2,1
+C0032,C0133,circumcenter,point,0.0,0.5,0.0,0.0,0.0,2,1
+C0133,C0032,point,circumcenter,0.0,0.425,0.0,0.0,0.0,2,1
+C0128,C0133,perpendicular bisector theorem,point,0.0,0.0,0.0,0.0,0.0,2,1
+C0133,C0128,point,perpendicular bisector theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0029,C0192,centroid,triangle,0.0,1.0,0.0,0.0,0.0,2,1
+C0192,C0029,triangle,centroid,0.0,0.0,0.0,0.0,0.0,2,1
+C0130,C0190,perpendicular transversal theorem,transversal,0.0,0.0,0.5,0.0,0.0,2,1
+C0190,C0130,transversal,perpendicular transversal theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0100,C0163,line,secant,0.0,0.5,0.0,0.0,0.0,2,1
+C0163,C0100,secant,line,0.0,0.5,0.0,0.0,0.0,2,1
+C0006,C0190,alternate interior angles theorem,transversal,0.0,0.0,0.5,0.0,0.0,2,1
+C0190,C0006,transversal,alternate interior angles theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0166,C0167,segment bisector,segments,0.0,1.0,0.0,0.0,0.0,2,1
+C0167,C0166,segments,segment bisector,0.0,0.0,0.0,0.0,0.0,2,1
+C0100,C0103,line,line symmetry,0.0,0.0,0.0,0.0,0.0,2,1
+C0103,C0100,line symmetry,line,0.0,0.0,0.0,0.0,0.0,2,1
+C0035,C0100,co-interior angles theorem,line,0.0,0.0,0.5,0.0,0.0,2,1
+C0100,C0035,line,co-interior angles theorem,0.5,0.0,0.0,0.0,0.0,2,1
+C0044,C0154,congruent,rhombus,0.5,0.0,0.0,0.45,0.0,2,1
+C0154,C0044,rhombus,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0046,C0135,Congruent polygons,polygon,0.0,0.5,0.0,0.0,0.0,2,1
+C0135,C0046,polygon,Congruent polygons,0.0,0.0,0.0,0.5,0.0,2,1
+C0132,C0135,plane,polygon,0.0,0.5,0.0,0.0,0.0,2,1
+C0135,C0132,polygon,plane,0.0,0.5,0.0,0.0,0.0,2,1
+C0151,C0167,reflexive property,segments,0.0,0.5,0.0,0.0,0.0,2,1
+C0167,C0151,segments,reflexive property,0.0,0.0,0.0,0.0,0.0,2,1
+C0100,C0160,line,ruler postulate,0.0,0.0,0.5,0.0,0.0,2,1
+C0160,C0100,ruler postulate,line,0.0,0.0,0.5,0.0,0.0,2,1
+C0008,C0138,angle,proof,0.0,0.0,0.425,0.0,0.0,2,1
+C0138,C0008,proof,angle,0.0,0.0,0.45,0.0,0.0,2,1
+C0008,C0075,angle,exterior angle sum,0.0,0.0,0.5,0.0,0.0,2,1
+C0075,C0008,exterior angle sum,angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0080,C0192,hinge theorem,triangle,0.0,0.0,0.5,0.0,0.0,2,1
+C0192,C0080,triangle,hinge theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0153,C0192,remote interior angles,triangle,0.0,0.0,1.0,0.0,0.0,2,1
+C0192,C0153,triangle,remote interior angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0192,C0195,triangle,triangle midsegment theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0195,C0192,triangle midsegment theorem,triangle,0.0,0.5,0.5,0.0,0.0,2,1
+C0007,C0167,altitude,segments,0.0,0.5,0.0,0.0,0.0,2,1
+C0167,C0007,segments,altitude,0.0,0.0,0.45,0.0,0.0,2,1
+C0100,C0201,line,Vertical angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0201,C0100,Vertical angles,line,0.0,0.5,0.5,0.0,0.0,2,1
+C0036,C0133,Collinear points,point,0.0,0.0,0.0,0.0,0.0,2,1
+C0133,C0036,point,Collinear points,0.0,0.0,0.0,0.5,0.0,2,1
+C0010,C0192,angle angle similarity postulate,triangle,0.0,0.0,0.5,0.0,0.0,2,1
+C0192,C0010,triangle,angle angle similarity postulate,0.0,0.0,0.5,0.0,0.0,2,1
+C0066,C0106,degree,major arc,0.5,0.0,0.0,0.5,0.0,2,1
+C0106,C0066,major arc,degree,0.0,0.0,0.0,0.0,0.0,2,1
+C0001,C0008,acute angle,angle,0.5,0.0,0.0,0.0,0.0,2,1
+C0008,C0001,angle,acute angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0054,C0192,corollary,triangle,0.0,0.0,0.0,0.45,0.0,2,1
+C0192,C0054,triangle,corollary,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0080,angle,hinge theorem,0.0,0.0,0.45,0.0,0.0,2,1
+C0080,C0008,hinge theorem,angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0026,C0030,center,chord,0.0,0.0,0.45,0.0,0.0,2,3
+C0030,C0026,chord,center,0.0,0.45,0.0,0.0,0.0,2,3
+C0144,C0179,quadrilateral,supplementary,0.0,0.0,0.0,0.0,0.0,2,1
+C0179,C0144,supplementary,quadrilateral,0.0,0.0,0.0,0.9,0.0,2,1
+C0081,C0175,hypotenuse,square,0.0,0.0,0.0,0.0,0.0,2,3
+C0175,C0081,square,hypotenuse,0.0,0.0,0.0,0.0,0.0,2,3
+C0071,C0133,endpoint,point,0.0,0.45,0.0,0.0,0.0,2,2
+C0133,C0071,point,endpoint,0.0,0.45,0.0,0.0,0.0,2,2
+C0026,C0068,center,diameter,0.0,0.0,0.0,0.0,0.0,2,1
+C0068,C0026,diameter,center,0.0,1.0,0.0,0.0,0.0,2,1
+C0123,C0149,parallelogram,rectangle,0.0,0.5,0.0,0.0,0.0,2,1
+C0149,C0123,rectangle,parallelogram,0.0,0.5,0.0,0.0,0.0,2,1
+C0071,C0200,endpoint,vertex,0.0,0.5,0.0,0.0,0.0,2,1
+C0200,C0071,vertex,endpoint,0.0,0.0,0.0,0.0,0.0,2,1
+C0069,C0189,Distance,translation,0.0,0.0,0.5,0.0,0.0,2,1
+C0189,C0069,translation,Distance,0.0,0.0,0.45,0.0,0.0,2,1
+C0026,C0145,center,radius,0.0,0.5,0.0,0.0,0.0,2,1
+C0145,C0026,radius,center,0.0,0.5,0.0,0.0,0.0,2,1
+C0076,C0090,exterior angle theorem,interior angles,0.0,0.0,0.5,0.0,0.0,2,1
+C0090,C0076,interior angles,exterior angle theorem,0.0,0.0,0.0,0.45,0.0,2,1
+C0040,C0200,concurrency,vertex,0.0,0.5,0.0,0.0,0.0,2,1
+C0200,C0040,vertex,concurrency,0.0,0.0,0.0,0.425,0.0,2,1
+C0015,C0028,arc,central angle,0.0,0.0,0.0,0.45,0.0,2,1
+C0028,C0015,central angle,arc,0.0,0.0,0.0,0.45,0.0,2,1
+C0069,C0093,Distance,isometries,0.0,0.0,0.5,0.0,0.0,2,1
+C0093,C0069,isometries,Distance,0.5,0.0,0.0,0.0,0.0,2,1
+C0044,C0067,congruent,diagonal,0.0,0.0,0.0,0.0,0.0,2,2
+C0067,C0044,diagonal,congruent,0.0,0.0,0.0,0.45,0.0,2,2
+C0174,C0181,sphere,surface area,0.0,0.0,0.5,0.0,0.0,2,1
+C0181,C0174,surface area,sphere,0.0,0.5,0.0,0.0,0.0,2,1
+C0032,C0200,circumcenter,vertex,0.0,0.5,0.0,0.0,0.0,2,1
+C0200,C0032,vertex,circumcenter,0.0,0.0,0.0,0.45,0.0,2,1
+C0189,C0199,translation,vector,0.0,0.0,0.5,0.0,0.0,2,1
+C0199,C0189,vector,translation,0.0,0.0,0.5,0.0,0.0,2,1
+C0035,C0122,co-interior angles theorem,Parallel lines,0.0,0.0,0.0,0.0,0.0,2,1
+C0122,C0035,Parallel lines,co-interior angles theorem,0.5,0.0,0.5,0.0,0.0,2,1
+C0043,C0156,congruence,right triangle,0.0,0.0,0.0,0.45,0.0,2,1
+C0156,C0043,right triangle,congruence,0.0,0.0,0.5,0.0,0.0,2,1
+C0019,C0123,area of a parallelogram,parallelogram,0.0,0.5,0.0,0.0,0.0,2,1
+C0123,C0019,parallelogram,area of a parallelogram,0.0,0.0,0.5,0.0,0.0,2,1
+C0125,C0146,perimeter,ratio,0.0,0.0,0.5,0.0,0.0,2,1
+C0146,C0125,ratio,perimeter,0.0,0.0,0.0,0.45,0.0,2,1
+C0157,C0187,rigid transformation,Transformations,0.0,0.5,0.0,0.0,0.0,2,1
+C0187,C0157,Transformations,rigid transformation,0.0,0.0,0.0,0.5,0.0,2,1
+C0103,C0183,line symmetry,Symmetry,0.0,0.0,0.0,0.0,0.0,2,1
+C0183,C0103,Symmetry,line symmetry,0.5,0.0,0.0,0.5,0.0,2,1
+C0013,C0176,angle measure,straight angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0176,C0013,straight angle,angle measure,0.5,0.0,0.0,0.0,0.0,2,1
+C0047,C0109,Congruent segments,midpoint of a segment,0.0,0.5,0.0,0.0,0.0,2,1
+C0109,C0047,midpoint of a segment,Congruent segments,0.5,0.0,0.0,0.0,0.0,2,1
+C0023,C0144,bases,quadrilateral,0.0,0.5,0.0,0.0,0.0,2,1
+C0144,C0023,quadrilateral,bases,0.0,0.5,0.0,0.0,0.0,2,1
+C0067,C0202,diagonal,vertices,0.0,0.5,0.0,0.0,0.0,2,1
+C0202,C0067,vertices,diagonal,0.0,0.5,0.0,0.0,0.0,2,1
+C0072,C0073,equiangular,equilateral triangle,0.0,0.5,0.0,0.0,0.0,2,1
+C0073,C0072,equilateral triangle,equiangular,0.0,0.0,0.0,0.5,0.0,2,1
+C0081,C0142,hypotenuse,Pythagorean Theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0142,C0081,Pythagorean Theorem,hypotenuse,0.0,0.5,0.0,0.0,0.0,2,1
+C0039,C0092,conclusion,inverse,0.0,0.0,0.0,0.0,0.0,2,1
+C0092,C0039,inverse,conclusion,0.0,0.0,0.5,0.0,0.0,2,1
+C0058,C0161,corresponding sides,scale factor,0.0,0.0,0.0,0.0,0.0,2,1
+C0161,C0058,scale factor,corresponding sides,0.5,0.0,0.0,0.5,0.0,2,1
+C0057,C0061,corresponding parts,CPCTC,0.0,0.0,0.5,0.0,0.0,2,1
+C0061,C0057,CPCTC,corresponding parts,0.5,0.0,0.0,0.0,0.0,2,1
+C0108,C0166,midpoint,segment bisector,0.0,0.5,0.0,0.0,0.0,2,1
+C0166,C0108,segment bisector,midpoint,0.0,0.5,0.0,0.0,0.0,2,1
+C0087,C0088,inscribed angle,inscribed angle theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0088,C0087,inscribed angle theorem,inscribed angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0111,C0195,midsegment,triangle midsegment theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0195,C0111,triangle midsegment theorem,midsegment,0.0,0.5,0.0,0.0,0.0,2,1
+C0055,C0190,Corresponding angles,transversal,0.0,0.0,0.5,0.0,0.0,2,2
+C0190,C0055,transversal,Corresponding angles,0.0,0.0,0.5,0.0,0.0,2,2
+C0014,C0026,angle of rotation,center,0.0,0.45,0.0,0.0,0.0,2,1
+C0026,C0014,center,angle of rotation,0.0,0.0,0.0,0.0,0.0,2,1
+C0108,C0110,midpoint,midpoint theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0110,C0108,midpoint theorem,midpoint,0.5,0.5,0.0,0.0,0.0,2,1
+C0048,C0154,congruent sides,rhombus,0.0,0.0,0.0,0.0,0.0,2,1
+C0154,C0048,rhombus,congruent sides,0.0,0.5,0.0,0.5,0.0,2,1
+C0150,C0157,reflection,rigid transformation,0.0,0.0,0.5,0.0,0.0,2,1
+C0157,C0150,rigid transformation,reflection,0.0,0.5,0.0,0.0,0.0,2,1
+C0035,C0179,co-interior angles theorem,supplementary,0.0,0.0,0.5,0.0,0.0,2,1
+C0179,C0035,supplementary,co-interior angles theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0050,C0060,conjecture,counterexample,0.5,0.0,0.5,0.0,0.0,2,1
+C0060,C0050,counterexample,conjecture,0.0,0.0,0.0,0.0,0.0,2,1
+C0122,C0172,Parallel lines,slope,0.5,0.0,0.0,0.0,0.0,2,1
+C0172,C0122,slope,Parallel lines,0.0,0.0,0.5,0.0,0.0,2,1
+C0026,C0107,center,median,0.0,0.5,0.0,0.0,0.0,2,1
+C0107,C0026,median,center,0.0,0.5,0.0,0.0,0.0,2,1
+C0008,C0057,angle,corresponding parts,0.0,0.0,0.45,0.0,0.0,2,2
+C0057,C0008,corresponding parts,angle,0.0,0.0,0.45,0.0,0.0,2,2
+C0026,C0027,center,center of rotation,0.0,0.0,0.0,0.0,0.0,2,1
+C0027,C0026,center of rotation,center,0.0,0.4,0.0,0.0,0.0,2,1
+C0033,C0145,Circumference,radius,0.0,0.5,0.0,0.0,0.0,2,1
+C0145,C0033,radius,Circumference,0.0,0.5,0.0,0.0,0.0,2,1
+C0055,C0170,Corresponding angles,Similar Polygons,0.0,0.45,0.0,0.0,0.0,2,1
+C0170,C0055,Similar Polygons,Corresponding angles,0.0,0.5,0.0,0.0,0.0,2,1
+C0078,C0189,glide reflection,translation,0.0,0.5,0.0,0.0,0.0,2,1
+C0189,C0078,translation,glide reflection,0.0,0.5,0.0,0.0,0.0,2,1
+C0005,C0076,alternate exterior angles theorem,exterior angle theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0076,C0005,exterior angle theorem,alternate exterior angles theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0077,C0138,flowchart proof,proof,0.0,0.0,0.5,0.0,0.0,2,1
+C0138,C0077,proof,flowchart proof,0.0,0.0,0.5,0.0,0.0,2,1
+C0063,C0132,cross section,plane,0.0,0.0,0.5,0.0,0.0,2,1
+C0132,C0063,plane,cross section,0.0,0.0,0.5,0.0,0.0,2,1
+C0058,C0147,corresponding sides,ratio of corresponding sides,0.0,0.0,0.0,0.0,0.0,2,1
+C0147,C0058,ratio of corresponding sides,corresponding sides,0.0,0.5,0.0,0.5,0.0,2,1
+C0125,C0141,perimeter,pyramid,0.0,0.0,0.45,0.0,0.0,2,1
+C0141,C0125,pyramid,perimeter,0.0,0.5,0.0,0.0,0.0,2,1
+C0158,C0159,rotational symmetry,Rotations,0.0,0.0,0.5,0.0,0.0,2,1
+C0159,C0158,Rotations,rotational symmetry,0.0,0.0,0.5,0.0,0.0,2,1
+C0125,C0170,perimeter,Similar Polygons,0.0,0.0,0.5,0.5,0.0,2,1
+C0170,C0125,Similar Polygons,perimeter,0.0,0.0,0.0,0.0,0.0,2,1
+C0100,C0179,line,supplementary,0.0,0.0,0.45,0.0,0.0,2,2
+C0179,C0100,supplementary,line,0.0,0.0,0.0,0.0,0.0,2,2
+C0137,C0204,prism,volume of a prism,0.0,0.0,0.5,0.0,0.0,2,1
+C0204,C0137,volume of a prism,prism,0.0,0.0,0.5,0.0,0.0,2,1
+C0142,C0143,Pythagorean Theorem,Pythagorean triple,0.0,0.0,0.0,0.5,0.0,2,1
+C0143,C0142,Pythagorean triple,Pythagorean Theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0179,C0180,supplementary,Supplementary angles,0.0,0.0,0.0,0.5,0.0,2,1
+C0180,C0179,Supplementary angles,supplementary,0.0,0.0,0.0,0.5,0.0,2,1
+C0026,C0174,center,sphere,0.0,0.5,0.0,0.0,0.0,2,1
+C0174,C0026,sphere,center,0.0,0.5,0.0,0.0,0.0,2,1
+C0013,C0115,angle measure,Obtuse,0.0,0.0,0.45,0.0,0.0,2,1
+C0115,C0013,Obtuse,angle measure,0.5,0.0,0.0,0.0,0.0,2,1
+C0013,C0116,angle measure,obtuse angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0116,C0013,obtuse angle,angle measure,0.5,0.0,0.0,0.0,0.0,2,1
+C0132,C0148,plane,ray,0.0,0.0,0.0,0.0,0.0,2,1
+C0148,C0132,ray,plane,0.0,0.0,0.0,0.0,0.0,2,1
+C0011,C0084,angle bisector,incenter,0.5,0.0,0.5,0.0,0.0,2,1
+C0084,C0011,incenter,angle bisector,0.0,0.0,0.0,0.0,0.0,2,1
+C0024,C0052,biconditional statement,converse,0.0,0.5,0.0,0.0,0.0,2,1
+C0052,C0024,converse,biconditional statement,0.0,0.0,0.0,0.5,0.0,2,1
+C0119,C0183,order of symmetry,Symmetry,0.0,0.0,0.0,0.0,0.0,2,1
+C0183,C0119,Symmetry,order of symmetry,0.5,0.0,0.0,0.5,0.0,2,1
+C0004,C0005,Alternate exterior angles,alternate exterior angles theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0005,C0004,alternate exterior angles theorem,Alternate exterior angles,0.0,0.0,0.5,0.0,0.0,2,1
+C0018,C0145,area of a circle,radius,0.0,0.5,0.0,0.0,0.0,2,1
+C0145,C0018,radius,area of a circle,0.0,0.0,0.5,0.0,0.0,2,1
+C0032,C0127,circumcenter,perpendicular bisector,0.0,0.5,0.0,0.0,0.0,2,1
+C0127,C0032,perpendicular bisector,circumcenter,0.0,0.5,0.0,0.0,0.0,2,1
+C0094,C0095,isosceles triangle,isosceles triangle theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0095,C0094,isosceles triangle theorem,isosceles triangle,0.0,0.0,0.5,0.0,0.0,2,1
+C0040,C0120,concurrency,orthocenter,0.0,0.5,0.0,0.0,0.0,2,1
+C0120,C0040,orthocenter,concurrency,0.5,0.0,0.0,0.0,0.0,2,1
+C0005,C0122,alternate exterior angles theorem,Parallel lines,0.0,0.0,0.0,0.0,0.0,2,1
+C0122,C0005,Parallel lines,alternate exterior angles theorem,0.5,0.0,0.5,0.0,0.0,2,1
+C0078,C0150,glide reflection,reflection,0.0,0.5,0.0,0.0,0.0,2,1
+C0150,C0078,reflection,glide reflection,0.0,0.5,0.0,0.0,0.0,2,1
+C0048,C0162,congruent sides,scalene triangle,0.5,0.0,0.0,0.0,0.0,2,1
+C0162,C0048,scalene triangle,congruent sides,0.5,0.0,0.0,0.0,0.0,2,1
+C0020,C0149,area of a rectangle,rectangle,0.0,0.0,0.5,0.0,0.0,2,1
+C0149,C0020,rectangle,area of a rectangle,0.0,0.0,0.5,0.0,0.0,2,1
+C0015,C0045,arc,Congruent arcs,0.5,0.0,0.0,0.5,0.0,2,1
+C0045,C0015,Congruent arcs,arc,0.0,0.0,0.0,0.0,0.0,2,1
+C0026,C0040,center,concurrency,0.0,0.0,0.0,0.4,0.0,2,1
+C0040,C0026,concurrency,center,0.0,0.5,0.0,0.0,0.0,2,1
+C0074,C0075,exterior angle,exterior angle sum,0.0,0.0,0.0,0.5,0.0,2,1
+C0075,C0074,exterior angle sum,exterior angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0123,C0155,parallelogram,right angle,0.0,0.0,0.0,0.45,0.0,2,1
+C0155,C0123,right angle,parallelogram,0.0,0.5,0.0,0.0,0.0,2,1
+C0121,C0138,paragraph proof,proof,0.0,0.45,0.0,0.0,0.0,2,1
+C0138,C0121,proof,paragraph proof,0.0,0.0,0.5,0.0,0.0,2,1
+C0122,C0130,Parallel lines,perpendicular transversal theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0130,C0122,perpendicular transversal theorem,Parallel lines,0.0,0.0,0.0,0.5,0.0,2,1
+C0050,C0086,conjecture,Inductive Reasoning,0.0,0.0,0.5,0.0,0.0,2,1
+C0086,C0050,Inductive Reasoning,conjecture,0.0,0.0,0.5,0.0,0.0,2,1
+C0053,C0132,Coplanar points,plane,0.0,0.5,0.0,0.0,0.0,2,1
+C0132,C0053,plane,Coplanar points,0.0,0.5,0.0,0.0,0.0,2,1
+C0007,C0200,altitude,vertex,0.0,0.5,0.0,0.0,0.0,2,1
+C0200,C0007,vertex,altitude,0.0,0.0,0.5,0.0,0.0,2,1
+C0015,C0113,arc,minor arc,0.0,0.0,0.0,0.5,0.0,2,1
+C0113,C0015,minor arc,arc,0.0,0.5,0.0,0.0,0.0,2,1
+C0174,C0203,sphere,volume,0.0,0.0,0.5,0.0,0.0,2,1
+C0203,C0174,volume,sphere,0.0,0.5,0.0,0.0,0.0,2,1
+C0007,C0120,altitude,orthocenter,0.5,0.0,0.5,0.0,0.0,2,1
+C0120,C0007,orthocenter,altitude,0.0,0.0,0.0,0.0,0.0,2,1
+C0035,C0090,co-interior angles theorem,interior angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0090,C0035,interior angles,co-interior angles theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0133,C0200,point,vertex,0.0,0.425,0.0,0.0,0.0,2,2
+C0200,C0133,vertex,point,0.5,0.0,0.0,0.0,0.0,2,2
+C0058,C0125,corresponding sides,perimeter,0.0,0.0,0.0,0.0,0.0,2,1
+C0125,C0058,perimeter,corresponding sides,0.0,0.5,0.0,0.5,0.0,2,1
+C0003,C0104,Adjacent angles,linear pair,0.0,0.0,0.0,0.5,0.0,2,1
+C0104,C0003,linear pair,Adjacent angles,0.0,0.5,0.0,0.0,0.0,2,1
+C0097,C0141,lateral area,pyramid,0.0,0.0,0.5,0.0,0.0,2,1
+C0141,C0097,pyramid,lateral area,0.0,0.0,0.5,0.0,0.0,2,1
+C0125,C0137,perimeter,prism,0.0,0.0,0.5,0.0,0.0,2,1
+C0137,C0125,prism,perimeter,0.0,0.0,0.5,0.0,0.0,2,1
+C0150,C0187,reflection,Transformations,0.0,0.0,0.0,0.5,0.0,2,1
+C0187,C0150,Transformations,reflection,0.0,0.5,0.0,0.0,0.0,2,1
+C0062,C0139,cross products,proportion,0.5,0.0,0.0,0.0,0.0,2,1
+C0139,C0062,proportion,cross products,0.0,0.0,0.5,0.0,0.0,2,1
+C0066,C0073,degree,equilateral triangle,0.0,0.0,0.45,0.0,0.0,2,2
+C0073,C0066,equilateral triangle,degree,0.0,0.0,0.45,0.0,0.0,2,2
+C0125,C0126,perimeter,perimeter of a polygon,0.0,0.0,0.0,0.45,0.0,2,1
+C0126,C0125,perimeter of a polygon,perimeter,0.5,0.0,0.0,0.0,0.0,2,1
+C0089,C0090,interior angle sum,interior angles,0.0,0.0,0.0,0.5,0.0,2,1
+C0090,C0089,interior angles,interior angle sum,0.0,0.0,0.0,0.5,0.0,2,1
+C0001,C0013,acute angle,angle measure,0.5,0.0,0.0,0.0,0.0,2,1
+C0013,C0001,angle measure,acute angle,0.0,0.0,0.0,0.45,0.0,2,1
+C0040,C0084,concurrency,incenter,0.0,0.0,0.0,0.5,0.0,2,1
+C0084,C0040,incenter,concurrency,0.0,0.5,0.0,0.0,0.0,2,1
+C0148,C0200,ray,vertex,0.0,0.5,0.0,0.0,0.0,2,1
+C0200,C0148,vertex,ray,0.0,0.5,0.0,0.0,0.0,2,1
+C0028,C0088,central angle,inscribed angle theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0088,C0028,inscribed angle theorem,central angle,0.0,0.5,0.0,0.0,0.0,2,1
+C0008,C0156,angle,right triangle,0.0,0.45,0.0,0.0,0.0,2,2
+C0156,C0008,right triangle,angle,0.0,0.0,0.45,0.0,0.0,2,2
+C0087,C0200,inscribed angle,vertex,0.0,1.0,0.0,0.0,0.0,2,1
+C0200,C0087,vertex,inscribed angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0054,C0073,corollary,equilateral triangle,0.0,0.0,0.5,0.0,0.0,2,1
+C0073,C0054,equilateral triangle,corollary,0.0,0.0,0.45,0.0,0.0,2,1
+C0090,C0153,interior angles,remote interior angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0153,C0090,remote interior angles,interior angles,0.0,0.5,0.5,0.0,0.0,2,1
+C0123,C0154,parallelogram,rhombus,0.0,0.5,0.0,0.0,0.0,2,1
+C0154,C0123,rhombus,parallelogram,0.0,0.5,0.0,0.0,0.0,2,1
+C0108,C0109,midpoint,midpoint of a segment,0.5,0.0,0.0,0.0,0.0,2,1
+C0109,C0108,midpoint of a segment,midpoint,0.0,0.5,0.0,0.0,0.0,2,1
+C0071,C0127,endpoint,perpendicular bisector,0.0,0.5,0.0,0.0,0.0,2,1
+C0127,C0071,perpendicular bisector,endpoint,0.0,0.5,0.0,0.0,0.0,2,1
+C0144,C0191,quadrilateral,trapezoid,0.0,0.5,0.0,0.0,0.0,2,1
+C0191,C0144,trapezoid,quadrilateral,0.0,0.5,0.0,0.0,0.0,2,1
+C0006,C0122,alternate interior angles theorem,Parallel lines,0.0,0.0,0.0,0.0,0.0,2,1
+C0122,C0006,Parallel lines,alternate interior angles theorem,0.5,0.0,0.5,0.0,0.0,2,1
+C0063,C0173,cross section,Solids,0.0,0.0,0.5,0.0,0.0,2,1
+C0173,C0063,Solids,cross section,0.0,0.0,0.0,0.45,0.0,2,1
+C0003,C0200,Adjacent angles,vertex,0.0,0.5,0.0,0.0,0.0,2,1
+C0200,C0003,vertex,Adjacent angles,0.0,0.5,0.0,0.0,0.0,2,1
+C0138,C0198,proof,two-column proof,0.0,0.0,0.0,0.0,0.0,2,1
+C0198,C0138,two-column proof,proof,0.0,0.0,1.0,0.0,0.0,2,1
+C0015,C0016,arc,arc addition postulate,0.0,0.0,0.5,0.0,0.0,2,1
+C0016,C0015,arc addition postulate,arc,0.0,0.0,0.5,0.0,0.0,2,1
+C0129,C0172,Perpendicular lines,slope,0.5,0.0,0.0,0.0,0.0,2,1
+C0172,C0129,slope,Perpendicular lines,0.0,0.0,0.5,0.0,0.0,2,1
+C0055,C0091,Corresponding angles,intersection,0.0,0.0,1.0,0.0,0.0,2,1
+C0091,C0055,intersection,Corresponding angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0043,C0081,congruence,hypotenuse,0.0,0.0,0.0,0.45,0.0,2,1
+C0081,C0043,hypotenuse,congruence,0.0,0.0,0.5,0.0,0.0,2,1
+C0005,C0074,alternate exterior angles theorem,exterior angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0074,C0005,exterior angle,alternate exterior angles theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0049,C0061,congruent triangles,CPCTC,0.0,0.0,0.5,0.0,0.0,2,1
+C0061,C0049,CPCTC,congruent triangles,0.0,0.0,0.5,0.0,0.0,2,1
+C0021,C0164,area of a sector,sector,0.0,0.0,0.5,0.0,0.0,2,1
+C0164,C0021,sector,area of a sector,0.0,0.0,0.0,0.5,0.0,2,1
+C0146,C0147,ratio,ratio of corresponding sides,0.0,0.0,0.5,0.0,0.0,2,1
+C0147,C0146,ratio of corresponding sides,ratio,0.0,0.0,0.0,0.45,0.0,2,1
+C0048,C0073,congruent sides,equilateral triangle,0.0,0.0,0.0,0.45,0.0,2,1
+C0073,C0048,equilateral triangle,congruent sides,0.0,0.5,0.0,0.0,0.0,2,1
+C0013,C0069,angle measure,Distance,0.0,0.0,0.0,0.45,0.0,2,1
+C0069,C0013,Distance,angle measure,0.0,0.0,0.0,0.45,0.0,2,1
+C0015,C0021,arc,area of a sector,0.0,0.0,0.5,0.0,0.0,2,1
+C0021,C0015,area of a sector,arc,0.0,0.5,0.0,0.0,0.0,2,1
+C0071,C0128,endpoint,perpendicular bisector theorem,0.0,0.5,0.0,0.0,0.0,2,1
+C0128,C0071,perpendicular bisector theorem,endpoint,0.0,0.5,0.0,0.0,0.0,2,1
+C0006,C0090,alternate interior angles theorem,interior angles,0.0,0.0,0.0,0.45,0.0,2,1
+C0090,C0006,interior angles,alternate interior angles theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0055,C0100,Corresponding angles,line,0.0,0.0,0.0,0.0,0.0,2,2
+C0100,C0055,line,Corresponding angles,0.0,0.0,0.45,0.0,0.0,2,2
+C0039,C0086,conclusion,Inductive Reasoning,0.0,0.0,0.0,0.0,0.0,2,1
+C0086,C0039,Inductive Reasoning,conclusion,0.0,0.0,0.5,0.0,0.0,2,1
+C0043,C0082,congruence,hypotenuse leg congruence theorem,0.0,0.0,0.0,0.45,0.0,2,1
+C0082,C0043,hypotenuse leg congruence theorem,congruence,0.0,0.0,0.5,0.0,0.0,2,1
+C0015,C0088,arc,inscribed angle theorem,0.0,0.0,0.5,0.0,0.0,2,1
+C0088,C0015,inscribed angle theorem,arc,0.0,0.5,0.0,0.0,0.0,2,1
+C0083,C0092,hypothesis,inverse,0.0,0.0,0.0,0.0,0.0,2,1
+C0092,C0083,inverse,hypothesis,0.0,0.0,1.0,0.0,0.0,2,1
+C0029,C0040,centroid,concurrency,0.0,0.5,0.0,0.0,0.0,2,1
+C0040,C0029,concurrency,centroid,0.0,0.0,0.0,0.5,0.0,2,1
+C0078,C0101,glide reflection,line of reflection,0.0,0.5,0.0,0.0,0.0,2,1
+C0101,C0078,line of reflection,glide reflection,0.0,0.0,0.5,0.0,0.0,2,1
+C0015,C0106,arc,major arc,0.0,0.0,0.0,0.5,0.0,2,1
+C0106,C0015,major arc,arc,0.0,0.5,0.0,0.0,0.0,2,1
+C0052,C0056,converse,corresponding angles postulate,0.0,0.0,0.0,0.0,0.0,2,1
+C0056,C0052,corresponding angles postulate,converse,0.0,0.0,0.5,0.0,0.0,2,1
+C0203,C0204,volume,volume of a prism,0.0,0.0,0.5,0.0,0.0,2,1
+C0204,C0203,volume of a prism,volume,0.0,0.0,0.5,0.0,0.0,2,1
+C0030,C0087,chord,inscribed angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0087,C0030,inscribed angle,chord,0.0,0.5,0.5,0.0,0.0,2,1
+C0063,C0091,cross section,intersection,0.0,0.5,0.0,0.0,0.0,2,1
+C0091,C0063,intersection,cross section,0.0,0.0,0.0,0.5,0.0,2,1
+C0080,C0085,hinge theorem,included angle,0.0,0.0,1.0,0.0,0.0,2,1
+C0085,C0080,included angle,hinge theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0156,C0197,right triangle,Trigonometry,0.0,0.0,0.5,0.0,0.0,2,1
+C0197,C0156,Trigonometry,right triangle,0.0,0.5,0.0,0.0,0.0,2,1
+C0048,C0094,congruent sides,isosceles triangle,0.0,0.5,0.0,0.0,0.0,2,1
+C0094,C0048,isosceles triangle,congruent sides,0.5,0.0,0.0,0.0,0.0,2,1
+C0040,C0127,concurrency,perpendicular bisector,0.0,0.5,0.0,0.0,0.0,2,1
+C0127,C0040,perpendicular bisector,concurrency,0.0,0.0,0.0,0.5,0.0,2,1
+C0115,C0117,Obtuse,obtuse triangle,0.0,0.5,0.0,0.0,0.0,2,1
+C0117,C0115,obtuse triangle,Obtuse,0.0,0.5,0.0,0.0,0.0,2,1
+C0033,C0068,Circumference,diameter,0.0,0.5,0.0,0.0,0.0,2,1
+C0068,C0033,diameter,Circumference,0.0,0.0,0.5,0.0,0.0,2,1
+C0026,C0159,center,Rotations,0.0,0.45,0.0,0.0,0.0,2,1
+C0159,C0026,Rotations,center,0.0,0.5,0.0,0.0,0.0,2,1
+C0158,C0183,rotational symmetry,Symmetry,0.0,0.0,0.0,0.0,0.0,2,1
+C0183,C0158,Symmetry,rotational symmetry,0.5,0.0,0.0,0.5,0.0,2,1
+C0100,C0189,line,translation,0.0,0.45,0.0,0.0,0.0,2,2
+C0189,C0100,translation,line,0.0,0.45,0.0,0.0,0.0,2,2
+C0069,C0167,Distance,segments,0.0,0.0,0.45,0.0,0.0,2,2
+C0167,C0069,segments,Distance,0.0,0.0,0.45,0.0,0.0,2,2
+C0167,C0186,segments,Tangents,0.0,0.0,0.45,0.0,0.0,2,2
+C0186,C0167,Tangents,segments,0.0,0.0,0.45,0.0,0.0,2,2
+C0115,C0192,Obtuse,triangle,0.0,0.0,0.45,0.0,0.0,2,2
+C0192,C0115,triangle,Obtuse,0.0,0.0,0.0,0.45,0.0,2,2
+C0135,C0146,polygon,ratio,0.0,0.0,0.0,0.0,0.0,2,2
+C0146,C0135,ratio,polygon,0.0,0.0,0.0,0.0,0.0,2,2
+C0074,C0100,exterior angle,line,0.0,0.0,0.0,0.0,0.0,2,2
+C0100,C0074,line,exterior angle,0.0,0.45,0.0,0.0,0.0,2,2
+C0074,C0190,exterior angle,transversal,0.0,0.0,0.0,0.0,0.0,2,2
+C0190,C0074,transversal,exterior angle,0.0,0.0,0.0,0.0,0.0,2,2
+C0167,C0200,segments,vertex,0.0,0.0,0.45,0.0,0.0,2,2
+C0200,C0167,vertex,segments,0.0,0.0,0.45,0.0,0.0,2,2
+C0179,C0190,supplementary,transversal,0.0,0.0,0.45,0.0,0.0,2,2
+C0190,C0179,transversal,supplementary,0.0,0.0,0.45,0.0,0.0,2,2
+C0058,C0135,corresponding sides,polygon,0.0,0.0,0.0,0.0,0.825,2,2
+C0135,C0058,polygon,corresponding sides,0.0,0.0,0.0,0.0,0.0,2,2
+C0100,C0187,line,Transformations,0.0,0.5,0.0,0.0,0.0,2,0
+C0187,C0100,Transformations,line,0.0,0.45,0.0,0.0,0.0,2,0
+C0105,C0190,Lines Parallel,transversal,0.0,0.0,0.5,0.0,0.0,2,0
+C0190,C0105,transversal,Lines Parallel,0.0,0.0,0.5,0.0,0.0,2,0
+C0008,C0105,angle,Lines Parallel,0.0,0.0,0.0,0.0,0.0,2,0
+C0105,C0008,Lines Parallel,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0049,angle,congruent triangles,0.0,0.0,0.0,0.0,0.0,2,0
+C0049,C0008,congruent triangles,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0185,C0192,Tangent Ratios,triangle,0.0,0.0,0.45,0.0,0.0,2,0
+C0192,C0185,triangle,Tangent Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0011,C0167,angle bisector,segments,0.0,0.45,0.5,0.0,0.0,2,0
+C0167,C0011,segments,angle bisector,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0031,angle,circle,0.0,0.45,0.0,0.0,0.0,2,1
+C0031,C0008,circle,angle,0.0,0.0,0.45,0.0,0.0,2,1
+C0008,C0175,angle,square,0.0,0.0,0.0,0.0,0.0,2,0
+C0175,C0008,square,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0163,C0167,secant,segments,0.0,0.0,0.45,0.0,0.0,2,2
+C0167,C0163,segments,secant,0.0,0.0,0.0,0.425,0.0,2,2
+C0044,C0105,congruent,Lines Parallel,0.0,0.0,0.0,0.0,0.0,2,0
+C0105,C0044,Lines Parallel,congruent,0.5,0.0,0.0,0.0,0.0,2,0
+C0008,C0185,angle,Tangent Ratios,0.0,0.0,0.425,0.0,0.0,2,0
+C0185,C0008,Tangent Ratios,angle,0.0,0.0,0.45,0.0,0.0,2,0
+C0015,C0066,arc,degree,0.0,0.0,0.45,0.0,0.0,2,2
+C0066,C0015,degree,arc,0.0,0.0,0.45,0.0,0.0,2,2
+C0156,C0175,right triangle,square,0.0,0.0,0.0,0.0,0.0,2,2
+C0175,C0156,square,right triangle,0.0,0.0,0.0,0.0,0.0,2,2
+C0067,C0096,diagonal,kite,0.0,0.0,0.45,0.0,0.0,2,2
+C0096,C0067,kite,diagonal,0.0,0.0,0.5,0.0,0.0,2,2
+C0043,C0057,congruence,corresponding parts,0.0,0.0,0.45,0.0,0.0,2,2
+C0057,C0043,corresponding parts,congruence,0.0,0.0,0.0,0.45,0.0,2,2
+C0150,C0189,reflection,translation,0.0,0.0,0.5,0.0,0.0,2,2
+C0189,C0150,translation,reflection,0.0,0.0,0.5,0.0,0.0,2,2
+C0167,C0192,segments,triangle,0.0,0.45,0.0,0.0,0.0,2,1
+C0192,C0167,triangle,segments,0.0,0.45,0.0,0.0,0.0,2,1
+C0090,C0179,interior angles,supplementary,0.0,0.0,0.0,0.0,0.0,2,2
+C0179,C0090,supplementary,interior angles,0.0,0.0,0.0,0.0,0.0,2,2
+C0067,C0154,diagonal,rhombus,0.0,0.5,0.0,0.0,0.0,2,2
+C0154,C0067,rhombus,diagonal,0.0,0.0,0.5,0.0,0.0,2,2
+C0044,C0144,congruent,quadrilateral,0.0,0.0,0.0,0.425,0.0,2,1
+C0144,C0044,quadrilateral,congruent,0.0,0.0,0.0,0.4,0.0,2,1
+C0031,C0044,circle,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0044,C0031,congruent,circle,0.0,0.0,0.0,0.45,0.0,2,1
+C0097,C0181,lateral area,surface area,0.0,0.0,0.0,0.45,0.0,2,2
+C0181,C0097,surface area,lateral area,0.0,0.0,0.0,0.45,0.0,2,2
+C0073,C0094,equilateral triangle,isosceles triangle,0.0,0.5,0.0,0.0,0.0,2,0
+C0094,C0073,isosceles triangle,equilateral triangle,0.0,0.0,0.0,0.5,0.0,2,0
+C0052,C0142,converse,Pythagorean Theorem,0.0,0.0,0.0,0.45,0.0,2,2
+C0142,C0052,Pythagorean Theorem,converse,0.0,0.0,0.5,0.0,0.0,2,2
+C0023,C0137,bases,prism,0.0,0.45,0.0,0.0,0.0,2,2
+C0137,C0023,prism,bases,0.0,0.5,0.0,0.0,0.0,2,2
+C0025,C0044,bisect,congruent,0.0,0.0,0.0,0.425,0.0,2,1
+C0044,C0025,congruent,bisect,0.0,0.0,0.0,0.425,0.0,2,1
+C0146,C0170,ratio,Similar Polygons,0.0,0.0,0.5,0.0,0.0,2,2
+C0170,C0146,Similar Polygons,ratio,0.0,0.0,0.45,0.0,0.0,2,2
+C0081,C0146,hypotenuse,ratio,0.0,0.0,0.45,0.0,0.0,2,2
+C0146,C0081,ratio,hypotenuse,0.0,0.0,0.45,0.0,0.0,2,2
+C0044,C0066,congruent,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0044,degree,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0192,line,triangle,0.0,0.0,0.45,0.0,0.0,2,1
+C0192,C0100,triangle,line,0.0,0.0,0.45,0.0,0.0,2,1
+C0073,C0095,equilateral triangle,isosceles triangle theorem,0.0,0.0,0.0,0.5,0.0,2,0
+C0095,C0073,isosceles triangle theorem,equilateral triangle,0.0,0.0,0.0,0.5,0.0,2,0
+C0146,C0186,ratio,Tangents,0.0,0.0,0.0,0.0,0.0,2,2
+C0186,C0146,Tangents,ratio,0.0,0.0,0.0,0.0,0.0,2,2
+C0096,C0144,kite,quadrilateral,0.5,0.5,0.0,0.0,0.0,2,0
+C0144,C0096,quadrilateral,kite,0.0,0.0,0.0,0.0,0.0,2,0
+C0049,C0058,congruent triangles,corresponding sides,0.0,0.0,0.0,0.0,0.0,2,0
+C0058,C0049,corresponding sides,congruent triangles,0.5,0.0,0.0,0.0,0.0,2,0
+C0133,C0192,point,triangle,0.0,0.0,0.425,0.0,0.0,2,1
+C0192,C0133,triangle,point,0.0,0.0,0.4,0.0,0.0,2,1
+C0044,C0118,congruent,opposite angles,0.0,0.0,0.0,0.0,0.4,2,1
+C0118,C0044,opposite angles,congruent,0.0,0.0,0.0,0.4,0.0,2,1
+C0055,C0105,Corresponding angles,Lines Parallel,0.0,0.0,0.5,0.0,0.0,2,0
+C0105,C0055,Lines Parallel,Corresponding angles,0.5,0.0,0.0,0.0,0.0,2,0
+C0101,C0187,line of reflection,Transformations,0.0,0.0,0.5,0.0,0.0,2,0
+C0187,C0101,Transformations,line of reflection,0.0,0.5,0.0,0.0,0.0,2,0
+C0156,C0185,right triangle,Tangent Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0185,C0156,Tangent Ratios,right triangle,0.0,0.0,0.0,0.45,0.0,2,0
+C0185,C0197,Tangent Ratios,Trigonometry,0.5,0.0,0.0,0.0,0.0,2,0
+C0197,C0185,Trigonometry,Tangent Ratios,0.0,0.0,0.5,0.0,0.0,2,0
+C0015,C0164,arc,sector,0.0,0.5,0.0,0.0,0.0,2,2
+C0164,C0015,sector,arc,0.0,0.5,0.0,0.0,0.0,2,2
+C0145,C0174,radius,sphere,0.0,1.0,0.0,0.0,0.0,2,2
+C0174,C0145,sphere,radius,0.0,0.0,0.0,0.0,0.0,2,2
+C0011,C0128,angle bisector,perpendicular bisector theorem,0.0,0.0,0.0,0.5,0.0,2,0
+C0128,C0011,perpendicular bisector theorem,angle bisector,0.0,0.0,0.0,0.5,0.0,2,0
+C0078,C0187,glide reflection,Transformations,0.0,0.0,0.5,0.0,0.0,2,0
+C0187,C0078,Transformations,glide reflection,0.0,0.5,0.0,0.0,0.0,2,0
+C0042,C0125,cone,perimeter,0.0,0.0,0.45,0.0,0.0,2,0
+C0125,C0042,perimeter,cone,0.0,0.0,0.45,0.0,0.0,2,0
+C0042,C0097,cone,lateral area,0.0,0.0,0.0,0.45,0.0,2,0
+C0097,C0042,lateral area,cone,0.0,0.0,0.0,0.45,0.0,2,0
+C0064,C0125,cylinder,perimeter,0.0,0.45,0.0,0.0,0.0,2,0
+C0125,C0064,perimeter,cylinder,0.0,0.0,0.45,0.0,0.0,2,0
+C0008,C0067,angle,diagonal,0.0,0.0,0.0,0.0,0.0,2,1
+C0067,C0008,diagonal,angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0187,C0189,Transformations,translation,0.0,0.5,0.0,0.0,0.0,2,0
+C0189,C0187,translation,Transformations,0.0,0.5,0.0,0.0,0.0,2,0
+C0123,C0175,parallelogram,square,0.0,0.5,0.0,0.0,0.0,2,0
+C0175,C0123,square,parallelogram,0.0,0.5,0.0,0.0,0.0,2,0
+C0056,C0105,corresponding angles postulate,Lines Parallel,0.5,0.0,0.5,0.0,0.0,2,0
+C0105,C0056,Lines Parallel,corresponding angles postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0108,C0133,midpoint,point,0.5,0.0,0.0,0.0,0.0,2,1
+C0133,C0108,point,midpoint,0.0,0.45,0.0,0.0,0.0,2,1
+C0018,C0164,area of a circle,sector,0.0,0.0,0.0,0.45,0.0,2,0
+C0164,C0018,sector,area of a circle,0.5,0.0,0.0,0.0,0.0,2,0
+C0145,C0164,radius,sector,0.0,0.5,0.0,0.0,0.0,2,0
+C0164,C0145,sector,radius,0.0,0.5,0.0,0.0,0.0,2,0
+C0069,C0100,Distance,line,0.0,0.0,0.45,0.0,0.0,2,1
+C0100,C0069,line,Distance,0.0,0.0,0.5,0.0,0.0,2,1
+C0011,C0071,angle bisector,endpoint,0.0,0.5,0.0,0.0,0.0,2,0
+C0071,C0011,endpoint,angle bisector,0.0,0.0,0.0,0.0,0.0,2,0
+C0007,C0108,altitude,midpoint,0.0,0.5,0.0,0.0,0.0,2,0
+C0108,C0007,midpoint,altitude,0.0,0.0,0.0,0.0,0.0,2,0
+C0052,C0105,converse,Lines Parallel,0.0,0.0,0.0,0.0,0.0,2,0
+C0105,C0052,Lines Parallel,converse,0.0,0.0,0.0,0.9,0.0,2,0
+C0015,C0033,arc,Circumference,0.0,0.0,0.0,0.45,0.0,2,2
+C0033,C0015,Circumference,arc,0.0,0.0,0.45,0.0,0.0,2,2
+C0008,C0144,angle,quadrilateral,0.0,0.0,0.0,0.4,0.0,2,1
+C0144,C0008,quadrilateral,angle,0.0,0.0,0.0,0.4,0.0,2,1
+C0015,C0044,arc,congruent,0.0,0.0,0.0,0.0,0.45,2,1
+C0044,C0015,congruent,arc,0.0,0.0,0.0,0.45,0.0,2,1
+C0008,C0094,angle,isosceles triangle,0.0,0.0,0.45,0.0,0.0,2,1
+C0094,C0008,isosceles triangle,angle,0.0,0.0,0.45,0.0,0.0,2,1
+C0030,C0044,chord,congruent,0.0,0.0,0.0,0.45,0.0,2,1
+C0044,C0030,congruent,chord,0.0,0.0,0.0,0.0,0.0,2,1
+C0023,C0044,bases,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0044,C0023,congruent,bases,0.0,0.0,0.0,0.425,0.0,2,1
+C0008,C0168,angle,semicircle,0.0,0.0,0.45,0.0,0.0,2,1
+C0168,C0008,semicircle,angle,0.0,0.0,0.45,0.0,0.0,2,1
+C0026,C0167,center,segments,0.0,0.45,0.0,0.0,0.0,2,1
+C0167,C0026,segments,center,0.0,0.45,0.0,0.0,0.0,2,1
+C0008,C0129,angle,Perpendicular lines,0.0,0.0,0.45,0.0,0.4,2,1
+C0129,C0008,Perpendicular lines,angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0066,C0074,degree,exterior angle,0.0,0.0,0.0,0.45,0.0,2,1
+C0074,C0066,exterior angle,degree,0.0,0.0,0.45,0.0,0.0,2,1
+C0100,C0159,line,Rotations,0.0,0.0,0.425,0.0,0.0,2,1
+C0159,C0100,Rotations,line,0.0,0.0,0.0,0.0,0.0,2,1
+C0135,C0161,polygon,scale factor,0.0,0.0,0.0,0.0,0.0,2,1
+C0161,C0135,scale factor,polygon,0.0,0.0,0.0,0.0,0.0,2,1
+C0044,C0090,congruent,interior angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0090,C0044,interior angles,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0100,C0108,line,midpoint,0.0,0.45,0.0,0.0,0.0,2,1
+C0108,C0100,midpoint,line,0.0,0.0,0.425,0.0,0.0,2,1
+C0026,C0044,center,congruent,0.0,0.0,0.0,0.4,0.0,2,1
+C0044,C0026,congruent,center,0.0,0.0,0.0,0.4,0.0,2,1
+C0044,C0175,congruent,square,0.0,0.0,0.0,0.0,0.0,2,1
+C0175,C0044,square,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0181,C0203,surface area,volume,0.0,0.0,0.4,0.0,0.0,2,1
+C0203,C0181,volume,surface area,0.0,0.0,0.4,0.0,0.0,2,1
+C0031,C0068,circle,diameter,0.0,0.0,0.0,0.0,0.0,2,1
+C0068,C0031,diameter,circle,0.0,0.95,0.0,0.0,0.0,2,1
+C0090,C0192,interior angles,triangle,0.0,0.0,0.45,0.0,0.0,2,1
+C0192,C0090,triangle,interior angles,0.0,0.0,0.45,0.0,0.0,2,1
+C0102,C0133,line segment,point,0.0,0.45,0.0,0.0,0.0,2,1
+C0133,C0102,point,line segment,0.0,0.45,0.0,0.0,0.0,2,1
+C0008,C0025,angle,bisect,0.0,0.0,0.45,0.0,0.0,2,1
+C0025,C0008,bisect,angle,0.0,0.0,0.45,0.0,0.0,2,1
+C0040,C0192,concurrency,triangle,0.0,0.0,0.0,0.4,0.0,2,1
+C0192,C0040,triangle,concurrency,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0069,angle,Distance,0.0,0.0,0.0,0.0,0.0,2,1
+C0069,C0008,Distance,angle,0.0,0.0,0.0,0.4,0.0,2,1
+C0066,C0156,degree,right triangle,0.0,0.0,0.45,0.0,0.0,2,1
+C0156,C0066,right triangle,degree,0.0,0.0,0.425,0.0,0.0,2,1
+C0076,C0100,exterior angle theorem,line,0.0,0.0,0.0,0.0,0.0,2,1
+C0100,C0076,line,exterior angle theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0167,C0202,segments,vertices,0.0,0.0,0.0,0.425,0.0,2,1
+C0202,C0167,vertices,segments,0.0,0.0,0.45,0.0,0.0,2,1
+C0107,C0133,median,point,0.0,0.0,0.0,0.825,0.0,2,1
+C0133,C0107,point,median,0.0,0.0,0.0,0.0,0.0,2,1
+C0044,C0076,congruent,exterior angle theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0076,C0044,exterior angle theorem,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0040,angle,concurrency,0.0,0.0,0.0,0.0,0.4,2,1
+C0040,C0008,concurrency,angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0012,C0133,angle bisector theorem,point,0.0,0.0,0.4,0.0,0.0,2,1
+C0133,C0012,point,angle bisector theorem,0.0,0.0,0.425,0.0,0.0,2,1
+C0044,C0201,congruent,Vertical angles,0.0,0.0,0.0,0.0,0.8,2,1
+C0201,C0044,Vertical angles,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0055,C0135,Corresponding angles,polygon,0.0,0.0,0.0,0.0,0.4,2,1
+C0135,C0055,polygon,Corresponding angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0044,C0137,congruent,prism,0.0,0.0,0.0,0.45,0.4,2,1
+C0137,C0044,prism,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0004,C0044,Alternate exterior angles,congruent,0.0,0.0,0.0,0.45,0.4,2,1
+C0044,C0004,congruent,Alternate exterior angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0015,C0133,arc,point,0.0,0.0,0.0,0.0,0.0,2,1
+C0133,C0015,point,arc,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0091,angle,intersection,0.0,0.0,0.45,0.0,0.0,2,1
+C0091,C0008,intersection,angle,0.0,0.0,0.45,0.0,0.0,2,1
+C0007,C0133,altitude,point,0.0,0.0,0.45,0.0,0.0,2,1
+C0133,C0007,point,altitude,0.0,0.0,0.425,0.0,0.0,2,1
+C0066,C0179,degree,supplementary,0.0,0.0,0.45,0.0,0.0,2,1
+C0179,C0066,supplementary,degree,0.0,0.0,0.45,0.0,0.0,2,1
+C0076,C0190,exterior angle theorem,transversal,0.0,0.0,0.0,0.0,0.0,2,1
+C0190,C0076,transversal,exterior angle theorem,0.0,0.0,0.0,0.45,0.0,2,1
+C0011,C0192,angle bisector,triangle,0.0,0.0,0.45,0.0,0.0,2,1
+C0192,C0011,triangle,angle bisector,0.0,0.0,0.45,0.0,0.0,2,1
+C0047,C0133,Congruent segments,point,0.0,0.0,0.45,0.0,0.0,2,1
+C0133,C0047,point,Congruent segments,0.0,0.0,0.45,0.0,0.0,2,1
+C0100,C0183,line,Symmetry,0.0,0.0,0.45,0.0,0.0,2,1
+C0183,C0100,Symmetry,line,0.0,0.0,0.45,0.0,0.0,2,1
+C0008,C0154,angle,rhombus,0.0,0.0,0.0,0.0,0.0,2,1
+C0154,C0008,rhombus,angle,0.0,0.0,1.0,0.0,0.0,2,1
+C0031,C0071,circle,endpoint,0.0,0.0,0.0,0.0,0.0,2,1
+C0071,C0031,endpoint,circle,0.0,0.45,0.0,0.0,0.0,2,1
+C0066,C0183,degree,Symmetry,0.0,0.0,0.4,0.0,0.0,2,1
+C0183,C0066,Symmetry,degree,0.0,0.0,0.0,0.0,0.0,2,1
+C0044,C0149,congruent,rectangle,0.0,0.0,0.0,0.425,0.0,2,1
+C0149,C0044,rectangle,congruent,0.0,0.0,0.0,0.4,0.0,2,1
+C0003,C0100,Adjacent angles,line,0.0,0.0,0.4,0.0,0.0,2,1
+C0100,C0003,line,Adjacent angles,0.0,0.0,0.45,0.0,0.0,2,1
+C0123,C0192,parallelogram,triangle,0.0,0.0,0.0,0.0,0.0,2,1
+C0192,C0123,triangle,parallelogram,0.0,0.0,0.0,0.0,0.0,2,1
+C0031,C0200,circle,vertex,0.0,0.0,0.0,0.0,0.0,2,1
+C0200,C0031,vertex,circle,0.0,0.45,0.0,0.0,0.0,2,1
+C0044,C0074,congruent,exterior angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0074,C0044,exterior angle,congruent,0.0,0.0,0.0,0.0,0.0,2,1
+C0066,C0155,degree,right angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0155,C0066,right angle,degree,0.0,0.0,0.45,0.0,0.0,2,1
+C0044,C0096,congruent,kite,0.0,0.0,0.45,0.0,0.0,2,1
+C0096,C0044,kite,congruent,0.0,0.0,0.45,0.0,0.0,2,1
+C0008,C0092,angle,inverse,0.0,0.0,0.0,0.0,0.0,2,1
+C0092,C0008,inverse,angle,0.0,0.0,0.4,0.0,0.0,2,1
+C0074,C0135,exterior angle,polygon,0.0,0.0,0.0,0.45,0.0,2,1
+C0135,C0074,polygon,exterior angle,0.0,0.0,0.0,0.45,0.0,2,1
+C0066,C0159,degree,Rotations,0.0,0.0,0.45,0.0,0.0,2,1
+C0159,C0066,Rotations,degree,0.0,0.0,0.45,0.0,0.0,2,1
+C0052,C0100,converse,line,0.0,0.0,0.0,0.0,0.0,2,1
+C0100,C0052,line,converse,0.0,0.0,0.0,0.0,0.0,2,1
+C0052,C0190,converse,transversal,0.0,0.0,0.4,0.0,0.0,2,1
+C0190,C0052,transversal,converse,0.0,0.0,0.45,0.0,0.0,2,1
+C0093,C0189,isometries,translation,0.0,0.0,0.0,0.0,0.0,2,1
+C0189,C0093,translation,isometries,0.0,1.0,0.0,0.0,0.0,2,1
+C0100,C0155,line,right angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0155,C0100,right angle,line,0.0,0.0,0.0,0.0,0.0,2,1
+C0100,C0145,line,radius,0.0,0.0,0.45,0.0,0.0,2,1
+C0145,C0100,radius,line,0.0,0.0,0.45,0.0,0.0,2,1
+C0044,C0108,congruent,midpoint,0.0,0.0,0.45,0.0,0.0,2,1
+C0108,C0044,midpoint,congruent,0.5,0.0,0.0,0.0,0.0,2,1
+C0067,C0144,diagonal,quadrilateral,0.0,0.0,0.0,0.45,0.0,2,1
+C0144,C0067,quadrilateral,diagonal,0.0,0.0,0.0,0.45,0.0,2,1
+C0135,C0175,polygon,square,0.0,0.0,0.0,0.425,0.0,2,1
+C0175,C0135,square,polygon,0.0,0.0,0.0,0.0,0.0,2,1
+C0107,C0192,median,triangle,0.0,0.5,0.45,0.0,0.0,2,1
+C0192,C0107,triangle,median,0.0,0.0,0.0,0.0,0.0,2,1
+C0008,C0026,angle,center,0.0,0.0,0.4,0.0,0.0,2,1
+C0026,C0008,center,angle,0.0,0.0,0.0,0.0,0.0,2,1
+C0093,C0150,isometries,reflection,0.0,0.0,0.5,0.0,0.0,2,1
+C0150,C0093,reflection,isometries,0.0,0.0,0.5,0.0,0.0,2,1
+C0135,C0192,polygon,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0135,triangle,polygon,0.0,1.0,0.0,0.0,0.0,2,0
+C0100,C0127,line,perpendicular bisector,0.0,0.5,0.0,0.0,0.0,2,1
+C0127,C0100,perpendicular bisector,line,0.0,0.5,0.0,0.0,0.0,2,1
+C0101,C0189,line of reflection,translation,0.0,0.0,0.45,0.0,0.0,2,1
+C0189,C0101,translation,line of reflection,0.0,0.0,0.0,0.45,0.0,2,1
+C0118,C0144,opposite angles,quadrilateral,0.0,0.0,0.0,0.4,0.0,2,1
+C0144,C0118,quadrilateral,opposite angles,0.0,0.0,0.0,0.45,0.0,2,1
+C0004,C0122,Alternate exterior angles,Parallel lines,0.0,0.0,0.0,0.45,0.0,2,1
+C0122,C0004,Parallel lines,Alternate exterior angles,0.0,0.0,0.5,0.0,0.0,2,1
+C0118,C0123,opposite angles,parallelogram,0.0,0.0,0.5,0.0,0.0,2,1
+C0123,C0118,parallelogram,opposite angles,0.0,0.0,0.5,0.0,0.0,2,1
+C0066,C0100,degree,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0066,line,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0161,C0170,scale factor,Similar Polygons,0.0,0.0,0.9,0.0,0.0,2,1
+C0170,C0161,Similar Polygons,scale factor,0.0,0.0,0.0,0.0,0.0,2,1
+C0025,C0144,bisect,quadrilateral,0.0,0.0,0.0,0.45,0.0,2,1
+C0144,C0025,quadrilateral,bisect,0.0,0.0,0.0,0.45,0.0,2,1
+C0025,C0127,bisect,perpendicular bisector,0.0,0.0,0.0,0.45,0.0,2,1
+C0127,C0025,perpendicular bisector,bisect,0.0,0.5,0.0,0.0,0.0,2,1
+C0067,C0118,diagonal,opposite angles,0.0,0.0,0.45,0.0,0.0,2,1
+C0118,C0067,opposite angles,diagonal,0.0,0.0,0.0,0.0,0.0,2,1
+C0025,C0118,bisect,opposite angles,0.0,0.0,0.45,0.0,0.0,2,1
+C0118,C0025,opposite angles,bisect,0.0,0.0,0.45,0.0,0.0,2,1
+C0056,C0122,corresponding angles postulate,Parallel lines,0.0,0.0,0.0,0.45,0.0,2,1
+C0122,C0056,Parallel lines,corresponding angles postulate,0.0,0.0,0.0,0.45,0.0,2,1
+C0068,C0145,diameter,radius,0.0,0.45,0.0,0.0,0.0,2,1
+C0145,C0068,radius,diameter,0.0,0.45,0.0,0.0,0.0,2,1
+C0015,C0068,arc,diameter,0.0,0.0,0.45,0.0,0.0,2,1
+C0068,C0015,diameter,arc,0.0,0.0,0.45,0.0,0.0,2,1
+C0093,C0133,isometries,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0093,point,isometries,0.0,0.0,0.0,0.0,0.0,2,0
+C0141,C0203,pyramid,volume,0.0,0.0,0.45,0.0,0.0,2,1
+C0203,C0141,volume,pyramid,0.0,0.0,0.425,0.0,0.0,2,1
+C0066,C0167,degree,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0066,segments,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0059,C0146,Cosine Ratios,ratio,0.0,0.45,0.0,0.0,0.0,2,1
+C0146,C0059,ratio,Cosine Ratios,0.0,0.0,0.0,0.4,0.0,2,1
+C0067,C0149,diagonal,rectangle,0.0,0.0,0.5,0.0,0.0,2,1
+C0149,C0067,rectangle,diagonal,0.0,0.0,0.5,0.0,0.0,2,1
+C0093,C0100,isometries,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0093,line,isometries,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0167,polygon,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0135,segments,polygon,0.0,0.0,0.0,0.45,0.0,2,0
+C0007,C0040,altitude,concurrency,0.0,0.0,0.0,0.45,0.0,2,1
+C0040,C0007,concurrency,altitude,0.0,0.0,0.0,0.425,0.0,2,1
+C0129,C0155,Perpendicular lines,right angle,0.0,0.0,0.5,0.0,0.4,2,1
+C0155,C0129,right angle,Perpendicular lines,0.0,0.0,0.0,0.0,0.0,2,1
+C0025,C0154,bisect,rhombus,0.0,0.0,0.5,0.0,0.0,2,1
+C0154,C0025,rhombus,bisect,0.0,0.0,0.5,0.0,0.0,2,1
+C0039,C0050,conclusion,conjecture,0.0,0.0,0.0,0.0,0.0,2,1
+C0050,C0039,conjecture,conclusion,0.0,0.0,0.0,0.0,0.0,2,1
+C0167,C0190,segments,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0167,transversal,segments,0.0,0.0,0.45,0.0,0.0,2,0
+C0023,C0111,bases,midsegment,0.0,0.0,0.45,0.0,0.0,2,1
+C0111,C0023,midsegment,bases,0.0,0.0,0.0,0.45,0.0,2,1
+C0145,C0184,radius,tangent line,0.0,0.0,0.5,0.0,0.0,2,1
+C0184,C0145,tangent line,radius,0.0,0.0,0.5,0.0,0.0,2,1
+C0173,C0203,Solids,volume,0.0,0.0,0.4,0.0,0.0,2,1
+C0203,C0173,volume,Solids,0.0,0.0,0.4,0.0,0.0,2,1
+C0129,C0190,Perpendicular lines,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0129,transversal,Perpendicular lines,0.0,0.0,0.0,0.0,0.0,2,0
+C0023,C0123,bases,parallelogram,0.0,0.0,0.0,0.45,0.0,2,1
+C0123,C0023,parallelogram,bases,0.0,0.45,0.0,0.0,0.0,2,1
+C0029,C0146,centroid,ratio,0.0,0.0,0.45,0.0,0.0,2,1
+C0146,C0029,ratio,centroid,0.0,0.0,0.45,0.0,0.0,2,1
+C0042,C0131,cone,pi radius,0.0,0.0,0.45,0.0,0.0,2,1
+C0131,C0042,pi radius,cone,0.0,0.0,0.425,0.0,0.0,2,1
+C0064,C0203,cylinder,volume,0.0,0.0,0.5,0.0,0.0,2,1
+C0203,C0064,volume,cylinder,0.0,0.0,0.45,0.0,0.0,2,1
+C0030,C0133,chord,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0030,point,chord,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0133,degree,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0066,point,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0039,C0052,conclusion,converse,0.0,0.0,0.425,0.0,0.0,2,1
+C0052,C0039,converse,conclusion,0.0,0.0,0.45,0.0,0.0,2,1
+C0023,C0064,bases,cylinder,0.0,0.0,0.0,0.45,0.0,2,1
+C0064,C0023,cylinder,bases,0.0,0.45,0.0,0.0,0.0,2,1
+C0025,C0068,bisect,diameter,0.0,0.0,0.0,0.0,0.0,2,1
+C0068,C0025,diameter,bisect,0.0,0.0,0.45,0.0,0.0,2,1
+C0081,C0171,hypotenuse,Sine Ratios,0.0,0.0,0.425,0.0,0.0,2,1
+C0171,C0081,Sine Ratios,hypotenuse,0.0,0.45,0.0,0.0,0.0,2,1
+C0134,C0145,point of tangency,radius,0.0,0.0,0.5,0.0,0.0,2,1
+C0145,C0134,radius,point of tangency,0.0,0.0,0.5,0.0,0.0,2,1
+C0093,C0159,isometries,Rotations,0.0,0.0,0.0,0.0,0.0,2,1
+C0159,C0093,Rotations,isometries,0.0,0.0,1.0,0.0,0.0,2,1
+C0029,C0200,centroid,vertex,0.0,0.45,0.0,0.0,0.0,2,1
+C0200,C0029,vertex,centroid,0.0,0.0,0.45,0.0,0.0,2,1
+C0137,C0203,prism,volume,0.0,0.0,0.45,0.0,0.0,2,1
+C0203,C0137,volume,prism,0.0,0.0,0.4,0.0,0.0,2,1
+C0173,C0181,Solids,surface area,0.0,0.0,0.4,0.0,0.0,2,1
+C0181,C0173,surface area,Solids,0.0,0.0,0.4,0.0,0.0,2,1
+C0028,C0087,central angle,inscribed angle,0.0,0.0,0.0,0.45,0.0,2,1
+C0087,C0028,inscribed angle,central angle,0.0,0.0,0.0,0.5,0.0,2,1
+C0161,C0175,scale factor,square,0.0,0.0,0.0,0.0,0.0,2,1
+C0175,C0161,square,scale factor,0.0,0.0,0.0,0.0,0.0,2,1
+C0091,C0173,intersection,Solids,0.0,0.0,0.45,0.0,0.0,2,1
+C0173,C0091,Solids,intersection,0.0,0.0,0.45,0.0,0.0,2,1
+C0115,C0175,Obtuse,square,0.0,0.0,0.425,0.0,0.0,2,1
+C0175,C0115,square,Obtuse,0.0,0.0,0.0,0.0,0.0,2,1
+C0042,C0203,cone,volume,0.0,0.0,0.45,0.0,0.0,2,1
+C0203,C0042,volume,cone,0.0,0.0,0.45,0.0,0.0,2,1
+C0111,C0191,midsegment,trapezoid,0.0,0.0,0.0,0.45,0.0,2,1
+C0191,C0111,trapezoid,midsegment,0.0,0.0,0.45,0.0,0.0,2,1
+C0064,C0145,cylinder,radius,0.0,0.45,0.0,0.0,0.0,2,1
+C0145,C0064,radius,cylinder,0.0,0.45,0.0,0.0,0.0,2,1
+C0132,C0173,plane,Solids,0.0,0.0,0.45,0.0,0.0,2,1
+C0173,C0132,Solids,plane,0.0,0.0,0.45,0.0,0.0,2,1
+C0044,C0179,congruent,supplementary,0.0,0.0,0.0,0.0,0.0,2,0
+C0179,C0044,supplementary,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0154,C0175,rhombus,square,0.0,0.5,0.0,0.0,0.0,2,1
+C0175,C0154,square,rhombus,0.0,0.0,0.0,0.5,0.0,2,1
+C0015,C0087,arc,inscribed angle,0.0,0.0,0.5,0.0,0.0,2,1
+C0087,C0015,inscribed angle,arc,0.0,0.0,0.5,0.0,0.0,2,1
+C0133,C0190,point,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0133,transversal,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0057,C0085,corresponding parts,included angle,0.0,0.0,0.45,0.0,0.0,2,1
+C0085,C0057,included angle,corresponding parts,0.0,0.0,0.45,0.0,0.0,2,1
+C0159,C0183,Rotations,Symmetry,0.0,0.0,0.45,0.0,0.0,2,1
+C0183,C0159,Symmetry,Rotations,0.0,0.0,0.45,0.0,0.0,2,1
+C0059,C0081,Cosine Ratios,hypotenuse,0.0,0.45,0.0,0.0,0.0,2,1
+C0081,C0059,hypotenuse,Cosine Ratios,0.0,0.0,0.425,0.0,0.0,2,1
+C0149,C0154,rectangle,rhombus,0.0,0.0,0.0,0.5,0.0,2,1
+C0154,C0149,rhombus,rectangle,0.0,0.0,0.0,0.45,0.0,2,1
+C0043,C0085,congruence,included angle,0.0,0.0,0.45,0.0,0.0,2,1
+C0085,C0043,included angle,congruence,0.0,0.0,0.45,0.0,0.0,2,1
+C0146,C0171,ratio,Sine Ratios,0.0,0.0,0.45,0.0,0.0,2,1
+C0171,C0146,Sine Ratios,ratio,0.0,0.5,0.0,0.0,0.0,2,1
+C0127,C0154,perpendicular bisector,rhombus,0.0,0.0,0.5,0.0,0.0,2,1
+C0154,C0127,rhombus,perpendicular bisector,0.0,0.0,0.5,0.0,0.0,2,1
+C0123,C0137,parallelogram,prism,0.0,0.5,0.0,0.0,0.0,2,1
+C0137,C0123,prism,parallelogram,0.0,0.5,0.0,0.0,0.0,2,1
+C0015,C0163,arc,secant,0.0,0.0,0.45,0.0,0.0,2,1
+C0163,C0015,secant,arc,0.0,0.0,0.45,0.0,0.0,2,1
+C0048,C0123,congruent sides,parallelogram,0.0,0.0,0.0,0.45,0.0,2,1
+C0123,C0048,parallelogram,congruent sides,0.0,0.45,0.0,0.0,0.0,2,1
+C0049,C0057,congruent triangles,corresponding parts,0.0,0.0,0.5,0.0,0.0,2,1
+C0057,C0049,corresponding parts,congruent triangles,0.0,0.0,0.5,0.0,0.0,2,1
+C0042,C0145,cone,radius,0.0,0.0,0.45,0.0,0.0,2,1
+C0145,C0042,radius,cone,0.0,0.45,0.0,0.0,0.0,2,1
+C0150,C0159,reflection,Rotations,0.0,0.0,0.5,0.0,0.0,2,1
+C0159,C0150,Rotations,reflection,0.0,0.0,0.5,0.0,0.0,2,1
+C0029,C0108,centroid,midpoint,0.0,0.45,0.0,0.0,0.0,2,1
+C0108,C0029,midpoint,centroid,0.0,0.45,0.0,0.0,0.0,2,1
+C0052,C0083,converse,hypothesis,0.0,0.0,0.45,0.0,0.0,2,1
+C0083,C0052,hypothesis,converse,0.0,0.0,0.5,0.0,0.0,2,1
+C0031,C0066,circle,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0031,degree,circle,0.0,0.0,0.5,0.0,0.0,2,0
+C0048,C0096,congruent sides,kite,0.0,0.0,0.45,0.0,0.0,2,1
+C0096,C0048,kite,congruent sides,0.0,0.0,0.5,0.0,0.0,2,1
+C0155,C0168,right angle,semicircle,0.0,0.0,0.0,0.0,0.425,2,1
+C0168,C0155,semicircle,right angle,0.0,0.0,0.45,0.0,0.0,2,1
+C0004,C0076,Alternate exterior angles,exterior angle theorem,0.0,0.0,0.0,0.0,0.0,2,1
+C0076,C0004,exterior angle theorem,Alternate exterior angles,0.0,0.0,0.0,0.0,0.0,2,1
+C0047,C0108,Congruent segments,midpoint,0.0,0.5,0.0,0.0,0.0,2,1
+C0108,C0047,midpoint,Congruent segments,0.0,0.0,0.5,0.0,0.0,2,1
+C0031,C0192,circle,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0031,triangle,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0127,congruent,perpendicular bisector,0.0,0.0,0.0,0.0,0.0,2,0
+C0127,C0044,perpendicular bisector,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0068,congruent,diameter,0.0,0.0,0.0,0.0,0.0,2,0
+C0068,C0044,diameter,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0040,C0167,concurrency,segments,0.0,0.0,0.45,0.0,0.0,2,0
+C0167,C0040,segments,concurrency,0.0,0.0,0.0,0.45,0.0,2,0
+C0008,C0132,angle,plane,0.0,0.0,0.0,0.0,0.0,2,0
+C0132,C0008,plane,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0081,angle,hypotenuse,0.0,0.0,0.0,0.0,0.0,2,0
+C0081,C0008,hypotenuse,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0150,point,reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0150,C0133,reflection,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0122,C0133,Parallel lines,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0122,point,Parallel lines,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0071,congruent,endpoint,0.0,0.0,0.0,0.0,0.0,2,0
+C0071,C0044,endpoint,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0030,C0100,chord,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0030,line,chord,0.0,0.5,0.0,0.0,0.0,2,0
+C0066,C0190,degree,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0066,transversal,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0048,angle,congruent sides,0.0,0.0,0.0,0.0,0.0,2,0
+C0048,C0008,congruent sides,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0123,C0135,parallelogram,polygon,0.0,0.5,0.0,0.0,0.0,2,0
+C0135,C0123,polygon,parallelogram,0.0,0.5,0.0,0.0,0.0,2,0
+C0066,C0200,degree,vertex,0.0,0.0,0.0,0.0,0.0,2,0
+C0200,C0066,vertex,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0135,circle,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0031,polygon,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0190,polygon,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0135,transversal,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0146,angle,ratio,0.0,0.0,0.0,0.0,0.0,2,0
+C0146,C0008,ratio,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0190,circle,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0031,transversal,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0135,line,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0100,polygon,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0026,C0100,center,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0026,line,center,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0168,circle,semicircle,0.0,0.0,0.0,0.45,0.0,2,0
+C0168,C0031,semicircle,circle,0.0,0.5,0.0,0.0,0.0,2,0
+C0066,C0094,degree,isosceles triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0094,C0066,isosceles triangle,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0135,point,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0133,polygon,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0028,C0031,central angle,circle,0.0,1.0,0.0,0.0,0.0,2,0
+C0031,C0028,circle,central angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0150,angle,reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0150,C0008,reflection,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0192,transversal,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0190,triangle,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0146,C0192,ratio,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0146,triangle,ratio,0.0,0.0,0.0,0.0,0.0,2,0
+C0029,C0167,centroid,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0029,segments,centroid,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0166,line,segment bisector,0.0,0.5,0.0,0.0,0.0,2,0
+C0166,C0100,segment bisector,line,0.0,0.5,0.0,0.0,0.0,2,0
+C0044,C0145,congruent,radius,0.0,0.0,0.0,0.0,0.0,2,0
+C0145,C0044,radius,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0043,C0167,congruence,segments,0.0,0.45,0.0,0.0,0.0,2,0
+C0167,C0043,segments,congruence,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0162,angle,scalene triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0162,C0008,scalene triangle,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0198,angle,two-column proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0198,C0008,two-column proof,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0103,degree,line symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0103,C0066,line symmetry,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0182,congruent,symmetric property,0.0,0.0,0.0,0.0,0.0,2,0
+C0182,C0044,symmetric property,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0200,triangle,vertex,0.0,0.5,0.0,0.0,0.0,2,0
+C0200,C0192,vertex,triangle,0.0,0.5,0.0,0.0,0.0,2,0
+C0008,C0079,angle,hexagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0079,C0008,hexagon,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0160,congruent,ruler postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0160,C0044,ruler postulate,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0189,angle,translation,0.0,0.0,0.0,0.0,0.0,2,0
+C0189,C0008,translation,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0075,C0167,exterior angle sum,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0075,segments,exterior angle sum,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0061,angle,CPCTC,0.0,0.0,0.0,0.0,0.0,2,0
+C0061,C0008,CPCTC,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0177,congruent,substitution property,0.0,0.0,0.0,0.0,0.0,2,0
+C0177,C0044,substitution property,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0172,angle,slope,0.0,0.0,0.0,0.0,0.0,2,0
+C0172,C0008,slope,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0184,segments,tangent line,0.0,0.0,0.0,0.0,0.0,2,0
+C0184,C0167,tangent line,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0180,congruent,Supplementary angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0180,C0044,Supplementary angles,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0090,C0167,interior angles,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0090,segments,interior angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0076,degree,exterior angle theorem,0.0,0.0,0.5,0.0,0.0,2,0
+C0076,C0066,exterior angle theorem,degree,0.0,0.0,0.45,0.0,0.0,2,0
+C0131,C0133,pi radius,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0131,point,pi radius,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0045,angle,Congruent arcs,0.0,0.0,0.0,0.0,0.0,2,0
+C0045,C0008,Congruent arcs,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0124,angle,pentagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0124,C0008,pentagon,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0108,C0190,midpoint,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0108,transversal,midpoint,0.0,0.0,0.0,0.0,0.0,2,0
+C0120,C0167,orthocenter,segments,0.0,0.45,0.0,0.0,0.0,2,0
+C0167,C0120,segments,orthocenter,0.0,0.0,0.45,0.0,0.0,2,0
+C0069,C0190,Distance,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0069,transversal,Distance,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0188,segments,transitive property,0.0,0.0,0.0,0.0,0.0,2,0
+C0188,C0167,transitive property,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0035,C0044,co-interior angles theorem,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0035,congruent,co-interior angles theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0144,degree,quadrilateral,0.0,0.0,0.0,0.0,0.0,2,0
+C0144,C0066,quadrilateral,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0104,C0133,linear pair,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0104,point,linear pair,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0095,degree,isosceles triangle theorem,0.0,0.0,0.5,0.0,0.0,2,0
+C0095,C0066,isosceles triangle theorem,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0070,C0167,distance between two points,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0070,segments,distance between two points,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0072,congruent,equiangular,0.0,0.0,0.0,0.0,0.0,2,0
+C0072,C0044,equiangular,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0166,congruent,segment bisector,0.0,0.0,0.0,0.0,0.0,2,0
+C0166,C0044,segment bisector,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0166,point,segment bisector,0.0,0.0,0.0,0.0,0.0,2,0
+C0166,C0133,segment bisector,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0186,C0192,Tangents,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0186,triangle,Tangents,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0032,angle,circumcenter,0.0,0.0,0.0,0.0,0.0,2,0
+C0032,C0008,circumcenter,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0162,degree,scalene triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0162,C0066,scalene triangle,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0146,C0167,ratio,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0146,segments,ratio,0.0,0.0,0.0,0.0,0.0,2,0
+C0052,C0066,converse,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0052,degree,converse,0.0,0.0,0.0,0.0,0.0,2,0
+C0130,C0167,perpendicular transversal theorem,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0130,segments,perpendicular transversal theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0106,circle,major arc,0.0,0.0,0.0,0.45,0.0,2,0
+C0106,C0031,major arc,circle,0.0,0.5,0.0,0.0,0.0,2,0
+C0053,C0167,Coplanar points,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0053,segments,Coplanar points,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0141,congruent,pyramid,0.0,0.0,0.0,0.0,0.0,2,0
+C0141,C0044,pyramid,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0019,C0135,area of a parallelogram,polygon,0.0,0.5,0.0,0.0,0.0,2,0
+C0135,C0019,polygon,area of a parallelogram,0.0,0.0,0.0,0.45,0.0,2,0
+C0066,C0079,degree,hexagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0079,C0066,hexagon,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0113,angle,minor arc,0.0,0.0,0.0,0.0,0.0,2,0
+C0113,C0008,minor arc,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0102,congruent,line segment,0.0,0.0,0.0,0.0,0.0,2,0
+C0102,C0044,line segment,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0059,angle,Cosine Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0059,C0008,Cosine Ratios,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0020,C0135,area of a rectangle,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0020,polygon,area of a rectangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0047,C0100,Congruent segments,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0047,line,Congruent segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0077,C0167,flowchart proof,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0077,segments,flowchart proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0014,C0100,angle of rotation,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0014,line,angle of rotation,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0177,segments,substitution property,0.0,0.0,0.0,0.0,0.0,2,0
+C0177,C0167,substitution property,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0158,line,rotational symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0158,C0100,rotational symmetry,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0144,polygon,quadrilateral,0.0,0.5,0.0,0.0,0.0,2,0
+C0144,C0135,quadrilateral,polygon,0.0,0.5,0.0,0.0,0.0,2,0
+C0044,C0193,congruent,triangle angle sum theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0193,C0044,triangle angle sum theorem,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0109,line,midpoint of a segment,0.0,0.0,0.0,0.0,0.0,2,0
+C0109,C0100,midpoint of a segment,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0067,C0135,diagonal,polygon,0.0,0.5,0.0,0.0,0.0,2,0
+C0135,C0067,polygon,diagonal,0.0,0.0,0.5,0.0,0.0,2,0
+C0079,C0192,hexagon,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0079,triangle,hexagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0144,circle,quadrilateral,0.0,0.0,0.0,0.0,0.0,2,0
+C0144,C0031,quadrilateral,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0077,angle,flowchart proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0077,C0008,flowchart proof,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0157,line,rigid transformation,0.0,0.0,0.0,0.0,0.0,2,0
+C0157,C0100,rigid transformation,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0028,C0044,central angle,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0028,congruent,central angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0118,degree,opposite angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0118,C0066,opposite angles,degree,0.0,0.0,0.45,0.0,0.0,2,0
+C0133,C0181,point,surface area,0.0,0.0,0.0,0.0,0.0,2,0
+C0181,C0133,surface area,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0124,C0192,pentagon,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0124,triangle,pentagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0118,C0133,opposite angles,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0118,point,opposite angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0134,congruent,point of tangency,0.0,0.0,0.925,0.0,0.0,2,0
+C0134,C0044,point of tangency,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0125,C0192,perimeter,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0125,triangle,perimeter,0.0,0.0,0.4,0.0,0.0,2,0
+C0008,C0187,angle,Transformations,0.0,0.0,0.0,0.0,0.0,2,0
+C0187,C0008,Transformations,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0015,C0100,arc,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0015,line,arc,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0104,congruent,linear pair,0.0,0.0,0.0,0.0,0.0,2,0
+C0104,C0044,linear pair,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0104,degree,linear pair,0.0,0.0,0.0,0.0,0.0,2,0
+C0104,C0066,linear pair,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0196,angle,triangle proportionality theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0196,C0008,triangle proportionality theorem,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0049,C0135,congruent triangles,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0049,polygon,congruent triangles,0.0,0.0,0.0,0.0,0.0,2,0
+C0048,C0066,congruent sides,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0048,degree,congruent sides,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0179,point,supplementary,0.0,0.0,0.0,0.0,0.0,2,0
+C0179,C0133,supplementary,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0061,C0135,CPCTC,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0061,polygon,CPCTC,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0071,degree,endpoint,0.0,0.0,0.0,0.0,0.0,2,0
+C0071,C0066,endpoint,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0074,C0167,exterior angle,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0074,segments,exterior angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0045,C0066,Congruent arcs,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0045,degree,Congruent arcs,0.0,0.0,0.5,0.0,0.0,2,0
+C0068,C0100,diameter,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0068,line,diameter,0.0,0.5,0.0,0.0,0.0,2,0
+C0008,C0016,angle,arc addition postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0016,C0008,arc addition postulate,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0194,angle,triangle inequality theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0194,C0008,triangle inequality theorem,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0121,C0167,paragraph proof,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0121,segments,paragraph proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0118,circle,opposite angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0118,C0031,opposite angles,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0023,C0135,bases,polygon,0.0,0.5,0.0,0.0,0.0,2,0
+C0135,C0023,polygon,bases,0.0,0.0,0.0,0.45,0.0,2,0
+C0031,C0113,circle,minor arc,0.0,0.5,0.0,0.0,0.0,2,0
+C0113,C0031,minor arc,circle,0.0,0.5,0.0,0.0,0.0,2,0
+C0046,C0192,Congruent polygons,triangle,0.0,0.0,0.0,0.45,0.0,2,0
+C0192,C0046,triangle,Congruent polygons,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0070,congruent,distance between two points,0.0,0.0,0.0,0.0,0.0,2,0
+C0070,C0044,distance between two points,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0132,C0192,plane,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0132,triangle,plane,0.0,0.0,0.0,0.0,0.0,2,0
+C0134,C0167,point of tangency,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0134,segments,point of tangency,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0199,point,vector,0.0,0.0,0.0,0.0,0.0,2,0
+C0199,C0133,vector,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0130,C0133,perpendicular transversal theorem,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0130,point,perpendicular transversal theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0161,angle,scale factor,0.0,0.0,0.0,0.0,0.0,2,0
+C0161,C0008,scale factor,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0119,line,order of symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0119,C0100,order of symmetry,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0009,C0066,angle addition postulate,degree,0.0,0.0,0.45,0.0,0.0,2,0
+C0066,C0009,degree,angle addition postulate,0.0,0.0,0.5,0.0,0.0,2,0
+C0160,C0167,ruler postulate,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0160,segments,ruler postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0079,congruent,hexagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0079,C0044,hexagon,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0069,congruent,Distance,0.0,0.0,0.0,0.0,0.0,2,0
+C0069,C0044,Distance,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0003,C0044,Adjacent angles,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0003,congruent,Adjacent angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0179,circle,supplementary,0.0,0.0,0.0,0.0,0.0,2,0
+C0179,C0031,supplementary,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0172,congruent,slope,0.0,0.0,0.0,0.0,0.0,2,0
+C0172,C0044,slope,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0202,angle,vertices,0.0,0.0,0.0,0.0,0.0,2,0
+C0202,C0008,vertices,angle,0.0,0.45,0.0,0.0,0.0,2,0
+C0167,C0182,segments,symmetric property,0.0,0.0,0.0,0.0,0.0,2,0
+C0182,C0167,symmetric property,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0092,C0192,inverse,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0092,triangle,inverse,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0152,degree,regular polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0152,C0066,regular polygon,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0168,congruent,semicircle,0.0,0.0,0.0,0.0,0.0,2,0
+C0168,C0044,semicircle,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0124,congruent,pentagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0124,C0044,pentagon,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0070,C0100,distance between two points,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0070,line,distance between two points,0.0,0.0,0.5,0.0,0.0,2,0
+C0066,C0124,degree,pentagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0124,C0066,pentagon,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0037,C0044,Complementary angles,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0037,congruent,Complementary angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0101,C0133,line of reflection,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0101,point,line of reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0169,C0192,side angle relationship,triangle,0.0,0.0,0.5,0.0,0.0,2,0
+C0192,C0169,triangle,side angle relationship,0.0,0.0,0.5,0.0,0.0,2,0
+C0008,C0188,angle,transitive property,0.0,0.0,0.0,0.0,0.0,2,0
+C0188,C0008,transitive property,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0053,C0100,Coplanar points,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0053,line,Coplanar points,0.0,0.0,0.0,0.45,0.0,2,0
+C0129,C0167,Perpendicular lines,segments,0.0,0.0,0.425,0.0,0.0,2,0
+C0167,C0129,segments,Perpendicular lines,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0117,congruent,obtuse triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0117,C0044,obtuse triangle,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0032,C0167,circumcenter,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0032,segments,circumcenter,0.0,0.0,0.0,0.45,0.0,2,0
+C0044,C0111,congruent,midsegment,0.0,0.0,0.0,0.0,0.0,2,0
+C0111,C0044,midsegment,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0147,angle,ratio of corresponding sides,0.0,0.0,0.0,0.0,0.0,2,0
+C0147,C0008,ratio of corresponding sides,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0037,C0133,Complementary angles,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0037,point,Complementary angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0119,degree,order of symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0119,C0066,order of symmetry,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0016,C0066,arc addition postulate,degree,0.0,0.0,0.45,0.0,0.0,2,0
+C0066,C0016,degree,arc addition postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0022,C0135,area of a triangle,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0022,polygon,area of a triangle,0.0,0.0,0.5,0.0,0.0,2,0
+C0044,C0113,congruent,minor arc,0.0,0.0,0.0,0.0,0.0,2,0
+C0113,C0044,minor arc,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0121,angle,paragraph proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0121,C0008,paragraph proof,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0202,degree,vertices,0.0,0.0,0.0,0.0,0.0,2,0
+C0202,C0066,vertices,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0153,degree,remote interior angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0153,C0066,remote interior angles,degree,0.0,0.0,0.45,0.0,0.0,2,0
+C0068,C0133,diameter,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0068,point,diameter,0.0,0.0,0.0,0.0,0.0,2,0
+C0016,C0031,arc addition postulate,circle,0.0,0.0,0.9,0.0,0.0,2,0
+C0031,C0016,circle,arc addition postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0027,C0100,center of rotation,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0027,line,center of rotation,0.0,0.0,0.0,0.0,0.0,2,0
+C0059,C0192,Cosine Ratios,triangle,0.0,0.45,0.0,0.0,0.0,2,0
+C0192,C0059,triangle,Cosine Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0177,angle,substitution property,0.0,0.0,0.0,0.0,0.0,2,0
+C0177,C0008,substitution property,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0171,angle,Sine Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0171,C0008,Sine Ratios,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0019,C0192,area of a parallelogram,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0019,triangle,area of a parallelogram,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0165,line,segment addition postulate,0.0,0.0,0.45,0.0,0.0,2,0
+C0165,C0100,segment addition postulate,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0152,C0192,regular polygon,triangle,0.0,0.5,0.0,0.0,0.0,2,0
+C0192,C0152,triangle,regular polygon,0.0,0.0,0.0,0.45,0.0,2,0
+C0044,C0146,congruent,ratio,0.0,0.0,0.0,0.0,0.0,2,0
+C0146,C0044,ratio,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0146,point,ratio,0.0,0.0,0.0,0.0,0.0,2,0
+C0146,C0133,ratio,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0020,C0192,area of a rectangle,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0020,triangle,area of a rectangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0037,C0100,Complementary angles,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0037,line,Complementary angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0122,C0129,Parallel lines,Perpendicular lines,0.0,0.0,0.0,0.0,0.0,2,0
+C0129,C0122,Perpendicular lines,Parallel lines,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0147,congruent,ratio of corresponding sides,0.0,0.0,0.0,0.0,0.0,2,0
+C0147,C0044,ratio of corresponding sides,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0132,congruent,plane,0.0,0.0,0.0,0.0,0.0,2,0
+C0132,C0044,plane,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0132,degree,plane,0.0,0.0,0.0,0.0,0.0,2,0
+C0132,C0066,plane,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0144,C0192,quadrilateral,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0144,triangle,quadrilateral,0.0,0.0,0.0,0.0,0.0,2,0
+C0036,C0167,Collinear points,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0036,segments,Collinear points,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0072,angle,equiangular,0.0,0.0,0.0,0.45,0.4,2,0
+C0072,C0008,equiangular,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0046,angle,Congruent polygons,0.0,0.0,0.0,0.0,0.0,2,0
+C0046,C0008,Congruent polygons,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0127,C0190,perpendicular bisector,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0127,transversal,perpendicular bisector,0.0,0.0,0.0,0.0,0.0,2,0
+C0017,C0031,Arc Length,circle,0.0,0.5,0.0,0.0,0.0,2,0
+C0031,C0017,circle,Arc Length,0.0,0.0,0.5,0.0,0.0,2,0
+C0122,C0167,Parallel lines,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0122,segments,Parallel lines,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0140,degree,protractor,0.0,0.0,0.5,0.0,0.0,2,0
+C0140,C0066,protractor,degree,0.0,0.0,0.5,0.0,0.0,2,0
+C0143,C0192,Pythagorean triple,triangle,0.0,0.0,0.0,0.45,0.0,2,0
+C0192,C0143,triangle,Pythagorean triple,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0149,polygon,rectangle,0.0,0.5,0.0,0.0,0.0,2,0
+C0149,C0135,rectangle,polygon,0.0,0.5,0.0,0.0,0.0,2,0
+C0100,C0200,line,vertex,0.0,0.0,0.0,0.0,0.0,2,0
+C0200,C0100,vertex,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0101,angle,line of reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0101,C0008,line of reflection,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0203,point,volume,0.0,0.0,0.0,0.0,0.0,2,0
+C0203,C0133,volume,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0082,angle,hypotenuse leg congruence theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0082,C0008,hypotenuse leg congruence theorem,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0110,angle,midpoint theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0110,C0008,midpoint theorem,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0028,C0066,central angle,degree,0.0,0.0,0.45,0.0,0.0,2,0
+C0066,C0028,degree,central angle,0.0,0.0,0.5,0.0,0.0,2,0
+C0013,C0100,angle measure,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0013,line,angle measure,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0180,point,Supplementary angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0180,C0133,Supplementary angles,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0165,congruent,segment addition postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0165,C0044,segment addition postulate,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0079,C0135,hexagon,polygon,0.0,0.95,0.0,0.0,0.0,2,0
+C0135,C0079,polygon,hexagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0165,point,segment addition postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0165,C0133,segment addition postulate,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0016,C0044,arc addition postulate,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0016,congruent,arc addition postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0148,degree,ray,0.0,0.0,0.0,0.0,0.0,2,0
+C0148,C0066,ray,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0078,angle,glide reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0078,C0008,glide reflection,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0201,point,Vertical angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0201,C0133,Vertical angles,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0147,polygon,ratio of corresponding sides,0.0,0.0,0.0,0.0,0.0,2,0
+C0147,C0135,ratio of corresponding sides,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0201,degree,Vertical angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0201,C0066,Vertical angles,degree,0.0,0.0,0.45,0.0,0.0,2,0
+C0124,C0135,pentagon,polygon,0.0,0.95,0.0,0.0,0.0,2,0
+C0135,C0124,polygon,pentagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0012,C0167,angle bisector theorem,segments,0.0,0.0,0.425,0.0,0.0,2,0
+C0167,C0012,segments,angle bisector theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0072,degree,equiangular,0.0,0.0,0.0,0.0,0.0,2,0
+C0072,C0066,equiangular,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0088,circle,inscribed angle theorem,0.0,0.0,0.5,0.0,0.0,2,0
+C0088,C0031,inscribed angle theorem,circle,0.0,0.0,0.5,0.0,0.0,2,0
+C0149,C0192,rectangle,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0149,triangle,rectangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0084,C0167,incenter,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0084,segments,incenter,0.0,0.0,0.0,0.45,0.0,2,0
+C0044,C0169,congruent,side angle relationship,0.0,0.0,0.0,0.0,0.0,2,0
+C0169,C0044,side angle relationship,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0128,angle,perpendicular bisector theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0128,C0008,perpendicular bisector theorem,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0108,angle,midpoint,0.0,0.0,0.0,0.0,0.0,2,0
+C0108,C0008,midpoint,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0155,circle,right angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0155,C0031,right angle,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0178,congruent,sum of interior angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0178,C0044,sum of interior angles,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0200,congruent,vertex,0.0,0.0,0.0,0.0,0.0,2,0
+C0200,C0044,vertex,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0194,congruent,triangle inequality theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0194,C0044,triangle inequality theorem,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0125,angle,perimeter,0.0,0.0,0.0,0.0,0.0,2,0
+C0125,C0008,perimeter,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0091,C0190,intersection,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0091,transversal,intersection,0.0,0.0,0.45,0.0,0.0,2,0
+C0007,C0192,altitude,triangle,0.0,0.5,0.0,0.0,0.0,2,0
+C0192,C0007,triangle,altitude,0.0,0.0,0.45,0.0,0.0,2,0
+C0129,C0133,Perpendicular lines,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0129,point,Perpendicular lines,0.0,0.0,0.0,0.0,0.0,2,0
+C0126,C0192,perimeter of a polygon,triangle,0.0,0.5,0.0,0.0,0.0,2,0
+C0192,C0126,triangle,perimeter of a polygon,0.0,0.0,0.5,0.0,0.0,2,0
+C0044,C0136,congruent,polyhedron,0.0,0.0,0.0,0.0,0.0,2,0
+C0136,C0044,polyhedron,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0012,C0100,angle bisector theorem,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0012,line,angle bisector theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0171,C0192,Sine Ratios,triangle,0.0,0.45,0.0,0.0,0.0,2,0
+C0192,C0171,triangle,Sine Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0161,congruent,scale factor,0.0,0.0,0.0,0.0,0.0,2,0
+C0161,C0044,scale factor,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0178,C0192,sum of interior angles,triangle,0.0,0.0,0.5,0.0,0.0,2,0
+C0192,C0178,triangle,sum of interior angles,0.0,0.0,0.5,0.0,0.0,2,0
+C0044,C0191,congruent,trapezoid,0.0,0.0,0.0,0.0,0.0,2,0
+C0191,C0044,trapezoid,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0155,C0190,right angle,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0155,transversal,right angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0106,angle,major arc,0.0,0.0,0.0,0.0,0.0,2,0
+C0106,C0008,major arc,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0195,segments,triangle midsegment theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0195,C0167,triangle midsegment theorem,segments,0.0,0.45,0.45,0.0,0.0,2,0
+C0135,C0137,polygon,prism,0.0,0.0,0.0,0.0,0.0,2,0
+C0137,C0135,prism,polygon,0.0,0.45,0.0,0.0,0.0,2,0
+C0167,C0198,segments,two-column proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0198,C0167,two-column proof,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0089,C0167,interior angle sum,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0089,segments,interior angle sum,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0202,congruent,vertices,0.0,0.0,0.0,0.0,0.0,2,0
+C0202,C0044,vertices,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0141,polygon,pyramid,0.0,0.0,0.0,0.0,0.0,2,0
+C0141,C0135,pyramid,polygon,0.0,0.5,0.0,0.0,0.0,2,0
+C0172,C0190,slope,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0172,transversal,slope,0.0,0.0,0.0,0.0,0.0,2,0
+C0011,C0100,angle bisector,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0011,line,angle bisector,0.0,0.0,0.45,0.0,0.0,2,0
+C0008,C0157,angle,rigid transformation,0.0,0.0,0.0,0.0,0.0,2,0
+C0157,C0008,rigid transformation,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0182,angle,symmetric property,0.0,0.0,0.0,0.0,0.0,2,0
+C0182,C0008,symmetric property,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0184,congruent,tangent line,0.0,0.0,0.95,0.0,0.0,2,0
+C0184,C0044,tangent line,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0125,congruent,perimeter,0.0,0.0,0.0,0.0,0.0,2,0
+C0125,C0044,perimeter,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0120,C0192,orthocenter,triangle,0.0,0.5,0.0,0.0,0.0,2,0
+C0192,C0120,triangle,orthocenter,0.0,0.0,0.5,0.0,0.0,2,0
+C0003,C0066,Adjacent angles,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0003,degree,Adjacent angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0180,line,Supplementary angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0180,C0100,Supplementary angles,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0132,C0190,plane,transversal,0.0,0.45,0.0,0.0,0.0,2,0
+C0190,C0132,transversal,plane,0.0,0.5,0.0,0.0,0.0,2,0
+C0044,C0115,congruent,Obtuse,0.0,0.0,0.0,0.0,0.0,2,0
+C0115,C0044,Obtuse,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0188,congruent,transitive property,0.0,0.0,0.0,0.0,0.0,2,0
+C0188,C0044,transitive property,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0068,C0167,diameter,segments,0.0,0.5,0.0,0.0,0.0,2,0
+C0167,C0068,segments,diameter,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0106,congruent,major arc,0.0,0.0,0.0,0.0,0.0,2,0
+C0106,C0044,major arc,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0129,congruent,Perpendicular lines,0.0,0.0,0.0,0.0,0.0,2,0
+C0129,C0044,Perpendicular lines,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0155,congruent,right angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0155,C0044,right angle,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0067,degree,diagonal,0.0,0.0,0.0,0.0,0.0,2,0
+C0067,C0066,diagonal,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0002,C0044,acute triangle,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0002,congruent,acute triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0113,C0192,minor arc,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0113,triangle,minor arc,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0078,circle,glide reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0078,C0031,glide reflection,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0064,C0135,cylinder,polygon,0.0,0.45,0.0,0.0,0.0,2,0
+C0135,C0064,polygon,cylinder,0.0,0.0,0.0,0.0,0.0,2,0
+C0148,C0192,ray,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0148,triangle,ray,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0162,line,scalene triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0162,C0100,scalene triangle,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0048,C0190,congruent sides,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0048,transversal,congruent sides,0.0,0.0,0.0,0.0,0.0,2,0
+C0003,C0031,Adjacent angles,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0003,circle,Adjacent angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0199,angle,vector,0.0,0.0,0.0,0.0,0.0,2,0
+C0199,C0008,vector,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0197,congruent,Trigonometry,0.0,0.0,0.0,0.0,0.0,2,0
+C0197,C0044,Trigonometry,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0197,point,Trigonometry,0.0,0.0,0.0,0.0,0.0,2,0
+C0197,C0133,Trigonometry,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0001,C0167,acute angle,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0001,segments,acute angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0150,C0192,reflection,triangle,0.0,0.0,0.5,0.0,0.0,2,0
+C0192,C0150,triangle,reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0005,C0192,alternate exterior angles theorem,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0005,triangle,alternate exterior angles theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0092,C0135,inverse,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0092,polygon,inverse,0.0,0.0,0.0,0.0,0.0,2,0
+C0173,C0190,Solids,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0173,transversal,Solids,0.0,0.0,0.0,0.0,0.0,2,0
+C0023,C0167,bases,segments,0.0,0.45,0.0,0.0,0.0,2,0
+C0167,C0023,segments,bases,0.0,0.0,0.0,0.0,0.0,2,0
+C0045,C0135,Congruent arcs,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0045,polygon,Congruent arcs,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0164,angle,sector,0.0,0.0,0.0,0.0,0.0,2,0
+C0164,C0008,sector,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0018,C0135,area of a circle,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0018,polygon,area of a circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0097,C0133,lateral area,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0097,point,lateral area,0.0,0.0,0.0,0.0,0.0,2,0
+C0039,C0066,conclusion,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0039,degree,conclusion,0.0,0.0,0.0,0.0,0.0,2,0
+C0081,C0133,hypotenuse,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0081,point,hypotenuse,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0193,circle,triangle angle sum theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0193,C0031,triangle angle sum theorem,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0103,congruent,line symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0103,C0044,line symmetry,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0038,C0100,composite solid,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0038,line,composite solid,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0173,line,Solids,0.0,0.0,0.0,0.0,0.0,2,0
+C0173,C0100,Solids,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0099,degree,Law of syllogism,0.0,0.0,0.0,0.0,0.0,2,0
+C0099,C0066,Law of syllogism,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0145,degree,radius,0.0,0.0,0.0,0.0,0.0,2,0
+C0145,C0066,radius,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0033,angle,Circumference,0.0,0.0,0.0,0.0,0.0,2,0
+C0033,C0008,Circumference,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0191,circle,trapezoid,0.0,0.0,0.0,0.0,0.0,2,0
+C0191,C0031,trapezoid,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0116,C0133,obtuse angle,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0116,point,obtuse angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0121,congruent,paragraph proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0121,C0044,paragraph proof,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0086,C0133,Inductive Reasoning,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0086,point,Inductive Reasoning,0.0,0.0,0.0,0.0,0.0,2,0
+C0038,C0190,composite solid,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0038,transversal,composite solid,0.0,0.0,0.0,0.0,0.0,2,0
+C0182,C0192,symmetric property,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0182,triangle,symmetric property,0.0,0.0,0.0,0.0,0.0,2,0
+C0087,C0192,inscribed angle,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0087,triangle,inscribed angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0055,C0133,Corresponding angles,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0055,point,Corresponding angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0034,C0133,CK-12 Basic Geometry Concepts,point,0.0,0.45,0.0,0.0,0.0,2,0
+C0133,C0034,point,CK-12 Basic Geometry Concepts,0.0,0.0,0.0,0.0,0.0,2,0
+C0025,C0135,bisect,polygon,0.0,0.0,0.0,0.45,0.0,2,0
+C0135,C0025,polygon,bisect,0.0,0.0,0.0,0.0,0.0,2,0
+C0111,C0133,midsegment,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0111,point,midsegment,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0173,angle,Solids,0.0,0.0,0.0,0.0,0.0,2,0
+C0173,C0008,Solids,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0117,C0135,obtuse triangle,polygon,0.0,0.5,0.0,0.0,0.0,2,0
+C0135,C0117,polygon,obtuse triangle,0.0,0.0,0.0,0.45,0.0,2,0
+C0064,C0100,cylinder,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0064,line,cylinder,0.0,0.0,0.0,0.0,0.0,2,0
+C0049,C0100,congruent triangles,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0049,line,congruent triangles,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0141,line,pyramid,0.0,0.0,0.0,0.0,0.0,2,0
+C0141,C0100,pyramid,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0157,point,rigid transformation,0.0,0.0,0.0,0.0,0.0,2,0
+C0157,C0133,rigid transformation,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0157,degree,rigid transformation,0.0,0.0,0.0,0.0,0.0,2,0
+C0157,C0066,rigid transformation,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0182,point,symmetric property,0.0,0.0,0.0,0.0,0.0,2,0
+C0182,C0133,symmetric property,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0064,C0190,cylinder,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0064,transversal,cylinder,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0203,congruent,volume,0.0,0.0,0.0,0.0,0.0,2,0
+C0203,C0044,volume,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0073,C0167,equilateral triangle,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0073,segments,equilateral triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0013,C0135,angle measure,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0013,polygon,angle measure,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0126,line,perimeter of a polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0126,C0100,perimeter of a polygon,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0182,degree,symmetric property,0.0,0.0,0.0,0.0,0.0,2,0
+C0182,C0066,symmetric property,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0181,polygon,surface area,0.0,0.0,0.0,0.0,0.0,2,0
+C0181,C0135,surface area,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0062,C0066,cross products,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0062,degree,cross products,0.0,0.0,0.0,0.0,0.0,2,0
+C0002,C0133,acute triangle,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0002,point,acute triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0138,congruent,proof,0.0,0.0,0.45,0.0,0.0,2,0
+C0138,C0044,proof,congruent,0.0,0.0,0.5,0.0,0.0,2,0
+C0133,C0156,point,right triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0156,C0133,right triangle,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0186,degree,Tangents,0.0,0.0,0.0,0.0,0.0,2,0
+C0186,C0066,Tangents,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0138,point,proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0138,C0133,proof,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0110,line,midpoint theorem,0.0,0.0,0.45,0.0,0.0,2,0
+C0110,C0100,midpoint theorem,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0092,C0190,inverse,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0092,transversal,inverse,0.0,0.0,0.0,0.0,0.0,2,0
+C0077,C0192,flowchart proof,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0077,triangle,flowchart proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0045,C0190,Congruent arcs,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0045,transversal,Congruent arcs,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0138,degree,proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0138,C0066,proof,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0021,C0135,area of a sector,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0021,polygon,area of a sector,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0075,congruent,exterior angle sum,0.0,0.0,0.0,0.0,0.0,2,0
+C0075,C0044,exterior angle sum,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0057,C0066,corresponding parts,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0057,degree,corresponding parts,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0128,circle,perpendicular bisector theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0128,C0031,perpendicular bisector theorem,circle,0.0,0.0,0.0,0.45,0.0,2,0
+C0018,C0190,area of a circle,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0018,transversal,area of a circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0126,angle,perimeter of a polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0126,C0008,perimeter of a polygon,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0145,C0190,radius,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0145,transversal,radius,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0108,circle,midpoint,0.0,0.0,0.0,0.0,0.0,2,0
+C0108,C0031,midpoint,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0012,C0044,angle bisector theorem,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0012,congruent,angle bisector theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0174,congruent,sphere,0.0,0.0,0.0,0.0,0.0,2,0
+C0174,C0044,sphere,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0160,degree,ruler postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0160,C0066,ruler postulate,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0108,C0135,midpoint,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0108,polygon,midpoint,0.0,0.0,0.0,0.0,0.0,2,0
+C0051,C0135,contrapositive,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0051,polygon,contrapositive,0.0,0.0,0.0,0.0,0.0,2,0
+C0115,C0133,Obtuse,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0115,point,Obtuse,0.0,0.0,0.0,0.0,0.0,2,0
+C0025,C0100,bisect,line,0.0,0.0,0.425,0.0,0.0,2,0
+C0100,C0025,line,bisect,0.0,0.0,0.0,0.0,0.0,2,0
+C0185,C0190,Tangent Ratios,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0185,transversal,Tangent Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0069,C0135,Distance,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0069,polygon,Distance,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0174,degree,sphere,0.0,0.0,0.0,0.0,0.0,2,0
+C0174,C0066,sphere,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0171,congruent,Sine Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0171,C0044,Sine Ratios,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0020,C0044,area of a rectangle,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0020,congruent,area of a rectangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0176,C0190,straight angle,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0176,transversal,straight angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0025,C0190,bisect,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0025,transversal,bisect,0.0,0.0,0.0,0.0,0.0,2,0
+C0036,C0135,Collinear points,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0036,polygon,Collinear points,0.0,0.0,0.0,0.0,0.0,2,0
+C0078,C0167,glide reflection,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0078,segments,glide reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0117,C0190,obtuse triangle,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0117,transversal,obtuse triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0033,C0192,Circumference,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0033,triangle,Circumference,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0185,point,Tangent Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0185,C0133,Tangent Ratios,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0123,C0133,parallelogram,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0123,point,parallelogram,0.0,0.0,0.0,0.0,0.0,2,0
+C0088,C0167,inscribed angle theorem,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0088,segments,inscribed angle theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0185,degree,Tangent Ratios,0.0,0.0,0.425,0.0,0.0,2,0
+C0185,C0066,Tangent Ratios,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0096,C0133,kite,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0096,point,kite,0.0,0.0,0.0,0.0,0.0,2,0
+C0013,C0190,angle measure,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0013,transversal,angle measure,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0181,circle,surface area,0.0,0.0,0.0,0.0,0.0,2,0
+C0181,C0031,surface area,circle,0.0,0.45,0.0,0.0,0.0,2,0
+C0003,C0192,Adjacent angles,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0003,triangle,Adjacent angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0017,angle,Arc Length,0.0,0.0,0.0,0.0,0.0,2,0
+C0017,C0008,Arc Length,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0036,angle,Collinear points,0.0,0.0,0.0,0.0,0.0,2,0
+C0036,C0008,Collinear points,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0169,C0190,side angle relationship,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0169,transversal,side angle relationship,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0120,angle,orthocenter,0.0,0.0,0.0,0.0,0.0,2,0
+C0120,C0008,orthocenter,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0021,C0190,area of a sector,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0021,transversal,area of a sector,0.0,0.0,0.0,0.0,0.0,2,0
+C0051,C0100,contrapositive,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0051,line,contrapositive,0.0,0.0,0.0,0.0,0.0,2,0
+C0015,C0192,arc,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0015,triangle,arc,0.0,0.0,0.0,0.0,0.0,2,0
+C0029,C0100,centroid,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0029,line,centroid,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0148,congruent,ray,0.0,0.0,0.0,0.0,0.0,2,0
+C0148,C0044,ray,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0080,C0167,hinge theorem,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0080,segments,hinge theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0125,circle,perimeter,0.0,0.0,0.0,0.0,0.0,2,0
+C0125,C0031,perimeter,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0070,degree,distance between two points,0.0,0.0,0.0,0.0,0.0,2,0
+C0070,C0066,distance between two points,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0051,C0190,contrapositive,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0051,transversal,contrapositive,0.0,0.0,0.0,0.0,0.0,2,0
+C0101,C0192,line of reflection,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0101,triangle,line of reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0181,C0192,surface area,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0181,triangle,surface area,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0150,polygon,reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0150,C0135,reflection,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0119,C0133,order of symmetry,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0119,point,order of symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0030,C0066,chord,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0030,degree,chord,0.0,0.0,0.0,0.0,0.0,2,0
+C0041,C0066,conditional statement,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0041,degree,conditional statement,0.0,0.0,0.0,0.0,0.0,2,0
+C0109,C0192,midpoint of a segment,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0109,triangle,midpoint of a segment,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0183,angle,Symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0183,C0008,Symmetry,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0097,C0135,lateral area,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0097,polygon,lateral area,0.0,0.45,0.0,0.0,0.0,2,0
+C0023,C0100,bases,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0023,line,bases,0.0,0.0,0.0,0.0,0.0,2,0
+C0081,C0135,hypotenuse,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0081,polygon,hypotenuse,0.0,0.0,0.0,0.0,0.0,2,0
+C0043,C0066,congruence,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0043,degree,congruence,0.0,0.0,0.0,0.0,0.0,2,0
+C0083,C0100,hypothesis,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0083,line,hypothesis,0.0,0.0,0.0,0.0,0.0,2,0
+C0036,C0190,Collinear points,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0036,transversal,Collinear points,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0193,line,triangle angle sum theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0193,C0100,triangle angle sum theorem,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0116,C0135,obtuse angle,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0116,polygon,obtuse angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0157,C0190,rigid transformation,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0157,transversal,rigid transformation,0.0,0.0,0.0,0.0,0.0,2,0
+C0020,C0133,area of a rectangle,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0020,point,area of a rectangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0038,angle,composite solid,0.0,0.0,0.0,0.0,0.0,2,0
+C0038,C0008,composite solid,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0034,C0135,CK-12 Basic Geometry Concepts,polygon,0.0,0.5,0.0,0.0,0.0,2,0
+C0135,C0034,polygon,CK-12 Basic Geometry Concepts,0.0,0.0,0.0,0.0,0.0,2,0
+C0121,C0135,paragraph proof,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0121,polygon,paragraph proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0014,C0167,angle of rotation,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0014,segments,angle of rotation,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0080,degree,hinge theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0080,C0066,hinge theorem,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0199,transversal,vector,0.0,0.0,0.0,0.0,0.0,2,0
+C0199,C0190,vector,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0010,C0133,angle angle similarity postulate,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0010,point,angle angle similarity postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0154,C0192,rhombus,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0154,triangle,rhombus,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0137,point,prism,0.0,0.0,0.0,0.0,0.0,2,0
+C0137,C0133,prism,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0106,C0167,major arc,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0106,segments,major arc,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0137,degree,prism,0.0,0.0,0.0,0.0,0.0,2,0
+C0137,C0066,prism,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0002,C0135,acute triangle,polygon,0.0,0.5,0.0,0.0,0.0,2,0
+C0135,C0002,polygon,acute triangle,0.0,0.0,0.0,0.45,0.0,2,0
+C0066,C0127,degree,perpendicular bisector,0.0,0.0,0.0,0.0,0.0,2,0
+C0127,C0066,perpendicular bisector,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0198,transversal,two-column proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0198,C0190,two-column proof,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0162,point,scalene triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0162,C0133,scalene triangle,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0037,C0192,Complementary angles,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0037,triangle,Complementary angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0150,circle,reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0150,C0031,reflection,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0097,C0190,lateral area,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0097,transversal,lateral area,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0063,congruent,cross section,0.0,0.0,0.0,0.0,0.0,2,0
+C0063,C0044,cross section,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0128,line,perpendicular bisector theorem,0.0,0.0,0.5,0.0,0.0,2,0
+C0128,C0100,perpendicular bisector theorem,line,0.0,0.5,0.0,0.0,0.0,2,0
+C0135,C0145,polygon,radius,0.0,0.0,0.0,0.0,0.0,2,0
+C0145,C0135,radius,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0081,C0190,hypotenuse,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0081,transversal,hypotenuse,0.0,0.0,0.0,0.0,0.0,2,0
+C0086,C0100,Inductive Reasoning,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0086,line,Inductive Reasoning,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0111,angle,midsegment,0.0,0.0,0.0,0.0,0.0,2,0
+C0111,C0008,midsegment,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0115,C0135,Obtuse,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0115,polygon,Obtuse,0.0,0.0,0.0,0.0,0.0,2,0
+C0151,C0192,reflexive property,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0151,triangle,reflexive property,0.0,0.0,0.0,0.0,0.0,2,0
+C0116,C0190,obtuse angle,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0116,transversal,obtuse angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0119,angle,order of symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0119,C0008,order of symmetry,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0054,C0167,corollary,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0054,segments,corollary,0.0,0.0,0.0,0.0,0.0,2,0
+C0085,C0133,included angle,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0085,point,included angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0173,point,Solids,0.0,0.0,0.0,0.0,0.0,2,0
+C0173,C0133,Solids,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0034,C0190,CK-12 Basic Geometry Concepts,transversal,0.0,0.0,0.425,0.0,0.0,2,0
+C0190,C0034,transversal,CK-12 Basic Geometry Concepts,0.0,0.0,0.0,0.0,0.0,2,0
+C0121,C0190,paragraph proof,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0121,transversal,paragraph proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0082,C0133,hypotenuse leg congruence theorem,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0082,point,hypotenuse leg congruence theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0022,C0044,area of a triangle,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0022,congruent,area of a triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0173,degree,Solids,0.0,0.0,0.0,0.0,0.0,2,0
+C0173,C0066,Solids,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0113,C0167,minor arc,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0113,segments,minor arc,0.0,0.0,0.0,0.0,0.0,2,0
+C0001,C0031,acute angle,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0001,circle,acute angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0035,C0133,co-interior angles theorem,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0035,point,co-interior angles theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0024,C0044,biconditional statement,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0024,congruent,biconditional statement,0.0,0.0,0.0,0.0,0.0,2,0
+C0127,C0192,perpendicular bisector,triangle,0.0,0.0,0.5,0.0,0.0,2,0
+C0192,C0127,triangle,perpendicular bisector,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0157,polygon,rigid transformation,0.0,0.0,0.0,0.0,0.0,2,0
+C0157,C0135,rigid transformation,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0059,C0135,Cosine Ratios,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0059,polygon,Cosine Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0047,circle,Congruent segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0047,C0031,Congruent segments,circle,0.0,0.45,0.0,0.0,0.0,2,0
+C0002,C0100,acute triangle,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0002,line,acute triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0150,C0167,reflection,segments,0.0,0.0,0.425,0.0,0.0,2,0
+C0167,C0150,segments,reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0159,C0192,Rotations,triangle,0.0,0.0,0.5,0.0,0.0,2,0
+C0192,C0159,triangle,Rotations,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0182,polygon,symmetric property,0.0,0.0,0.0,0.0,0.0,2,0
+C0182,C0135,symmetric property,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0005,C0167,alternate exterior angles theorem,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0005,segments,alternate exterior angles theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0186,polygon,Tangents,0.0,0.0,0.0,0.0,0.0,2,0
+C0186,C0135,Tangents,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0069,degree,Distance,0.0,0.0,0.0,0.0,0.0,2,0
+C0069,C0066,Distance,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0002,C0190,acute triangle,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0002,transversal,acute triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0202,triangle,vertices,0.0,0.4,0.0,0.0,0.0,2,0
+C0202,C0192,vertices,triangle,0.0,0.5,0.0,0.0,0.0,2,0
+C0031,C0109,circle,midpoint of a segment,0.0,0.0,0.0,0.0,0.0,2,0
+C0109,C0031,midpoint of a segment,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0181,line,surface area,0.0,0.0,0.0,0.0,0.0,2,0
+C0181,C0100,surface area,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0114,C0192,net,triangle,0.0,0.0,0.0,0.45,0.0,2,0
+C0192,C0114,triangle,net,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0138,polygon,proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0138,C0135,proof,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0042,C0044,cone,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0042,congruent,cone,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0110,congruent,midpoint theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0110,C0044,midpoint theorem,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0168,C0190,semicircle,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0168,transversal,semicircle,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0126,degree,perimeter of a polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0126,C0066,perimeter of a polygon,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0099,circle,Law of syllogism,0.0,0.0,0.0,0.0,0.0,2,0
+C0099,C0031,Law of syllogism,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0160,polygon,ruler postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0160,C0135,ruler postulate,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0065,angle,Deductive Reasoning,0.0,0.0,0.0,0.0,0.0,2,0
+C0065,C0008,Deductive Reasoning,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0189,degree,translation,0.0,0.0,0.0,0.0,0.0,2,0
+C0189,C0066,translation,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0087,C0167,inscribed angle,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0087,segments,inscribed angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0115,C0190,Obtuse,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0115,transversal,Obtuse,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0103,circle,line symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0103,C0031,line symmetry,circle,0.0,0.0,0.0,0.45,0.0,2,0
+C0119,C0135,order of symmetry,polygon,0.0,0.0,0.0,0.4,0.0,2,0
+C0135,C0119,polygon,order of symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0147,C0190,ratio of corresponding sides,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0147,transversal,ratio of corresponding sides,0.0,0.0,0.0,0.0,0.0,2,0
+C0012,C0135,angle bisector theorem,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0012,polygon,angle bisector theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0203,segments,volume,0.0,0.0,0.0,0.0,0.0,2,0
+C0203,C0167,volume,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0172,degree,slope,0.0,0.0,0.0,0.0,0.0,2,0
+C0172,C0066,slope,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0125,C0190,perimeter,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0125,transversal,perimeter,0.0,0.0,0.0,0.0,0.0,2,0
+C0068,C0192,diameter,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0068,triangle,diameter,0.0,0.0,0.0,0.0,0.0,2,0
+C0096,C0100,kite,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0096,line,kite,0.0,0.0,0.0,0.0,0.0,2,0
+C0177,C0192,substitution property,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0177,triangle,substitution property,0.0,0.0,0.0,0.0,0.0,2,0
+C0018,C0192,area of a circle,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0018,triangle,area of a circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0157,circle,rigid transformation,0.0,0.0,0.0,0.0,0.0,2,0
+C0157,C0031,rigid transformation,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0059,C0190,Cosine Ratios,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0059,transversal,Cosine Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0185,polygon,Tangent Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0185,C0135,Tangent Ratios,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0039,circle,conclusion,0.0,0.0,0.0,0.0,0.0,2,0
+C0039,C0031,conclusion,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0084,C0135,incenter,polygon,0.0,0.0,0.0,0.45,0.0,2,0
+C0135,C0084,polygon,incenter,0.0,0.0,0.0,0.45,0.0,2,0
+C0022,C0133,area of a triangle,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0022,point,area of a triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0104,C0135,linear pair,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0104,polygon,linear pair,0.0,0.0,0.0,0.0,0.0,2,0
+C0019,C0190,area of a parallelogram,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0019,transversal,area of a parallelogram,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0182,circle,symmetric property,0.0,0.0,0.0,0.0,0.0,2,0
+C0182,C0031,symmetric property,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0191,C0192,trapezoid,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0191,triangle,trapezoid,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0092,congruent,inverse,0.0,0.0,0.0,0.0,0.0,2,0
+C0092,C0044,inverse,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0024,C0133,biconditional statement,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0024,point,biconditional statement,0.0,0.0,0.0,0.0,0.0,2,0
+C0009,C0031,angle addition postulate,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0009,circle,angle addition postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0092,degree,inverse,0.0,0.0,0.0,0.0,0.0,2,0
+C0092,C0066,inverse,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0138,circle,proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0138,C0031,proof,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0165,C0190,segment addition postulate,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0165,transversal,segment addition postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0112,angle,midsegment of a triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0112,C0008,midsegment of a triangle,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0136,C0167,polyhedron,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0136,segments,polyhedron,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0171,segments,Sine Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0171,C0167,Sine Ratios,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0078,congruent,glide reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0078,C0044,glide reflection,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0050,angle,conjecture,0.0,0.0,0.0,0.0,0.0,2,0
+C0050,C0008,conjecture,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0075,circle,exterior angle sum,0.0,0.0,0.0,0.0,0.0,2,0
+C0075,C0031,exterior angle sum,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0160,circle,ruler postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0160,C0031,ruler postulate,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0152,C0190,regular polygon,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0152,transversal,regular polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0119,C0190,order of symmetry,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0119,transversal,order of symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0042,C0133,cone,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0042,point,cone,0.0,0.0,0.0,0.0,0.0,2,0
+C0016,C0135,arc addition postulate,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0016,polygon,arc addition postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0151,point,reflexive property,0.0,0.0,0.0,0.0,0.0,2,0
+C0151,C0133,reflexive property,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0063,C0133,cross section,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0063,point,cross section,0.0,0.0,0.0,0.0,0.0,2,0
+C0012,C0190,angle bisector theorem,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0012,transversal,angle bisector theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0033,C0167,Circumference,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0033,segments,Circumference,0.0,0.0,0.0,0.0,0.0,2,0
+C0141,C0192,pyramid,triangle,0.0,0.5,0.0,0.0,0.0,2,0
+C0192,C0141,triangle,pyramid,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0180,segments,Supplementary angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0180,C0167,Supplementary angles,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0158,angle,rotational symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0158,C0008,rotational symmetry,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0151,degree,reflexive property,0.0,0.0,0.0,0.0,0.0,2,0
+C0151,C0066,reflexive property,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0084,C0100,incenter,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0084,line,incenter,0.0,0.0,0.0,0.0,0.0,2,0
+C0001,C0192,acute angle,triangle,0.0,0.5,0.0,0.0,0.0,2,0
+C0192,C0001,triangle,acute angle,0.0,0.5,0.0,0.0,0.0,2,0
+C0085,C0135,included angle,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0085,polygon,included angle,0.0,0.0,0.5,0.0,0.0,2,0
+C0020,C0190,area of a rectangle,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0020,transversal,area of a rectangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0041,C0192,conditional statement,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0041,triangle,conditional statement,0.0,0.0,0.0,0.0,0.0,2,0
+C0010,C0100,angle angle similarity postulate,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0010,line,angle angle similarity postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0185,circle,Tangent Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0185,C0031,Tangent Ratios,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0039,C0044,conclusion,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0039,congruent,conclusion,0.0,0.0,0.0,0.0,0.0,2,0
+C0084,C0190,incenter,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0084,transversal,incenter,0.0,0.0,0.0,0.0,0.0,2,0
+C0003,C0167,Adjacent angles,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0003,segments,Adjacent angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0104,C0190,linear pair,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0104,transversal,linear pair,0.0,0.0,0.0,0.0,0.0,2,0
+C0035,C0135,co-interior angles theorem,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0035,polygon,co-interior angles theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0112,C0135,midsegment of a triangle,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0112,polygon,midsegment of a triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0137,C0190,prism,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0137,transversal,prism,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0199,polygon,vector,0.0,0.0,0.0,0.0,0.0,2,0
+C0199,C0135,vector,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0196,segments,triangle proportionality theorem,0.0,0.0,0.45,0.0,0.0,2,0
+C0196,C0167,triangle proportionality theorem,segments,0.0,0.0,0.45,0.0,0.0,2,0
+C0031,C0076,circle,exterior angle theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0076,C0031,exterior angle theorem,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0089,C0133,interior angle sum,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0089,point,interior angle sum,0.0,0.0,0.0,0.0,0.0,2,0
+C0006,C0066,alternate interior angles theorem,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0006,degree,alternate interior angles theorem,0.0,0.0,0.5,0.0,0.0,2,0
+C0004,C0133,Alternate exterior angles,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0004,point,Alternate exterior angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0070,circle,distance between two points,0.0,0.0,0.0,0.0,0.0,2,0
+C0070,C0031,distance between two points,circle,0.45,0.45,0.0,0.0,0.0,2,0
+C0066,C0122,degree,Parallel lines,0.0,0.0,0.0,0.0,0.0,2,0
+C0122,C0066,Parallel lines,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0144,C0190,quadrilateral,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0144,transversal,quadrilateral,0.0,0.0,0.0,0.0,0.0,2,0
+C0158,C0190,rotational symmetry,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0158,transversal,rotational symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0162,polygon,scalene triangle,0.0,0.5,0.0,0.0,0.0,2,0
+C0162,C0135,scalene triangle,polygon,0.0,0.5,0.0,0.0,0.0,2,0
+C0135,C0198,polygon,two-column proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0198,C0135,two-column proof,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0201,segments,Vertical angles,0.0,0.0,0.0,0.425,0.0,2,0
+C0201,C0167,Vertical angles,segments,0.0,0.0,0.45,0.0,0.0,2,0
+C0016,C0190,arc addition postulate,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0016,transversal,arc addition postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0019,angle,area of a parallelogram,0.0,0.0,0.0,0.0,0.0,2,0
+C0019,C0008,area of a parallelogram,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0111,degree,midsegment,0.0,0.0,0.0,0.0,0.0,2,0
+C0111,C0066,midsegment,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0156,C0167,right triangle,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0156,segments,right triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0176,segments,straight angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0176,C0167,straight angle,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0082,C0100,hypotenuse leg congruence theorem,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0082,line,hypotenuse leg congruence theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0128,congruent,perpendicular bisector theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0128,C0044,perpendicular bisector theorem,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0085,C0190,included angle,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0085,transversal,included angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0163,C0190,secant,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0163,transversal,secant,0.0,0.0,0.0,0.45,0.0,2,0
+C0066,C0128,degree,perpendicular bisector theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0128,C0066,perpendicular bisector theorem,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0094,C0167,isosceles triangle,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0094,segments,isosceles triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0173,polygon,Solids,0.0,0.0,0.0,0.0,0.0,2,0
+C0173,C0135,Solids,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0080,circle,hinge theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0080,C0031,hinge theorem,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0188,C0192,transitive property,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0188,triangle,transitive property,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0204,segments,volume of a prism,0.0,0.0,0.0,0.0,0.0,2,0
+C0204,C0167,volume of a prism,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0112,C0190,midsegment of a triangle,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0112,transversal,midsegment of a triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0065,C0135,Deductive Reasoning,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0065,polygon,Deductive Reasoning,0.0,0.0,0.0,0.0,0.0,2,0
+C0009,C0192,angle addition postulate,triangle,0.0,0.0,0.45,0.0,0.0,2,0
+C0192,C0009,triangle,angle addition postulate,0.0,0.0,0.45,0.0,0.0,2,0
+C0039,C0133,conclusion,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0039,point,conclusion,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0199,circle,vector,0.0,0.0,0.0,0.0,0.0,2,0
+C0199,C0031,vector,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0143,C0190,Pythagorean triple,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0143,transversal,Pythagorean triple,0.0,0.0,0.0,0.0,0.0,2,0
+C0040,C0100,concurrency,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0040,line,concurrency,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0127,circle,perpendicular bisector,0.0,0.0,0.0,0.0,0.0,2,0
+C0127,C0031,perpendicular bisector,circle,0.0,0.0,0.0,0.45,0.0,2,0
+C0024,C0135,biconditional statement,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0024,polygon,biconditional statement,0.0,0.0,0.0,0.0,0.0,2,0
+C0110,C0192,midpoint theorem,triangle,0.0,0.5,0.0,0.0,0.0,2,0
+C0192,C0110,triangle,midpoint theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0007,C0044,altitude,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0007,congruent,altitude,0.0,0.0,0.0,0.0,0.0,2,0
+C0037,C0167,Complementary angles,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0037,segments,Complementary angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0169,segments,side angle relationship,0.0,0.0,0.0,0.0,0.0,2,0
+C0169,C0167,side angle relationship,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0129,C0135,Perpendicular lines,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0129,polygon,Perpendicular lines,0.0,0.0,0.0,0.0,0.0,2,0
+C0067,C0190,diagonal,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0067,transversal,diagonal,0.0,0.0,0.0,0.0,0.0,2,0
+C0121,C0192,paragraph proof,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0121,triangle,paragraph proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0162,circle,scalene triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0162,C0031,scalene triangle,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0181,congruent,surface area,0.0,0.0,0.0,0.0,0.0,2,0
+C0181,C0044,surface area,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0065,congruent,Deductive Reasoning,0.0,0.0,0.0,0.0,0.0,2,0
+C0065,C0044,Deductive Reasoning,congruent,0.0,0.0,0.45,0.0,0.0,2,0
+C0008,C0143,angle,Pythagorean triple,0.0,0.0,0.0,0.0,0.0,2,0
+C0143,C0008,Pythagorean triple,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0198,circle,two-column proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0198,C0031,two-column proof,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0203,triangle,volume,0.0,0.0,0.0,0.0,0.0,2,0
+C0203,C0192,volume,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0048,C0167,congruent sides,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0048,segments,congruent sides,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0064,angle,cylinder,0.0,0.0,0.0,0.0,0.0,2,0
+C0064,C0008,cylinder,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0189,polygon,translation,0.0,0.0,0.0,0.0,0.0,2,0
+C0189,C0135,translation,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0178,segments,sum of interior angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0178,C0167,sum of interior angles,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0042,C0135,cone,polygon,0.0,0.5,0.0,0.0,0.0,2,0
+C0135,C0042,polygon,cone,0.0,0.0,0.0,0.0,0.0,2,0
+C0029,C0044,centroid,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0029,congruent,centroid,0.0,0.0,0.0,0.0,0.0,2,0
+C0006,C0031,alternate interior angles theorem,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0006,circle,alternate interior angles theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0062,C0133,cross products,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0062,point,cross products,0.0,0.0,0.0,0.0,0.0,2,0
+C0063,C0135,cross section,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0063,polygon,cross section,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0172,polygon,slope,0.0,0.0,0.0,0.0,0.0,2,0
+C0172,C0135,slope,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0017,C0135,Arc Length,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0017,polygon,Arc Length,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0173,circle,Solids,0.0,0.0,0.0,0.0,0.0,2,0
+C0173,C0031,Solids,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0164,C0190,sector,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0164,transversal,sector,0.0,0.0,0.0,0.0,0.0,2,0
+C0105,C0133,Lines Parallel,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0105,point,Lines Parallel,0.0,0.0,0.0,0.425,0.0,2,0
+C0033,C0066,Circumference,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0033,degree,Circumference,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0194,segments,triangle inequality theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0194,C0167,triangle inequality theorem,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0001,C0044,acute angle,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0001,congruent,acute angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0022,C0100,area of a triangle,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0022,line,area of a triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0168,C0192,semicircle,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0168,triangle,semicircle,0.0,0.0,0.0,0.0,0.0,2,0
+C0057,C0133,corresponding parts,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0057,point,corresponding parts,0.0,0.0,0.0,0.0,0.0,2,0
+C0065,C0190,Deductive Reasoning,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0065,transversal,Deductive Reasoning,0.0,0.0,0.0,0.0,0.0,2,0
+C0159,C0167,Rotations,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0159,segments,Rotations,0.0,0.0,0.0,0.0,0.0,2,0
+C0024,C0100,biconditional statement,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0024,line,biconditional statement,0.0,0.0,0.0,0.0,0.0,2,0
+C0076,C0133,exterior angle theorem,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0076,point,exterior angle theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0185,line,Tangent Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0185,C0100,Tangent Ratios,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0071,C0135,endpoint,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0071,polygon,endpoint,0.0,0.0,0.0,0.0,0.0,2,0
+C0061,C0133,CPCTC,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0061,point,CPCTC,0.0,0.0,0.0,0.0,0.0,2,0
+C0114,C0167,net,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0114,segments,net,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0079,circle,hexagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0079,C0031,hexagon,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0069,circle,Distance,0.5,0.0,0.0,0.0,0.0,2,0
+C0069,C0031,Distance,circle,0.0,0.5,0.0,0.0,0.0,2,0
+C0167,C0170,segments,Similar Polygons,0.0,0.0,0.0,0.0,0.0,2,0
+C0170,C0167,Similar Polygons,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0024,C0190,biconditional statement,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0024,transversal,biconditional statement,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0023,angle,bases,0.0,0.0,0.0,0.0,0.0,2,0
+C0023,C0008,bases,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0027,C0066,center of rotation,degree,0.0,0.0,0.425,0.0,0.0,2,0
+C0066,C0027,degree,center of rotation,0.0,0.0,0.5,0.0,0.0,2,0
+C0050,C0135,conjecture,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0050,polygon,conjecture,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0043,circle,congruence,0.0,0.0,0.0,0.0,0.0,2,0
+C0043,C0031,congruence,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0028,C0133,central angle,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0028,point,central angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0046,C0066,Congruent polygons,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0046,degree,Congruent polygons,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0112,degree,midsegment of a triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0112,C0066,midsegment of a triangle,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0098,C0133,Law of detachment,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0098,point,Law of detachment,0.0,0.0,0.0,0.0,0.0,2,0
+C0184,C0192,tangent line,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0184,triangle,tangent line,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0126,circle,perimeter of a polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0126,C0031,perimeter of a polygon,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0183,C0190,Symmetry,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0183,transversal,Symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0060,C0135,counterexample,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0060,polygon,counterexample,0.0,0.0,0.0,0.0,0.0,2,0
+C0004,C0135,Alternate exterior angles,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0004,polygon,Alternate exterior angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0134,C0192,point of tangency,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0134,triangle,point of tangency,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0175,segments,square,0.0,0.0,0.0,0.0,0.0,2,0
+C0175,C0167,square,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0189,circle,translation,0.0,0.0,0.0,0.0,0.0,2,0
+C0189,C0031,translation,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0091,C0192,intersection,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0091,triangle,intersection,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0061,circle,CPCTC,0.0,0.0,0.0,0.0,0.0,2,0
+C0061,C0031,CPCTC,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0142,angle,Pythagorean Theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0142,C0008,Pythagorean Theorem,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0183,polygon,Symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0183,C0135,Symmetry,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0158,congruent,rotational symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0158,C0044,rotational symmetry,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0042,C0190,cone,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0042,transversal,cone,0.0,0.0,0.0,0.0,0.0,2,0
+C0126,C0133,perimeter of a polygon,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0126,point,perimeter of a polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0158,point,rotational symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0158,C0133,rotational symmetry,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0026,C0066,center,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0026,degree,center,0.0,0.0,0.0,0.0,0.0,2,0
+C0045,C0167,Congruent arcs,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0045,segments,Congruent arcs,0.0,0.0,0.0,0.0,0.0,2,0
+C0187,C0192,Transformations,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0187,triangle,Transformations,0.0,0.0,0.0,0.0,0.0,2,0
+C0070,C0192,distance between two points,triangle,0.0,0.0,0.5,0.0,0.0,2,0
+C0192,C0070,triangle,distance between two points,0.0,0.0,0.0,0.0,0.0,2,0
+C0063,C0190,cross section,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0063,transversal,cross section,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0172,circle,slope,0.0,0.0,0.0,0.0,0.0,2,0
+C0172,C0031,slope,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0017,C0190,Arc Length,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0017,transversal,Arc Length,0.0,0.0,0.0,0.0,0.0,2,0
+C0032,C0066,circumcenter,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0032,degree,circumcenter,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0151,polygon,reflexive property,0.0,0.0,0.0,0.0,0.0,2,0
+C0151,C0135,reflexive property,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0018,C0167,area of a circle,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0018,segments,area of a circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0165,C0192,segment addition postulate,triangle,0.0,0.0,0.45,0.0,0.0,2,0
+C0192,C0165,triangle,segment addition postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0150,congruent,reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0150,C0044,reflection,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0051,angle,contrapositive,0.0,0.0,0.0,0.0,0.0,2,0
+C0051,C0008,contrapositive,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0123,degree,parallelogram,0.0,0.0,0.0,0.0,0.0,2,0
+C0123,C0066,parallelogram,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0144,line,quadrilateral,0.0,0.0,0.0,0.0,0.0,2,0
+C0144,C0100,quadrilateral,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0150,degree,reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0150,C0066,reflection,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0071,C0190,endpoint,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0071,transversal,endpoint,0.0,0.0,0.0,0.0,0.0,2,0
+C0166,C0190,segment bisector,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0166,transversal,segment bisector,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0195,line,triangle midsegment theorem,0.0,0.0,0.45,0.0,0.0,2,0
+C0195,C0100,triangle midsegment theorem,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0055,circle,Corresponding angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0055,C0031,Corresponding angles,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0001,C0133,acute angle,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0001,point,acute angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0011,C0031,angle bisector,circle,0.0,0.0,0.0,0.45,0.0,2,0
+C0031,C0011,circle,angle bisector,0.0,0.0,0.0,0.0,0.0,2,0
+C0050,C0190,conjecture,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0050,transversal,conjecture,0.0,0.0,0.0,0.0,0.0,2,0
+C0089,C0100,interior angle sum,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0089,line,interior angle sum,0.0,0.0,0.0,0.0,0.0,2,0
+C0023,C0133,bases,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0023,point,bases,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0036,circle,Collinear points,0.0,0.0,0.0,0.0,0.0,2,0
+C0036,C0031,Collinear points,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0165,angle,segment addition postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0165,C0008,segment addition postulate,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0039,C0135,conclusion,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0039,polygon,conclusion,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0120,circle,orthocenter,0.0,0.0,0.0,0.0,0.0,2,0
+C0120,C0031,orthocenter,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0201,triangle,Vertical angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0201,C0192,Vertical angles,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0058,C0066,corresponding sides,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0058,degree,corresponding sides,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0199,line,vector,0.0,0.0,0.0,0.0,0.0,2,0
+C0199,C0100,vector,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0060,C0190,counterexample,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0060,transversal,counterexample,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0195,angle,triangle midsegment theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0195,C0008,triangle midsegment theorem,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0160,C0192,ruler postulate,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0160,triangle,ruler postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0124,circle,pentagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0124,C0031,pentagon,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0140,C0192,protractor,triangle,0.0,0.0,0.45,0.0,0.0,2,0
+C0192,C0140,triangle,protractor,0.0,0.0,0.45,0.0,0.0,2,0
+C0066,C0093,degree,isometries,0.0,0.0,0.0,0.0,0.4,2,0
+C0093,C0066,isometries,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0155,C0192,right angle,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0155,triangle,right angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0141,C0167,pyramid,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0141,segments,pyramid,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0183,circle,Symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0183,C0031,Symmetry,circle,0.0,0.45,0.0,0.0,0.0,2,0
+C0170,C0190,Similar Polygons,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0170,transversal,Similar Polygons,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0040,circle,concurrency,0.0,0.0,0.0,0.0,0.0,2,0
+C0040,C0031,concurrency,circle,0.0,0.5,0.0,0.0,0.0,2,0
+C0100,C0164,line,sector,0.0,0.0,0.0,0.0,0.0,2,0
+C0164,C0100,sector,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0098,angle,Law of detachment,0.0,0.0,0.0,0.0,0.0,2,0
+C0098,C0008,Law of detachment,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0193,segments,triangle angle sum theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0193,C0167,triangle angle sum theorem,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0198,line,two-column proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0198,C0100,two-column proof,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0131,angle,pi radius,0.0,0.0,0.0,0.0,0.0,2,0
+C0131,C0008,pi radius,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0027,C0031,center of rotation,circle,0.0,0.45,0.0,0.0,0.0,2,0
+C0031,C0027,circle,center of rotation,0.0,0.45,0.0,0.0,0.0,2,0
+C0149,C0190,rectangle,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0149,transversal,rectangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0077,congruent,flowchart proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0077,C0044,flowchart proof,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0204,triangle,volume of a prism,0.0,0.0,0.0,0.0,0.0,2,0
+C0204,C0192,volume of a prism,triangle,0.0,0.45,0.0,0.0,0.0,2,0
+C0006,C0192,alternate interior angles theorem,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0006,triangle,alternate interior angles theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0191,segments,trapezoid,0.0,0.0,0.0,0.0,0.0,2,0
+C0191,C0167,trapezoid,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0151,circle,reflexive property,0.0,0.0,0.0,0.0,0.0,2,0
+C0151,C0031,reflexive property,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0109,degree,midpoint of a segment,0.0,0.0,0.0,0.0,0.0,2,0
+C0109,C0066,midpoint of a segment,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0041,C0167,conditional statement,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0041,segments,conditional statement,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0077,degree,flowchart proof,0.0,0.0,0.0,0.0,0.0,2,0
+C0077,C0066,flowchart proof,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0099,congruent,Law of syllogism,0.0,0.0,0.0,0.0,0.0,2,0
+C0099,C0044,Law of syllogism,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0038,circle,composite solid,0.0,0.0,0.0,0.0,0.0,2,0
+C0038,C0031,composite solid,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0062,C0135,cross products,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0062,polygon,cross products,0.0,0.0,0.0,0.0,0.0,2,0
+C0073,C0133,equilateral triangle,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0073,point,equilateral triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0091,congruent,intersection,0.0,0.0,0.0,0.0,0.0,2,0
+C0091,C0044,intersection,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0105,C0135,Lines Parallel,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0105,polygon,Lines Parallel,0.0,0.0,0.0,0.0,0.0,2,0
+C0158,C0192,rotational symmetry,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0158,triangle,rotational symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0039,C0100,conclusion,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0039,line,conclusion,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0091,degree,intersection,0.0,0.0,0.0,0.0,0.0,2,0
+C0091,C0066,intersection,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0095,C0167,isosceles triangle theorem,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0095,segments,isosceles triangle theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0016,C0192,arc addition postulate,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0016,triangle,arc addition postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0029,angle,centroid,0.0,0.0,0.0,0.0,0.0,2,0
+C0029,C0008,centroid,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0189,C0190,translation,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0189,transversal,translation,0.0,0.0,0.0,0.0,0.0,2,0
+C0076,C0135,exterior angle theorem,polygon,0.0,0.0,0.0,0.45,0.0,2,0
+C0135,C0076,polygon,exterior angle theorem,0.0,0.0,0.5,0.0,0.0,2,0
+C0008,C0204,angle,volume of a prism,0.0,0.0,0.0,0.0,0.0,2,0
+C0204,C0008,volume of a prism,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0039,C0190,conclusion,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0039,transversal,conclusion,0.0,0.0,0.0,0.0,0.0,2,0
+C0102,C0135,line segment,polygon,0.0,0.5,0.0,0.0,0.0,2,0
+C0135,C0102,polygon,line segment,0.0,0.5,0.0,0.0,0.0,2,0
+C0044,C0157,congruent,rigid transformation,0.0,0.0,0.0,0.0,0.0,2,0
+C0157,C0044,rigid transformation,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0122,circle,Parallel lines,0.0,0.0,0.0,0.0,0.0,2,0
+C0122,C0031,Parallel lines,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0032,circle,circumcenter,0.0,0.5,0.0,0.0,0.0,2,0
+C0032,C0031,circumcenter,circle,0.0,0.5,0.0,0.0,0.0,2,0
+C0075,C0133,exterior angle sum,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0075,point,exterior angle sum,0.0,0.0,0.0,0.0,0.0,2,0
+C0028,C0135,central angle,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0028,polygon,central angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0049,C0190,congruent triangles,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0049,transversal,congruent triangles,0.0,0.0,0.0,0.0,0.0,2,0
+C0008,C0053,angle,Coplanar points,0.0,0.0,0.0,0.0,0.0,2,0
+C0053,C0008,Coplanar points,angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0117,circle,obtuse triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0117,C0031,obtuse triangle,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0007,C0135,altitude,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0007,polygon,altitude,0.0,0.0,0.0,0.0,0.0,2,0
+C0079,C0167,hexagon,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0079,segments,hexagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0078,C0133,glide reflection,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0078,point,glide reflection,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0111,circle,midsegment,0.0,0.0,0.0,0.0,0.0,2,0
+C0111,C0031,midsegment,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0014,C0044,angle of rotation,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0014,congruent,angle of rotation,0.0,0.0,0.0,0.0,0.0,2,0
+C0064,C0066,cylinder,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0064,degree,cylinder,0.0,0.0,0.0,0.0,0.0,2,0
+C0062,C0100,cross products,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0062,line,cross products,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0119,circle,order of symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0119,C0031,order of symmetry,circle,0.0,0.0,0.0,0.45,0.0,2,0
+C0099,C0192,Law of syllogism,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0099,triangle,Law of syllogism,0.0,0.0,0.0,0.0,0.0,2,0
+C0052,C0167,converse,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0052,segments,converse,0.0,0.0,0.0,0.0,0.0,2,0
+C0172,C0192,slope,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0172,triangle,slope,0.0,0.0,0.0,0.0,0.0,2,0
+C0088,C0133,inscribed angle theorem,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0088,point,inscribed angle theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0062,C0190,cross products,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0062,transversal,cross products,0.0,0.0,0.0,0.0,0.0,2,0
+C0057,C0100,corresponding parts,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0057,line,corresponding parts,0.0,0.0,0.0,0.0,0.0,2,0
+C0136,C0192,polyhedron,triangle,0.0,0.5,0.0,0.0,0.0,2,0
+C0192,C0136,triangle,polyhedron,0.0,0.5,0.0,0.0,0.0,2,0
+C0097,C0167,lateral area,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0097,segments,lateral area,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0058,circle,corresponding sides,0.0,0.0,0.0,0.0,0.0,2,0
+C0058,C0031,corresponding sides,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0056,C0133,corresponding angles postulate,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0056,point,corresponding angles postulate,0.0,0.0,0.0,0.0,0.0,2,0
+C0081,C0167,hypotenuse,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0081,segments,hypotenuse,0.0,0.0,0.0,0.0,0.0,2,0
+C0061,C0100,CPCTC,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0061,line,CPCTC,0.0,0.0,0.0,0.0,0.0,2,0
+C0090,C0133,interior angles,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0090,point,interior angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0009,C0167,angle addition postulate,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0009,segments,angle addition postulate,0.0,0.0,0.45,0.0,0.0,2,0
+C0018,C0066,area of a circle,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0018,degree,area of a circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0029,C0135,centroid,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0029,polygon,centroid,0.0,0.0,0.0,0.0,0.0,2,0
+C0118,C0190,opposite angles,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0118,transversal,opposite angles,0.0,0.0,0.0,0.0,0.0,2,0
+C0102,C0190,line segment,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0102,transversal,line segment,0.0,0.0,0.0,0.0,0.0,2,0
+C0061,C0190,CPCTC,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0061,transversal,CPCTC,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0181,segments,surface area,0.0,0.0,0.0,0.0,0.0,2,0
+C0181,C0167,surface area,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0028,C0100,central angle,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0028,line,central angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0098,C0100,Law of detachment,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0098,line,Law of detachment,0.0,0.0,0.0,0.0,0.0,2,0
+C0080,C0133,hinge theorem,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0080,point,hinge theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0152,line,regular polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0152,C0100,regular polygon,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0187,congruent,Transformations,0.0,0.0,0.0,0.0,0.0,2,0
+C0187,C0044,Transformations,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0044,C0185,congruent,Tangent Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0185,C0044,Tangent Ratios,congruent,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0187,point,Transformations,0.0,0.0,0.0,0.0,0.0,2,0
+C0187,C0133,Transformations,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0007,C0100,altitude,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0007,line,altitude,0.0,0.0,0.0,0.0,0.0,2,0
+C0025,C0066,bisect,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0025,degree,bisect,0.0,0.0,0.0,0.0,0.0,2,0
+C0083,C0135,hypothesis,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0083,polygon,hypothesis,0.0,0.0,0.0,0.0,0.0,2,0
+C0028,C0190,central angle,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0028,transversal,central angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0168,line,semicircle,0.0,0.0,0.0,0.0,0.0,2,0
+C0168,C0100,semicircle,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0187,degree,Transformations,0.0,0.0,0.0,0.0,0.0,2,0
+C0187,C0066,Transformations,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0120,line,orthocenter,0.0,0.0,0.0,0.0,0.0,2,0
+C0120,C0100,orthocenter,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0097,C0203,lateral area,volume,0.0,0.0,0.0,0.0,0.0,2,0
+C0203,C0097,volume,lateral area,0.0,0.0,0.0,0.0,0.0,2,0
+C0124,C0167,pentagon,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0124,segments,pentagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0007,C0190,altitude,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0007,transversal,altitude,0.0,0.0,0.0,0.0,0.0,2,0
+C0179,C0192,supplementary,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0179,triangle,supplementary,0.0,0.0,0.0,0.0,0.0,2,0
+C0065,C0192,Deductive Reasoning,triangle,0.0,0.0,0.4,0.0,0.0,2,0
+C0192,C0065,triangle,Deductive Reasoning,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0065,circle,Deductive Reasoning,0.0,0.0,0.0,0.0,0.0,2,0
+C0065,C0031,Deductive Reasoning,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0122,C0135,Parallel lines,polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0122,polygon,Parallel lines,0.0,0.0,0.0,0.0,0.0,2,0
+C0027,C0192,center of rotation,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0027,triangle,center of rotation,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0124,line,pentagon,0.0,0.0,0.0,0.0,0.0,2,0
+C0124,C0100,pentagon,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0142,degree,Pythagorean Theorem,0.0,0.0,0.0,0.0,0.0,2,0
+C0142,C0066,Pythagorean Theorem,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0066,C0081,degree,hypotenuse,0.0,0.0,0.0,0.0,0.0,2,0
+C0081,C0066,hypotenuse,degree,0.0,0.0,0.0,0.0,0.0,2,0
+C0093,C0135,isometries,polygon,0.0,0.0,0.0,0.4,0.0,2,0
+C0135,C0093,polygon,isometries,0.0,0.0,0.0,0.0,0.0,2,0
+C0126,C0190,perimeter of a polygon,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0126,transversal,perimeter of a polygon,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0059,circle,Cosine Ratios,0.0,0.0,0.0,0.0,0.0,2,0
+C0059,C0031,Cosine Ratios,circle,0.0,0.0,0.0,0.0,0.0,2,0
+C0129,C0192,Perpendicular lines,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0129,triangle,Perpendicular lines,0.0,0.0,0.0,0.0,0.0,2,0
+C0135,C0158,polygon,rotational symmetry,0.0,0.0,0.0,0.0,0.0,2,0
+C0158,C0135,rotational symmetry,polygon,0.0,0.0,0.0,0.45,0.0,2,0
+C0139,C0192,proportion,triangle,0.0,0.0,0.0,0.0,0.0,2,0
+C0192,C0139,triangle,proportion,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0151,line,reflexive property,0.0,0.0,0.0,0.0,0.0,2,0
+C0151,C0100,reflexive property,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0021,C0066,area of a sector,degree,0.0,0.0,0.45,0.0,0.0,2,0
+C0066,C0021,degree,area of a sector,0.0,0.0,0.5,0.0,0.0,2,0
+C0029,C0190,centroid,transversal,0.0,0.0,0.0,0.0,0.0,2,0
+C0190,C0029,transversal,centroid,0.0,0.0,0.0,0.0,0.0,2,0
+C0001,C0100,acute angle,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0001,line,acute angle,0.0,0.0,0.0,0.0,0.0,2,0
+C0041,C0100,conditional statement,line,0.0,0.0,0.0,0.0,0.0,2,0
+C0100,C0041,line,conditional statement,0.0,0.0,0.0,0.0,0.0,2,0
+C0147,C0167,ratio of corresponding sides,segments,0.0,0.0,0.0,0.0,0.0,2,0
+C0167,C0147,segments,ratio of corresponding sides,0.0,0.0,0.0,0.0,0.0,2,0
+C0106,C0133,major arc,point,0.0,0.0,0.0,0.0,0.0,2,0
+C0133,C0106,point,major arc,0.0,0.0,0.0,0.0,0.0,2,0
+C0031,C0057,circle,corresponding parts,0.0,0.0,0.0,0.0,0.0,2,0
+C0057,C0031,corresponding parts,circle,0.0,0.0,0.0,0.0,0.0,2,0

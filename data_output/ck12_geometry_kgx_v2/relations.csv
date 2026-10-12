@@ -1,0 +1,546 @@
+relation_id,source_id,target_id,relation_type,weight,page,chunk_id,evidence,weight_source,cooccurrence_count,semantic_similarity,chapter_proximity,educational_context
+R0001,C0001,C0008,Prerequisite,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Acute angles measure less than 90 degrees.,llm_score,1,0.0,0.0,0.0
+R0002,C0001,C0013,Prerequisite,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Acute angles measure less than 90 degrees.,llm_score,1,0.0,0.0,0.0
+R0003,C0001,C0066,Prerequisite,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Acute angles measure less than 90 degrees.,llm_score,1,0.0,0.0,0.0
+R0004,C0001,C0192,Part-of,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Acute angles measure less than 90 degrees.,llm_score,0,0.0,0.0,0.0
+R0005,C0002,C0008,Part-of,0.5,2,359afd06a29d48a2920c5a35ac7b1780,An acute triangle has all angles less than 90 degrees.,llm_score,1,0.0,0.0,0.0
+R0006,C0002,C0066,Application,0.5,2,359afd06a29d48a2920c5a35ac7b1780,An acute triangle has all angles less than 90 degrees.,llm_score,1,0.0,0.0,0.0
+R0007,C0002,C0135,Part-of,0.5,2,359afd06a29d48a2920c5a35ac7b1780,An acute triangle has all angles less than 90 degrees.,llm_score,0,0.0,0.0,0.0
+R0008,C0002,C0192,Part-of,0.5,2,359afd06a29d48a2920c5a35ac7b1780,An acute triangle has all angles less than 90 degrees.,llm_score,1,0.0,0.0,0.0
+R0009,C0003,C0008,Part-of,1.0,1,7be8bb8f22d04966842fe3b83805e696,A linear pair is two adjacent angles that form a straight line.,llm_score,2,0.0,0.0,0.0
+R0010,C0003,C0104,Extension,0.5,1,7be8bb8f22d04966842fe3b83805e696,A linear pair is two adjacent angles that form a straight line.,llm_score,1,0.0,0.0,0.0
+R0011,C0003,C0200,Part-of,0.5,1,7be8bb8f22d04966842fe3b83805e696,Adjacent angles share a vertex and a side but have no common interior points.,llm_score,1,0.0,0.0,0.0
+R0012,C0004,C0005,Application,0.5,3,41c2869b034e4f70bc28b85b4f3a2424,"The alternate exterior angles theorem states that if two parallel lines are cut by a transversal, then alternate exterior angles are congruent.",llm_score,1,0.0,0.0,0.0
+R0013,C0004,C0008,Application,0.5,3,41c2869b034e4f70bc28b85b4f3a2424,Alternate exterior angles are outside the lines on opposite sides of the transversal.,llm_score,2,0.0,0.0,0.0
+R0014,C0004,C0190,Application,0.5,3,41c2869b034e4f70bc28b85b4f3a2424,Alternate exterior angles are outside the lines on opposite sides of the transversal.,llm_score,2,0.0,0.0,0.0
+R0015,C0005,C0008,Application,0.5,3,4b0832ab2c974b7f98bf7062b01405cd,"The alternate exterior angles theorem states that if two parallel lines are cut by a transversal, then alternate exterior angles are congruent.",llm_score,1,0.0,0.0,0.0
+R0016,C0005,C0044,Prerequisite,0.5,3,4b0832ab2c974b7f98bf7062b01405cd,"The alternate exterior angles theorem states that if two parallel lines are cut by a transversal, then alternate exterior angles are congruent.",llm_score,1,0.0,0.0,0.0
+R0017,C0005,C0100,Application,0.5,3,4b0832ab2c974b7f98bf7062b01405cd,"The alternate exterior angles theorem states that if two parallel lines are cut by a transversal, then alternate exterior angles are congruent.",llm_score,1,0.0,0.0,0.0
+R0018,C0005,C0190,Application,0.5,3,4b0832ab2c974b7f98bf7062b01405cd,"The alternate exterior angles theorem states that if two parallel lines are cut by a transversal, then alternate exterior angles are congruent.",llm_score,1,0.0,0.0,0.0
+R0019,C0006,C0008,Application,0.5,3,4b0832ab2c974b7f98bf7062b01405cd,"The alternate interior angles theorem states that if two parallel lines are cut by a transversal, then alternate interior angles are congruent.",llm_score,1,0.0,0.0,0.0
+R0020,C0006,C0044,Prerequisite,0.5,3,4b0832ab2c974b7f98bf7062b01405cd,"The alternate interior angles theorem states that if two parallel lines are cut by a transversal, then alternate interior angles are congruent.",llm_score,1,0.0,0.0,0.0
+R0021,C0006,C0190,Application,0.5,3,4b0832ab2c974b7f98bf7062b01405cd,"The alternate interior angles theorem states that if two parallel lines are cut by a transversal, then alternate interior angles are congruent.",llm_score,1,0.0,0.0,0.0
+R0022,C0007,C0107,Similarity,0.5,5,7aacd8be06e744f6906398afdf7267c1,5.3 Medians and Altitudes,llm_score,1,0.0,0.0,0.0
+R0023,C0007,C0108,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,5.3 Medians and Altitudes A median is a segment from a vertex to the midpoint of the opposite side.,llm_score,0,0.0,0.0,0.0
+R0024,C0007,C0120,Application,0.5,5,7aacd8be06e744f6906398afdf7267c1,The orthocenter is the point of concurrency of the altitudes.,llm_score,1,0.0,0.0,0.0
+R0025,C0007,C0167,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,An altitude is a perpendicular segment from a vertex to the opposite side or its extension.,llm_score,1,0.0,0.0,0.0
+R0026,C0007,C0192,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,5.3 Medians and Altitudes A median is a segment from a vertex to the midpoint of the opposite side.,llm_score,0,0.0,0.0,0.0
+R0027,C0007,C0200,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,An altitude is a perpendicular segment from a vertex to the opposite side or its extension.,llm_score,1,0.0,0.0,0.0
+R0028,C0008,C0009,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,"The angle addition postulate states that if D is in the interior of angle ABC, then angle ABD plus angle DBC equals angle ABC.",llm_score,1,0.0,0.0,0.0
+R0029,C0008,C0010,Extension,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,"The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",llm_score,1,0.0,0.0,0.0
+R0030,C0008,C0011,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,5.2 Perpendicular Bisectors and Angle Bisectors,llm_score,4,0.0,0.0,0.0
+R0031,C0008,C0012,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,The angle bisector theorem states that any point on the angle bisector is equidistant from the sides of the angle.,llm_score,2,0.0,0.0,0.0
+R0032,C0008,C0013,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Acute angles measure less than 90 degrees.,llm_score,5,0.0,0.0,0.0
+R0033,C0008,C0027,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation.,llm_score,1,0.0,0.0,0.0
+R0034,C0008,C0035,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,"The co-interior angles theorem states that if two parallel lines are cut by a transversal, then co-interior angles are supplementary.",llm_score,1,0.0,0.0,0.0
+R0035,C0008,C0037,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Complementary angles are two angles whose measures sum to 90 degrees.,llm_score,1,0.0,0.0,0.0
+R0036,C0008,C0055,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Corresponding angles are in the same position at each intersection.,llm_score,4,0.0,0.0,0.0
+R0037,C0008,C0056,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,"The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.",llm_score,2,0.0,0.0,0.0
+R0038,C0008,C0066,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,An angle is measured in degrees.,llm_score,17,0.0,0.0,0.0
+R0039,C0008,C0073,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,The corollary states that each angle of an equilateral triangle measures 60 degrees.,llm_score,2,0.0,0.0,0.0
+R0040,C0008,C0075,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,The exterior angle sum of any convex polygon is always 360 degrees.,llm_score,1,0.0,0.0,0.0
+R0041,C0008,C0084,Part-of,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,The incenter is the point of concurrency of the angle bisectors and is equidistant from each side.,llm_score,1,0.0,0.0,0.0
+R0042,C0008,C0085,Extension,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",llm_score,4,0.0,0.0,0.0
+R0043,C0008,C0087,Part-of,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,9.4 Inscribed Angles,llm_score,3,0.0,0.0,0.0
+R0044,C0008,C0089,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,The interior angle sum of a polygon with n sides is n minus 2 times 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0045,C0008,C0093,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,"Isometries preserve angle measure, betweenness, collinearity, and distance.",llm_score,1,0.0,0.0,0.0
+R0046,C0008,C0104,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,A linear pair is two adjacent angles that form a straight line.,llm_score,1,0.0,0.0,0.0
+R0047,C0008,C0116,Extension,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Obtuse angles measure between 90 and 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0048,C0008,C0117,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,An obtuse triangle has one angle greater than 90 degrees.,llm_score,1,0.0,0.0,0.0
+R0049,C0008,C0122,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,"The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.",llm_score,4,0.0,0.0,0.0
+R0050,C0008,C0123,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Opposite angles of a parallelogram are congruent.,llm_score,3,0.0,0.0,0.0
+R0051,C0008,C0148,Part-of,1.0,1,a6963ad59e6b4ecdb28d588d3d4ed83f,1.3 Rays and Angles,llm_score,2,0.0,0.0,0.0
+R0052,C0008,C0152,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,A regular polygon has all sides congruent and all angles congruent.,llm_score,1,0.0,0.0,0.0
+R0053,C0008,C0155,Prerequisite,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Right angles measure exactly 90 degrees.,llm_score,4,0.0,0.0,0.0
+R0054,C0008,C0159,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation.,llm_score,1,0.0,0.0,0.0
+R0055,C0008,C0176,Part-of,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Straight angles measure exactly 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0056,C0008,C0178,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,The sum of interior angles of a polygon with n sides is (n minus 2) times 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0057,C0008,C0180,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Supplementary angles are two angles whose measures sum to 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0058,C0008,C0190,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,"When a transversal crosses two lines, eight angles are formed.",llm_score,9,0.0,0.0,0.0
+R0059,C0008,C0193,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,The triangle angle sum theorem states that the sum of the angles in any triangle is 180 degrees.,llm_score,2,0.0,0.0,0.0
+R0060,C0008,C0197,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Trigonometry is the study of the relationships between sides and angles of right triangles.,llm_score,1,0.0,0.0,0.0
+R0061,C0008,C0200,Part-of,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,An angle is formed by two rays with a common endpoint called the vertex.,llm_score,3,0.0,0.0,0.0
+R0062,C0008,C0201,Extension,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Vertical angles are the opposite angles formed when two lines intersect.,llm_score,2,0.0,0.0,0.0
+R0063,C0010,C0044,Prerequisite,0.5,6,5a5863f3d3f2426499dbe24c7aa4aa50,"The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",llm_score,1,0.0,0.0,0.0
+R0064,C0010,C0192,Application,0.5,6,5a5863f3d3f2426499dbe24c7aa4aa50,"The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",llm_score,1,0.0,0.0,0.0
+R0065,C0011,C0071,Part-of,0.5,4,09fd0331b23347df92e307d6c234cd90,5.2 Perpendicular Bisectors and Angle Bisectors The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.,llm_score,0,0.0,0.0,0.0
+R0066,C0011,C0084,Application,0.5,4,09fd0331b23347df92e307d6c234cd90,The incenter is the point of concurrency of the angle bisectors and is equidistant from each side.,llm_score,1,0.0,0.0,0.0
+R0067,C0011,C0127,Prerequisite,0.5,4,09fd0331b23347df92e307d6c234cd90,5.2 Perpendicular Bisectors and Angle Bisectors,llm_score,1,0.0,0.0,0.0
+R0068,C0011,C0128,Extension,0.5,4,09fd0331b23347df92e307d6c234cd90,5.2 Perpendicular Bisectors and Angle Bisectors The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.,llm_score,0,0.0,0.0,0.0
+R0069,C0011,C0133,Application,0.9,4,09fd0331b23347df92e307d6c234cd90,The angle bisector theorem states that any point on the angle bisector is equidistant from the sides of the angle.,llm_score,2,0.0,0.0,0.0
+R0070,C0011,C0167,Application,0.5,4,09fd0331b23347df92e307d6c234cd90,5.2 Perpendicular Bisectors and Angle Bisectors The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.,llm_score,0,0.0,0.0,0.0
+R0071,C0012,C0011,Extension,0.5,6,cf8d61f10f134ce184b4104e891f3add,The angle bisector theorem states that any point on the angle bisector is equidistant from the sides of the angle.,llm_score,2,0.0,0.0,0.0
+R0072,C0012,C0192,Application,1.0,6,cf8d61f10f134ce184b4104e891f3add,The angle bisector theorem states that the angle bisector of a triangle divides the opposite side proportionally.,llm_score,1,0.0,0.0,0.0
+R0073,C0013,C0093,Prerequisite,0.5,9,09d4c68126cc4304a30402eff9733bf5,"Isometries preserve angle measure, betweenness, collinearity, and distance.",llm_score,1,0.0,0.0,0.0
+R0074,C0013,C0116,Application,0.5,9,09d4c68126cc4304a30402eff9733bf5,Obtuse angles measure between 90 and 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0075,C0013,C0176,Application,0.5,9,09d4c68126cc4304a30402eff9733bf5,Straight angles measure exactly 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0076,C0014,C0027,Part-of,0.5,9,ff0f80330fbe4b8d8a1d3cc75447d5dc,A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation.,llm_score,1,0.0,0.0,0.0
+R0077,C0014,C0159,Part-of,0.5,9,ff0f80330fbe4b8d8a1d3cc75447d5dc,A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation.,llm_score,1,0.0,0.0,0.0
+R0078,C0015,C0008,Application,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.,llm_score,3,0.0,0.0,0.0
+R0079,C0015,C0016,Application,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,The arc addition postulate states that adjacent arc measures can be added.,llm_score,1,0.0,0.0,0.0
+R0080,C0015,C0017,Application,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,10.4 Circumference and Arc Length,llm_score,2,0.0,0.0,0.0
+R0081,C0015,C0021,Application,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,The area of a sector is the arc measure divided by 360 times the area of the circle.,llm_score,1,0.0,0.0,0.0
+R0082,C0015,C0031,Part-of,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,An arc is a portion of a circle.,llm_score,3,0.0,0.0,0.0
+R0083,C0015,C0045,Extension,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,Congruent arcs have equal measures and are in the same circle.,llm_score,1,0.0,0.0,0.0
+R0084,C0015,C0087,Application,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.,llm_score,1,0.0,0.0,0.0
+R0085,C0015,C0088,Application,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.,llm_score,1,0.0,0.0,0.0
+R0086,C0015,C0106,Extension,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,A major arc is greater than 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0087,C0015,C0113,Extension,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,A minor arc is less than 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0088,C0015,C0164,Part-of,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,A sector is a pie-shaped region bounded by two radii and an arc.,llm_score,2,0.0,0.0,0.0
+R0089,C0016,C0031,Application,0.9,7,f5e96813edbe4ea39a9392f581c76d6e,The arc addition postulate states that adjacent arc measures can be added.,llm_score,0,0.0,0.0,0.0
+R0090,C0017,C0031,Part-of,0.5,8,2ed318dd21eb4e56a9cf1fdcc353e91e,An arc length is a portion of the circumference equal to the arc measure divided by 360 times the circumference.,llm_score,0,0.0,0.0,0.0
+R0091,C0017,C0033,Part-of,0.5,8,2ed318dd21eb4e56a9cf1fdcc353e91e,10.4 Circumference and Arc Length,llm_score,2,0.0,0.0,0.0
+R0092,C0018,C0031,Part-of,0.5,8,3ac636c3c381431686b716d16fdd7b67,The area of a circle is pi times the radius squared.,llm_score,1,0.0,0.0,0.0
+R0093,C0018,C0145,Part-of,0.5,8,3ac636c3c381431686b716d16fdd7b67,The area of a circle is pi times the radius squared.,llm_score,1,0.0,0.0,0.0
+R0094,C0019,C0123,Part-of,0.5,7,9098f28bcb154113b08650d0fc4e24d0,The area of a parallelogram is base times height.,llm_score,1,0.0,0.0,0.0
+R0095,C0019,C0135,Part-of,0.5,7,9098f28bcb154113b08650d0fc4e24d0,The area of a parallelogram is base times height.,llm_score,0,0.0,0.0,0.0
+R0096,C0020,C0149,Application,0.5,7,9098f28bcb154113b08650d0fc4e24d0,The area of a rectangle is base times height.,llm_score,1,0.0,0.0,0.0
+R0097,C0021,C0031,Part-of,0.5,8,3ac636c3c381431686b716d16fdd7b67,The area of a sector is the arc measure divided by 360 times the area of the circle.,llm_score,1,0.0,0.0,0.0
+R0098,C0021,C0164,Application,0.5,8,3ac636c3c381431686b716d16fdd7b67,The area of a sector is the arc measure divided by 360 times the area of the circle.,llm_score,1,0.0,0.0,0.0
+R0099,C0022,C0192,Part-of,0.5,7,9098f28bcb154113b08650d0fc4e24d0,The area of a triangle is one half base times height.,llm_score,1,0.0,0.0,0.0
+R0100,C0023,C0096,Part-of,0.5,5,197227d853e24995b614c129989cd5dd,6.5 Trapezoids and Kites A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases.,llm_score,0,0.0,0.0,0.0
+R0101,C0023,C0135,Part-of,0.5,5,197227d853e24995b614c129989cd5dd,6.5 Trapezoids and Kites A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases.,llm_score,0,0.0,0.0,0.0
+R0102,C0023,C0144,Part-of,0.5,5,197227d853e24995b614c129989cd5dd,A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases.,llm_score,1,0.0,0.0,0.0
+R0103,C0023,C0191,Part-of,0.5,5,197227d853e24995b614c129989cd5dd,A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases.,llm_score,3,0.0,0.0,0.0
+R0104,C0024,C0052,Part-of,0.5,2,87d16fb486a94387a636fcf8833ba624,"A biconditional statement is when a conditional and its converse are both true, written as p if and only if q.",llm_score,1,0.0,0.0,0.0
+R0105,C0025,C0067,Application,1.0,5,1d6ee60f93884c569bff943cb697d01d,The diagonals of a parallelogram bisect each other.,llm_score,3,0.0,0.0,0.0
+R0106,C0025,C0123,Extension,0.5,5,1d6ee60f93884c569bff943cb697d01d,The diagonals of a parallelogram bisect each other.,llm_score,2,0.0,0.0,0.0
+R0107,C0025,C0154,Application,0.5,5,1d6ee60f93884c569bff943cb697d01d,The diagonals of a rhombus are perpendicular bisectors of each other and bisect opposite angles.,llm_score,1,0.0,0.0,0.0
+R0108,C0026,C0031,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,A circle is the set of all points equidistant from a center point.,llm_score,2,0.0,0.0,0.0
+R0109,C0026,C0107,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,The centroid is the point of concurrency of the medians and is the center of gravity of a triangle.,llm_score,1,0.0,0.0,0.0
+R0110,C0026,C0145,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,The radius is a segment from the center to a point on the circle.,llm_score,1,0.0,0.0,0.0
+R0111,C0026,C0174,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,A sphere is the set of all points in space equidistant from a center.,llm_score,1,0.0,0.0,0.0
+R0112,C0026,C0192,Part-of,1.0,5,7aacd8be06e744f6906398afdf7267c1,The centroid is the point of concurrency of the medians and is the center of gravity of a triangle.,llm_score,1,0.0,0.0,0.0
+R0113,C0027,C0159,Part-of,0.5,9,ff0f80330fbe4b8d8a1d3cc75447d5dc,A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation.,llm_score,1,0.0,0.0,0.0
+R0114,C0028,C0008,Part-of,1.0,7,f5e96813edbe4ea39a9392f581c76d6e,A central angle is an angle formed by two radii.,llm_score,2,0.0,0.0,0.0
+R0115,C0028,C0031,Part-of,1.0,7,f5e96813edbe4ea39a9392f581c76d6e,A central angle is an angle formed by two radii.,llm_score,0,0.0,0.0,0.0
+R0116,C0028,C0088,Application,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.,llm_score,1,0.0,0.0,0.0
+R0117,C0029,C0040,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,The centroid is the point of concurrency of the medians and is the center of gravity of a triangle.,llm_score,1,0.0,0.0,0.0
+R0118,C0029,C0107,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,The centroid is the point of concurrency of the medians and is the center of gravity of a triangle.,llm_score,2,0.0,0.0,0.0
+R0119,C0029,C0133,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,The centroid is the point of concurrency of the medians and is the center of gravity of a triangle.,llm_score,1,0.0,0.0,0.0
+R0120,C0029,C0192,Part-of,1.0,5,7aacd8be06e744f6906398afdf7267c1,The centroid is the point of concurrency of the medians and is the center of gravity of a triangle.,llm_score,1,0.0,0.0,0.0
+R0121,C0030,C0031,Part-of,1.0,7,d5758ee3848d44b79c306cfeb2cda0b8,A chord is a segment whose endpoints are on the circle.,llm_score,3,0.0,0.0,0.0
+R0122,C0031,C0032,Part-of,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,9.1 Parts of Circles and Tangent Lines A circle is the set of all points equidistant from a center point.,llm_score,0,0.0,0.0,0.0
+R0123,C0031,C0069,Prerequisite,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,9.1 Parts of Circles and Tangent Lines A circle is the set of all points equidistant from a center point.,llm_score,0,0.0,0.0,0.0
+R0124,C0031,C0088,Application,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,9.1 Parts of Circles and Tangent Lines A circle is the set of all points equidistant from a center point.,llm_score,0,0.0,0.0,0.0
+R0125,C0031,C0100,Part-of,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,9.1 Parts of Circles and Tangent Lines,llm_score,3,0.0,0.0,0.0
+R0126,C0031,C0113,Part-of,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,9.1 Parts of Circles and Tangent Lines A circle is the set of all points equidistant from a center point.,llm_score,0,0.0,0.0,0.0
+R0127,C0031,C0164,Part-of,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,10.5 Areas of Circles and Sectors,llm_score,2,0.0,0.0,0.0
+R0128,C0031,C0167,Part-of,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,The radius is a segment from the center to a point on the circle.,llm_score,3,0.0,0.0,0.0
+R0129,C0031,C0186,Part-of,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,9.1 Parts of Circles and Tangent Lines,llm_score,2,0.0,0.0,0.0
+R0130,C0032,C0127,Part-of,0.5,4,09fd0331b23347df92e307d6c234cd90,The circumcenter is the point of concurrency of the perpendicular bisectors and is equidistant from each vertex.,llm_score,1,0.0,0.0,0.0
+R0131,C0032,C0133,Part-of,0.5,4,09fd0331b23347df92e307d6c234cd90,The circumcenter is the point of concurrency of the perpendicular bisectors and is equidistant from each vertex.,llm_score,1,0.0,0.0,0.0
+R0132,C0032,C0200,Part-of,0.5,4,09fd0331b23347df92e307d6c234cd90,The circumcenter is the point of concurrency of the perpendicular bisectors and is equidistant from each vertex.,llm_score,1,0.0,0.0,0.0
+R0133,C0033,C0068,Part-of,0.5,8,2ed318dd21eb4e56a9cf1fdcc353e91e,The circumference of a circle is two pi times the radius or pi times the diameter.,llm_score,1,0.0,0.0,0.0
+R0134,C0033,C0145,Part-of,0.5,8,2ed318dd21eb4e56a9cf1fdcc353e91e,The circumference of a circle is two pi times the radius or pi times the diameter.,llm_score,1,0.0,0.0,0.0
+R0135,C0034,C0135,Part-of,0.5,1,ec40a067f8b44fd0bf2897f10825b86a,CK-12 Basic Geometry Concepts,llm_score,0,0.0,0.0,0.0
+R0136,C0035,C0179,Application,0.5,3,4b0832ab2c974b7f98bf7062b01405cd,"The co-interior angles theorem states that if two parallel lines are cut by a transversal, then co-interior angles are supplementary.",llm_score,1,0.0,0.0,0.0
+R0137,C0035,C0190,Application,0.5,3,4b0832ab2c974b7f98bf7062b01405cd,"The co-interior angles theorem states that if two parallel lines are cut by a transversal, then co-interior angles are supplementary.",llm_score,1,0.0,0.0,0.0
+R0138,C0036,C0100,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,Collinear points are points that lie on the same line.,llm_score,1,0.0,0.0,0.0
+R0139,C0037,C0066,Prerequisite,0.5,1,7be8bb8f22d04966842fe3b83805e696,Complementary angles are two angles whose measures sum to 90 degrees.,llm_score,1,0.0,0.0,0.0
+R0140,C0038,C0173,Part-of,0.5,8,27143cd6470c42acbcfa4f42aaad96fa,11.6 Composite Solids,llm_score,2,0.0,0.0,0.0
+R0141,C0039,C0083,Part-of,0.5,2,87d16fb486a94387a636fcf8833ba624,A conditional statement is a logical statement that has a hypothesis and a conclusion in the form if p then q.,llm_score,3,0.0,0.0,0.0
+R0142,C0040,C0026,Part-of,0.5,4,09fd0331b23347df92e307d6c234cd90,The centroid is the point of concurrency of the medians and is the center of gravity of a triangle.,llm_score,1,0.0,0.0,0.0
+R0143,C0040,C0031,Part-of,0.5,4,09fd0331b23347df92e307d6c234cd90,9.1 Parts of Circles and Tangent Lines A circle is the set of all points equidistant from a center point.,llm_score,0,0.0,0.0,0.0
+R0144,C0040,C0084,Extension,0.5,4,09fd0331b23347df92e307d6c234cd90,The incenter is the point of concurrency of the angle bisectors and is equidistant from each side.,llm_score,1,0.0,0.0,0.0
+R0145,C0040,C0120,Part-of,0.5,4,09fd0331b23347df92e307d6c234cd90,The orthocenter is the point of concurrency of the altitudes.,llm_score,1,0.0,0.0,0.0
+R0146,C0040,C0127,Part-of,0.5,4,09fd0331b23347df92e307d6c234cd90,The circumcenter is the point of concurrency of the perpendicular bisectors and is equidistant from each vertex.,llm_score,1,0.0,0.0,0.0
+R0147,C0040,C0200,Part-of,0.5,4,09fd0331b23347df92e307d6c234cd90,The circumcenter is the point of concurrency of the perpendicular bisectors and is equidistant from each vertex.,llm_score,1,0.0,0.0,0.0
+R0148,C0041,C0039,Part-of,0.5,2,87d16fb486a94387a636fcf8833ba624,A conditional statement is a logical statement that has a hypothesis and a conclusion in the form if p then q.,llm_score,1,0.0,0.0,0.0
+R0149,C0041,C0083,Part-of,0.5,2,87d16fb486a94387a636fcf8833ba624,A conditional statement is a logical statement that has a hypothesis and a conclusion in the form if p then q.,llm_score,1,0.0,0.0,0.0
+R0150,C0042,C0135,Part-of,0.5,8,7b42a454706f4a97abae35fd1f3df35f,11.4 Pyramids and Cones The lateral area of a regular pyramid is one half times the perimeter of the base times the slant height.,llm_score,0,0.0,0.0,0.0
+R0151,C0042,C0141,Extension,0.5,8,7b42a454706f4a97abae35fd1f3df35f,11.4 Pyramids and Cones,llm_score,1,0.0,0.0,0.0
+R0152,C0043,C0044,Prerequisite,0.5,4,b16d26694183449c8deb7556733374f4,"The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",llm_score,5,0.0,0.0,0.0
+R0153,C0043,C0192,Application,1.0,4,b16d26694183449c8deb7556733374f4,4.3 Triangle Congruence using SSS and SAS,llm_score,7,0.0,0.0,0.0
+R0154,C0044,C0045,Similarity,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,Congruent arcs have equal measures and are in the same circle.,llm_score,1,0.0,0.0,0.0
+R0155,C0044,C0046,Extension,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,Congruent polygons are polygons where all corresponding parts are congruent.,llm_score,1,0.0,0.0,0.0
+R0156,C0044,C0047,Extension,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,Congruent segments are segments that have the same length.,llm_score,2,0.0,0.0,0.0
+R0157,C0044,C0080,Prerequisite,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",llm_score,1,0.0,0.0,0.0
+R0158,C0044,C0082,Prerequisite,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,"The hypotenuse leg congruence theorem applies to right triangles and states that if the hypotenuse and a leg are congruent, then the triangles are congruent.",llm_score,1,0.0,0.0,0.0
+R0159,C0044,C0094,Application,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,An isosceles triangle has at least two congruent sides.,llm_score,2,0.0,0.0,0.0
+R0160,C0044,C0095,Application,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,"The isosceles triangle theorem states that if two sides of a triangle are congruent, then the base angles opposite those sides are congruent.",llm_score,1,0.0,0.0,0.0
+R0161,C0044,C0109,Application,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,The midpoint of a segment is the point that divides it into two congruent segments.,llm_score,1,0.0,0.0,0.0
+R0162,C0044,C0133,Extension,0.85,7,d5758ee3848d44b79c306cfeb2cda0b8,The midpoint of a segment is the point that divides it into two congruent segments.,llm_score,2,0.0,0.0,0.0
+R0163,C0044,C0134,Application,0.925,7,d5758ee3848d44b79c306cfeb2cda0b8,Two tangent segments from the same external point are congruent.,llm_score,0,0.0,0.0,0.0
+R0164,C0044,C0154,Prerequisite,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,A rhombus is a parallelogram with four congruent sides.,llm_score,1,0.0,0.0,0.0
+R0165,C0044,C0170,Prerequisite,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,Similar polygons have congruent corresponding angles and proportional corresponding sides.,llm_score,1,0.0,0.0,0.0
+R0166,C0044,C0184,Application,0.95,7,d5758ee3848d44b79c306cfeb2cda0b8,Two tangent segments from the same external point are congruent.,llm_score,0,0.0,0.0,0.0
+R0167,C0044,C0186,Application,0.95,7,d5758ee3848d44b79c306cfeb2cda0b8,Two tangent segments from the same external point are congruent.,llm_score,1,0.0,0.0,0.0
+R0168,C0044,C0201,Similarity,0.8,7,d5758ee3848d44b79c306cfeb2cda0b8,Vertical angles are always congruent.,llm_score,1,0.0,0.0,0.0
+R0169,C0045,C0031,Extension,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,Congruent arcs have equal measures and are in the same circle.,llm_score,1,0.0,0.0,0.0
+R0170,C0046,C0135,Part-of,0.5,4,5f50a70799e04fb580ec025fdd972c76,Congruent polygons are polygons where all corresponding parts are congruent.,llm_score,1,0.0,0.0,0.0
+R0171,C0047,C0108,Part-of,0.5,1,ae58cd97802c47ce8481319605ff5e5e,The midpoint of a segment is the point that divides it into two congruent segments.,llm_score,1,0.0,0.0,0.0
+R0172,C0047,C0109,Part-of,0.5,1,ae58cd97802c47ce8481319605ff5e5e,The midpoint of a segment is the point that divides it into two congruent segments.,llm_score,1,0.0,0.0,0.0
+R0173,C0047,C0167,Part-of,0.5,1,ae58cd97802c47ce8481319605ff5e5e,Congruent segments are segments that have the same length.,llm_score,2,0.0,0.0,0.0
+R0174,C0048,C0044,Part-of,0.5,2,359afd06a29d48a2920c5a35ac7b1780,An equilateral triangle has three congruent sides.,llm_score,5,0.0,0.0,0.0
+R0175,C0048,C0094,Part-of,0.5,2,359afd06a29d48a2920c5a35ac7b1780,An isosceles triangle has at least two congruent sides.,llm_score,1,0.0,0.0,0.0
+R0176,C0048,C0162,Prerequisite,0.5,2,359afd06a29d48a2920c5a35ac7b1780,A scalene triangle has no congruent sides.,llm_score,1,0.0,0.0,0.0
+R0177,C0048,C0192,Part-of,0.5,2,359afd06a29d48a2920c5a35ac7b1780,An equilateral triangle has three congruent sides.,llm_score,3,0.0,0.0,0.0
+R0178,C0049,C0057,Application,0.5,4,5f50a70799e04fb580ec025fdd972c76,The corresponding parts of congruent triangles are congruent is abbreviated CPCTC.,llm_score,1,0.0,0.0,0.0
+R0179,C0049,C0061,Application,0.5,4,5f50a70799e04fb580ec025fdd972c76,The corresponding parts of congruent triangles are congruent is abbreviated CPCTC.,llm_score,1,0.0,0.0,0.0
+R0180,C0050,C0060,Application,0.5,2,40ea510db83f452c8eaabb11432ff135,A counterexample is a specific case that proves a conjecture false.,llm_score,1,0.0,0.0,0.0
+R0181,C0050,C0086,Application,0.5,2,40ea510db83f452c8eaabb11432ff135,Inductive reasoning uses specific examples to make a general conclusion called a conjecture.,llm_score,1,0.0,0.0,0.0
+R0182,C0053,C0132,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,Coplanar points are points that lie on the same plane.,llm_score,1,0.0,0.0,0.0
+R0183,C0054,C0008,Application,0.5,3,4d5c78a38a074a55a20feff5b9932dc0,The corollary states that each angle of an equilateral triangle measures 60 degrees.,llm_score,1,0.0,0.0,0.0
+R0184,C0054,C0066,Application,0.5,3,4d5c78a38a074a55a20feff5b9932dc0,The corollary states that each angle of an equilateral triangle measures 60 degrees.,llm_score,1,0.0,0.0,0.0
+R0185,C0054,C0073,Application,0.5,3,4d5c78a38a074a55a20feff5b9932dc0,The corollary states that each angle of an equilateral triangle measures 60 degrees.,llm_score,1,0.0,0.0,0.0
+R0186,C0055,C0056,Extension,0.5,3,41c2869b034e4f70bc28b85b4f3a2424,"The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.",llm_score,2,0.0,0.0,0.0
+R0187,C0055,C0091,Application,1.0,3,41c2869b034e4f70bc28b85b4f3a2424,Corresponding angles are in the same position at each intersection.,llm_score,1,0.0,0.0,0.0
+R0188,C0055,C0105,Application,0.5,3,41c2869b034e4f70bc28b85b4f3a2424,Corresponding angles is in the same position at each intersection,llm_score,0,0.0,0.0,0.0
+R0189,C0055,C0190,Application,0.5,3,41c2869b034e4f70bc28b85b4f3a2424,"The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.",llm_score,2,0.0,0.0,0.0
+R0190,C0056,C0044,Application,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,"The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.",llm_score,2,0.0,0.0,0.0
+R0191,C0056,C0052,Application,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,"The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel.",llm_score,1,0.0,0.0,0.0
+R0192,C0056,C0100,Application,1.0,3,6bb4cc1779dc4bde89d12e9a20c02b0e,"The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.",llm_score,2,0.0,0.0,0.0
+R0193,C0056,C0105,Application,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,"The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel.",llm_score,0,0.0,0.0,0.0
+R0194,C0056,C0190,Application,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,"The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.",llm_score,2,0.0,0.0,0.0
+R0195,C0057,C0046,Prerequisite,0.5,4,5f50a70799e04fb580ec025fdd972c76,Congruent polygons are polygons where all corresponding parts are congruent.,llm_score,1,0.0,0.0,0.0
+R0196,C0057,C0061,Application,0.5,4,5f50a70799e04fb580ec025fdd972c76,The corresponding parts of congruent triangles are congruent is abbreviated CPCTC.,llm_score,1,0.0,0.0,0.0
+R0197,C0057,C0135,Part-of,0.5,4,5f50a70799e04fb580ec025fdd972c76,Congruent polygons are polygons where all corresponding parts are congruent.,llm_score,1,0.0,0.0,0.0
+R0198,C0057,C0192,Application,0.95,4,5f50a70799e04fb580ec025fdd972c76,The corresponding parts of congruent triangles are congruent is abbreviated CPCTC.,llm_score,3,0.0,0.0,0.0
+R0199,C0058,C0049,Prerequisite,0.5,4,5f50a70799e04fb580ec025fdd972c76,Two triangles are congruent if their corresponding sides and angles are congruent.,llm_score,0,0.0,0.0,0.0
+R0200,C0058,C0135,Similarity,0.825,4,5f50a70799e04fb580ec025fdd972c76,Similar polygons have congruent corresponding angles and proportional corresponding sides.,llm_score,2,0.0,0.0,0.0
+R0201,C0061,C0044,Application,0.5,4,5f50a70799e04fb580ec025fdd972c76,The corresponding parts of congruent triangles are congruent is abbreviated CPCTC.,llm_score,1,0.0,0.0,0.0
+R0202,C0061,C0192,Application,0.5,4,5f50a70799e04fb580ec025fdd972c76,The corresponding parts of congruent triangles are congruent is abbreviated CPCTC.,llm_score,1,0.0,0.0,0.0
+R0203,C0062,C0139,Prerequisite,0.5,5,3bfb7d82fd44482e81b027e92f1d6f26,The cross products of a proportion are equal.,llm_score,1,0.0,0.0,0.0
+R0204,C0063,C0091,Part-of,0.5,8,5aee391c41904a7fab572e251b1fd555,A cross section is the intersection of a solid with a plane.,llm_score,1,0.0,0.0,0.0
+R0205,C0063,C0132,Application,0.5,8,5aee391c41904a7fab572e251b1fd555,A cross section is the intersection of a solid with a plane.,llm_score,1,0.0,0.0,0.0
+R0206,C0063,C0173,Application,0.5,8,5aee391c41904a7fab572e251b1fd555,A cross section is the intersection of a solid with a plane.,llm_score,1,0.0,0.0,0.0
+R0207,C0064,C0137,Extension,0.95,8,56a537c6fa044aeb868d83ebedf69863,11.3 Prisms and Cylinders,llm_score,2,0.0,0.0,0.0
+R0208,C0064,C0203,Application,0.5,8,56a537c6fa044aeb868d83ebedf69863,The volume of a cylinder is pi times radius squared times height.,llm_score,1,0.0,0.0,0.0
+R0209,C0066,C0006,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,"The alternate interior angles theorem states that if two parallel lines are cut by a transversal, then alternate interior angles are congruent.",llm_score,0,0.0,0.0,0.0
+R0210,C0066,C0009,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,"The angle addition postulate states that if D is in the interior of angle ABC, then angle ABD plus angle DBC equals angle ABC.",llm_score,0,0.0,0.0,0.0
+R0211,C0066,C0013,Prerequisite,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Acute angles measure less than 90 degrees.,llm_score,4,0.0,0.0,0.0
+R0212,C0066,C0021,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,The area of a sector is the arc measure divided by 360 times the area of the circle.,llm_score,0,0.0,0.0,0.0
+R0213,C0066,C0027,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation.,llm_score,0,0.0,0.0,0.0
+R0214,C0066,C0028,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,A central angle is an angle formed by two radii.,llm_score,0,0.0,0.0,0.0
+R0215,C0066,C0031,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,9.1 Parts of Circles and Tangent Lines A circle is the set of all points equidistant from a center point.,llm_score,0,0.0,0.0,0.0
+R0216,C0066,C0045,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Congruent arcs have equal measures and are in the same circle.,llm_score,0,0.0,0.0,0.0
+R0217,C0066,C0075,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,The exterior angle sum of any convex polygon is always 360 degrees.,llm_score,1,0.0,0.0,0.0
+R0218,C0066,C0076,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,An angle is measured in degrees.,llm_score,0,0.0,0.0,0.0
+R0219,C0066,C0089,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,The interior angle sum of a polygon with n sides is n minus 2 times 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0220,C0066,C0095,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,An angle is measured in degrees.,llm_score,0,0.0,0.0,0.0
+R0221,C0066,C0106,Extension,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,A major arc is greater than 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0222,C0066,C0113,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,A minor arc is less than 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0223,C0066,C0115,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Obtuse angles measure between 90 and 180 degrees.,llm_score,2,0.0,0.0,0.0
+R0224,C0066,C0116,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Obtuse angles measure between 90 and 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0225,C0066,C0117,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,An obtuse triangle has one angle greater than 90 degrees.,llm_score,1,0.0,0.0,0.0
+R0226,C0066,C0140,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,An angle is measured in degrees.,llm_score,0,0.0,0.0,0.0
+R0227,C0066,C0155,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Right angles measure exactly 90 degrees.,llm_score,1,0.0,0.0,0.0
+R0228,C0066,C0158,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,A figure has rotational symmetry if it maps onto itself after a rotation of less than 360 degrees.,llm_score,1,0.0,0.0,0.0
+R0229,C0066,C0168,Extension,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,A semicircle is exactly 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0230,C0066,C0176,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Straight angles measure exactly 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0231,C0066,C0178,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,The sum of interior angles of a polygon with n sides is (n minus 2) times 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0232,C0066,C0180,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Supplementary angles are two angles whose measures sum to 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0233,C0066,C0192,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,An acute triangle has all angles less than 90 degrees.,llm_score,7,0.0,0.0,0.0
+R0234,C0066,C0193,Application,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,The triangle angle sum theorem states that the sum of the angles in any triangle is 180 degrees.,llm_score,2,0.0,0.0,0.0
+R0235,C0067,C0135,Part-of,0.5,5,ab0ae1e2b0fb4342a2255056a72784f9,A diagonal is a segment connecting two non-adjacent vertices.,llm_score,0,0.0,0.0,0.0
+R0236,C0067,C0149,Application,0.5,5,ab0ae1e2b0fb4342a2255056a72784f9,The diagonals of a rectangle are congruent.,llm_score,1,0.0,0.0,0.0
+R0237,C0067,C0154,Part-of,0.5,5,ab0ae1e2b0fb4342a2255056a72784f9,The diagonals of a rhombus are perpendicular bisectors of each other and bisect opposite angles.,llm_score,2,0.0,0.0,0.0
+R0238,C0067,C0167,Part-of,0.5,5,ab0ae1e2b0fb4342a2255056a72784f9,A diagonal is a segment connecting two non-adjacent vertices.,llm_score,1,0.0,0.0,0.0
+R0239,C0067,C0202,Part-of,0.5,5,ab0ae1e2b0fb4342a2255056a72784f9,A diagonal is a segment connecting two non-adjacent vertices.,llm_score,1,0.0,0.0,0.0
+R0240,C0068,C0026,Part-of,1.0,7,d5758ee3848d44b79c306cfeb2cda0b8,The diameter is a chord passing through the center.,llm_score,1,0.0,0.0,0.0
+R0241,C0068,C0030,Part-of,1.0,7,d5758ee3848d44b79c306cfeb2cda0b8,The diameter is a chord passing through the center.,llm_score,2,0.0,0.0,0.0
+R0242,C0068,C0031,Part-of,0.95,7,d5758ee3848d44b79c306cfeb2cda0b8,The circumference of a circle is two pi times the radius or pi times the diameter.,llm_score,1,0.0,0.0,0.0
+R0243,C0068,C0167,Part-of,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,The diameter is a chord passing through the center.,llm_score,0,0.0,0.0,0.0
+R0244,C0069,C0093,Application,0.5,1,ae58cd97802c47ce8481319605ff5e5e,"Isometries preserve angle measure, betweenness, collinearity, and distance.",llm_score,1,0.0,0.0,0.0
+R0245,C0069,C0189,Application,0.5,1,ae58cd97802c47ce8481319605ff5e5e,A translation slides every point of a figure the same distance in the same direction.,llm_score,1,0.0,0.0,0.0
+R0246,C0070,C0069,Extension,0.5,1,ae58cd97802c47ce8481319605ff5e5e,The distance between two points is the absolute value of the difference of the coordinates.,llm_score,1,0.0,0.0,0.0
+R0247,C0070,C0133,Application,0.5,1,ae58cd97802c47ce8481319605ff5e5e,The distance between two points is the absolute value of the difference of the coordinates.,llm_score,1,0.0,0.0,0.0
+R0248,C0070,C0192,Application,0.5,1,ae58cd97802c47ce8481319605ff5e5e,distance between two points is absolute value of the difference of the coordinates,llm_score,0,0.0,0.0,0.0
+R0249,C0071,C0100,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A line segment is a part of a line consisting of two endpoints and all points between them.,llm_score,3,0.0,0.0,0.0
+R0250,C0071,C0102,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A line segment is a part of a line consisting of two endpoints and all points between them.,llm_score,2,0.0,0.0,0.0
+R0251,C0071,C0127,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.,llm_score,1,0.0,0.0,0.0
+R0252,C0071,C0128,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.,llm_score,1,0.0,0.0,0.0
+R0253,C0071,C0148,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A ray is part of a line that starts at one endpoint and extends infinitely in one direction.,llm_score,3,0.0,0.0,0.0
+R0254,C0071,C0167,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A line segment is a part of a line consisting of two endpoints and all points between them.,llm_score,4,0.0,0.0,0.0
+R0255,C0071,C0200,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,An angle is formed by two rays with a common endpoint called the vertex.,llm_score,1,0.0,0.0,0.0
+R0256,C0072,C0073,Part-of,0.5,4,a5012533b6d84dfe93c401fd79de3ce3,An equilateral triangle is also equiangular.,llm_score,1,0.0,0.0,0.0
+R0257,C0072,C0192,Part-of,0.5,4,a5012533b6d84dfe93c401fd79de3ce3,An equilateral triangle is also equiangular.,llm_score,1,0.0,0.0,0.0
+R0258,C0073,C0044,Prerequisite,0.5,4,a5012533b6d84dfe93c401fd79de3ce3,An equilateral triangle has three congruent sides.,llm_score,1,0.0,0.0,0.0
+R0259,C0073,C0048,Part-of,0.5,4,a5012533b6d84dfe93c401fd79de3ce3,An equilateral triangle has three congruent sides.,llm_score,1,0.0,0.0,0.0
+R0260,C0073,C0094,Part-of,0.5,4,a5012533b6d84dfe93c401fd79de3ce3,"4.5 Isosceles and Equilateral Triangles The isosceles triangle theorem states that if two sides of a triangle are congruent, then the base angles opposite those sides are congruent.",llm_score,0,0.0,0.0,0.0
+R0261,C0073,C0095,Extension,0.5,4,a5012533b6d84dfe93c401fd79de3ce3,"4.5 Isosceles and Equilateral Triangles The isosceles triangle theorem states that if two sides of a triangle are congruent, then the base angles opposite those sides are congruent.",llm_score,0,0.0,0.0,0.0
+R0262,C0073,C0192,Part-of,0.5,4,a5012533b6d84dfe93c401fd79de3ce3,An equilateral triangle has three congruent sides.,llm_score,5,0.0,0.0,0.0
+R0263,C0074,C0008,Application,0.9,3,4d5c78a38a074a55a20feff5b9932dc0,Alternate exterior angles are outside the lines on opposite sides of the transversal.,llm_score,4,0.0,0.0,0.0
+R0264,C0074,C0075,Extension,0.5,3,4d5c78a38a074a55a20feff5b9932dc0,The exterior angle sum of any convex polygon is always 360 degrees.,llm_score,1,0.0,0.0,0.0
+R0265,C0074,C0076,Extension,0.5,3,4d5c78a38a074a55a20feff5b9932dc0,"The alternate exterior angles theorem states that if two parallel lines are cut by a transversal, then alternate exterior angles are congruent.",llm_score,2,0.0,0.0,0.0
+R0266,C0074,C0090,Application,0.5,3,4d5c78a38a074a55a20feff5b9932dc0,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.",llm_score,1,0.0,0.0,0.0
+R0267,C0074,C0153,Part-of,0.5,3,4d5c78a38a074a55a20feff5b9932dc0,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.",llm_score,1,0.0,0.0,0.0
+R0268,C0074,C0192,Application,1.0,3,4d5c78a38a074a55a20feff5b9932dc0,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.",llm_score,1,0.0,0.0,0.0
+R0269,C0075,C0135,Part-of,0.5,5,ab0ae1e2b0fb4342a2255056a72784f9,The exterior angle sum of any convex polygon is always 360 degrees.,llm_score,1,0.0,0.0,0.0
+R0270,C0076,C0008,Application,0.9,3,4d5c78a38a074a55a20feff5b9932dc0,"The alternate exterior angles theorem states that if two parallel lines are cut by a transversal, then alternate exterior angles are congruent.",llm_score,2,0.0,0.0,0.0
+R0271,C0076,C0090,Application,0.5,3,4d5c78a38a074a55a20feff5b9932dc0,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.",llm_score,1,0.0,0.0,0.0
+R0272,C0076,C0153,Part-of,0.5,3,4d5c78a38a074a55a20feff5b9932dc0,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.",llm_score,1,0.0,0.0,0.0
+R0273,C0076,C0192,Application,1.0,3,4d5c78a38a074a55a20feff5b9932dc0,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.",llm_score,1,0.0,0.0,0.0
+R0274,C0077,C0138,Application,0.5,3,2cf2f45f1fc949329108d3325f5d1064,A flowchart proof uses boxes and arrows.,llm_score,1,0.0,0.0,0.0
+R0275,C0078,C0100,Part-of,1.0,9,09d4c68126cc4304a30402eff9733bf5,A glide reflection is the composition of a reflection and a translation parallel to the line of reflection.,llm_score,1,0.0,0.0,0.0
+R0276,C0078,C0101,Part-of,0.5,9,09d4c68126cc4304a30402eff9733bf5,A glide reflection is the composition of a reflection and a translation parallel to the line of reflection.,llm_score,1,0.0,0.0,0.0
+R0277,C0078,C0150,Part-of,0.5,9,09d4c68126cc4304a30402eff9733bf5,A glide reflection is the composition of a reflection and a translation parallel to the line of reflection.,llm_score,1,0.0,0.0,0.0
+R0278,C0078,C0187,Application,0.5,9,09d4c68126cc4304a30402eff9733bf5,A glide reflection is the composition of a reflection and a translation parallel to the line of reflection.,llm_score,0,0.0,0.0,0.0
+R0279,C0078,C0189,Part-of,0.5,9,09d4c68126cc4304a30402eff9733bf5,A glide reflection is the composition of a reflection and a translation parallel to the line of reflection.,llm_score,1,0.0,0.0,0.0
+R0280,C0079,C0135,Part-of,0.95,2,4d5833f69f7b4b4f8d524e4a801423ba,A polygon is a closed plane figure with three or more straight sides.,llm_score,0,0.0,0.0,0.0
+R0281,C0080,C0008,Application,0.5,5,c26781d738554c5aa6efa5a95d548736,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",llm_score,1,0.0,0.0,0.0
+R0282,C0080,C0085,Application,1.0,5,c26781d738554c5aa6efa5a95d548736,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",llm_score,1,0.0,0.0,0.0
+R0283,C0080,C0192,Application,0.5,5,c26781d738554c5aa6efa5a95d548736,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",llm_score,1,0.0,0.0,0.0
+R0284,C0081,C0043,Application,0.5,4,18ea3e5bc9394c7d81f9ed3aea91d213,"The hypotenuse leg congruence theorem applies to right triangles and states that if the hypotenuse and a leg are congruent, then the triangles are congruent.",llm_score,1,0.0,0.0,0.0
+R0285,C0081,C0082,Prerequisite,0.5,4,18ea3e5bc9394c7d81f9ed3aea91d213,"The hypotenuse leg congruence theorem applies to right triangles and states that if the hypotenuse and a leg are congruent, then the triangles are congruent.",llm_score,1,0.0,0.0,0.0
+R0286,C0081,C0142,Application,0.5,4,18ea3e5bc9394c7d81f9ed3aea91d213,"The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs.",llm_score,1,0.0,0.0,0.0
+R0287,C0081,C0156,Application,0.5,4,18ea3e5bc9394c7d81f9ed3aea91d213,"The hypotenuse leg congruence theorem applies to right triangles and states that if the hypotenuse and a leg are congruent, then the triangles are congruent.",llm_score,2,0.0,0.0,0.0
+R0288,C0082,C0043,Application,0.5,4,18ea3e5bc9394c7d81f9ed3aea91d213,"The hypotenuse leg congruence theorem applies to right triangles and states that if the hypotenuse and a leg are congruent, then the triangles are congruent.",llm_score,1,0.0,0.0,0.0
+R0289,C0082,C0156,Application,0.5,4,18ea3e5bc9394c7d81f9ed3aea91d213,"The hypotenuse leg congruence theorem applies to right triangles and states that if the hypotenuse and a leg are congruent, then the triangles are congruent.",llm_score,1,0.0,0.0,0.0
+R0290,C0082,C0192,Application,1.0,4,18ea3e5bc9394c7d81f9ed3aea91d213,"The hypotenuse leg congruence theorem applies to right triangles and states that if the hypotenuse and a leg are congruent, then the triangles are congruent.",llm_score,1,0.0,0.0,0.0
+R0291,C0083,C0052,Application,0.5,2,87d16fb486a94387a636fcf8833ba624,The converse is formed by switching the hypothesis and conclusion.,llm_score,1,0.0,0.0,0.0
+R0292,C0084,C0133,Prerequisite,0.5,4,09fd0331b23347df92e307d6c234cd90,The incenter is the point of concurrency of the angle bisectors and is equidistant from each side.,llm_score,1,0.0,0.0,0.0
+R0293,C0085,C0192,Application,0.5,4,b16d26694183449c8deb7556733374f4,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",llm_score,3,0.0,0.0,0.0
+R0294,C0086,C0039,Application,0.5,2,40ea510db83f452c8eaabb11432ff135,Inductive reasoning uses specific examples to make a general conclusion called a conjecture.,llm_score,1,0.0,0.0,0.0
+R0295,C0087,C0028,Extension,0.5,7,5c85781fee8b46f7b90de4da57547425,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.,llm_score,1,0.0,0.0,0.0
+R0296,C0087,C0030,Application,0.5,7,5c85781fee8b46f7b90de4da57547425,An inscribed angle is an angle formed by two chords with the vertex on the circle.,llm_score,1,0.0,0.0,0.0
+R0297,C0087,C0031,Application,0.5,7,5c85781fee8b46f7b90de4da57547425,An inscribed angle is an angle formed by two chords with the vertex on the circle.,llm_score,1,0.0,0.0,0.0
+R0298,C0087,C0088,Application,0.5,7,5c85781fee8b46f7b90de4da57547425,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.,llm_score,1,0.0,0.0,0.0
+R0299,C0087,C0200,Part-of,1.0,7,5c85781fee8b46f7b90de4da57547425,An inscribed angle is an angle formed by two chords with the vertex on the circle.,llm_score,1,0.0,0.0,0.0
+R0300,C0088,C0008,Application,1.0,7,5c85781fee8b46f7b90de4da57547425,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.,llm_score,1,0.0,0.0,0.0
+R0301,C0089,C0090,Extension,0.5,5,ab0ae1e2b0fb4342a2255056a72784f9,The interior angle sum of a polygon with n sides is n minus 2 times 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0302,C0089,C0135,Prerequisite,0.5,5,ab0ae1e2b0fb4342a2255056a72784f9,The interior angle sum of a polygon with n sides is n minus 2 times 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0303,C0090,C0008,Prerequisite,0.5,2,4d5833f69f7b4b4f8d524e4a801423ba,The sum of interior angles of a polygon with n sides is (n minus 2) times 180 degrees.,llm_score,7,0.0,0.0,0.0
+R0304,C0090,C0066,Application,0.5,2,4d5833f69f7b4b4f8d524e4a801423ba,The sum of interior angles of a polygon with n sides is (n minus 2) times 180 degrees.,llm_score,2,0.0,0.0,0.0
+R0305,C0090,C0135,Prerequisite,0.5,2,4d5833f69f7b4b4f8d524e4a801423ba,The sum of interior angles of a polygon with n sides is (n minus 2) times 180 degrees.,llm_score,2,0.0,0.0,0.0
+R0306,C0091,C0100,Application,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,"An intersection is a point or set of points where lines, planes, segments or rays meet.",llm_score,1,0.0,0.0,0.0
+R0307,C0091,C0132,Application,1.0,1,688ffd7c0bba48fdb8095cf4d1697b29,"An intersection is a point or set of points where lines, planes, segments or rays meet.",llm_score,2,0.0,0.0,0.0
+R0308,C0091,C0133,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,"An intersection is a point or set of points where lines, planes, segments or rays meet.",llm_score,1,0.0,0.0,0.0
+R0309,C0092,C0039,Application,0.5,2,87d16fb486a94387a636fcf8833ba624,The inverse negates both the hypothesis and conclusion.,llm_score,1,0.0,0.0,0.0
+R0310,C0092,C0083,Application,1.0,2,87d16fb486a94387a636fcf8833ba624,The inverse negates both the hypothesis and conclusion.,llm_score,1,0.0,0.0,0.0
+R0311,C0093,C0150,Application,0.5,9,09d4c68126cc4304a30402eff9733bf5,Reflections are isometries.,llm_score,1,0.0,0.0,0.0
+R0312,C0094,C0095,Application,0.5,2,359afd06a29d48a2920c5a35ac7b1780,"The isosceles triangle theorem states that if two sides of a triangle are congruent, then the base angles opposite those sides are congruent.",llm_score,1,0.0,0.0,0.0
+R0313,C0094,C0192,Part-of,0.5,2,359afd06a29d48a2920c5a35ac7b1780,An isosceles triangle has at least two congruent sides.,llm_score,2,0.0,0.0,0.0
+R0314,C0095,C0008,Application,1.0,4,a5012533b6d84dfe93c401fd79de3ce3,"The isosceles triangle theorem states that if two sides of a triangle are congruent, then the base angles opposite those sides are congruent.",llm_score,1,0.0,0.0,0.0
+R0315,C0095,C0192,Part-of,0.5,4,a5012533b6d84dfe93c401fd79de3ce3,"The isosceles triangle theorem states that if two sides of a triangle are congruent, then the base angles opposite those sides are congruent.",llm_score,1,0.0,0.0,0.0
+R0316,C0096,C0048,Application,0.5,5,197227d853e24995b614c129989cd5dd,A kite has two consecutive pairs of congruent sides.,llm_score,1,0.0,0.0,0.0
+R0317,C0096,C0067,Application,0.5,5,197227d853e24995b614c129989cd5dd,The diagonals of a kite are perpendicular.,llm_score,2,0.0,0.0,0.0
+R0318,C0096,C0144,Prerequisite,0.5,5,197227d853e24995b614c129989cd5dd,6.5 Trapezoids and Kites A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases.,llm_score,0,0.0,0.0,0.0
+R0319,C0096,C0191,Prerequisite,0.5,5,197227d853e24995b614c129989cd5dd,6.5 Trapezoids and Kites,llm_score,2,0.0,0.0,0.0
+R0320,C0097,C0064,Extension,0.5,8,56a537c6fa044aeb868d83ebedf69863,11.3 Prisms and Cylinders The lateral area of a prism is the perimeter of the base times the height.,llm_score,0,0.0,0.0,0.0
+R0321,C0097,C0125,Part-of,0.5,8,56a537c6fa044aeb868d83ebedf69863,The lateral area of a prism is the perimeter of the base times the height.,llm_score,2,0.0,0.0,0.0
+R0322,C0097,C0137,Part-of,0.5,8,56a537c6fa044aeb868d83ebedf69863,The lateral area of a prism is the perimeter of the base times the height.,llm_score,1,0.0,0.0,0.0
+R0323,C0097,C0141,Application,0.5,8,56a537c6fa044aeb868d83ebedf69863,The lateral area of a regular pyramid is one half times the perimeter of the base times the slant height.,llm_score,1,0.0,0.0,0.0
+R0324,C0100,C0006,Application,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,"The alternate interior angles theorem states that if two parallel lines are cut by a transversal, then alternate interior angles are congruent.",llm_score,1,0.0,0.0,0.0
+R0325,C0100,C0035,Prerequisite,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,"The co-interior angles theorem states that if two parallel lines are cut by a transversal, then co-interior angles are supplementary.",llm_score,1,0.0,0.0,0.0
+R0326,C0100,C0069,Application,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,The distance from a point to a line is the length of the perpendicular segment from the point to the line.,llm_score,1,0.0,0.0,0.0
+R0327,C0100,C0070,Application,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,distance between two points is absolute value of the difference of the coordinates,llm_score,0,0.0,0.0,0.0
+R0328,C0100,C0102,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A line segment is a part of a line consisting of two endpoints and all points between them.,llm_score,2,0.0,0.0,0.0
+R0329,C0100,C0104,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A linear pair is two adjacent angles that form a straight line.,llm_score,1,0.0,0.0,0.0
+R0330,C0100,C0127,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A perpendicular bisector is a line perpendicular to a segment at its midpoint.,llm_score,1,0.0,0.0,0.0
+R0331,C0100,C0128,Application,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A line is a straight one-dimensional figure with no thickness that extends infinitely in both directions.,llm_score,0,0.0,0.0,0.0
+R0332,C0100,C0130,Application,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,"The perpendicular transversal theorem states that if a transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other.",llm_score,1,0.0,0.0,0.0
+R0333,C0100,C0148,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A ray is part of a line that starts at one endpoint and extends infinitely in one direction.,llm_score,2,0.0,0.0,0.0
+R0334,C0100,C0150,Application,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A reflection flips a figure over a line called the line of reflection.,llm_score,4,0.0,0.0,0.0
+R0335,C0100,C0160,Application,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A ruler postulate states that the points on a line can be matched with real numbers.,llm_score,1,0.0,0.0,0.0
+R0336,C0100,C0166,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A line is a straight one-dimensional figure with no thickness that extends infinitely in both directions.,llm_score,0,0.0,0.0,0.0
+R0337,C0100,C0167,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A line segment is a part of a line consisting of two endpoints and all points between them.,llm_score,5,0.0,0.0,0.0
+R0338,C0100,C0172,Application,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A slope is the measure of steepness of a line.,llm_score,3,0.0,0.0,0.0
+R0339,C0100,C0184,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,9.1 Parts of Circles and Tangent Lines,llm_score,3,0.0,0.0,0.0
+R0340,C0100,C0186,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,9.1 Parts of Circles and Tangent Lines,llm_score,3,0.0,0.0,0.0
+R0341,C0100,C0187,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A line is a straight one-dimensional figure with no thickness that extends infinitely in both directions.,llm_score,0,0.0,0.0,0.0
+R0342,C0101,C0100,Application,0.5,9,cb4b3b607db9469d81896e28324befc5,A reflection flips a figure over a line called the line of reflection.,llm_score,2,0.0,0.0,0.0
+R0343,C0101,C0150,Part-of,0.5,9,cb4b3b607db9469d81896e28324befc5,A reflection flips a figure over a line called the line of reflection.,llm_score,2,0.0,0.0,0.0
+R0344,C0101,C0187,Application,0.5,9,cb4b3b607db9469d81896e28324befc5,A reflection flips a figure over a line called the line of reflection.,llm_score,0,0.0,0.0,0.0
+R0345,C0102,C0135,Part-of,0.5,1,ae58cd97802c47ce8481319605ff5e5e,A line segment is named by its two endpoints.,llm_score,0,0.0,0.0,0.0
+R0346,C0102,C0167,Part-of,0.5,1,ae58cd97802c47ce8481319605ff5e5e,A line segment is a part of a line consisting of two endpoints and all points between them.,llm_score,2,0.0,0.0,0.0
+R0347,C0105,C0044,Prerequisite,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,Two tangent segments from the same external point are congruent.,llm_score,0,0.0,0.0,0.0
+R0348,C0105,C0052,Extension,0.9,3,6bb4cc1779dc4bde89d12e9a20c02b0e,"The converse states that if two angles of a triangle are congruent, then the opposite sides are congruent.",llm_score,0,0.0,0.0,0.0
+R0349,C0105,C0100,Part-of,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,3.3 Proving Lines Parallel,llm_score,1,0.0,0.0,0.0
+R0350,C0105,C0190,Application,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,"3.3 Proving Lines Parallel The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel.",llm_score,0,0.0,0.0,0.0
+R0351,C0106,C0031,Part-of,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,9.1 Parts of Circles and Tangent Lines A circle is the set of all points equidistant from a center point.,llm_score,0,0.0,0.0,0.0
+R0352,C0107,C0108,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,A median is a segment from a vertex to the midpoint of the opposite side.,llm_score,2,0.0,0.0,0.0
+R0353,C0107,C0133,Extension,0.825,5,7aacd8be06e744f6906398afdf7267c1,The centroid is the point of concurrency of the medians and is the center of gravity of a triangle.,llm_score,1,0.0,0.0,0.0
+R0354,C0107,C0167,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,A median is a segment from a vertex to the midpoint of the opposite side.,llm_score,1,0.0,0.0,0.0
+R0355,C0107,C0192,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,The centroid is the point of concurrency of the medians and is the center of gravity of a triangle.,llm_score,1,0.0,0.0,0.0
+R0356,C0107,C0200,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,A median is a segment from a vertex to the midpoint of the opposite side.,llm_score,2,0.0,0.0,0.0
+R0357,C0108,C0044,Prerequisite,0.5,4,f0d2d3b4d79947ab984f8d6d3770b7f1,The midpoint of a segment is the point that divides it into two congruent segments.,llm_score,1,0.0,0.0,0.0
+R0358,C0108,C0109,Prerequisite,0.5,4,f0d2d3b4d79947ab984f8d6d3770b7f1,The midpoint of a segment is the point that divides it into two congruent segments.,llm_score,1,0.0,0.0,0.0
+R0359,C0108,C0133,Prerequisite,0.5,4,f0d2d3b4d79947ab984f8d6d3770b7f1,The midpoint of a segment is the point that divides it into two congruent segments.,llm_score,1,0.0,0.0,0.0
+R0360,C0108,C0166,Part-of,0.5,4,f0d2d3b4d79947ab984f8d6d3770b7f1,A segment bisector is any figure that intersects a segment at its midpoint.,llm_score,1,0.0,0.0,0.0
+R0361,C0108,C0167,Part-of,0.5,4,f0d2d3b4d79947ab984f8d6d3770b7f1,The midpoint of a segment is the point that divides it into two congruent segments.,llm_score,6,0.0,0.0,0.0
+R0362,C0108,C0192,Part-of,1.0,4,f0d2d3b4d79947ab984f8d6d3770b7f1,A midsegment of a triangle is a segment connecting the midpoints of two sides.,llm_score,1,0.0,0.0,0.0
+R0363,C0109,C0133,Part-of,1.0,1,ae58cd97802c47ce8481319605ff5e5e,The midpoint of a segment is the point that divides it into two congruent segments.,llm_score,1,0.0,0.0,0.0
+R0364,C0109,C0167,Part-of,0.5,1,ae58cd97802c47ce8481319605ff5e5e,The midpoint of a segment is the point that divides it into two congruent segments.,llm_score,1,0.0,0.0,0.0
+R0365,C0110,C0108,Prerequisite,0.5,3,2cf2f45f1fc949329108d3325f5d1064,The midpoint theorem states that if M is the midpoint of segment AB then AM equals one half of AB.,llm_score,1,0.0,0.0,0.0
+R0366,C0110,C0167,Part-of,0.5,3,2cf2f45f1fc949329108d3325f5d1064,The midpoint theorem states that if M is the midpoint of segment AB then AM equals one half of AB.,llm_score,1,0.0,0.0,0.0
+R0367,C0110,C0192,Part-of,0.5,3,2cf2f45f1fc949329108d3325f5d1064,The midpoint theorem states that if M is the midpoint of segment AB then AM equals one half of AB.,llm_score,0,0.0,0.0,0.0
+R0368,C0111,C0108,Part-of,0.5,4,f0d2d3b4d79947ab984f8d6d3770b7f1,A midsegment of a triangle is a segment connecting the midpoints of two sides.,llm_score,1,0.0,0.0,0.0
+R0369,C0111,C0167,Part-of,0.5,4,f0d2d3b4d79947ab984f8d6d3770b7f1,A midsegment of a triangle is a segment connecting the midpoints of two sides.,llm_score,1,0.0,0.0,0.0
+R0370,C0111,C0192,Part-of,1.0,4,f0d2d3b4d79947ab984f8d6d3770b7f1,5.1 Midsegments of Triangles,llm_score,3,0.0,0.0,0.0
+R0371,C0111,C0195,Application,0.5,4,f0d2d3b4d79947ab984f8d6d3770b7f1,The triangle midsegment theorem states that a midsegment is parallel to the third side and half as long as the third side.,llm_score,1,0.0,0.0,0.0
+R0372,C0112,C0108,Part-of,0.5,4,f0d2d3b4d79947ab984f8d6d3770b7f1,A midsegment of a triangle is a segment connecting the midpoints of two sides.,llm_score,1,0.0,0.0,0.0
+R0373,C0112,C0167,Part-of,0.5,4,f0d2d3b4d79947ab984f8d6d3770b7f1,A midsegment of a triangle is a segment connecting the midpoints of two sides.,llm_score,1,0.0,0.0,0.0
+R0374,C0112,C0192,Part-of,1.0,4,f0d2d3b4d79947ab984f8d6d3770b7f1,A midsegment of a triangle is a segment connecting the midpoints of two sides.,llm_score,1,0.0,0.0,0.0
+R0375,C0114,C0173,Application,0.5,8,5aee391c41904a7fab572e251b1fd555,A net is a flat pattern that can be folded to form a solid.,llm_score,1,0.0,0.0,0.0
+R0376,C0115,C0008,Part-of,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Obtuse angles measure between 90 and 180 degrees.,llm_score,2,0.0,0.0,0.0
+R0377,C0115,C0013,Prerequisite,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Obtuse angles measure between 90 and 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0378,C0115,C0117,Part-of,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,An obtuse triangle has one angle greater than 90 degrees.,llm_score,1,0.0,0.0,0.0
+R0379,C0117,C0135,Part-of,0.5,2,359afd06a29d48a2920c5a35ac7b1780,An obtuse triangle has one angle greater than 90 degrees.,llm_score,0,0.0,0.0,0.0
+R0380,C0117,C0192,Part-of,0.5,2,359afd06a29d48a2920c5a35ac7b1780,An obtuse triangle has one angle greater than 90 degrees.,llm_score,1,0.0,0.0,0.0
+R0381,C0118,C0008,Part-of,0.5,1,7be8bb8f22d04966842fe3b83805e696,Vertical angles are the opposite angles formed when two lines intersect.,llm_score,4,0.0,0.0,0.0
+R0382,C0118,C0100,Application,0.5,1,7be8bb8f22d04966842fe3b83805e696,Vertical angles are the opposite angles formed when two lines intersect.,llm_score,1,0.0,0.0,0.0
+R0383,C0118,C0123,Application,0.5,1,7be8bb8f22d04966842fe3b83805e696,Opposite angles of a parallelogram are congruent.,llm_score,1,0.0,0.0,0.0
+R0384,C0118,C0179,Extension,0.5,1,7be8bb8f22d04966842fe3b83805e696,Opposite angles of an inscribed quadrilateral are supplementary.,llm_score,1,0.0,0.0,0.0
+R0385,C0120,C0192,Part-of,0.5,5,7aacd8be06e744f6906398afdf7267c1,The orthocenter is the point of concurrency of the altitudes.,llm_score,0,0.0,0.0,0.0
+R0386,C0122,C0004,Application,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,"The alternate exterior angles theorem states that if two parallel lines are cut by a transversal, then alternate exterior angles are congruent.",llm_score,1,0.0,0.0,0.0
+R0387,C0122,C0005,Prerequisite,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,"The alternate exterior angles theorem states that if two parallel lines are cut by a transversal, then alternate exterior angles are congruent.",llm_score,1,0.0,0.0,0.0
+R0388,C0122,C0006,Prerequisite,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,"The alternate interior angles theorem states that if two parallel lines are cut by a transversal, then alternate interior angles are congruent.",llm_score,1,0.0,0.0,0.0
+R0389,C0122,C0035,Prerequisite,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,"The co-interior angles theorem states that if two parallel lines are cut by a transversal, then co-interior angles are supplementary.",llm_score,1,0.0,0.0,0.0
+R0390,C0122,C0100,Part-of,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,Parallel lines are lines in the same plane that never intersect.,llm_score,9,0.0,0.0,0.0
+R0391,C0122,C0130,Application,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,"The perpendicular transversal theorem states that if a transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other.",llm_score,1,0.0,0.0,0.0
+R0392,C0122,C0172,Prerequisite,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,Parallel lines have equal slopes.,llm_score,1,0.0,0.0,0.0
+R0393,C0122,C0190,Application,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,"The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.",llm_score,5,0.0,0.0,0.0
+R0394,C0123,C0044,Part-of,0.5,5,be1a8939503f438aa2df6a93a7909640,Opposite sides of a parallelogram are congruent.,llm_score,5,0.0,0.0,0.0
+R0395,C0123,C0067,Part-of,0.5,5,be1a8939503f438aa2df6a93a7909640,The diagonals of a parallelogram bisect each other.,llm_score,2,0.0,0.0,0.0
+R0396,C0123,C0135,Part-of,0.5,5,be1a8939503f438aa2df6a93a7909640,"A quadrilateral is a parallelogram if both pairs of opposite sides are parallel, or congruent, or if diagonals bisect each other.",llm_score,0,0.0,0.0,0.0
+R0397,C0123,C0137,Part-of,0.5,5,be1a8939503f438aa2df6a93a7909640,A prism has two congruent parallel bases connected by parallelogram faces.,llm_score,1,0.0,0.0,0.0
+R0398,C0123,C0144,Part-of,0.5,5,be1a8939503f438aa2df6a93a7909640,A parallelogram is a quadrilateral with both pairs of opposite sides parallel.,llm_score,3,0.0,0.0,0.0
+R0399,C0123,C0149,Part-of,0.5,5,be1a8939503f438aa2df6a93a7909640,A rectangle is a parallelogram with four right angles.,llm_score,1,0.0,0.0,0.0
+R0400,C0123,C0154,Part-of,0.5,5,be1a8939503f438aa2df6a93a7909640,A rhombus is a parallelogram with four congruent sides.,llm_score,1,0.0,0.0,0.0
+R0401,C0123,C0175,Part-of,0.5,5,be1a8939503f438aa2df6a93a7909640,"A quadrilateral is a parallelogram if both pairs of opposite sides are parallel, or congruent, or if diagonals bisect each other.",llm_score,0,0.0,0.0,0.0
+R0402,C0124,C0135,Part-of,0.95,2,4d5833f69f7b4b4f8d524e4a801423ba,A polygon is a closed plane figure with three or more straight sides.,llm_score,0,0.0,0.0,0.0
+R0403,C0125,C0058,Extension,0.5,6,70b377003eba4471b317ce3fcc560e2f,The perimeters of similar polygons have the same ratio as their corresponding sides.,llm_score,1,0.0,0.0,0.0
+R0404,C0125,C0135,Part-of,0.5,6,70b377003eba4471b317ce3fcc560e2f,The perimeters of similar polygons have the same ratio as their corresponding sides.,llm_score,2,0.0,0.0,0.0
+R0405,C0125,C0137,Application,0.5,6,70b377003eba4471b317ce3fcc560e2f,The lateral area of a prism is the perimeter of the base times the height.,llm_score,1,0.0,0.0,0.0
+R0406,C0125,C0146,Application,0.5,6,70b377003eba4471b317ce3fcc560e2f,The perimeters of similar polygons have the same ratio as their corresponding sides.,llm_score,1,0.0,0.0,0.0
+R0407,C0125,C0170,Extension,0.5,6,70b377003eba4471b317ce3fcc560e2f,The perimeters of similar polygons have the same ratio as their corresponding sides.,llm_score,1,0.0,0.0,0.0
+R0408,C0126,C0125,Prerequisite,0.5,7,9098f28bcb154113b08650d0fc4e24d0,The perimeter of a polygon is the sum of its sides.,llm_score,1,0.0,0.0,0.0
+R0409,C0126,C0135,Part-of,0.5,7,9098f28bcb154113b08650d0fc4e24d0,The perimeter of a polygon is the sum of its sides.,llm_score,1,0.0,0.0,0.0
+R0410,C0126,C0192,Part-of,0.5,7,9098f28bcb154113b08650d0fc4e24d0,perimeter of a polygon is sum of its sides,llm_score,0,0.0,0.0,0.0
+R0411,C0127,C0025,Part-of,0.5,4,09fd0331b23347df92e307d6c234cd90,The diagonals of a rhombus are perpendicular bisectors of each other and bisect opposite angles.,llm_score,1,0.0,0.0,0.0
+R0412,C0127,C0128,Prerequisite,0.5,4,09fd0331b23347df92e307d6c234cd90,The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.,llm_score,1,0.0,0.0,0.0
+R0413,C0127,C0154,Application,0.5,4,09fd0331b23347df92e307d6c234cd90,The diagonals of a rhombus are perpendicular bisectors of each other and bisect opposite angles.,llm_score,1,0.0,0.0,0.0
+R0414,C0127,C0167,Part-of,0.5,4,09fd0331b23347df92e307d6c234cd90,A perpendicular bisector is a line perpendicular to a segment at its midpoint.,llm_score,2,0.0,0.0,0.0
+R0415,C0127,C0192,Application,0.5,4,09fd0331b23347df92e307d6c234cd90,5.2 Perpendicular Bisectors and Angle Bisectors The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.,llm_score,0,0.0,0.0,0.0
+R0416,C0128,C0167,Part-of,0.5,4,09fd0331b23347df92e307d6c234cd90,The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.,llm_score,1,0.0,0.0,0.0
+R0417,C0129,C0100,Prerequisite,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,Perpendicular lines intersect at a right angle.,llm_score,3,0.0,0.0,0.0
+R0418,C0129,C0155,Application,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,Perpendicular lines intersect at a right angle.,llm_score,1,0.0,0.0,0.0
+R0419,C0129,C0172,Prerequisite,0.5,3,6bb4cc1779dc4bde89d12e9a20c02b0e,Perpendicular lines have slopes that are negative reciprocals of each other.,llm_score,1,0.0,0.0,0.0
+R0420,C0130,C0190,Application,0.5,3,aa1c162e9744436e8219347546c53e90,"The perpendicular transversal theorem states that if a transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other.",llm_score,1,0.0,0.0,0.0
+R0421,C0131,C0181,Application,0.5,8,33a100c3c8724f99b0ed30341f2ce274,The surface area of a sphere is 4 pi radius squared.,llm_score,1,0.0,0.0,0.0
+R0422,C0132,C0135,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,A polygon is a closed plane figure with three or more straight sides.,llm_score,1,0.0,0.0,0.0
+R0423,C0132,C0167,Application,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,"An intersection is a point or set of points where lines, planes, segments or rays meet.",llm_score,1,0.0,0.0,0.0
+R0424,C0133,C0036,Extension,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,Collinear points are points that lie on the same line.,llm_score,1,0.0,0.0,0.0
+R0425,C0134,C0031,Application,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,A tangent line touches a circle at exactly one point called the point of tangency.,llm_score,1,0.0,0.0,0.0
+R0426,C0134,C0100,Application,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,A tangent line touches a circle at exactly one point called the point of tangency.,llm_score,2,0.0,0.0,0.0
+R0427,C0134,C0145,Application,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,Tangent lines are perpendicular to the radius at the point of tangency.,llm_score,1,0.0,0.0,0.0
+R0428,C0134,C0184,Part-of,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,A tangent line touches a circle at exactly one point called the point of tangency.,llm_score,2,0.0,0.0,0.0
+R0429,C0134,C0186,Part-of,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,A tangent line touches a circle at exactly one point called the point of tangency.,llm_score,2,0.0,0.0,0.0
+R0430,C0135,C0022,Application,0.5,2,4d5833f69f7b4b4f8d524e4a801423ba,The area of a triangle is one half base times height.,llm_score,0,0.0,0.0,0.0
+R0431,C0135,C0076,Application,0.5,2,4d5833f69f7b4b4f8d524e4a801423ba,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.",llm_score,0,0.0,0.0,0.0
+R0432,C0135,C0085,Application,0.5,2,4d5833f69f7b4b4f8d524e4a801423ba,An included angle is the angle formed between two given sides.,llm_score,0,0.0,0.0,0.0
+R0433,C0135,C0144,Part-of,0.5,2,4d5833f69f7b4b4f8d524e4a801423ba,A polygon is a closed plane figure with three or more straight sides.,llm_score,0,0.0,0.0,0.0
+R0434,C0135,C0149,Part-of,0.5,2,4d5833f69f7b4b4f8d524e4a801423ba,A polygon is a closed plane figure with three or more straight sides.,llm_score,0,0.0,0.0,0.0
+R0435,C0135,C0178,Application,0.5,2,4d5833f69f7b4b4f8d524e4a801423ba,The sum of interior angles of a polygon with n sides is (n minus 2) times 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0436,C0136,C0192,Part-of,0.5,8,9c577409d29a4ffaa183010c184450c5,"11.1 Polyhedrons A polyhedron is a three-dimensional figure with flat polygon faces, straight edges, and vertices.",llm_score,0,0.0,0.0,0.0
+R0437,C0136,C0202,Part-of,0.5,8,9c577409d29a4ffaa183010c184450c5,"A polyhedron is a three-dimensional figure with flat polygon faces, straight edges, and vertices.",llm_score,1,0.0,0.0,0.0
+R0438,C0137,C0023,Part-of,0.5,8,56a537c6fa044aeb868d83ebedf69863,A prism has two congruent parallel bases connected by parallelogram faces.,llm_score,2,0.0,0.0,0.0
+R0439,C0137,C0204,Application,0.5,8,56a537c6fa044aeb868d83ebedf69863,The volume of a prism is the area of the base times the height.,llm_score,1,0.0,0.0,0.0
+R0440,C0138,C0044,Application,0.5,3,2cf2f45f1fc949329108d3325f5d1064,Two tangent segments from the same external point are congruent.,llm_score,0,0.0,0.0,0.0
+R0441,C0138,C0121,Application,0.5,3,2cf2f45f1fc949329108d3325f5d1064,A paragraph proof is written as sentences.,llm_score,1,0.0,0.0,0.0
+R0442,C0139,C0146,Part-of,0.5,5,3bfb7d82fd44482e81b027e92f1d6f26,7.1 Ratios and Proportions,llm_score,2,0.0,0.0,0.0
+R0443,C0140,C0008,Application,1.0,1,a6963ad59e6b4ecdb28d588d3d4ed83f,A protractor is used to measure angles.,llm_score,1,0.0,0.0,0.0
+R0444,C0141,C0125,Part-of,0.5,8,7b42a454706f4a97abae35fd1f3df35f,The lateral area of a regular pyramid is one half times the perimeter of the base times the slant height.,llm_score,1,0.0,0.0,0.0
+R0445,C0141,C0135,Part-of,0.5,8,7b42a454706f4a97abae35fd1f3df35f,A polygon is a closed plane figure with three or more straight sides.,llm_score,0,0.0,0.0,0.0
+R0446,C0141,C0192,Part-of,0.5,8,7b42a454706f4a97abae35fd1f3df35f,11.4 Pyramids and Cones The lateral area of a regular pyramid is one half times the perimeter of the base times the slant height.,llm_score,0,0.0,0.0,0.0
+R0447,C0142,C0052,Application,0.5,6,ccca2a8da4b74721877cc226e60f9e38,"The converse of the Pythagorean theorem states that if the square of one side equals the sum of the squares of the other two sides, then the triangle is a right triangle.",llm_score,2,0.0,0.0,0.0
+R0448,C0142,C0143,Extension,0.5,6,ccca2a8da4b74721877cc226e60f9e38,A Pythagorean triple is a set of three positive integers that satisfy the Pythagorean theorem.,llm_score,1,0.0,0.0,0.0
+R0449,C0142,C0156,Prerequisite,0.5,6,ccca2a8da4b74721877cc226e60f9e38,"The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs.",llm_score,2,0.0,0.0,0.0
+R0450,C0142,C0192,Application,0.5,6,ccca2a8da4b74721877cc226e60f9e38,"The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs.",llm_score,2,0.0,0.0,0.0
+R0451,C0144,C0191,Part-of,0.5,2,4d5833f69f7b4b4f8d524e4a801423ba,A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases.,llm_score,1,0.0,0.0,0.0
+R0452,C0145,C0031,Part-of,1.0,7,d5758ee3848d44b79c306cfeb2cda0b8,The radius is a segment from the center to a point on the circle.,llm_score,3,0.0,0.0,0.0
+R0453,C0145,C0131,Application,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,The volume of a cone is one third pi radius squared times height.,llm_score,3,0.0,0.0,0.0
+R0454,C0145,C0164,Part-of,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,The radius is a segment from the center to a point on the circle.,llm_score,0,0.0,0.0,0.0
+R0455,C0145,C0167,Part-of,1.0,7,d5758ee3848d44b79c306cfeb2cda0b8,The radius is a segment from the center to a point on the circle.,llm_score,1,0.0,0.0,0.0
+R0456,C0145,C0174,Part-of,1.0,7,d5758ee3848d44b79c306cfeb2cda0b8,The surface area of a sphere is 4 pi radius squared.,llm_score,2,0.0,0.0,0.0
+R0457,C0145,C0181,Part-of,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,The surface area of a sphere is 4 pi radius squared.,llm_score,1,0.0,0.0,0.0
+R0458,C0145,C0184,Application,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,Tangent lines are perpendicular to the radius at the point of tangency.,llm_score,1,0.0,0.0,0.0
+R0459,C0145,C0203,Application,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,The volume of a cylinder is pi times radius squared times height.,llm_score,3,0.0,0.0,0.0
+R0460,C0146,C0147,Application,0.5,5,3bfb7d82fd44482e81b027e92f1d6f26,The ratio of corresponding sides is the scale factor.,llm_score,1,0.0,0.0,0.0
+R0461,C0146,C0161,Part-of,0.5,5,3bfb7d82fd44482e81b027e92f1d6f26,The scale factor is the ratio of corresponding measurements of similar figures.,llm_score,3,0.0,0.0,0.0
+R0462,C0146,C0170,Application,0.5,5,3bfb7d82fd44482e81b027e92f1d6f26,The perimeters of similar polygons have the same ratio as their corresponding sides.,llm_score,2,0.0,0.0,0.0
+R0463,C0147,C0058,Extension,0.5,6,70b377003eba4471b317ce3fcc560e2f,The ratio of corresponding sides is the scale factor.,llm_score,1,0.0,0.0,0.0
+R0464,C0147,C0161,Prerequisite,0.5,6,70b377003eba4471b317ce3fcc560e2f,The ratio of corresponding sides is the scale factor.,llm_score,1,0.0,0.0,0.0
+R0465,C0148,C0200,Part-of,0.5,1,688ffd7c0bba48fdb8095cf4d1697b29,An angle is formed by two rays with a common endpoint called the vertex.,llm_score,1,0.0,0.0,0.0
+R0466,C0149,C0008,Part-of,0.5,5,9cef5ff570b645708cc5c1f70955083b,A rectangle is a parallelogram with four right angles.,llm_score,1,0.0,0.0,0.0
+R0467,C0149,C0154,Extension,0.5,5,9cef5ff570b645708cc5c1f70955083b,A square is both a rectangle and a rhombus.,llm_score,1,0.0,0.0,0.0
+R0468,C0149,C0175,Part-of,0.5,5,9cef5ff570b645708cc5c1f70955083b,"6.4 Rectangles, Rhombuses, and Squares",llm_score,2,0.0,0.0,0.0
+R0469,C0150,C0157,Application,0.5,9,cb4b3b607db9469d81896e28324befc5,Any rigid transformation can be expressed as the composition of reflections.,llm_score,1,0.0,0.0,0.0
+R0470,C0150,C0159,Application,0.5,9,cb4b3b607db9469d81896e28324befc5,The composition of two reflections over intersecting lines is a rotation.,llm_score,1,0.0,0.0,0.0
+R0471,C0150,C0187,Extension,0.5,9,cb4b3b607db9469d81896e28324befc5,Any rigid transformation can be expressed as the composition of reflections.,llm_score,1,0.0,0.0,0.0
+R0472,C0150,C0189,Application,0.5,9,cb4b3b607db9469d81896e28324befc5,The composition of two reflections over parallel lines is a translation.,llm_score,2,0.0,0.0,0.0
+R0473,C0150,C0192,Application,0.5,9,cb4b3b607db9469d81896e28324befc5,12.3 Reflections A reflection flips a figure over a line called the line of reflection.,llm_score,0,0.0,0.0,0.0
+R0474,C0151,C0008,Application,0.5,2,2c4b8a1cd862493a9a0a973652aae98d,The reflexive property states that a segment or angle is congruent to itself.,llm_score,1,0.0,0.0,0.0
+R0475,C0151,C0044,Part-of,0.5,2,2c4b8a1cd862493a9a0a973652aae98d,The reflexive property states that a segment or angle is congruent to itself.,llm_score,1,0.0,0.0,0.0
+R0476,C0151,C0167,Part-of,0.5,2,2c4b8a1cd862493a9a0a973652aae98d,The reflexive property states that a segment or angle is congruent to itself.,llm_score,1,0.0,0.0,0.0
+R0477,C0152,C0192,Part-of,0.5,2,4d5833f69f7b4b4f8d524e4a801423ba,A regular polygon has all sides congruent and all angles congruent.,llm_score,0,0.0,0.0,0.0
+R0478,C0153,C0008,Application,1.0,3,4d5c78a38a074a55a20feff5b9932dc0,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.",llm_score,1,0.0,0.0,0.0
+R0479,C0153,C0090,Application,0.5,3,4d5c78a38a074a55a20feff5b9932dc0,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.",llm_score,1,0.0,0.0,0.0
+R0480,C0153,C0192,Application,1.0,3,4d5c78a38a074a55a20feff5b9932dc0,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.",llm_score,1,0.0,0.0,0.0
+R0481,C0154,C0008,Application,1.0,5,9cef5ff570b645708cc5c1f70955083b,The diagonals of a rhombus are perpendicular bisectors of each other and bisect opposite angles.,llm_score,1,0.0,0.0,0.0
+R0482,C0154,C0048,Extension,0.5,5,9cef5ff570b645708cc5c1f70955083b,A rhombus is a parallelogram with four congruent sides.,llm_score,1,0.0,0.0,0.0
+R0483,C0154,C0175,Part-of,0.5,5,9cef5ff570b645708cc5c1f70955083b,A square is both a rectangle and a rhombus.,llm_score,1,0.0,0.0,0.0
+R0484,C0155,C0123,Part-of,0.5,5,9cef5ff570b645708cc5c1f70955083b,A rectangle is a parallelogram with four right angles.,llm_score,1,0.0,0.0,0.0
+R0485,C0155,C0149,Prerequisite,0.5,5,9cef5ff570b645708cc5c1f70955083b,A rectangle is a parallelogram with four right angles.,llm_score,1,0.0,0.0,0.0
+R0486,C0155,C0175,Part-of,0.5,5,9cef5ff570b645708cc5c1f70955083b,"6.4 Rectangles, Rhombuses, and Squares A rectangle is a parallelogram with four right angles.",llm_score,0,0.0,0.0,0.0
+R0487,C0156,C0043,Application,0.5,4,18ea3e5bc9394c7d81f9ed3aea91d213,"The hypotenuse leg congruence theorem applies to right triangles and states that if the hypotenuse and a leg are congruent, then the triangles are congruent.",llm_score,1,0.0,0.0,0.0
+R0488,C0156,C0044,Application,0.5,4,18ea3e5bc9394c7d81f9ed3aea91d213,"The hypotenuse leg congruence theorem applies to right triangles and states that if the hypotenuse and a leg are congruent, then the triangles are congruent.",llm_score,1,0.0,0.0,0.0
+R0489,C0156,C0192,Part-of,0.5,4,18ea3e5bc9394c7d81f9ed3aea91d213,A right triangle has one angle equal to 90 degrees.,llm_score,6,0.0,0.0,0.0
+R0490,C0156,C0197,Application,0.5,4,18ea3e5bc9394c7d81f9ed3aea91d213,Trigonometry is the study of the relationships between sides and angles of right triangles.,llm_score,1,0.0,0.0,0.0
+R0491,C0157,C0187,Part-of,0.5,9,09d4c68126cc4304a30402eff9733bf5,Any rigid transformation can be expressed as the composition of reflections.,llm_score,1,0.0,0.0,0.0
+R0492,C0158,C0159,Application,0.5,8,bf16266df4b84b20884c84968cb2f450,A figure has rotational symmetry if it maps onto itself after a rotation of less than 360 degrees.,llm_score,1,0.0,0.0,0.0
+R0493,C0159,C0026,Part-of,0.5,9,ff0f80330fbe4b8d8a1d3cc75447d5dc,A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation.,llm_score,1,0.0,0.0,0.0
+R0494,C0159,C0093,Application,1.0,9,ff0f80330fbe4b8d8a1d3cc75447d5dc,Rotations are isometries.,llm_score,1,0.0,0.0,0.0
+R0495,C0159,C0192,Application,0.5,9,ff0f80330fbe4b8d8a1d3cc75447d5dc,12.4 Rotations A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation.,llm_score,0,0.0,0.0,0.0
+R0496,C0161,C0058,Extension,0.5,6,70b377003eba4471b317ce3fcc560e2f,The ratio of corresponding sides is the scale factor.,llm_score,1,0.0,0.0,0.0
+R0497,C0161,C0170,Application,0.9,6,70b377003eba4471b317ce3fcc560e2f,The ratio of the areas of similar polygons is the square of the scale factor.,llm_score,1,0.0,0.0,0.0
+R0498,C0162,C0044,Prerequisite,0.5,2,359afd06a29d48a2920c5a35ac7b1780,A scalene triangle has no congruent sides.,llm_score,1,0.0,0.0,0.0
+R0499,C0162,C0192,Part-of,0.5,2,359afd06a29d48a2920c5a35ac7b1780,A scalene triangle has no congruent sides.,llm_score,1,0.0,0.0,0.0
+R0500,C0163,C0031,Part-of,1.0,7,5389967af1fe4341bde6059c49c12cd2,A secant is a line that intersects a circle at two points.,llm_score,1,0.0,0.0,0.0
+R0501,C0163,C0186,Part-of,1.0,7,5389967af1fe4341bde6059c49c12cd2,"9.5 Angles from Chords, Secants, and Tangents",llm_score,2,0.0,0.0,0.0
+R0502,C0164,C0018,Prerequisite,0.5,8,3ac636c3c381431686b716d16fdd7b67,The area of a circle is pi times the radius squared.,llm_score,0,0.0,0.0,0.0
+R0503,C0165,C0167,Part-of,0.5,1,ae58cd97802c47ce8481319605ff5e5e,"The segment addition postulate states that if B is between A and C, then AB plus BC equals AC.",llm_score,1,0.0,0.0,0.0
+R0504,C0166,C0167,Part-of,1.0,1,ae58cd97802c47ce8481319605ff5e5e,A segment bisector is any figure that intersects a segment at its midpoint.,llm_score,1,0.0,0.0,0.0
+R0505,C0168,C0031,Part-of,0.5,7,f5e96813edbe4ea39a9392f581c76d6e,9.1 Parts of Circles and Tangent Lines A circle is the set of all points equidistant from a center point.,llm_score,0,0.0,0.0,0.0
+R0506,C0169,C0008,Application,1.0,5,c26781d738554c5aa6efa5a95d548736,The side angle relationship states that longer sides are opposite larger angles.,llm_score,1,0.0,0.0,0.0
+R0507,C0169,C0192,Application,0.5,5,c26781d738554c5aa6efa5a95d548736,The side angle relationship states that longer sides are opposite larger angles.,llm_score,0,0.0,0.0,0.0
+R0508,C0170,C0008,Part-of,0.5,6,70b377003eba4471b317ce3fcc560e2f,Similar polygons have congruent corresponding angles and proportional corresponding sides.,llm_score,1,0.0,0.0,0.0
+R0509,C0170,C0055,Part-of,0.5,6,70b377003eba4471b317ce3fcc560e2f,Similar polygons have congruent corresponding angles and proportional corresponding sides.,llm_score,1,0.0,0.0,0.0
+R0510,C0170,C0058,Extension,0.5,6,70b377003eba4471b317ce3fcc560e2f,Similar polygons have congruent corresponding angles and proportional corresponding sides.,llm_score,2,0.0,0.0,0.0
+R0511,C0170,C0135,Part-of,0.5,6,70b377003eba4471b317ce3fcc560e2f,7.2 Similar Polygons,llm_score,5,0.0,0.0,0.0
+R0512,C0171,C0146,Part-of,0.5,6,2666efbd1d9648eaa93c65394380601f,The sine ratio is opposite over hypotenuse.,llm_score,1,0.0,0.0,0.0
+R0513,C0174,C0131,Application,0.5,8,33a100c3c8724f99b0ed30341f2ce274,The surface area of a sphere is 4 pi radius squared.,llm_score,2,0.0,0.0,0.0
+R0514,C0174,C0181,Application,0.5,8,33a100c3c8724f99b0ed30341f2ce274,The surface area of a sphere is 4 pi radius squared.,llm_score,1,0.0,0.0,0.0
+R0515,C0174,C0203,Application,0.5,8,33a100c3c8724f99b0ed30341f2ce274,The volume of a sphere is four thirds pi radius cubed.,llm_score,1,0.0,0.0,0.0
+R0516,C0178,C0192,Application,0.5,2,4d5833f69f7b4b4f8d524e4a801423ba,The sum of interior angles of a polygon with n sides is (n minus 2) times 180 degrees.,llm_score,0,0.0,0.0,0.0
+R0517,C0179,C0144,Extension,0.9,7,5c85781fee8b46f7b90de4da57547425,Opposite angles of an inscribed quadrilateral are supplementary.,llm_score,1,0.0,0.0,0.0
+R0518,C0179,C0180,Extension,0.5,7,5c85781fee8b46f7b90de4da57547425,Supplementary angles are two angles whose measures sum to 180 degrees.,llm_score,1,0.0,0.0,0.0
+R0519,C0183,C0103,Prerequisite,0.5,8,bf16266df4b84b20884c84968cb2f450,A figure has line symmetry if it can be folded so both halves match.,llm_score,1,0.0,0.0,0.0
+R0520,C0183,C0119,Prerequisite,0.5,8,bf16266df4b84b20884c84968cb2f450,The order of symmetry is the number of times a figure maps onto itself.,llm_score,1,0.0,0.0,0.0
+R0521,C0183,C0158,Prerequisite,0.5,8,bf16266df4b84b20884c84968cb2f450,A figure has rotational symmetry if it maps onto itself after a rotation of less than 360 degrees.,llm_score,1,0.0,0.0,0.0
+R0522,C0184,C0031,Application,0.5,7,d5758ee3848d44b79c306cfeb2cda0b8,9.1 Parts of Circles and Tangent Lines,llm_score,2,0.0,0.0,0.0
+R0523,C0185,C0197,Prerequisite,0.5,6,2666efbd1d9648eaa93c65394380601f,"8.4 Sine, Cosine, and Tangent Ratios Trigonometry is the study of the relationships between sides and angles of right triangles.",llm_score,0,0.0,0.0,0.0
+R0524,C0186,C0184,Part-of,0.5,7,5389967af1fe4341bde6059c49c12cd2,9.1 Parts of Circles and Tangent Lines,llm_score,3,0.0,0.0,0.0
+R0525,C0187,C0189,Part-of,0.5,9,09d4c68126cc4304a30402eff9733bf5,12.5 Composition of Transformations A glide reflection is the composition of a reflection and a translation parallel to the line of reflection.,llm_score,0,0.0,0.0,0.0
+R0526,C0189,C0093,Part-of,1.0,8,6139eb3adf5d40919ac49003910e82aa,Translations are isometries.,llm_score,1,0.0,0.0,0.0
+R0527,C0189,C0133,Application,0.9,8,6139eb3adf5d40919ac49003910e82aa,A translation slides every point of a figure the same distance in the same direction.,llm_score,1,0.0,0.0,0.0
+R0528,C0189,C0199,Application,0.5,8,6139eb3adf5d40919ac49003910e82aa,A vector describes the direction and magnitude of a translation.,llm_score,1,0.0,0.0,0.0
+R0529,C0190,C0100,Application,0.5,3,41c2869b034e4f70bc28b85b4f3a2424,A transversal is a line that intersects two or more coplanar lines.,llm_score,11,0.0,0.0,0.0
+R0530,C0190,C0132,Part-of,0.5,3,41c2869b034e4f70bc28b85b4f3a2424,A plane is a flat two-dimensional surface that extends infinitely in all directions.,llm_score,0,0.0,0.0,0.0
+R0531,C0192,C0135,Part-of,1.0,2,359afd06a29d48a2920c5a35ac7b1780,A polygon is a closed plane figure with three or more straight sides.,llm_score,0,0.0,0.0,0.0
+R0532,C0192,C0193,Application,0.5,2,359afd06a29d48a2920c5a35ac7b1780,The triangle angle sum theorem states that the sum of the angles in any triangle is 180 degrees.,llm_score,2,0.0,0.0,0.0
+R0533,C0192,C0194,Application,0.5,2,359afd06a29d48a2920c5a35ac7b1780,The triangle inequality theorem states that the sum of any two sides must be greater than the third side.,llm_score,1,0.0,0.0,0.0
+R0534,C0192,C0200,Part-of,0.5,2,359afd06a29d48a2920c5a35ac7b1780,1.5 Classifying Triangles A triangle is a closed figure with three sides and three angles.,llm_score,0,0.0,0.0,0.0
+R0535,C0195,C0192,Application,0.5,4,f0d2d3b4d79947ab984f8d6d3770b7f1,The triangle midsegment theorem states that a midsegment is parallel to the third side and half as long as the third side.,llm_score,1,0.0,0.0,0.0
+R0536,C0196,C0100,Application,0.5,6,cf8d61f10f134ce184b4104e891f3add,"The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally.",llm_score,1,0.0,0.0,0.0
+R0537,C0196,C0192,Application,0.5,6,cf8d61f10f134ce184b4104e891f3add,"The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally.",llm_score,1,0.0,0.0,0.0
+R0538,C0197,C0192,Part-of,0.5,6,2666efbd1d9648eaa93c65394380601f,Trigonometry is the study of the relationships between sides and angles of right triangles.,llm_score,1,0.0,0.0,0.0
+R0539,C0198,C0138,Application,1.0,3,2cf2f45f1fc949329108d3325f5d1064,A two-column proof lists statements in one column and reasons in another.,llm_score,1,0.0,0.0,0.0
+R0540,C0200,C0133,Prerequisite,0.5,1,a6963ad59e6b4ecdb28d588d3d4ed83f,Adjacent angles share a vertex and a side but have no common interior points.,llm_score,2,0.0,0.0,0.0
+R0541,C0201,C0100,Application,0.5,1,7be8bb8f22d04966842fe3b83805e696,Vertical angles are the opposite angles formed when two lines intersect.,llm_score,1,0.0,0.0,0.0
+R0542,C0202,C0135,Part-of,0.5,8,9c577409d29a4ffaa183010c184450c5,"A polyhedron is a three-dimensional figure with flat polygon faces, straight edges, and vertices.",llm_score,1,0.0,0.0,0.0
+R0543,C0202,C0192,Part-of,0.5,8,9c577409d29a4ffaa183010c184450c5,1.5 Classifying Triangles A triangle is a closed figure with three sides and three angles.,llm_score,0,0.0,0.0,0.0
+R0544,C0203,C0131,Application,0.5,8,33a100c3c8724f99b0ed30341f2ce274,The volume of a cone is one third pi radius squared times height.,llm_score,2,0.0,0.0,0.0
+R0545,C0203,C0204,Application,0.5,8,33a100c3c8724f99b0ed30341f2ce274,The volume of a prism is the area of the base times the height.,llm_score,1,0.0,0.0,0.0
