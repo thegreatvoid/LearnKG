@@ -26,12 +26,27 @@ from .pairs import generate_candidates
 from .score import RELATIONS, score_pairs
 
 
-def load_chunks(input_path: Path):
+def load_chunks(input_path: Path, dump_dir: Path = None):
+    """Parse -> detect structure -> chunk. If dump_dir is given, each stage's output is written there as CSV."""
     files = [input_path] if input_path.is_file() else sorted(list(input_path.glob("*.pdf")) + list(input_path.glob("*.txt")))
     if not files:
         raise FileNotFoundError(f"no .txt/.pdf in {input_path}")
     blocks = [b for f in files for b in parse_document(f)]
-    return create_structure_aware_chunks(detect_educational_structures(blocks)), "\n\n".join(b.text for b in blocks)
+    structured = detect_educational_structures(blocks)
+    chunks = create_structure_aware_chunks(structured)
+    if dump_dir is not None:
+        dump_dir.mkdir(parents=True, exist_ok=True)
+        pd.DataFrame([{"idx": i, "page": b.page, "chapter": b.chapter, "section": b.section,
+                       "is_heading": b.is_heading, "source_file": b.source_file, "text": b.text}
+                      for i, b in enumerate(blocks)]).to_csv(dump_dir / "parsed_blocks.csv", index=False)
+        pd.DataFrame([{"idx": i, "block_type": b.block_type, "page": b.page, "chapter": b.chapter,
+                       "section": b.section, "text": b.text} for i, b in enumerate(structured)]
+                     ).to_csv(dump_dir / "structured_blocks.csv", index=False)
+        pd.DataFrame([{"chunk_id": c.chunk_id, "block_type": c.block_type, "page": c.page, "chapter": c.chapter,
+                       "section": c.section, "n_chars": len(c.text), "text": c.text} for c in chunks]
+                     ).to_csv(dump_dir / "chunks.csv", index=False)
+        print(f"[dump] {len(blocks)} parsed blocks, {len(structured)} structured blocks, {len(chunks)} chunks -> {dump_dir}")
+    return chunks, "\n\n".join(b.text for b in blocks)
 
 
 def write_pair_scores(path, normalizer, scores, meta):
@@ -64,6 +79,8 @@ def main():
                     help="also add each concept's k nearest concepts by embedding as candidate pairs")
     ap.add_argument("--no-ground", action="store_true", help="ablation: disable the grounding filter")
     ap.add_argument("--no-llm-concepts", action="store_true", help="ablation: rule/spaCy candidates only")
+    ap.add_argument("--dump-intermediate", action="store_true",
+                    help="write parsed_blocks.csv, structured_blocks.csv and chunks.csv (parser/structure/chunker output) to <out>/intermediate/")
     ap.add_argument("--candidates-only", action="store_true",
                     help="stop after stages 1-3 (no pair scoring); writes concepts.csv + candidate_pairs.csv")
     args = ap.parse_args()
@@ -71,7 +88,8 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     t0 = time.time()
 
-    chunks, full_text = load_chunks(Path(args.input_base) / args.data_dir)
+    chunks, full_text = load_chunks(Path(args.input_base) / args.data_dir,
+                                    out / "intermediate" if args.dump_intermediate else None)
     need_llm = not (args.candidates_only and args.no_llm_concepts)
     backend = OllamaBackend(args.model) if need_llm else None
     try:

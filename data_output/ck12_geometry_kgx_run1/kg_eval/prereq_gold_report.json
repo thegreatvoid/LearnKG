@@ -1,0 +1,783 @@
+{
+  "kg_dir": "data_output/ck12_geometry_kgx_run1",
+  "gold": "AL-CPL geometry (geometry.pairs / geometry.preqs)",
+  "gold_pairs": 1681,
+  "gold_positive": 524,
+  "gold_concepts": 89,
+  "gold_concepts_matched_to_kg": 68,
+  "gold_concepts_low_confidence_match": [],
+  "gold_concepts_unmatched": [
+    "Cartesian_coordinate_system",
+    "Collinearity",
+    "Concentric",
+    "Convex_polygon",
+    "Coordinate_system",
+    "Decagon",
+    "Dodecagon",
+    "Edge_(geometry)",
+    "Face_(geometry)",
+    "Geometry",
+    "Hendecagon",
+    "Heptagon",
+    "Nonagon",
+    "Octagon",
+    "Perpendicular",
+    "Self-similarity",
+    "Sine",
+    "Skew_lines",
+    "Space_(mathematics)",
+    "Star_polygon",
+    "Tessellation"
+  ],
+  "pairs_matched": 1061,
+  "pairs_located_in_text": 1437,
+  "main": {
+    "n_pairs": 1061,
+    "n_positive": 308,
+    "prevalence": 0.29029217719132894,
+    "kg_prereq": {
+      "tp": 5,
+      "fp": 4,
+      "fn": 303,
+      "tn": 749,
+      "precision": 0.5555555555555556,
+      "recall": 0.016233766233766232,
+      "f1": 0.03154574132492113,
+      "mcc": 0.05405466980795487,
+      "f1_ci95": [
+        0.006666666666666666,
+        0.06557377049180328
+      ],
+      "roc_auc": 0.5054694641348028,
+      "roc_auc_ci95": [
+        0.4987918035955925,
+        0.5144784556313993
+      ],
+      "pr_auc": 0.2960414023090743
+    },
+    "kg_closure": {
+      "tp": 7,
+      "fp": 6,
+      "fn": 301,
+      "tn": 747,
+      "precision": 0.5384615384615384,
+      "recall": 0.022727272727272728,
+      "f1": 0.04361370716510904,
+      "mcc": 0.06089501409203343,
+      "f1_ci95": [
+        0.012903225806451615,
+        0.08176100628930819
+      ],
+      "roc_auc": 0.507390352011866,
+      "roc_auc_ci95": [
+        0.498540192926045,
+        0.5181550648316148
+      ],
+      "pr_auc": 0.2965553780704582
+    },
+    "kg_any_relation": {
+      "tp": 27,
+      "fp": 45,
+      "fn": 281,
+      "tn": 708,
+      "precision": 0.375,
+      "recall": 0.08766233766233766,
+      "f1": 0.14210526315789473,
+      "mcc": 0.05035402132147237,
+      "f1_ci95": [
+        0.09944751381215469,
+        0.19338422391857507
+      ],
+      "roc_auc": 0.5134138769596936,
+      "roc_auc_ci95": [
+        0.4961178953716267,
+        0.5318406060446458
+      ],
+      "pr_auc": 0.296861080850242
+    },
+    "kg_undirected": {
+      "tp": 7,
+      "fp": 9,
+      "fn": 301,
+      "tn": 744,
+      "precision": 0.4375,
+      "recall": 0.022727272727272728,
+      "f1": 0.04320987654320988,
+      "mcc": 0.04013056490725158,
+      "f1_ci95": [
+        0.013029315960912053,
+        0.08042895442359249
+      ],
+      "roc_auc": 0.5053875407461065,
+      "roc_auc_ci95": [
+        0.49738925060640876,
+        0.5149836526921326
+      ],
+      "pr_auc": 0.29363780952788965
+    },
+    "kg_pairscore": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 307,
+      "tn": 753,
+      "precision": 1.0,
+      "recall": 0.003246753246753247,
+      "f1": 0.006472491909385114,
+      "mcc": 0.04802520166640886,
+      "f1_ci95": [
+        0.0,
+        0.0196078431372549
+      ],
+      "roc_auc": 0.5037943464238285,
+      "roc_auc_ci95": [
+        0.4955193510133678,
+        0.5139632696778913
+      ],
+      "pr_auc": 0.29484121641116395
+    },
+    "book_order": {
+      "tp": 293,
+      "fp": 232,
+      "fn": 15,
+      "tn": 521,
+      "precision": 0.5580952380952381,
+      "recall": 0.9512987012987013,
+      "f1": 0.7034813925570228,
+      "mcc": 0.5839226625930926,
+      "f1_ci95": [
+        0.667578659370725,
+        0.7425860023724792
+      ],
+      "roc_auc": 0.8562007381728497,
+      "roc_auc_ci95": [
+        0.8339954453441295,
+        0.8794619218517553
+      ],
+      "pr_auc": 0.6108155214259168
+    },
+    "cooccurrence": {
+      "tp": 98,
+      "fp": 166,
+      "fn": 210,
+      "tn": 587,
+      "precision": 0.3712121212121212,
+      "recall": 0.3181818181818182,
+      "f1": 0.34265734265734266,
+      "mcc": 0.10260556447550119,
+      "f1_ci95": [
+        0.29347826086956524,
+        0.3879003558718861
+      ],
+      "roc_auc": 0.5496175471275073,
+      "roc_auc_ci95": [
+        0.5195055645229802,
+        0.5803050695379094
+      ],
+      "pr_auc": 0.32179327397376833
+    },
+    "cooc_x_order": {
+      "tp": 92,
+      "fp": 33,
+      "fn": 216,
+      "tn": 720,
+      "precision": 0.736,
+      "recall": 0.2987012987012987,
+      "f1": 0.42494226327944573,
+      "mcc": 0.35884745981672733,
+      "f1_ci95": [
+        0.3670588235294117,
+        0.47945205479452047
+      ],
+      "roc_auc": 0.6277422776426761,
+      "roc_auc_ci95": [
+        0.6022111913357401,
+        0.652805206276196
+      ],
+      "pr_auc": 0.43580553661792876
+    },
+    "refd_text": {
+      "tp": 85,
+      "fp": 33,
+      "fn": 223,
+      "tn": 720,
+      "precision": 0.7203389830508474,
+      "recall": 0.275974025974026,
+      "f1": 0.3990610328638498,
+      "mcc": 0.33515323922004686,
+      "f1_ci95": [
+        0.3434343434343434,
+        0.44796380090497745
+      ],
+      "roc_auc": 0.6654033217778238,
+      "roc_auc_ci95": [
+        0.6382528486163863,
+        0.68958578106642
+      ],
+      "pr_auc": 0.4863534699969896
+    }
+  },
+  "end_to_end": {
+    "n_pairs": 1681,
+    "n_positive": 524,
+    "prevalence": 0.31171921475312314,
+    "kg_prereq": {
+      "tp": 5,
+      "fp": 4,
+      "fn": 519,
+      "tn": 1153,
+      "precision": 0.5555555555555556,
+      "recall": 0.009541984732824428,
+      "f1": 0.01876172607879925,
+      "mcc": 0.03862219400004792,
+      "f1_ci95": [
+        0.0038314176245210726,
+        0.03597122302158274
+      ],
+      "roc_auc": 0.5030456827673571,
+      "roc_auc_ci95": [
+        0.49882739212007504,
+        0.5078924286412465
+      ],
+      "pr_auc": 0.31489407381506324
+    },
+    "kg_closure": {
+      "tp": 7,
+      "fp": 6,
+      "fn": 517,
+      "tn": 1151,
+      "precision": 0.5384615384615384,
+      "recall": 0.013358778625954198,
+      "f1": 0.026070763500931095,
+      "mcc": 0.04321570841176254,
+      "f1_ci95": [
+        0.01079136690647482,
+        0.046065259117082535
+      ],
+      "roc_auc": 0.5040906001966127,
+      "roc_auc_ci95": [
+        0.4992687356098194,
+        0.5097574497574497
+      ],
+      "pr_auc": 0.31511439911922856
+    },
+    "kg_any_relation": {
+      "tp": 27,
+      "fp": 45,
+      "fn": 497,
+      "tn": 1112,
+      "precision": 0.375,
+      "recall": 0.05152671755725191,
+      "f1": 0.09060402684563759,
+      "mcc": 0.02889984252466906,
+      "f1_ci95": [
+        0.060402684563758385,
+        0.1229235880398671
+      ],
+      "roc_auc": 0.5061111587614718,
+      "roc_auc_ci95": [
+        0.49365946594357024,
+        0.5170154800583117
+      ],
+      "pr_auc": 0.31447626115155214
+    },
+    "kg_undirected": {
+      "tp": 7,
+      "fp": 9,
+      "fn": 517,
+      "tn": 1148,
+      "precision": 0.4375,
+      "recall": 0.013358778625954198,
+      "f1": 0.02592592592592593,
+      "mcc": 0.026619663703980615,
+      "f1_ci95": [
+        0.007707129094412331,
+        0.04642857142857143
+      ],
+      "roc_auc": 0.5027900202550687,
+      "roc_auc_ci95": [
+        0.49711147790756727,
+        0.5088975905567986
+      ],
+      "pr_auc": 0.3133994924186348
+    },
+    "kg_pairscore": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 523,
+      "tn": 1157,
+      "precision": 1.0,
+      "recall": 0.0019083969465648854,
+      "f1": 0.003809523809523809,
+      "mcc": 0.03625320402240637,
+      "f1_ci95": [
+        0.0,
+        0.01486988847583643
+      ],
+      "roc_auc": 0.5018473678307284,
+      "roc_auc_ci95": [
+        0.49668743732989545,
+        0.5068596680402049
+      ],
+      "pr_auc": 0.3141477297423186
+    }
+  },
+  "kg_prereq_weight_only": {
+    "n": 9,
+    "n_positive": 5,
+    "roc_auc": 0.6,
+    "note": "n is small; treat as descriptive"
+  },
+  "kg_prereq_edges_reversed_vs_gold": 2,
+  "concept_matches": {
+    "Acute_and_obtuse_triangles": {
+      "cid": "C0004",
+      "kg_name": "acute triangle",
+      "confidence": "high"
+    },
+    "Altitude_(triangle)": {
+      "cid": "C0010",
+      "kg_name": "altitude",
+      "confidence": "high"
+    },
+    "Angle": {
+      "cid": "C0011",
+      "kg_name": "angle",
+      "confidence": "high"
+    },
+    "Angle_bisector_theorem": {
+      "cid": "C0015",
+      "kg_name": "angle bisector theorem",
+      "confidence": "high"
+    },
+    "Arc_(geometry)": {
+      "cid": "C0017",
+      "kg_name": "arc",
+      "confidence": "high"
+    },
+    "Arc_length": {
+      "cid": "C0018",
+      "kg_name": "arc length",
+      "confidence": "high"
+    },
+    "Bisection": {
+      "cid": "C0118",
+      "kg_name": "perpendicular bisector",
+      "confidence": "high"
+    },
+    "Cartesian_coordinate_system": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Chord_(geometry)": {
+      "cid": "C0027",
+      "kg_name": "chord",
+      "confidence": "high"
+    },
+    "Circle": {
+      "cid": "C0028",
+      "kg_name": "circle",
+      "confidence": "high"
+    },
+    "Circumference": {
+      "cid": "C0030",
+      "kg_name": "circumference",
+      "confidence": "high"
+    },
+    "Collinearity": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Concentric": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Cone": {
+      "cid": "C0038",
+      "kg_name": "cone",
+      "confidence": "high"
+    },
+    "Congruence_(geometry)": {
+      "cid": "C0039",
+      "kg_name": "Congruence",
+      "confidence": "high"
+    },
+    "Convex_polygon": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Coordinate_system": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Cross_section_(geometry)": {
+      "cid": "C0055",
+      "kg_name": "cross section",
+      "confidence": "high"
+    },
+    "Cylinder_(geometry)": {
+      "cid": "C0056",
+      "kg_name": "cylinder",
+      "confidence": "high"
+    },
+    "Decagon": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Diagonal": {
+      "cid": "C0058",
+      "kg_name": "diagonal",
+      "confidence": "high"
+    },
+    "Diameter": {
+      "cid": "C0059",
+      "kg_name": "diameter",
+      "confidence": "high"
+    },
+    "Distance": {
+      "cid": "C0061",
+      "kg_name": "distance",
+      "confidence": "high"
+    },
+    "Dodecagon": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Edge_(geometry)": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Equilateral_triangle": {
+      "cid": "C0064",
+      "kg_name": "equilateral triangle",
+      "confidence": "high"
+    },
+    "Exterior_angle_theorem": {
+      "cid": "C0032",
+      "kg_name": "Co-interior angles theorem",
+      "confidence": "medium"
+    },
+    "Face_(geometry)": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Geometry": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Grade_(slope)": {
+      "cid": "C0172",
+      "kg_name": "slope",
+      "confidence": "high"
+    },
+    "Hendecagon": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Heptagon": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Hexagon": {
+      "cid": "C0070",
+      "kg_name": "hexagon",
+      "confidence": "high"
+    },
+    "Internal_and_external_angle": {
+      "cid": "C0065",
+      "kg_name": "exterior angle",
+      "confidence": "high"
+    },
+    "Inverse_trigonometric_functions": {
+      "cid": "C0081",
+      "kg_name": "inverse trigonometric functions",
+      "confidence": "high"
+    },
+    "Isosceles_triangle": {
+      "cid": "C0083",
+      "kg_name": "isosceles triangle",
+      "confidence": "high"
+    },
+    "Kite_(geometry)": {
+      "cid": "C0084",
+      "kg_name": "kite",
+      "confidence": "high"
+    },
+    "Line_(geometry)": {
+      "cid": "C0090",
+      "kg_name": "line",
+      "confidence": "high"
+    },
+    "Line_segment": {
+      "cid": "C0091",
+      "kg_name": "line segment",
+      "confidence": "high"
+    },
+    "Midpoint": {
+      "cid": "C0097",
+      "kg_name": "midpoint",
+      "confidence": "high"
+    },
+    "Nonagon": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Octagon": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Parallel_(geometry)": {
+      "cid": "C0112",
+      "kg_name": "Parallel",
+      "confidence": "high"
+    },
+    "Parallelogram": {
+      "cid": "C0114",
+      "kg_name": "parallelogram",
+      "confidence": "high"
+    },
+    "Pentagon": {
+      "cid": "C0115",
+      "kg_name": "pentagon",
+      "confidence": "high"
+    },
+    "Perpendicular": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Plane_(geometry)": {
+      "cid": "C0122",
+      "kg_name": "plane",
+      "confidence": "high"
+    },
+    "Point_(geometry)": {
+      "cid": "C0123",
+      "kg_name": "point",
+      "confidence": "high"
+    },
+    "Polygon": {
+      "cid": "C0125",
+      "kg_name": "polygon",
+      "confidence": "high"
+    },
+    "Polyhedron": {
+      "cid": "C0126",
+      "kg_name": "polyhedron",
+      "confidence": "high"
+    },
+    "Prism_(geometry)": {
+      "cid": "C0128",
+      "kg_name": "prism",
+      "confidence": "high"
+    },
+    "Pyramid_(geometry)": {
+      "cid": "C0135",
+      "kg_name": "pyramid",
+      "confidence": "high"
+    },
+    "Pythagorean_theorem": {
+      "cid": "C0136",
+      "kg_name": "Pythagorean Theorem",
+      "confidence": "high"
+    },
+    "Pythagorean_triple": {
+      "cid": "C0137",
+      "kg_name": "Pythagorean triple",
+      "confidence": "high"
+    },
+    "Quadrilateral": {
+      "cid": "C0138",
+      "kg_name": "quadrilateral",
+      "confidence": "high"
+    },
+    "Radius": {
+      "cid": "C0139",
+      "kg_name": "radius",
+      "confidence": "high"
+    },
+    "Rectangle": {
+      "cid": "C0144",
+      "kg_name": "rectangle",
+      "confidence": "high"
+    },
+    "Reflection_(mathematics)": {
+      "cid": "C0145",
+      "kg_name": "reflection",
+      "confidence": "high"
+    },
+    "Reflection_symmetry": {
+      "cid": "C0092",
+      "kg_name": "line symmetry",
+      "confidence": "high"
+    },
+    "Rhombus": {
+      "cid": "C0151",
+      "kg_name": "rhombus",
+      "confidence": "high"
+    },
+    "Right_angle": {
+      "cid": "C0152",
+      "kg_name": "right angle",
+      "confidence": "high"
+    },
+    "Right_triangle": {
+      "cid": "C0153",
+      "kg_name": "right triangle",
+      "confidence": "high"
+    },
+    "Rigid_transformation": {
+      "cid": "C0155",
+      "kg_name": "Rigid Transformations",
+      "confidence": "high"
+    },
+    "Rotation_(mathematics)": {
+      "cid": "C0156",
+      "kg_name": "rotation",
+      "confidence": "high"
+    },
+    "Rotational_symmetry": {
+      "cid": "C0157",
+      "kg_name": "rotational symmetry",
+      "confidence": "high"
+    },
+    "Scale_factor": {
+      "cid": "C0159",
+      "kg_name": "scale factor",
+      "confidence": "high"
+    },
+    "Scaling_(geometry)": {
+      "cid": "C0159",
+      "kg_name": "scale factor",
+      "confidence": "high"
+    },
+    "Secant_line": {
+      "cid": "C0161",
+      "kg_name": "secant",
+      "confidence": "high"
+    },
+    "Self-similarity": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Similarity_(geometry)": {
+      "cid": "C0170",
+      "kg_name": "Similarity",
+      "confidence": "high"
+    },
+    "Sine": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Skew_lines": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Slope": {
+      "cid": "C0172",
+      "kg_name": "slope",
+      "confidence": "high"
+    },
+    "Space_(mathematics)": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Special_right_triangles": {
+      "cid": "C0153",
+      "kg_name": "right triangle",
+      "confidence": "medium"
+    },
+    "Sphere": {
+      "cid": "C0175",
+      "kg_name": "sphere",
+      "confidence": "high"
+    },
+    "Square": {
+      "cid": "C0176",
+      "kg_name": "square",
+      "confidence": "high"
+    },
+    "Star_polygon": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Symmetry": {
+      "cid": "C0187",
+      "kg_name": "symmetry",
+      "confidence": "high"
+    },
+    "Tangent": {
+      "cid": "C0190",
+      "kg_name": "Tangents",
+      "confidence": "high"
+    },
+    "Tessellation": {
+      "cid": null,
+      "kg_name": null,
+      "confidence": "unmatched"
+    },
+    "Translation_(geometry)": {
+      "cid": "C0195",
+      "kg_name": "translation",
+      "confidence": "high"
+    },
+    "Transversal_(geometry)": {
+      "cid": "C0196",
+      "kg_name": "transversal",
+      "confidence": "high"
+    },
+    "Trapezoid": {
+      "cid": "C0197",
+      "kg_name": "trapezoid",
+      "confidence": "high"
+    },
+    "Triangle": {
+      "cid": "C0198",
+      "kg_name": "triangle",
+      "confidence": "high"
+    },
+    "Triangle_inequality": {
+      "cid": "C0200",
+      "kg_name": "triangle inequality theorem",
+      "confidence": "medium"
+    },
+    "Trigonometric_functions": {
+      "cid": "C0203",
+      "kg_name": "Trigonometry",
+      "confidence": "high"
+    },
+    "Two-dimensional_space": {
+      "cid": "C0122",
+      "kg_name": "plane",
+      "confidence": "high"
+    },
+    "Vertex_(geometry)": {
+      "cid": "C0206",
+      "kg_name": "vertex",
+      "confidence": "high"
+    }
+  },
+  "notes": [
+    "Direction is strict: an edge A -> B for gold 'B is a prerequisite of A' is counted as wrong.",
+    "Bootstrap is over pairs; pairs share concepts, so CIs are somewhat optimistic.",
+    "kg_undirected ignores direction and is a diagnostic, not a correctness score."
+  ]
+}

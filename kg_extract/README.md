@@ -19,6 +19,8 @@ python -m kg_eval.concept_quality --kg-dir data_output/<run>      # verbatim rat
 python -m kg_eval.prereq_gold     --kg-dir data_output/<run>      # now also scores kg_pairscore (AUC over all pairs)
 python -m kg_eval.source_quality --kg-dir ...                      # BIGS / structure / judge (as before)
 ```
+Inspect the parser/structure/chunker output (they are in-memory only, never saved otherwise): add `--dump-intermediate` to `kg_extract.run`; it writes `<out>/intermediate/{parsed_blocks,structured_blocks,chunks}.csv`. It works with `--candidates-only --no-llm-concepts`, so no LLM is needed.
+
 Offline unit tests: `python kg_extract/test_kg_extract.py`.
 
 ## Measurements so far (CK-12 geometry; no LLM concept stage, no pair scoring yet)
@@ -44,3 +46,19 @@ Offline unit tests: `python kg_extract/test_kg_extract.py`.
 2. Compare `kg_pairscore` AUC with `book_order` (0.86) and the old KG (0.51). Success = clearly above 0.5 without book order.
 3. Ablations: `--no-ground`, `--samples 1/2/3`, `--no-llm-concepts`, hubs 0/10/40.
 4. Other AL-CPL subjects (needs `--pairs/--preqs` and subject synonym maps in `kg_eval/prereq_gold.py`, `kg_eval/data.py`).
+
+## Hybrid KG construction (`kg_extract/hybrid.py`) and first result
+
+`python -m kg_extract.hybrid --run data_output/ck12_geometry_kgx_run1 --out data_output/ck12_geometry_kgx_hybrid` rebuilds the KG from a finished run with no LLM calls and no gold labels: every directed concept pair is scored as `forward-in-book-order x mean percentile rank of (order gap, co-occurrence, RefD, LLM relatedness)`; each concept keeps its top-3 *related* predecessors as Prerequisite edges (acyclic); the LLM's Part-of / Application / Extension / Similarity edges are added for other pairs. **It uses book order** (`uses_book_order: true`): do not report `kg_eval.book_order` direction checks on this KG's own book.
+
+Result on CK-12 geometry (run 1 input; AL-CPL, matched and located pairs, n=1061):
+
+| Predictor | P | R | F1 | ROC-AUC [95% CI] |
+|---|---|---|---|---|
+| kg_prereq (Prerequisite edges) | 0.90 | 0.18 | 0.30 | 0.585 |
+| kg_closure (transitive) | 0.86 | 0.65 | **0.74** | 0.806 |
+| kg_pairscore (hybrid score, all pairs) | 0.87 | 0.13 | 0.23 | **0.872 [0.85, 0.89]** |
+| book_order baseline | 0.56 | 0.95 | 0.70 | 0.856 [0.83, 0.88] |
+| previous best KG (LLM pair vote) | | | 0.03 | 0.505 |
+
+Caveats: the AUC gain over book order is small and the confidence intervals overlap; top-k=3 and equal signal weights were fixed a priori (not tuned on gold) but this is one book; concept noise from spaCy chunks ("states", "times", "sum") is still present and shows up as hubs in the graph; the graph is dense (562 Prerequisite edges for 209 concepts).

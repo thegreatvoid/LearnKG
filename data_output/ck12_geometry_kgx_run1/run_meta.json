@@ -1,0 +1,35 @@
+{
+  "model": "qwen2.5:7b-instruct",
+  "args": {
+    "data_dir": "ck12_geometry",
+    "input_base": "./data_input",
+    "out": "data_output/ck12_geometry_kgx",
+    "model": "qwen2.5:7b-instruct",
+    "top_k": 250,
+    "samples": 2,
+    "threshold": 0.5,
+    "per_concept": 8,
+    "max_pairs": 1500,
+    "hubs": 10,
+    "embed_neighbors": 0,
+    "no_ground": false,
+    "no_llm_concepts": false,
+    "candidates_only": false
+  },
+  "uses_book_order": false,
+  "seconds": 2822.6,
+  "counters": {
+    "candidates_seen": 859,
+    "candidates_dropped_ungrounded": 35,
+    "chunks_llm_ok": 20,
+    "concepts_kept": 209,
+    "pairs_scored": 1500
+  },
+  "candidate_pairs": 1500,
+  "edges": 612,
+  "cycle_edges_dropped": 13,
+  "backend_counters": {
+    "llm_calls": 3020,
+    "llm_ok": 3020
+  }
+}
