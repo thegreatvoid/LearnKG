@@ -83,15 +83,10 @@ def detect_block_type(block: ParsedBlock) -> str:
 def detect_educational_structures(blocks: List[ParsedBlock]) -> List[StructuredBlock]:
     """Processes a list of ParsedBlocks and tags each with its educational structure type."""
     structured = []
-    current_chapter = ""
-    current_section = ""
 
     for b in blocks:
-        if b.chapter:
-            current_chapter = b.chapter
-        if b.section:
-            current_section = b.section
-
+        # The parser already carries chapter/section forward (and resets the section
+        # at a new chapter), so take them as-is.
         b_type = detect_block_type(b)
         structured.append(
             StructuredBlock(
@@ -99,8 +94,8 @@ def detect_educational_structures(blocks: List[ParsedBlock]) -> List[StructuredB
                 block_type=b_type,
                 page=b.page,
                 source_file=b.source_file,
-                chapter=current_chapter,
-                section=current_section,
+                chapter=b.chapter,
+                section=b.section,
             )
         )
 

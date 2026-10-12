@@ -6,10 +6,12 @@ $$\text{weight} = 0.52 \cdot S + 0.24 \cdot C + 0.09 \cdot P + 0.15 \cdot E$$
 
 | Symbol | Factor | AHP Weight | Source in Code |
 |---|---|---|---|
-| **S** | Semantic Similarity | 0.52 | LLM-assigned `weight` (1–10), normalised to [0,1] |
-| **C** | Co-occurrence | 0.24 | Chunk co-occurrence count, normalised (cap at 5) |
-| **P** | Chapter Proximity | 0.09 | Jaccard overlap of node chunk-id sets (0–1) |
-| **E** | Educational Context | 0.15 | 1 if relationship predicate contains educational keyword, else 0 |
+| **S** | Semantic Similarity | 0.52 | Jaccard overlap of the concepts' definition words (0–1) |
+| **C** | Co-occurrence | 0.24 | `min(1, cooccurrence_count / 3)` |
+| **P** | Chapter Proximity | 0.09 | `1 / (1 + chapter distance)`; 0.5 if a chapter is unknown |
+| **E** | Educational Context | 0.15 | 0.6 same chapter + 0.4 same section; 0.3 if neither |
+
+Details in [Implementation](#implementation).
 
 ---
 
@@ -52,7 +54,7 @@ so the edge weight is in [0, 1].
 |---|---|
 | **S** | Jaccard overlap of the two concepts' definition word sets (falls back to the concept name if a definition is empty). A proxy for embedding cosine similarity. |
 | **C** | `min(1, cooccurrence_count / 3)`, where `cooccurrence_count` is how many times the ordered concept pair has been extracted so far (sentence-level co-mentions, rule/LLM/neural extractions). |
-| **P** | `1 / (1 + |chapter_a - chapter_b|)`; a missing chapter counts as 0. |
+| **P** | `1 / (1 + |chapter_a - chapter_b|)`, using the number parsed from the chapter label (e.g. `"Chapter 5: ..."` gives 5); 0.5 if either chapter is unknown. Chapter/section are taken from the concept's first mention. |
 | **E** | `0.6` if both concepts are in the same chapter, plus `0.4` if they are in the same section; `0.3` if neither matches. |
 
 An extractor may supply its own weight in [0, 1] (e.g. the neural prerequisite extractor). That value is used

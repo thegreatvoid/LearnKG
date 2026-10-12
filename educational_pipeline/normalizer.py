@@ -128,12 +128,15 @@ class ConceptNormalizer:
                         concept.aliases.add(clean_a)
                         self.lookup[clean_a.lower()] = existing_id
 
+            # Chapter/section locate where the concept is first introduced (chunks arrive in
+            # book order), so a longer definition found later must not move it.
+            concept.chapter = concept.chapter or chapter
+            concept.section = concept.section or section
+
             # Update definition if existing is empty or shorter
             if definition and (not concept.definition or len(definition) > len(concept.definition)):
                 concept.definition = definition.strip()
                 concept.evidence = evidence.strip() or concept.evidence
-                concept.chapter = chapter or concept.chapter
-                concept.section = section or concept.section
                 concept.page = page or concept.page
                 concept.chunk_id = chunk_id or concept.chunk_id
 

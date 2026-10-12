@@ -8,7 +8,8 @@ Enforces the Controlled Educational Ontology:
   4. Extension    (A -> B: A builds upon or extends B)
   5. Similarity   (A <-> B: conceptually similar and symmetric)
 
-Assigns educational importance weight (1 to 10) and preserves verbatim source sentence evidence.
+Assigns an AHP-derived educational relevance weight in [0, 1] (see docs/ahp_weights.md) and preserves
+verbatim source sentence evidence.
 """
 
 import re
@@ -91,12 +92,17 @@ def semantic_similarity(c1: NormalizedConcept, c2: NormalizedConcept) -> float:
     return len(w1 & w2) / union if union else 0.0
 
 
+def chapter_number(chapter: str) -> Optional[int]:
+    """Chapter number from a parser label like "Chapter 5: Relationships with Triangles" (None if absent)."""
+    m = re.search(r"\d+", chapter or "")
+    return int(m.group()) if m else None
+
+
 def chapter_proximity(c1: NormalizedConcept, c2: NormalizedConcept) -> float:
-    try:
-        dist = abs(int(c1.chapter or 0) - int(c2.chapter or 0))
-    except (TypeError, ValueError):
-        dist = 0
-    return 1.0 / (1.0 + dist)
+    n1, n2 = chapter_number(c1.chapter), chapter_number(c2.chapter)
+    if n1 is None or n2 is None:
+        return 0.5  # unknown distance: neutral rather than "same chapter"
+    return 1.0 / (1.0 + abs(n1 - n2))
 
 
 def educational_context_score(c1: NormalizedConcept, c2: NormalizedConcept) -> float:

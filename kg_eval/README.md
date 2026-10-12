@@ -16,8 +16,8 @@ Handoff document: everything needed to continue this work on another machine wit
 - Edge weight = `0.52*S + 0.24*C + 0.09*P + 0.15*E` (AHP-derived), see `docs/ahp_weights.md` and `educational_pipeline/relation_extractor.py`.
   - S = Jaccard overlap of the concepts' definition words (a proxy for semantic similarity, NOT embeddings)
   - C = `min(1, cooccurrence_count/3)`
-  - P = `1/(1+chapter_distance)` (currently constant 1.0, see caveats)
-  - E = 0.6 same chapter + 0.4 same section, 0.3 if neither
+  - P = `1/(1+chapter_distance)`, 0.5 if either chapter is unknown (was constant 1.0 in the KGs evaluated below, see caveats)
+  - E = 0.6 same chapter + 0.4 same section, 0.3 if neither (the +0.4 never fired in the KGs evaluated below, see caveats)
   - Edges with `weight_source=provided` (LLM- or neural-extractor-supplied weight) bypass the formula.
 - Target construct for the weight (decided with the user): **educational relevance for localized graph construction**, NOT factual confidence.
 - Relation ontology (5 types) as defined by the pipeline (`relation_extractor.py` header, `helpers/prompts.py` `educationalPrompt`):
@@ -258,7 +258,11 @@ Locally: copy only `concepts.csv` and `relations.csv` into a **new** folder `dat
 
 ## 8. Known problems / caveats
 
-1. **`chapter_proximity` is exactly 1.0 on every edge** (chapter labels inconsistent; 19/130 concepts have none). P cannot be learned or ablated until fixed. Fix: use first-mention position (`data.first_position`).
+1. **Chapter/section bugs in the KGs evaluated here (fixed in code 2026-10-12; the stored KGs in `data_output/` predate the fix and must be regenerated).**
+   - `chapter_proximity` was exactly 1.0 on every edge. Cause: chapter labels are strings like `"Chapter 5: Relationships with Triangles"`; `int()` on them raised `ValueError`, which was caught and turned into distance 0. Fix: `chapter_number()` in `relation_extractor.py` parses the number; unknown chapter gives P = 0.5.
+   - `section` was empty for all concepts, and Chapter 1 concepts had no chapter (19/130). Cause: the parser only recognised a heading when it was alone in its paragraph, but in the CK-12 text headings are followed directly by body text. Fix: `parser._split_paragraph` finds heading lines inside paragraphs (heading lines stay in the chunk text, so extraction is unchanged); a new chapter resets the section. As a result E's "same section" +0.4 never fired before.
+   - Chapter labels could point to the wrong chapter (e.g. `Point` in Chapter 5) because the normalizer overwrote a concept's chapter/section whenever a longer definition appeared later. Fix: chapter/section are now those of the first mention.
+   - Verified on a no-LLM, no-neural run: same 130 concepts and 72 edges as before (differences are only singular/plural canonical names and the direction of 4 undirected Similarity edges); P now ranges 0.09-1.0, E takes 0.3/0.6/1.0, weights 0.155-1.0.
 2. **Extension semantics mismatch:** `RELATION_SEMANTICS["Extension"]` in `data.py` (used by the LLM judge) says "target extends source"; the pipeline defines the opposite. Earlier judge verdicts on Extension edges are suspect. Fixing it changes judge prompts, so clear the judge cache afterwards.
 3. **Concept IDs are not stable across pipeline re-runs** (86 of 90 edges identical by name, IDs reshuffled). Judgments keyed by `relation_id` are invalidated by a re-run. Key by (source name, target name, type) instead.
 4. **The rule-based pipeline is tuned to the test book**: `concept_extractor.py` (≈ lines 81–96) hard-codes a geometry vocabulary; `relation_extractor.py` (≈ line 290 onward) has ~38 regex rules, including geometry-specific prerequisites (e.g. Pythagorean theorem → Right Triangle). This is test-set leakage and will not transfer to other subjects.
@@ -281,7 +285,7 @@ Key method change: from "LLM generates free-form triples" to **(1) grounded conc
 3. Fix `RELATION_SEMANTICS["Extension"]` in `data.py`; clear `judge_cache.jsonl`.
 4. Concept-level (cluster) bootstrap in `data.bootstrap_ci` callers.
 5. Key judgments/ratings by (source name, target name, relation type) instead of `relation_id`.
-6. Compute P (proximity) from first-mention positions instead of chapter labels (pipeline change in `relation_extractor.py`).
+6. ~~Compute P from first-mention positions~~ Chapter labels are fixed (caveat 1); first-mention position remains an option for finer-grained P. Regenerate both KGs and rerun all reports.
 7. Support multiple runs per configuration (mean ± SD).
 8. High-confidence-match-only sensitivity run in `prereq_gold` (flag like `--min-confidence high`).
 

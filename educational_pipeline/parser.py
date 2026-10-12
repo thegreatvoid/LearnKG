@@ -62,6 +62,65 @@ def _detect_heading(line: str) -> Optional[tuple[str, str]]:
     return None
 
 
+def _split_paragraph(text: str) -> List[tuple[List[tuple[str, str]], str]]:
+    """
+    Splits a paragraph into (headings, text) segments, one per heading group.
+    Headings are often followed directly by their body text with no blank line in
+    between (e.g. a "1.1 Points, Lines, and Planes" line, then "A point is ..."),
+    so they must be found inside multi-line paragraphs too. The heading lines stay
+    in the segment text so concept extraction still sees them; a segment without
+    body text is a pure heading. Inside a multi-line paragraph only short lines not
+    ending in a period count as headings, so body lines like "2.5 cm is ..." are
+    not mistaken for one.
+    """
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    if len(lines) == 1:
+        info = _detect_heading(lines[0])
+        return [([info] if info else [], lines[0])]
+
+    groups: List[tuple[List[tuple[str, str]], List[str], List[str]]] = []  # (headings, heading lines, body lines)
+    for line in lines:
+        info = _detect_heading(line) if len(line) <= 80 and not line.endswith(".") else None
+        if info:
+            if not groups or groups[-1][2]:
+                groups.append(([], [], []))
+            groups[-1][0].append(info)
+            groups[-1][1].append(line)
+        else:
+            if not groups:
+                groups.append(([], [], []))
+            groups[-1][2].append(line)
+    return [(infos, "\n".join(head + body)) for infos, head, body in groups]
+
+
+def _append_segments(
+    blocks: List[ParsedBlock],
+    text: str,
+    page: int,
+    source_file: str,
+    state: dict,
+) -> None:
+    """Appends the blocks of one paragraph, updating state["chapter"/"section"] at headings."""
+    for infos, seg in _split_paragraph(text):
+        for level, title in infos:
+            if level == "chapter":
+                state["chapter"] = title
+                state["section"] = ""  # sections of the previous chapter do not carry over
+            else:
+                state["section"] = title
+        is_heading = bool(infos) and len(seg.splitlines()) == len(infos)
+        blocks.append(
+            ParsedBlock(
+                text=seg,
+                page=page,
+                source_file=source_file,
+                chapter=state["chapter"],
+                section=state["section"],
+                is_heading=is_heading,
+            )
+        )
+
+
 def parse_text_file(filepath: Path) -> List[ParsedBlock]:
     """Parses a plain text file into structured blocks."""
     blocks = []
@@ -70,8 +129,7 @@ def parse_text_file(filepath: Path) -> List[ParsedBlock]:
 
     # Split into paragraphs by blank lines
     paragraphs = re.split(r"\n\s*\n", content)
-    current_chapter = ""
-    current_section = ""
+    state = {"chapter": "", "section": ""}
     estimated_page = 1
     char_count = 0
 
@@ -89,37 +147,7 @@ def parse_text_file(filepath: Path) -> List[ParsedBlock]:
         if page_match:
             estimated_page = int(page_match.group(1) or page_match.group(2))
 
-        lines = [l.strip() for l in text.splitlines() if l.strip()]
-        if lines:
-            heading_info = _detect_heading(lines[0])
-            if heading_info and len(lines) == 1:
-                level, title = heading_info
-                if level == "chapter":
-                    current_chapter = title
-                else:
-                    current_section = title
-                blocks.append(
-                    ParsedBlock(
-                        text=text,
-                        page=estimated_page,
-                        source_file=filepath.name,
-                        chapter=current_chapter,
-                        section=current_section,
-                        is_heading=True,
-                    )
-                )
-                continue
-
-        blocks.append(
-            ParsedBlock(
-                text=text,
-                page=estimated_page,
-                source_file=filepath.name,
-                chapter=current_chapter,
-                section=current_section,
-                is_heading=False,
-            )
-        )
+        _append_segments(blocks, text, estimated_page, filepath.name, state)
 
     return blocks
 
@@ -134,8 +162,7 @@ def parse_pdf_file(filepath: Path) -> List[ParsedBlock]:
         return parse_text_file(filepath)
 
     reader = PdfReader(str(filepath))
-    current_chapter = ""
-    current_section = ""
+    state = {"chapter": "", "section": ""}
 
     for page_idx, page in enumerate(reader.pages):
         page_num = page_idx + 1
@@ -147,37 +174,7 @@ def parse_pdf_file(filepath: Path) -> List[ParsedBlock]:
             if not text:
                 continue
 
-            lines = [l.strip() for l in text.splitlines() if l.strip()]
-            if lines:
-                heading_info = _detect_heading(lines[0])
-                if heading_info and len(lines) <= 2:
-                    level, title = heading_info
-                    if level == "chapter":
-                        current_chapter = title
-                    else:
-                        current_section = title
-                    blocks.append(
-                        ParsedBlock(
-                            text=text,
-                            page=page_num,
-                            source_file=filepath.name,
-                            chapter=current_chapter,
-                            section=current_section,
-                            is_heading=True,
-                        )
-                    )
-                    continue
-
-            blocks.append(
-                ParsedBlock(
-                    text=text,
-                    page=page_num,
-                    source_file=filepath.name,
-                    chapter=current_chapter,
-                    section=current_section,
-                    is_heading=False,
-                )
-            )
+            _append_segments(blocks, text, page_num, filepath.name, state)
 
     return blocks
 
