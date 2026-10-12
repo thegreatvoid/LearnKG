@@ -1,0 +1,132 @@
+idx,page,chapter,section,is_heading,text
+0,1,,,False,CK-12 Basic Geometry Concepts
+1,1,Chapter 1: Basics of Geometry,,True,Chapter 1: Basics of Geometry
+2,1,Chapter 1: Basics of Geometry,"1.1 Points, Lines, and Planes",False,"1.1 Points, Lines, and Planes
+A point is a location with no dimension. It is represented by a dot. A line is a straight one-dimensional figure with no thickness that extends infinitely in both directions. A plane is a flat two-dimensional surface that extends infinitely in all directions. Points, lines, and planes are the three undefined terms of geometry. A line segment is a part of a line consisting of two endpoints and all points between them. A ray is part of a line that starts at one endpoint and extends infinitely in one direction. Collinear points are points that lie on the same line. Coplanar points are points that lie on the same plane. An intersection is a point or set of points where lines, planes, segments or rays meet."
+3,1,Chapter 1: Basics of Geometry,1.2 Segments and Distance,False,"1.2 Segments and Distance
+A line segment is named by its two endpoints. The distance between two points is the absolute value of the difference of the coordinates. A ruler postulate states that the points on a line can be matched with real numbers. Congruent segments are segments that have the same length. The midpoint of a segment is the point that divides it into two congruent segments. A segment bisector is any figure that intersects a segment at its midpoint. The segment addition postulate states that if B is between A and C, then AB plus BC equals AC."
+4,1,Chapter 1: Basics of Geometry,1.3 Rays and Angles,False,"1.3 Rays and Angles
+A ray has one endpoint and extends in one direction. An angle is formed by two rays with a common endpoint called the vertex. An angle is measured in degrees. A protractor is used to measure angles. The angle addition postulate states that if D is in the interior of angle ABC, then angle ABD plus angle DBC equals angle ABC. Acute angles measure less than 90 degrees. Right angles measure exactly 90 degrees. Obtuse angles measure between 90 and 180 degrees. Straight angles measure exactly 180 degrees."
+5,1,Chapter 1: Basics of Geometry,1.4 Angle Pairs,False,"1.4 Angle Pairs
+Complementary angles are two angles whose measures sum to 90 degrees. Supplementary angles are two angles whose measures sum to 180 degrees. A linear pair is two adjacent angles that form a straight line. Vertical angles are the opposite angles formed when two lines intersect. Vertical angles are always congruent. Adjacent angles share a vertex and a side but have no common interior points."
+6,2,Chapter 1: Basics of Geometry,1.5 Classifying Triangles,False,"1.5 Classifying Triangles
+A triangle is a closed figure with three sides and three angles. Triangles can be classified by their sides. An equilateral triangle has three congruent sides. An isosceles triangle has at least two congruent sides. A scalene triangle has no congruent sides. Triangles can also be classified by their angles. An acute triangle has all angles less than 90 degrees. A right triangle has one angle equal to 90 degrees. An obtuse triangle has one angle greater than 90 degrees. The triangle angle sum theorem states that the sum of the angles in any triangle is 180 degrees."
+7,2,Chapter 1: Basics of Geometry,1.6 Classifying Polygons,False,"1.6 Classifying Polygons
+A polygon is a closed plane figure with three or more straight sides. Polygons are classified by the number of sides. A triangle has three sides. A quadrilateral has four sides. A pentagon has five sides. A hexagon has six sides. A regular polygon has all sides congruent and all angles congruent. The sum of interior angles of a polygon with n sides is (n minus 2) times 180 degrees."
+8,2,Chapter 2: Reasoning and Proof,,True,Chapter 2: Reasoning and Proof
+9,2,Chapter 2: Reasoning and Proof,2.1 Inductive Reasoning,False,"2.1 Inductive Reasoning
+Inductive reasoning uses specific examples to make a general conclusion called a conjecture. A counterexample is a specific case that proves a conjecture false. Patterns are used in inductive reasoning. A conjecture is an unproven statement based on observations."
+10,2,Chapter 2: Reasoning and Proof,2.2 Conditional Statements,False,"2.2 Conditional Statements
+A conditional statement is a logical statement that has a hypothesis and a conclusion in the form if p then q. The hypothesis is the p part. The conclusion is the q part. The converse is formed by switching the hypothesis and conclusion. The inverse negates both the hypothesis and conclusion. The contrapositive negates and switches both. A biconditional statement is when a conditional and its converse are both true, written as p if and only if q."
+11,2,Chapter 2: Reasoning and Proof,2.3 Deductive Reasoning,False,"2.3 Deductive Reasoning
+Deductive reasoning uses facts, definitions, accepted properties and laws of logic to form a logical argument. The law of detachment states that if p implies q is true and p is true then q is true. The law of syllogism states that if p implies q and q implies r then p implies r."
+12,2,Chapter 2: Reasoning and Proof,2.4 Algebraic and Congruence Properties,False,"2.4 Algebraic and Congruence Properties
+The reflexive property states that a segment or angle is congruent to itself. The symmetric property states that if A equals B then B equals A. The transitive property states that if A equals B and B equals C then A equals C. The substitution property states that if a equals b then a can be replaced by b in any expression."
+13,3,Chapter 2: Reasoning and Proof,2.5 Proofs about Segments and Angles,False,"2.5 Proofs about Segments and Angles
+A proof is a logical argument that shows a statement is true. A two-column proof lists statements in one column and reasons in another. A paragraph proof is written as sentences. A flowchart proof uses boxes and arrows. The midpoint theorem states that if M is the midpoint of segment AB then AM equals one half of AB."
+14,3,Chapter 3: Parallel and Perpendicular Lines,,True,Chapter 3: Parallel and Perpendicular Lines
+15,3,Chapter 3: Parallel and Perpendicular Lines,3.1 Lines and Angles,False,"3.1 Lines and Angles
+Parallel lines are lines in the same plane that never intersect. Perpendicular lines intersect at a right angle. A transversal is a line that intersects two or more coplanar lines. When a transversal crosses two lines, eight angles are formed. Corresponding angles are in the same position at each intersection. Alternate interior angles are between the lines on opposite sides of the transversal. Alternate exterior angles are outside the lines on opposite sides of the transversal. Co-interior angles are between the lines on the same side of the transversal and are supplementary."
+16,3,Chapter 3: Parallel and Perpendicular Lines,3.2 Properties of Parallel Lines,False,"3.2 Properties of Parallel Lines
+The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent. The alternate interior angles theorem states that if two parallel lines are cut by a transversal, then alternate interior angles are congruent. The alternate exterior angles theorem states that if two parallel lines are cut by a transversal, then alternate exterior angles are congruent. The co-interior angles theorem states that if two parallel lines are cut by a transversal, then co-interior angles are supplementary."
+17,3,Chapter 3: Parallel and Perpendicular Lines,3.3 Proving Lines Parallel,False,"3.3 Proving Lines Parallel
+The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel. A slope is the measure of steepness of a line. Parallel lines have equal slopes. Perpendicular lines have slopes that are negative reciprocals of each other."
+18,3,Chapter 3: Parallel and Perpendicular Lines,3.4 Properties of Perpendicular Lines,False,"3.4 Properties of Perpendicular Lines
+The perpendicular transversal theorem states that if a transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other. A perpendicular bisector is a line perpendicular to a segment at its midpoint. The distance from a point to a line is the length of the perpendicular segment from the point to the line."
+19,3,Chapter 4: Triangles and Congruence,,True,Chapter 4: Triangles and Congruence
+20,3,Chapter 4: Triangles and Congruence,4.1 Triangle Sums,False,"4.1 Triangle Sums
+The triangle angle sum theorem states that the sum of the angles of a triangle is 180 degrees. The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles. The corollary states that each angle of an equilateral triangle measures 60 degrees."
+21,4,Chapter 4: Triangles and Congruence,4.2 Congruent Figures,False,"4.2 Congruent Figures
+Congruent polygons are polygons where all corresponding parts are congruent. The corresponding parts of congruent triangles are congruent is abbreviated CPCTC. Two triangles are congruent if their corresponding sides and angles are congruent."
+22,4,Chapter 4: Triangles and Congruence,4.3 Triangle Congruence using SSS and SAS,False,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent. The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent. An included angle is the angle formed between two given sides."
+23,4,Chapter 4: Triangles and Congruence,"4.4 Triangle Congruence using ASA, AAS, and HL",False,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent. The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent. The hypotenuse leg congruence theorem applies to right triangles and states that if the hypotenuse and a leg are congruent, then the triangles are congruent."
+24,4,Chapter 4: Triangles and Congruence,4.5 Isosceles and Equilateral Triangles,False,"4.5 Isosceles and Equilateral Triangles
+The isosceles triangle theorem states that if two sides of a triangle are congruent, then the base angles opposite those sides are congruent. The converse states that if two angles of a triangle are congruent, then the opposite sides are congruent. An equilateral triangle is also equiangular. All angles in an equilateral triangle measure 60 degrees."
+25,4,Chapter 5: Relationships with Triangles,,True,Chapter 5: Relationships with Triangles
+26,4,Chapter 5: Relationships with Triangles,5.1 Midsegments of Triangles,False,"5.1 Midsegments of Triangles
+A midsegment of a triangle is a segment connecting the midpoints of two sides. The triangle midsegment theorem states that a midsegment is parallel to the third side and half as long as the third side."
+27,4,Chapter 5: Relationships with Triangles,5.2 Perpendicular Bisectors and Angle Bisectors,False,"5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints. The angle bisector theorem states that any point on the angle bisector is equidistant from the sides of the angle. The circumcenter is the point of concurrency of the perpendicular bisectors and is equidistant from each vertex. The incenter is the point of concurrency of the angle bisectors and is equidistant from each side."
+28,5,Chapter 5: Relationships with Triangles,5.3 Medians and Altitudes,False,"5.3 Medians and Altitudes
+A median is a segment from a vertex to the midpoint of the opposite side. The centroid is the point of concurrency of the medians and is the center of gravity of a triangle. The centroid divides each median in a 2 to 1 ratio from vertex to midpoint. An altitude is a perpendicular segment from a vertex to the opposite side or its extension. The orthocenter is the point of concurrency of the altitudes."
+29,5,Chapter 5: Relationships with Triangles,5.4 Inequalities in Triangles,False,"5.4 Inequalities in Triangles
+The triangle inequality theorem states that the sum of any two sides must be greater than the third side. The side angle relationship states that longer sides are opposite larger angles. The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer."
+30,5,Chapter 6: Polygons and Quadrilaterals,,True,Chapter 6: Polygons and Quadrilaterals
+31,5,Chapter 6: Polygons and Quadrilaterals,6.1 Angles in Polygons,False,"6.1 Angles in Polygons
+The interior angle sum of a polygon with n sides is n minus 2 times 180 degrees. The exterior angle sum of any convex polygon is always 360 degrees. A diagonal is a segment connecting two non-adjacent vertices."
+32,5,Chapter 6: Polygons and Quadrilaterals,6.2 Properties of Parallelograms,False,"6.2 Properties of Parallelograms
+A parallelogram is a quadrilateral with both pairs of opposite sides parallel. Opposite sides of a parallelogram are congruent. Opposite angles of a parallelogram are congruent. Consecutive angles of a parallelogram are supplementary. The diagonals of a parallelogram bisect each other."
+33,5,Chapter 6: Polygons and Quadrilaterals,6.3 Proving Quadrilaterals are Parallelograms,False,"6.3 Proving Quadrilaterals are Parallelograms
+A quadrilateral is a parallelogram if both pairs of opposite sides are parallel, or congruent, or if diagonals bisect each other."
+34,5,Chapter 6: Polygons and Quadrilaterals,"6.4 Rectangles, Rhombuses, and Squares",False,"6.4 Rectangles, Rhombuses, and Squares
+A rectangle is a parallelogram with four right angles. The diagonals of a rectangle are congruent. A rhombus is a parallelogram with four congruent sides. The diagonals of a rhombus are perpendicular bisectors of each other and bisect opposite angles. A square is both a rectangle and a rhombus."
+35,5,Chapter 6: Polygons and Quadrilaterals,6.5 Trapezoids and Kites,False,"6.5 Trapezoids and Kites
+A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases. The midsegment of a trapezoid is parallel to the bases and its length is the average of the base lengths. A kite has two consecutive pairs of congruent sides. The diagonals of a kite are perpendicular."
+36,5,Chapter 7: Similarity,,True,Chapter 7: Similarity
+37,5,Chapter 7: Similarity,7.1 Ratios and Proportions,False,"7.1 Ratios and Proportions
+A ratio is a comparison of two quantities. A proportion is an equation stating that two ratios are equal. The cross products of a proportion are equal. The scale factor is the ratio of corresponding measurements of similar figures."
+38,6,Chapter 7: Similarity,7.2 Similar Polygons,False,"7.2 Similar Polygons
+Similar polygons have congruent corresponding angles and proportional corresponding sides. The ratio of corresponding sides is the scale factor. The perimeters of similar polygons have the same ratio as their corresponding sides."
+39,6,Chapter 7: Similarity,"7.3 Similarity by AA, SSS, SAS",False,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar. The side side side similarity theorem states that if corresponding sides are proportional then triangles are similar. The side angle side similarity theorem states that if two sides are proportional and the included angles are congruent then triangles are similar."
+40,6,Chapter 7: Similarity,7.4 Proportionality Relationships,False,"7.4 Proportionality Relationships
+The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally. The angle bisector theorem states that the angle bisector of a triangle divides the opposite side proportionally."
+41,6,Chapter 8: Right Triangle Trigonometry,,True,Chapter 8: Right Triangle Trigonometry
+42,6,Chapter 8: Right Triangle Trigonometry,8.1 The Pythagorean Theorem,False,"8.1 The Pythagorean Theorem
+The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs. The converse of the Pythagorean theorem states that if the square of one side equals the sum of the squares of the other two sides, then the triangle is a right triangle. A Pythagorean triple is a set of three positive integers that satisfy the Pythagorean theorem."
+43,6,Chapter 8: Right Triangle Trigonometry,8.2 Converse of the Pythagorean Theorem,False,"8.2 Converse of the Pythagorean Theorem
+If the square of the longest side is greater than the sum of squares of other two sides then the triangle is obtuse. If it is less then the triangle is acute."
+44,6,Chapter 8: Right Triangle Trigonometry,8.3 Special Right Triangles,False,"8.3 Special Right Triangles
+A 45 45 90 triangle has legs that are congruent and a hypotenuse that is the leg times the square root of 2. A 30 60 90 triangle has a short leg, a long leg that is the short leg times the square root of 3, and a hypotenuse that is twice the short leg."
+45,6,Chapter 8: Right Triangle Trigonometry,"8.4 Sine, Cosine, and Tangent Ratios",False,"8.4 Sine, Cosine, and Tangent Ratios
+Trigonometry is the study of the relationships between sides and angles of right triangles. The sine ratio is opposite over hypotenuse. The cosine ratio is adjacent over hypotenuse. The tangent ratio is opposite over adjacent. SOH CAH TOA is the mnemonic to remember these ratios. The inverse trigonometric functions are used to find angles."
+46,6,Chapter 9: Circles,,True,Chapter 9: Circles
+47,7,Chapter 9: Circles,9.1 Parts of Circles and Tangent Lines,False,"9.1 Parts of Circles and Tangent Lines
+A circle is the set of all points equidistant from a center point. The radius is a segment from the center to a point on the circle. The diameter is a chord passing through the center. A chord is a segment whose endpoints are on the circle. A tangent line touches a circle at exactly one point called the point of tangency. Tangent lines are perpendicular to the radius at the point of tangency. Two tangent segments from the same external point are congruent."
+48,7,Chapter 9: Circles,9.2 Properties of Arcs,False,"9.2 Properties of Arcs
+A central angle is an angle formed by two radii. An arc is a portion of a circle. A minor arc is less than 180 degrees. A major arc is greater than 180 degrees. A semicircle is exactly 180 degrees. The arc addition postulate states that adjacent arc measures can be added. Congruent arcs have equal measures and are in the same circle."
+49,7,Chapter 9: Circles,9.3 Properties of Chords,False,"9.3 Properties of Chords
+The perpendicular bisector of a chord passes through the center. Congruent chords are equidistant from the center. A diameter perpendicular to a chord bisects the chord and its arcs."
+50,7,Chapter 9: Circles,9.4 Inscribed Angles,False,"9.4 Inscribed Angles
+An inscribed angle is an angle formed by two chords with the vertex on the circle. The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc. Opposite angles of an inscribed quadrilateral are supplementary. An angle inscribed in a semicircle is a right angle."
+51,7,Chapter 9: Circles,"9.5 Angles from Chords, Secants, and Tangents",False,"9.5 Angles from Chords, Secants, and Tangents
+A secant is a line that intersects a circle at two points. The angle formed by two chords is half the sum of the intercepted arcs. The angle formed by two secants from an external point is half the difference of the intercepted arcs."
+52,7,Chapter 9: Circles,"9.6 Segment Lengths from Chords, Secants, and Tangents",False,"9.6 Segment Lengths from Chords, Secants, and Tangents
+When two chords intersect inside a circle, the products of their segments are equal. When two secants are drawn from an external point, the products of each secant and its external segment are equal."
+53,7,Chapter 10: Perimeter and Area,,True,Chapter 10: Perimeter and Area
+54,7,Chapter 10: Perimeter and Area,10.1 Triangles and Parallelograms,False,"10.1 Triangles and Parallelograms
+The perimeter of a polygon is the sum of its sides. The area of a rectangle is base times height. The area of a parallelogram is base times height. The area of a triangle is one half base times height."
+55,7,Chapter 10: Perimeter and Area,"10.2 Trapezoids, Rhombuses, and Kites",False,"10.2 Trapezoids, Rhombuses, and Kites
+The area of a trapezoid is one half times the sum of the bases times the height. The area of a rhombus is one half times the product of the diagonals. The area of a kite is one half times the product of the diagonals."
+56,7,Chapter 10: Perimeter and Area,10.3 Areas of Similar Polygons,False,"10.3 Areas of Similar Polygons
+The ratio of the areas of similar polygons is the square of the scale factor."
+57,8,Chapter 10: Perimeter and Area,10.4 Circumference and Arc Length,False,"10.4 Circumference and Arc Length
+The circumference of a circle is two pi times the radius or pi times the diameter. An arc length is a portion of the circumference equal to the arc measure divided by 360 times the circumference."
+58,8,Chapter 10: Perimeter and Area,10.5 Areas of Circles and Sectors,False,"10.5 Areas of Circles and Sectors
+The area of a circle is pi times the radius squared. A sector is a pie-shaped region bounded by two radii and an arc. The area of a sector is the arc measure divided by 360 times the area of the circle."
+59,8,Chapter 11: Surface Area and Volume,,True,Chapter 11: Surface Area and Volume
+60,8,Chapter 11: Surface Area and Volume,11.1 Polyhedrons,False,"11.1 Polyhedrons
+A polyhedron is a three-dimensional figure with flat polygon faces, straight edges, and vertices. A prism has two congruent parallel bases connected by parallelogram faces. A pyramid has one base and triangular faces meeting at an apex. Eulers formula states that vertices plus faces minus edges equals 2."
+61,8,Chapter 11: Surface Area and Volume,11.2 Representing Solids,False,"11.2 Representing Solids
+A net is a flat pattern that can be folded to form a solid. A cross section is the intersection of a solid with a plane."
+62,8,Chapter 11: Surface Area and Volume,11.3 Prisms and Cylinders,False,"11.3 Prisms and Cylinders
+The lateral area of a prism is the perimeter of the base times the height. The surface area is the lateral area plus two times the area of the base. The volume of a prism is the area of the base times the height. A cylinder is like a prism with circular bases. The volume of a cylinder is pi times radius squared times height."
+63,8,Chapter 11: Surface Area and Volume,11.4 Pyramids and Cones,False,"11.4 Pyramids and Cones
+The lateral area of a regular pyramid is one half times the perimeter of the base times the slant height. The surface area is the lateral area plus the base area. The volume of a pyramid is one third times base area times height. A cone has a circular base and an apex. The volume of a cone is one third pi radius squared times height."
+64,8,Chapter 11: Surface Area and Volume,11.5 Spheres,False,"11.5 Spheres
+A sphere is the set of all points in space equidistant from a center. The surface area of a sphere is 4 pi radius squared. The volume of a sphere is four thirds pi radius cubed."
+65,8,Chapter 11: Surface Area and Volume,11.6 Composite Solids,False,"11.6 Composite Solids
+A composite solid is made of two or more solids. Volume and surface area are computed by combining the solids appropriately."
+66,8,Chapter 12: Rigid Transformations,,True,Chapter 12: Rigid Transformations
+67,8,Chapter 12: Rigid Transformations,12.1 Exploring Symmetry,False,"12.1 Exploring Symmetry
+A figure has line symmetry if it can be folded so both halves match. A figure has rotational symmetry if it maps onto itself after a rotation of less than 360 degrees. The order of symmetry is the number of times a figure maps onto itself."
+68,8,Chapter 12: Rigid Transformations,12.2 Translations,False,"12.2 Translations
+A translation slides every point of a figure the same distance in the same direction. A vector describes the direction and magnitude of a translation. Translations preserve size and shape. Translations are isometries."
+69,9,Chapter 12: Rigid Transformations,12.3 Reflections,False,"12.3 Reflections
+A reflection flips a figure over a line called the line of reflection. Each point maps to an equidistant point on the other side of the line. Reflections are isometries. The composition of two reflections over parallel lines is a translation."
+70,9,Chapter 12: Rigid Transformations,12.4 Rotations,False,"12.4 Rotations
+A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation. Rotations are isometries. The composition of two reflections over intersecting lines is a rotation."
+71,9,Chapter 12: Rigid Transformations,12.5 Composition of Transformations,False,"12.5 Composition of Transformations
+A glide reflection is the composition of a reflection and a translation parallel to the line of reflection. Isometries preserve angle measure, betweenness, collinearity, and distance. Any rigid transformation can be expressed as the composition of reflections."

@@ -1,0 +1,643 @@
+chunk_id,concept,definition,evidence
+286449c2ef194f74bbff55b122092f07,Basic Geometry Concepts,,
+f9a01b3d953d424b8377af54f71d3adb,Plane,Plane is flat two-dimensional surface that extends infinitely in all directions,A plane is a flat two-dimensional surface that extends infinitely in all directions.
+f9a01b3d953d424b8377af54f71d3adb,Line,Line is straight one-dimensional figure with no thickness that extends infinitely in both directions,A line is a straight one-dimensional figure with no thickness that extends infinitely in both directions.
+f9a01b3d953d424b8377af54f71d3adb,Point,Point is location with no dimension,"1.1 Points, Lines, and Planes
+A point is a location with no dimension."
+f9a01b3d953d424b8377af54f71d3adb,Ray,Ray is part of a line that starts at one endpoint and extends infinitely in one direction,A ray is part of a line that starts at one endpoint and extends infinitely in one direction.
+f9a01b3d953d424b8377af54f71d3adb,Line Segment,Line Segment is part of a line consisting of two endpoints and all points between them,A line segment is a part of a line consisting of two endpoints and all points between them.
+74ad7ec834f7454bb6de28a24c40d7f8,Midpoint,The midpoint of a segment is the point that divides it into two congruent segments.,The midpoint of a segment is the point that divides it into two congruent segments.
+74ad7ec834f7454bb6de28a24c40d7f8,Line,"1.2 Segments and Distance
+A line segment is named by its two endpoints.","1.2 Segments and Distance
+A line segment is named by its two endpoints."
+74ad7ec834f7454bb6de28a24c40d7f8,Point,The midpoint of a segment is the point that divides it into two congruent segments.,The midpoint of a segment is the point that divides it into two congruent segments.
+74ad7ec834f7454bb6de28a24c40d7f8,Postulate,A ruler postulate states that the points on a line can be matched with real numbers.,A ruler postulate states that the points on a line can be matched with real numbers.
+74ad7ec834f7454bb6de28a24c40d7f8,Bisector,Bisector is y figure that intersects a segment at its midpoint,A segment bisector is any figure that intersects a segment at its midpoint.
+74ad7ec834f7454bb6de28a24c40d7f8,Line Segment,Line Segment is named by its two endpoints,"1.2 Segments and Distance
+A line segment is named by its two endpoints."
+c1f757da1d0646b3a6c6a5edef510458,Vertex,An angle is formed by two rays with a common endpoint called the vertex.,An angle is formed by two rays with a common endpoint called the vertex.
+c1f757da1d0646b3a6c6a5edef510458,Ray,"1.3 Rays and Angles
+A ray has one endpoint and extends in one direction.","1.3 Rays and Angles
+A ray has one endpoint and extends in one direction."
+c1f757da1d0646b3a6c6a5edef510458,Postulate,"The angle addition postulate states that if D is in the interior of angle ABC, then angle ABD plus angle DBC equals angle ABC.","The angle addition postulate states that if D is in the interior of angle ABC, then angle ABD plus angle DBC equals angle ABC."
+c1f757da1d0646b3a6c6a5edef510458,ABD,"The angle addition postulate states that if D is in the interior of angle ABC, then angle ABD plus angle DBC equals angle ABC.","The angle addition postulate states that if D is in the interior of angle ABC, then angle ABD plus angle DBC equals angle ABC."
+c1f757da1d0646b3a6c6a5edef510458,ABC,"The angle addition postulate states that if D is in the interior of angle ABC, then angle ABD plus angle DBC equals angle ABC.","The angle addition postulate states that if D is in the interior of angle ABC, then angle ABD plus angle DBC equals angle ABC."
+c1f757da1d0646b3a6c6a5edef510458,DBC,"The angle addition postulate states that if D is in the interior of angle ABC, then angle ABD plus angle DBC equals angle ABC.","The angle addition postulate states that if D is in the interior of angle ABC, then angle ABD plus angle DBC equals angle ABC."
+c1f757da1d0646b3a6c6a5edef510458,Angle,Angle is formed by two rays with a common endpoint called the vertex,An angle is formed by two rays with a common endpoint called the vertex.
+9106de425a374350b2350d77e9b484fc,Supplementary,Supplementary angles are two angles whose measures sum to 180 degrees.,Supplementary angles are two angles whose measures sum to 180 degrees.
+9106de425a374350b2350d77e9b484fc,Vertical Angles,Vertical Angles is opposite angles formed when two lines intersect,Vertical angles are the opposite angles formed when two lines intersect.
+9106de425a374350b2350d77e9b484fc,Angle Pairs,"1.4 Angle Pairs
+Complementary angles are two angles whose measures sum to 90 degrees.","1.4 Angle Pairs
+Complementary angles are two angles whose measures sum to 90 degrees."
+9106de425a374350b2350d77e9b484fc,Vertex,Adjacent angles share a vertex and a side but have no common interior points.,Adjacent angles share a vertex and a side but have no common interior points.
+9106de425a374350b2350d77e9b484fc,Complementary,"1.4 Angle Pairs
+Complementary angles are two angles whose measures sum to 90 degrees.","1.4 Angle Pairs
+Complementary angles are two angles whose measures sum to 90 degrees."
+9106de425a374350b2350d77e9b484fc,Line,A linear pair is two adjacent angles that form a straight line.,A linear pair is two adjacent angles that form a straight line.
+9106de425a374350b2350d77e9b484fc,Linear Pair,Linear Pair is two adjacent angles that form a straight line,A linear pair is two adjacent angles that form a straight line.
+9106de425a374350b2350d77e9b484fc,Angle,"1.4 Angle Pairs
+Complementary angles are two angles whose measures sum to 90 degrees.","1.4 Angle Pairs
+Complementary angles are two angles whose measures sum to 90 degrees."
+32de38bf61c346539d75d3fafcdc9dea,Isosceles Triangle,An isosceles triangle has at least two congruent sides.,An isosceles triangle has at least two congruent sides.
+32de38bf61c346539d75d3fafcdc9dea,Equilateral Triangle,An equilateral triangle has three congruent sides.,An equilateral triangle has three congruent sides.
+32de38bf61c346539d75d3fafcdc9dea,Theorem,The triangle angle sum theorem states that the sum of the angles in any triangle is 180 degrees.,The triangle angle sum theorem states that the sum of the angles in any triangle is 180 degrees.
+32de38bf61c346539d75d3fafcdc9dea,Classifying Triangles,"1.5 Classifying Triangles
+A triangle is a closed figure with three sides and three angles.","1.5 Classifying Triangles
+A triangle is a closed figure with three sides and three angles."
+32de38bf61c346539d75d3fafcdc9dea,Triangle,Triangle is closed figure with three sides and three angles,"1.5 Classifying Triangles
+A triangle is a closed figure with three sides and three angles."
+32de38bf61c346539d75d3fafcdc9dea,Acute Triangle,An acute triangle has all angles less than 90 degrees.,An acute triangle has all angles less than 90 degrees.
+32de38bf61c346539d75d3fafcdc9dea,Scalene Triangle,A scalene triangle has no congruent sides.,A scalene triangle has no congruent sides.
+32de38bf61c346539d75d3fafcdc9dea,Obtuse Triangle,An obtuse triangle has one angle greater than 90 degrees.,An obtuse triangle has one angle greater than 90 degrees.
+32de38bf61c346539d75d3fafcdc9dea,Angle,A right triangle has one angle equal to 90 degrees.,A right triangle has one angle equal to 90 degrees.
+32de38bf61c346539d75d3fafcdc9dea,Right Triangle,A right triangle has one angle equal to 90 degrees.,A right triangle has one angle equal to 90 degrees.
+3ba723faad064a488135ff29a85daa8c,Quadrilateral,A quadrilateral has four sides.,A quadrilateral has four sides.
+3ba723faad064a488135ff29a85daa8c,Classifying Polygons,"1.6 Classifying Polygons
+A polygon is a closed plane figure with three or more straight sides.","1.6 Classifying Polygons
+A polygon is a closed plane figure with three or more straight sides."
+3ba723faad064a488135ff29a85daa8c,Polygon,Polygon is closed plane figure with three or more straight sides,"1.6 Classifying Polygons
+A polygon is a closed plane figure with three or more straight sides."
+3ba723faad064a488135ff29a85daa8c,Plane,"1.6 Classifying Polygons
+A polygon is a closed plane figure with three or more straight sides.","1.6 Classifying Polygons
+A polygon is a closed plane figure with three or more straight sides."
+3ba723faad064a488135ff29a85daa8c,Hexagon,,
+3ba723faad064a488135ff29a85daa8c,Triangle,,
+3ba723faad064a488135ff29a85daa8c,Regular Polygon,A regular polygon has all sides congruent and all angles congruent.,A regular polygon has all sides congruent and all angles congruent.
+3ba723faad064a488135ff29a85daa8c,Pentagon,,
+fa6e1233683348d5825efb42629b0bf8,Conjecture,Conjecture is unproven statement based on observations,A conjecture is an unproven statement based on observations.
+fa6e1233683348d5825efb42629b0bf8,Counterexample,Counterexample is specific case that proves a conjecture false,A counterexample is a specific case that proves a conjecture false.
+fa6e1233683348d5825efb42629b0bf8,Inductive Reasoning,"2.1 Inductive Reasoning
+Inductive reasoning uses specific examples to make a general conclusion called a conjecture.","2.1 Inductive Reasoning
+Inductive reasoning uses specific examples to make a general conclusion called a conjecture."
+2fd74026b58846d094e4e427a69f6e39,Conditional Statements,"2.2 Conditional Statements
+A conditional statement is a logical statement that has a hypothesis and a conclusion in the form if p then q.","2.2 Conditional Statements
+A conditional statement is a logical statement that has a hypothesis and a conclusion in the form if p then q."
+f4d74790bf8b43e5b1b66bfb01e7218d,Deductive Reasoning,"2.3 Deductive Reasoning
+Deductive reasoning uses facts, definitions, accepted properties and laws of logic to form a logical argument.","2.3 Deductive Reasoning
+Deductive reasoning uses facts, definitions, accepted properties and laws of logic to form a logical argument."
+c310ee8da1da428c869e7770d3715c43,Congruence,"2.4 Algebraic and Congruence Properties
+The reflexive property states that a segment or angle is congruent to itself.","2.4 Algebraic and Congruence Properties
+The reflexive property states that a segment or angle is congruent to itself."
+c310ee8da1da428c869e7770d3715c43,Congruence Properties,"2.4 Algebraic and Congruence Properties
+The reflexive property states that a segment or angle is congruent to itself.","2.4 Algebraic and Congruence Properties
+The reflexive property states that a segment or angle is congruent to itself."
+c310ee8da1da428c869e7770d3715c43,Angle,Angle is congruent to itself,"2.4 Algebraic and Congruence Properties
+The reflexive property states that a segment or angle is congruent to itself."
+95dac87004ec4aacae6e5483657c9213,Midpoint,The midpoint theorem states that if M is the midpoint of segment AB then AM equals one half of AB.,The midpoint theorem states that if M is the midpoint of segment AB then AM equals one half of AB.
+95dac87004ec4aacae6e5483657c9213,Theorem,The midpoint theorem states that if M is the midpoint of segment AB then AM equals one half of AB.,The midpoint theorem states that if M is the midpoint of segment AB then AM equals one half of AB.
+95dac87004ec4aacae6e5483657c9213,Proof,Proof is logical argument that shows a statement is true,"2.5 Proofs about Segments and Angles
+A proof is a logical argument that shows a statement is true."
+7b36d66a87b34836acf12aef3c6e6aa2,Supplementary,Co-interior angles are between the lines on the same side of the transversal and are supplementary.,Co-interior angles are between the lines on the same side of the transversal and are supplementary.
+7b36d66a87b34836acf12aef3c6e6aa2,Alternate Interior Angles,Alternate Interior Angles is between the lines on opposite sides of the transversal,Alternate interior angles are between the lines on opposite sides of the transversal.
+7b36d66a87b34836acf12aef3c6e6aa2,Plane,"3.1 Lines and Angles
+Parallel lines are lines in the same plane that never intersect.","3.1 Lines and Angles
+Parallel lines are lines in the same plane that never intersect."
+7b36d66a87b34836acf12aef3c6e6aa2,Corresponding Angles,Corresponding Angles is in the same position at each intersection,Corresponding angles are in the same position at each intersection.
+7b36d66a87b34836acf12aef3c6e6aa2,Line,A transversal is a line that intersects two or more coplanar lines.,A transversal is a line that intersects two or more coplanar lines.
+7b36d66a87b34836acf12aef3c6e6aa2,Parallel,"3.1 Lines and Angles
+Parallel lines are lines in the same plane that never intersect.","3.1 Lines and Angles
+Parallel lines are lines in the same plane that never intersect."
+7b36d66a87b34836acf12aef3c6e6aa2,Perpendicular,Perpendicular lines intersect at a right angle.,Perpendicular lines intersect at a right angle.
+7b36d66a87b34836acf12aef3c6e6aa2,Transversal,Transversal is line that intersects two or more coplanar lines,A transversal is a line that intersects two or more coplanar lines.
+7b36d66a87b34836acf12aef3c6e6aa2,Angle,Perpendicular lines intersect at a right angle.,Perpendicular lines intersect at a right angle.
+1d09fafe2a56463da40b9c2ab4844e0d,Supplementary,"The co-interior angles theorem states that if two parallel lines are cut by a transversal, then co-interior angles are supplementary.","The co-interior angles theorem states that if two parallel lines are cut by a transversal, then co-interior angles are supplementary."
+1d09fafe2a56463da40b9c2ab4844e0d,Alternate Interior Angles,"The alternate interior angles theorem states that if two parallel lines are cut by a transversal, then alternate interior angles are congruent.","The alternate interior angles theorem states that if two parallel lines are cut by a transversal, then alternate interior angles are congruent."
+1d09fafe2a56463da40b9c2ab4844e0d,Corresponding Angles,"3.2 Properties of Parallel Lines
+The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.","3.2 Properties of Parallel Lines
+The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent."
+1d09fafe2a56463da40b9c2ab4844e0d,Theorem,"The alternate interior angles theorem states that if two parallel lines are cut by a transversal, then alternate interior angles are congruent.","The alternate interior angles theorem states that if two parallel lines are cut by a transversal, then alternate interior angles are congruent."
+1d09fafe2a56463da40b9c2ab4844e0d,Postulate,"3.2 Properties of Parallel Lines
+The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.","3.2 Properties of Parallel Lines
+The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent."
+1d09fafe2a56463da40b9c2ab4844e0d,Parallel,"3.2 Properties of Parallel Lines
+The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.","3.2 Properties of Parallel Lines
+The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent."
+1d09fafe2a56463da40b9c2ab4844e0d,Transversal,"3.2 Properties of Parallel Lines
+The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.","3.2 Properties of Parallel Lines
+The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent."
+1d09fafe2a56463da40b9c2ab4844e0d,Parallel Lines,"Parallel Lines is cut by a transversal, then corresponding angles are congruent","3.2 Properties of Parallel Lines
+The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent."
+39fda40ded234e1498bd4e36fcecb26d,Corresponding Angles,"Corresponding Angles is congruent, then the lines are parallel","3.3 Proving Lines Parallel
+The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel."
+39fda40ded234e1498bd4e36fcecb26d,Proving Lines Parallel,"3.3 Proving Lines Parallel
+The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel.","3.3 Proving Lines Parallel
+The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel."
+39fda40ded234e1498bd4e36fcecb26d,Line,A slope is the measure of steepness of a line.,A slope is the measure of steepness of a line.
+39fda40ded234e1498bd4e36fcecb26d,Postulate,"3.3 Proving Lines Parallel
+The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel.","3.3 Proving Lines Parallel
+The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel."
+39fda40ded234e1498bd4e36fcecb26d,Parallel,"3.3 Proving Lines Parallel
+The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel.","3.3 Proving Lines Parallel
+The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel."
+39fda40ded234e1498bd4e36fcecb26d,Perpendicular,Perpendicular lines have slopes that are negative reciprocals of each other.,Perpendicular lines have slopes that are negative reciprocals of each other.
+39fda40ded234e1498bd4e36fcecb26d,Transversal,"3.3 Proving Lines Parallel
+The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel.","3.3 Proving Lines Parallel
+The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel."
+39fda40ded234e1498bd4e36fcecb26d,Slope,Slope is measure of steepness of a line,A slope is the measure of steepness of a line.
+91301ead535c4a8c834f86cea5b48492,Midpoint,A perpendicular bisector is a line perpendicular to a segment at its midpoint.,A perpendicular bisector is a line perpendicular to a segment at its midpoint.
+91301ead535c4a8c834f86cea5b48492,Theorem,"3.4 Properties of Perpendicular Lines
+The perpendicular transversal theorem states that if a transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other.","3.4 Properties of Perpendicular Lines
+The perpendicular transversal theorem states that if a transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other."
+91301ead535c4a8c834f86cea5b48492,Line,Line is length of the perpendicular segment from the point to the line,The distance from a point to a line is the length of the perpendicular segment from the point to the line.
+91301ead535c4a8c834f86cea5b48492,Point,The distance from a point to a line is the length of the perpendicular segment from the point to the line.,The distance from a point to a line is the length of the perpendicular segment from the point to the line.
+91301ead535c4a8c834f86cea5b48492,Perpendicular Lines,"3.4 Properties of Perpendicular Lines
+The perpendicular transversal theorem states that if a transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other.","3.4 Properties of Perpendicular Lines
+The perpendicular transversal theorem states that if a transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other."
+91301ead535c4a8c834f86cea5b48492,Perpendicular,"3.4 Properties of Perpendicular Lines
+The perpendicular transversal theorem states that if a transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other.","3.4 Properties of Perpendicular Lines
+The perpendicular transversal theorem states that if a transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other."
+91301ead535c4a8c834f86cea5b48492,Parallel,"3.4 Properties of Perpendicular Lines
+The perpendicular transversal theorem states that if a transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other.","3.4 Properties of Perpendicular Lines
+The perpendicular transversal theorem states that if a transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other."
+91301ead535c4a8c834f86cea5b48492,Perpendicular Bisector,Perpendicular Bisector is line perpendicular to a segment at its midpoint,A perpendicular bisector is a line perpendicular to a segment at its midpoint.
+91301ead535c4a8c834f86cea5b48492,Bisector,Bisector is line perpendicular to a segment at its midpoint,A perpendicular bisector is a line perpendicular to a segment at its midpoint.
+91301ead535c4a8c834f86cea5b48492,Transversal,"Transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other","3.4 Properties of Perpendicular Lines
+The perpendicular transversal theorem states that if a transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other."
+bb5195bda8e1422bb9f55f3a26944bb6,Equilateral Triangle,The corollary states that each angle of an equilateral triangle measures 60 degrees.,The corollary states that each angle of an equilateral triangle measures 60 degrees.
+bb5195bda8e1422bb9f55f3a26944bb6,Theorem,"4.1 Triangle Sums
+The triangle angle sum theorem states that the sum of the angles of a triangle is 180 degrees.","4.1 Triangle Sums
+The triangle angle sum theorem states that the sum of the angles of a triangle is 180 degrees."
+bb5195bda8e1422bb9f55f3a26944bb6,Triangle,"4.1 Triangle Sums
+The triangle angle sum theorem states that the sum of the angles of a triangle is 180 degrees.","4.1 Triangle Sums
+The triangle angle sum theorem states that the sum of the angles of a triangle is 180 degrees."
+bb5195bda8e1422bb9f55f3a26944bb6,Remote Interior Angles,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.","The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles."
+bb5195bda8e1422bb9f55f3a26944bb6,Corollary,The corollary states that each angle of an equilateral triangle measures 60 degrees.,The corollary states that each angle of an equilateral triangle measures 60 degrees.
+bb5195bda8e1422bb9f55f3a26944bb6,Triangle Sums,"4.1 Triangle Sums
+The triangle angle sum theorem states that the sum of the angles of a triangle is 180 degrees.","4.1 Triangle Sums
+The triangle angle sum theorem states that the sum of the angles of a triangle is 180 degrees."
+bb5195bda8e1422bb9f55f3a26944bb6,Exterior Angle,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.","The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles."
+bb5195bda8e1422bb9f55f3a26944bb6,Angle,"4.1 Triangle Sums
+The triangle angle sum theorem states that the sum of the angles of a triangle is 180 degrees.","4.1 Triangle Sums
+The triangle angle sum theorem states that the sum of the angles of a triangle is 180 degrees."
+d53f7cb5d33349de992e5503f9d0e8d6,Congruent Figures,"4.2 Congruent Figures
+Congruent polygons are polygons where all corresponding parts are congruent.","4.2 Congruent Figures
+Congruent polygons are polygons where all corresponding parts are congruent."
+d53f7cb5d33349de992e5503f9d0e8d6,CPCTC,The corresponding parts of congruent triangles are congruent is abbreviated CPCTC.,The corresponding parts of congruent triangles are congruent is abbreviated CPCTC.
+d24382089d9244bdb180bf5d420baae8,SSS,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.","4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent."
+d24382089d9244bdb180bf5d420baae8,Congruence,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.","4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent."
+d24382089d9244bdb180bf5d420baae8,SAS,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.","4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent."
+d24382089d9244bdb180bf5d420baae8,Triangle,"Triangle is congruent to three sides of another, then the triangles are congruent","4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent."
+d24382089d9244bdb180bf5d420baae8,Triangle Congruence,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.","4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent."
+d24382089d9244bdb180bf5d420baae8,Postulate,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.","4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent."
+d24382089d9244bdb180bf5d420baae8,Angle,Angle is angle formed between two given sides,An included angle is the angle formed between two given sides.
+d70036ee77534809ad2894bdc23ebd27,Congruence,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.","4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent."
+d70036ee77534809ad2894bdc23ebd27,Theorem,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.","The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent."
+d70036ee77534809ad2894bdc23ebd27,Triangle,"Triangle is congruent to two angles and the included side of another, then the triangles are congruent","4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent."
+d70036ee77534809ad2894bdc23ebd27,ASA,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.","4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent."
+d70036ee77534809ad2894bdc23ebd27,Triangle Congruence,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.","4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent."
+d70036ee77534809ad2894bdc23ebd27,Postulate,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.","4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent."
+d70036ee77534809ad2894bdc23ebd27,AAS,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.","4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent."
+d70036ee77534809ad2894bdc23ebd27,Angle,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.","4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent."
+6ac6474e569e4cd2958b0de011f2cfb6,Isosceles Triangle,"4.5 Isosceles and Equilateral Triangles
+The isosceles triangle theorem states that if two sides of a triangle are congruent, then the base angles opposite those sides are congruent.","4.5 Isosceles and Equilateral Triangles
+The isosceles triangle theorem states that if two sides of a triangle are congruent, then the base angles opposite those sides are congruent."
+6ac6474e569e4cd2958b0de011f2cfb6,Equilateral Triangle,An equilateral triangle is also equiangular.,An equilateral triangle is also equiangular.
+6ac6474e569e4cd2958b0de011f2cfb6,Theorem,"4.5 Isosceles and Equilateral Triangles
+The isosceles triangle theorem states that if two sides of a triangle are congruent, then the base angles opposite those sides are congruent.","4.5 Isosceles and Equilateral Triangles
+The isosceles triangle theorem states that if two sides of a triangle are congruent, then the base angles opposite those sides are congruent."
+6ac6474e569e4cd2958b0de011f2cfb6,Triangle,"Triangle is congruent, then the base angles opposite those sides are congruent","4.5 Isosceles and Equilateral Triangles
+The isosceles triangle theorem states that if two sides of a triangle are congruent, then the base angles opposite those sides are congruent."
+6ac6474e569e4cd2958b0de011f2cfb6,Equilateral Triangles,"4.5 Isosceles and Equilateral Triangles
+The isosceles triangle theorem states that if two sides of a triangle are congruent, then the base angles opposite those sides are congruent.","4.5 Isosceles and Equilateral Triangles
+The isosceles triangle theorem states that if two sides of a triangle are congruent, then the base angles opposite those sides are congruent."
+a90dfdd2918d44ac8ab4358f4a16db05,Theorem,The triangle midsegment theorem states that a midsegment is parallel to the third side and half as long as the third side.,The triangle midsegment theorem states that a midsegment is parallel to the third side and half as long as the third side.
+a90dfdd2918d44ac8ab4358f4a16db05,Midsegment,Midsegment is parallel to the third side and half as long as the third side,The triangle midsegment theorem states that a midsegment is parallel to the third side and half as long as the third side.
+a90dfdd2918d44ac8ab4358f4a16db05,Parallel,The triangle midsegment theorem states that a midsegment is parallel to the third side and half as long as the third side.,The triangle midsegment theorem states that a midsegment is parallel to the third side and half as long as the third side.
+a90dfdd2918d44ac8ab4358f4a16db05,Triangle,Triangle is segment connecting the midpoints of two sides,"5.1 Midsegments of Triangles
+A midsegment of a triangle is a segment connecting the midpoints of two sides."
+fb8a62205e5c42288b14248a3499019b,Incenter,Incenter is point of concurrency of the angle bisectors and is equidistant from each side,The incenter is the point of concurrency of the angle bisectors and is equidistant from each side.
+fb8a62205e5c42288b14248a3499019b,Vertex,The circumcenter is the point of concurrency of the perpendicular bisectors and is equidistant from each vertex.,The circumcenter is the point of concurrency of the perpendicular bisectors and is equidistant from each vertex.
+fb8a62205e5c42288b14248a3499019b,Theorem,"5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.","5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints."
+fb8a62205e5c42288b14248a3499019b,Circumcenter,Circumcenter is point of concurrency of the perpendicular bisectors and is equidistant from each vertex,The circumcenter is the point of concurrency of the perpendicular bisectors and is equidistant from each vertex.
+fb8a62205e5c42288b14248a3499019b,Point,"5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.","5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints."
+fb8a62205e5c42288b14248a3499019b,Angle Bisectors,"5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.","5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints."
+fb8a62205e5c42288b14248a3499019b,Perpendicular,"5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.","5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints."
+fb8a62205e5c42288b14248a3499019b,Perpendicular Bisectors,"5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.","5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints."
+fb8a62205e5c42288b14248a3499019b,Perpendicular Bisector,"5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.","5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints."
+fb8a62205e5c42288b14248a3499019b,Bisector,Bisector is equidistant from the sides of the angle,The angle bisector theorem states that any point on the angle bisector is equidistant from the sides of the angle.
+fb8a62205e5c42288b14248a3499019b,Angle Bisector,Angle Bisector is equidistant from the sides of the angle,The angle bisector theorem states that any point on the angle bisector is equidistant from the sides of the angle.
+fb8a62205e5c42288b14248a3499019b,Angle,"5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints.","5.2 Perpendicular Bisectors and Angle Bisectors
+The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints."
+862fba31de6d4f40af2bc1a55096b415,Midpoint,"5.3 Medians and Altitudes
+A median is a segment from a vertex to the midpoint of the opposite side.","5.3 Medians and Altitudes
+A median is a segment from a vertex to the midpoint of the opposite side."
+862fba31de6d4f40af2bc1a55096b415,Vertex,"5.3 Medians and Altitudes
+A median is a segment from a vertex to the midpoint of the opposite side.","5.3 Medians and Altitudes
+A median is a segment from a vertex to the midpoint of the opposite side."
+862fba31de6d4f40af2bc1a55096b415,Centroid,Centroid is point of concurrency of the medians and is the center of gravity of a triangle,The centroid is the point of concurrency of the medians and is the center of gravity of a triangle.
+862fba31de6d4f40af2bc1a55096b415,Triangle,The centroid is the point of concurrency of the medians and is the center of gravity of a triangle.,The centroid is the point of concurrency of the medians and is the center of gravity of a triangle.
+862fba31de6d4f40af2bc1a55096b415,Median,Median is segment from a vertex to the midpoint of the opposite side,"5.3 Medians and Altitudes
+A median is a segment from a vertex to the midpoint of the opposite side."
+862fba31de6d4f40af2bc1a55096b415,Point,The centroid is the point of concurrency of the medians and is the center of gravity of a triangle.,The centroid is the point of concurrency of the medians and is the center of gravity of a triangle.
+862fba31de6d4f40af2bc1a55096b415,Altitude,Altitude is perpendicular segment from a vertex to the opposite side or its extension,An altitude is a perpendicular segment from a vertex to the opposite side or its extension.
+862fba31de6d4f40af2bc1a55096b415,Perpendicular,An altitude is a perpendicular segment from a vertex to the opposite side or its extension.,An altitude is a perpendicular segment from a vertex to the opposite side or its extension.
+99472d747ad84f289ed1f0cf296b8673,Theorem,"5.4 Inequalities in Triangles
+The triangle inequality theorem states that the sum of any two sides must be greater than the third side.","5.4 Inequalities in Triangles
+The triangle inequality theorem states that the sum of any two sides must be greater than the third side."
+99472d747ad84f289ed1f0cf296b8673,Angle,"Angle is larger, then the third side is longer","The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer."
+99472d747ad84f289ed1f0cf296b8673,Triangle,"Triangle is congruent to two sides of another but the included angle is larger, then the third side is longer","The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer."
+bad6f4f7610f4fe090a137d81e03825d,Interior Angle,"6.1 Angles in Polygons
+The interior angle sum of a polygon with n sides is n minus 2 times 180 degrees.","6.1 Angles in Polygons
+The interior angle sum of a polygon with n sides is n minus 2 times 180 degrees."
+bad6f4f7610f4fe090a137d81e03825d,Exterior Angle,The exterior angle sum of any convex polygon is always 360 degrees.,The exterior angle sum of any convex polygon is always 360 degrees.
+bad6f4f7610f4fe090a137d81e03825d,Polygon,Polygon is lways 360 degrees,The exterior angle sum of any convex polygon is always 360 degrees.
+bad6f4f7610f4fe090a137d81e03825d,Angle,"6.1 Angles in Polygons
+The interior angle sum of a polygon with n sides is n minus 2 times 180 degrees.","6.1 Angles in Polygons
+The interior angle sum of a polygon with n sides is n minus 2 times 180 degrees."
+ac937a1a8a174c29bdd83ac6b003755e,Supplementary,Consecutive angles of a parallelogram are supplementary.,Consecutive angles of a parallelogram are supplementary.
+ac937a1a8a174c29bdd83ac6b003755e,Quadrilateral,"6.2 Properties of Parallelograms
+A parallelogram is a quadrilateral with both pairs of opposite sides parallel.","6.2 Properties of Parallelograms
+A parallelogram is a quadrilateral with both pairs of opposite sides parallel."
+ac937a1a8a174c29bdd83ac6b003755e,Parallelogram,Parallelogram is quadrilateral with both pairs of opposite sides parallel,"6.2 Properties of Parallelograms
+A parallelogram is a quadrilateral with both pairs of opposite sides parallel."
+ac937a1a8a174c29bdd83ac6b003755e,Parallel,"6.2 Properties of Parallelograms
+A parallelogram is a quadrilateral with both pairs of opposite sides parallel.","6.2 Properties of Parallelograms
+A parallelogram is a quadrilateral with both pairs of opposite sides parallel."
+30bfe4ffc330464bb08df3769b01191d,Parallelogram,"6.3 Proving Quadrilaterals are Parallelograms
+A quadrilateral is a parallelogram if both pairs of opposite sides are parallel, or congruent, or if diagonals bisect each other.","6.3 Proving Quadrilaterals are Parallelograms
+A quadrilateral is a parallelogram if both pairs of opposite sides are parallel, or congruent, or if diagonals bisect each other."
+30bfe4ffc330464bb08df3769b01191d,Quadrilateral,"Quadrilateral is parallelogram if both pairs of opposite sides are parallel, or congruent, or if diagonals bisect each other","6.3 Proving Quadrilaterals are Parallelograms
+A quadrilateral is a parallelogram if both pairs of opposite sides are parallel, or congruent, or if diagonals bisect each other."
+30bfe4ffc330464bb08df3769b01191d,Proving Quadrilaterals,"Proving Quadrilaterals is Parallelograms
+A quadrilateral is a parallelogram if both pairs of opposite sides are parallel, or congruent, or if diagonals bisect each other","6.3 Proving Quadrilaterals are Parallelograms
+A quadrilateral is a parallelogram if both pairs of opposite sides are parallel, or congruent, or if diagonals bisect each other."
+30bfe4ffc330464bb08df3769b01191d,Parallel,"6.3 Proving Quadrilaterals are Parallelograms
+A quadrilateral is a parallelogram if both pairs of opposite sides are parallel, or congruent, or if diagonals bisect each other.","6.3 Proving Quadrilaterals are Parallelograms
+A quadrilateral is a parallelogram if both pairs of opposite sides are parallel, or congruent, or if diagonals bisect each other."
+ebf64d26b0534aacbab466501e94f870,Rhombus,Rhombus is parallelogram with four congruent sides,A rhombus is a parallelogram with four congruent sides.
+ebf64d26b0534aacbab466501e94f870,Rectangle,Rectangle is parallelogram with four right angles,"6.4 Rectangles, Rhombuses, and Squares
+A rectangle is a parallelogram with four right angles."
+ebf64d26b0534aacbab466501e94f870,Perpendicular,The diagonals of a rhombus are perpendicular bisectors of each other and bisect opposite angles.,The diagonals of a rhombus are perpendicular bisectors of each other and bisect opposite angles.
+ebf64d26b0534aacbab466501e94f870,Square,Square is both a rectangle and a rhombus,A square is both a rectangle and a rhombus.
+ebf64d26b0534aacbab466501e94f870,Parallelogram,"6.4 Rectangles, Rhombuses, and Squares
+A rectangle is a parallelogram with four right angles.","6.4 Rectangles, Rhombuses, and Squares
+A rectangle is a parallelogram with four right angles."
+9ff13d1b44e74917b6e9081f3e6d2647,Quadrilateral,"6.5 Trapezoids and Kites
+A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases.","6.5 Trapezoids and Kites
+A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases."
+9ff13d1b44e74917b6e9081f3e6d2647,Bases,"6.5 Trapezoids and Kites
+A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases.","6.5 Trapezoids and Kites
+A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases."
+9ff13d1b44e74917b6e9081f3e6d2647,Kite,A kite has two consecutive pairs of congruent sides.,A kite has two consecutive pairs of congruent sides.
+9ff13d1b44e74917b6e9081f3e6d2647,Parallel,"6.5 Trapezoids and Kites
+A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases.","6.5 Trapezoids and Kites
+A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases."
+9ff13d1b44e74917b6e9081f3e6d2647,Perpendicular,The diagonals of a kite are perpendicular.,The diagonals of a kite are perpendicular.
+9ff13d1b44e74917b6e9081f3e6d2647,Midsegment,The midsegment of a trapezoid is parallel to the bases and its length is the average of the base lengths.,The midsegment of a trapezoid is parallel to the bases and its length is the average of the base lengths.
+9ff13d1b44e74917b6e9081f3e6d2647,Trapezoid,Trapezoid is quadrilateral with exactly one pair of parallel sides called bases,"6.5 Trapezoids and Kites
+A trapezoid is a quadrilateral with exactly one pair of parallel sides called bases."
+e91d670242da46689d4a28fb7938585a,Scale Factor,Scale Factor is ratio of corresponding measurements of similar figures,The scale factor is the ratio of corresponding measurements of similar figures.
+300c54663ed64a53af0e5efdd7d91486,Scale Factor,The ratio of corresponding sides is the scale factor.,The ratio of corresponding sides is the scale factor.
+300c54663ed64a53af0e5efdd7d91486,Similar Polygons,"7.2 Similar Polygons
+Similar polygons have congruent corresponding angles and proportional corresponding sides.","7.2 Similar Polygons
+Similar polygons have congruent corresponding angles and proportional corresponding sides."
+300c54663ed64a53af0e5efdd7d91486,Corresponding Angles,"7.2 Similar Polygons
+Similar polygons have congruent corresponding angles and proportional corresponding sides.","7.2 Similar Polygons
+Similar polygons have congruent corresponding angles and proportional corresponding sides."
+88b869708f70496193f88b1510e4a8c1,SSS,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.","7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar."
+88b869708f70496193f88b1510e4a8c1,Theorem,The side side side similarity theorem states that if corresponding sides are proportional then triangles are similar.,The side side side similarity theorem states that if corresponding sides are proportional then triangles are similar.
+88b869708f70496193f88b1510e4a8c1,SAS,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.","7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar."
+88b869708f70496193f88b1510e4a8c1,Triangle,"Triangle is congruent to two angles of another, then the triangles are similar","7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar."
+88b869708f70496193f88b1510e4a8c1,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.","7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar."
+88b869708f70496193f88b1510e4a8c1,Postulate,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.","7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar."
+88b869708f70496193f88b1510e4a8c1,Angle,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.","7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar."
+cbfbb9df3fc647699fa630ef2f84dcbd,Theorem,"7.4 Proportionality Relationships
+The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally.","7.4 Proportionality Relationships
+The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally."
+cbfbb9df3fc647699fa630ef2f84dcbd,Proportionality Relationships,"7.4 Proportionality Relationships
+The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally.","7.4 Proportionality Relationships
+The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally."
+cbfbb9df3fc647699fa630ef2f84dcbd,Line,"Line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally","7.4 Proportionality Relationships
+The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally."
+cbfbb9df3fc647699fa630ef2f84dcbd,Proportionality,"7.4 Proportionality Relationships
+The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally.","7.4 Proportionality Relationships
+The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally."
+cbfbb9df3fc647699fa630ef2f84dcbd,Triangle,"7.4 Proportionality Relationships
+The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally.","7.4 Proportionality Relationships
+The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally."
+cbfbb9df3fc647699fa630ef2f84dcbd,Parallel,"7.4 Proportionality Relationships
+The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally.","7.4 Proportionality Relationships
+The triangle proportionality theorem states that if a line is parallel to one side of a triangle and intersects the other two sides, it divides those sides proportionally."
+cbfbb9df3fc647699fa630ef2f84dcbd,Bisector,The angle bisector theorem states that the angle bisector of a triangle divides the opposite side proportionally.,The angle bisector theorem states that the angle bisector of a triangle divides the opposite side proportionally.
+cbfbb9df3fc647699fa630ef2f84dcbd,Angle Bisector,The angle bisector theorem states that the angle bisector of a triangle divides the opposite side proportionally.,The angle bisector theorem states that the angle bisector of a triangle divides the opposite side proportionally.
+cbfbb9df3fc647699fa630ef2f84dcbd,Angle,The angle bisector theorem states that the angle bisector of a triangle divides the opposite side proportionally.,The angle bisector theorem states that the angle bisector of a triangle divides the opposite side proportionally.
+243cdc4e2788422b9d714b00b4fe73e1,Theorem,"8.1 The Pythagorean Theorem
+The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs.","8.1 The Pythagorean Theorem
+The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs."
+243cdc4e2788422b9d714b00b4fe73e1,Triangle,"8.1 The Pythagorean Theorem
+The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs.","8.1 The Pythagorean Theorem
+The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs."
+243cdc4e2788422b9d714b00b4fe73e1,Pythagorean Theorem,"8.1 The Pythagorean Theorem
+The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs.","8.1 The Pythagorean Theorem
+The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs."
+243cdc4e2788422b9d714b00b4fe73e1,Square,"8.1 The Pythagorean Theorem
+The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs.","8.1 The Pythagorean Theorem
+The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs."
+243cdc4e2788422b9d714b00b4fe73e1,Right Triangle,"8.1 The Pythagorean Theorem
+The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs.","8.1 The Pythagorean Theorem
+The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs."
+12334c5b36814e75b87376d6bc430834,Pythagorean Theorem,"8.2 Converse of the Pythagorean Theorem
+If the square of the longest side is greater than the sum of squares of other two sides then the triangle is obtuse.","8.2 Converse of the Pythagorean Theorem
+If the square of the longest side is greater than the sum of squares of other two sides then the triangle is obtuse."
+12334c5b36814e75b87376d6bc430834,Square,"8.2 Converse of the Pythagorean Theorem
+If the square of the longest side is greater than the sum of squares of other two sides then the triangle is obtuse.","8.2 Converse of the Pythagorean Theorem
+If the square of the longest side is greater than the sum of squares of other two sides then the triangle is obtuse."
+12334c5b36814e75b87376d6bc430834,Theorem,"8.2 Converse of the Pythagorean Theorem
+If the square of the longest side is greater than the sum of squares of other two sides then the triangle is obtuse.","8.2 Converse of the Pythagorean Theorem
+If the square of the longest side is greater than the sum of squares of other two sides then the triangle is obtuse."
+12334c5b36814e75b87376d6bc430834,Triangle,"8.2 Converse of the Pythagorean Theorem
+If the square of the longest side is greater than the sum of squares of other two sides then the triangle is obtuse.","8.2 Converse of the Pythagorean Theorem
+If the square of the longest side is greater than the sum of squares of other two sides then the triangle is obtuse."
+3ee38c23f0114c03a6638e4d40a2d3d8,Special Right Triangles,"8.3 Special Right Triangles
+A 45 45 90 triangle has legs that are congruent and a hypotenuse that is the leg times the square root of 2.","8.3 Special Right Triangles
+A 45 45 90 triangle has legs that are congruent and a hypotenuse that is the leg times the square root of 2."
+3ee38c23f0114c03a6638e4d40a2d3d8,Square,"8.3 Special Right Triangles
+A 45 45 90 triangle has legs that are congruent and a hypotenuse that is the leg times the square root of 2.","8.3 Special Right Triangles
+A 45 45 90 triangle has legs that are congruent and a hypotenuse that is the leg times the square root of 2."
+3ee38c23f0114c03a6638e4d40a2d3d8,Triangle,"8.3 Special Right Triangles
+A 45 45 90 triangle has legs that are congruent and a hypotenuse that is the leg times the square root of 2.","8.3 Special Right Triangles
+A 45 45 90 triangle has legs that are congruent and a hypotenuse that is the leg times the square root of 2."
+7292fb475c504841b876dd6004f80640,Tangent,"8.4 Sine, Cosine, and Tangent Ratios
+Trigonometry is the study of the relationships between sides and angles of right triangles.","8.4 Sine, Cosine, and Tangent Ratios
+Trigonometry is the study of the relationships between sides and angles of right triangles."
+7292fb475c504841b876dd6004f80640,Inverse Trigonometric,The inverse trigonometric functions are used to find angles.,The inverse trigonometric functions are used to find angles.
+7292fb475c504841b876dd6004f80640,Tangent Ratios,"8.4 Sine, Cosine, and Tangent Ratios
+Trigonometry is the study of the relationships between sides and angles of right triangles.","8.4 Sine, Cosine, and Tangent Ratios
+Trigonometry is the study of the relationships between sides and angles of right triangles."
+7292fb475c504841b876dd6004f80640,TOA,TOA is mnemonic to remember these ratios,SOH CAH TOA is the mnemonic to remember these ratios.
+7292fb475c504841b876dd6004f80640,CAH,SOH CAH TOA is the mnemonic to remember these ratios.,SOH CAH TOA is the mnemonic to remember these ratios.
+7292fb475c504841b876dd6004f80640,Trigonometry,Trigonometry is study of the relationships between sides and angles of right triangles,"8.4 Sine, Cosine, and Tangent Ratios
+Trigonometry is the study of the relationships between sides and angles of right triangles."
+7292fb475c504841b876dd6004f80640,Tangent Ratio,Tangent Ratio is opposite over adjacent,The tangent ratio is opposite over adjacent.
+7292fb475c504841b876dd6004f80640,Cosine,"8.4 Sine, Cosine, and Tangent Ratios
+Trigonometry is the study of the relationships between sides and angles of right triangles.","8.4 Sine, Cosine, and Tangent Ratios
+Trigonometry is the study of the relationships between sides and angles of right triangles."
+7292fb475c504841b876dd6004f80640,SOH,SOH CAH TOA is the mnemonic to remember these ratios.,SOH CAH TOA is the mnemonic to remember these ratios.
+7292fb475c504841b876dd6004f80640,Sine,"8.4 Sine, Cosine, and Tangent Ratios
+Trigonometry is the study of the relationships between sides and angles of right triangles.","8.4 Sine, Cosine, and Tangent Ratios
+Trigonometry is the study of the relationships between sides and angles of right triangles."
+44aaedabb8ce423a8bc41f1d69ef435a,Chord,Chord is segment whose endpoints are on the circle,A chord is a segment whose endpoints are on the circle.
+44aaedabb8ce423a8bc41f1d69ef435a,Tangent,"9.1 Parts of Circles and Tangent Lines
+A circle is the set of all points equidistant from a center point.","9.1 Parts of Circles and Tangent Lines
+A circle is the set of all points equidistant from a center point."
+44aaedabb8ce423a8bc41f1d69ef435a,Point Of Tangency,A tangent line touches a circle at exactly one point called the point of tangency.,A tangent line touches a circle at exactly one point called the point of tangency.
+44aaedabb8ce423a8bc41f1d69ef435a,Line,A tangent line touches a circle at exactly one point called the point of tangency.,A tangent line touches a circle at exactly one point called the point of tangency.
+44aaedabb8ce423a8bc41f1d69ef435a,Tangent Lines,Tangent Lines is perpendicular to the radius at the point of tangency,Tangent lines are perpendicular to the radius at the point of tangency.
+44aaedabb8ce423a8bc41f1d69ef435a,Point,"9.1 Parts of Circles and Tangent Lines
+A circle is the set of all points equidistant from a center point.","9.1 Parts of Circles and Tangent Lines
+A circle is the set of all points equidistant from a center point."
+44aaedabb8ce423a8bc41f1d69ef435a,Radius,Radius is segment from the center to a point on the circle,The radius is a segment from the center to a point on the circle.
+44aaedabb8ce423a8bc41f1d69ef435a,Diameter,Diameter is chord passing through the center,The diameter is a chord passing through the center.
+44aaedabb8ce423a8bc41f1d69ef435a,Perpendicular,Tangent lines are perpendicular to the radius at the point of tangency.,Tangent lines are perpendicular to the radius at the point of tangency.
+44aaedabb8ce423a8bc41f1d69ef435a,Circle,Circle is set of all points equidistant from a center point,"9.1 Parts of Circles and Tangent Lines
+A circle is the set of all points equidistant from a center point."
+27ef99333e2642129dcfb5b7e5c32aa9,Postulate,The arc addition postulate states that adjacent arc measures can be added.,The arc addition postulate states that adjacent arc measures can be added.
+27ef99333e2642129dcfb5b7e5c32aa9,Arc,Arc is portion of a circle,An arc is a portion of a circle.
+27ef99333e2642129dcfb5b7e5c32aa9,Central Angle,Central Angle is angle formed by two radii,"9.2 Properties of Arcs
+A central angle is an angle formed by two radii."
+27ef99333e2642129dcfb5b7e5c32aa9,Circle,An arc is a portion of a circle.,An arc is a portion of a circle.
+27ef99333e2642129dcfb5b7e5c32aa9,Angle,Angle is angle formed by two radii,"9.2 Properties of Arcs
+A central angle is an angle formed by two radii."
+6c8e3dc566d44167a17a7f6980e2e68b,Chord,"9.3 Properties of Chords
+The perpendicular bisector of a chord passes through the center.","9.3 Properties of Chords
+The perpendicular bisector of a chord passes through the center."
+6c8e3dc566d44167a17a7f6980e2e68b,Diameter,A diameter perpendicular to a chord bisects the chord and its arcs.,A diameter perpendicular to a chord bisects the chord and its arcs.
+6c8e3dc566d44167a17a7f6980e2e68b,Perpendicular,"9.3 Properties of Chords
+The perpendicular bisector of a chord passes through the center.","9.3 Properties of Chords
+The perpendicular bisector of a chord passes through the center."
+6c8e3dc566d44167a17a7f6980e2e68b,Perpendicular Bisector,"9.3 Properties of Chords
+The perpendicular bisector of a chord passes through the center.","9.3 Properties of Chords
+The perpendicular bisector of a chord passes through the center."
+6c8e3dc566d44167a17a7f6980e2e68b,Bisector,"9.3 Properties of Chords
+The perpendicular bisector of a chord passes through the center.","9.3 Properties of Chords
+The perpendicular bisector of a chord passes through the center."
+591129ae2f834862a55671d329d5d30c,Supplementary,Opposite angles of an inscribed quadrilateral are supplementary.,Opposite angles of an inscribed quadrilateral are supplementary.
+591129ae2f834862a55671d329d5d30c,Quadrilateral,Opposite angles of an inscribed quadrilateral are supplementary.,Opposite angles of an inscribed quadrilateral are supplementary.
+591129ae2f834862a55671d329d5d30c,Inscribed Angles,"9.4 Inscribed Angles
+An inscribed angle is an angle formed by two chords with the vertex on the circle.","9.4 Inscribed Angles
+An inscribed angle is an angle formed by two chords with the vertex on the circle."
+591129ae2f834862a55671d329d5d30c,Vertex,"9.4 Inscribed Angles
+An inscribed angle is an angle formed by two chords with the vertex on the circle.","9.4 Inscribed Angles
+An inscribed angle is an angle formed by two chords with the vertex on the circle."
+591129ae2f834862a55671d329d5d30c,Theorem,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.
+591129ae2f834862a55671d329d5d30c,Arc,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.
+591129ae2f834862a55671d329d5d30c,Central Angle,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.
+591129ae2f834862a55671d329d5d30c,Inscribed Angle,Inscribed Angle is angle formed by two chords with the vertex on the circle,"9.4 Inscribed Angles
+An inscribed angle is an angle formed by two chords with the vertex on the circle."
+591129ae2f834862a55671d329d5d30c,Circle,"9.4 Inscribed Angles
+An inscribed angle is an angle formed by two chords with the vertex on the circle.","9.4 Inscribed Angles
+An inscribed angle is an angle formed by two chords with the vertex on the circle."
+591129ae2f834862a55671d329d5d30c,Angle,Angle is angle formed by two chords with the vertex on the circle,"9.4 Inscribed Angles
+An inscribed angle is an angle formed by two chords with the vertex on the circle."
+a4d5edebef4140b5bbe15be0bef5e7a0,Secant,Secant is line that intersects a circle at two points,"9.5 Angles from Chords, Secants, and Tangents
+A secant is a line that intersects a circle at two points."
+a4d5edebef4140b5bbe15be0bef5e7a0,Line,"9.5 Angles from Chords, Secants, and Tangents
+A secant is a line that intersects a circle at two points.","9.5 Angles from Chords, Secants, and Tangents
+A secant is a line that intersects a circle at two points."
+a4d5edebef4140b5bbe15be0bef5e7a0,Point,Point is half the difference of the intercepted arcs,The angle formed by two secants from an external point is half the difference of the intercepted arcs.
+a4d5edebef4140b5bbe15be0bef5e7a0,Circle,"9.5 Angles from Chords, Secants, and Tangents
+A secant is a line that intersects a circle at two points.","9.5 Angles from Chords, Secants, and Tangents
+A secant is a line that intersects a circle at two points."
+a4d5edebef4140b5bbe15be0bef5e7a0,Angle,The angle formed by two chords is half the sum of the intercepted arcs.,The angle formed by two chords is half the sum of the intercepted arcs.
+e5e98452292c4f859d35b0ff578526c0,Point,"When two secants are drawn from an external point, the products of each secant and its external segment are equal.","When two secants are drawn from an external point, the products of each secant and its external segment are equal."
+e5e98452292c4f859d35b0ff578526c0,Segment Lengths,"9.6 Segment Lengths from Chords, Secants, and Tangents
+When two chords intersect inside a circle, the products of their segments are equal.","9.6 Segment Lengths from Chords, Secants, and Tangents
+When two chords intersect inside a circle, the products of their segments are equal."
+e5e98452292c4f859d35b0ff578526c0,Circle,"9.6 Segment Lengths from Chords, Secants, and Tangents
+When two chords intersect inside a circle, the products of their segments are equal.","9.6 Segment Lengths from Chords, Secants, and Tangents
+When two chords intersect inside a circle, the products of their segments are equal."
+e5e98452292c4f859d35b0ff578526c0,Secant,"When two secants are drawn from an external point, the products of each secant and its external segment are equal.","When two secants are drawn from an external point, the products of each secant and its external segment are equal."
+60db6311dcc648e78286c1832bfc3922,Perimeter,"10.1 Triangles and Parallelograms
+The perimeter of a polygon is the sum of its sides.","10.1 Triangles and Parallelograms
+The perimeter of a polygon is the sum of its sides."
+60db6311dcc648e78286c1832bfc3922,Polygon,Polygon is sum of its sides,"10.1 Triangles and Parallelograms
+The perimeter of a polygon is the sum of its sides."
+60db6311dcc648e78286c1832bfc3922,Area,The area of a rectangle is base times height.,The area of a rectangle is base times height.
+60db6311dcc648e78286c1832bfc3922,Rectangle,Rectangle is base times height,The area of a rectangle is base times height.
+60db6311dcc648e78286c1832bfc3922,Triangle,Triangle is one half base times height,The area of a triangle is one half base times height.
+60db6311dcc648e78286c1832bfc3922,Parallelogram,Parallelogram is base times height,The area of a parallelogram is base times height.
+7b47ac00278641ed8532df8855fe0f4c,Area,"10.2 Trapezoids, Rhombuses, and Kites
+The area of a trapezoid is one half times the sum of the bases times the height.","10.2 Trapezoids, Rhombuses, and Kites
+The area of a trapezoid is one half times the sum of the bases times the height."
+7b47ac00278641ed8532df8855fe0f4c,Kite,Kite is one half times the product of the diagonals,The area of a kite is one half times the product of the diagonals.
+7b47ac00278641ed8532df8855fe0f4c,Rhombus,Rhombus is one half times the product of the diagonals,The area of a rhombus is one half times the product of the diagonals.
+7b47ac00278641ed8532df8855fe0f4c,Trapezoid,Trapezoid is one half times the sum of the bases times the height,"10.2 Trapezoids, Rhombuses, and Kites
+The area of a trapezoid is one half times the sum of the bases times the height."
+76e7375f7aca46b0aef49be552743e8c,Scale Factor,"10.3 Areas of Similar Polygons
+The ratio of the areas of similar polygons is the square of the scale factor.","10.3 Areas of Similar Polygons
+The ratio of the areas of similar polygons is the square of the scale factor."
+76e7375f7aca46b0aef49be552743e8c,Square,"10.3 Areas of Similar Polygons
+The ratio of the areas of similar polygons is the square of the scale factor.","10.3 Areas of Similar Polygons
+The ratio of the areas of similar polygons is the square of the scale factor."
+76e7375f7aca46b0aef49be552743e8c,Similar Polygons,Similar Polygons is square of the scale factor,"10.3 Areas of Similar Polygons
+The ratio of the areas of similar polygons is the square of the scale factor."
+1867300e59824b12bea9539642f2a591,Arc Length,Arc Length is portion of the circumference equal to the arc measure divided by 360 times the circumference,An arc length is a portion of the circumference equal to the arc measure divided by 360 times the circumference.
+1867300e59824b12bea9539642f2a591,Circumference,"10.4 Circumference and Arc Length
+The circumference of a circle is two pi times the radius or pi times the diameter.","10.4 Circumference and Arc Length
+The circumference of a circle is two pi times the radius or pi times the diameter."
+1867300e59824b12bea9539642f2a591,Diameter,"10.4 Circumference and Arc Length
+The circumference of a circle is two pi times the radius or pi times the diameter.","10.4 Circumference and Arc Length
+The circumference of a circle is two pi times the radius or pi times the diameter."
+1867300e59824b12bea9539642f2a591,Radius,"10.4 Circumference and Arc Length
+The circumference of a circle is two pi times the radius or pi times the diameter.","10.4 Circumference and Arc Length
+The circumference of a circle is two pi times the radius or pi times the diameter."
+1867300e59824b12bea9539642f2a591,Arc,"10.4 Circumference and Arc Length
+The circumference of a circle is two pi times the radius or pi times the diameter.","10.4 Circumference and Arc Length
+The circumference of a circle is two pi times the radius or pi times the diameter."
+1867300e59824b12bea9539642f2a591,Circle,Circle is two pi times the radius or pi times the diameter,"10.4 Circumference and Arc Length
+The circumference of a circle is two pi times the radius or pi times the diameter."
+c170b4cc4e9b44bd9a15899fb662220e,Sector,Sector is pie-shaped region bounded by two radii and an arc,A sector is a pie-shaped region bounded by two radii and an arc.
+c170b4cc4e9b44bd9a15899fb662220e,Radius,"10.5 Areas of Circles and Sectors
+The area of a circle is pi times the radius squared.","10.5 Areas of Circles and Sectors
+The area of a circle is pi times the radius squared."
+c170b4cc4e9b44bd9a15899fb662220e,Arc,A sector is a pie-shaped region bounded by two radii and an arc.,A sector is a pie-shaped region bounded by two radii and an arc.
+c170b4cc4e9b44bd9a15899fb662220e,Area,"10.5 Areas of Circles and Sectors
+The area of a circle is pi times the radius squared.","10.5 Areas of Circles and Sectors
+The area of a circle is pi times the radius squared."
+c170b4cc4e9b44bd9a15899fb662220e,Circle,Circle is pi times the radius squared,"10.5 Areas of Circles and Sectors
+The area of a circle is pi times the radius squared."
+ec8ed2d3f9ab47e5b6f8ee021ef6904b,Polygon,"11.1 Polyhedrons
+A polyhedron is a three-dimensional figure with flat polygon faces, straight edges, and vertices.","11.1 Polyhedrons
+A polyhedron is a three-dimensional figure with flat polygon faces, straight edges, and vertices."
+ec8ed2d3f9ab47e5b6f8ee021ef6904b,Prism,A prism has two congruent parallel bases connected by parallelogram faces.,A prism has two congruent parallel bases connected by parallelogram faces.
+ec8ed2d3f9ab47e5b6f8ee021ef6904b,Pyramid,A pyramid has one base and triangular faces meeting at an apex.,A pyramid has one base and triangular faces meeting at an apex.
+ec8ed2d3f9ab47e5b6f8ee021ef6904b,Polyhedron,"Polyhedron is three-dimensional figure with flat polygon faces, straight edges, and vertices","11.1 Polyhedrons
+A polyhedron is a three-dimensional figure with flat polygon faces, straight edges, and vertices."
+ec8ed2d3f9ab47e5b6f8ee021ef6904b,Parallel,A prism has two congruent parallel bases connected by parallelogram faces.,A prism has two congruent parallel bases connected by parallelogram faces.
+ec8ed2d3f9ab47e5b6f8ee021ef6904b,Parallelogram,A prism has two congruent parallel bases connected by parallelogram faces.,A prism has two congruent parallel bases connected by parallelogram faces.
+77868f8c09444c87aeab5c65eb38a73f,Plane,A cross section is the intersection of a solid with a plane.,A cross section is the intersection of a solid with a plane.
+77868f8c09444c87aeab5c65eb38a73f,Cross Section,Cross Section is intersection of a solid with a plane,A cross section is the intersection of a solid with a plane.
+77868f8c09444c87aeab5c65eb38a73f,Representing Solids,"11.2 Representing Solids
+A net is a flat pattern that can be folded to form a solid.","11.2 Representing Solids
+A net is a flat pattern that can be folded to form a solid."
+08ee386141e7465ea4a12205768d487f,Perimeter,"11.3 Prisms and Cylinders
+The lateral area of a prism is the perimeter of the base times the height.","11.3 Prisms and Cylinders
+The lateral area of a prism is the perimeter of the base times the height."
+08ee386141e7465ea4a12205768d487f,Volume,The volume of a prism is the area of the base times the height.,The volume of a prism is the area of the base times the height.
+08ee386141e7465ea4a12205768d487f,Prism,Prism is perimeter of the base times the height,"11.3 Prisms and Cylinders
+The lateral area of a prism is the perimeter of the base times the height."
+08ee386141e7465ea4a12205768d487f,Radius,The volume of a cylinder is pi times radius squared times height.,The volume of a cylinder is pi times radius squared times height.
+08ee386141e7465ea4a12205768d487f,Surface Area,Surface Area is lateral area plus two times the area of the base,The surface area is the lateral area plus two times the area of the base.
+08ee386141e7465ea4a12205768d487f,Cylinder,Cylinder is like a prism with circular bases,A cylinder is like a prism with circular bases.
+08ee386141e7465ea4a12205768d487f,Area,Area is lateral area plus two times the area of the base,The surface area is the lateral area plus two times the area of the base.
+e074941b6f5e441880068d832983fcac,Perimeter,"11.4 Pyramids and Cones
+The lateral area of a regular pyramid is one half times the perimeter of the base times the slant height.","11.4 Pyramids and Cones
+The lateral area of a regular pyramid is one half times the perimeter of the base times the slant height."
+e074941b6f5e441880068d832983fcac,Volume,The volume of a pyramid is one third times base area times height.,The volume of a pyramid is one third times base area times height.
+e074941b6f5e441880068d832983fcac,Pyramid,Pyramid is one half times the perimeter of the base times the slant height,"11.4 Pyramids and Cones
+The lateral area of a regular pyramid is one half times the perimeter of the base times the slant height."
+e074941b6f5e441880068d832983fcac,Radius,The volume of a cone is one third pi radius squared times height.,The volume of a cone is one third pi radius squared times height.
+e074941b6f5e441880068d832983fcac,Surface Area,Surface Area is lateral area plus the base area,The surface area is the lateral area plus the base area.
+e074941b6f5e441880068d832983fcac,Cone,Cone is one third pi radius squared times height,The volume of a cone is one third pi radius squared times height.
+e074941b6f5e441880068d832983fcac,Area,Area is lateral area plus the base area,The surface area is the lateral area plus the base area.
+519fadb55cba49c2bd7d0386803f0a29,Volume,The volume of a sphere is four thirds pi radius cubed.,The volume of a sphere is four thirds pi radius cubed.
+519fadb55cba49c2bd7d0386803f0a29,Radius,The surface area of a sphere is 4 pi radius squared.,The surface area of a sphere is 4 pi radius squared.
+519fadb55cba49c2bd7d0386803f0a29,Surface Area,The surface area of a sphere is 4 pi radius squared.,The surface area of a sphere is 4 pi radius squared.
+519fadb55cba49c2bd7d0386803f0a29,Sphere,Sphere is set of all points in space equidistant from a center,"11.5 Spheres
+A sphere is the set of all points in space equidistant from a center."
+519fadb55cba49c2bd7d0386803f0a29,Area,The surface area of a sphere is 4 pi radius squared.,The surface area of a sphere is 4 pi radius squared.
+a46b41f85e4a4e319d735c5db3db0a98,Surface Area,Surface Area is computed by combining the solids appropriately,Volume and surface area are computed by combining the solids appropriately.
+a46b41f85e4a4e319d735c5db3db0a98,Volume,Volume and surface area are computed by combining the solids appropriately.,Volume and surface area are computed by combining the solids appropriately.
+a46b41f85e4a4e319d735c5db3db0a98,Area,Area is computed by combining the solids appropriately,Volume and surface area are computed by combining the solids appropriately.
+a46b41f85e4a4e319d735c5db3db0a98,Composite Solids,"11.6 Composite Solids
+A composite solid is made of two or more solids.","11.6 Composite Solids
+A composite solid is made of two or more solids."
+0e749f347c2c46e1b45bfe251bcca5f5,Exploring Symmetry,"12.1 Exploring Symmetry
+A figure has line symmetry if it can be folded so both halves match.","12.1 Exploring Symmetry
+A figure has line symmetry if it can be folded so both halves match."
+0e749f347c2c46e1b45bfe251bcca5f5,Rotation,A figure has rotational symmetry if it maps onto itself after a rotation of less than 360 degrees.,A figure has rotational symmetry if it maps onto itself after a rotation of less than 360 degrees.
+0e749f347c2c46e1b45bfe251bcca5f5,Line,"12.1 Exploring Symmetry
+A figure has line symmetry if it can be folded so both halves match.","12.1 Exploring Symmetry
+A figure has line symmetry if it can be folded so both halves match."
+0e749f347c2c46e1b45bfe251bcca5f5,Symmetry,Symmetry is number of times a figure maps onto itself,The order of symmetry is the number of times a figure maps onto itself.
+0e749f347c2c46e1b45bfe251bcca5f5,Rotational Symmetry,A figure has rotational symmetry if it maps onto itself after a rotation of less than 360 degrees.,A figure has rotational symmetry if it maps onto itself after a rotation of less than 360 degrees.
+0e749f347c2c46e1b45bfe251bcca5f5,Line Symmetry,"12.1 Exploring Symmetry
+A figure has line symmetry if it can be folded so both halves match.","12.1 Exploring Symmetry
+A figure has line symmetry if it can be folded so both halves match."
+1d1a3f608190487582f90d9adf655239,Point,"12.2 Translations
+A translation slides every point of a figure the same distance in the same direction.","12.2 Translations
+A translation slides every point of a figure the same distance in the same direction."
+1d1a3f608190487582f90d9adf655239,Translation,"12.2 Translations
+A translation slides every point of a figure the same distance in the same direction.","12.2 Translations
+A translation slides every point of a figure the same distance in the same direction."
+617949fea2ce453f9b81a58464d7023d,Reflection,"12.3 Reflections
+A reflection flips a figure over a line called the line of reflection.","12.3 Reflections
+A reflection flips a figure over a line called the line of reflection."
+617949fea2ce453f9b81a58464d7023d,Line Of Reflection,"12.3 Reflections
+A reflection flips a figure over a line called the line of reflection.","12.3 Reflections
+A reflection flips a figure over a line called the line of reflection."
+617949fea2ce453f9b81a58464d7023d,Line,"12.3 Reflections
+A reflection flips a figure over a line called the line of reflection.","12.3 Reflections
+A reflection flips a figure over a line called the line of reflection."
+617949fea2ce453f9b81a58464d7023d,Point,Each point maps to an equidistant point on the other side of the line.,Each point maps to an equidistant point on the other side of the line.
+617949fea2ce453f9b81a58464d7023d,Translation,The composition of two reflections over parallel lines is a translation.,The composition of two reflections over parallel lines is a translation.
+617949fea2ce453f9b81a58464d7023d,Parallel,The composition of two reflections over parallel lines is a translation.,The composition of two reflections over parallel lines is a translation.
+8f91c752e8a24e6d9cb383057d09f0e7,Point,"12.4 Rotations
+A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation.","12.4 Rotations
+A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation."
+8f91c752e8a24e6d9cb383057d09f0e7,Rotation,"12.4 Rotations
+A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation.","12.4 Rotations
+A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation."
+8f91c752e8a24e6d9cb383057d09f0e7,Angle,"12.4 Rotations
+A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation.","12.4 Rotations
+A rotation turns a figure around a fixed point called the center of rotation by an angle of rotation."
+9b21c627797b4abfb4eccced08459edf,Reflection,Reflection is composition of a reflection and a translation parallel to the line of reflection,"12.5 Composition of Transformations
+A glide reflection is the composition of a reflection and a translation parallel to the line of reflection."
+9b21c627797b4abfb4eccced08459edf,Line,"12.5 Composition of Transformations
+A glide reflection is the composition of a reflection and a translation parallel to the line of reflection.","12.5 Composition of Transformations
+A glide reflection is the composition of a reflection and a translation parallel to the line of reflection."
+9b21c627797b4abfb4eccced08459edf,Parallel,"12.5 Composition of Transformations
+A glide reflection is the composition of a reflection and a translation parallel to the line of reflection.","12.5 Composition of Transformations
+A glide reflection is the composition of a reflection and a translation parallel to the line of reflection."
+9b21c627797b4abfb4eccced08459edf,Translation,"12.5 Composition of Transformations
+A glide reflection is the composition of a reflection and a translation parallel to the line of reflection.","12.5 Composition of Transformations
+A glide reflection is the composition of a reflection and a translation parallel to the line of reflection."
+9b21c627797b4abfb4eccced08459edf,Angle,"Isometries preserve angle measure, betweenness, collinearity, and distance.","Isometries preserve angle measure, betweenness, collinearity, and distance."

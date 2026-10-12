@@ -1,0 +1,332 @@
+chunk_id,page,chapter,candidate
+286449c2ef194f74bbff55b122092f07,1,,Basic Geometry Concepts
+f9a01b3d953d424b8377af54f71d3adb,1,Chapter 1: Basics of Geometry,Line
+f9a01b3d953d424b8377af54f71d3adb,1,Chapter 1: Basics of Geometry,Line Segment
+f9a01b3d953d424b8377af54f71d3adb,1,Chapter 1: Basics of Geometry,Plane
+f9a01b3d953d424b8377af54f71d3adb,1,Chapter 1: Basics of Geometry,Point
+f9a01b3d953d424b8377af54f71d3adb,1,Chapter 1: Basics of Geometry,Ray
+74ad7ec834f7454bb6de28a24c40d7f8,1,Chapter 1: Basics of Geometry,Bisector
+74ad7ec834f7454bb6de28a24c40d7f8,1,Chapter 1: Basics of Geometry,Line
+74ad7ec834f7454bb6de28a24c40d7f8,1,Chapter 1: Basics of Geometry,Line Segment
+74ad7ec834f7454bb6de28a24c40d7f8,1,Chapter 1: Basics of Geometry,Midpoint
+74ad7ec834f7454bb6de28a24c40d7f8,1,Chapter 1: Basics of Geometry,Point
+74ad7ec834f7454bb6de28a24c40d7f8,1,Chapter 1: Basics of Geometry,Postulate
+c1f757da1d0646b3a6c6a5edef510458,1,Chapter 1: Basics of Geometry,ABC
+c1f757da1d0646b3a6c6a5edef510458,1,Chapter 1: Basics of Geometry,ABD
+c1f757da1d0646b3a6c6a5edef510458,1,Chapter 1: Basics of Geometry,Angle
+c1f757da1d0646b3a6c6a5edef510458,1,Chapter 1: Basics of Geometry,DBC
+c1f757da1d0646b3a6c6a5edef510458,1,Chapter 1: Basics of Geometry,Postulate
+c1f757da1d0646b3a6c6a5edef510458,1,Chapter 1: Basics of Geometry,Ray
+c1f757da1d0646b3a6c6a5edef510458,1,Chapter 1: Basics of Geometry,Vertex
+9106de425a374350b2350d77e9b484fc,1,Chapter 1: Basics of Geometry,Angle
+9106de425a374350b2350d77e9b484fc,1,Chapter 1: Basics of Geometry,Angle Pairs
+9106de425a374350b2350d77e9b484fc,1,Chapter 1: Basics of Geometry,Complementary
+9106de425a374350b2350d77e9b484fc,1,Chapter 1: Basics of Geometry,Line
+9106de425a374350b2350d77e9b484fc,1,Chapter 1: Basics of Geometry,Linear Pair
+9106de425a374350b2350d77e9b484fc,1,Chapter 1: Basics of Geometry,Supplementary
+9106de425a374350b2350d77e9b484fc,1,Chapter 1: Basics of Geometry,Vertex
+9106de425a374350b2350d77e9b484fc,1,Chapter 1: Basics of Geometry,Vertical Angles
+32de38bf61c346539d75d3fafcdc9dea,2,Chapter 1: Basics of Geometry,Acute Triangle
+32de38bf61c346539d75d3fafcdc9dea,2,Chapter 1: Basics of Geometry,Angle
+32de38bf61c346539d75d3fafcdc9dea,2,Chapter 1: Basics of Geometry,Classifying Triangles
+32de38bf61c346539d75d3fafcdc9dea,2,Chapter 1: Basics of Geometry,Equilateral Triangle
+32de38bf61c346539d75d3fafcdc9dea,2,Chapter 1: Basics of Geometry,Isosceles Triangle
+32de38bf61c346539d75d3fafcdc9dea,2,Chapter 1: Basics of Geometry,Obtuse Triangle
+32de38bf61c346539d75d3fafcdc9dea,2,Chapter 1: Basics of Geometry,Right Triangle
+32de38bf61c346539d75d3fafcdc9dea,2,Chapter 1: Basics of Geometry,Scalene Triangle
+32de38bf61c346539d75d3fafcdc9dea,2,Chapter 1: Basics of Geometry,Theorem
+32de38bf61c346539d75d3fafcdc9dea,2,Chapter 1: Basics of Geometry,Triangle
+3ba723faad064a488135ff29a85daa8c,2,Chapter 1: Basics of Geometry,Classifying Polygons
+3ba723faad064a488135ff29a85daa8c,2,Chapter 1: Basics of Geometry,Hexagon
+3ba723faad064a488135ff29a85daa8c,2,Chapter 1: Basics of Geometry,Pentagon
+3ba723faad064a488135ff29a85daa8c,2,Chapter 1: Basics of Geometry,Plane
+3ba723faad064a488135ff29a85daa8c,2,Chapter 1: Basics of Geometry,Polygon
+3ba723faad064a488135ff29a85daa8c,2,Chapter 1: Basics of Geometry,Quadrilateral
+3ba723faad064a488135ff29a85daa8c,2,Chapter 1: Basics of Geometry,Regular Polygon
+3ba723faad064a488135ff29a85daa8c,2,Chapter 1: Basics of Geometry,Triangle
+fa6e1233683348d5825efb42629b0bf8,2,Chapter 2: Reasoning and Proof,Conjecture
+fa6e1233683348d5825efb42629b0bf8,2,Chapter 2: Reasoning and Proof,Counterexample
+fa6e1233683348d5825efb42629b0bf8,2,Chapter 2: Reasoning and Proof,Inductive Reasoning
+2fd74026b58846d094e4e427a69f6e39,2,Chapter 2: Reasoning and Proof,Conditional Statements
+f4d74790bf8b43e5b1b66bfb01e7218d,2,Chapter 2: Reasoning and Proof,Deductive Reasoning
+c310ee8da1da428c869e7770d3715c43,2,Chapter 2: Reasoning and Proof,Angle
+c310ee8da1da428c869e7770d3715c43,2,Chapter 2: Reasoning and Proof,Congruence
+c310ee8da1da428c869e7770d3715c43,2,Chapter 2: Reasoning and Proof,Congruence Properties
+95dac87004ec4aacae6e5483657c9213,3,Chapter 2: Reasoning and Proof,Midpoint
+95dac87004ec4aacae6e5483657c9213,3,Chapter 2: Reasoning and Proof,Proof
+95dac87004ec4aacae6e5483657c9213,3,Chapter 2: Reasoning and Proof,Theorem
+7b36d66a87b34836acf12aef3c6e6aa2,3,Chapter 3: Parallel and Perpendicular Lines,Alternate Interior Angles
+7b36d66a87b34836acf12aef3c6e6aa2,3,Chapter 3: Parallel and Perpendicular Lines,Angle
+7b36d66a87b34836acf12aef3c6e6aa2,3,Chapter 3: Parallel and Perpendicular Lines,Corresponding Angles
+7b36d66a87b34836acf12aef3c6e6aa2,3,Chapter 3: Parallel and Perpendicular Lines,Line
+7b36d66a87b34836acf12aef3c6e6aa2,3,Chapter 3: Parallel and Perpendicular Lines,Parallel
+7b36d66a87b34836acf12aef3c6e6aa2,3,Chapter 3: Parallel and Perpendicular Lines,Perpendicular
+7b36d66a87b34836acf12aef3c6e6aa2,3,Chapter 3: Parallel and Perpendicular Lines,Plane
+7b36d66a87b34836acf12aef3c6e6aa2,3,Chapter 3: Parallel and Perpendicular Lines,Supplementary
+7b36d66a87b34836acf12aef3c6e6aa2,3,Chapter 3: Parallel and Perpendicular Lines,Transversal
+1d09fafe2a56463da40b9c2ab4844e0d,3,Chapter 3: Parallel and Perpendicular Lines,Alternate Interior Angles
+1d09fafe2a56463da40b9c2ab4844e0d,3,Chapter 3: Parallel and Perpendicular Lines,Corresponding Angles
+1d09fafe2a56463da40b9c2ab4844e0d,3,Chapter 3: Parallel and Perpendicular Lines,Parallel
+1d09fafe2a56463da40b9c2ab4844e0d,3,Chapter 3: Parallel and Perpendicular Lines,Parallel Lines
+1d09fafe2a56463da40b9c2ab4844e0d,3,Chapter 3: Parallel and Perpendicular Lines,Postulate
+1d09fafe2a56463da40b9c2ab4844e0d,3,Chapter 3: Parallel and Perpendicular Lines,Supplementary
+1d09fafe2a56463da40b9c2ab4844e0d,3,Chapter 3: Parallel and Perpendicular Lines,Theorem
+1d09fafe2a56463da40b9c2ab4844e0d,3,Chapter 3: Parallel and Perpendicular Lines,Transversal
+39fda40ded234e1498bd4e36fcecb26d,3,Chapter 3: Parallel and Perpendicular Lines,Corresponding Angles
+39fda40ded234e1498bd4e36fcecb26d,3,Chapter 3: Parallel and Perpendicular Lines,Line
+39fda40ded234e1498bd4e36fcecb26d,3,Chapter 3: Parallel and Perpendicular Lines,Parallel
+39fda40ded234e1498bd4e36fcecb26d,3,Chapter 3: Parallel and Perpendicular Lines,Perpendicular
+39fda40ded234e1498bd4e36fcecb26d,3,Chapter 3: Parallel and Perpendicular Lines,Postulate
+39fda40ded234e1498bd4e36fcecb26d,3,Chapter 3: Parallel and Perpendicular Lines,Proving Lines Parallel
+39fda40ded234e1498bd4e36fcecb26d,3,Chapter 3: Parallel and Perpendicular Lines,Slope
+39fda40ded234e1498bd4e36fcecb26d,3,Chapter 3: Parallel and Perpendicular Lines,Transversal
+91301ead535c4a8c834f86cea5b48492,3,Chapter 3: Parallel and Perpendicular Lines,Bisector
+91301ead535c4a8c834f86cea5b48492,3,Chapter 3: Parallel and Perpendicular Lines,Line
+91301ead535c4a8c834f86cea5b48492,3,Chapter 3: Parallel and Perpendicular Lines,Midpoint
+91301ead535c4a8c834f86cea5b48492,3,Chapter 3: Parallel and Perpendicular Lines,Parallel
+91301ead535c4a8c834f86cea5b48492,3,Chapter 3: Parallel and Perpendicular Lines,Perpendicular
+91301ead535c4a8c834f86cea5b48492,3,Chapter 3: Parallel and Perpendicular Lines,Perpendicular Bisector
+91301ead535c4a8c834f86cea5b48492,3,Chapter 3: Parallel and Perpendicular Lines,Perpendicular Lines
+91301ead535c4a8c834f86cea5b48492,3,Chapter 3: Parallel and Perpendicular Lines,Point
+91301ead535c4a8c834f86cea5b48492,3,Chapter 3: Parallel and Perpendicular Lines,Theorem
+91301ead535c4a8c834f86cea5b48492,3,Chapter 3: Parallel and Perpendicular Lines,Transversal
+bb5195bda8e1422bb9f55f3a26944bb6,3,Chapter 4: Triangles and Congruence,Angle
+bb5195bda8e1422bb9f55f3a26944bb6,3,Chapter 4: Triangles and Congruence,Corollary
+bb5195bda8e1422bb9f55f3a26944bb6,3,Chapter 4: Triangles and Congruence,Equilateral Triangle
+bb5195bda8e1422bb9f55f3a26944bb6,3,Chapter 4: Triangles and Congruence,Exterior Angle
+bb5195bda8e1422bb9f55f3a26944bb6,3,Chapter 4: Triangles and Congruence,Remote Interior Angles
+bb5195bda8e1422bb9f55f3a26944bb6,3,Chapter 4: Triangles and Congruence,Theorem
+bb5195bda8e1422bb9f55f3a26944bb6,3,Chapter 4: Triangles and Congruence,Triangle
+bb5195bda8e1422bb9f55f3a26944bb6,3,Chapter 4: Triangles and Congruence,Triangle Sums
+d53f7cb5d33349de992e5503f9d0e8d6,4,Chapter 4: Triangles and Congruence,CPCTC
+d53f7cb5d33349de992e5503f9d0e8d6,4,Chapter 4: Triangles and Congruence,Congruent Figures
+d24382089d9244bdb180bf5d420baae8,4,Chapter 4: Triangles and Congruence,Angle
+d24382089d9244bdb180bf5d420baae8,4,Chapter 4: Triangles and Congruence,Congruence
+d24382089d9244bdb180bf5d420baae8,4,Chapter 4: Triangles and Congruence,Postulate
+d24382089d9244bdb180bf5d420baae8,4,Chapter 4: Triangles and Congruence,SAS
+d24382089d9244bdb180bf5d420baae8,4,Chapter 4: Triangles and Congruence,SSS
+d24382089d9244bdb180bf5d420baae8,4,Chapter 4: Triangles and Congruence,Triangle
+d24382089d9244bdb180bf5d420baae8,4,Chapter 4: Triangles and Congruence,Triangle Congruence
+d70036ee77534809ad2894bdc23ebd27,4,Chapter 4: Triangles and Congruence,AAS
+d70036ee77534809ad2894bdc23ebd27,4,Chapter 4: Triangles and Congruence,ASA
+d70036ee77534809ad2894bdc23ebd27,4,Chapter 4: Triangles and Congruence,Angle
+d70036ee77534809ad2894bdc23ebd27,4,Chapter 4: Triangles and Congruence,Congruence
+d70036ee77534809ad2894bdc23ebd27,4,Chapter 4: Triangles and Congruence,Postulate
+d70036ee77534809ad2894bdc23ebd27,4,Chapter 4: Triangles and Congruence,Theorem
+d70036ee77534809ad2894bdc23ebd27,4,Chapter 4: Triangles and Congruence,Triangle
+d70036ee77534809ad2894bdc23ebd27,4,Chapter 4: Triangles and Congruence,Triangle Congruence
+6ac6474e569e4cd2958b0de011f2cfb6,4,Chapter 4: Triangles and Congruence,Equilateral Triangle
+6ac6474e569e4cd2958b0de011f2cfb6,4,Chapter 4: Triangles and Congruence,Equilateral Triangles
+6ac6474e569e4cd2958b0de011f2cfb6,4,Chapter 4: Triangles and Congruence,Isosceles Triangle
+6ac6474e569e4cd2958b0de011f2cfb6,4,Chapter 4: Triangles and Congruence,Theorem
+6ac6474e569e4cd2958b0de011f2cfb6,4,Chapter 4: Triangles and Congruence,Triangle
+a90dfdd2918d44ac8ab4358f4a16db05,4,Chapter 5: Relationships with Triangles,Midsegment
+a90dfdd2918d44ac8ab4358f4a16db05,4,Chapter 5: Relationships with Triangles,Parallel
+a90dfdd2918d44ac8ab4358f4a16db05,4,Chapter 5: Relationships with Triangles,Theorem
+a90dfdd2918d44ac8ab4358f4a16db05,4,Chapter 5: Relationships with Triangles,Triangle
+fb8a62205e5c42288b14248a3499019b,4,Chapter 5: Relationships with Triangles,Angle
+fb8a62205e5c42288b14248a3499019b,4,Chapter 5: Relationships with Triangles,Angle Bisector
+fb8a62205e5c42288b14248a3499019b,4,Chapter 5: Relationships with Triangles,Angle Bisectors
+fb8a62205e5c42288b14248a3499019b,4,Chapter 5: Relationships with Triangles,Bisector
+fb8a62205e5c42288b14248a3499019b,4,Chapter 5: Relationships with Triangles,Circumcenter
+fb8a62205e5c42288b14248a3499019b,4,Chapter 5: Relationships with Triangles,Incenter
+fb8a62205e5c42288b14248a3499019b,4,Chapter 5: Relationships with Triangles,Perpendicular
+fb8a62205e5c42288b14248a3499019b,4,Chapter 5: Relationships with Triangles,Perpendicular Bisector
+fb8a62205e5c42288b14248a3499019b,4,Chapter 5: Relationships with Triangles,Perpendicular Bisectors
+fb8a62205e5c42288b14248a3499019b,4,Chapter 5: Relationships with Triangles,Point
+fb8a62205e5c42288b14248a3499019b,4,Chapter 5: Relationships with Triangles,Theorem
+fb8a62205e5c42288b14248a3499019b,4,Chapter 5: Relationships with Triangles,Vertex
+862fba31de6d4f40af2bc1a55096b415,5,Chapter 5: Relationships with Triangles,Altitude
+862fba31de6d4f40af2bc1a55096b415,5,Chapter 5: Relationships with Triangles,Centroid
+862fba31de6d4f40af2bc1a55096b415,5,Chapter 5: Relationships with Triangles,Median
+862fba31de6d4f40af2bc1a55096b415,5,Chapter 5: Relationships with Triangles,Midpoint
+862fba31de6d4f40af2bc1a55096b415,5,Chapter 5: Relationships with Triangles,Perpendicular
+862fba31de6d4f40af2bc1a55096b415,5,Chapter 5: Relationships with Triangles,Point
+862fba31de6d4f40af2bc1a55096b415,5,Chapter 5: Relationships with Triangles,Triangle
+862fba31de6d4f40af2bc1a55096b415,5,Chapter 5: Relationships with Triangles,Vertex
+99472d747ad84f289ed1f0cf296b8673,5,Chapter 5: Relationships with Triangles,Angle
+99472d747ad84f289ed1f0cf296b8673,5,Chapter 5: Relationships with Triangles,Theorem
+99472d747ad84f289ed1f0cf296b8673,5,Chapter 5: Relationships with Triangles,Triangle
+bad6f4f7610f4fe090a137d81e03825d,5,Chapter 6: Polygons and Quadrilaterals,Angle
+bad6f4f7610f4fe090a137d81e03825d,5,Chapter 6: Polygons and Quadrilaterals,Exterior Angle
+bad6f4f7610f4fe090a137d81e03825d,5,Chapter 6: Polygons and Quadrilaterals,Interior Angle
+bad6f4f7610f4fe090a137d81e03825d,5,Chapter 6: Polygons and Quadrilaterals,Polygon
+ac937a1a8a174c29bdd83ac6b003755e,5,Chapter 6: Polygons and Quadrilaterals,Parallel
+ac937a1a8a174c29bdd83ac6b003755e,5,Chapter 6: Polygons and Quadrilaterals,Parallelogram
+ac937a1a8a174c29bdd83ac6b003755e,5,Chapter 6: Polygons and Quadrilaterals,Quadrilateral
+ac937a1a8a174c29bdd83ac6b003755e,5,Chapter 6: Polygons and Quadrilaterals,Supplementary
+30bfe4ffc330464bb08df3769b01191d,5,Chapter 6: Polygons and Quadrilaterals,Parallel
+30bfe4ffc330464bb08df3769b01191d,5,Chapter 6: Polygons and Quadrilaterals,Parallelogram
+30bfe4ffc330464bb08df3769b01191d,5,Chapter 6: Polygons and Quadrilaterals,Proving Quadrilaterals
+30bfe4ffc330464bb08df3769b01191d,5,Chapter 6: Polygons and Quadrilaterals,Quadrilateral
+ebf64d26b0534aacbab466501e94f870,5,Chapter 6: Polygons and Quadrilaterals,Parallelogram
+ebf64d26b0534aacbab466501e94f870,5,Chapter 6: Polygons and Quadrilaterals,Perpendicular
+ebf64d26b0534aacbab466501e94f870,5,Chapter 6: Polygons and Quadrilaterals,Rectangle
+ebf64d26b0534aacbab466501e94f870,5,Chapter 6: Polygons and Quadrilaterals,Rhombus
+ebf64d26b0534aacbab466501e94f870,5,Chapter 6: Polygons and Quadrilaterals,Square
+9ff13d1b44e74917b6e9081f3e6d2647,5,Chapter 6: Polygons and Quadrilaterals,Bases
+9ff13d1b44e74917b6e9081f3e6d2647,5,Chapter 6: Polygons and Quadrilaterals,Kite
+9ff13d1b44e74917b6e9081f3e6d2647,5,Chapter 6: Polygons and Quadrilaterals,Midsegment
+9ff13d1b44e74917b6e9081f3e6d2647,5,Chapter 6: Polygons and Quadrilaterals,Parallel
+9ff13d1b44e74917b6e9081f3e6d2647,5,Chapter 6: Polygons and Quadrilaterals,Perpendicular
+9ff13d1b44e74917b6e9081f3e6d2647,5,Chapter 6: Polygons and Quadrilaterals,Quadrilateral
+9ff13d1b44e74917b6e9081f3e6d2647,5,Chapter 6: Polygons and Quadrilaterals,Trapezoid
+e91d670242da46689d4a28fb7938585a,5,Chapter 7: Similarity,Scale Factor
+300c54663ed64a53af0e5efdd7d91486,6,Chapter 7: Similarity,Corresponding Angles
+300c54663ed64a53af0e5efdd7d91486,6,Chapter 7: Similarity,Scale Factor
+300c54663ed64a53af0e5efdd7d91486,6,Chapter 7: Similarity,Similar Polygons
+88b869708f70496193f88b1510e4a8c1,6,Chapter 7: Similarity,Angle
+88b869708f70496193f88b1510e4a8c1,6,Chapter 7: Similarity,Postulate
+88b869708f70496193f88b1510e4a8c1,6,Chapter 7: Similarity,SAS
+88b869708f70496193f88b1510e4a8c1,6,Chapter 7: Similarity,SSS
+88b869708f70496193f88b1510e4a8c1,6,Chapter 7: Similarity,Similarity
+88b869708f70496193f88b1510e4a8c1,6,Chapter 7: Similarity,Theorem
+88b869708f70496193f88b1510e4a8c1,6,Chapter 7: Similarity,Triangle
+cbfbb9df3fc647699fa630ef2f84dcbd,6,Chapter 7: Similarity,Angle
+cbfbb9df3fc647699fa630ef2f84dcbd,6,Chapter 7: Similarity,Angle Bisector
+cbfbb9df3fc647699fa630ef2f84dcbd,6,Chapter 7: Similarity,Bisector
+cbfbb9df3fc647699fa630ef2f84dcbd,6,Chapter 7: Similarity,Line
+cbfbb9df3fc647699fa630ef2f84dcbd,6,Chapter 7: Similarity,Parallel
+cbfbb9df3fc647699fa630ef2f84dcbd,6,Chapter 7: Similarity,Proportionality
+cbfbb9df3fc647699fa630ef2f84dcbd,6,Chapter 7: Similarity,Proportionality Relationships
+cbfbb9df3fc647699fa630ef2f84dcbd,6,Chapter 7: Similarity,Theorem
+cbfbb9df3fc647699fa630ef2f84dcbd,6,Chapter 7: Similarity,Triangle
+243cdc4e2788422b9d714b00b4fe73e1,6,Chapter 8: Right Triangle Trigonometry,Pythagorean Theorem
+243cdc4e2788422b9d714b00b4fe73e1,6,Chapter 8: Right Triangle Trigonometry,Right Triangle
+243cdc4e2788422b9d714b00b4fe73e1,6,Chapter 8: Right Triangle Trigonometry,Square
+243cdc4e2788422b9d714b00b4fe73e1,6,Chapter 8: Right Triangle Trigonometry,Theorem
+243cdc4e2788422b9d714b00b4fe73e1,6,Chapter 8: Right Triangle Trigonometry,Triangle
+12334c5b36814e75b87376d6bc430834,6,Chapter 8: Right Triangle Trigonometry,Pythagorean Theorem
+12334c5b36814e75b87376d6bc430834,6,Chapter 8: Right Triangle Trigonometry,Square
+12334c5b36814e75b87376d6bc430834,6,Chapter 8: Right Triangle Trigonometry,Theorem
+12334c5b36814e75b87376d6bc430834,6,Chapter 8: Right Triangle Trigonometry,Triangle
+3ee38c23f0114c03a6638e4d40a2d3d8,6,Chapter 8: Right Triangle Trigonometry,Special Right Triangles
+3ee38c23f0114c03a6638e4d40a2d3d8,6,Chapter 8: Right Triangle Trigonometry,Square
+3ee38c23f0114c03a6638e4d40a2d3d8,6,Chapter 8: Right Triangle Trigonometry,Triangle
+7292fb475c504841b876dd6004f80640,6,Chapter 8: Right Triangle Trigonometry,CAH
+7292fb475c504841b876dd6004f80640,6,Chapter 8: Right Triangle Trigonometry,Cosine
+7292fb475c504841b876dd6004f80640,6,Chapter 8: Right Triangle Trigonometry,Inverse Trigonometric
+7292fb475c504841b876dd6004f80640,6,Chapter 8: Right Triangle Trigonometry,SOH
+7292fb475c504841b876dd6004f80640,6,Chapter 8: Right Triangle Trigonometry,Sine
+7292fb475c504841b876dd6004f80640,6,Chapter 8: Right Triangle Trigonometry,TOA
+7292fb475c504841b876dd6004f80640,6,Chapter 8: Right Triangle Trigonometry,Tangent
+7292fb475c504841b876dd6004f80640,6,Chapter 8: Right Triangle Trigonometry,Tangent Ratio
+7292fb475c504841b876dd6004f80640,6,Chapter 8: Right Triangle Trigonometry,Tangent Ratios
+7292fb475c504841b876dd6004f80640,6,Chapter 8: Right Triangle Trigonometry,Trigonometry
+44aaedabb8ce423a8bc41f1d69ef435a,7,Chapter 9: Circles,Chord
+44aaedabb8ce423a8bc41f1d69ef435a,7,Chapter 9: Circles,Circle
+44aaedabb8ce423a8bc41f1d69ef435a,7,Chapter 9: Circles,Diameter
+44aaedabb8ce423a8bc41f1d69ef435a,7,Chapter 9: Circles,Line
+44aaedabb8ce423a8bc41f1d69ef435a,7,Chapter 9: Circles,Perpendicular
+44aaedabb8ce423a8bc41f1d69ef435a,7,Chapter 9: Circles,Point
+44aaedabb8ce423a8bc41f1d69ef435a,7,Chapter 9: Circles,Point Of Tangency
+44aaedabb8ce423a8bc41f1d69ef435a,7,Chapter 9: Circles,Radius
+44aaedabb8ce423a8bc41f1d69ef435a,7,Chapter 9: Circles,Tangent
+44aaedabb8ce423a8bc41f1d69ef435a,7,Chapter 9: Circles,Tangent Lines
+27ef99333e2642129dcfb5b7e5c32aa9,7,Chapter 9: Circles,Angle
+27ef99333e2642129dcfb5b7e5c32aa9,7,Chapter 9: Circles,Arc
+27ef99333e2642129dcfb5b7e5c32aa9,7,Chapter 9: Circles,Central Angle
+27ef99333e2642129dcfb5b7e5c32aa9,7,Chapter 9: Circles,Circle
+27ef99333e2642129dcfb5b7e5c32aa9,7,Chapter 9: Circles,Postulate
+6c8e3dc566d44167a17a7f6980e2e68b,7,Chapter 9: Circles,Bisector
+6c8e3dc566d44167a17a7f6980e2e68b,7,Chapter 9: Circles,Chord
+6c8e3dc566d44167a17a7f6980e2e68b,7,Chapter 9: Circles,Diameter
+6c8e3dc566d44167a17a7f6980e2e68b,7,Chapter 9: Circles,Perpendicular
+6c8e3dc566d44167a17a7f6980e2e68b,7,Chapter 9: Circles,Perpendicular Bisector
+591129ae2f834862a55671d329d5d30c,7,Chapter 9: Circles,Angle
+591129ae2f834862a55671d329d5d30c,7,Chapter 9: Circles,Arc
+591129ae2f834862a55671d329d5d30c,7,Chapter 9: Circles,Central Angle
+591129ae2f834862a55671d329d5d30c,7,Chapter 9: Circles,Circle
+591129ae2f834862a55671d329d5d30c,7,Chapter 9: Circles,Inscribed Angle
+591129ae2f834862a55671d329d5d30c,7,Chapter 9: Circles,Inscribed Angles
+591129ae2f834862a55671d329d5d30c,7,Chapter 9: Circles,Quadrilateral
+591129ae2f834862a55671d329d5d30c,7,Chapter 9: Circles,Supplementary
+591129ae2f834862a55671d329d5d30c,7,Chapter 9: Circles,Theorem
+591129ae2f834862a55671d329d5d30c,7,Chapter 9: Circles,Vertex
+a4d5edebef4140b5bbe15be0bef5e7a0,7,Chapter 9: Circles,Angle
+a4d5edebef4140b5bbe15be0bef5e7a0,7,Chapter 9: Circles,Circle
+a4d5edebef4140b5bbe15be0bef5e7a0,7,Chapter 9: Circles,Line
+a4d5edebef4140b5bbe15be0bef5e7a0,7,Chapter 9: Circles,Point
+a4d5edebef4140b5bbe15be0bef5e7a0,7,Chapter 9: Circles,Secant
+e5e98452292c4f859d35b0ff578526c0,7,Chapter 9: Circles,Circle
+e5e98452292c4f859d35b0ff578526c0,7,Chapter 9: Circles,Point
+e5e98452292c4f859d35b0ff578526c0,7,Chapter 9: Circles,Secant
+e5e98452292c4f859d35b0ff578526c0,7,Chapter 9: Circles,Segment Lengths
+60db6311dcc648e78286c1832bfc3922,7,Chapter 10: Perimeter and Area,Area
+60db6311dcc648e78286c1832bfc3922,7,Chapter 10: Perimeter and Area,Parallelogram
+60db6311dcc648e78286c1832bfc3922,7,Chapter 10: Perimeter and Area,Perimeter
+60db6311dcc648e78286c1832bfc3922,7,Chapter 10: Perimeter and Area,Polygon
+60db6311dcc648e78286c1832bfc3922,7,Chapter 10: Perimeter and Area,Rectangle
+60db6311dcc648e78286c1832bfc3922,7,Chapter 10: Perimeter and Area,Triangle
+7b47ac00278641ed8532df8855fe0f4c,7,Chapter 10: Perimeter and Area,Area
+7b47ac00278641ed8532df8855fe0f4c,7,Chapter 10: Perimeter and Area,Kite
+7b47ac00278641ed8532df8855fe0f4c,7,Chapter 10: Perimeter and Area,Rhombus
+7b47ac00278641ed8532df8855fe0f4c,7,Chapter 10: Perimeter and Area,Trapezoid
+76e7375f7aca46b0aef49be552743e8c,7,Chapter 10: Perimeter and Area,Scale Factor
+76e7375f7aca46b0aef49be552743e8c,7,Chapter 10: Perimeter and Area,Similar Polygons
+76e7375f7aca46b0aef49be552743e8c,7,Chapter 10: Perimeter and Area,Square
+1867300e59824b12bea9539642f2a591,8,Chapter 10: Perimeter and Area,Arc
+1867300e59824b12bea9539642f2a591,8,Chapter 10: Perimeter and Area,Arc Length
+1867300e59824b12bea9539642f2a591,8,Chapter 10: Perimeter and Area,Circle
+1867300e59824b12bea9539642f2a591,8,Chapter 10: Perimeter and Area,Circumference
+1867300e59824b12bea9539642f2a591,8,Chapter 10: Perimeter and Area,Diameter
+1867300e59824b12bea9539642f2a591,8,Chapter 10: Perimeter and Area,Radius
+c170b4cc4e9b44bd9a15899fb662220e,8,Chapter 10: Perimeter and Area,Arc
+c170b4cc4e9b44bd9a15899fb662220e,8,Chapter 10: Perimeter and Area,Area
+c170b4cc4e9b44bd9a15899fb662220e,8,Chapter 10: Perimeter and Area,Circle
+c170b4cc4e9b44bd9a15899fb662220e,8,Chapter 10: Perimeter and Area,Radius
+c170b4cc4e9b44bd9a15899fb662220e,8,Chapter 10: Perimeter and Area,Sector
+ec8ed2d3f9ab47e5b6f8ee021ef6904b,8,Chapter 11: Surface Area and Volume,Parallel
+ec8ed2d3f9ab47e5b6f8ee021ef6904b,8,Chapter 11: Surface Area and Volume,Parallelogram
+ec8ed2d3f9ab47e5b6f8ee021ef6904b,8,Chapter 11: Surface Area and Volume,Polygon
+ec8ed2d3f9ab47e5b6f8ee021ef6904b,8,Chapter 11: Surface Area and Volume,Polyhedron
+ec8ed2d3f9ab47e5b6f8ee021ef6904b,8,Chapter 11: Surface Area and Volume,Prism
+ec8ed2d3f9ab47e5b6f8ee021ef6904b,8,Chapter 11: Surface Area and Volume,Pyramid
+77868f8c09444c87aeab5c65eb38a73f,8,Chapter 11: Surface Area and Volume,Cross Section
+77868f8c09444c87aeab5c65eb38a73f,8,Chapter 11: Surface Area and Volume,Plane
+77868f8c09444c87aeab5c65eb38a73f,8,Chapter 11: Surface Area and Volume,Representing Solids
+08ee386141e7465ea4a12205768d487f,8,Chapter 11: Surface Area and Volume,Area
+08ee386141e7465ea4a12205768d487f,8,Chapter 11: Surface Area and Volume,Cylinder
+08ee386141e7465ea4a12205768d487f,8,Chapter 11: Surface Area and Volume,Perimeter
+08ee386141e7465ea4a12205768d487f,8,Chapter 11: Surface Area and Volume,Prism
+08ee386141e7465ea4a12205768d487f,8,Chapter 11: Surface Area and Volume,Radius
+08ee386141e7465ea4a12205768d487f,8,Chapter 11: Surface Area and Volume,Surface Area
+08ee386141e7465ea4a12205768d487f,8,Chapter 11: Surface Area and Volume,Volume
+e074941b6f5e441880068d832983fcac,8,Chapter 11: Surface Area and Volume,Area
+e074941b6f5e441880068d832983fcac,8,Chapter 11: Surface Area and Volume,Cone
+e074941b6f5e441880068d832983fcac,8,Chapter 11: Surface Area and Volume,Perimeter
+e074941b6f5e441880068d832983fcac,8,Chapter 11: Surface Area and Volume,Pyramid
+e074941b6f5e441880068d832983fcac,8,Chapter 11: Surface Area and Volume,Radius
+e074941b6f5e441880068d832983fcac,8,Chapter 11: Surface Area and Volume,Surface Area
+e074941b6f5e441880068d832983fcac,8,Chapter 11: Surface Area and Volume,Volume
+519fadb55cba49c2bd7d0386803f0a29,8,Chapter 11: Surface Area and Volume,Area
+519fadb55cba49c2bd7d0386803f0a29,8,Chapter 11: Surface Area and Volume,Radius
+519fadb55cba49c2bd7d0386803f0a29,8,Chapter 11: Surface Area and Volume,Sphere
+519fadb55cba49c2bd7d0386803f0a29,8,Chapter 11: Surface Area and Volume,Surface Area
+519fadb55cba49c2bd7d0386803f0a29,8,Chapter 11: Surface Area and Volume,Volume
+a46b41f85e4a4e319d735c5db3db0a98,8,Chapter 11: Surface Area and Volume,Area
+a46b41f85e4a4e319d735c5db3db0a98,8,Chapter 11: Surface Area and Volume,Composite Solids
+a46b41f85e4a4e319d735c5db3db0a98,8,Chapter 11: Surface Area and Volume,Surface Area
+a46b41f85e4a4e319d735c5db3db0a98,8,Chapter 11: Surface Area and Volume,Volume
+0e749f347c2c46e1b45bfe251bcca5f5,8,Chapter 12: Rigid Transformations,Exploring Symmetry
+0e749f347c2c46e1b45bfe251bcca5f5,8,Chapter 12: Rigid Transformations,Line
+0e749f347c2c46e1b45bfe251bcca5f5,8,Chapter 12: Rigid Transformations,Line Symmetry
+0e749f347c2c46e1b45bfe251bcca5f5,8,Chapter 12: Rigid Transformations,Rotation
+0e749f347c2c46e1b45bfe251bcca5f5,8,Chapter 12: Rigid Transformations,Rotational Symmetry
+0e749f347c2c46e1b45bfe251bcca5f5,8,Chapter 12: Rigid Transformations,Symmetry
+1d1a3f608190487582f90d9adf655239,8,Chapter 12: Rigid Transformations,Point
+1d1a3f608190487582f90d9adf655239,8,Chapter 12: Rigid Transformations,Translation
+617949fea2ce453f9b81a58464d7023d,9,Chapter 12: Rigid Transformations,Line
+617949fea2ce453f9b81a58464d7023d,9,Chapter 12: Rigid Transformations,Line Of Reflection
+617949fea2ce453f9b81a58464d7023d,9,Chapter 12: Rigid Transformations,Parallel
+617949fea2ce453f9b81a58464d7023d,9,Chapter 12: Rigid Transformations,Point
+617949fea2ce453f9b81a58464d7023d,9,Chapter 12: Rigid Transformations,Reflection
+617949fea2ce453f9b81a58464d7023d,9,Chapter 12: Rigid Transformations,Translation
+8f91c752e8a24e6d9cb383057d09f0e7,9,Chapter 12: Rigid Transformations,Angle
+8f91c752e8a24e6d9cb383057d09f0e7,9,Chapter 12: Rigid Transformations,Point
+8f91c752e8a24e6d9cb383057d09f0e7,9,Chapter 12: Rigid Transformations,Rotation
+9b21c627797b4abfb4eccced08459edf,9,Chapter 12: Rigid Transformations,Angle
+9b21c627797b4abfb4eccced08459edf,9,Chapter 12: Rigid Transformations,Line
+9b21c627797b4abfb4eccced08459edf,9,Chapter 12: Rigid Transformations,Parallel
+9b21c627797b4abfb4eccced08459edf,9,Chapter 12: Rigid Transformations,Reflection
+9b21c627797b4abfb4eccced08459edf,9,Chapter 12: Rigid Transformations,Translation

@@ -1,0 +1,321 @@
+source_name,target_name,raw_predicate,classified_type,evidence,page,chunk_id,status,relation_id
+Angle,Complementary,Part-of,Part-of,"1.4 Angle Pairs
+Complementary angles are two angles whose measures sum to 90 degrees.",1,9106de425a374350b2350d77e9b484fc,new,R0001
+Angle,Supplementary,Part-of,Part-of,Supplementary angles are two angles whose measures sum to 180 degrees.,1,9106de425a374350b2350d77e9b484fc,new,R0002
+Angle,Linear Pair,Part-of,Part-of,A linear pair is two adjacent angles that form a straight line.,1,9106de425a374350b2350d77e9b484fc,new,R0003
+Angle,Vertical Angles,Part-of,Part-of,Vertical angles are the opposite angles formed when two lines intersect.,1,9106de425a374350b2350d77e9b484fc,new,R0004
+Angle,Vertical Angles,Part-of,Part-of,Vertical angles are always congruent.,1,9106de425a374350b2350d77e9b484fc,duplicate_merged,R0004
+Polygon,Interior Angle,Part-of,Part-of,The sum of interior angles of a polygon with n sides is (n minus 2) times 180 degrees.,2,3ba723faad064a488135ff29a85daa8c,new,R0005
+Conjecture,Inductive Reasoning,Prerequisite,Prerequisite,"2.1 Inductive Reasoning
+Inductive reasoning uses specific examples to make a general conclusion called a conjecture.",2,fa6e1233683348d5825efb42629b0bf8,new,R0006
+Deductive Reasoning,Proof,Prerequisite,Prerequisite,"2.3 Deductive Reasoning
+Deductive reasoning uses facts, definitions, accepted properties and laws of logic to form a logical argument.",2,f4d74790bf8b43e5b1b66bfb01e7218d,new,R0007
+Angle,Congruence,Similarity,Similarity,"2.4 Algebraic and Congruence Properties
+The reflexive property states that a segment or angle is congruent to itself.",2,c310ee8da1da428c869e7770d3715c43,new,R0008
+Angle,Congruence,Similarity,Similarity,"2.4 Algebraic and Congruence Properties
+The reflexive property states that a segment or angle is congruent to itself.",2,c310ee8da1da428c869e7770d3715c43,duplicate_merged,R0008
+Angle,Congruence Properties,Similarity,Similarity,"2.4 Algebraic and Congruence Properties
+The reflexive property states that a segment or angle is congruent to itself.",2,c310ee8da1da428c869e7770d3715c43,new,R0009
+Angle,Congruence Properties,Similarity,Similarity,"2.4 Algebraic and Congruence Properties
+The reflexive property states that a segment or angle is congruent to itself.",2,c310ee8da1da428c869e7770d3715c43,duplicate_merged,R0009
+Congruence,Congruence Properties,Similarity,Similarity,"2.4 Algebraic and Congruence Properties
+The reflexive property states that a segment or angle is congruent to itself.",2,c310ee8da1da428c869e7770d3715c43,new,R0010
+Congruence,Congruence Properties,Similarity,Similarity,"2.4 Algebraic and Congruence Properties
+The reflexive property states that a segment or angle is congruent to itself.",2,c310ee8da1da428c869e7770d3715c43,duplicate_merged,R0010
+Theorem,Proof,Application,Application,A two-column proof lists statements in one column and reasons in another.,3,95dac87004ec4aacae6e5483657c9213,new,R0011
+Theorem,Proof,Application,Application,A paragraph proof is written as sentences.,3,95dac87004ec4aacae6e5483657c9213,duplicate_merged,R0011
+Parallel,Corresponding Angles,Prerequisite,Prerequisite,Corresponding angles are in the same position at each intersection.,3,7b36d66a87b34836acf12aef3c6e6aa2,new,R0012
+Parallel,Alternate Interior Angles,Prerequisite,Prerequisite,Alternate interior angles are between the lines on opposite sides of the transversal.,3,7b36d66a87b34836acf12aef3c6e6aa2,new,R0013
+Parallel,Transversal,Prerequisite,Prerequisite,"3.2 Properties of Parallel Lines
+The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.",3,1d09fafe2a56463da40b9c2ab4844e0d,new,R0014
+Parallel,Corresponding Angles,Prerequisite,Prerequisite,"3.2 Properties of Parallel Lines
+The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.",3,1d09fafe2a56463da40b9c2ab4844e0d,duplicate_merged,R0012
+Parallel,Transversal,Prerequisite,Prerequisite,"The alternate interior angles theorem states that if two parallel lines are cut by a transversal, then alternate interior angles are congruent.",3,1d09fafe2a56463da40b9c2ab4844e0d,duplicate_merged,R0014
+Parallel,Alternate Interior Angles,Prerequisite,Prerequisite,"The alternate interior angles theorem states that if two parallel lines are cut by a transversal, then alternate interior angles are congruent.",3,1d09fafe2a56463da40b9c2ab4844e0d,duplicate_merged,R0013
+Parallel,Transversal,Prerequisite,Prerequisite,"The alternate exterior angles theorem states that if two parallel lines are cut by a transversal, then alternate exterior angles are congruent.",3,1d09fafe2a56463da40b9c2ab4844e0d,duplicate_merged,R0014
+Parallel,Transversal,Prerequisite,Prerequisite,"The co-interior angles theorem states that if two parallel lines are cut by a transversal, then co-interior angles are supplementary.",3,1d09fafe2a56463da40b9c2ab4844e0d,duplicate_merged,R0014
+Parallel,Transversal,Prerequisite,Prerequisite,"3.3 Proving Lines Parallel
+The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel.",3,39fda40ded234e1498bd4e36fcecb26d,duplicate_merged,R0014
+Parallel,Corresponding Angles,Prerequisite,Prerequisite,"3.3 Proving Lines Parallel
+The converse of corresponding angles postulate states that if two lines are cut by a transversal and corresponding angles are congruent, then the lines are parallel.",3,39fda40ded234e1498bd4e36fcecb26d,duplicate_merged,R0012
+Slope,Parallel,Prerequisite,Prerequisite,Parallel lines have equal slopes.,3,39fda40ded234e1498bd4e36fcecb26d,new,R0015
+Slope,Perpendicular,Prerequisite,Prerequisite,Perpendicular lines have slopes that are negative reciprocals of each other.,3,39fda40ded234e1498bd4e36fcecb26d,new,R0016
+Parallel,Transversal,Prerequisite,Prerequisite,"3.4 Properties of Perpendicular Lines
+The perpendicular transversal theorem states that if a transversal is perpendicular to one of two parallel lines, then it is perpendicular to the other.",3,91301ead535c4a8c834f86cea5b48492,duplicate_merged,R0014
+Triangle,Exterior Angle,Part-of,Part-of,"The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles.",3,bb5195bda8e1422bb9f55f3a26944bb6,new,R0017
+Triangle,Congruence,Application,Application,The corresponding parts of congruent triangles are congruent is abbreviated CPCTC.,4,d53f7cb5d33349de992e5503f9d0e8d6,new,R0018
+Triangle,Congruence,Application,Application,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0018
+Postulate,Triangle,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0019
+Postulate,Triangle,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0019
+Postulate,Congruence,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0020
+Postulate,Congruence,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0020
+Postulate,SSS,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0021
+Postulate,SSS,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0021
+Postulate,SAS,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0022
+Postulate,SAS,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0022
+Postulate,Triangle Congruence,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0023
+Postulate,Triangle Congruence,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0023
+Triangle,Congruence,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0024
+Triangle,Congruence,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0024
+Triangle,SSS,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0025
+Triangle,SSS,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0025
+Triangle,SAS,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0026
+Triangle,SAS,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0026
+Triangle,Triangle Congruence,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0027
+Triangle,Triangle Congruence,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0027
+Congruence,SSS,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0028
+Congruence,SSS,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0028
+Congruence,SAS,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0029
+Congruence,SAS,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0029
+Congruence,Triangle Congruence,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0030
+Congruence,Triangle Congruence,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0030
+SSS,SAS,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0031
+SSS,SAS,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0031
+SSS,Triangle Congruence,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0032
+SSS,Triangle Congruence,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0032
+SAS,Triangle Congruence,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0033
+SAS,Triangle Congruence,Similarity,Similarity,"4.3 Triangle Congruence using SSS and SAS
+The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0033
+Postulate,Angle,Similarity,Similarity,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0034
+Postulate,Angle,Similarity,Similarity,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0034
+Postulate,Triangle,Similarity,Similarity,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0019
+Postulate,Triangle,Similarity,Similarity,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0019
+Postulate,Congruence,Similarity,Similarity,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0020
+Postulate,Congruence,Similarity,Similarity,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0020
+Angle,Triangle,Similarity,Similarity,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,new,R0035
+Angle,Triangle,Similarity,Similarity,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0035
+Angle,Congruence,Similarity,Similarity,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0008
+Angle,Congruence,Similarity,Similarity,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0008
+Triangle,Congruence,Similarity,Similarity,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0024
+Triangle,Congruence,Similarity,Similarity,"The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent.",4,d24382089d9244bdb180bf5d420baae8,duplicate_merged,R0024
+Triangle,Congruence,Application,Application,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0018
+Postulate,Angle,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0034
+Postulate,Angle,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0034
+Postulate,Triangle,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0019
+Postulate,Triangle,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0019
+Postulate,Congruence,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0020
+Postulate,Congruence,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0020
+Postulate,Triangle Congruence,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0023
+Postulate,Triangle Congruence,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0023
+Postulate,ASA,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0036
+Postulate,ASA,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0036
+Postulate,AAS,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0037
+Postulate,AAS,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0037
+Angle,Triangle,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0035
+Angle,Triangle,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0035
+Angle,Congruence,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0008
+Angle,Congruence,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0008
+Angle,Triangle Congruence,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0038
+Angle,Triangle Congruence,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0038
+Angle,ASA,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0039
+Angle,ASA,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0039
+Angle,AAS,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0040
+Angle,AAS,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0040
+Triangle,Congruence,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0024
+Triangle,Congruence,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0024
+Triangle,Triangle Congruence,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0027
+Triangle,Triangle Congruence,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0027
+Triangle,ASA,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0041
+Triangle,ASA,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0041
+Triangle,AAS,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0042
+Triangle,AAS,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0042
+Congruence,Triangle Congruence,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0030
+Congruence,Triangle Congruence,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0030
+Congruence,ASA,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0043
+Congruence,ASA,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0043
+Congruence,AAS,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0044
+Congruence,AAS,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0044
+Triangle Congruence,ASA,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0045
+Triangle Congruence,ASA,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0045
+Triangle Congruence,AAS,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0046
+Triangle Congruence,AAS,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0046
+ASA,AAS,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0047
+ASA,AAS,Similarity,Similarity,"4.4 Triangle Congruence using ASA, AAS, and HL
+The angle side angle congruence postulate states that if two angles and the included side of one triangle are congruent to two angles and the included side of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0047
+Angle,Theorem,Similarity,Similarity,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0048
+Angle,Theorem,Similarity,Similarity,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0048
+Angle,Triangle,Similarity,Similarity,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0035
+Angle,Triangle,Similarity,Similarity,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0035
+Angle,Congruence,Similarity,Similarity,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0008
+Angle,Congruence,Similarity,Similarity,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0008
+Theorem,Triangle,Similarity,Similarity,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0049
+Theorem,Triangle,Similarity,Similarity,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0049
+Theorem,Congruence,Similarity,Similarity,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,new,R0050
+Theorem,Congruence,Similarity,Similarity,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0050
+Triangle,Congruence,Similarity,Similarity,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0024
+Triangle,Congruence,Similarity,Similarity,"The angle angle side congruence theorem states that if two angles and a non-included side of one triangle are congruent to the corresponding parts of another, then the triangles are congruent.",4,d70036ee77534809ad2894bdc23ebd27,duplicate_merged,R0024
+Line Segment,Triangle,Prerequisite,Prerequisite,"5.4 Inequalities in Triangles
+The triangle inequality theorem states that the sum of any two sides must be greater than the third side.",5,99472d747ad84f289ed1f0cf296b8673,new,R0051
+Angle,Theorem,Similarity,Similarity,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",5,99472d747ad84f289ed1f0cf296b8673,duplicate_merged,R0048
+Angle,Theorem,Similarity,Similarity,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",5,99472d747ad84f289ed1f0cf296b8673,duplicate_merged,R0048
+Angle,Triangle,Similarity,Similarity,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",5,99472d747ad84f289ed1f0cf296b8673,duplicate_merged,R0035
+Angle,Triangle,Similarity,Similarity,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",5,99472d747ad84f289ed1f0cf296b8673,duplicate_merged,R0035
+Theorem,Triangle,Similarity,Similarity,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",5,99472d747ad84f289ed1f0cf296b8673,duplicate_merged,R0049
+Theorem,Triangle,Similarity,Similarity,"The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",5,99472d747ad84f289ed1f0cf296b8673,duplicate_merged,R0049
+Parallelogram,Rectangle,Extension,Extension,"6.4 Rectangles, Rhombuses, and Squares
+A rectangle is a parallelogram with four right angles.",5,ebf64d26b0534aacbab466501e94f870,new,R0052
+Parallelogram,Rectangle,Extension,Extension,A rhombus is a parallelogram with four congruent sides.,5,ebf64d26b0534aacbab466501e94f870,duplicate_merged,R0052
+Parallel,Corresponding Angles,Prerequisite,Prerequisite,"7.2 Similar Polygons
+Similar polygons have congruent corresponding angles and proportional corresponding sides.",6,300c54663ed64a53af0e5efdd7d91486,duplicate_merged,R0012
+Postulate,Angle,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0034
+Postulate,Angle,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0034
+Postulate,Triangle,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0019
+Postulate,Triangle,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0019
+Postulate,SSS,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0021
+Postulate,SSS,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0021
+Postulate,SAS,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0022
+Postulate,SAS,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0022
+Postulate,Similarity,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,new,R0053
+Postulate,Similarity,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0053
+Angle,Triangle,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0035
+Angle,Triangle,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0035
+Angle,SSS,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,new,R0054
+Angle,SSS,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0054
+Angle,SAS,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,new,R0055
+Angle,SAS,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0055
+Angle,Similarity,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,new,R0056
+Angle,Similarity,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0056
+Triangle,SSS,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0025
+Triangle,SSS,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0025
+Triangle,SAS,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0026
+Triangle,SAS,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0026
+Triangle,Similarity,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,new,R0057
+Triangle,Similarity,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0057
+SSS,SAS,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0031
+SSS,SAS,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0031
+SSS,Similarity,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,new,R0058
+SSS,Similarity,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0058
+SAS,Similarity,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,new,R0059
+SAS,Similarity,Similarity,Similarity,"7.3 Similarity by AA, SSS, SAS
+The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",6,88b869708f70496193f88b1510e4a8c1,duplicate_merged,R0059
+Right Triangle,Pythagorean Theorem,Prerequisite,Prerequisite,"8.1 The Pythagorean Theorem
+The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of the squares of the legs.",6,243cdc4e2788422b9d714b00b4fe73e1,new,R0060
+Right Triangle,Pythagorean Theorem,Prerequisite,Prerequisite,"The converse of the Pythagorean theorem states that if the square of one side equals the sum of the squares of the other two sides, then the triangle is a right triangle.",6,243cdc4e2788422b9d714b00b4fe73e1,duplicate_merged,R0060
+Pythagorean Theorem,Right Triangle,Extension,Extension,"The converse of the Pythagorean theorem states that if the square of one side equals the sum of the squares of the other two sides, then the triangle is a right triangle.",6,243cdc4e2788422b9d714b00b4fe73e1,new,R0061
+Right Triangle,Pythagorean Theorem,Prerequisite,Prerequisite,A Pythagorean triple is a set of three positive integers that satisfy the Pythagorean theorem.,6,243cdc4e2788422b9d714b00b4fe73e1,duplicate_merged,R0060
+Right Triangle,Pythagorean Theorem,Prerequisite,Prerequisite,"8.2 Converse of the Pythagorean Theorem
+If the square of the longest side is greater than the sum of squares of other two sides then the triangle is obtuse.",6,12334c5b36814e75b87376d6bc430834,duplicate_merged,R0060
+Pythagorean Theorem,Right Triangle,Extension,Extension,"8.2 Converse of the Pythagorean Theorem
+If the square of the longest side is greater than the sum of squares of other two sides then the triangle is obtuse.",6,12334c5b36814e75b87376d6bc430834,duplicate_merged,R0061
+Right Triangle,Trigonometry,Prerequisite,Prerequisite,"8.4 Sine, Cosine, and Tangent Ratios
+Trigonometry is the study of the relationships between sides and angles of right triangles.",6,7292fb475c504841b876dd6004f80640,new,R0062
+Central Angle,Inscribed Angle,Prerequisite,Prerequisite,The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc.,7,591129ae2f834862a55671d329d5d30c,new,R0063
+Chord,Secant,Similarity,Similarity,"9.5 Angles from Chords, Secants, and Tangents
+A secant is a line that intersects a circle at two points.",7,a4d5edebef4140b5bbe15be0bef5e7a0,new,R0064
+Chord,Secant,Similarity,Similarity,"9.6 Segment Lengths from Chords, Secants, and Tangents
+When two chords intersect inside a circle, the products of their segments are equal.",7,e5e98452292c4f859d35b0ff578526c0,duplicate_merged,R0064
+Circumference,Arc,Prerequisite,Prerequisite,"10.4 Circumference and Arc Length
+The circumference of a circle is two pi times the radius or pi times the diameter.",8,1867300e59824b12bea9539642f2a591,new,R0065
+Circumference,Arc,Prerequisite,Prerequisite,An arc length is a portion of the circumference equal to the arc measure divided by 360 times the circumference.,8,1867300e59824b12bea9539642f2a591,duplicate_merged,R0065
+Plane,Cross Section,Prerequisite,Prerequisite,A cross section is the intersection of a solid with a plane.,8,77868f8c09444c87aeab5c65eb38a73f,new,R0066
+Area,Prism,Prerequisite,Prerequisite,The volume of a prism is the area of the base times the height.,8,08ee386141e7465ea4a12205768d487f,new,R0067
+Bases,Prism,Similarity,Similarity,A cylinder is like a prism with circular bases.,8,08ee386141e7465ea4a12205768d487f,new,R0068
+Bases,Prism,Similarity,Similarity,A cylinder is like a prism with circular bases.,8,08ee386141e7465ea4a12205768d487f,duplicate_merged,R0068
+Bases,Cylinder,Similarity,Similarity,A cylinder is like a prism with circular bases.,8,08ee386141e7465ea4a12205768d487f,new,R0069
+Bases,Cylinder,Similarity,Similarity,A cylinder is like a prism with circular bases.,8,08ee386141e7465ea4a12205768d487f,duplicate_merged,R0069
+Prism,Cylinder,Similarity,Similarity,A cylinder is like a prism with circular bases.,8,08ee386141e7465ea4a12205768d487f,new,R0070
+Prism,Cylinder,Similarity,Similarity,A cylinder is like a prism with circular bases.,8,08ee386141e7465ea4a12205768d487f,duplicate_merged,R0070
+Circle,Cylinder,Prerequisite,Prerequisite,The volume of a cylinder is pi times radius squared times height.,8,08ee386141e7465ea4a12205768d487f,new,R0071
+Circle,Sphere,Prerequisite,Prerequisite,The surface area of a sphere is 4 pi radius squared.,8,519fadb55cba49c2bd7d0386803f0a29,new,R0072
+Circle,Sphere,Prerequisite,Prerequisite,The volume of a sphere is four thirds pi radius cubed.,8,519fadb55cba49c2bd7d0386803f0a29,duplicate_merged,R0072

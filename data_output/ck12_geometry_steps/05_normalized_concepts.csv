@@ -1,0 +1,131 @@
+concept_id,concept_name,aliases,concept_type,chapter,page
+C0001,Basic Geometry Concepts,,Component,,1
+C0002,Plane,,Component,Chapter 1: Basics of Geometry,2
+C0003,Line,,Component,Chapter 1: Basics of Geometry,9
+C0004,Point,,Component,Chapter 1: Basics of Geometry,4
+C0005,Ray,,Component,Chapter 1: Basics of Geometry,1
+C0006,Line Segment,,Component,Chapter 1: Basics of Geometry,1
+C0007,Midpoint,,Component,Chapter 1: Basics of Geometry,5
+C0008,Postulate,,Formula,Chapter 1: Basics of Geometry,4
+C0009,Bisector,,Component,Chapter 1: Basics of Geometry,6
+C0010,Vertex,,Component,Chapter 1: Basics of Geometry,4
+C0011,ABD,,Component,Chapter 1: Basics of Geometry,1
+C0012,ABC,,Component,Chapter 1: Basics of Geometry,1
+C0013,DBC,,Component,Chapter 1: Basics of Geometry,1
+C0014,Angle,,Component,Chapter 1: Basics of Geometry,4
+C0015,Supplementary,,Component,Chapter 1: Basics of Geometry,3
+C0016,Vertical Angles,,Component,Chapter 1: Basics of Geometry,1
+C0017,Angle Pairs,,Component,Chapter 1: Basics of Geometry,1
+C0018,Complementary,,Component,Chapter 1: Basics of Geometry,1
+C0019,Linear Pair,,Component,Chapter 1: Basics of Geometry,1
+C0020,Isosceles Triangle,,Component,Chapter 1: Basics of Geometry,4
+C0021,Equilateral Triangle,Equilateral Triangles,Component,Chapter 1: Basics of Geometry,4
+C0022,Theorem,,Formula,Chapter 1: Basics of Geometry,6
+C0023,Classifying Triangles,,Component,Chapter 1: Basics of Geometry,2
+C0024,Triangle,,Component,Chapter 1: Basics of Geometry,6
+C0025,Acute Triangle,,Component,Chapter 1: Basics of Geometry,2
+C0026,Scalene Triangle,,Component,Chapter 1: Basics of Geometry,2
+C0027,Obtuse Triangle,,Component,Chapter 1: Basics of Geometry,2
+C0028,Right Triangle,,Component,Chapter 1: Basics of Geometry,6
+C0029,Quadrilateral,,Component,Chapter 1: Basics of Geometry,5
+C0030,Classifying Polygons,,Component,Chapter 1: Basics of Geometry,2
+C0031,Polygon,,Component,Chapter 1: Basics of Geometry,8
+C0032,Hexagon,,Component,Chapter 1: Basics of Geometry,2
+C0033,Regular Polygon,,Component,Chapter 1: Basics of Geometry,2
+C0034,Pentagon,,Component,Chapter 1: Basics of Geometry,2
+C0035,Conjecture,,Theory,Chapter 2: Reasoning and Proof,2
+C0036,Counterexample,,Component,Chapter 2: Reasoning and Proof,2
+C0037,Inductive Reasoning,,Component,Chapter 2: Reasoning and Proof,2
+C0038,Conditional Statements,,Component,Chapter 2: Reasoning and Proof,2
+C0039,Deductive Reasoning,,Component,Chapter 2: Reasoning and Proof,2
+C0040,Congruence,,Component,Chapter 2: Reasoning and Proof,4
+C0041,Congruence Properties,,Component,Chapter 2: Reasoning and Proof,2
+C0042,Proof,,Theory,Chapter 2: Reasoning and Proof,3
+C0043,Alternate Interior Angles,,Component,Chapter 3: Parallel and Perpendicular Lines,3
+C0044,Corresponding Angles,,Component,Chapter 3: Parallel and Perpendicular Lines,3
+C0045,Parallel,,Component,Chapter 3: Parallel and Perpendicular Lines,6
+C0046,Perpendicular,,Component,Chapter 3: Parallel and Perpendicular Lines,3
+C0047,Transversal,,Component,Chapter 3: Parallel and Perpendicular Lines,3
+C0048,Parallel Lines,,Component,Chapter 3: Parallel and Perpendicular Lines,3
+C0049,Proving Lines Parallel,,Component,Chapter 3: Parallel and Perpendicular Lines,3
+C0050,Slope,,Component,Chapter 3: Parallel and Perpendicular Lines,3
+C0051,Perpendicular Lines,,Component,Chapter 3: Parallel and Perpendicular Lines,3
+C0052,Perpendicular Bisector,Perpendicular Bisectors,Component,Chapter 3: Parallel and Perpendicular Lines,4
+C0053,Remote Interior Angles,,Component,Chapter 4: Triangles and Congruence,3
+C0054,Corollary,,Component,Chapter 4: Triangles and Congruence,3
+C0055,Triangle Sums,,Formula,Chapter 4: Triangles and Congruence,3
+C0056,Exterior Angle,,Component,Chapter 4: Triangles and Congruence,3
+C0057,Congruent Figures,,Component,Chapter 4: Triangles and Congruence,4
+C0058,CPCTC,,Component,Chapter 4: Triangles and Congruence,4
+C0059,SSS,,Component,Chapter 4: Triangles and Congruence,4
+C0060,SAS,,Component,Chapter 4: Triangles and Congruence,4
+C0061,Triangle Congruence,,Component,Chapter 4: Triangles and Congruence,4
+C0062,ASA,,Component,Chapter 4: Triangles and Congruence,4
+C0063,AAS,,Component,Chapter 4: Triangles and Congruence,4
+C0064,Midsegment,,Component,Chapter 5: Relationships with Triangles,5
+C0065,Incenter,,Component,Chapter 5: Relationships with Triangles,4
+C0066,Circumcenter,,Component,Chapter 5: Relationships with Triangles,4
+C0067,Angle Bisectors,Angle Bisector,Component,Chapter 5: Relationships with Triangles,4
+C0068,Centroid,,Component,Chapter 5: Relationships with Triangles,5
+C0069,Median,,Component,Chapter 5: Relationships with Triangles,5
+C0070,Altitude,,Component,Chapter 5: Relationships with Triangles,5
+C0071,Interior Angle,,Component,Chapter 6: Polygons and Quadrilaterals,5
+C0072,Parallelogram,,Component,Chapter 6: Polygons and Quadrilaterals,5
+C0073,Proving Quadrilaterals,,Component,Chapter 6: Polygons and Quadrilaterals,5
+C0074,Rhombus,,Component,Chapter 6: Polygons and Quadrilaterals,7
+C0075,Rectangle,,Component,Chapter 6: Polygons and Quadrilaterals,5
+C0076,Square,,Component,Chapter 6: Polygons and Quadrilaterals,6
+C0077,Bases,,Component,Chapter 6: Polygons and Quadrilaterals,5
+C0078,Kite,,Component,Chapter 6: Polygons and Quadrilaterals,5
+C0079,Trapezoid,,Component,Chapter 6: Polygons and Quadrilaterals,5
+C0080,Scale Factor,,Component,Chapter 7: Similarity,7
+C0081,Similar Polygons,,Component,Chapter 7: Similarity,6
+C0082,Similarity,,Component,Chapter 7: Similarity,6
+C0083,Proportionality Relationships,,Component,Chapter 7: Similarity,6
+C0084,Proportionality,,Component,Chapter 7: Similarity,6
+C0085,Pythagorean Theorem,,Formula,Chapter 8: Right Triangle Trigonometry,6
+C0086,Special Right Triangles,,Component,Chapter 8: Right Triangle Trigonometry,6
+C0087,Tangent,,Component,Chapter 8: Right Triangle Trigonometry,6
+C0088,Inverse Trigonometric,,Component,Chapter 8: Right Triangle Trigonometry,6
+C0089,Tangent Ratios,Tangent Ratio,Formula,Chapter 8: Right Triangle Trigonometry,6
+C0090,TOA,,Component,Chapter 8: Right Triangle Trigonometry,6
+C0091,CAH,,Component,Chapter 8: Right Triangle Trigonometry,6
+C0092,Trigonometry,,Component,Chapter 8: Right Triangle Trigonometry,6
+C0093,Cosine,,Component,Chapter 8: Right Triangle Trigonometry,6
+C0094,SOH,,Component,Chapter 8: Right Triangle Trigonometry,6
+C0095,Sine,,Component,Chapter 8: Right Triangle Trigonometry,6
+C0096,Chord,,Component,Chapter 9: Circles,7
+C0097,Point Of Tangency,,Component,Chapter 9: Circles,7
+C0098,Tangent Lines,,Component,Chapter 9: Circles,7
+C0099,Radius,,Component,Chapter 9: Circles,8
+C0100,Diameter,,Component,Chapter 9: Circles,8
+C0101,Circle,,Component,Chapter 9: Circles,7
+C0102,Arc,,Component,Chapter 9: Circles,8
+C0103,Central Angle,,Component,Chapter 9: Circles,7
+C0104,Inscribed Angles,Inscribed Angle,Component,Chapter 9: Circles,7
+C0105,Secant,,Component,Chapter 9: Circles,7
+C0106,Segment Lengths,,Component,Chapter 9: Circles,7
+C0107,Perimeter,,Component,Chapter 10: Perimeter and Area,8
+C0108,Area,,Component,Chapter 10: Perimeter and Area,7
+C0109,Arc Length,,Component,Chapter 10: Perimeter and Area,8
+C0110,Circumference,,Component,Chapter 10: Perimeter and Area,8
+C0111,Sector,,Component,Chapter 10: Perimeter and Area,8
+C0112,Prism,,Component,Chapter 11: Surface Area and Volume,8
+C0113,Pyramid,,Component,Chapter 11: Surface Area and Volume,8
+C0114,Polyhedron,,Component,Chapter 11: Surface Area and Volume,8
+C0115,Cross Section,,Component,Chapter 11: Surface Area and Volume,8
+C0116,Representing Solids,,Component,Chapter 11: Surface Area and Volume,8
+C0117,Volume,,Component,Chapter 11: Surface Area and Volume,8
+C0118,Surface Area,,Component,Chapter 11: Surface Area and Volume,8
+C0119,Cylinder,,Component,Chapter 11: Surface Area and Volume,8
+C0120,Cone,,Component,Chapter 11: Surface Area and Volume,8
+C0121,Sphere,,Component,Chapter 11: Surface Area and Volume,8
+C0122,Composite Solids,,Component,Chapter 11: Surface Area and Volume,8
+C0123,Exploring Symmetry,,Component,Chapter 12: Rigid Transformations,8
+C0124,Rotation,,Component,Chapter 12: Rigid Transformations,9
+C0125,Symmetry,,Component,Chapter 12: Rigid Transformations,8
+C0126,Rotational Symmetry,,Component,Chapter 12: Rigid Transformations,8
+C0127,Line Symmetry,,Component,Chapter 12: Rigid Transformations,8
+C0128,Translation,,Component,Chapter 12: Rigid Transformations,9
+C0129,Reflection,,Component,Chapter 12: Rigid Transformations,9
+C0130,Line Of Reflection,,Component,Chapter 12: Rigid Transformations,9
