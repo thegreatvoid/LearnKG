@@ -3,7 +3,7 @@
 import math
 import re
 from collections import Counter
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 
 from educational_pipeline.definition_extractor import extract_grounded_definition
 from educational_pipeline.normalizer import ConceptNormalizer
@@ -33,16 +33,61 @@ CONCEPT_SYSTEM = (
 )
 
 _DEF_PATTERNS = [
-    re.compile(r"(?:^|[.!?]\s+|\n)(?:An?|The)?\s*([A-Za-z][A-Za-z\- ]{2,40}?)\s+(?:is|are)\s+(?:an?|the|defined as|called)\b"),
-    re.compile(r"\b(?:called|known as|termed|referred to as|define[sd]? as)\s+(?:an?|the)?\s*([A-Za-z][A-Za-z\- ]{2,40}?)(?=[\s,.;:)])"),
+    # "X is a/the ...": group 2 is the word after the article, used to reject non-concepts ("SOH CAH TOA is the mnemonic").
+    # The article needs a following space, or "Angles are called ..." yields "gles".
+    re.compile(r"(?:^|[.!?]\s+|\n)(?:(?:An?|The)\s+)?([A-Za-z][A-Za-z\- ]{2,40}?)\s+(?:is|are)\s+(?:an?|the|defined as)\s+([A-Za-z]+)"),
+    # "called X": the term ends at punctuation or at the next function word/verb, not at the first space
+    # (otherwise "called remote interior angles" yields "remote").
+    re.compile(r"\b(?:called|known as|termed|referred to as|define[sd]? as)\s+(?:an?|the)?\s*([A-Za-z][A-Za-z\- ]{2,40}?)"
+               r"(?=\s*[,.;:)]|\s+(?:is|are|was|were|and|or|that|which|because|if|when|where|of|in|to|with|for)\b|\s*$)", re.M),
+    # "A ray is part of ...", "A kite has ...": a sentence opening with an indefinite subject introduces that thing.
+    re.compile(r"(?:^|[.!?]\s+|\n)An?\s+([A-Za-z][A-Za-z\- ]{2,40}?)\s+(?:is|are|has|have|consists)\s+(?:(?:an?|the)\s+)?([A-Za-z]+)"),
 ]
+# "X is a mnemonic/abbreviation/tool ...", "X is used to ...": a memory aid or an instrument, not a concept.
+_NON_CONCEPT_PREDICATES = {"mnemonic", "acronym", "abbreviation", "nickname", "tool", "instrument", "device", "used"}
 _HEADING_NUM = re.compile(r"^\s*(?:chapter\s+)?[\d.]+\s*[:.\-]?\s*", re.I)
+# Heading words that relate the topic to something else: "Properties of Parallel Lines", "Proofs about Segments".
+_HEADING_PREP = re.compile(r"\s+(?:of|about|in|from|using|by|for|with|are|is)\s+", re.I)
+_GERUND = re.compile(r"^[A-Za-z]{3,}ing\s+(?=\S)")  # "Classifying Triangles", "Exploring Symmetry"
+# Arithmetic operator words: a noun chunk containing one is an expression ("pi times radius", "one half base").
+_ARITHMETIC = {"times", "plus", "minus", "half", "halves", "third", "thirds", "twice", "quarter", "divided", "squared",
+               "cubed"}
+
+# Domain specificity of noun-chunk-only candidates, from general-English word frequency (Zipf scale: 3.5 is about
+# once per 30k words, 4.5 about once per 3k). Fixed a priori, not tuned on gold labels.
+try:
+    from wordfreq import zipf_frequency
+except ImportError:  # optional: without it the rarity rescue and the common-phrase rule are skipped
+    # (counter "wordfreq_unavailable" in run_meta.json)
+    zipf_frequency = None
+RARE_ZIPF = 3.5    # a lone noun rarer than this is a domain term ("hypotenuse"), even without a definition cue
+COMMON_ZIPF = 4.5  # a phrase made only of words commoner than this is ordinary English ("specific examples")
 
 
-def heading_terms(heading: str) -> List[str]:
+def rarest_word_zipf(term: str) -> Optional[float]:
+    """General-English Zipf frequency of the term's rarest word (None if wordfreq is not installed)."""
+    if zipf_frequency is None:
+        return None
+    return min(zipf_frequency(w, "en") for w in re.findall(r"[A-Za-z]+", term))
+
+
+def heading_terms(heading: str) -> List[Tuple[str, str]]:
+    """(term, cue) pairs from a section heading. The topic noun gets cue "heading"; a generic leading part of
+    "X of/about/using Y" ("Properties", "Proofs") only gets the weak cue "heading_part"."""
     h = _HEADING_NUM.sub("", heading or "").strip(" :.-")
     parts = [p.strip() for p in re.split(r"\band\b|,|:", h) if p.strip()]
-    return [p for p in parts if 1 <= len(p.split()) <= 4]
+    parts = [_GERUND.sub("", p) for p in parts]
+    # Coordinated modifiers share the head noun: "Isosceles and Equilateral Triangles" -> "Isosceles Triangles".
+    if len(parts) > 1 and len(parts[-1].split()) > 1:
+        head = parts[-1].split()[-1]
+        parts = [p + " " + head if len(p.split()) == 1 else p for p in parts[:-1]] + [parts[-1]]
+    out = []
+    for p in parts:
+        pieces = [x.strip() for x in _HEADING_PREP.split(p) if x.strip()]
+        for i, x in enumerate(pieces):
+            if 1 <= len(x.split()) <= 4:
+                out.append((x, "heading_part" if i < len(pieces) - 1 else "heading"))
+    return out
 
 
 def clean_term(t: str) -> Optional[str]:
@@ -56,14 +101,48 @@ def clean_term(t: str) -> Optional[str]:
     return t
 
 
+def _keep_token(t, i: int) -> bool:
+    """Whether noun-chunk token t (position i in the chunk) belongs in the term name."""
+    if t.is_space or t.pos_ in ("PRON", "DET"):
+        return False
+    doc = t.doc
+    # Numbers and hyphens survive only inside a hyphenated word: "two-column proof", not "3 sides".
+    if t.text == "-":
+        return t.i > 0 and t.i + 1 < len(doc) and not doc[t.i - 1].whitespace_ and not t.whitespace_
+    if t.like_num:
+        return t.i + 1 < len(doc) and doc[t.i + 1].text == "-" and not t.whitespace_
+    if t.is_stop or t.is_punct:
+        return False
+    # Point/variable labels after a noun ("angle ABC", "segment AB", "n sides"), but not leading codes like "SSS".
+    after_noun = any(p.pos_ in ("NOUN", "PROPN") and not p.text.isupper() for p in doc[t.i - i:t.i])
+    if (after_noun and re.fullmatch(r"[A-Z]{1,3}", t.text)) or re.fullmatch(r"[a-z]", t.text):
+        return False
+    return True
+
+
 def spacy_noun_chunks(text: str, nlp) -> List[str]:
     out = []
-    for nc in nlp(text).noun_chunks:
-        toks = [t for t in nc if not (t.is_stop or t.is_punct or t.like_num or t.pos_ in ("PRON", "DET"))]
-        if toks and toks[-1].pos_ in ("NOUN", "PROPN"):
-            c = clean_term(" ".join(t.text for t in toks))
-            if c:
-                out.append(c)
+    # One line at a time: headings sit on their own line and must not merge with the next sentence.
+    for line in text.splitlines():
+        doc = nlp(line)
+        for nc in doc.noun_chunks:
+            if any(t.lower_ in _ARITHMETIC for t in nc):
+                continue
+            toks = [t for i, t in enumerate(nc) if _keep_token(t, i)]
+            # spaCy often tags a verb right after the subject as a noun: "The hinge theorem states that ...",
+            # "Right angles measure 90", "The contrapositive negates both". A following "that" + clause subject
+            # (not "angles that are ..."), or a following number/determiner, marks the last word as that verb.
+            nxt = doc[nc.end:nc.end + 2]
+            if len(toks) > 1 and toks[-1].tag_ in ("NN", "NNS", "VBZ", "VBP") and len(nxt) > 0 and (
+                    (nxt[0].lower_ == "that" and len(nxt) == 2 and nxt[1].pos_ not in ("VERB", "AUX"))
+                    or nxt[0].pos_ in ("NUM", "DET", "PRON")):
+                toks = toks[:-1]
+            if toks and toks[-1].tag_ == "VBG":  # "faces meeting"
+                toks = toks[:-1]
+            if toks and toks[-1].pos_ in ("NOUN", "PROPN"):
+                c = clean_term(" ".join(t.text for t in toks).replace(" - ", "-"))
+                if c:
+                    out.append(c)
     return out
 
 
@@ -76,11 +155,13 @@ def rule_candidates(chunk, nlp=None) -> Dict[str, dict]:
         if t:
             c.setdefault(t.lower(), {"name": t, "cues": set()})["cues"].add(cue)
 
-    for h in (chunk.section, chunk.chapter):
-        for t in heading_terms(h):
-            add(t, "heading")
+    # Section headings only: chapter titles name broad topics ("Relationships with Triangles"), not concepts.
+    for t, cue in heading_terms(chunk.section):
+        add(t, cue)
     for pat in _DEF_PATTERNS:
         for m in pat.finditer(chunk.text):
+            if m.lastindex == 2 and m.group(2).lower() in _NON_CONCEPT_PREDICATES:
+                continue
             add(m.group(1), "definition")
     if nlp is not None:
         for t in spacy_noun_chunks(chunk.text, nlp):
@@ -90,9 +171,13 @@ def rule_candidates(chunk, nlp=None) -> Dict[str, dict]:
 
 def extract_concepts(chunks, backend: Optional[OllamaBackend], full_text: str, top_k: int = 150, min_freq: int = 1,
                      nlp=None, ground: bool = True, counters: Optional[Counter] = None):
-    """Returns (normalizer, report). `ground=False` is an ablation switch only."""
+    """Returns (normalizer, report). `ground=False` is an ablation switch only. report["candidates"] lists every
+    pooled candidate with its cues, salience and why it was dropped (if it was)."""
     counters = counters if counters is not None else Counter()
     index = TextIndex(full_text)
+    # Frequency and the heading check use the text without heading lines, so a heading's own words don't count.
+    headings = {h.strip() for ch in chunks for h in (ch.chapter, ch.section) if h and h.strip()}
+    body = TextIndex("\n".join(l for l in full_text.splitlines() if l.strip() not in headings))
     pooled: Dict[str, dict] = {}
 
     def pool(name, cue, chunk, definition=""):
@@ -103,6 +188,8 @@ def extract_concepts(chunks, backend: Optional[OllamaBackend], full_text: str, t
         if ground and not index.contains(t):
             counters["candidates_dropped_ungrounded"] += 1
             return
+        if cue == "heading" and not body.contains(t):
+            cue = "heading_part"  # only in the heading itself: a topic label, not a term the text uses
         e = pooled.setdefault(t.lower(), {"name": t, "cues": set(), "chunk": chunk, "definition": ""})
         e["cues"].add(cue)
         if cue == "llm":
@@ -123,17 +210,39 @@ def extract_concepts(chunks, backend: Optional[OllamaBackend], full_text: str, t
                 sent = item.get("definition_sentence", "")
                 pool(item.get("name", ""), "llm", ch, sent if sent and norm(sent) in norm(ch.text) else "")
 
-    # Salience: heading/definition/LLM cues, frequency in the whole book.
-    scored = []
+    # Salience: heading/definition/LLM cues, frequency in the book body.
+    if zipf_frequency is None:
+        counters["wordfreq_unavailable"] = 1
+    scored, rows = [], {}
     for key, e in pooled.items():
-        freq = index.count(e["name"])
-        if freq < min_freq:
-            continue
+        freq = body.count(e["name"])
         s = 3 * ("heading" in e["cues"]) + 2 * ("definition" in e["cues"]) + 2 * ("llm" in e["cues"]) \
             + 0.5 * ("np" in e["cues"]) + math.log1p(freq)
-        scored.append((s, key))
-    scored.sort(reverse=True)
-    keep = [k for _, k in scored[:top_k]]
+        weak = e["cues"] <= {"np", "heading_part"}  # no definition, section-heading or LLM cue
+        zipf = rarest_word_zipf(e["name"])
+        rows[key] = {"name": e["name"], "cues": "+".join(sorted(e["cues"])), "freq": freq, "salience": round(s, 3),
+                     "general_zipf": None if zipf is None else round(zipf, 2), "dropped": ""}
+        drop = ""
+        if freq < min_freq:
+            drop = "min_freq"
+        elif weak and len(e["name"].split()) == 1:
+            # A lone word found only as a noun chunk is usually ordinary English ("sides", "states", "properties"),
+            # unless it is rare in general English ("hypotenuse"). Short all-caps tokens are rare too but are
+            # mostly point labels ("ABD"); real codes ("SSS") come with a heading or definition cue.
+            if zipf is None or zipf >= RARE_ZIPF or re.fullmatch(r"[A-Z]{1,4}", e["name"]):
+                drop = "weak_single_word"
+        elif weak and zipf is not None and zipf >= COMMON_ZIPF:
+            drop = "weak_common_phrase"
+        if drop:
+            rows[key]["dropped"] = drop
+            counters[f"candidates_dropped_{drop}"] += 1
+            continue
+        # Ties (common among once-mentioned noun chunks) go to the more domain-specific term, then by name.
+        scored.append((-s, zipf if zipf is not None else 99.0, e["name"].lower(), key))
+    scored.sort()
+    keep = [k for *_, k in scored[:top_k]]
+    for *_, k in scored[top_k:]:
+        rows[k]["dropped"] = "top_k"
 
     normalizer = ConceptNormalizer()
     for key in sorted(keep, key=lambda k: pooled[k]["name"].lower()):  # deterministic IDs
@@ -148,4 +257,5 @@ def extract_concepts(chunks, backend: Optional[OllamaBackend], full_text: str, t
             name=e["name"], concept_type="Concept", definition=definition, chapter=ch.chapter,
             section=ch.section, page=ch.page, chunk_id=ch.chunk_id, evidence=evidence)
     counters["concepts_kept"] = len(normalizer.concepts_by_id)
-    return normalizer, {"scored": len(scored), "kept": len(keep)}
+    return normalizer, {"scored": len(scored), "kept": len(keep),
+                        "candidates": sorted(rows.values(), key=lambda r: -r["salience"])}
