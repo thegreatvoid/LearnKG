@@ -1,0 +1,133 @@
+item_id,section,term,is_concept,annotator_id,confidence_1to3,notes
+S1-T001,"7.3 Similarity by AA, SSS, SAS",angle,,,,
+S1-T002,"7.3 Similarity by AA, SSS, SAS",angle angle similarity postulate,,,,
+S1-T003,"7.3 Similarity by AA, SSS, SAS",congruent,,,,
+S1-T004,"7.3 Similarity by AA, SSS, SAS",corresponding sides,,,,
+S1-T005,"7.3 Similarity by AA, SSS, SAS",included angle,,,,
+S1-T006,"7.3 Similarity by AA, SSS, SAS",postulate,,,,
+S1-T007,"7.3 Similarity by AA, SSS, SAS",sas,,,,
+S1-T008,"7.3 Similarity by AA, SSS, SAS",similarity,,,,
+S1-T009,"7.3 Similarity by AA, SSS, SAS",sss,,,,
+S1-T010,"7.3 Similarity by AA, SSS, SAS",theorem,,,,
+S1-T011,"7.3 Similarity by AA, SSS, SAS",triangle,,,,
+S1-NEW1,"7.3 Similarity by AA, SSS, SAS",,,,,concept missed by all KGs
+S1-NEW2,"7.3 Similarity by AA, SSS, SAS",,,,,concept missed by all KGs
+S1-NEW3,"7.3 Similarity by AA, SSS, SAS",,,,,concept missed by all KGs
+S1-NEW4,"7.3 Similarity by AA, SSS, SAS",,,,,concept missed by all KGs
+S1-NEW5,"7.3 Similarity by AA, SSS, SAS",,,,,concept missed by all KGs
+S2-T001,12.5 Composition of Transformations,angle,,,,
+S2-T002,12.5 Composition of Transformations,angle measure,,,,
+S2-T003,12.5 Composition of Transformations,distance,,,,
+S2-T004,12.5 Composition of Transformations,glide reflection,,,,
+S2-T005,12.5 Composition of Transformations,isometries,,,,
+S2-T006,12.5 Composition of Transformations,line,,,,
+S2-T007,12.5 Composition of Transformations,line of reflection,,,,
+S2-T008,12.5 Composition of Transformations,parallel,,,,
+S2-T009,12.5 Composition of Transformations,reflection,,,,
+S2-T010,12.5 Composition of Transformations,rigid transformation,,,,
+S2-T011,12.5 Composition of Transformations,transformations,,,,
+S2-T012,12.5 Composition of Transformations,translation,,,,
+S2-NEW1,12.5 Composition of Transformations,,,,,concept missed by all KGs
+S2-NEW2,12.5 Composition of Transformations,,,,,concept missed by all KGs
+S2-NEW3,12.5 Composition of Transformations,,,,,concept missed by all KGs
+S2-NEW4,12.5 Composition of Transformations,,,,,concept missed by all KGs
+S2-NEW5,12.5 Composition of Transformations,,,,,concept missed by all KGs
+S3-T001,1.2 Segments and Distance,bisector,,,,
+S3-T002,1.2 Segments and Distance,congruent,,,,
+S3-T003,1.2 Segments and Distance,congruent segments,,,,
+S3-T004,1.2 Segments and Distance,distance,,,,
+S3-T005,1.2 Segments and Distance,distance between two points,,,,
+S3-T006,1.2 Segments and Distance,endpoint,,,,
+S3-T007,1.2 Segments and Distance,line,,,,
+S3-T008,1.2 Segments and Distance,line segment,,,,
+S3-T009,1.2 Segments and Distance,midpoint,,,,
+S3-T010,1.2 Segments and Distance,midpoint of a segment,,,,
+S3-T011,1.2 Segments and Distance,point,,,,
+S3-T012,1.2 Segments and Distance,postulate,,,,
+S3-T013,1.2 Segments and Distance,ruler postulate,,,,
+S3-T014,1.2 Segments and Distance,segment addition postulate,,,,
+S3-T015,1.2 Segments and Distance,segment bisector,,,,
+S3-T016,1.2 Segments and Distance,segments,,,,
+S3-NEW1,1.2 Segments and Distance,,,,,concept missed by all KGs
+S3-NEW2,1.2 Segments and Distance,,,,,concept missed by all KGs
+S3-NEW3,1.2 Segments and Distance,,,,,concept missed by all KGs
+S3-NEW4,1.2 Segments and Distance,,,,,concept missed by all KGs
+S3-NEW5,1.2 Segments and Distance,,,,,concept missed by all KGs
+S4-T001,5.2 Perpendicular Bisectors and Angle Bisectors,angle,,,,
+S4-T002,5.2 Perpendicular Bisectors and Angle Bisectors,angle bisector,,,,
+S4-T003,5.2 Perpendicular Bisectors and Angle Bisectors,angle bisector theorem,,,,
+S4-T004,5.2 Perpendicular Bisectors and Angle Bisectors,bisector,,,,
+S4-T005,5.2 Perpendicular Bisectors and Angle Bisectors,circumcenter,,,,
+S4-T006,5.2 Perpendicular Bisectors and Angle Bisectors,concurrency,,,,
+S4-T007,5.2 Perpendicular Bisectors and Angle Bisectors,endpoint,,,,
+S4-T008,5.2 Perpendicular Bisectors and Angle Bisectors,incenter,,,,
+S4-T009,5.2 Perpendicular Bisectors and Angle Bisectors,perpendicular,,,,
+S4-T010,5.2 Perpendicular Bisectors and Angle Bisectors,perpendicular bisector,,,,
+S4-T011,5.2 Perpendicular Bisectors and Angle Bisectors,perpendicular bisector theorem,,,,
+S4-T012,5.2 Perpendicular Bisectors and Angle Bisectors,point,,,,
+S4-T013,5.2 Perpendicular Bisectors and Angle Bisectors,theorem,,,,
+S4-T014,5.2 Perpendicular Bisectors and Angle Bisectors,vertex,,,,
+S4-NEW1,5.2 Perpendicular Bisectors and Angle Bisectors,,,,,concept missed by all KGs
+S4-NEW2,5.2 Perpendicular Bisectors and Angle Bisectors,,,,,concept missed by all KGs
+S4-NEW3,5.2 Perpendicular Bisectors and Angle Bisectors,,,,,concept missed by all KGs
+S4-NEW4,5.2 Perpendicular Bisectors and Angle Bisectors,,,,,concept missed by all KGs
+S4-NEW5,5.2 Perpendicular Bisectors and Angle Bisectors,,,,,concept missed by all KGs
+S5-T001,8.3 Special Right Triangles,congruent,,,,
+S5-T002,8.3 Special Right Triangles,hypotenuse,,,,
+S5-T003,8.3 Special Right Triangles,right triangle,,,,
+S5-T004,8.3 Special Right Triangles,special right triangles,,,,
+S5-T005,8.3 Special Right Triangles,square,,,,
+S5-T006,8.3 Special Right Triangles,triangle,,,,
+S5-NEW1,8.3 Special Right Triangles,,,,,concept missed by all KGs
+S5-NEW2,8.3 Special Right Triangles,,,,,concept missed by all KGs
+S5-NEW3,8.3 Special Right Triangles,,,,,concept missed by all KGs
+S5-NEW4,8.3 Special Right Triangles,,,,,concept missed by all KGs
+S5-NEW5,8.3 Special Right Triangles,,,,,concept missed by all KGs
+S6-T001,4.2 Congruent Figures,angle,,,,
+S6-T002,4.2 Congruent Figures,congruent,,,,
+S6-T003,4.2 Congruent Figures,congruent figures,,,,
+S6-T004,4.2 Congruent Figures,congruent polygons,,,,
+S6-T005,4.2 Congruent Figures,congruent triangles,,,,
+S6-T006,4.2 Congruent Figures,corresponding parts,,,,
+S6-T007,4.2 Congruent Figures,corresponding sides,,,,
+S6-T008,4.2 Congruent Figures,cpctc,,,,
+S6-T009,4.2 Congruent Figures,polygon,,,,
+S6-T010,4.2 Congruent Figures,triangle,,,,
+S6-NEW1,4.2 Congruent Figures,,,,,concept missed by all KGs
+S6-NEW2,4.2 Congruent Figures,,,,,concept missed by all KGs
+S6-NEW3,4.2 Congruent Figures,,,,,concept missed by all KGs
+S6-NEW4,4.2 Congruent Figures,,,,,concept missed by all KGs
+S6-NEW5,4.2 Congruent Figures,,,,,concept missed by all KGs
+S7-T001,3.1 Lines and Angles,alternate exterior angles,,,,
+S7-T002,3.1 Lines and Angles,alternate interior angles,,,,
+S7-T003,3.1 Lines and Angles,angle,,,,
+S7-T004,3.1 Lines and Angles,corresponding angles,,,,
+S7-T005,3.1 Lines and Angles,interior angles,,,,
+S7-T006,3.1 Lines and Angles,intersection,,,,
+S7-T007,3.1 Lines and Angles,line,,,,
+S7-T008,3.1 Lines and Angles,parallel,,,,
+S7-T009,3.1 Lines and Angles,parallel lines,,,,
+S7-T010,3.1 Lines and Angles,perpendicular,,,,
+S7-T011,3.1 Lines and Angles,perpendicular lines,,,,
+S7-T012,3.1 Lines and Angles,plane,,,,
+S7-T013,3.1 Lines and Angles,right angle,,,,
+S7-T014,3.1 Lines and Angles,supplementary,,,,
+S7-T015,3.1 Lines and Angles,transversal,,,,
+S7-NEW1,3.1 Lines and Angles,,,,,concept missed by all KGs
+S7-NEW2,3.1 Lines and Angles,,,,,concept missed by all KGs
+S7-NEW3,3.1 Lines and Angles,,,,,concept missed by all KGs
+S7-NEW4,3.1 Lines and Angles,,,,,concept missed by all KGs
+S7-NEW5,3.1 Lines and Angles,,,,,concept missed by all KGs
+S8-T001,11.5 Spheres,area,,,,
+S8-T002,11.5 Spheres,center,,,,
+S8-T003,11.5 Spheres,pi radius,,,,
+S8-T004,11.5 Spheres,point,,,,
+S8-T005,11.5 Spheres,radius,,,,
+S8-T006,11.5 Spheres,sphere,,,,
+S8-T007,11.5 Spheres,surface area,,,,
+S8-T008,11.5 Spheres,volume,,,,
+S8-NEW1,11.5 Spheres,,,,,concept missed by all KGs
+S8-NEW2,11.5 Spheres,,,,,concept missed by all KGs
+S8-NEW3,11.5 Spheres,,,,,concept missed by all KGs
+S8-NEW4,11.5 Spheres,,,,,concept missed by all KGs
+S8-NEW5,11.5 Spheres,,,,,concept missed by all KGs

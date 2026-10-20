@@ -14,3 +14,4 @@ unstructured-inference
 scipy
 matplotlib
 anthropic
+sentence-transformers  # BIGS (kg_eval/bigs.py) and embedding similarity

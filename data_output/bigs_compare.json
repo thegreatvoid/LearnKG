@@ -1,0 +1,105 @@
+{
+  "corpus": "/home/dino/finyr/LearnKG/data_input/ck12_geometry/ck12_basic_geometry_concepts.txt",
+  "doc_units": 314,
+  "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+  "verbalisation": "subject relation_type object",
+  "subsample_size": 90,
+  "draws": 50,
+  "results": [
+    {
+      "kg": "data_output/ck12_geometry",
+      "n_triples": 90,
+      "full": {
+        "fwd": 0.46569663286209106,
+        "bwd": 0.2828001379966736,
+        "sym": 0.387612764783405
+      },
+      "subsample_m90_mean": {
+        "fwd": 0.46569663286209106,
+        "bwd": 0.28280012488365175,
+        "sym": 0.3876127600032207
+      },
+      "subsample_m90_sd": {
+        "fwd": 0.0,
+        "bwd": 1.702649218688691e-08,
+        "sym": 6.2067898214468856e-09
+      }
+    },
+    {
+      "kg": "data_output/baseline_prefix/ck12_geometry",
+      "n_triples": 92,
+      "full": {
+        "fwd": 0.4595094323158264,
+        "bwd": 0.2803492844104767,
+        "sym": 0.38266537416690294
+      },
+      "subsample_m90_mean": {
+        "fwd": 0.4614793288707733,
+        "bwd": 0.2804896628856659,
+        "sym": 0.38400638486561767
+      },
+      "subsample_m90_sd": {
+        "fwd": 0.0019494914422048466,
+        "bwd": 0.001143396699164171,
+        "sym": 0.001281420265223754
+      }
+    },
+    {
+      "kg": "data_output/baseline_fixed/ck12_geometry",
+      "n_triples": 93,
+      "full": {
+        "fwd": 0.45524728298187256,
+        "bwd": 0.2797490954399109,
+        "sym": 0.37967191476595696
+      },
+      "subsample_m90_mean": {
+        "fwd": 0.45749017894268035,
+        "bwd": 0.2795246356725693,
+        "sym": 0.381048248054366
+      },
+      "subsample_m90_sd": {
+        "fwd": 0.0021257987918619535,
+        "bwd": 0.0018448518768296274,
+        "sym": 0.0017192943236741113
+      }
+    },
+    {
+      "kg": "data_output/ck12_geometry_kgx_v2",
+      "n_triples": 545,
+      "full": {
+        "fwd": 0.2833961546421051,
+        "bwd": 0.27920010685920715,
+        "sym": 0.2813042552710413
+      },
+      "subsample_m90_mean": {
+        "fwd": 0.4157252240180969,
+        "bwd": 0.27696423053741454,
+        "sym": 0.3537478010868884
+      },
+      "subsample_m90_sd": {
+        "fwd": 0.008715434357314054,
+        "bwd": 0.0075095124244104845,
+        "sym": 0.006815920523307421
+      }
+    },
+    {
+      "kg": "data_output/ck12_geometry_kgx_v2_hybrid",
+      "n_triples": 669,
+      "full": {
+        "fwd": 0.29367974400520325,
+        "bwd": 0.3087228834629059,
+        "sym": 0.30128227268875474
+      },
+      "subsample_m90_mean": {
+        "fwd": 0.4254379189014435,
+        "bwd": 0.3085587579011917,
+        "sym": 0.37242500009652496
+      },
+      "subsample_m90_sd": {
+        "fwd": 0.007294191367232141,
+        "bwd": 0.009127625187454472,
+        "sym": 0.006780616321131588
+      }
+    }
+  ]
+}

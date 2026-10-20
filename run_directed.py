@@ -93,9 +93,9 @@ def safe_pagerank(G: nx.DiGraph) -> tuple[dict, str]:
 # ─────────────────────────────────────────────────────────────────────────────
 # Config & Toggles
 # ─────────────────────────────────────────────────────────────────────────────
-CONCEPTS_CSV  = Path("./data_output/ck12_geometry_kgx_hybrid/concepts.csv")
-RELATIONS_CSV = Path("./data_output/ck12_geometry_kgx_hybrid/relations.csv")
-GRAPH_CSV     = Path("./data_output/ck12_geometry_kgx_hybrid/graph.csv")
+CONCEPTS_CSV  = Path("./data_output/ck12_geometry_kgx_v2_hybrid/concepts.csv")
+RELATIONS_CSV = Path("./data_output/ck12_geometry_kgx_v2_hybrid/relations.csv")
+GRAPH_CSV     = Path("./data_output/ck12_geometry_kgx_v2_hybrid/graph.csv")
 OUTPUT_HTML   = Path("./docs/index.html")
 
 # Visualization Toggles:

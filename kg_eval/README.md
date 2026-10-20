@@ -64,6 +64,11 @@ Notes:
 | `book_order.py` | **Section 2**: edge direction vs textbook teaching order | no |
 | `concept_quality.py` | Concept extraction: verbatim-in-text rate, AL-CPL concept recall, how many gold positive pairs the pair generator considered; optional `--judge-model` LLM concept precision | only with `--judge-model` |
 | `judge.py` | LLM judge via Ollama (`/api/chat`, JSON-schema output, temperature 0). Env: `OLLAMA_JUDGE_MODEL`, `OLLAMA_HOST`. Each edge judged against top-8 retrieved textbook sentences (MiniLM). Cache keys include model name. Retries 3x. | yes |
+| `weight_ranking.py` | Query ranking (NDCG@5/10) of the weight formula, single factors and ablations vs AL-CPL; CV-tuned coefficients (5.10) | no |
+| `direction_check.py` | Prerequisite direction vs AL-CPL positives: KG edges, LLM pair scores, book order; flags circular hybrids (5.11) | no |
+| `freeze_manifest.py` | Freeze / check the method before a second-domain test (`second_domain_protocol.md`) | no |
+| `framework/` | Complete evaluation framework (5.12): `run_all.py`, per-phase modules, `REPORT.md` generator, annotation kit | partly (BIGS embedder) |
+| `bigs_compare.py` | BIGS for several KGs on one corpus/embedder, with size-matched subsets (5.10) | no |
 | `bigs.py` | BIGS (Lermanda, Ojeda, Reutter, ESWC 2026). BIGS→ = mean over textbook sentences of min cosine distance to a verbalized triple; BIGS← = mean over triples of min distance to a sentence; Sym-BIGS = 1 − harmonic mean of (1−BIGS→),(1−BIGS←). Embedder `all-MiniLM-L6-v2`. Lower is better. | no |
 | `source_quality.py` | Part A (judged support, BIGS, coverage, structure) | partly |
 | `weight_validity.py` | Part B: `sample`, `rate`, `analyze` | yes |
@@ -312,6 +317,190 @@ Prerequisite closure agreement 0.637 [0.55, 0.73]; Kendall τ-b (depth vs first 
 - Not like-for-like: published systems are trained on AL-CPL labels with Wikipedia features and classify every given pair; ours are unsupervised on one textbook, and our main set excludes pairs whose concepts are not in the KG.
 - No zero-shot LLM results on AL-CPL were found. Closest: Graphusion (arXiv 2410.17600), zero-shot GPT-4 ≈ 0.75 F1 on LectureBankCD prerequisite pairs (different dataset; column mapping from a search snippet, verify).
 
+### 5.10 Keyword-path bug fix and edge-weight re-evaluation (2026-10-14, `educational_pipeline` only)
+
+All numbers in this section are new. Earlier numbers (5.2, 5.3) are kept unchanged above and are **preliminary**.
+
+**The two keyword-path bugs** (`RelationManager.extract_relations_from_sentences`, sentence keyword branch):
+1. A sentence naming two concepts and a Part-of / Application / Extension keyword created **no edge**: only the Prerequisite and Similarity branches called `add_relation`, and the `break` then ended the check.
+2. The Similarity branch called `add_relation` **twice** for the same ordered pair, so every Similarity sentence counted as two proposals, which inflated the old co-occurrence factor C (it counted proposals).
+Also found and fixed in the same branch: keywords were plain substrings ("like" matched "unlike").
+
+**Fixes:** keywords match whole words; Part-of / Application / Extension take their direction from the sentence (the concept before the keyword is the source, reversed for "consists of", "comprises", "includes", "composed of", "application of", "extended by", "evolves into"); a pair with no concept on each side of the keyword is skipped and counted (`keyword_no_direction_skipped`); Similarity is proposed once. `add_relation` ignores a repeat of the same (directed typed edge, evidence sentence, source) and keeps every other proposal's evidence (`evidence_all`, `n_proposals`, `sources`); (a, b) and (b, a) stay separate edges. The edge weight factors were corrected at the same time (`docs/ahp_weights.md`).
+
+**Regression tests:** `python educational_pipeline/test_keyword_path.py`, 13 tests, all pass after the fix. Run against the pre-fix package, 6 of the 7 keyword-path tests fail (Part-of, Application, Extension and a reversed keyword produce no edge; one Similarity sentence gives 2 proposals; "unlike" produces an edge); the 7th (skip a keyword with no direction) passes trivially because the old code created no such edge. The other 6 tests cover the new behaviour (proposal de-duplication with evidence kept, extractor scores stored, sentence co-occurrence, definition validation, chapter distance, reverse edges distinct); they use the new `source=` argument, so they cannot run on the old code.
+
+**Before / after** (same code except the fix; `PYTHONHASHSEED=0` for both, because concept IDs depend on Python's string hashing; rules + neural extractor, no LLM). Folders: `data_output/baseline_prefix/ck12_geometry` (pre-fix code from git `HEAD` at 3c6cd66) and `data_output/baseline_fixed/ck12_geometry`.
+
+| | pre-fix | fixed |
+|---|---|---|
+| concepts | 130 | 130 (identical) |
+| edges (Prerequisite / Similarity / Part-of / Application / Extension) | 92 (36 / 46 / 6 / 2 / 2) | 93 (36 / 46 / 7 / 2 / 2) |
+| edge-set change | | +1: Ray → Line, Part-of ("A ray is part of a line ...") |
+| `add_relation` calls in the step dump (`dump_steps`) | 192 | 121 |
+| mean proposals per Similarity edge | 3.24 | 1.61 |
+| keyword hits skipped for lack of direction | n/a | 11 |
+| AL-CPL Prerequisite P / R / F1 [95% CI] | 0.636 / 0.024 / 0.046 [0.02, 0.09] | identical |
+| ROC-AUC [95% CI] | 0.509 [0.50, 0.52] | identical |
+| weight-only AUC (pairs with a Prerequisite edge) | 0.679 (n=11, 7 positive) | 0.357 (n=11), 95% CI [0.00, 0.73] |
+
+Edge correctness cannot change: the fix adds no Prerequisite edge. The weight-only AUC moved because the weight changed (corrected factors; neural edges now get the formula weight instead of their own score). On the same 11 pairs: legacy weight 0.589 [0.22, 0.93], neural score 0.464 (2 of 11 pairs have one), S 0.464, C 0.357, P 0.304, E 0.482; every CI covers 0.5. **11 pairs cannot show whether the weight works**, before or after; the earlier 0.60 (rule-based, n=12) and 0.37 (zephyr, n=12) are equally uninformative.
+
+**Query ranking** (`python -m kg_eval.weight_ranking --kg-dir data_output/baseline_fixed/ck12_geometry`; report `.../kg_eval/weight_ranking_report.json`). Judgments: AL-CPL labels, independent of system and textbook. 58 queries (AL-CPL concepts matched to the KG; 24 unmatched, 5 without a positive, 2 with <2 candidates skipped), 892 query–candidate pairs, 289 relevant. Every variant ranks the same candidates; factors are computed for every pair, edge or not. Bootstrap 95% CI over queries; Δ is the paired per-query difference from the AHP formula. The factors are symmetric, so this tests **relatedness ranking, not direction**, and AL-CPL measures prerequisite relevance, not the "educational relevance" the weight was designed for.
+
+| Variant | NDCG@5 [95% CI] | Δ vs AHP | NDCG@10 [95% CI] | Δ vs AHP |
+|---|---|---|---|---|
+| AHP formula (corrected factors) | 0.622 [0.554, 0.692] | | 0.698 [0.641, 0.759] | |
+| S only (validated Jaccard) | 0.496 [0.424, 0.564] | −0.126 [−0.19, −0.07] | 0.589 [0.522, 0.652] | −0.109 [−0.17, −0.05] |
+| S only, raw (unvalidated) | 0.513 [0.440, 0.587] | −0.110 | 0.621 [0.559, 0.683] | −0.077 |
+| S only, embedding cosine | 0.560 [0.488, 0.631] | −0.062 [−0.13, 0.00] | 0.625 [0.559, 0.686] | −0.074 |
+| C only | **0.661** [0.598, 0.723] | +0.039 [−0.00, +0.08] | **0.716** [0.664, 0.770] | +0.018 [−0.02, +0.05] |
+| P only | 0.489 [0.414, 0.559] | −0.133 | 0.605 [0.536, 0.668] | −0.093 |
+| E only (section Jaccard) | 0.598 [0.533, 0.665] | −0.024 | 0.684 [0.632, 0.736] | −0.014 |
+| E only, legacy constants | 0.499 [0.435, 0.565] | −0.123 | 0.625 [0.570, 0.681] | −0.073 |
+| AHP without S | 0.647 | +0.025 [+0.00, +0.05] | 0.708 | +0.010 [−0.01, +0.03] |
+| AHP without C | 0.548 | −0.074 [−0.11, −0.03] | 0.650 | −0.048 [−0.08, −0.02] |
+| AHP without P | 0.626 | +0.004 [−0.03, +0.04] | 0.706 | +0.007 [−0.02, +0.04] |
+| AHP without E | 0.635 | +0.013 [−0.01, +0.04] | 0.711 | +0.012 [−0.00, +0.03] |
+| AHP with S = embedding | 0.632 | +0.010 | 0.694 | −0.004 |
+| AHP with legacy E | 0.601 | −0.021 | 0.694 | −0.004 |
+| equal weights (0.25 each) | 0.618 | −0.004 | 0.705 | +0.007 |
+| random (constant score) | 0.483 [0.421, 0.543] | −0.139 [−0.21, −0.07] | 0.577 [0.515, 0.635] | −0.121 [−0.19, −0.06] |
+| CV-tuned coefficients (5 folds over queries, held-out) | 0.651 [0.580, 0.718] | +0.029 [+0.01, +0.05] | 0.724 [0.671, 0.777] | +0.026 [−0.00, +0.06] |
+| *reference: book order (direction-aware, not a factor)* | *0.868* | *+0.246* | *0.891* | *+0.193* |
+
+Tuned coefficients at NDCG@10, per fold: S 0.0, C 0.8, P 0.0, E 0.2 in four folds; S 0.1, C 0.7, P 0.1, E 0.1 in one.
+Factor redundancy over the 892 pairs (Spearman): P vs legacy E 0.78, P vs new E 0.28, C vs new E 0.78, Jaccard S vs embedding S 0.38.
+
+What this supports:
+- The formula ranks AL-CPL prerequisites better than random (+0.12 to +0.14 NDCG, CIs exclude 0). The gain comes from **co-occurrence**: C alone is at least as good as the formula, and removing C is the only ablation that clearly hurts.
+- S (lexical, validated or not) and P carry no ranking signal on their own (within the random CI); removing S slightly helps at NDCG@5. Embedding S is better than Jaccard S alone but adds nothing inside the formula.
+- The new section-based E is better than the legacy constants (0.598 vs 0.499 at NDCG@5) but is largely redundant with C.
+- The AHP coefficients are not supported by this test: the data put almost all weight on C. Fitted coefficients gain +0.03 NDCG, a small margin from one book.
+- Book order is far stronger (0.87 / 0.89), as for edge correctness (5.4).
+What stays inconclusive: anything about direction (symmetric factors), anything beyond geometry (one book), and whether the weight measures *educational relevance* (no independent labels for that construct; the LLM 1–5 ratings in 5.3 are retired).
+
+**BIGS with size control** (`python -m kg_eval.bigs_compare --kg-dirs ...`; `data_output/bigs_compare.json`). Same corpus (314 textbook sentences), embedder `sentence-transformers/all-MiniLM-L6-v2` (sentence-transformers 6.1.0, CPU torch), verbalisation "subject relation_type object". BIGS→ falls as triples are added even if unrelated, so each KG is also scored on random 90-triple subsets (50 draws, mean; SD ≤ 0.009). Lower is better. The implementation was checked against equations (1)–(3) of the paper and reproduces the earlier rule-based numbers exactly.
+
+| KG | triples | full: BIGS→ / BIGS← / Sym | 90-triple subsets: BIGS→ / BIGS← / Sym |
+|---|---|---|---|
+| `ck12_geometry` (old, before parser fix) | 90 | 0.466 / 0.283 / 0.388 | 0.466 / 0.283 / 0.388 |
+| `baseline_prefix` | 92 | 0.460 / 0.280 / 0.383 | 0.461 / 0.280 / 0.384 |
+| `baseline_fixed` | 93 | 0.455 / 0.280 / 0.380 | 0.457 / 0.280 / 0.381 |
+| `ck12_geometry_kgx_v2` | 545 | 0.283 / 0.279 / 0.281 | 0.416 / 0.277 / 0.354 |
+| `ck12_geometry_kgx_v2_hybrid` | 669 | 0.294 / 0.309 / 0.301 | 0.425 / 0.309 / 0.372 |
+
+Reading: at equal size v2 covers the text somewhat better than the rule-based graphs (0.416 vs 0.457) with equal grounding; most of v2's full-size coverage advantage is graph size. The hybrid's triples are the least grounded (BIGS← 0.309): its Prerequisite edges come from book order, not from sentences that state them. BIGS measures textual alignment only; it says nothing about prerequisite direction or correctness (5.4 does).
+
+**Not re-run:** the zephyr KG (needs an Ollama run on Colab; the fix changes only the keyword path, which also runs in that configuration); the LLM 1–5 rating correlation (ρ ≈ 0.05; retired: the 3B judge's ratings collapsed, and LLM ratings are not independent labels). The step dump in `data_output/ck12_geometry_steps/` and the figures in `docs/educational_pipeline_*` predate this fix and were not regenerated.
+
+**Reproduce:**
+```
+python educational_pipeline/test_keyword_path.py
+PYTHONHASHSEED=0 python -c "from educational_pipeline import run_educational_pipeline as r; r(data_dir='ck12_geometry', output_base_dir='./data_output/baseline_fixed', use_llm=False, embedding_similarity=True, output_html='./docs/ck12_geometry_fixed.html')"
+python -m kg_eval.prereq_gold   --kg-dir data_output/baseline_fixed/ck12_geometry
+python -m kg_eval.weight_ranking --kg-dir data_output/baseline_fixed/ck12_geometry
+python -m kg_eval.bigs_compare  --kg-dirs data_output/ck12_geometry data_output/baseline_prefix/ck12_geometry data_output/baseline_fixed/ck12_geometry data_output/ck12_geometry_kgx_v2 data_output/ck12_geometry_kgx_v2_hybrid
+```
+The pre-fix run used the `educational_pipeline/` package exported from git `HEAD` (3c6cd66) with `PYTHONPATH` pointing at it.
+
+### 5.11 Weighting audit, definition fix and comparable weighting schemes (2026-10-15, `educational_pipeline`)
+
+New numbers only; 5.10 is unchanged. Single textbook: nothing here shows generalisation.
+
+**Audit findings (code traced, not inferred from names):**
+- S was lexical overlap, not semantics; its input definitions were mostly wrong. Causes, all in code: (1) `ConceptNormalizer` kept the *longest* definition, so a correct first definition was replaced by any longer later sentence (Point: "location with no dimension" → a perpendicular-bisector sentence of section 5.2); (2) `extract_grounded_definition` matched "X is ..." anywhere in a sentence and rewrote it ("If a line is parallel ..." → "Line is parallel ..."; "... of a polygon is always 360" → "Polygon is lways 360 degrees"); (3) its fallback returned any sentence mentioning the concept; (4) heading lines stayed attached to the first sentence of each section.
+- C is sentence co-occurrence (fixed 2026-10-14); E is section co-mention Jaccard and is correlated with C (Spearman 0.78 over the 892 AL-CPL pairs); P vs E 0.28; legacy E vs P 0.78.
+- Missing values: P = 0.5 with `chapter_missing` (0 edges affected on CK-12); E = 0 when a concept has no section (flagged); S falls back to the concept name when the definition is invalid/empty (now 63 of 130 concepts).
+- Direction and weight are separate: the weight is symmetric in its factors; direction comes from the extractor that proposed the edge (rule, keyword cue + page order, neural, LLM).
+- Leakage / circularity: (a) `alpha = 0.8` was selected by CV on the same 58 CK-12 queries, so its CK-12 score is optimistic; (b) `GEOMETRY_SYNONYM_MAP` (gold-name matching) was hand-written for geometry; (c) any check of a book-order-built graph against the same book's order is circular (`direction_check` flags it); (d) the hub setting of `kg_extract` was chosen on geometry gold. AL-CPL labels themselves are independent of system and textbook.
+- Reproducibility: concept candidates came from a `set`, so their order (and so concept IDs, canonical names, Similarity direction) changed with `PYTHONHASHSEED`. Now sorted; a regression test checks three seeds on the whole book.
+
+**Code changes:** `definition_extractor.find_definition` (subject-position, verbatim, headings dropped, mention ≠ definition; legacy function unchanged because `kg_extract` uses it); `ConceptNormalizer(definition_policy=...)` with `first_definitional` (pipeline default) and `legacy_longest`; sorted candidates; `WEIGHTING_SCHEMES` (`ahp`, `cooc_only`, `cooc_struct_a0.8`) used by both the pipeline and `weight_ranking`; new columns `definition_kind` (concepts), `weight_scheme`, `weight_<scheme>` (relations); `weight_ranking` (scheme rows, direction-aware rows, pre-specified paired sign-flip tests, `--pairs/--preqs`); new `direction_check.py`, `freeze_manifest.py`, `second_domain_protocol.md`; `prereq_gold --pairs/--preqs`.
+
+**Definitions before / after** (same deterministic code, only `definition_policy` differs; `data_output/baseline_v3_legacydefs/` vs `data_output/baseline_v3/`):
+
+| | legacy (longest wins) | first definitional |
+|---|---|---|
+| concepts with a definitional sentence | n/a (127 "legacy", mostly mentions) | 73 definitional, 35 mention only, 22 none |
+| concepts passing `definition_is_valid` | 43 | 67 |
+| edges with both endpoints' definitions valid | 3 of 93 | 15 of 84 |
+| edges (neural extractor uses definitions as context) | 93 (20 neural) | 84 (11 neural) |
+| AL-CPL Prerequisite P / R / F1 / AUC | 0.636 / 0.024 / 0.046 / 0.509 | 0.700 / 0.024 / 0.047 / 0.510 |
+
+**Ranking evaluation** (`weight_ranking`; 58 queries, 892 query–candidate pairs, 289 relevant; same queries and candidates for every row; bootstrap 95% CI over queries). Old definitions → fixed definitions:
+
+| Method | NDCG@5 | NDCG@10 |
+|---|---|---|
+| A `ahp` (expert baseline) | 0.621 [0.554, 0.691] → 0.620 [0.551, 0.693] | 0.697 [0.641, 0.759] → 0.708 [0.656, 0.766] |
+| B `cooc_only` | 0.661 [0.598, 0.723] (unchanged: C does not use definitions) | 0.716 [0.664, 0.770] |
+| C `cooc_struct_a0.8` | 0.665 [0.602, 0.728] | 0.731 [0.679, 0.783] |
+| D learned, 5-fold CV held-out | 0.651 → 0.651 | 0.724 → 0.709 |
+| S only (Jaccard) | 0.496 → 0.471 | 0.589 → 0.589 |
+| S only (embedding cosine) | 0.560 → 0.518 | 0.622 → 0.589 |
+| random | 0.483 [0.421, 0.543] | 0.577 [0.515, 0.635] |
+| book order (gap) | 0.868 [0.814, 0.918] | 0.891 [0.848, 0.932] |
+| book order gate × C | 0.822 [0.779, 0.865] | 0.859 [0.825, 0.892] |
+| book order gate only (forward, unranked) | 0.720 [0.667, 0.771] | 0.796 [0.756, 0.835] |
+
+Pre-specified paired comparisons, fixed definitions (mean difference [95% CI], two-sided sign-flip p; no multiplicity correction):
+
+| Comparison | NDCG@5 | NDCG@10 |
+|---|---|---|
+| cooc_only − ahp | +0.041 [−0.004, +0.085], p=0.087 | +0.007 [−0.027, +0.042], p=0.68 |
+| cooc_struct_a0.8 − ahp | +0.045 [+0.007, +0.085], p=0.037 | +0.022 [−0.011, +0.057], p=0.23 |
+| cooc_struct_a0.8 − cooc_only | +0.004, p=0.83 | +0.015, p=0.34 |
+| ahp − random | +0.137, p=0.0004 | +0.131, p=0.0001 |
+| cooc_only − random | +0.178, p<0.0001 | +0.139, p<0.0001 |
+| book order gate × C − book order (gap) | −0.046 [−0.100, +0.008], p=0.10 | −0.032 [−0.067, +0.005], p=0.09 |
+| book order gate × C − gate only | +0.102, p<0.0001 | +0.063, p<0.0001 |
+
+**Direction** (`direction_check`; AL-CPL positive pairs with both concepts matched; Wilson 95% CI). Weights are not used.
+
+| KG | Prerequisite edges decide | correct | LLM pair score decides | correct | book order decides | correct |
+|---|---|---|---|---|---|---|
+| `baseline_v3` | 7 | 7 (1.00 [0.65, 1.00]) | – | – | 291 | 0.969 [0.94, 0.98] |
+| `baseline_v3_legacydefs` | 8 | 0.875 [0.53, 0.98] | – | – | 291 | 0.969 |
+| `ck12_geometry_kgx_v2` | 8 | 0.50 [0.22, 0.78] | 8 | 0.375 [0.14, 0.69] | 293 | 0.949 [0.92, 0.97] |
+| `ck12_geometry_kgx_v2_hybrid` (**circular**) | 76 | 0.987 | 293 | 0.949 | 293 | 0.949 |
+
+**What the evidence supports:**
+- Every scheme beats random; co-occurrence carries the signal. Correct definitions did **not** make S useful (S alone stays at random level; the embedding variant got worse), so S's weakness is not only a definition bug.
+- `cooc_only` and `cooc_struct_a0.8` are at least as good as `ahp`. Their advantage is clear only at NDCG@5 for `cooc_struct_a0.8` (p=0.037, one of several tests, alpha chosen on this data) and is not established at NDCG@10. E adds nothing measurable to C.
+- Book order is the dominant signal for prerequisites (ranking and direction). Inside the forward set, ranking by C is better than no ranking but not better than ranking by the order gap: the weights add nothing measurable beyond book order on this book.
+- The KG edges decide direction for 7–9 gold pairs only, too few to judge; the LLM pair score is not better than chance on its 8 pairs.
+What stays open: generalisation (one book), whether any weight measures *educational relevance* (no labels for it), and direction quality of extracted edges (too few decided pairs).
+
+**Recommendation (provisional):** keep `ahp` as the reported baseline; report `cooc_only` as the primary alternative (fewest assumptions, no fitted parameter); keep `cooc_struct_a0.8` only as the pre-registered candidate for the second-domain test. Do not drop S/P from the code: the second domain decides. Use book order (from the book being processed, or better a second book) for direction, not any weight.
+
+**Tests:** `educational_pipeline/test_keyword_path.py` (13) and `educational_pipeline/test_definitions_and_weights.py` (16: definition finder on real mis-assigned sentences, normaliser policies, factor values and normalisation, missing chapter/section/definition, scheme formulas, unknown scheme rejected, deterministic weights, hash-seed independence on the whole book), `kg_extract/test_kg_extract.py` (10). All pass. The legacy extractor's wrong outputs are asserted in the tests, so the failure cases stay documented.
+
+**Reproduce:**
+```
+python educational_pipeline/test_keyword_path.py
+python educational_pipeline/test_definitions_and_weights.py
+python kg_extract/test_kg_extract.py
+python -c "from educational_pipeline import run_educational_pipeline as r; r(data_dir='ck12_geometry', output_base_dir='./data_output/baseline_v3', use_llm=False, embedding_similarity=True, output_html='./docs/ck12_geometry_v3.html')"
+python -c "from educational_pipeline import run_educational_pipeline as r; r(data_dir='ck12_geometry', output_base_dir='./data_output/baseline_v3_legacydefs', use_llm=False, embedding_similarity=True, definition_policy='legacy_longest', output_html='./docs/ck12_geometry_v3_legacy.html')"
+python -m kg_eval.prereq_gold     --kg-dir data_output/baseline_v3/ck12_geometry
+python -m kg_eval.weight_ranking  --kg-dir data_output/baseline_v3/ck12_geometry
+python -m kg_eval.weight_ranking  --kg-dir data_output/baseline_v3_legacydefs/ck12_geometry
+python -m kg_eval.direction_check --kg-dir data_output/baseline_v3/ck12_geometry
+python -m kg_eval.direction_check --kg-dir data_output/ck12_geometry_kgx_v2
+```
+No `PYTHONHASHSEED` is needed any more. The neural extractor model (`cross-encoder/ms-marco-MiniLM-L-6-v2`) and `all-MiniLM-L6-v2` must be available (downloaded once).
+
+### 5.12 Complete evaluation framework (2026-10-15)
+
+`kg_eval/framework/` evaluates concepts, all five relation types, heuristic weights, BIGS grounding and a concept-level
+knowledge-gap proxy for the four KGs (`ck12_geometry`, `baseline_v3`, `kgx_v2`, `kgx_v2_hybrid`), reading them
+read-only and writing only to `data_output/eval_framework/`. **The full results are in
+`data_output/eval_framework/REPORT.md`** (generated from the JSON outputs; every table is labelled ground truth /
+automatic check / grounding / exploratory / not done). Annotation package (no labels exist yet for Part-of,
+Application, Similarity, Extension, concept presence or questions): `data_output/eval_framework/annotation/` with
+`kg_eval/framework/ANNOTATION_GUIDELINES.md`. Reproduce: `python -m kg_eval.framework.run_all` (about 4 min; outputs
+are byte-identical on rerun); tests: `python kg_eval/framework/test_framework.py`.
+
 ## 6. Validity of the evaluation (what holds, what to watch)
 
 Holds:
@@ -423,7 +612,9 @@ Locally: copy only `concepts.csv` and `relations.csv` into a **new** folder `dat
 9. **Irregular plurals are not merged** (`vertex`/`vertices`, `radius`/`radii`): `ConceptNormalizer._is_plural_match` only handles -s/-es/-ies.
 10. `kg_extract` concept filters remove some real single-word terms (area, segment, similarity, leg) that only a chapter title or spaCy proposed (5.5).
 11. BIGS uses MiniLM-L6 and relation_type as predicate; the paper uses other embedders (all-MiniLM-L12-v2, BAAI/bge-m3).
-12. Local machine: Windows, CPU-only, ~15 GB RAM, slow downloads (the 57 MB `wordfreq` wheel took ~20 min). Use Colab (T4) for LLM work.
+12. **Keyword-path bugs in `educational_pipeline` (fixed 2026-10-14, 5.10):** Part-of / Application / Extension keyword sentences produced no edge, and Similarity was proposed twice per sentence. Results in 5.2 and 5.3 come from the buggy code.
+13. **Run-to-run concept IDs and names depended on Python's string hashing** (`PYTHONHASHSEED`) until 2026-10-15; fixed by sorting candidates (5.11). Outputs made before that (including `baseline_prefix/`, `baseline_fixed/`) used `PYTHONHASHSEED=0`.
+14. Local machine: Windows, CPU-only, ~15 GB RAM, slow downloads (the 57 MB `wordfreq` wheel took ~20 min). Use Colab (T4) for LLM work.
 
 ## 9. Plan going forward (no human annotation)
 

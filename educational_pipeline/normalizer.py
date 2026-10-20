@@ -22,6 +22,7 @@ class NormalizedConcept:
     page: int = 1
     chunk_id: str = ""
     evidence: str = ""
+    definition_kind: str = ""  # "definitional" / "llm" / "mention" / "" (see find_definition)
 
 
 class ConceptNormalizer:
@@ -30,7 +31,16 @@ class ConceptNormalizer:
     casing, plurals, and string similarity.
     """
 
-    def __init__(self):
+    # How a later definition of an already registered concept is handled:
+    #   "legacy_longest"      keep the longest definition seen (original behaviour; kg_extract relies on it)
+    #   "first_definitional"  keep the first definitional (or LLM) definition; never replace it with a mention
+    DEFINITION_POLICIES = ("legacy_longest", "first_definitional")
+    _KIND_RANK = {"definitional": 2, "llm": 2, "mention": 1, "": 0}
+
+    def __init__(self, definition_policy: str = "legacy_longest"):
+        if definition_policy not in self.DEFINITION_POLICIES:
+            raise ValueError(f"unknown definition_policy {definition_policy!r}")
+        self.definition_policy = definition_policy
         self.concepts_by_id: Dict[str, NormalizedConcept] = {}
         # Mapping from lowercase alias/name -> concept_id
         self.lookup: Dict[str, str] = {}
@@ -108,6 +118,7 @@ class ConceptNormalizer:
         page: int = 1,
         chunk_id: str = "",
         evidence: str = "",
+        definition_kind: str = "",
     ) -> NormalizedConcept:
         """Registers a concept or merges it into an existing canonical concept."""
         cleaned = self.clean_name(name)
@@ -133,12 +144,21 @@ class ConceptNormalizer:
             concept.chapter = concept.chapter or chapter
             concept.section = concept.section or section
 
-            # Update definition if existing is empty or shorter
-            if definition and (not concept.definition or len(definition) > len(concept.definition)):
+            if self.definition_policy == "legacy_longest":
+                # Update definition if existing is empty or shorter
+                if definition and (not concept.definition or len(definition) > len(concept.definition)):
+                    concept.definition = definition.strip()
+                    concept.evidence = evidence.strip() or concept.evidence
+                    concept.page = page or concept.page
+                    concept.chunk_id = chunk_id or concept.chunk_id
+                    concept.definition_kind = definition_kind or concept.definition_kind
+            elif self._KIND_RANK.get(definition_kind, 0) > self._KIND_RANK.get(concept.definition_kind, 0):
+                # first_definitional: only a strictly better kind replaces (chunks arrive in book order)
                 concept.definition = definition.strip()
                 concept.evidence = evidence.strip() or concept.evidence
                 concept.page = page or concept.page
                 concept.chunk_id = chunk_id or concept.chunk_id
+                concept.definition_kind = definition_kind
 
             # Refine concept type if not default
             if concept_type and concept_type != "Component":
@@ -166,6 +186,7 @@ class ConceptNormalizer:
             page=page,
             chunk_id=chunk_id,
             evidence=evidence.strip(),
+            definition_kind=definition_kind,
         )
 
         self.concepts_by_id[cid] = concept

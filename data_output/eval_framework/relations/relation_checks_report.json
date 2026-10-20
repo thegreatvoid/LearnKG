@@ -1,0 +1,1071 @@
+{
+  "disclaimer": "Automatic validation diagnostics only: not ground-truth precision or recall. Flags: contradiction = the evidence or structure points against the stored edge/direction; weak_evidence = no supporting sentence or no explicit cue (common for genuine relations too); semantic_or_type = possible type confusion.",
+  "cue_lexicon": {
+    "Prerequisite": {
+      "forward": [
+        "is needed for",
+        "is needed to",
+        "is used to define",
+        "is the basis of",
+        "is required for",
+        "is necessary for",
+        "comes before",
+        "leads to"
+      ],
+      "reverse": [
+        "requires",
+        "require",
+        "depends on",
+        "is defined using",
+        "is built from",
+        "uses",
+        "use",
+        "using",
+        "based on",
+        "builds on",
+        "recall",
+        "from"
+      ]
+    },
+    "Part-of": {
+      "forward": [
+        "part of",
+        "component of",
+        "piece of",
+        "portion of",
+        "side of",
+        "vertex of",
+        "segment of",
+        "edge of",
+        "face of",
+        "belongs to",
+        "lies on",
+        "lies in",
+        "contained in",
+        "inside",
+        "of a",
+        "of the"
+      ],
+      "reverse": [
+        "has",
+        "have",
+        "consists of",
+        "contains",
+        "includes",
+        "is made of",
+        "is composed of",
+        "is formed by",
+        "formed by",
+        "made up of",
+        "with"
+      ]
+    },
+    "Application": {
+      "forward": [
+        "used to",
+        "used for",
+        "used in",
+        "is applied",
+        "applies to",
+        "to find",
+        "to calculate",
+        "to prove",
+        "to solve",
+        "to determine",
+        "helps",
+        "allows"
+      ],
+      "reverse": [
+        "uses",
+        "use",
+        "using",
+        "by applying",
+        "with the help of",
+        "applying"
+      ]
+    },
+    "Extension": {
+      "forward": [
+        "special case of",
+        "type of",
+        "kind of",
+        "extension of",
+        "extends",
+        "generalizes",
+        "generalization of",
+        "variant of",
+        "derived from",
+        "converse of",
+        "based on",
+        "builds on"
+      ],
+      "reverse": [
+        "is extended by",
+        "can be generalized to",
+        "special cases",
+        "types of",
+        "kinds of"
+      ]
+    },
+    "Similarity": {
+      "any": [
+        "similar to",
+        "like",
+        "same as",
+        "analogous",
+        "both",
+        "whereas",
+        "unlike",
+        "compared",
+        "congruent",
+        "equal",
+        "corresponding",
+        "resembles",
+        "also"
+      ]
+    }
+  },
+  "kgs": {
+    "rule_2026-10-11": {
+      "desc": "educational_pipeline, rules + neural, before all fixes",
+      "uses_book_order": false,
+      "by_type": {
+        "Prerequisite": {
+          "edges": 34,
+          "with_support_sentence": 17,
+          "cue_supports": 1,
+          "cue_reverse": 0,
+          "cue_none": 33,
+          "cue_not_independent": 0,
+          "flagged_any": 34,
+          "flag_counts": {
+            "book_order_backward": 13,
+            "no_support_sentence": 17,
+            "no_Prerequisite_cue": 14,
+            "alcpl_negative": 5,
+            "type_conflict": 9,
+            "support_without_relation_cue": 2
+          },
+          "flagged_contradiction": 14,
+          "flagged_weak_evidence": 33,
+          "flagged_semantic_or_type": 9,
+          "co_occurrence_only": 2,
+          "direction_inconsistencies": 13,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.26449999999999996,
+          "grounding_distance_iqr": [
+            0.221825,
+            0.311325
+          ],
+          "alcpl": {
+            "unlabelled": 23,
+            "correct": 6,
+            "negative": 5
+          },
+          "book_order_forward_rate": 0.5294117647058824,
+          "examples_pass": [],
+          "examples_flagged": [
+            {
+              "source": "Conjecture",
+              "target": "Inductive Reasoning",
+              "flags": "book_order_backward",
+              "example_sentence": "Inductive reasoning uses specific examples to make a general conclusion called a conjecture."
+            },
+            {
+              "source": "Deductive Reasoning",
+              "target": "Proof",
+              "flags": "no_support_sentence;book_order_backward",
+              "example_sentence": "2.3 Deductive Reasoning Deductive reasoning uses facts, definitions, accepted properties and laws of logic to form a logical argument."
+            },
+            {
+              "source": "Slope",
+              "target": "Parallel",
+              "flags": "no_Prerequisite_cue;book_order_backward;alcpl_negative",
+              "example_sentence": "Parallel lines have equal slopes."
+            }
+          ]
+        },
+        "Part-of": {
+          "edges": 6,
+          "with_support_sentence": 6,
+          "cue_supports": 1,
+          "cue_reverse": 2,
+          "cue_none": 3,
+          "cue_not_independent": 0,
+          "flagged_any": 5,
+          "flag_counts": {
+            "support_without_relation_cue": 2,
+            "no_Part-of_cue": 1,
+            "cue_suggests_reverse_direction": 2
+          },
+          "flagged_contradiction": 2,
+          "flagged_weak_evidence": 3,
+          "flagged_semantic_or_type": 0,
+          "co_occurrence_only": 2,
+          "direction_inconsistencies": 2,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.25839999999999996,
+          "grounding_distance_iqr": [
+            0.2193,
+            0.258725
+          ],
+          "examples_pass": [
+            {
+              "source": "Angle",
+              "target": "Supplementary",
+              "example_sentence": "Supplementary angles are two angles whose measures sum to 180 degrees."
+            }
+          ],
+          "examples_flagged": [
+            {
+              "source": "Polygon",
+              "target": "Interior Angle",
+              "flags": "cue_suggests_reverse_direction",
+              "example_sentence": "The sum of interior angles of a polygon with n sides is (n minus 2) times 180 degrees."
+            },
+            {
+              "source": "Triangle",
+              "target": "Exterior Angle",
+              "flags": "cue_suggests_reverse_direction",
+              "example_sentence": "The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles."
+            }
+          ]
+        },
+        "Application": {
+          "edges": 2,
+          "with_support_sentence": 1,
+          "cue_supports": 0,
+          "cue_reverse": 1,
+          "cue_none": 1,
+          "cue_not_independent": 0,
+          "flagged_any": 2,
+          "flag_counts": {
+            "no_support_sentence": 1,
+            "cue_suggests_reverse_direction": 1,
+            "type_conflict": 1
+          },
+          "flagged_contradiction": 1,
+          "flagged_weak_evidence": 1,
+          "flagged_semantic_or_type": 1,
+          "co_occurrence_only": 0,
+          "direction_inconsistencies": 1,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.27225,
+          "grounding_distance_iqr": [
+            0.220025,
+            0.32447499999999996
+          ],
+          "examples_pass": [],
+          "examples_flagged": [
+            {
+              "source": "Triangle",
+              "target": "Congruence",
+              "flags": "cue_suggests_reverse_direction;type_conflict:Similarity",
+              "example_sentence": "The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent."
+            }
+          ]
+        },
+        "Similarity": {
+          "edges": 46,
+          "with_support_sentence": 15,
+          "cue_supports": 15,
+          "cue_reverse": 0,
+          "cue_none": 31,
+          "cue_not_independent": 0,
+          "flagged_any": 44,
+          "flag_counts": {
+            "possible_congruence_confusion": 43,
+            "no_support_sentence": 31,
+            "type_conflict": 9,
+            "kind_of_name_pattern": 1
+          },
+          "flagged_contradiction": 0,
+          "flagged_weak_evidence": 31,
+          "flagged_semantic_or_type": 43,
+          "co_occurrence_only": 0,
+          "direction_inconsistencies": 0,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.2984,
+          "grounding_distance_iqr": [
+            0.235,
+            0.3625
+          ],
+          "def_embedding_median": 0.23504999999999998,
+          "def_lexical_median": 0.0,
+          "examples_pass": [
+            {
+              "source": "Bases",
+              "target": "Cylinder",
+              "example_sentence": "A cylinder is like a prism with circular bases."
+            },
+            {
+              "source": "Cylinder",
+              "target": "Prism",
+              "example_sentence": "A cylinder is like a prism with circular bases."
+            }
+          ],
+          "examples_flagged": []
+        },
+        "Extension": {
+          "edges": 2,
+          "with_support_sentence": 2,
+          "cue_supports": 0,
+          "cue_reverse": 0,
+          "cue_none": 2,
+          "cue_not_independent": 0,
+          "flagged_any": 2,
+          "flag_counts": {
+            "no_Extension_cue": 2,
+            "extension_base_introduced_later": 1,
+            "type_conflict": 1
+          },
+          "flagged_contradiction": 1,
+          "flagged_weak_evidence": 2,
+          "flagged_semantic_or_type": 1,
+          "co_occurrence_only": 0,
+          "direction_inconsistencies": 1,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.25985,
+          "grounding_distance_iqr": [
+            0.255925,
+            0.263775
+          ],
+          "examples_pass": [],
+          "examples_flagged": [
+            {
+              "source": "Parallelogram",
+              "target": "Rectangle",
+              "flags": "no_Extension_cue;extension_base_introduced_later",
+              "example_sentence": "A rectangle is a parallelogram with four right angles."
+            }
+          ]
+        }
+      }
+    },
+    "rule_v3": {
+      "desc": "educational_pipeline, rules + neural, current code",
+      "uses_book_order": false,
+      "by_type": {
+        "Prerequisite": {
+          "edges": 27,
+          "with_support_sentence": 15,
+          "cue_supports": 1,
+          "cue_reverse": 0,
+          "cue_none": 26,
+          "cue_not_independent": 0,
+          "flagged_any": 27,
+          "flag_counts": {
+            "book_order_backward": 7,
+            "no_support_sentence": 12,
+            "no_Prerequisite_cue": 12,
+            "alcpl_negative": 3,
+            "type_conflict": 5,
+            "support_without_relation_cue": 2
+          },
+          "flagged_contradiction": 8,
+          "flagged_weak_evidence": 26,
+          "flagged_semantic_or_type": 5,
+          "co_occurrence_only": 2,
+          "direction_inconsistencies": 7,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.2758,
+          "grounding_distance_iqr": [
+            0.23075,
+            0.314
+          ],
+          "alcpl": {
+            "unlabelled": 18,
+            "correct": 6,
+            "negative": 3
+          },
+          "book_order_forward_rate": 0.6296296296296297,
+          "examples_pass": [],
+          "examples_flagged": [
+            {
+              "source": "Conjecture",
+              "target": "Inductive Reasoning",
+              "flags": "book_order_backward",
+              "example_sentence": "Inductive reasoning uses specific examples to make a general conclusion called a conjecture."
+            },
+            {
+              "source": "Deductive Reasoning",
+              "target": "Proof",
+              "flags": "no_support_sentence;book_order_backward",
+              "example_sentence": "2.3 Deductive Reasoning Deductive reasoning uses facts, definitions, accepted properties and laws of logic to form a logical argument."
+            },
+            {
+              "source": "Slope",
+              "target": "Parallel",
+              "flags": "no_Prerequisite_cue;book_order_backward;alcpl_negative",
+              "example_sentence": "Parallel lines have equal slopes."
+            }
+          ]
+        },
+        "Part-of": {
+          "edges": 7,
+          "with_support_sentence": 7,
+          "cue_supports": 2,
+          "cue_reverse": 2,
+          "cue_none": 3,
+          "cue_not_independent": 1,
+          "flagged_any": 5,
+          "flag_counts": {
+            "support_without_relation_cue": 2,
+            "no_Part-of_cue": 1,
+            "cue_suggests_reverse_direction": 2
+          },
+          "flagged_contradiction": 2,
+          "flagged_weak_evidence": 3,
+          "flagged_semantic_or_type": 0,
+          "co_occurrence_only": 2,
+          "direction_inconsistencies": 2,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.2583,
+          "grounding_distance_iqr": [
+            0.2154,
+            0.25865
+          ],
+          "examples_pass": [
+            {
+              "source": "Ray",
+              "target": "Line",
+              "example_sentence": "A ray is part of a line that starts at one endpoint and extends infinitely in one direction."
+            },
+            {
+              "source": "Angle",
+              "target": "Supplementary",
+              "example_sentence": "Supplementary angles are two angles whose measures sum to 180 degrees."
+            }
+          ],
+          "examples_flagged": [
+            {
+              "source": "Polygon",
+              "target": "Interior Angle",
+              "flags": "cue_suggests_reverse_direction",
+              "example_sentence": "The sum of interior angles of a polygon with n sides is (n minus 2) times 180 degrees."
+            },
+            {
+              "source": "Triangle",
+              "target": "Exterior Angle",
+              "flags": "cue_suggests_reverse_direction",
+              "example_sentence": "The exterior angle theorem states that the exterior angle of a triangle equals the sum of the two non-adjacent interior angles, called remote interior angles."
+            }
+          ]
+        },
+        "Application": {
+          "edges": 2,
+          "with_support_sentence": 1,
+          "cue_supports": 0,
+          "cue_reverse": 1,
+          "cue_none": 1,
+          "cue_not_independent": 0,
+          "flagged_any": 2,
+          "flag_counts": {
+            "no_support_sentence": 1,
+            "cue_suggests_reverse_direction": 1,
+            "type_conflict": 1
+          },
+          "flagged_contradiction": 1,
+          "flagged_weak_evidence": 1,
+          "flagged_semantic_or_type": 1,
+          "co_occurrence_only": 0,
+          "direction_inconsistencies": 1,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.27225,
+          "grounding_distance_iqr": [
+            0.220025,
+            0.32447499999999996
+          ],
+          "examples_pass": [],
+          "examples_flagged": [
+            {
+              "source": "Triangle",
+              "target": "Congruence",
+              "flags": "cue_suggests_reverse_direction;type_conflict:Similarity",
+              "example_sentence": "The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent."
+            }
+          ]
+        },
+        "Similarity": {
+          "edges": 46,
+          "with_support_sentence": 15,
+          "cue_supports": 15,
+          "cue_reverse": 0,
+          "cue_none": 31,
+          "cue_not_independent": 45,
+          "flagged_any": 44,
+          "flag_counts": {
+            "possible_congruence_confusion": 43,
+            "no_support_sentence": 31,
+            "type_conflict": 5,
+            "kind_of_name_pattern": 1
+          },
+          "flagged_contradiction": 0,
+          "flagged_weak_evidence": 31,
+          "flagged_semantic_or_type": 43,
+          "co_occurrence_only": 0,
+          "direction_inconsistencies": 0,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.2984,
+          "grounding_distance_iqr": [
+            0.235,
+            0.358625
+          ],
+          "def_embedding_median": 0.1485,
+          "def_lexical_median": 0.0,
+          "examples_pass": [
+            {
+              "source": "Bases",
+              "target": "Cylinder",
+              "example_sentence": "A cylinder is like a prism with circular bases."
+            },
+            {
+              "source": "Prism",
+              "target": "Cylinder",
+              "example_sentence": "A cylinder is like a prism with circular bases."
+            }
+          ],
+          "examples_flagged": []
+        },
+        "Extension": {
+          "edges": 2,
+          "with_support_sentence": 2,
+          "cue_supports": 0,
+          "cue_reverse": 0,
+          "cue_none": 2,
+          "cue_not_independent": 0,
+          "flagged_any": 2,
+          "flag_counts": {
+            "no_Extension_cue": 2,
+            "extension_base_introduced_later": 1,
+            "type_conflict": 1
+          },
+          "flagged_contradiction": 1,
+          "flagged_weak_evidence": 2,
+          "flagged_semantic_or_type": 1,
+          "co_occurrence_only": 0,
+          "direction_inconsistencies": 1,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.25985,
+          "grounding_distance_iqr": [
+            0.255925,
+            0.263775
+          ],
+          "examples_pass": [],
+          "examples_flagged": [
+            {
+              "source": "Parallelogram",
+              "target": "Rectangle",
+              "flags": "no_Extension_cue;extension_base_introduced_later",
+              "example_sentence": "A rectangle is a parallelogram with four right angles."
+            }
+          ]
+        }
+      }
+    },
+    "kgx_v2": {
+      "desc": "kg_extract, qwen2.5:7b concepts + LLM pair votes",
+      "uses_book_order": false,
+      "by_type": {
+        "Prerequisite": {
+          "edges": 54,
+          "with_support_sentence": 43,
+          "cue_supports": 1,
+          "cue_reverse": 0,
+          "cue_none": 53,
+          "cue_not_independent": 0,
+          "flagged_any": 54,
+          "flag_counts": {
+            "support_without_relation_cue": 8,
+            "book_order_backward": 31,
+            "no_support_sentence": 11,
+            "no_Prerequisite_cue": 34,
+            "alcpl_negative": 4
+          },
+          "flagged_contradiction": 31,
+          "flagged_weak_evidence": 53,
+          "flagged_semantic_or_type": 0,
+          "co_occurrence_only": 8,
+          "direction_inconsistencies": 31,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.25734999999999997,
+          "grounding_distance_iqr": [
+            0.1984,
+            0.325225
+          ],
+          "alcpl": {
+            "unlabelled": 46,
+            "correct": 4,
+            "negative": 4
+          },
+          "book_order_forward_rate": 0.3888888888888889,
+          "examples_pass": [],
+          "examples_flagged": [
+            {
+              "source": "acute angle",
+              "target": "angle",
+              "flags": "support_without_relation_cue;book_order_backward",
+              "example_sentence": "Acute angles measure less than 90 degrees."
+            },
+            {
+              "source": "acute angle",
+              "target": "degree",
+              "flags": "support_without_relation_cue;book_order_backward",
+              "example_sentence": "Acute angles measure less than 90 degrees."
+            },
+            {
+              "source": "alternate exterior angles theorem",
+              "target": "congruent",
+              "flags": "no_Prerequisite_cue;book_order_backward",
+              "example_sentence": "The alternate exterior angles theorem states that if two parallel lines are cut by a transversal, then alternate exterior angles are congruent."
+            }
+          ]
+        },
+        "Part-of": {
+          "edges": 216,
+          "with_support_sentence": 147,
+          "cue_supports": 36,
+          "cue_reverse": 27,
+          "cue_none": 153,
+          "cue_not_independent": 0,
+          "flagged_any": 180,
+          "flag_counts": {
+            "no_support_sentence": 69,
+            "cue_suggests_reverse_direction": 27,
+            "no_Part-of_cue": 66,
+            "kind_of_name_pattern": 18,
+            "support_without_relation_cue": 18
+          },
+          "flagged_contradiction": 27,
+          "flagged_weak_evidence": 153,
+          "flagged_semantic_or_type": 18,
+          "co_occurrence_only": 18,
+          "direction_inconsistencies": 27,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.24385,
+          "grounding_distance_iqr": [
+            0.2001,
+            0.312
+          ],
+          "examples_pass": [
+            {
+              "source": "arc",
+              "target": "circle",
+              "example_sentence": "An arc is a portion of a circle."
+            },
+            {
+              "source": "Arc Length",
+              "target": "Circumference",
+              "example_sentence": "An arc length is a portion of the circumference equal to the arc measure divided by 360 times the circumference."
+            },
+            {
+              "source": "area of a sector",
+              "target": "circle",
+              "example_sentence": "The area of a sector is the arc measure divided by 360 times the area of the circle."
+            }
+          ],
+          "examples_flagged": [
+            {
+              "source": "acute triangle",
+              "target": "angle",
+              "flags": "cue_suggests_reverse_direction",
+              "example_sentence": "An acute triangle has all angles less than 90 degrees."
+            },
+            {
+              "source": "angle",
+              "target": "incenter",
+              "flags": "cue_suggests_reverse_direction",
+              "example_sentence": "The incenter is the point of concurrency of the angle bisectors and is equidistant from each side."
+            },
+            {
+              "source": "angle",
+              "target": "ray",
+              "flags": "cue_suggests_reverse_direction",
+              "example_sentence": "An angle is formed by two rays with a common endpoint called the vertex."
+            }
+          ]
+        },
+        "Application": {
+          "edges": 228,
+          "with_support_sentence": 188,
+          "cue_supports": 6,
+          "cue_reverse": 2,
+          "cue_none": 220,
+          "cue_not_independent": 0,
+          "flagged_any": 222,
+          "flag_counts": {
+            "no_Application_cue": 129,
+            "support_without_relation_cue": 51,
+            "no_support_sentence": 40,
+            "cue_suggests_reverse_direction": 2
+          },
+          "flagged_contradiction": 2,
+          "flagged_weak_evidence": 220,
+          "flagged_semantic_or_type": 0,
+          "co_occurrence_only": 51,
+          "direction_inconsistencies": 2,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.28625,
+          "grounding_distance_iqr": [
+            0.245975,
+            0.34045000000000003
+          ],
+          "examples_pass": [
+            {
+              "source": "congruence",
+              "target": "triangle",
+              "example_sentence": "The side side side congruence postulate states that if three sides of one triangle are congruent to three sides of another, then the triangles are congruent."
+            },
+            {
+              "source": "conjecture",
+              "target": "Inductive Reasoning",
+              "example_sentence": "Inductive reasoning uses specific examples to make a general conclusion called a conjecture."
+            },
+            {
+              "source": "hypotenuse",
+              "target": "right triangle",
+              "example_sentence": "The hypotenuse leg congruence theorem applies to right triangles and states that if the hypotenuse and a leg are congruent, then the triangles are congruent."
+            }
+          ],
+          "examples_flagged": [
+            {
+              "source": "Inductive Reasoning",
+              "target": "conclusion",
+              "flags": "cue_suggests_reverse_direction",
+              "example_sentence": "Inductive reasoning uses specific examples to make a general conclusion called a conjecture."
+            },
+            {
+              "source": "right triangle",
+              "target": "congruence",
+              "flags": "cue_suggests_reverse_direction",
+              "example_sentence": "The hypotenuse leg congruence theorem applies to right triangles and states that if the hypotenuse and a leg are congruent, then the triangles are congruent."
+            }
+          ]
+        },
+        "Similarity": {
+          "edges": 4,
+          "with_support_sentence": 3,
+          "cue_supports": 3,
+          "cue_reverse": 0,
+          "cue_none": 1,
+          "cue_not_independent": 0,
+          "flagged_any": 4,
+          "flag_counts": {
+            "no_support_sentence": 1,
+            "possible_congruence_confusion": 3
+          },
+          "flagged_contradiction": 0,
+          "flagged_weak_evidence": 1,
+          "flagged_semantic_or_type": 3,
+          "co_occurrence_only": 0,
+          "direction_inconsistencies": 0,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.2435,
+          "grounding_distance_iqr": [
+            0.2334,
+            0.256375
+          ],
+          "def_embedding_median": 0.2992,
+          "def_lexical_median": 0.05,
+          "examples_pass": [],
+          "examples_flagged": []
+        },
+        "Extension": {
+          "edges": 43,
+          "with_support_sentence": 36,
+          "cue_supports": 0,
+          "cue_reverse": 0,
+          "cue_none": 43,
+          "cue_not_independent": 0,
+          "flagged_any": 43,
+          "flag_counts": {
+            "support_without_relation_cue": 13,
+            "no_Extension_cue": 23,
+            "extension_base_introduced_later": 20,
+            "no_support_sentence": 7
+          },
+          "flagged_contradiction": 20,
+          "flagged_weak_evidence": 43,
+          "flagged_semantic_or_type": 0,
+          "co_occurrence_only": 13,
+          "direction_inconsistencies": 20,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.3116,
+          "grounding_distance_iqr": [
+            0.26745,
+            0.3562
+          ],
+          "examples_pass": [],
+          "examples_flagged": [
+            {
+              "source": "angle",
+              "target": "angle angle similarity postulate",
+              "flags": "no_Extension_cue;extension_base_introduced_later",
+              "example_sentence": "The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar."
+            },
+            {
+              "source": "angle",
+              "target": "included angle",
+              "flags": "no_Extension_cue;extension_base_introduced_later",
+              "example_sentence": "The side angle side congruence postulate states that if two sides and the included angle of one triangle are congruent to the corresponding parts of another triangle, then the triangles are congruent."
+            },
+            {
+              "source": "angle",
+              "target": "obtuse angle",
+              "flags": "support_without_relation_cue;extension_base_introduced_later",
+              "example_sentence": "Obtuse angles measure between 90 and 180 degrees."
+            }
+          ]
+        }
+      }
+    },
+    "kgx_v2_hybrid": {
+      "desc": "v2 + hybrid prerequisite edges (uses book order)",
+      "uses_book_order": true,
+      "by_type": {
+        "Prerequisite": {
+          "edges": 518,
+          "with_support_sentence": 437,
+          "cue_supports": 14,
+          "cue_reverse": 7,
+          "cue_none": 497,
+          "cue_not_independent": 0,
+          "flagged_any": 504,
+          "flag_counts": {
+            "no_Prerequisite_cue": 315,
+            "support_without_relation_cue": 101,
+            "alcpl_negative": 14,
+            "cue_suggests_reverse_direction": 7,
+            "no_support_sentence": 81
+          },
+          "flagged_contradiction": 20,
+          "flagged_weak_evidence": 497,
+          "flagged_semantic_or_type": 0,
+          "co_occurrence_only": 101,
+          "direction_inconsistencies": 7,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.30555,
+          "grounding_distance_iqr": [
+            0.2469,
+            0.36634999999999995
+          ],
+          "alcpl": {
+            "unlabelled": 432,
+            "correct": 72,
+            "negative": 14
+          },
+          "book_order_forward_rate": 1.0,
+          "examples_pass": [
+            {
+              "source": "point",
+              "target": "secant",
+              "example_sentence": "A secant is a line that intersects a circle at two points."
+            },
+            {
+              "source": "midpoint",
+              "target": "median",
+              "example_sentence": "A median is a segment from a vertex to the midpoint of the opposite side."
+            },
+            {
+              "source": "vertex",
+              "target": "median",
+              "example_sentence": "A median is a segment from a vertex to the midpoint of the opposite side."
+            }
+          ],
+          "examples_flagged": [
+            {
+              "source": "right triangle",
+              "target": "Trigonometry",
+              "flags": "no_Prerequisite_cue;alcpl_negative",
+              "example_sentence": "Trigonometry is the study of the relationships between sides and angles of right triangles."
+            },
+            {
+              "source": "angle",
+              "target": "arc",
+              "flags": "cue_suggests_reverse_direction;alcpl_negative",
+              "example_sentence": "The inscribed angle theorem states that the inscribed angle is half the central angle that subtepts the same arc."
+            },
+            {
+              "source": "angle",
+              "target": "chord",
+              "flags": "no_Prerequisite_cue;alcpl_negative",
+              "example_sentence": "An inscribed angle is an angle formed by two chords with the vertex on the circle."
+            }
+          ]
+        },
+        "Part-of": {
+          "edges": 71,
+          "with_support_sentence": 31,
+          "cue_supports": 10,
+          "cue_reverse": 6,
+          "cue_none": 55,
+          "cue_not_independent": 0,
+          "flagged_any": 61,
+          "flag_counts": {
+            "no_support_sentence": 40,
+            "support_without_relation_cue": 3,
+            "no_Part-of_cue": 12,
+            "cue_suggests_reverse_direction": 6
+          },
+          "flagged_contradiction": 6,
+          "flagged_weak_evidence": 55,
+          "flagged_semantic_or_type": 0,
+          "co_occurrence_only": 3,
+          "direction_inconsistencies": 6,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.275,
+          "grounding_distance_iqr": [
+            0.21050000000000002,
+            0.34065
+          ],
+          "examples_pass": [
+            {
+              "source": "Circumference",
+              "target": "diameter",
+              "example_sentence": "The circumference of a circle is two pi times the radius or pi times the diameter."
+            },
+            {
+              "source": "concurrency",
+              "target": "center",
+              "example_sentence": "The centroid is the point of concurrency of the medians and is the center of gravity of a triangle."
+            },
+            {
+              "source": "concurrency",
+              "target": "perpendicular bisector",
+              "example_sentence": "The circumcenter is the point of concurrency of the perpendicular bisectors and is equidistant from each vertex."
+            }
+          ],
+          "examples_flagged": [
+            {
+              "source": "Congruent segments",
+              "target": "midpoint",
+              "flags": "cue_suggests_reverse_direction",
+              "example_sentence": "The midpoint of a segment is the point that divides it into two congruent segments."
+            },
+            {
+              "source": "endpoint",
+              "target": "perpendicular bisector",
+              "flags": "cue_suggests_reverse_direction",
+              "example_sentence": "The perpendicular bisector theorem states that any point on the perpendicular bisector of a segment is equidistant from the endpoints."
+            },
+            {
+              "source": "parallelogram",
+              "target": "diagonal",
+              "flags": "cue_suggests_reverse_direction",
+              "example_sentence": "The diagonals of a parallelogram bisect each other."
+            }
+          ]
+        },
+        "Application": {
+          "edges": 63,
+          "with_support_sentence": 38,
+          "cue_supports": 0,
+          "cue_reverse": 1,
+          "cue_none": 62,
+          "cue_not_independent": 0,
+          "flagged_any": 63,
+          "flag_counts": {
+            "no_Application_cue": 29,
+            "no_support_sentence": 25,
+            "support_without_relation_cue": 8,
+            "cue_suggests_reverse_direction": 1
+          },
+          "flagged_contradiction": 1,
+          "flagged_weak_evidence": 62,
+          "flagged_semantic_or_type": 0,
+          "co_occurrence_only": 8,
+          "direction_inconsistencies": 1,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.2819,
+          "grounding_distance_iqr": [
+            0.24665,
+            0.3366
+          ],
+          "examples_pass": [],
+          "examples_flagged": [
+            {
+              "source": "right triangle",
+              "target": "congruence",
+              "flags": "cue_suggests_reverse_direction",
+              "example_sentence": "The hypotenuse leg congruence theorem applies to right triangles and states that if the hypotenuse and a leg are congruent, then the triangles are congruent."
+            }
+          ]
+        },
+        "Similarity": {
+          "edges": 1,
+          "with_support_sentence": 0,
+          "cue_supports": 0,
+          "cue_reverse": 0,
+          "cue_none": 1,
+          "cue_not_independent": 0,
+          "flagged_any": 1,
+          "flag_counts": {
+            "no_support_sentence": 1
+          },
+          "flagged_contradiction": 0,
+          "flagged_weak_evidence": 1,
+          "flagged_semantic_or_type": 0,
+          "co_occurrence_only": 0,
+          "direction_inconsistencies": 0,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.2505,
+          "grounding_distance_iqr": [
+            0.2505,
+            0.2505
+          ],
+          "def_embedding_median": 0.271,
+          "def_lexical_median": 0.0,
+          "examples_pass": [],
+          "examples_flagged": []
+        },
+        "Extension": {
+          "edges": 16,
+          "with_support_sentence": 11,
+          "cue_supports": 0,
+          "cue_reverse": 0,
+          "cue_none": 16,
+          "cue_not_independent": 0,
+          "flagged_any": 16,
+          "flag_counts": {
+            "support_without_relation_cue": 4,
+            "no_support_sentence": 5,
+            "extension_base_introduced_later": 7,
+            "no_Extension_cue": 7
+          },
+          "flagged_contradiction": 7,
+          "flagged_weak_evidence": 16,
+          "flagged_semantic_or_type": 0,
+          "co_occurrence_only": 4,
+          "direction_inconsistencies": 7,
+          "structural_violations": 0,
+          "grounding_distance_median": 0.3068,
+          "grounding_distance_iqr": [
+            0.26915,
+            0.3346
+          ],
+          "examples_pass": [],
+          "examples_flagged": [
+            {
+              "source": "angle bisector",
+              "target": "perpendicular bisector theorem",
+              "flags": "no_support_sentence;extension_base_introduced_later",
+              "example_sentence": ""
+            },
+            {
+              "source": "concurrency",
+              "target": "incenter",
+              "flags": "no_Extension_cue;extension_base_introduced_later",
+              "example_sentence": "The incenter is the point of concurrency of the angle bisectors and is equidistant from each side."
+            },
+            {
+              "source": "Corresponding angles",
+              "target": "corresponding angles postulate",
+              "flags": "no_Extension_cue;extension_base_introduced_later",
+              "example_sentence": "The corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

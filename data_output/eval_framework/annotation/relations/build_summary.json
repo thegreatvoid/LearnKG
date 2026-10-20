@@ -1,0 +1,14 @@
+{
+  "items": 378,
+  "seed": 0,
+  "by_origin": {
+    "pilot_gold_pairs": 119,
+    "hard_negative": 60,
+    "predicted:Part-of": 40,
+    "predicted:Application": 40,
+    "predicted:Similarity": 40,
+    "predicted:Extension": 40,
+    "predicted:Prerequisite": 20,
+    "alcpl_calibration": 19
+  }
+}

@@ -5,7 +5,10 @@ Compiles and writes the final structured educational dataset into two CSV files:
      Columns: [concept_id, concept_name, aliases, concept_type, definition, chapter, section, page, chunk_id, evidence]
   2. relations.csv
      Columns: [relation_id, source_id, target_id, relation_type, weight, page, chunk_id, evidence,
-                weight_source, cooccurrence_count, semantic_similarity, chapter_proximity, educational_context]
+                weight_source, cooccurrence_count, semantic_similarity, chapter_proximity, educational_context,
+                n_proposals, sources, extractor_scores, s_jaccard_raw, s_embedding, definitions_valid,
+                chapter_missing, educational_context_legacy, weight_legacy, evidence_all]
+     Factor definitions: relation_extractor.RelationManager.finalize_weights and docs/ahp_weights.md.
 """
 
 from pathlib import Path
@@ -26,6 +29,7 @@ CONCEPTS_COLUMNS = [
     "page",
     "chunk_id",
     "evidence",
+    "definition_kind",
 ]
 
 RELATIONS_COLUMNS = [
@@ -42,6 +46,20 @@ RELATIONS_COLUMNS = [
     "semantic_similarity",
     "chapter_proximity",
     "educational_context",
+    "n_proposals",
+    "sources",
+    "extractor_scores",
+    "s_jaccard_raw",
+    "s_embedding",
+    "definitions_valid",
+    "chapter_missing",
+    "educational_context_legacy",
+    "weight_legacy",
+    "weight_scheme",
+    "weight_ahp",
+    "weight_cooc_only",
+    "weight_cooc_struct_a0.8",
+    "evidence_all",
 ]
 
 
@@ -75,6 +93,7 @@ def build_and_save_dataset(
             "page": c.page,
             "chunk_id": c.chunk_id,
             "evidence": c.evidence.replace("\n", " ").strip(),
+            "definition_kind": c.definition_kind,
         })
 
     df_concepts = pd.DataFrame(concept_rows, columns=CONCEPTS_COLUMNS)
@@ -97,6 +116,20 @@ def build_and_save_dataset(
             "semantic_similarity": round(r.semantic_similarity, 4),
             "chapter_proximity": round(r.chapter_proximity, 4),
             "educational_context": round(r.educational_context, 4),
+            "n_proposals": r.n_proposals,
+            "sources": ";".join(sorted(r.sources)),
+            "extractor_scores": ";".join(f"{k}:{v:g}" for k, v in sorted(r.extractor_scores.items())),
+            "s_jaccard_raw": r.s_jaccard_raw,
+            "s_embedding": r.s_embedding,
+            "definitions_valid": r.definitions_valid,
+            "chapter_missing": r.chapter_missing,
+            "educational_context_legacy": r.educational_context_legacy,
+            "weight_legacy": r.weight_legacy,
+            "weight_scheme": r.weight_scheme,
+            "weight_ahp": r.scheme_weights.get("ahp"),
+            "weight_cooc_only": r.scheme_weights.get("cooc_only"),
+            "weight_cooc_struct_a0.8": r.scheme_weights.get("cooc_struct_a0.8"),
+            "evidence_all": " || ".join(e.replace("\n", " ").strip() for e in r.evidence_all),
         })
 
     df_relations = pd.DataFrame(relation_rows, columns=RELATIONS_COLUMNS)

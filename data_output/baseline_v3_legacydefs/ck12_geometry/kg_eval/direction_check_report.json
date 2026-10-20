@@ -1,0 +1,23 @@
+{
+  "kg_dir": "data_output/baseline_v3_legacydefs/ck12_geometry",
+  "gold_positive_pairs_matched": 291,
+  "uses_book_order": false,
+  "kg_edges": {
+    "decided": 8,
+    "correct": 7,
+    "accuracy": 0.875,
+    "wilson95": [
+      0.5291051942301386,
+      0.9775830911367038
+    ]
+  },
+  "book_order": {
+    "decided": 291,
+    "correct": 282,
+    "accuracy": 0.9690721649484536,
+    "wilson95": [
+      0.9422756680146905,
+      0.98364523324212
+    ]
+  }
+}

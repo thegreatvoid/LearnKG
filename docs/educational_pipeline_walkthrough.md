@@ -1,5 +1,7 @@
 # Educational pipeline walkthrough (data lineage with real CSV records)
 
+> **Note (2026-10-14):** this walkthrough and the files in `data_output/ck12_geometry_steps/` describe the pipeline *before* the keyword-path fix and the corrected weight factors (`kg_eval/README.md` section 5.10, `docs/ahp_weights.md`). Stage 7-9 behaviour and the R0004 weight example are out of date; re-run `educational_pipeline.dump_steps` and `docs/make_pipeline_figures.py` to refresh them.
+
 Dataset: CK-12 Basic Geometry (`data_input/ck12_geometry/ck12_basic_geometry_concepts.txt`). Everything below was verified against the code in `educational_pipeline/` and against the CSVs in `data_output/ck12_geometry_steps/`. Figures and Mermaid source are generated from those CSVs by `docs/make_pipeline_figures.py` (no hand-typed values).
 
 | Figure | File |

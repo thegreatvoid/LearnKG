@@ -9,12 +9,15 @@ Enforces the Controlled Educational Ontology:
   5. Similarity   (A <-> B: conceptually similar and symmetric)
 
 Assigns an AHP-derived educational relevance weight in [0, 1] (see docs/ahp_weights.md) and preserves
-verbatim source sentence evidence.
+verbatim source sentence evidence. Weights are computed once, after all relations are collected, by
+RelationManager.finalize_weights(chunks), because the co-occurrence and section factors need the whole text.
 """
 
+import math
 import re
-from dataclasses import dataclass
-from typing import Dict, List, Optional, Set, Tuple
+from collections import Counter
+from dataclasses import dataclass, field
+from typing import Dict, Iterable, List, Optional, Set, Tuple
 from .normalizer import ConceptNormalizer, NormalizedConcept
 
 
@@ -66,6 +69,21 @@ ONTOLOGY_PATTERNS = {
     ],
 }
 
+# Keyword matching is on whole words/phrases ("like" must not match "unlike").
+KEYWORD_RES = {ont: re.compile(r"\b(?:" + "|".join(re.escape(k) for k in kws) + r")\b", re.I)
+               for ont, kws in ONTOLOGY_PATTERNS.items()}
+
+# For Part-of / Application / Extension the sentence must say which concept is the source. In "X <keyword> Y"
+# the concept before the keyword is the source, except for these keywords, where the roles are reversed
+# ("a polygon consists of segments" -> segment Part-of polygon; "X is extended by Y" -> Y Extension X).
+REVERSED_KEYWORDS = {
+    "Part-of": {"consists of", "comprises", "includes", "composed of"},
+    "Application": {"application of"},
+    "Extension": {"extended by", "evolves into"},
+}
+DIRECTIONAL_TYPES = ("Part-of", "Application", "Extension")
+
+
 # AHP-derived factor weights (see project report, CR = 0.022):
 #   Weight = 0.52*SemanticSimilarity + 0.24*Co-occurrence
 #          + 0.09*ChapterProximity  + 0.15*EducationalContext
@@ -74,6 +92,20 @@ AHP_FACTOR_WEIGHTS = {
     "cooccurrence": 0.24,
     "chapter_proximity": 0.09,
     "educational_context": 0.15,
+}
+
+
+# Weighting schemes (frozen 2026-10-15; see docs/ahp_weights.md and kg_eval/README.md section 5.11).
+# Every scheme is a convex combination of the same pair factors (pair_factors), so all are evaluated identically.
+#   ahp               the original expert (AHP) coefficients: the documented baseline
+#   cooc_only         W = C
+#   cooc_struct_a0.8  W = 0.8 C + 0.2 E. alpha = 0.8 is the value chosen in 4 of 5 training folds of the
+#                     2026-10-14 cross-validation on CK-12 geometry; a candidate, not an established optimum,
+#                     and NOT independent of the CK-12 evaluation that suggested it.
+WEIGHTING_SCHEMES: Dict[str, Dict[str, float]] = {
+    "ahp": dict(AHP_FACTOR_WEIGHTS),
+    "cooc_only": {"cooccurrence": 1.0},
+    "cooc_struct_a0.8": {"cooccurrence": 0.8, "educational_context": 0.2},
 }
 
 
@@ -165,11 +197,116 @@ class ExtractedRelation:
     chunk_id: str
     evidence: str
     # Provenance of the weight, so weighting ablations can be recomputed exactly.
-    weight_source: str = "ahp"  # "ahp" = computed by the formula, "provided" = supplied by an extractor
-    cooccurrence_count: int = 0  # raw count of times this ordered pair was extracted (before /3 cap)
-    semantic_similarity: float = 0.0
-    chapter_proximity: float = 0.0
-    educational_context: float = 0.0
+    weight_source: str = "ahp"  # "ahp" = AHP formula with corrected factors (see finalize_weights)
+    cooccurrence_count: int = 0  # sentences that mention both concepts (factor C = min(1, count/3))
+    semantic_similarity: float = 0.0  # factor S: Jaccard of validated definitions (see finalize_weights)
+    chapter_proximity: float = 0.0  # factor P
+    educational_context: float = 0.0  # factor E: Jaccard of the sections in which each concept is mentioned
+    # Inspection / audit fields
+    n_proposals: int = 1  # distinct (sentence, source) proposals of this exact directed typed edge
+    sources: Set[str] = field(default_factory=set)  # rule / keyword / llm / neural / graph_csv / unspecified
+    evidence_all: List[str] = field(default_factory=list)  # every distinct evidence sentence, in order
+    extractor_scores: Dict[str, float] = field(default_factory=dict)  # raw extractor scores, never mixed into weight
+    s_jaccard_raw: float = 0.0  # legacy S: Jaccard of stored definitions, unvalidated
+    s_embedding: float = float("nan")  # cosine of definition embeddings (NaN if not computed)
+    definitions_valid: str = ""  # "both" / "one" / "none": were both concepts' definitions validated?
+    chapter_missing: bool = False  # P fell back to 0.5 because a chapter number is unknown
+    educational_context_legacy: float = 0.0  # legacy E: 0.6 same chapter + 0.4 same section, else 0.3
+    weight_legacy: float = 0.0  # original formula: legacy S, C = min(1, n_proposals/3), P, legacy E
+    weight_scheme: str = "ahp"  # WEIGHTING_SCHEMES key used for `weight`
+    scheme_weights: Dict[str, float] = field(default_factory=dict)  # weight under every scheme, for comparison
+
+
+# ---------------------------------------------------------------------------------------------------------
+# Factor helpers used by finalize_weights (pair functions, also usable for pairs that have no edge).
+# ---------------------------------------------------------------------------------------------------------
+
+def _name_pattern(name: str) -> Optional[re.Pattern]:
+    words = re.findall(r"[a-z0-9]+", str(name).lower())
+    if not words:
+        return None
+    return re.compile(r"\b" + r"[\s\-]+".join(re.escape(w) for w in words) + r"(?:s|es)?\b", re.I)
+
+
+def definition_is_valid(concept: NormalizedConcept) -> bool:
+    """A definition counts as the concept's own only if the concept (name or alias) is the subject of a defining
+    clause: "[A/An/The] <concept> is/are/has/have/uses/refers to/means/is defined as ...", or "<concept>: ...". A sentence that
+    merely mentions the concept (e.g. "A linear pair ... form a straight line." for Line) is rejected."""
+    text = (concept.definition or "").strip()
+    if not text:
+        return False
+    first = text.split("\n")[-1] if re.match(r"^\d+(?:\.\d+)*\s", text) and "\n" in text else text
+    for name in [concept.concept_name, *concept.aliases]:
+        body = r"[\s\-]+".join(re.escape(w) for w in re.findall(r"[a-z0-9]+", name.lower()))
+        if not body:
+            continue
+        if re.match(rf"^\s*(?:(?:a|an|the)\s+)?{body}(?:s|es)?\s+(?:is|are|has|have|uses|refers\s+to|means|is\s+defined\s+as)\b",
+                    first, re.I) or re.match(rf"^\s*{body}\s*:", first, re.I):
+            return True
+    return False
+
+
+def jaccard(a: Set[str], b: Set[str]) -> float:
+    return len(a & b) / len(a | b) if a and b else 0.0
+
+
+class MentionIndex:
+    """Which sentences / sections mention each concept (name or alias, whole word, plural-tolerant).
+    The co-occurrence unit is the sentence, split after . ? or ! (same rule as the pipeline), inside each chunk."""
+
+    def __init__(self, concepts: Iterable[NormalizedConcept], chunks):
+        self.sentences: Dict[str, Set[int]] = {}
+        self.sections: Dict[str, Set[str]] = {}
+        pats = {c.concept_id: [p for p in map(_name_pattern, [c.concept_name, *c.aliases]) if p] for c in concepts}
+        sid = 0
+        for ch in chunks:
+            section = (getattr(ch, "section", "") or "").strip()
+            for sent in re.split(r"(?<=[.?!])\s+", ch.text):
+                for cid, ps in pats.items():
+                    if any(p.search(sent) for p in ps):
+                        self.sentences.setdefault(cid, set()).add(sid)
+                        if section:
+                            self.sections.setdefault(cid, set()).add(section)
+                sid += 1
+
+    def cooccurrence(self, a: str, b: str) -> int:
+        return len(self.sentences.get(a, set()) & self.sentences.get(b, set()))
+
+    def section_jaccard(self, a: str, b: str) -> float:
+        sa, sb = self.sections.get(a, set()), self.sections.get(b, set())
+        return jaccard(sa, sb) if sa and sb else float("nan")
+
+
+def pair_factors(c1: NormalizedConcept, c2: NormalizedConcept, index: MentionIndex,
+                 valid: Optional[Dict[str, bool]] = None) -> Dict[str, float]:
+    """All factor values for one concept pair. S uses a concept's definition only if it was validated; otherwise
+    its name (the same fallback the legacy code used for an empty definition)."""
+    valid = valid if valid is not None else {}
+    def words(c):
+        if valid.get(c.concept_id, definition_is_valid(c)):
+            return _word_set(c.definition)
+        return _word_set(c.concept_name)
+    n = index.cooccurrence(c1.concept_id, c2.concept_id)
+    e = index.section_jaccard(c1.concept_id, c2.concept_id)
+    n1, n2 = chapter_number(c1.chapter), chapter_number(c2.chapter)
+    return {
+        "semantic_similarity": jaccard(words(c1), words(c2)),
+        "s_jaccard_raw": semantic_similarity(c1, c2),
+        "cooccurrence_count": n,
+        "cooccurrence": min(1.0, n / 3.0),
+        "chapter_proximity": chapter_proximity(c1, c2),
+        "chapter_missing": n1 is None or n2 is None,
+        "educational_context": 0.0 if math.isnan(e) else e,
+        "educational_context_missing": math.isnan(e),
+        "educational_context_legacy": educational_context_score(c1, c2),
+    }
+
+
+def combine(factors: Dict[str, float], coefficients: Optional[Dict[str, float]] = None) -> float:
+    """sum_k w_k * factor_k, clipped to [0, 1]. Factors absent from `coefficients` get weight 0."""
+    w = coefficients or AHP_FACTOR_WEIGHTS
+    score = sum(w[k] * factors[k] for k in w)
+    return round(max(0.0, min(1.0, score)), 4)
 
 
 def classify_relation(raw_predicate: str) -> str:
@@ -202,9 +339,9 @@ class RelationManager:
         self._next_id = 1
         # Track unique (source_id, target_id, relation_type) triplets to avoid duplicates
         self._seen: Set[Tuple[str, str, str]] = set()
-        # Counts how many times each concept pair co-occurs in a sentence,
-        # used as the Co-occurrence factor in the AHP edge-weight formula
-        self._pair_cooccurrence: Dict[Tuple[str, str], int] = {}
+        self._by_key: Dict[Tuple[str, str, str], ExtractedRelation] = {}
+        self._proposals: Set[Tuple[Tuple[str, str, str], str, str]] = set()
+        self.stats: Counter = Counter()  # extraction / weighting diagnostics, printed by the pipeline
 
     def _generate_id(self) -> str:
         rid = f"R{self._next_id:04d}"
@@ -220,62 +357,113 @@ class RelationManager:
         page: int = 1,
         chunk_id: str = "",
         weight: Optional[float] = None,
+        source: str = "unspecified",
     ) -> Optional[ExtractedRelation]:
-        """Validates, classifies, and records an educational relation."""
+        """Validates, classifies and records one proposal of a directed, typed relation.
+
+        `weight` is an extractor's own score. It is stored raw in `extractor_scores[source]` and NOT used as the edge
+        weight: extractor scales are not comparable (neural: rescaled cross-encoder logit in [0.2, 1]; LLM: integer
+        1-10). The edge weight is the AHP formula, computed for every edge by finalize_weights().
+        A repeated proposal with the same evidence sentence from the same source is ignored (it is the same rule
+        firing twice on one sentence); proposals from other sentences or other sources add evidence and count.
+        """
         src_id = self.normalizer.find_match(source_name)
         tgt_id = self.normalizer.find_match(target_name)
 
         if not src_id or not tgt_id or src_id == tgt_id:
             return None
 
-        # Classify into controlled ontology
         norm_type = classify_relation(relation_type)
+        key = (src_id, tgt_id, norm_type)  # direction matters: (a, b) and (b, a) are different edges
+        ev = evidence.strip()
+        proposal = (key, ev, source)
+        if proposal in self._proposals:
+            self.stats["duplicate_proposals_ignored"] += 1
+            return self._by_key.get(key)
+        self._proposals.add(proposal)
 
-        pair_key = (src_id, tgt_id)
-        self._pair_cooccurrence[pair_key] = self._pair_cooccurrence.get(pair_key, 0) + 1
-        cooc_score = min(1.0, self._pair_cooccurrence[pair_key] / 3.0)
-        c1 = self.normalizer.concepts_by_id[src_id]
-        c2 = self.normalizer.concepts_by_id[tgt_id]
-
-        key = (src_id, tgt_id, norm_type)
-        count = self._pair_cooccurrence[pair_key]
-        comps, ahp_w = ahp_components(c1, c2, cooc_score)
-        provided = weight is not None and 0.0 <= weight <= 1.0
-        new_w = weight if provided else ahp_w
-
-        if key in self._seen:
-            # If already exists, bump weight if higher; always keep the latest co-occurrence count
-            for r in self.relations:
-                if (r.source_id, r.target_id, r.relation_type) == key:
-                    r.cooccurrence_count = count
-                    if new_w > r.weight:
-                        r.weight = new_w
-                        r.weight_source = "provided" if provided else "ahp"
-                    r.semantic_similarity = comps["semantic_similarity"]
-                    r.chapter_proximity = comps["chapter_proximity"]
-                    r.educational_context = comps["educational_context"]
-                    return r
-            return None
-
-        self._seen.add(key)
-
-        rel = ExtractedRelation(
-            relation_id=self._generate_id(),
-            source_id=src_id,
-            target_id=tgt_id,
-            relation_type=norm_type,
-            weight=new_w,
-            page=page,
-            chunk_id=chunk_id,
-            evidence=evidence.strip(),
-            weight_source="provided" if provided else "ahp",
-            cooccurrence_count=count,
-            semantic_similarity=comps["semantic_similarity"],
-            chapter_proximity=comps["chapter_proximity"],
-            educational_context=comps["educational_context"],
-        )
-        self.relations.append(rel)
+        rel = self._by_key.get(key)
+        if rel is None:
+            rel = ExtractedRelation(
+                relation_id=self._generate_id(), source_id=src_id, target_id=tgt_id, relation_type=norm_type,
+                weight=0.0, page=page, chunk_id=chunk_id, evidence=ev, n_proposals=0)
+            self.relations.append(rel)
+            self._by_key[key] = rel
+            self._seen.add(key)
+        rel.n_proposals += 1
+        rel.sources.add(source)
+        if ev and ev not in rel.evidence_all:
+            rel.evidence_all.append(ev)
+        if weight is not None:
+            try:
+                score = float(weight)
+            except (TypeError, ValueError):
+                self.stats[f"invalid_extractor_score_{source}"] += 1
+            else:
+                prev = rel.extractor_scores.get(source)
+                rel.extractor_scores[source] = score if prev is None else max(prev, score)
         return rel
+
+    def finalize_weights(self, chunks, compute_embeddings: bool = False, scheme: str = "ahp") -> None:
+        """Computes every factor and the edge weight once, from the full text.
+
+        S  Jaccard of the two concepts' definition word sets, using a definition only if it is the concept's own
+           (definition_is_valid); otherwise the concept name. `s_jaccard_raw` keeps the legacy, unvalidated value.
+           Lexical overlap, not semantic understanding.
+        C  min(1, n/3), n = sentences (pipeline sentence split, all chunks) that mention both concepts.
+           Undirected and independent of how many times a rule proposed the edge.
+        P  1 / (1 + |chapter_a - chapter_b|) from the parsed chapter of each concept's first mention;
+           0.5 with chapter_missing=True if either chapter number is unknown.
+        E  Jaccard of the sets of parsed sections in which each concept is mentioned (0 if a concept has no
+           section label; flagged in stats). `educational_context_legacy` keeps the old constants.
+        weight = sum of WEIGHTING_SCHEMES[scheme] coefficients x factors; default "ahp" =
+        0.52 S + 0.24 C + 0.09 P + 0.15 E (expert judgement, docs/ahp_weights.md). All schemes are stored too.
+        weight_legacy = the original formula (legacy S, C = min(1, n_proposals/3), P, legacy E), for comparison.
+        """
+        if scheme not in WEIGHTING_SCHEMES:
+            raise ValueError(f"unknown weighting scheme {scheme!r}; known: {sorted(WEIGHTING_SCHEMES)}")
+        concepts = self.normalizer.get_all_concepts()
+        index = MentionIndex(concepts, chunks)
+        valid = {c.concept_id: definition_is_valid(c) for c in concepts}
+        self.stats["concepts_definition_valid"] = sum(valid.values())
+        self.stats["concepts_definition_invalid_or_empty"] = len(valid) - sum(valid.values())
+        emb = None
+        if compute_embeddings:
+            emb = self._definition_embeddings(concepts, valid)
+        by_id = self.normalizer.concepts_by_id
+        for r in self.relations:
+            c1, c2 = by_id[r.source_id], by_id[r.target_id]
+            f = pair_factors(c1, c2, index, valid)
+            r.semantic_similarity = round(f["semantic_similarity"], 4)
+            r.s_jaccard_raw = round(f["s_jaccard_raw"], 4)
+            r.cooccurrence_count = f["cooccurrence_count"]
+            r.chapter_proximity = round(f["chapter_proximity"], 4)
+            r.chapter_missing = f["chapter_missing"]
+            r.educational_context = round(f["educational_context"], 4)
+            r.educational_context_legacy = f["educational_context_legacy"]
+            r.definitions_valid = {2: "both", 1: "one", 0: "none"}[valid[c1.concept_id] + valid[c2.concept_id]]
+            if f["educational_context_missing"]:
+                self.stats["edges_section_missing"] += 1
+            if f["chapter_missing"]:
+                self.stats["edges_chapter_missing"] += 1
+            if emb is not None:
+                r.s_embedding = round(float(emb[r.source_id] @ emb[r.target_id]), 4)
+            r.scheme_weights = {name: combine(f, w) for name, w in WEIGHTING_SCHEMES.items()}
+            r.weight = r.scheme_weights[scheme]
+            r.weight_scheme = scheme
+            r.weight_source = "ahp"  # = computed by the factor formula (kept for kg_eval.weight_ablation)
+            r.weight_legacy = combine({
+                "semantic_similarity": f["s_jaccard_raw"], "cooccurrence": min(1.0, r.n_proposals / 3.0),
+                "chapter_proximity": f["chapter_proximity"], "educational_context": f["educational_context_legacy"]})
+
+    @staticmethod
+    def _definition_embeddings(concepts, valid):
+        """Unit-normalised MiniLM embeddings of each concept's validated definition (else its name)."""
+        from sentence_transformers import SentenceTransformer  # explicit dependency; raises if missing
+        model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+        texts = [c.definition if valid[c.concept_id] else c.concept_name for c in concepts]
+        vecs = model.encode(texts, normalize_embeddings=True)
+        return {c.concept_id: v for c, v in zip(concepts, vecs)}
 
     def extract_relations_from_sentences(
         self,
@@ -356,64 +544,57 @@ class RelationManager:
                         evidence=sentence_clean,
                         page=page,
                         chunk_id=chunk_id,
+                        source="rule",
                     )
 
-            # Find all concepts mentioned in this sentence
-            found: List[NormalizedConcept] = []
+            # Find all concepts mentioned in this sentence, with the position of their first mention
+            found: List[Tuple[NormalizedConcept, int, int]] = []
             for c in all_concepts:
-                # Check canonical name or aliases
-                names_to_check = [c.concept_name] + list(c.aliases)
-                for n in names_to_check:
-                    if re.search(rf"\b{re.escape(n)}\b", sentence_clean, re.IGNORECASE):
-                        found.append(c)
+                for n in [c.concept_name] + list(c.aliases):
+                    m = re.search(rf"\b{re.escape(n)}\b", sentence_clean, re.IGNORECASE)
+                    if m:
+                        found.append((c, m.start(), m.end()))
                         break
+            if len(found) < 2:
+                continue
 
-            # If at least 2 distinct concepts appear in the same sentence
-            if len(found) >= 2:
-                for i in range(len(found)):
-                    for j in range(i + 1, len(found)):
-                        c1 = found[i]
-                        c2 = found[j]
+            # The first relation type (in ONTOLOGY_PATTERNS order) with a whole-word keyword in the sentence.
+            hit = None
+            for ont, kre in KEYWORD_RES.items():
+                m = kre.search(sentence_clean)
+                if m:
+                    hit = (ont, m)
+                    break
+            if hit is None:
+                continue
+            ont, kw_match = hit
+            kw = kw_match.group(0).lower()
 
-                        # Check linguistic patterns between c1 and c2
-                        s_lower = sentence_clean.lower()
-                        for ont, keywords in ONTOLOGY_PATTERNS.items():
-                            matched_kw = False
-                            for kw in keywords:
-                                if kw in s_lower:
-                                    matched_kw = True
-                                    break
-                            if matched_kw:
-                                if ont == "Prerequisite":
-                                    # Enforce asymmetric direction: earlier concept -> later concept
-                                    if (c1.page, c1.concept_id) <= (c2.page, c2.concept_id):
-                                        src_c, tgt_c = c1, c2
-                                    else:
-                                        src_c, tgt_c = c2, c1
-                                    self.add_relation(
-                                        source_name=src_c.concept_name,
-                                        target_name=tgt_c.concept_name,
-                                        relation_type="Prerequisite",
-                                        evidence=sentence_clean,
-                                        page=page,
-                                        chunk_id=chunk_id,
-                                    )
-                                elif ont == "Similarity":
-                                    # Symmetric relation
-                                    self.add_relation(
-                                        source_name=c1.concept_name,
-                                        target_name=c2.concept_name,
-                                        relation_type="Similarity",
-                                        evidence=sentence_clean,
-                                        page=page,
-                                        chunk_id=chunk_id,
-                                    )
-                                    self.add_relation(
-                                        source_name=c1.concept_name,
-                                        target_name=c2.concept_name,
-                                        relation_type=ont,
-                                        evidence=sentence_clean,
-                                        page=page,
-                                        chunk_id=chunk_id,
-                                    )
-                                break
+            for i in range(len(found)):
+                for j in range(i + 1, len(found)):
+                    (c1, s1, e1), (c2, s2, e2) = found[i], found[j]
+                    if ont == "Prerequisite":
+                        # No direction in the sentence: earlier-introduced concept -> later one (unchanged rule)
+                        src_c, tgt_c = (c1, c2) if (c1.page, c1.concept_id) <= (c2.page, c2.concept_id) else (c2, c1)
+                    elif ont == "Similarity":
+                        src_c, tgt_c = c1, c2  # symmetric: one proposal per sentence and pair
+                    else:
+                        # Directional types: one concept must precede the keyword and the other follow it.
+                        k0, k1 = kw_match.start(), kw_match.end()
+                        before = [c for c, cs, ce in ((c1, s1, e1), (c2, s2, e2)) if ce <= k0]
+                        after = [c for c, cs, ce in ((c1, s1, e1), (c2, s2, e2)) if cs >= k1]
+                        if len(before) != 1 or len(after) != 1:
+                            self.stats["keyword_no_direction_skipped"] += 1
+                            continue
+                        src_c, tgt_c = before[0], after[0]
+                        if kw in REVERSED_KEYWORDS.get(ont, set()):
+                            src_c, tgt_c = tgt_c, src_c
+                    self.add_relation(
+                        source_name=src_c.concept_name,
+                        target_name=tgt_c.concept_name,
+                        relation_type=ont,
+                        evidence=sentence_clean,
+                        page=page,
+                        chunk_id=chunk_id,
+                        source="keyword",
+                    )

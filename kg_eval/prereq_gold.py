@@ -43,6 +43,8 @@ from evaluate_prerequisite_extraction import (
     normalize_gold_concept_name,
 )
 from .data import (
+    DEFAULT_ALCPL_PAIRS,
+    DEFAULT_ALCPL_PREQS,
     DEFAULT_KG_DIR,
     DEFAULT_SOURCE,
     auc,
@@ -176,12 +178,14 @@ def main():
     ap.add_argument("--out", type=Path, default=None, help="output folder (default: <kg-dir>/kg_eval)")
     ap.add_argument("--pair-threshold", type=float, default=0.5, help="threshold on kg_pairscore for P/R/F1")
     ap.add_argument("--reps", type=int, default=1000, help="bootstrap resamples")
+    ap.add_argument("--pairs", type=Path, default=DEFAULT_ALCPL_PAIRS, help="AL-CPL <subject>.pairs")
+    ap.add_argument("--preqs", type=Path, default=DEFAULT_ALCPL_PREQS, help="AL-CPL <subject>.preqs")
     args = ap.parse_args()
     out_dir = args.out or args.kg_dir / "kg_eval"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     concepts, relations = load_kg(args.kg_dir)
-    gold = load_alcpl()
+    gold = load_alcpl(args.pairs, args.preqs)
     text = read_source(args.source)
     ps_path = args.kg_dir / "pair_scores.csv"
     pair_scores = pd.read_csv(ps_path, dtype={"source_id": str, "target_id": str}) if ps_path.exists() else None
@@ -197,7 +201,7 @@ def main():
     n_matched = sum(1 for m in match.values() if m["cid"])
     report = {
         "kg_dir": str(args.kg_dir),
-        "gold": "AL-CPL geometry (geometry.pairs / geometry.preqs)",
+        "gold": f"AL-CPL ({args.pairs.name} / {args.preqs.name})",
         "gold_pairs": len(df), "gold_positive": int(df["label"].sum()),
         "gold_concepts": n_gold, "gold_concepts_matched_to_kg": n_matched,
         "gold_concepts_low_confidence_match": sorted(g for g, m in match.items() if m["confidence"] == "low"),

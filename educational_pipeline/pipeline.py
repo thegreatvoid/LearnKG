@@ -24,7 +24,7 @@ from .structure_detector import detect_educational_structures
 from .chunker import create_structure_aware_chunks
 from .concept_extractor import extract_concepts_for_chunk
 from .normalizer import ConceptNormalizer
-from .definition_extractor import extract_grounded_definition
+from .definition_extractor import extract_grounded_definition, find_definition
 from .relation_extractor import RelationManager
 from .dataset_builder import build_and_save_dataset
 from .graph_builder import build_educational_graph
@@ -39,6 +39,9 @@ def run_educational_pipeline(
     use_llm: bool = True,
     use_neural_model: bool = True,
     neural_threshold: float = -0.5,
+    embedding_similarity: bool = False,
+    definition_policy: str = "first_definitional",
+    weighting_scheme: str = "ahp",
     show_edge_labels: bool = False,
     show_edge_tooltips: bool = True,
 ) -> Tuple[Path, Path, nx.DiGraph]:
@@ -102,7 +105,7 @@ def run_educational_pipeline(
     # Steps 4, 5, 6: Concept Extraction, Normalization & Definitions (Pass 1)
     # -------------------------------------------------------------------------
     print("[*] Steps 4-6: Extracting and Normalizing Concepts across all chunks...")
-    normalizer = ConceptNormalizer()
+    normalizer = ConceptNormalizer(definition_policy=definition_policy)
     relation_manager = RelationManager(normalizer)
 
     llm_extract_func = None
@@ -135,11 +138,18 @@ def run_educational_pipeline(
             c_name = c["concept_name"]
             c_def = c.get("definition", "")
             c_ev = c.get("evidence", "")
+            c_kind = "llm" if c_def else ""
 
             if not c_def:
-                grounded = extract_grounded_definition(c_name, chunk.text)
-                if grounded:
-                    c_def, c_ev = grounded
+                if definition_policy == "legacy_longest":
+                    grounded = extract_grounded_definition(c_name, chunk.text)
+                    if grounded:
+                        c_def, c_ev = grounded
+                        c_kind = "legacy"
+                else:
+                    found = find_definition(c_name, chunk.text)
+                    if found:
+                        c_def, c_ev, c_kind = found
 
             normalizer.register_concept(
                 name=c_name,
@@ -151,6 +161,7 @@ def run_educational_pipeline(
                 page=chunk.page,
                 chunk_id=chunk.chunk_id,
                 evidence=c_ev,
+                definition_kind=c_kind,
             )
 
     # -------------------------------------------------------------------------
@@ -182,6 +193,7 @@ def run_educational_pipeline(
                     relation_type=raw_rel or "Application",
                     evidence=raw_rel,
                     chunk_id=chunk_ref,
+                    source="graph_csv",
                 )
 
     # B. Add LLM-extracted relations if any
@@ -193,7 +205,8 @@ def run_educational_pipeline(
                 relation_type=r.get("relation_type", "Application"),
                 evidence=r.get("evidence", ""),
                 chunk_id=chunk_id,
-                weight=int(r["weight"]) if r.get("weight") else None,
+                weight=r.get("weight"),  # LLM integer 1-10, stored raw in extractor_scores["llm"]
+                source="llm",
             )
 
     # C. Extract sentence-level co-occurrences using the full concept registry
@@ -219,10 +232,15 @@ def run_educational_pipeline(
                     evidence=nr["evidence"],
                     page=nr.get("page", 1),
                     chunk_id=nr.get("chunk_id", ""),
-                    weight=nr.get("weight", None),
+                    weight=nr.get("weight", None),  # rescaled cross-encoder logit, stored raw
+                    source="neural",
                 )
         except Exception as e:
             print(f"[-] Neural extraction skipped due to error: {e}")
+
+    # Step 9: edge weights from the whole text (co-occurrence and sections need every chunk)
+    relation_manager.finalize_weights(chunks, compute_embeddings=embedding_similarity, scheme=weighting_scheme)
+    print(f"[+] Relation stats: {dict(relation_manager.stats)}")
 
     # -------------------------------------------------------------------------
     # Step 10: Dataset Construction ({concepts.csv, relations.csv})

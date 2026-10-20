@@ -25,7 +25,7 @@ import pandas as pd
 from .chunker import create_structure_aware_chunks
 from .concept_extractor import extract_candidate_concepts_from_text, extract_concepts_for_chunk
 from .dataset_builder import build_and_save_dataset
-from .definition_extractor import extract_grounded_definition
+from .definition_extractor import find_definition
 from .normalizer import ConceptNormalizer
 from .parser import parse_document
 from .relation_extractor import RelationManager, classify_relation
@@ -39,13 +39,15 @@ class LoggingRelationManager(RelationManager):
         super().__init__(normalizer)
         self.raw_log = []
 
-    def add_relation(self, source_name, target_name, relation_type, evidence, page=1, chunk_id="", weight=None):
+    def add_relation(self, source_name, target_name, relation_type, evidence, page=1, chunk_id="", weight=None,
+                     source="unspecified"):
         before = len(self.relations)
-        rel = super().add_relation(source_name, target_name, relation_type, evidence, page, chunk_id, weight)
+        rel = super().add_relation(source_name, target_name, relation_type, evidence, page, chunk_id, weight, source)
         self.raw_log.append({
             "source_name": source_name, "target_name": target_name, "raw_predicate": relation_type,
             "classified_type": classify_relation(relation_type), "evidence": evidence, "page": page,
             "chunk_id": chunk_id,
+            "source": source,
             "status": "rejected" if rel is None else ("new" if len(self.relations) > before else "duplicate_merged"),
             "relation_id": rel.relation_id if rel else ""})
         return rel
@@ -76,22 +78,24 @@ def main():
                  ).to_csv(out / "03_chunks.csv", index=False)
 
     cand_rows, def_rows = [], []
-    normalizer = ConceptNormalizer()
+    normalizer = ConceptNormalizer(definition_policy="first_definitional")  # same as pipeline default
     manager = LoggingRelationManager(normalizer)
     for ch in chunks:
         for name in sorted(extract_candidate_concepts_from_text(ch.text)):
             cand_rows.append({"chunk_id": ch.chunk_id, "page": ch.page, "chapter": ch.chapter, "candidate": name})
         for c in extract_concepts_for_chunk(ch):
             d, ev = c.get("definition", ""), c.get("evidence", "")
+            kind = "llm" if d else ""
             if not d:
-                g = extract_grounded_definition(c["concept_name"], ch.text)
+                g = find_definition(c["concept_name"], ch.text)
                 if g:
-                    d, ev = g
-            def_rows.append({"chunk_id": ch.chunk_id, "concept": c["concept_name"], "definition": d, "evidence": ev})
+                    d, ev, kind = g
+            def_rows.append({"chunk_id": ch.chunk_id, "concept": c["concept_name"], "definition": d, "evidence": ev,
+                             "definition_kind": kind})
             normalizer.register_concept(name=c["concept_name"], aliases=c.get("aliases", []),
                                         concept_type=c.get("concept_type", "Component"), definition=d,
                                         chapter=ch.chapter, section=ch.section, page=ch.page, chunk_id=ch.chunk_id,
-                                        evidence=ev)
+                                        evidence=ev, definition_kind=kind)
     pd.DataFrame(cand_rows).to_csv(out / "04_concept_candidates.csv", index=False)
     pd.DataFrame([{"concept_id": c.concept_id, "concept_name": c.concept_name, "aliases": ", ".join(sorted(c.aliases)),
                    "concept_type": c.concept_type, "chapter": c.chapter, "page": c.page}
@@ -100,6 +104,7 @@ def main():
 
     for ch in chunks:
         manager.extract_relations_from_sentences(re.split(r"(?<=[.?!])\s+", ch.text), ch.page, ch.chunk_id)
+    manager.finalize_weights(chunks)  # step 9: weights need the whole text
     log = pd.DataFrame(manager.raw_log)
     log[["source_name", "target_name", "raw_predicate", "evidence", "page", "chunk_id"]].to_csv(
         out / "07_relation_candidates.csv", index=False)
@@ -108,7 +113,8 @@ def main():
                    "relation_type": r.relation_type, "weight": r.weight, "weight_source": r.weight_source,
                    "cooccurrence_count": r.cooccurrence_count, "semantic_similarity": round(r.semantic_similarity, 4),
                    "chapter_proximity": round(r.chapter_proximity, 4),
-                   "educational_context": round(r.educational_context, 4)}
+                   "educational_context": round(r.educational_context, 4), "n_proposals": r.n_proposals,
+                   "weight_legacy": r.weight_legacy}
                   for r in manager.relations]).to_csv(out / "09_relation_weights.csv", index=False)
 
     final = out / "_final"

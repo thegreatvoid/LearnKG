@@ -22,10 +22,19 @@ def verbalize_triple(subject: str, predicate: str, obj: str) -> str:
     return f"{subject} {predicate} {obj}"
 
 
-def bigs(doc_units: Sequence[str], triple_texts: Sequence[str], embedder: str = DEFAULT_EMBEDDER) -> Dict:
-    from sentence_transformers import SentenceTransformer
+def load_embedder(embedder: str = DEFAULT_EMBEDDER):
+    """sentence-transformers is a required dependency of BIGS (listed in requirements.txt); fail loudly if missing."""
+    try:
+        from sentence_transformers import SentenceTransformer
+    except ImportError as exc:
+        raise ImportError("BIGS needs sentence-transformers: pip install sentence-transformers "
+                          "(then the embedder is downloaded once from Hugging Face)") from exc
+    return SentenceTransformer(embedder)
 
-    model = SentenceTransformer(embedder)
+
+def bigs(doc_units: Sequence[str], triple_texts: Sequence[str], embedder: str = DEFAULT_EMBEDDER, model=None) -> Dict:
+    """Equations (1)-(3) of Lermanda et al. (checked against the paper's section 2.1)."""
+    model = model or load_embedder(embedder)
     D = model.encode(list(doc_units), normalize_embeddings=True)
     V = model.encode(list(triple_texts), normalize_embeddings=True)
     dist = 1.0 - D @ V.T  # n_docs x m_triples cosine distance

@@ -159,7 +159,7 @@ def extract_candidate_concepts_from_text(text: str) -> List[str]:
         if re.search(rf"\b{re.escape(dt)}\b", text, re.IGNORECASE):
             candidates.add(dt)
 
-    return list(candidates)
+    return sorted(candidates)  # deterministic order (a set's order depends on PYTHONHASHSEED)
 
 
 def extract_concepts_for_chunk(chunk: EducationalChunk, llm_concepts: List[dict] = None) -> List[dict]:

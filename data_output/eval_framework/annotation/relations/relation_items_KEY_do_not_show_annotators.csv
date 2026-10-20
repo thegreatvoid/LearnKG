@@ -1,0 +1,379 @@
+item_id,origin,origin_direction_in_item
+R0001,predicted:kgx_v2_hybrid:Prerequisite,B->A
+R0002,predicted:kgx_v2_hybrid:Prerequisite,B->A
+R0003,predicted:kgx_v2_hybrid:Prerequisite,A->B
+R0004,predicted:kgx_v2_hybrid:Prerequisite,B->A
+R0005,predicted:kgx_v2_hybrid:Prerequisite,A->B
+R0006,predicted:kgx_v2_hybrid:Prerequisite,B->A
+R0007,predicted:kgx_v2_hybrid:Prerequisite,A->B
+R0008,predicted:kgx_v2_hybrid:Prerequisite,B->A
+R0009,predicted:kgx_v2_hybrid:Prerequisite,A->B
+R0010,predicted:kgx_v2:Prerequisite,A->B
+R0011,predicted:kgx_v2_hybrid:Prerequisite,B->A
+R0012,predicted:kgx_v2_hybrid:Prerequisite,A->B
+R0013,predicted:kgx_v2_hybrid:Prerequisite,B->A
+R0014,predicted:kgx_v2_hybrid:Prerequisite,B->A
+R0015,predicted:kgx_v2:Prerequisite,B->A
+R0016,predicted:kgx_v2_hybrid:Prerequisite,B->A
+R0017,predicted:kgx_v2_hybrid:Prerequisite,A->B
+R0018,predicted:kgx_v2_hybrid:Prerequisite,A->B
+R0019,predicted:kgx_v2_hybrid:Prerequisite,B->A
+R0020,predicted:kgx_v2:Prerequisite,B->A
+R0021,predicted:kgx_v2:Part-of,A->B
+R0022,predicted:kgx_v2:Part-of,A->B
+R0023,predicted:kgx_v2:Part-of,A->B
+R0024,predicted:kgx_v2_hybrid:Part-of,A->B
+R0025,predicted:kgx_v2_hybrid:Part-of,B->A
+R0026,predicted:kgx_v2:Part-of,A->B
+R0027,predicted:kgx_v2:Part-of,A->B
+R0028,predicted:kgx_v2:Part-of,B->A
+R0029,predicted:kgx_v2:Part-of,B->A
+R0030,predicted:kgx_v2:Part-of,A->B
+R0031,predicted:kgx_v2:Part-of,B->A
+R0032,predicted:kgx_v2_hybrid:Part-of,A->B
+R0033,predicted:kgx_v2:Part-of,B->A
+R0034,predicted:kgx_v2:Part-of,A->B
+R0035,predicted:kgx_v2:Part-of,B->A
+R0036,predicted:kgx_v2:Part-of,A->B
+R0037,predicted:kgx_v2:Part-of,A->B
+R0038,predicted:kgx_v2:Part-of,A->B
+R0039,predicted:kgx_v2:Part-of,B->A
+R0040,predicted:kgx_v2:Part-of,B->A
+R0041,predicted:kgx_v2:Part-of,A->B
+R0042,predicted:kgx_v2:Part-of,A->B
+R0043,predicted:kgx_v2_hybrid:Part-of,A->B
+R0044,predicted:kgx_v2:Part-of,A->B
+R0045,predicted:kgx_v2:Part-of,A->B
+R0046,predicted:kgx_v2:Part-of,A->B
+R0047,predicted:kgx_v2:Part-of,B->A
+R0048,predicted:kgx_v2_hybrid:Part-of,A->B
+R0049,predicted:kgx_v2:Part-of,B->A
+R0050,predicted:kgx_v2:Part-of,B->A
+R0051,predicted:rule_v3:Part-of,B->A
+R0052,predicted:kgx_v2:Part-of,B->A
+R0053,predicted:kgx_v2_hybrid:Part-of,A->B
+R0054,predicted:kgx_v2_hybrid:Part-of,B->A
+R0055,predicted:kgx_v2:Part-of,A->B
+R0056,predicted:kgx_v2:Part-of,A->B
+R0057,predicted:kgx_v2_hybrid:Part-of,B->A
+R0058,predicted:kgx_v2:Part-of,B->A
+R0059,predicted:kgx_v2:Part-of,B->A
+R0060,predicted:kgx_v2:Part-of,B->A
+R0061,predicted:kgx_v2:Application,B->A
+R0062,predicted:kgx_v2:Application,B->A
+R0063,predicted:kgx_v2:Application,B->A
+R0064,predicted:kgx_v2:Application,B->A
+R0065,predicted:kgx_v2:Application,A->B
+R0066,predicted:kgx_v2:Application,B->A
+R0067,predicted:kgx_v2:Application,A->B
+R0068,predicted:kgx_v2_hybrid:Application,B->A
+R0069,predicted:kgx_v2:Application,B->A
+R0070,predicted:kgx_v2_hybrid:Application,B->A
+R0071,predicted:kgx_v2:Application,A->B
+R0072,predicted:kgx_v2:Application,A->B
+R0073,predicted:kgx_v2:Application,B->A
+R0074,predicted:kgx_v2:Application,A->B
+R0075,predicted:kgx_v2:Application,B->A
+R0076,predicted:kgx_v2:Application,B->A
+R0077,predicted:kgx_v2:Application,A->B
+R0078,predicted:kgx_v2:Application,A->B
+R0079,predicted:kgx_v2_hybrid:Application,B->A
+R0080,predicted:kgx_v2:Application,A->B
+R0081,predicted:kgx_v2:Application,B->A
+R0082,predicted:kgx_v2_hybrid:Application,A->B
+R0083,predicted:kgx_v2:Application,B->A
+R0084,predicted:kgx_v2:Application,A->B
+R0085,predicted:kgx_v2:Application,B->A
+R0086,predicted:kgx_v2:Application,B->A
+R0087,predicted:kgx_v2:Application,A->B
+R0088,predicted:kgx_v2:Application,B->A
+R0089,predicted:kgx_v2:Application,A->B
+R0090,predicted:kgx_v2:Application,A->B
+R0091,predicted:kgx_v2:Application,A->B
+R0092,predicted:kgx_v2_hybrid:Application,B->A
+R0093,predicted:kgx_v2:Application,B->A
+R0094,predicted:kgx_v2:Application,B->A
+R0095,predicted:kgx_v2:Application,A->B
+R0096,predicted:kgx_v2_hybrid:Application,A->B
+R0097,predicted:kgx_v2:Application,A->B
+R0098,predicted:kgx_v2:Application,A->B
+R0099,predicted:kgx_v2:Application,A->B
+R0100,predicted:kgx_v2:Application,A->B
+R0101,predicted:rule_v3:Similarity,B->A
+R0102,predicted:rule_v3:Similarity,A->B
+R0103,predicted:rule_v3:Similarity,B->A
+R0104,predicted:rule_v3:Similarity,B->A
+R0105,predicted:rule_v3:Similarity,B->A
+R0106,predicted:rule_v3:Similarity,B->A
+R0107,predicted:rule_v3:Similarity,A->B
+R0108,predicted:rule_v3:Similarity,B->A
+R0109,predicted:rule_v3:Similarity,A->B
+R0110,predicted:kgx_v2_hybrid:Similarity,B->A
+R0111,predicted:rule_v3:Similarity,A->B
+R0112,predicted:rule_v3:Similarity,A->B
+R0113,predicted:rule_v3:Similarity,B->A
+R0114,predicted:rule_v3:Similarity,A->B
+R0115,predicted:rule_v3:Similarity,A->B
+R0116,predicted:rule_v3:Similarity,B->A
+R0117,predicted:rule_v3:Similarity,B->A
+R0118,predicted:rule_v3:Similarity,B->A
+R0119,predicted:rule_v3:Similarity,B->A
+R0120,predicted:rule_v3:Similarity,A->B
+R0121,predicted:rule_v3:Similarity,A->B
+R0122,predicted:rule_v3:Similarity,A->B
+R0123,predicted:rule_v3:Similarity,B->A
+R0124,predicted:rule_v3:Similarity,B->A
+R0125,predicted:rule_v3:Similarity,B->A
+R0126,predicted:rule_v3:Similarity,B->A
+R0127,predicted:rule_v3:Similarity,B->A
+R0128,predicted:rule_v3:Similarity,B->A
+R0129,predicted:rule_v3:Similarity,A->B
+R0130,predicted:rule_v3:Similarity,B->A
+R0131,predicted:rule_v3:Similarity,B->A
+R0132,predicted:rule_v3:Similarity,B->A
+R0133,predicted:rule_v3:Similarity,B->A
+R0134,predicted:rule_v3:Similarity,A->B
+R0135,predicted:rule_v3:Similarity,B->A
+R0136,predicted:rule_v3:Similarity,B->A
+R0137,predicted:kgx_v2:Similarity,B->A
+R0138,predicted:rule_v3:Similarity,A->B
+R0139,predicted:rule_v3:Similarity,B->A
+R0140,predicted:rule_v3:Similarity,B->A
+R0141,predicted:kgx_v2:Extension,A->B
+R0142,predicted:kgx_v2:Extension,B->A
+R0143,predicted:kgx_v2:Extension,B->A
+R0144,predicted:kgx_v2:Extension,A->B
+R0145,predicted:kgx_v2:Extension,B->A
+R0146,predicted:kgx_v2:Extension,A->B
+R0147,predicted:kgx_v2:Extension,B->A
+R0148,predicted:kgx_v2:Extension,A->B
+R0149,predicted:kgx_v2:Extension,A->B
+R0150,predicted:kgx_v2:Extension,B->A
+R0151,predicted:kgx_v2:Extension,A->B
+R0152,predicted:kgx_v2:Extension,A->B
+R0153,predicted:kgx_v2_hybrid:Extension,B->A
+R0154,predicted:kgx_v2_hybrid:Extension,B->A
+R0155,predicted:kgx_v2:Extension,A->B
+R0156,predicted:rule_v3:Extension,A->B
+R0157,predicted:kgx_v2:Extension,B->A
+R0158,predicted:kgx_v2_hybrid:Extension,B->A
+R0159,predicted:kgx_v2:Extension,A->B
+R0160,predicted:kgx_v2:Extension,A->B
+R0161,predicted:kgx_v2:Extension,A->B
+R0162,predicted:kgx_v2:Extension,B->A
+R0163,predicted:kgx_v2_hybrid:Extension,B->A
+R0164,predicted:kgx_v2:Extension,A->B
+R0165,predicted:kgx_v2:Extension,A->B
+R0166,predicted:kgx_v2:Extension,A->B
+R0167,predicted:kgx_v2_hybrid:Extension,B->A
+R0168,predicted:kgx_v2:Extension,B->A
+R0169,predicted:kgx_v2_hybrid:Extension,A->B
+R0170,predicted:kgx_v2:Extension,B->A
+R0171,predicted:kgx_v2:Extension,B->A
+R0172,predicted:kgx_v2:Extension,B->A
+R0173,predicted:kgx_v2:Extension,B->A
+R0174,predicted:kgx_v2:Extension,B->A
+R0175,predicted:kgx_v2:Extension,B->A
+R0176,predicted:kgx_v2:Extension,B->A
+R0177,predicted:kgx_v2:Extension,B->A
+R0178,predicted:kgx_v2:Extension,B->A
+R0179,predicted:kgx_v2:Extension,B->A
+R0180,predicted:kgx_v2:Extension,A->B
+R0181,"hard_negative:co-mentioned, no KG relation",B->A
+R0182,"hard_negative:co-mentioned, no KG relation",B->A
+R0183,"hard_negative:co-mentioned, no KG relation",A->B
+R0184,"hard_negative:co-mentioned, no KG relation",B->A
+R0185,"hard_negative:co-mentioned, no KG relation",B->A
+R0186,"hard_negative:co-mentioned, no KG relation",A->B
+R0187,"hard_negative:co-mentioned, no KG relation",B->A
+R0188,"hard_negative:co-mentioned, no KG relation",B->A
+R0189,"hard_negative:co-mentioned, no KG relation",B->A
+R0190,"hard_negative:co-mentioned, no KG relation",A->B
+R0191,"hard_negative:co-mentioned, no KG relation",B->A
+R0192,"hard_negative:co-mentioned, no KG relation",B->A
+R0193,"hard_negative:co-mentioned, no KG relation",A->B
+R0194,"hard_negative:co-mentioned, no KG relation",B->A
+R0195,"hard_negative:co-mentioned, no KG relation",A->B
+R0196,"hard_negative:co-mentioned, no KG relation",A->B
+R0197,"hard_negative:co-mentioned, no KG relation",B->A
+R0198,"hard_negative:co-mentioned, no KG relation",A->B
+R0199,"hard_negative:co-mentioned, no KG relation",B->A
+R0200,"hard_negative:co-mentioned, no KG relation",A->B
+R0201,"hard_negative:co-mentioned, no KG relation",A->B
+R0202,"hard_negative:co-mentioned, no KG relation",A->B
+R0203,"hard_negative:co-mentioned, no KG relation",A->B
+R0204,"hard_negative:co-mentioned, no KG relation",A->B
+R0205,"hard_negative:co-mentioned, no KG relation",B->A
+R0206,"hard_negative:co-mentioned, no KG relation",A->B
+R0207,"hard_negative:co-mentioned, no KG relation",B->A
+R0208,"hard_negative:co-mentioned, no KG relation",A->B
+R0209,"hard_negative:co-mentioned, no KG relation",A->B
+R0210,"hard_negative:co-mentioned, no KG relation",A->B
+R0211,"hard_negative:co-mentioned, no KG relation",B->A
+R0212,"hard_negative:co-mentioned, no KG relation",A->B
+R0213,"hard_negative:co-mentioned, no KG relation",B->A
+R0214,"hard_negative:co-mentioned, no KG relation",A->B
+R0215,"hard_negative:co-mentioned, no KG relation",A->B
+R0216,"hard_negative:co-mentioned, no KG relation",B->A
+R0217,"hard_negative:co-mentioned, no KG relation",A->B
+R0218,"hard_negative:co-mentioned, no KG relation",A->B
+R0219,"hard_negative:co-mentioned, no KG relation",A->B
+R0220,"hard_negative:co-mentioned, no KG relation",A->B
+R0221,"hard_negative:co-mentioned, no KG relation",A->B
+R0222,"hard_negative:co-mentioned, no KG relation",A->B
+R0223,"hard_negative:co-mentioned, no KG relation",B->A
+R0224,"hard_negative:co-mentioned, no KG relation",B->A
+R0225,"hard_negative:co-mentioned, no KG relation",B->A
+R0226,"hard_negative:co-mentioned, no KG relation",B->A
+R0227,"hard_negative:co-mentioned, no KG relation",B->A
+R0228,"hard_negative:co-mentioned, no KG relation",A->B
+R0229,"hard_negative:co-mentioned, no KG relation",A->B
+R0230,"hard_negative:co-mentioned, no KG relation",B->A
+R0231,"hard_negative:co-mentioned, no KG relation",B->A
+R0232,"hard_negative:co-mentioned, no KG relation",B->A
+R0233,"hard_negative:co-mentioned, no KG relation",A->B
+R0234,"hard_negative:co-mentioned, no KG relation",A->B
+R0235,"hard_negative:co-mentioned, no KG relation",B->A
+R0236,"hard_negative:co-mentioned, no KG relation",B->A
+R0237,"hard_negative:co-mentioned, no KG relation",B->A
+R0238,"hard_negative:co-mentioned, no KG relation",A->B
+R0239,"hard_negative:co-mentioned, no KG relation",B->A
+R0240,"hard_negative:co-mentioned, no KG relation",A->B
+R0241,pilot_gold_pairs:Prerequisite,A->B
+R0242,pilot_gold_pairs:Prerequisite,A->B
+R0243,pilot_gold_pairs:Prerequisite,B->A
+R0244,pilot_gold_pairs:Part-of,B->A
+R0245,pilot_gold_pairs:Part-of,B->A
+R0246,pilot_gold_pairs:Part-of,B->A
+R0247,pilot_gold_pairs:Part-of,B->A
+R0248,pilot_gold_pairs:Application,B->A
+R0249,pilot_gold_pairs:Prerequisite,B->A
+R0250,pilot_gold_pairs:Part-of,A->B
+R0251,pilot_gold_pairs:Part-of,B->A
+R0252,pilot_gold_pairs:Part-of,B->A
+R0253,pilot_gold_pairs:Part-of,B->A
+R0254,pilot_gold_pairs:Part-of,A->B
+R0255,pilot_gold_pairs:Part-of,B->A
+R0256,pilot_gold_pairs:Extension,B->A
+R0257,pilot_gold_pairs:Prerequisite,B->A
+R0258,pilot_gold_pairs:Prerequisite,B->A
+R0259,pilot_gold_pairs:Part-of,A->B
+R0260,pilot_gold_pairs:Part-of,A->B
+R0261,pilot_gold_pairs:Part-of,A->B
+R0262,pilot_gold_pairs:Part-of,B->A
+R0263,pilot_gold_pairs:Part-of,B->A
+R0264,pilot_gold_pairs:Part-of,B->A
+R0265,pilot_gold_pairs:Part-of,A->B
+R0266,pilot_gold_pairs:Extension,A->B
+R0267,pilot_gold_pairs:Application,A->B
+R0268,pilot_gold_pairs:Prerequisite,A->B
+R0269,pilot_gold_pairs:Prerequisite,B->A
+R0270,pilot_gold_pairs:Extension,A->B
+R0271,pilot_gold_pairs:Extension,B->A
+R0272,pilot_gold_pairs:Application,B->A
+R0273,pilot_gold_pairs:Application,B->A
+R0274,pilot_gold_pairs:Application,A->B
+R0275,pilot_gold_pairs:Application,B->A
+R0276,pilot_gold_pairs:Application,B->A
+R0277,pilot_gold_pairs:Application,B->A
+R0278,pilot_gold_pairs:Application,A->B
+R0279,pilot_gold_pairs:Application,B->A
+R0280,pilot_gold_pairs:Prerequisite,A->B
+R0281,pilot_gold_pairs:Application,B->A
+R0282,pilot_gold_pairs:Application,A->B
+R0283,pilot_gold_pairs:Application,A->B
+R0284,pilot_gold_pairs:Extension,A->B
+R0285,pilot_gold_pairs:Prerequisite,B->A
+R0286,pilot_gold_pairs:Application,B->A
+R0287,pilot_gold_pairs:Application,A->B
+R0288,pilot_gold_pairs:Application,A->B
+R0289,pilot_gold_pairs:Application,B->A
+R0290,pilot_gold_pairs:Application,B->A
+R0291,pilot_gold_pairs:Application,B->A
+R0292,pilot_gold_pairs:Application,A->B
+R0293,pilot_gold_pairs:Extension,A->B
+R0294,pilot_gold_pairs:Prerequisite,B->A
+R0295,pilot_gold_pairs:Application,B->A
+R0296,pilot_gold_pairs:Application,B->A
+R0297,pilot_gold_pairs:Application,A->B
+R0298,pilot_gold_pairs:Application,A->B
+R0299,pilot_gold_pairs:Application,B->A
+R0300,pilot_gold_pairs:Application,B->A
+R0301,pilot_gold_pairs:Prerequisite,B->A
+R0302,pilot_gold_pairs:Prerequisite,A->B
+R0303,pilot_gold_pairs:Extension,A->B
+R0304,pilot_gold_pairs:Extension,A->B
+R0305,pilot_gold_pairs:Part-of,B->A
+R0306,pilot_gold_pairs:Part-of,A->B
+R0307,pilot_gold_pairs:Prerequisite,B->A
+R0308,pilot_gold_pairs:Application,A->B
+R0309,pilot_gold_pairs:Application,A->B
+R0310,pilot_gold_pairs:Application,B->A
+R0311,pilot_gold_pairs:Application,A->B
+R0312,pilot_gold_pairs:Part-of,B->A
+R0313,pilot_gold_pairs:Part-of,A->B
+R0314,pilot_gold_pairs:Application,A->B
+R0315,pilot_gold_pairs:Application,A->B
+R0316,pilot_gold_pairs:Application,B->A
+R0317,pilot_gold_pairs:Extension,A->B
+R0318,pilot_gold_pairs:Prerequisite,B->A
+R0319,pilot_gold_pairs:Prerequisite,B->A
+R0320,pilot_gold_pairs:Part-of,A->B
+R0321,pilot_gold_pairs:Extension,B->A
+R0322,pilot_gold_pairs:Application,A->B
+R0323,pilot_gold_pairs:Application,B->A
+R0324,pilot_gold_pairs:Application,B->A
+R0325,pilot_gold_pairs:Application,A->B
+R0326,pilot_gold_pairs:Application,A->B
+R0327,pilot_gold_pairs:Application,B->A
+R0328,pilot_gold_pairs:Application,A->B
+R0329,pilot_gold_pairs:Application,B->A
+R0330,pilot_gold_pairs:Application,A->B
+R0331,pilot_gold_pairs:Application,A->B
+R0332,pilot_gold_pairs:Application,B->A
+R0333,pilot_gold_pairs:Application,A->B
+R0334,pilot_gold_pairs:Application,B->A
+R0335,pilot_gold_pairs:Application,A->B
+R0336,pilot_gold_pairs:Prerequisite,A->B
+R0337,pilot_gold_pairs:Part-of,A->B
+R0338,pilot_gold_pairs:Part-of,B->A
+R0339,pilot_gold_pairs:Application,B->A
+R0340,pilot_gold_pairs:Application,A->B
+R0341,pilot_gold_pairs:Application,B->A
+R0342,pilot_gold_pairs:Prerequisite,A->B
+R0343,pilot_gold_pairs:Application,A->B
+R0344,pilot_gold_pairs:Prerequisite,B->A
+R0345,pilot_gold_pairs:Application,A->B
+R0346,pilot_gold_pairs:Application,A->B
+R0347,pilot_gold_pairs:Extension,B->A
+R0348,pilot_gold_pairs:Application,B->A
+R0349,pilot_gold_pairs:Application,B->A
+R0350,pilot_gold_pairs:Application,B->A
+R0351,pilot_gold_pairs:Application,A->B
+R0352,pilot_gold_pairs:Application,A->B
+R0353,pilot_gold_pairs:Prerequisite,A->B
+R0354,pilot_gold_pairs:Part-of,A->B
+R0355,pilot_gold_pairs:Part-of,A->B
+R0356,pilot_gold_pairs:Part-of,A->B
+R0357,pilot_gold_pairs:Part-of,A->B
+R0358,pilot_gold_pairs:Part-of,B->A
+R0359,pilot_gold_pairs:Application,A->B
+R0360,alcpl_calibration:not_prerequisite,B->A
+R0361,alcpl_calibration:prerequisite,B->A
+R0362,alcpl_calibration:prerequisite,A->B
+R0363,alcpl_calibration:prerequisite,B->A
+R0364,alcpl_calibration:not_prerequisite,A->B
+R0365,alcpl_calibration:not_prerequisite,A->B
+R0366,alcpl_calibration:prerequisite,A->B
+R0367,alcpl_calibration:not_prerequisite,B->A
+R0368,alcpl_calibration:not_prerequisite,A->B
+R0369,alcpl_calibration:prerequisite,A->B
+R0370,alcpl_calibration:not_prerequisite,B->A
+R0371,alcpl_calibration:not_prerequisite,B->A
+R0372,alcpl_calibration:not_prerequisite,A->B
+R0373,alcpl_calibration:not_prerequisite,B->A
+R0374,alcpl_calibration:not_prerequisite,A->B
+R0375,alcpl_calibration:prerequisite,B->A
+R0376,alcpl_calibration:not_prerequisite,B->A
+R0377,alcpl_calibration:not_prerequisite,B->A
+R0378,alcpl_calibration:not_prerequisite,B->A

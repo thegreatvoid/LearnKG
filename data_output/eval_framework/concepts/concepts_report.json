@@ -1,0 +1,1275 @@
+{
+  "rule_2026-10-11": {
+    "kg": "rule_2026-10-11",
+    "desc": "educational_pipeline, rules + neural, before all fixes",
+    "n_concepts": 130,
+    "concept_names_found_in_book": 130,
+    "alcpl_concepts": 89,
+    "alcpl_matched": 65,
+    "alcpl_matched_high_conf": 61,
+    "alcpl_coverage": 0.7303370786516854,
+    "missing": [
+      {
+        "alcpl_concept": "Cartesian_coordinate_system",
+        "in_book": "absent",
+        "positive_pairs_involving": 9,
+        "labelled_pairs_involving": 31,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Collinearity",
+        "in_book": "body",
+        "positive_pairs_involving": 3,
+        "labelled_pairs_involving": 22,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Concentric",
+        "in_book": "absent",
+        "positive_pairs_involving": 1,
+        "labelled_pairs_involving": 7,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Convex_polygon",
+        "in_book": "body",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 36,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Coordinate_system",
+        "in_book": "absent",
+        "positive_pairs_involving": 5,
+        "labelled_pairs_involving": 28,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Decagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 21,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Diagonal",
+        "in_book": "body",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 32,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Distance",
+        "in_book": "body",
+        "positive_pairs_involving": 3,
+        "labelled_pairs_involving": 42,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Dodecagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 21,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Edge_(geometry)",
+        "in_book": "body",
+        "positive_pairs_involving": 44,
+        "labelled_pairs_involving": 90,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Face_(geometry)",
+        "in_book": "body",
+        "positive_pairs_involving": 3,
+        "labelled_pairs_involving": 18,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Geometry",
+        "in_book": "body",
+        "positive_pairs_involving": 84,
+        "labelled_pairs_involving": 169,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Hendecagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 17,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Heptagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 18,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Nonagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 17,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Octagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 20,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Pythagorean_triple",
+        "in_book": "body",
+        "positive_pairs_involving": 12,
+        "labelled_pairs_involving": 27,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Rigid_transformation",
+        "in_book": "body",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 18,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Self-similarity",
+        "in_book": "absent",
+        "positive_pairs_involving": 3,
+        "labelled_pairs_involving": 6,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Skew_lines",
+        "in_book": "absent",
+        "positive_pairs_involving": 5,
+        "labelled_pairs_involving": 14,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Space_(mathematics)",
+        "in_book": "body",
+        "positive_pairs_involving": 0,
+        "labelled_pairs_involving": 7,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Star_polygon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 26,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Tessellation",
+        "in_book": "absent",
+        "positive_pairs_involving": 2,
+        "labelled_pairs_involving": 24,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Triangle_inequality",
+        "in_book": "body",
+        "positive_pairs_involving": 9,
+        "labelled_pairs_involving": 30,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      }
+    ],
+    "missing_by_cause": {
+      "absent": 13,
+      "body": 11
+    },
+    "positive_pairs_total": 524,
+    "positive_pairs_with_missing_concept": 229,
+    "max_prerequisite_recall_given_concepts": 0.5629770992366412,
+    "matched_concepts_also_in_hard_coded_list": [
+      "Acute Triangle",
+      "Altitude",
+      "Angle",
+      "Angle Bisector",
+      "Arc",
+      "Chord",
+      "Circle",
+      "Circumference",
+      "Cone",
+      "Congruence",
+      "Cross Section",
+      "Cylinder",
+      "Diameter",
+      "Equilateral Triangle",
+      "Exterior Angle",
+      "Hexagon",
+      "Interior Angle",
+      "Inverse Trigonometric",
+      "Isosceles Triangle",
+      "Kite",
+      "Line",
+      "Line Segment",
+      "Line Symmetry",
+      "Midpoint",
+      "Parallel",
+      "Parallelogram",
+      "Pentagon",
+      "Perpendicular",
+      "Perpendicular Bisector",
+      "Plane",
+      "Point",
+      "Polygon",
+      "Polyhedron",
+      "Prism",
+      "Pyramid",
+      "Pythagorean Theorem",
+      "Quadrilateral",
+      "Radius",
+      "Rectangle",
+      "Reflection",
+      "Rhombus",
+      "Right Triangle",
+      "Rotation",
+      "Rotational Symmetry",
+      "Scale Factor",
+      "Secant",
+      "Similarity",
+      "Sine",
+      "Slope",
+      "Special Right Triangles",
+      "Sphere",
+      "Square",
+      "Symmetry",
+      "Tangent",
+      "Translation",
+      "Transversal",
+      "Trapezoid",
+      "Triangle",
+      "Trigonometry",
+      "Vertex"
+    ],
+    "kg_concepts_in_hard_coded_list": 93,
+    "definitions_valid": 47,
+    "definitions_total": 130,
+    "definition_kind": null,
+    "investigated_terms": [
+      {
+        "term": "SSS",
+        "present": true,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": ""
+      },
+      {
+        "term": "SAS",
+        "present": true,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": ""
+      },
+      {
+        "term": "ASA",
+        "present": true,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": ""
+      },
+      {
+        "term": "AAS",
+        "present": true,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": ""
+      },
+      {
+        "term": "HL",
+        "present": false,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": "rule pipeline: acronyms shorter than 3 letters are dropped (concept_extractor)"
+      },
+      {
+        "term": "Special Right Triangles",
+        "present": true,
+        "in_book": "heading_only",
+        "in_hard_coded_list": true,
+        "reason_if_absent": ""
+      },
+      {
+        "term": "Area",
+        "present": true,
+        "in_book": "body",
+        "in_hard_coded_list": true,
+        "reason_if_absent": ""
+      },
+      {
+        "term": "Similarity",
+        "present": true,
+        "in_book": "body",
+        "in_hard_coded_list": true,
+        "reason_if_absent": ""
+      },
+      {
+        "term": "Sine",
+        "present": true,
+        "in_book": "body",
+        "in_hard_coded_list": true,
+        "reason_if_absent": ""
+      }
+    ]
+  },
+  "rule_v3": {
+    "kg": "rule_v3",
+    "desc": "educational_pipeline, rules + neural, current code",
+    "n_concepts": 130,
+    "concept_names_found_in_book": 130,
+    "alcpl_concepts": 89,
+    "alcpl_matched": 65,
+    "alcpl_matched_high_conf": 61,
+    "alcpl_coverage": 0.7303370786516854,
+    "missing": [
+      {
+        "alcpl_concept": "Cartesian_coordinate_system",
+        "in_book": "absent",
+        "positive_pairs_involving": 9,
+        "labelled_pairs_involving": 31,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Collinearity",
+        "in_book": "body",
+        "positive_pairs_involving": 3,
+        "labelled_pairs_involving": 22,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Concentric",
+        "in_book": "absent",
+        "positive_pairs_involving": 1,
+        "labelled_pairs_involving": 7,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Convex_polygon",
+        "in_book": "body",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 36,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Coordinate_system",
+        "in_book": "absent",
+        "positive_pairs_involving": 5,
+        "labelled_pairs_involving": 28,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Decagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 21,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Diagonal",
+        "in_book": "body",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 32,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Distance",
+        "in_book": "body",
+        "positive_pairs_involving": 3,
+        "labelled_pairs_involving": 42,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Dodecagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 21,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Edge_(geometry)",
+        "in_book": "body",
+        "positive_pairs_involving": 44,
+        "labelled_pairs_involving": 90,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Face_(geometry)",
+        "in_book": "body",
+        "positive_pairs_involving": 3,
+        "labelled_pairs_involving": 18,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Geometry",
+        "in_book": "body",
+        "positive_pairs_involving": 84,
+        "labelled_pairs_involving": 169,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Hendecagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 17,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Heptagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 18,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Nonagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 17,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Octagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 20,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Pythagorean_triple",
+        "in_book": "body",
+        "positive_pairs_involving": 12,
+        "labelled_pairs_involving": 27,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Rigid_transformation",
+        "in_book": "body",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 18,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Self-similarity",
+        "in_book": "absent",
+        "positive_pairs_involving": 3,
+        "labelled_pairs_involving": 6,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Skew_lines",
+        "in_book": "absent",
+        "positive_pairs_involving": 5,
+        "labelled_pairs_involving": 14,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Space_(mathematics)",
+        "in_book": "body",
+        "positive_pairs_involving": 0,
+        "labelled_pairs_involving": 7,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Star_polygon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 26,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Tessellation",
+        "in_book": "absent",
+        "positive_pairs_involving": 2,
+        "labelled_pairs_involving": 24,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Triangle_inequality",
+        "in_book": "body",
+        "positive_pairs_involving": 9,
+        "labelled_pairs_involving": 30,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      }
+    ],
+    "missing_by_cause": {
+      "absent": 13,
+      "body": 11
+    },
+    "positive_pairs_total": 524,
+    "positive_pairs_with_missing_concept": 229,
+    "max_prerequisite_recall_given_concepts": 0.5629770992366412,
+    "matched_concepts_also_in_hard_coded_list": [
+      "Acute Triangle",
+      "Altitude",
+      "Angle",
+      "Angle Bisector",
+      "Arc",
+      "Chord",
+      "Circle",
+      "Circumference",
+      "Cone",
+      "Congruence",
+      "Cross Section",
+      "Cylinder",
+      "Diameter",
+      "Equilateral Triangle",
+      "Exterior Angle",
+      "Hexagon",
+      "Interior Angle",
+      "Inverse Trigonometric",
+      "Isosceles Triangle",
+      "Kite",
+      "Line",
+      "Line Segment",
+      "Line Symmetry",
+      "Midpoint",
+      "Parallel",
+      "Parallelogram",
+      "Pentagon",
+      "Perpendicular",
+      "Perpendicular Bisector",
+      "Plane",
+      "Point",
+      "Polygon",
+      "Polyhedron",
+      "Prism",
+      "Pyramid",
+      "Pythagorean Theorem",
+      "Quadrilateral",
+      "Radius",
+      "Rectangle",
+      "Reflection",
+      "Rhombus",
+      "Right Triangle",
+      "Rotation",
+      "Rotational Symmetry",
+      "Scale Factor",
+      "Secant",
+      "Similarity",
+      "Sine",
+      "Slope",
+      "Special Right Triangles",
+      "Sphere",
+      "Square",
+      "Symmetry",
+      "Tangent",
+      "Translation",
+      "Transversal",
+      "Trapezoid",
+      "Triangle",
+      "Trigonometry",
+      "Vertex"
+    ],
+    "kg_concepts_in_hard_coded_list": 94,
+    "definitions_valid": 67,
+    "definitions_total": 130,
+    "definition_kind": {
+      "definitional": 73,
+      "mention": 35,
+      "": 22
+    },
+    "investigated_terms": [
+      {
+        "term": "SSS",
+        "present": true,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": ""
+      },
+      {
+        "term": "SAS",
+        "present": true,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": ""
+      },
+      {
+        "term": "ASA",
+        "present": true,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": ""
+      },
+      {
+        "term": "AAS",
+        "present": true,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": ""
+      },
+      {
+        "term": "HL",
+        "present": false,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": "rule pipeline: acronyms shorter than 3 letters are dropped (concept_extractor)"
+      },
+      {
+        "term": "Special Right Triangles",
+        "present": true,
+        "in_book": "heading_only",
+        "in_hard_coded_list": true,
+        "reason_if_absent": ""
+      },
+      {
+        "term": "Area",
+        "present": true,
+        "in_book": "body",
+        "in_hard_coded_list": true,
+        "reason_if_absent": ""
+      },
+      {
+        "term": "Similarity",
+        "present": true,
+        "in_book": "body",
+        "in_hard_coded_list": true,
+        "reason_if_absent": ""
+      },
+      {
+        "term": "Sine",
+        "present": true,
+        "in_book": "body",
+        "in_hard_coded_list": true,
+        "reason_if_absent": ""
+      }
+    ]
+  },
+  "kgx_v2": {
+    "kg": "kgx_v2",
+    "desc": "kg_extract, qwen2.5:7b concepts + LLM pair votes",
+    "n_concepts": 204,
+    "concept_names_found_in_book": 202,
+    "alcpl_concepts": 89,
+    "alcpl_matched": 65,
+    "alcpl_matched_high_conf": 63,
+    "alcpl_coverage": 0.7303370786516854,
+    "missing": [
+      {
+        "alcpl_concept": "Cartesian_coordinate_system",
+        "in_book": "absent",
+        "positive_pairs_involving": 9,
+        "labelled_pairs_involving": 31,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Collinearity",
+        "in_book": "body",
+        "positive_pairs_involving": 3,
+        "labelled_pairs_involving": 22,
+        "reason": "never proposed as a candidate"
+      },
+      {
+        "alcpl_concept": "Concentric",
+        "in_book": "absent",
+        "positive_pairs_involving": 1,
+        "labelled_pairs_involving": 7,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Convex_polygon",
+        "in_book": "body",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 36,
+        "reason": "candidate 'convex polygon' dropped: top_k (cues np, freq 1)"
+      },
+      {
+        "alcpl_concept": "Coordinate_system",
+        "in_book": "absent",
+        "positive_pairs_involving": 5,
+        "labelled_pairs_involving": 28,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Decagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 21,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Dodecagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 21,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Edge_(geometry)",
+        "in_book": "body",
+        "positive_pairs_involving": 44,
+        "labelled_pairs_involving": 90,
+        "reason": "never proposed as a candidate"
+      },
+      {
+        "alcpl_concept": "Face_(geometry)",
+        "in_book": "body",
+        "positive_pairs_involving": 3,
+        "labelled_pairs_involving": 18,
+        "reason": "never proposed as a candidate"
+      },
+      {
+        "alcpl_concept": "Geometry",
+        "in_book": "body",
+        "positive_pairs_involving": 84,
+        "labelled_pairs_involving": 169,
+        "reason": "candidate 'geometry' dropped: weak_single_word (cues np, freq 2)"
+      },
+      {
+        "alcpl_concept": "Hendecagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 17,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Heptagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 18,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Inverse_trigonometric_functions",
+        "in_book": "body",
+        "positive_pairs_involving": 11,
+        "labelled_pairs_involving": 26,
+        "reason": "candidate 'inverse trigonometric functions' dropped: top_k (cues np, freq 1)"
+      },
+      {
+        "alcpl_concept": "Nonagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 17,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Octagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 20,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Parallel_(geometry)",
+        "in_book": "body",
+        "positive_pairs_involving": 9,
+        "labelled_pairs_involving": 31,
+        "reason": "never proposed as a candidate"
+      },
+      {
+        "alcpl_concept": "Perpendicular",
+        "in_book": "body",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 57,
+        "reason": "never proposed as a candidate"
+      },
+      {
+        "alcpl_concept": "Self-similarity",
+        "in_book": "absent",
+        "positive_pairs_involving": 3,
+        "labelled_pairs_involving": 6,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Similarity_(geometry)",
+        "in_book": "body",
+        "positive_pairs_involving": 2,
+        "labelled_pairs_involving": 32,
+        "reason": "candidate 'Similarity' dropped: weak_single_word (cues heading_part+np, freq 3)"
+      },
+      {
+        "alcpl_concept": "Sine",
+        "in_book": "body",
+        "positive_pairs_involving": 11,
+        "labelled_pairs_involving": 36,
+        "reason": "candidate 'Sine' dropped: top_k (cues np, freq 1)"
+      },
+      {
+        "alcpl_concept": "Skew_lines",
+        "in_book": "absent",
+        "positive_pairs_involving": 5,
+        "labelled_pairs_involving": 14,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Space_(mathematics)",
+        "in_book": "body",
+        "positive_pairs_involving": 0,
+        "labelled_pairs_involving": 7,
+        "reason": "candidate 'space' dropped: weak_single_word (cues np, freq 1)"
+      },
+      {
+        "alcpl_concept": "Star_polygon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 26,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Tessellation",
+        "in_book": "absent",
+        "positive_pairs_involving": 2,
+        "labelled_pairs_involving": 24,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      }
+    ],
+    "missing_by_cause": {
+      "absent": 13,
+      "body": 11
+    },
+    "positive_pairs_total": 524,
+    "positive_pairs_with_missing_concept": 227,
+    "max_prerequisite_recall_given_concepts": 0.5667938931297709,
+    "matched_concepts_also_in_hard_coded_list": [
+      "Circumference",
+      "Pythagorean Theorem",
+      "Symmetry",
+      "Trigonometry",
+      "acute triangle",
+      "altitude",
+      "angle",
+      "arc",
+      "chord",
+      "circle",
+      "cone",
+      "congruence",
+      "cross section",
+      "cylinder",
+      "diameter",
+      "equilateral triangle",
+      "exterior angle",
+      "hexagon",
+      "isosceles triangle",
+      "kite",
+      "line",
+      "line segment",
+      "line symmetry",
+      "midpoint",
+      "parallelogram",
+      "pentagon",
+      "perpendicular bisector",
+      "plane",
+      "point",
+      "polygon",
+      "polyhedron",
+      "prism",
+      "pyramid",
+      "quadrilateral",
+      "radius",
+      "rectangle",
+      "reflection",
+      "rhombus",
+      "right triangle",
+      "rotational symmetry",
+      "scale factor",
+      "secant",
+      "slope",
+      "sphere",
+      "square",
+      "translation",
+      "transversal",
+      "trapezoid",
+      "triangle",
+      "vertex"
+    ],
+    "kg_concepts_in_hard_coded_list": 76,
+    "definitions_valid": 70,
+    "definitions_total": 204,
+    "definition_kind": null,
+    "investigated_terms": [
+      {
+        "term": "SSS",
+        "present": false,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": "candidate 'SSS' dropped: min_freq (cues heading_part+np, freq 0)"
+      },
+      {
+        "term": "SAS",
+        "present": false,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": "candidate 'SAS' dropped: min_freq (cues heading_part+np, freq 0)"
+      },
+      {
+        "term": "ASA",
+        "present": false,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": "candidate 'ASA' dropped: min_freq (cues heading_part+np, freq 0)"
+      },
+      {
+        "term": "AAS",
+        "present": false,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": "candidate 'AAS' dropped: min_freq (cues heading_part+np, freq 0)"
+      },
+      {
+        "term": "HL",
+        "present": false,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": "never proposed as a candidate"
+      },
+      {
+        "term": "Special Right Triangles",
+        "present": false,
+        "in_book": "heading_only",
+        "in_hard_coded_list": true,
+        "reason_if_absent": "candidate 'Special Right Triangles' dropped: min_freq (cues heading_part+np, freq 0)"
+      },
+      {
+        "term": "Area",
+        "present": false,
+        "in_book": "body",
+        "in_hard_coded_list": true,
+        "reason_if_absent": "candidate 'area' dropped: weak_single_word (cues np, freq 22)"
+      },
+      {
+        "term": "Similarity",
+        "present": false,
+        "in_book": "body",
+        "in_hard_coded_list": true,
+        "reason_if_absent": "candidate 'Similarity' dropped: weak_single_word (cues heading_part+np, freq 3)"
+      },
+      {
+        "term": "Sine",
+        "present": false,
+        "in_book": "body",
+        "in_hard_coded_list": true,
+        "reason_if_absent": "candidate 'Sine' dropped: top_k (cues np, freq 1)"
+      }
+    ]
+  },
+  "kgx_v2_hybrid": {
+    "kg": "kgx_v2_hybrid",
+    "desc": "v2 + hybrid prerequisite edges (uses book order)",
+    "n_concepts": 204,
+    "concept_names_found_in_book": 202,
+    "alcpl_concepts": 89,
+    "alcpl_matched": 65,
+    "alcpl_matched_high_conf": 63,
+    "alcpl_coverage": 0.7303370786516854,
+    "missing": [
+      {
+        "alcpl_concept": "Cartesian_coordinate_system",
+        "in_book": "absent",
+        "positive_pairs_involving": 9,
+        "labelled_pairs_involving": 31,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Collinearity",
+        "in_book": "body",
+        "positive_pairs_involving": 3,
+        "labelled_pairs_involving": 22,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Concentric",
+        "in_book": "absent",
+        "positive_pairs_involving": 1,
+        "labelled_pairs_involving": 7,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Convex_polygon",
+        "in_book": "body",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 36,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Coordinate_system",
+        "in_book": "absent",
+        "positive_pairs_involving": 5,
+        "labelled_pairs_involving": 28,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Decagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 21,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Dodecagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 21,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Edge_(geometry)",
+        "in_book": "body",
+        "positive_pairs_involving": 44,
+        "labelled_pairs_involving": 90,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Face_(geometry)",
+        "in_book": "body",
+        "positive_pairs_involving": 3,
+        "labelled_pairs_involving": 18,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Geometry",
+        "in_book": "body",
+        "positive_pairs_involving": 84,
+        "labelled_pairs_involving": 169,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Hendecagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 17,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Heptagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 18,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Inverse_trigonometric_functions",
+        "in_book": "body",
+        "positive_pairs_involving": 11,
+        "labelled_pairs_involving": 26,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Nonagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 17,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Octagon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 20,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Parallel_(geometry)",
+        "in_book": "body",
+        "positive_pairs_involving": 9,
+        "labelled_pairs_involving": 31,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Perpendicular",
+        "in_book": "body",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 57,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Self-similarity",
+        "in_book": "absent",
+        "positive_pairs_involving": 3,
+        "labelled_pairs_involving": 6,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Similarity_(geometry)",
+        "in_book": "body",
+        "positive_pairs_involving": 2,
+        "labelled_pairs_involving": 32,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Sine",
+        "in_book": "body",
+        "positive_pairs_involving": 11,
+        "labelled_pairs_involving": 36,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Skew_lines",
+        "in_book": "absent",
+        "positive_pairs_involving": 5,
+        "labelled_pairs_involving": 14,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Space_(mathematics)",
+        "in_book": "body",
+        "positive_pairs_involving": 0,
+        "labelled_pairs_involving": 7,
+        "reason": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "alcpl_concept": "Star_polygon",
+        "in_book": "absent",
+        "positive_pairs_involving": 8,
+        "labelled_pairs_involving": 26,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      },
+      {
+        "alcpl_concept": "Tessellation",
+        "in_book": "absent",
+        "positive_pairs_involving": 2,
+        "labelled_pairs_involving": 24,
+        "reason": "not in the textbook (reference/book mismatch, not an extraction error)"
+      }
+    ],
+    "missing_by_cause": {
+      "absent": 13,
+      "body": 11
+    },
+    "positive_pairs_total": 524,
+    "positive_pairs_with_missing_concept": 227,
+    "max_prerequisite_recall_given_concepts": 0.5667938931297709,
+    "matched_concepts_also_in_hard_coded_list": [
+      "Circumference",
+      "Pythagorean Theorem",
+      "Symmetry",
+      "Trigonometry",
+      "acute triangle",
+      "altitude",
+      "angle",
+      "arc",
+      "chord",
+      "circle",
+      "cone",
+      "congruence",
+      "cross section",
+      "cylinder",
+      "diameter",
+      "equilateral triangle",
+      "exterior angle",
+      "hexagon",
+      "isosceles triangle",
+      "kite",
+      "line",
+      "line segment",
+      "line symmetry",
+      "midpoint",
+      "parallelogram",
+      "pentagon",
+      "perpendicular bisector",
+      "plane",
+      "point",
+      "polygon",
+      "polyhedron",
+      "prism",
+      "pyramid",
+      "quadrilateral",
+      "radius",
+      "rectangle",
+      "reflection",
+      "rhombus",
+      "right triangle",
+      "rotational symmetry",
+      "scale factor",
+      "secant",
+      "slope",
+      "sphere",
+      "square",
+      "translation",
+      "transversal",
+      "trapezoid",
+      "triangle",
+      "vertex"
+    ],
+    "kg_concepts_in_hard_coded_list": 76,
+    "definitions_valid": 70,
+    "definitions_total": 204,
+    "definition_kind": null,
+    "investigated_terms": [
+      {
+        "term": "SSS",
+        "present": false,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "term": "SAS",
+        "present": false,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "term": "ASA",
+        "present": false,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "term": "AAS",
+        "present": false,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "term": "HL",
+        "present": false,
+        "in_book": "heading_only",
+        "in_hard_coded_list": false,
+        "reason_if_absent": "rule pipeline: acronyms shorter than 3 letters are dropped (concept_extractor)"
+      },
+      {
+        "term": "Special Right Triangles",
+        "present": false,
+        "in_book": "heading_only",
+        "in_hard_coded_list": true,
+        "reason_if_absent": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "term": "Area",
+        "present": false,
+        "in_book": "body",
+        "in_hard_coded_list": true,
+        "reason_if_absent": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "term": "Similarity",
+        "present": false,
+        "in_book": "body",
+        "in_hard_coded_list": true,
+        "reason_if_absent": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      },
+      {
+        "term": "Sine",
+        "present": false,
+        "in_book": "body",
+        "in_hard_coded_list": true,
+        "reason_if_absent": "rule pipeline: not proposed (not capitalised in text, no 'called X' pattern, not in hard-coded DOMAIN_TERMS)"
+      }
+    ]
+  },
+  "_notes": {
+    "kgx_v2_and_hybrid_have_identical_concepts": true,
+    "reference": "AL-CPL geometry concept list (partial; coverage only, no precision)",
+    "annotation_template": {
+      "sections": [
+        "7.3 Similarity by AA, SSS, SAS",
+        "12.5 Composition of Transformations",
+        "1.2 Segments and Distance",
+        "5.2 Perpendicular Bisectors and Angle Bisectors",
+        "8.3 Special Right Triangles",
+        "4.2 Congruent Figures",
+        "3.1 Lines and Angles",
+        "11.5 Spheres"
+      ],
+      "items": 132
+    }
+  }
+}
