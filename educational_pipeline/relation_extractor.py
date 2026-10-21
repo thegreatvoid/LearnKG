@@ -47,7 +47,6 @@ ONTOLOGY_PATTERNS = {
         "part of", "component of", "element of", "consists of", "comprises",
         "includes", "subsystem of", "constituent of",
         "composed of", "subset of", "contained in",
-        "is a type of", "is a kind of",
     ],
     "Application": [
         "applied to", "applied in", "used in", "used for", "used to",
@@ -73,15 +72,16 @@ ONTOLOGY_PATTERNS = {
 KEYWORD_RES = {ont: re.compile(r"\b(?:" + "|".join(re.escape(k) for k in kws) + r")\b", re.I)
                for ont, kws in ONTOLOGY_PATTERNS.items()}
 
-# For Part-of / Application / Extension the sentence must say which concept is the source. In "X <keyword> Y"
-# the concept before the keyword is the source, except for these keywords, where the roles are reversed
-# ("a polygon consists of segments" -> segment Part-of polygon; "X is extended by Y" -> Y Extension X).
+# For directional types, the sentence must establish which concept is the source.
+# In "X <keyword> Y" the concept before the keyword is the source, except for these keywords,
+# where the roles are reversed ("Y requires X" -> X Prerequisite Y; "a polygon consists of segments" -> segment Part-of polygon).
 REVERSED_KEYWORDS = {
+    "Prerequisite": {"requires", "depends on", "relies on", "building on", "based on", "must understand", "precondition", "derived from"},
     "Part-of": {"consists of", "comprises", "includes", "composed of"},
     "Application": {"application of"},
     "Extension": {"extended by", "evolves into"},
 }
-DIRECTIONAL_TYPES = ("Part-of", "Application", "Extension")
+DIRECTIONAL_TYPES = ("Prerequisite", "Part-of", "Application", "Extension")
 
 
 # AHP-derived factor weights (see project report, CR = 0.022):
@@ -215,6 +215,11 @@ class ExtractedRelation:
     weight_legacy: float = 0.0  # original formula: legacy S, C = min(1, n_proposals/3), P, legacy E
     weight_scheme: str = "ahp"  # WEIGHTING_SCHEMES key used for `weight`
     scheme_weights: Dict[str, float] = field(default_factory=dict)  # weight under every scheme, for comparison
+    # Decoupled weight and verification fields (Phase 6)
+    extraction_confidence: float = 1.0  # model/extractor confidence
+    evidence_support: float = 0.0  # textual grounding and evidence support
+    relation_weight: float = 0.0  # finalized relevance weight for graph traversal
+    verification_status: str = "UNVERIFIED"  # verification result status
 
 
 # ---------------------------------------------------------------------------------------------------------
@@ -304,8 +309,10 @@ def pair_factors(c1: NormalizedConcept, c2: NormalizedConcept, index: MentionInd
 
 def combine(factors: Dict[str, float], coefficients: Optional[Dict[str, float]] = None) -> float:
     """sum_k w_k * factor_k, clipped to [0, 1]. Factors absent from `coefficients` get weight 0."""
+    if coefficients is not None and len(coefficients) == 0:
+        return 1.0
     w = coefficients or AHP_FACTOR_WEIGHTS
-    score = sum(w[k] * factors[k] for k in w)
+    score = sum(w[k] * factors.get(k, 0.0) for k in w)
     return round(max(0.0, min(1.0, score)), 4)
 
 
@@ -452,6 +459,8 @@ class RelationManager:
             r.weight = r.scheme_weights[scheme]
             r.weight_scheme = scheme
             r.weight_source = "ahp"  # = computed by the factor formula (kept for kg_eval.weight_ablation)
+            r.relation_weight = r.weight
+            r.evidence_support = round(min(1.0, (r.cooccurrence_count / 3.0) * 0.5 + (len(r.evidence_all) / 2.0) * 0.5), 4)
             r.weight_legacy = combine({
                 "semantic_similarity": f["s_jaccard_raw"], "cooccurrence": min(1.0, r.n_proposals / 3.0),
                 "chapter_proximity": f["chapter_proximity"], "educational_context": f["educational_context_legacy"]})
@@ -573,11 +582,8 @@ class RelationManager:
             for i in range(len(found)):
                 for j in range(i + 1, len(found)):
                     (c1, s1, e1), (c2, s2, e2) = found[i], found[j]
-                    if ont == "Prerequisite":
-                        # No direction in the sentence: earlier-introduced concept -> later one (unchanged rule)
-                        src_c, tgt_c = (c1, c2) if (c1.page, c1.concept_id) <= (c2.page, c2.concept_id) else (c2, c1)
-                    elif ont == "Similarity":
-                        src_c, tgt_c = c1, c2  # symmetric: one proposal per sentence and pair
+                    if ont == "Similarity":
+                        src_c, tgt_c = (c1, c2) if c1.concept_id < c2.concept_id else (c2, c1)  # symmetric canonical order
                     else:
                         # Directional types: one concept must precede the keyword and the other follow it.
                         k0, k1 = kw_match.start(), kw_match.end()

@@ -59,6 +59,10 @@ RELATIONS_COLUMNS = [
     "weight_ahp",
     "weight_cooc_only",
     "weight_cooc_struct_a0.8",
+    "extraction_confidence",
+    "evidence_support",
+    "relation_weight",
+    "verification_status",
     "evidence_all",
 ]
 
@@ -129,6 +133,10 @@ def build_and_save_dataset(
             "weight_ahp": r.scheme_weights.get("ahp"),
             "weight_cooc_only": r.scheme_weights.get("cooc_only"),
             "weight_cooc_struct_a0.8": r.scheme_weights.get("cooc_struct_a0.8"),
+            "extraction_confidence": getattr(r, "extraction_confidence", 1.0),
+            "evidence_support": getattr(r, "evidence_support", 0.0),
+            "relation_weight": getattr(r, "relation_weight", r.weight),
+            "verification_status": getattr(r, "verification_status", "UNVERIFIED"),
             "evidence_all": " || ".join(e.replace("\n", " ").strip() for e in r.evidence_all),
         })
 

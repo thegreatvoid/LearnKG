@@ -1,0 +1,219 @@
+# Formal Educational Relation Schema
+# Version: 1.0.0
+# Ontology: 5-Type Controlled Educational Knowledge Graph Ontology
+# Supported Relations: Prerequisite, Similarity, Part-of, Application, Extension
+
+version: "1.0.0"
+unsupported_relation_policy: "REJECT_OR_NONE"
+
+relations:
+  Prerequisite:
+    canonical_name: "Prerequisite"
+    direction: "directed"
+    source_role: "prerequisite_concept"
+    target_role: "dependent_concept"
+    definition: >
+      A directed learning dependency indicating that the source concept must be understood,
+      mastered, or acquired before the target concept can be meaningfully understood or applied.
+    required_distinction: >
+      Learning dependency, not merely earlier occurrence in the textbook or chronological sequence.
+    positive_examples:
+      - source: "Right Triangle"
+        target: "Pythagorean Theorem"
+        explanation: "Understanding right triangles is strictly required to comprehend and apply the Pythagorean theorem."
+      - source: "Parallel"
+        target: "Alternate Interior Angles"
+        explanation: "The definition and properties of alternate interior angles require the concept of parallel lines intersected by a transversal."
+    negative_examples:
+      - source: "Point"
+        target: "Pyramid"
+        confusion: "Chronological or syllabus ordering"
+        explanation: "While points appear earlier in geometry textbooks than pyramids, a point is not an immediate or unique conceptual prerequisite."
+      - source: "Acute Triangle"
+        target: "Obtuse Triangle"
+        confusion: "Parallel concepts"
+        explanation: "Neither acute nor obtuse triangles depend conceptually on each other; they are coordinate classifications."
+    evidence_requirements:
+      min_textual_support: "Sentence explicitly states that the target relies on, builds from, requires, or assumes mastery of the source concept."
+      allowed_cues:
+        - "requires"
+        - "required for"
+        - "prerequisite"
+        - "depends on"
+        - "in order to understand"
+        - "must understand"
+        - "foundation for"
+        - "based on"
+    structural_constraints:
+      is_symmetric: false
+      allow_self_loops: false
+      acyclic_required: true
+
+  Similarity:
+    canonical_name: "Similarity"
+    direction: "symmetric"
+    source_role: "concept_1"
+    target_role: "concept_2"
+    definition: >
+      A symmetric conceptual, structural, or functional analogy/equivalence between two concepts
+      sharing fundamental properties, mathematical behaviors, or dual roles.
+    required_distinction: >
+      Genuine conceptual or functional similarity, not merely related vocabulary or co-occurrence in the same chapter.
+    positive_examples:
+      - source: "Chord"
+        target: "Secant"
+        explanation: "Chords and secants are closely related line objects intersecting circles with shared geometric properties."
+      - source: "Circumference"
+        target: "Perimeter"
+        explanation: "Circumference is the circular analogue of perimeter for polygons."
+    negative_examples:
+      - source: "Radius"
+        target: "Circle"
+        confusion: "Meronymy (Part-of)"
+        explanation: "A radius is a geometric component of a circle, not similar to a circle."
+      - source: "Area"
+        target: "Volume"
+        confusion: "Shared measurement theme"
+        explanation: "Area and volume measure different dimensional quantities (2D vs 3D) and are distinct dimensional measures."
+    evidence_requirements:
+      min_textual_support: "Text passage directly states that the two concepts are similar, analogous, comparable, or dual representations."
+      allowed_cues:
+        - "similar to"
+        - "analogous to"
+        - "resembles"
+        - "comparable to"
+        - "equivalent to"
+        - "in the same way that"
+    structural_constraints:
+      is_symmetric: true
+      allow_self_loops: false
+      acyclic_required: false
+
+  Part-of:
+    canonical_name: "Part-of"
+    direction: "directed"
+    source_role: "part"
+    target_role: "whole"
+    definition: >
+      A directed meronymic component relationship where the source concept constitutes a physical,
+      structural, or constituent part of the target whole concept.
+    required_distinction: >
+      Component relationship (meronymy), strictly NOT a type-of or category relationship (hyponymy/is-a).
+      For example, an acute triangle is a TYPE of triangle (hyponym), NOT a physical component of one.
+    positive_examples:
+      - source: "Radius"
+        target: "Circle"
+        explanation: "A radius is a structural segment connecting the center to a point on the circle."
+      - source: "Interior Angle"
+        target: "Polygon"
+        explanation: "An interior angle is a constitutive component part of a polygon."
+      - source: "Hypotenuse"
+        target: "Right Triangle"
+        explanation: "The hypotenuse is the side opposite the right angle, forming an essential component of the right triangle."
+    negative_examples:
+      - source: "Acute Triangle"
+        target: "Triangle"
+        confusion: "Type-of (Hyponymy) vs Part-of"
+        explanation: "An acute triangle IS A triangle, not a component part inside a triangle."
+      - source: "Rectangle"
+        target: "Parallelogram"
+        confusion: "Special case / Subtype"
+        explanation: "A rectangle is a specific classification of parallelogram, not a part of one."
+    evidence_requirements:
+      min_textual_support: "Text explicitly indicates that the source is a constituent, element, segment, or structural component of the target whole."
+      allowed_cues:
+        - "component of"
+        - "part of"
+        - "element of"
+        - "consists of"
+        - "constituent of"
+        - "sides of"
+    structural_constraints:
+      is_symmetric: false
+      allow_self_loops: false
+      acyclic_required: true
+
+  Application:
+    canonical_name: "Application"
+    direction: "directed"
+    source_role: "applied_concept"
+    target_role: "domain_or_task"
+    definition: >
+      A directed relationship where the source concept (e.g., theorem, formula, algorithm, method)
+      is applied to, used within, or operationalized to solve a target problem, task, or domain.
+    required_distinction: >
+      Actual functional use or operational application, not incidental co-occurrence or mere proximity in problem sets.
+    positive_examples:
+      - source: "Pythagorean Theorem"
+        target: "Distance Formula"
+        explanation: "The Pythagorean theorem is directly applied and operationalized to calculate Euclidean distances."
+      - source: "Coordinate Plane"
+        target: "Midpoint Formula"
+        explanation: "The midpoint formula is applied to coordinate points within the coordinate plane."
+    negative_examples:
+      - source: "Triangle"
+        target: "Geometry"
+        confusion: "Topic inclusion"
+        explanation: "Geometry is the broad academic subject, not a specific functional application task."
+      - source: "Ruler"
+        target: "Protractor"
+        confusion: "Co-occurring tools"
+        explanation: "Both are measurement instruments, but neither is an operational application of the other."
+    evidence_requirements:
+      min_textual_support: "Text explicitly demonstrates that the source concept is used to calculate, prove, construct, or solve the target."
+      allowed_cues:
+        - "applied to"
+        - "applied in"
+        - "used to find"
+        - "used to calculate"
+        - "used to determine"
+        - "solves"
+        - "computes"
+    structural_constraints:
+      is_symmetric: false
+      allow_self_loops: false
+      acyclic_required: false
+
+  Extension:
+    canonical_name: "Extension"
+    direction: "directed"
+    source_role: "base_concept"
+    target_role: "extended_concept"
+    definition: >
+      A directed relationship where the extended concept generalizes, enriches, builds upon,
+      or elevates the base concept into higher dimensions, broader cases, or advanced abstractions.
+    required_distinction: >
+      Generalization, enrichment, or dimensional expansion, not merely a later topic in the textbook
+      or an elementary prerequisite.
+    positive_examples:
+      - source: "Circle"
+        target: "Sphere"
+        explanation: "A sphere is the 3-dimensional geometric extension of a 2-dimensional circle."
+      - source: "Pythagorean Theorem"
+        target: "Law of Cosines"
+        explanation: "The Law of Cosines is the generalized extension of the Pythagorean Theorem for non-right triangles."
+      - source: "Polygon"
+        target: "Polyhedron"
+        explanation: "A polyhedron is the 3D solid extension constructed from 2D polygonal faces."
+    negative_examples:
+      - source: "Addition"
+        target: "Multiplication"
+        confusion: "Prerequisite vs Extension"
+        explanation: "While related, prerequisite dependencies specify necessary knowledge; extension focuses on theoretical generalization."
+      - source: "Angle"
+        target: "Triangle"
+        confusion: "Composition vs Extension"
+        explanation: "A triangle is composed of angles (Part-of), not an extension of the angle concept itself."
+    evidence_requirements:
+      min_textual_support: "Text indicates that the target concept extends, generalizes, or elevates the source concept into higher dimensions or broader scopes."
+      allowed_cues:
+        - "generalization of"
+        - "generalizes"
+        - "extension of"
+        - "extends into"
+        - "3D extension of"
+        - "expanded into"
+    structural_constraints:
+      is_symmetric: false
+      allow_self_loops: false
+      acyclic_required: true

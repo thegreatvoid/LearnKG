@@ -82,6 +82,7 @@ def run_educational_pipeline(
         print(f"    - Parsing file: {f.name} ...")
         blocks = parse_document(f)
         all_parsed_blocks.extend(blocks)
+    full_text = "\n\n".join(b.text for b in all_parsed_blocks)
     print(f"[+] Step 1 Complete: Extracted {len(all_parsed_blocks)} structural blocks.")
 
     # -------------------------------------------------------------------------
@@ -218,7 +219,59 @@ def run_educational_pipeline(
             chunk_id=chunk.chunk_id,
         )
 
-    # D. Extract Neural Prerequisite Relations using Cross-Encoder on GPU
+    # D. Generate Candidate Pairs with Provenance (Phase 3)
+    print("\n[*] Generating Multi-Channel Candidate Pairs with Provenance...")
+    import pandas as pd
+    import json
+    from .candidate_generator import CandidateGenerator
+    cand_gen = CandidateGenerator(normalizer, chunks)
+    candidate_pairs = cand_gen.generate_candidates(per_concept_limit=10, max_total_candidates=1500)
+    cand_csv = output_path / "candidate_pairs.csv"
+    pd.DataFrame([c.to_dict() for c in candidate_pairs]).to_csv(cand_csv, index=False)
+    print(f"[+] Candidate pairs generated: {len(candidate_pairs)} -> {cand_csv.name}")
+
+    # E. LLM-Based Multi-Relation Extraction & Automatic Verification (Phases 4 & 5)
+    verification_records = []
+    if use_llm:
+        print("\n[*] Initializing Multi-Relation LLM Extractor & Verifier...")
+        from .multi_relation_extractor import MultiRelationExtractor
+        from .verifier import EvidenceVerifier
+        from kg_extract.backend import OllamaBackend
+        backend = None
+        try:
+            backend = OllamaBackend(model=model or "qwen2.5:3b-instruct")
+        except Exception as e:
+            print(f"[!] Warning: Ollama backend unavailable ({e}); proceeding without live LLM.")
+
+        if backend is not None:
+            extractor = MultiRelationExtractor(backend=backend)
+            print(f"[*] Extracting relationships over {min(len(candidate_pairs), 100)} top candidate pairs...")
+            proposals = extractor.extract_all(candidate_pairs[:100])
+            print(f"[+] LLM extraction complete: {extractor.counters['accepted_candidates']} accepted, {extractor.counters['rejected_candidates']} rejected.")
+
+            verifier = EvidenceVerifier(full_text=full_text, normalizer=normalizer, verifier_backend=backend)
+            accepted_recs, rejected_recs = verifier.verify_all(proposals)
+            verification_records = [r.to_dict() for r in (accepted_recs + rejected_recs)]
+
+            diag_path = output_path / "verification_diagnostics.json"
+            diag_path.write_text(json.dumps([r.to_dict() for r in rejected_recs], indent=2))
+            print(f"[+] Automatic Evidence Verification: {len(accepted_recs)} verified supported, {len(rejected_recs)} rejected/uncertain -> {diag_path.name}")
+
+            for rec in accepted_recs:
+                p = rec.proposal
+                rel = relation_manager.add_relation(
+                    source_name=p.source_name,
+                    target_name=p.target_name,
+                    relation_type=p.relation_type,
+                    evidence=p.evidence_quote,
+                    source="llm_verified",
+                )
+                if rel:
+                    rel.verification_status = rec.status
+                    rel.extraction_confidence = rec.confidence
+                    rel.evidence_support = 1.0 if rec.quote_in_text else 0.5
+
+    # F. Extract Neural Prerequisite Relations using Cross-Encoder on GPU/CPU
     if use_neural_model:
         try:
             from .neural_prerequisite_extractor import NeuralPrerequisiteExtractor
@@ -238,6 +291,15 @@ def run_educational_pipeline(
         except Exception as e:
             print(f"[-] Neural extraction skipped due to error: {e}")
 
+    # G. Evidence Verification for Rule/Neural Edges
+    from .verifier import EvidenceVerifier
+    fallback_verifier = EvidenceVerifier(full_text=full_text, normalizer=normalizer)
+    for r in relation_manager.relations:
+        if r.verification_status == "UNVERIFIED":
+            quote_ok = fallback_verifier.check_quote_in_source(r.evidence)
+            r.verification_status = "VERIFIED_SUPPORTED" if quote_ok else "INSUFFICIENT_EVIDENCE"
+            r.evidence_support = round(min(1.0, (r.cooccurrence_count / 3.0) * 0.5 + (1.0 if quote_ok else 0.0) * 0.5), 4)
+
     # Step 9: edge weights from the whole text (co-occurrence and sections need every chunk)
     relation_manager.finalize_weights(chunks, compute_embeddings=embedding_similarity, scheme=weighting_scheme)
     print(f"[+] Relation stats: {dict(relation_manager.stats)}")
@@ -251,6 +313,24 @@ def run_educational_pipeline(
         relation_manager=relation_manager,
         output_dir=output_path,
     )
+
+    # -------------------------------------------------------------------------
+    # Comprehensive Multi-Relation Graph Evaluation (Phase 7)
+    # -------------------------------------------------------------------------
+    print("\n[*] Running Comprehensive Multi-Relation Graph Evaluation...")
+    try:
+        from .evaluation import GraphEvaluator
+        evaluator = GraphEvaluator(
+            concepts_df=pd.read_csv(concepts_csv),
+            relations_df=pd.read_csv(relations_csv),
+            source_text=full_text,
+        )
+        eval_report = evaluator.run_full_evaluation(verification_records=verification_records)
+        eval_report_path = output_path / "evaluation_report.json"
+        eval_report_path.write_text(json.dumps(eval_report, indent=2))
+        print(f"[+] Comprehensive evaluation report generated at: {eval_report_path}")
+    except Exception as e:
+        print(f"[-] Evaluation report generation error: {e}")
 
     # -------------------------------------------------------------------------
     # Downstream: Educational Knowledge Graph

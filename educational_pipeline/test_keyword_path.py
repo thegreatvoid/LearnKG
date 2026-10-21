@@ -40,9 +40,15 @@ def edges(m):
 
 
 def test_part_of_keyword_creates_edge():
+    m, _ = manager("Segment", "Polygon")
+    m.extract_relations_from_sentences(["A segment is part of a polygon and forms its boundary."], 1, "c1")
+    assert ("segment", "polygon", "Part-of") in edges(m), edges(m)
+
+
+def test_type_of_rejected_from_part_of():
     m, _ = manager("Kite", "Quadrilateral")
     m.extract_relations_from_sentences(["A kite is a type of quadrilateral with two pairs of adjacent sides."], 1, "c1")
-    assert ("kite", "quadrilateral", "Part-of") in edges(m), edges(m)
+    assert ("kite", "quadrilateral", "Part-of") not in edges(m), edges(m)
 
 
 def test_application_keyword_creates_edge():

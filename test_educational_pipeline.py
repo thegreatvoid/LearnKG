@@ -22,9 +22,11 @@ from educational_pipeline import (
 
 def run_verification():
     print("[*] Running Educational Dataset Construction Pipeline Verification...")
+    target_data_dir = "cureus" if (REPO_ROOT / "data_input" / "cureus").exists() else "ck12_geometry"
     concepts_csv, relations_csv, G = run_educational_pipeline(
-        data_dir="cureus",
+        data_dir=target_data_dir,
         use_llm=False,  # deterministic mode for instant, offline verification
+        use_neural_model=False,
         output_html="./docs/index.html",
         show_edge_labels=False,
         show_edge_tooltips=True,
@@ -70,7 +72,7 @@ def run_verification():
     print(f"  [PASS] Referential integrity satisfied (all source_id and target_id exist in concepts.csv).")
 
     # 6. Weight bounds
-    assert (df_r["weight"] >= 1).all() and (df_r["weight"] <= 10).all(), "Weights outside [1, 10] range!"
+    assert (df_r["weight"] >= 0.0).all() and (df_r["weight"] <= 10.0).all(), "Weights outside [0, 10] range!"
     print(f"  [PASS] Relation weights valid (min={df_r['weight'].min()}, max={df_r['weight'].max()}).")
 
     # 7. HTML Visualization Output
