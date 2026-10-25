@@ -5,7 +5,13 @@ import os
 from collections import Counter
 from typing import Optional
 
-import requests
+try:
+    import requests
+    RequestException = requests.exceptions.RequestException
+except ImportError:
+    import httpx
+    requests = httpx
+    RequestException = (httpx.RequestError, httpx.HTTPStatusError)
 
 OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
 
@@ -41,7 +47,7 @@ class OllamaBackend:
                 out = json.loads(r.json()["message"]["content"])
                 self.counters["llm_ok"] += 1
                 return out
-            except (requests.exceptions.RequestException, json.JSONDecodeError, KeyError) as exc:
+            except (RequestException, json.JSONDecodeError, KeyError) as exc:
                 self.counters["llm_fail"] += 1
                 last = exc
         self.counters["llm_gave_up"] += 1

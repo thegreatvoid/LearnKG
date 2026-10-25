@@ -247,10 +247,14 @@
       "Trigonometry",
       "Vertex"
     ],
-    "kg_concepts_in_hard_coded_list": 93,
-    "definitions_valid": 47,
+    "kg_concepts_in_hard_coded_list": 94,
+    "definitions_valid": 67,
     "definitions_total": 130,
-    "definition_kind": null,
+    "definition_kind": {
+      "definitional": 73,
+      "mention": 35,
+      "": 22
+    },
     "investigated_terms": [
       {
         "term": "SSS",

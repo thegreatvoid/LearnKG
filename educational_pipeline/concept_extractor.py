@@ -54,13 +54,15 @@ def _is_boilerplate_concept(name: str) -> bool:
     low = name.lower().strip()
     if low in _BOILERPLATE_BLOCKLIST:
         return True
-    # Pure numeric / symbol strings are not concepts
-    if not re.search(r"[a-zA-Z]{3,}", name):
-        return True
-    # Very short (≤ 2 chars) single tokens are noise (e.g. "SA", "BY", "NC")
-    tokens = name.split()
-    if len(tokens) == 1 and len(name) <= 2:
-        return True
+    is_acronym = bool(re.fullmatch(r"[A-Z]{2,4}", name.strip()))
+    if not is_acronym:
+        # Pure numeric / symbol strings are not concepts
+        if not re.search(r"[a-zA-Z]{3,}", name):
+            return True
+        # Very short (≤ 2 chars) single tokens are noise (e.g. "SA", "BY", "NC")
+        tokens = name.split()
+        if len(tokens) == 1 and len(name) <= 2:
+            return True
     return False
 
 

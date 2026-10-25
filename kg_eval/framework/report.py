@@ -12,7 +12,7 @@ from .common import KGS, OUT, RELATION_TYPES
 
 
 def load(rel):
-    return json.loads((OUT / rel).read_text())
+    return json.loads((OUT / rel).read_text(encoding="utf-8"))
 
 
 def f(x, nd=3):
@@ -325,7 +325,7 @@ def main():
       ", `data_input/ck12_geometry/` (textbook, AL-CPL, gold_pairs.csv). Outputs: `data_output/eval_framework/` "
       "(`concepts/`, `prerequisite/`, `relations/`, `weights/`, `bigs/`, `gap_proxy/`, `annotation/`, `REPORT.md`). "
       "Models: `sentence-transformers/all-MiniLM-L6-v2` (BIGS, grounding, definition embeddings).")
-    (OUT / "REPORT.md").write_text("\n".join(L) + "\n")
+    (OUT / "REPORT.md").write_text("\n".join(L) + "\n", encoding="utf-8")
     print(f"wrote {OUT / 'REPORT.md'}")
 
 

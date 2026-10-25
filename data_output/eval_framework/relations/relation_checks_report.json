@@ -131,38 +131,38 @@
       "uses_book_order": false,
       "by_type": {
         "Prerequisite": {
-          "edges": 34,
-          "with_support_sentence": 17,
+          "edges": 16,
+          "with_support_sentence": 12,
           "cue_supports": 1,
           "cue_reverse": 0,
-          "cue_none": 33,
+          "cue_none": 15,
           "cue_not_independent": 0,
-          "flagged_any": 34,
+          "flagged_any": 16,
           "flag_counts": {
-            "book_order_backward": 13,
-            "no_support_sentence": 17,
-            "no_Prerequisite_cue": 14,
-            "alcpl_negative": 5,
-            "type_conflict": 9,
-            "support_without_relation_cue": 2
+            "book_order_backward": 5,
+            "no_support_sentence": 4,
+            "no_Prerequisite_cue": 10,
+            "alcpl_negative": 3,
+            "type_conflict": 1,
+            "support_without_relation_cue": 1
           },
-          "flagged_contradiction": 14,
-          "flagged_weak_evidence": 33,
-          "flagged_semantic_or_type": 9,
-          "co_occurrence_only": 2,
-          "direction_inconsistencies": 13,
+          "flagged_contradiction": 6,
+          "flagged_weak_evidence": 15,
+          "flagged_semantic_or_type": 1,
+          "co_occurrence_only": 1,
+          "direction_inconsistencies": 5,
           "structural_violations": 0,
-          "grounding_distance_median": 0.26449999999999996,
+          "grounding_distance_median": 0.2942,
           "grounding_distance_iqr": [
-            0.221825,
-            0.311325
+            0.258075,
+            0.369375
           ],
           "alcpl": {
-            "unlabelled": 23,
-            "correct": 6,
-            "negative": 5
+            "unlabelled": 8,
+            "correct": 5,
+            "negative": 3
           },
-          "book_order_forward_rate": 0.5294117647058824,
+          "book_order_forward_rate": 0.6875,
           "examples_pass": [],
           "examples_flagged": [
             {
@@ -186,12 +186,12 @@
           ]
         },
         "Part-of": {
-          "edges": 6,
-          "with_support_sentence": 6,
-          "cue_supports": 1,
+          "edges": 7,
+          "with_support_sentence": 7,
+          "cue_supports": 2,
           "cue_reverse": 2,
           "cue_none": 3,
-          "cue_not_independent": 0,
+          "cue_not_independent": 1,
           "flagged_any": 5,
           "flag_counts": {
             "support_without_relation_cue": 2,
@@ -204,12 +204,17 @@
           "co_occurrence_only": 2,
           "direction_inconsistencies": 2,
           "structural_violations": 0,
-          "grounding_distance_median": 0.25839999999999996,
+          "grounding_distance_median": 0.2583,
           "grounding_distance_iqr": [
-            0.2193,
-            0.258725
+            0.2154,
+            0.25865
           ],
           "examples_pass": [
+            {
+              "source": "Ray",
+              "target": "Line",
+              "example_sentence": "A ray is part of a line that starts at one endpoint and extends infinitely in one direction."
+            },
             {
               "source": "Angle",
               "target": "Supplementary",
@@ -271,12 +276,12 @@
           "cue_supports": 15,
           "cue_reverse": 0,
           "cue_none": 31,
-          "cue_not_independent": 0,
+          "cue_not_independent": 45,
           "flagged_any": 44,
           "flag_counts": {
             "possible_congruence_confusion": 43,
             "no_support_sentence": 31,
-            "type_conflict": 9,
+            "type_conflict": 1,
             "kind_of_name_pattern": 1
           },
           "flagged_contradiction": 0,
@@ -288,9 +293,9 @@
           "grounding_distance_median": 0.2984,
           "grounding_distance_iqr": [
             0.235,
-            0.3625
+            0.358625
           ],
-          "def_embedding_median": 0.23504999999999998,
+          "def_embedding_median": 0.1485,
           "def_lexical_median": 0.0,
           "examples_pass": [
             {
@@ -299,8 +304,8 @@
               "example_sentence": "A cylinder is like a prism with circular bases."
             },
             {
-              "source": "Cylinder",
-              "target": "Prism",
+              "source": "Prism",
+              "target": "Cylinder",
               "example_sentence": "A cylinder is like a prism with circular bases."
             }
           ],

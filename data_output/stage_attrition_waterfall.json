@@ -1,0 +1,36 @@
+{
+  "total_gold_positive_pairs": 524,
+  "kgx_v2": {
+    "concept_missing_absent_from_book": 80,
+    "concept_missing_present_not_extracted": 151,
+    "not_a_candidate": 141,
+    "relatedness_filter": 0,
+    "top_k_cap": 0,
+    "llm_rejection": 143,
+    "dag_pruning": 0,
+    "direction_wrong": 5,
+    "survived_in_graph": 4
+  },
+  "kgx_v2_hybrid": {
+    "concept_missing_absent_from_book": 80,
+    "concept_missing_present_not_extracted": 151,
+    "not_a_candidate": 0,
+    "relatedness_filter": 172,
+    "top_k_cap": 31,
+    "llm_rejection": 0,
+    "dag_pruning": 0,
+    "direction_wrong": 15,
+    "survived_in_graph": 75
+  },
+  "rule_v3": {
+    "concept_missing_absent_from_book": 119,
+    "concept_missing_present_not_extracted": 114,
+    "not_a_candidate": 190,
+    "relatedness_filter": 92,
+    "top_k_cap": 0,
+    "llm_rejection": 5,
+    "dag_pruning": 0,
+    "direction_wrong": 0,
+    "survived_in_graph": 4
+  }
+}

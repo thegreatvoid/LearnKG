@@ -94,8 +94,12 @@ def clean_term(t: str) -> Optional[str]:
     t = re.sub(r"\s+", " ", t).strip(" \t\n.,;:()[]\"'")
     t = re.sub(r"^(?:an?|the|this|that|these|those|its|their|our|each|any|every|some)\s+", "", t, flags=re.I)
     w = t.split()
-    if not (1 <= len(w) <= 4) or len(t) < 3 or t.lower() in GENERIC or not re.search(r"[A-Za-z]{3,}", t):
+    if not (1 <= len(w) <= 4) or t.lower() in GENERIC:
         return None
+    is_acronym = bool(re.fullmatch(r"[A-Z]{2,4}", t))
+    if not is_acronym:
+        if len(t) < 3 or not re.search(r"[A-Za-z]{3,}", t):
+            return None
     if all(x.lower() in GENERIC for x in w):
         return None
     return t
@@ -188,8 +192,6 @@ def extract_concepts(chunks, backend: Optional[OllamaBackend], full_text: str, t
         if ground and not index.contains(t):
             counters["candidates_dropped_ungrounded"] += 1
             return
-        if cue == "heading" and not body.contains(t):
-            cue = "heading_part"  # only in the heading itself: a topic label, not a term the text uses
         e = pooled.setdefault(t.lower(), {"name": t, "cues": set(), "chunk": chunk, "definition": ""})
         e["cues"].add(cue)
         if cue == "llm":
@@ -223,13 +225,14 @@ def extract_concepts(chunks, backend: Optional[OllamaBackend], full_text: str, t
         rows[key] = {"name": e["name"], "cues": "+".join(sorted(e["cues"])), "freq": freq, "salience": round(s, 3),
                      "general_zipf": None if zipf is None else round(zipf, 2), "dropped": ""}
         drop = ""
-        if freq < min_freq:
+        if freq < min_freq and "heading" not in e["cues"] and "definition" not in e["cues"]:
             drop = "min_freq"
         elif weak and len(e["name"].split()) == 1:
-            # A lone word found only as a noun chunk is usually ordinary English ("sides", "states", "properties"),
-            # unless it is rare in general English ("hypotenuse"). Short all-caps tokens are rare too but are
-            # mostly point labels ("ABD"); real codes ("SSS") come with a heading or definition cue.
-            if zipf is None or zipf >= RARE_ZIPF or re.fullmatch(r"[A-Z]{1,4}", e["name"]):
+            # Frequent domain terms (freq >= 3) are preserved; lone noun-chunk acronyms are point labels
+            is_acronym = bool(re.fullmatch(r"[A-Z]{2,4}", e["name"]))
+            if is_acronym:
+                drop = "weak_single_word"
+            elif freq < 3 and (zipf is None or zipf >= RARE_ZIPF):
                 drop = "weak_single_word"
         elif weak and zipf is not None and zipf >= COMMON_ZIPF:
             drop = "weak_common_phrase"

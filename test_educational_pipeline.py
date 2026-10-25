@@ -22,7 +22,8 @@ from educational_pipeline import (
 
 def run_verification():
     print("[*] Running Educational Dataset Construction Pipeline Verification...")
-    target_data_dir = "cureus" if (REPO_ROOT / "data_input" / "cureus").exists() else "ck12_geometry"
+    cureus_dir = REPO_ROOT / "data_input" / "cureus"
+    target_data_dir = "cureus" if (cureus_dir.exists() and any(cureus_dir.iterdir())) else "ck12_geometry"
     concepts_csv, relations_csv, G = run_educational_pipeline(
         data_dir=target_data_dir,
         use_llm=False,  # deterministic mode for instant, offline verification

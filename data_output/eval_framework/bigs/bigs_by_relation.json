@@ -6,102 +6,102 @@
   "kgs": {
     "rule_2026-10-11": {
       "Prerequisite": {
-        "triples": 34,
+        "triples": 16,
         "full": {
-          "bigs_to_graph": 0.5050960183143616,
-          "bigs_from_graph": 0.2743455469608307,
-          "sym_bigs": 0.4115328395269009
+          "bigs_to_graph": 0.5598969459533691,
+          "bigs_from_graph": 0.32049721479415894,
+          "sym_bigs": 0.4657919054763947
         },
         "subset_10": {
-          "bigs_to_graph": 0.5982372760772705,
-          "bigs_from_graph": 0.27773970514535906,
-          "sym_bigs": 0.48393966412122713
+          "bigs_to_graph": 0.5951361989974976,
+          "bigs_from_graph": 0.3203830903768539,
+          "sym_bigs": 0.49263721473447414
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.013315617321178943,
-          "bigs_from_graph": 0.021883606059920794,
-          "sym_bigs": 0.011998154154076363
+          "bigs_to_graph": 0.009779859179571858,
+          "bigs_from_graph": 0.019863326712336947,
+          "sym_bigs": 0.011809090702392026
         },
         "evidence_examples": [
           {
             "triple": "Conjecture Prerequisite Inductive Reasoning",
             "nearest_sentence": "Inductive reasoning uses specific examples to make a general conclusion called a conjecture.",
-            "distance": 0.25000542402267456
+            "distance": 0.25000452995300293
           },
           {
             "triple": "Deductive Reasoning Prerequisite Proof",
             "nearest_sentence": "2.3 Deductive Reasoning",
-            "distance": 0.27403998374938965
+            "distance": 0.27403974533081055
           }
         ]
       },
       "Part-of": {
-        "triples": 6,
+        "triples": 7,
         "full": {
-          "bigs_to_graph": 0.649488091468811,
-          "bigs_from_graph": 0.23796111345291138,
-          "sym_bigs": 0.5198354885363968
+          "bigs_to_graph": 0.6304575204849243,
+          "bigs_from_graph": 0.23604203760623932,
+          "sym_bigs": 0.5018706491320788
         },
         "evidence_examples": [
           {
-            "triple": "Angle Part-of Complementary",
-            "nearest_sentence": "Complementary angles are two angles whose measures sum to 90 degrees.",
-            "distance": 0.20632755756378174
+            "triple": "Ray Part-of Line",
+            "nearest_sentence": "A ray is part of a line that starts at one endpoint and extends infinitely in one direction.",
+            "distance": 0.22452735900878906
           },
           {
-            "triple": "Angle Part-of Supplementary",
-            "nearest_sentence": "Supplementary angles are two angles whose measures sum to 180 degrees.",
-            "distance": 0.18521642684936523
+            "triple": "Angle Part-of Complementary",
+            "nearest_sentence": "Complementary angles are two angles whose measures sum to 90 degrees.",
+            "distance": 0.20632749795913696
           }
         ]
       },
       "Application": {
         "triples": 2,
         "full": {
-          "bigs_to_graph": 0.7327626347541809,
-          "bigs_from_graph": 0.27221161127090454,
-          "sym_bigs": 0.609070919655077
+          "bigs_to_graph": 0.7327625155448914,
+          "bigs_from_graph": 0.2722115218639374,
+          "sym_bigs": 0.6090707792065828
         },
         "evidence_examples": [
           {
             "triple": "Theorem Application Proof",
             "nearest_sentence": "Chapter 2: Reasoning and Proof",
-            "distance": 0.376659631729126
+            "distance": 0.37665969133377075
           },
           {
             "triple": "Triangle Application Congruence",
             "nearest_sentence": "Chapter 4: Triangles and Congruence",
-            "distance": 0.1677635908126831
+            "distance": 0.167763352394104
           }
         ]
       },
       "Similarity": {
         "triples": 46,
         "full": {
-          "bigs_to_graph": 0.5799396634101868,
-          "bigs_from_graph": 0.2963559031486511,
-          "sym_bigs": 0.47393110258065174
+          "bigs_to_graph": 0.5813891291618347,
+          "bigs_from_graph": 0.29552701115608215,
+          "sym_bigs": 0.47483876862873564
         },
         "subset_10": {
-          "bigs_to_graph": 0.6307368791103363,
-          "bigs_from_graph": 0.2929264295101166,
-          "sym_bigs": 0.5150645446199702
+          "bigs_to_graph": 0.6312584948539733,
+          "bigs_from_graph": 0.2916909259557724,
+          "sym_bigs": 0.515218883623265
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.014637141296267253,
-          "bigs_from_graph": 0.023217148657766643,
-          "sym_bigs": 0.015006806648286823
+          "bigs_to_graph": 0.014454388104416837,
+          "bigs_from_graph": 0.021155421645039266,
+          "sym_bigs": 0.01441400228244333
         },
         "evidence_examples": [
           {
             "triple": "Angle Similarity Congruence",
             "nearest_sentence": "The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",
-            "distance": 0.20436882972717285
+            "distance": 0.2043691873550415
           },
           {
             "triple": "Angle Similarity Congruence Properties",
             "nearest_sentence": "The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",
-            "distance": 0.20731282234191895
+            "distance": 0.20731288194656372
           }
         ]
       },
@@ -109,49 +109,49 @@
         "triples": 2,
         "full": {
           "bigs_to_graph": 0.6999891400337219,
-          "bigs_from_graph": 0.2598505914211273,
-          "sym_bigs": 0.5730410643700895
+          "bigs_from_graph": 0.25985047221183777,
+          "sym_bigs": 0.5730410445359448
         },
         "evidence_examples": [
           {
             "triple": "Parallelogram Extension Rectangle",
             "nearest_sentence": "A rectangle is a parallelogram with four right angles.",
-            "distance": 0.2520371079444885
+            "distance": 0.252036988735199
           },
           {
             "triple": "Pythagorean Theorem Extension Right Triangle",
             "nearest_sentence": "8.1 The Pythagorean Theorem",
-            "distance": 0.2676640748977661
+            "distance": 0.26766395568847656
           }
         ]
       },
       "ALL": {
-        "triples": 90,
+        "triples": 73,
         "full": {
-          "bigs_to_graph": 0.46569663286209106,
-          "bigs_from_graph": 0.2828001379966736,
-          "sym_bigs": 0.387612764783405
+          "bigs_to_graph": 0.4813550114631653,
+          "bigs_from_graph": 0.29367968440055847,
+          "sym_bigs": 0.40189409324420833
         },
         "subset_10": {
-          "bigs_to_graph": 0.601090589761734,
-          "bigs_from_graph": 0.2840087974071503,
-          "sym_bigs": 0.4878018822982381
+          "bigs_to_graph": 0.604155832529068,
+          "bigs_from_graph": 0.29553217321634295,
+          "sym_bigs": 0.4932910277895149
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.013406250908453692,
-          "bigs_from_graph": 0.01654959230583135,
-          "sym_bigs": 0.012566592667151285
+          "bigs_to_graph": 0.013926323159073472,
+          "bigs_from_graph": 0.022938015441962577,
+          "sym_bigs": 0.01482880890092281
         },
         "evidence_examples": [
+          {
+            "triple": "Ray Part-of Line",
+            "nearest_sentence": "A ray is part of a line that starts at one endpoint and extends infinitely in one direction.",
+            "distance": 0.22452735900878906
+          },
           {
             "triple": "Angle Part-of Complementary",
             "nearest_sentence": "Complementary angles are two angles whose measures sum to 90 degrees.",
             "distance": 0.20632755756378174
-          },
-          {
-            "triple": "Angle Part-of Supplementary",
-            "nearest_sentence": "Supplementary angles are two angles whose measures sum to 180 degrees.",
-            "distance": 0.18521642684936523
           }
         ]
       }
@@ -160,30 +160,30 @@
       "Prerequisite": {
         "triples": 27,
         "full": {
-          "bigs_to_graph": 0.5190532803535461,
+          "bigs_to_graph": 0.5190533399581909,
           "bigs_from_graph": 0.28979751467704773,
-          "sym_bigs": 0.4264873717317291
+          "sym_bigs": 0.426487414109896
         },
         "subset_10": {
-          "bigs_to_graph": 0.5969841396808624,
-          "bigs_from_graph": 0.2894089102745056,
-          "sym_bigs": 0.48582134992528353
+          "bigs_to_graph": 0.5969842004776001,
+          "bigs_from_graph": 0.28940893203020096,
+          "sym_bigs": 0.48582140507436194
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.012279102065997353,
-          "bigs_from_graph": 0.022845357945579247,
-          "sym_bigs": 0.013354555586839328
+          "bigs_to_graph": 0.012279098870187738,
+          "bigs_from_graph": 0.02284535352693021,
+          "sym_bigs": 0.013354552846490729
         },
         "evidence_examples": [
           {
             "triple": "Conjecture Prerequisite Inductive Reasoning",
             "nearest_sentence": "Inductive reasoning uses specific examples to make a general conclusion called a conjecture.",
-            "distance": 0.2500053644180298
+            "distance": 0.2500046491622925
           },
           {
             "triple": "Deductive Reasoning Prerequisite Proof",
             "nearest_sentence": "2.3 Deductive Reasoning",
-            "distance": 0.27403998374938965
+            "distance": 0.2740398049354553
           }
         ]
       },
@@ -191,69 +191,69 @@
         "triples": 7,
         "full": {
           "bigs_to_graph": 0.6304575204849243,
-          "bigs_from_graph": 0.23604193329811096,
-          "sym_bigs": 0.5018706269586193
+          "bigs_from_graph": 0.23604203760623932,
+          "sym_bigs": 0.5018706491320788
         },
         "evidence_examples": [
           {
             "triple": "Ray Part-of Line",
             "nearest_sentence": "A ray is part of a line that starts at one endpoint and extends infinitely in one direction.",
-            "distance": 0.2245270013809204
+            "distance": 0.22452735900878906
           },
           {
             "triple": "Angle Part-of Complementary",
             "nearest_sentence": "Complementary angles are two angles whose measures sum to 90 degrees.",
-            "distance": 0.20632755756378174
+            "distance": 0.20632749795913696
           }
         ]
       },
       "Application": {
         "triples": 2,
         "full": {
-          "bigs_to_graph": 0.7327626347541809,
-          "bigs_from_graph": 0.27221161127090454,
-          "sym_bigs": 0.609070919655077
+          "bigs_to_graph": 0.7327625155448914,
+          "bigs_from_graph": 0.2722115218639374,
+          "sym_bigs": 0.6090707792065828
         },
         "evidence_examples": [
           {
             "triple": "Theorem Application Proof",
             "nearest_sentence": "Chapter 2: Reasoning and Proof",
-            "distance": 0.376659631729126
+            "distance": 0.37665969133377075
           },
           {
             "triple": "Triangle Application Congruence",
             "nearest_sentence": "Chapter 4: Triangles and Congruence",
-            "distance": 0.1677635908126831
+            "distance": 0.167763352394104
           }
         ]
       },
       "Similarity": {
         "triples": 46,
         "full": {
-          "bigs_to_graph": 0.5813890695571899,
+          "bigs_to_graph": 0.5813891291618347,
           "bigs_from_graph": 0.29552701115608215,
-          "sym_bigs": 0.4748387217242479
+          "sym_bigs": 0.47483876862873564
         },
         "subset_10": {
-          "bigs_to_graph": 0.6339229702949524,
-          "bigs_from_graph": 0.296585294008255,
-          "sym_bigs": 0.5187595732271506
+          "bigs_to_graph": 0.6339229953289032,
+          "bigs_from_graph": 0.29658527493476866,
+          "sym_bigs": 0.5187595900872239
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.016320313539672306,
-          "bigs_from_graph": 0.017249845089650634,
-          "sym_bigs": 0.014518884387931443
+          "bigs_to_graph": 0.016320316309396687,
+          "bigs_from_graph": 0.017249845374313417,
+          "sym_bigs": 0.014518894590145352
         },
         "evidence_examples": [
           {
             "triple": "Angle Similarity Congruence",
             "nearest_sentence": "The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",
-            "distance": 0.20436882972717285
+            "distance": 0.2043691873550415
           },
           {
             "triple": "Angle Similarity Congruence Properties",
             "nearest_sentence": "The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",
-            "distance": 0.20731282234191895
+            "distance": 0.20731288194656372
           }
         ]
       },
@@ -261,49 +261,49 @@
         "triples": 2,
         "full": {
           "bigs_to_graph": 0.6999891400337219,
-          "bigs_from_graph": 0.2598505914211273,
-          "sym_bigs": 0.5730410643700895
+          "bigs_from_graph": 0.25985047221183777,
+          "sym_bigs": 0.5730410445359448
         },
         "evidence_examples": [
           {
             "triple": "Parallelogram Extension Rectangle",
             "nearest_sentence": "A rectangle is a parallelogram with four right angles.",
-            "distance": 0.2520371079444885
+            "distance": 0.252036988735199
           },
           {
             "triple": "Pythagorean Theorem Extension Right Triangle",
             "nearest_sentence": "8.1 The Pythagorean Theorem",
-            "distance": 0.2676640748977661
+            "distance": 0.26766395568847656
           }
         ]
       },
       "ALL": {
         "triples": 84,
         "full": {
-          "bigs_to_graph": 0.46575868129730225,
+          "bigs_to_graph": 0.465758740901947,
           "bigs_from_graph": 0.2873237729072571,
-          "sym_bigs": 0.3893083168908241
+          "sym_bigs": 0.38930835583290846
         },
         "subset_10": {
-          "bigs_to_graph": 0.6029824221134186,
-          "bigs_from_graph": 0.28868532747030257,
-          "sym_bigs": 0.490601433858254
+          "bigs_to_graph": 0.6029824542999268,
+          "bigs_from_graph": 0.2886853283643723,
+          "sym_bigs": 0.4906014605747186
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.013315958670002409,
-          "bigs_from_graph": 0.021717025485125677,
-          "sym_bigs": 0.013140094013225108
+          "bigs_to_graph": 0.013315963635993619,
+          "bigs_from_graph": 0.021717014028830802,
+          "sym_bigs": 0.013140096465823202
         },
         "evidence_examples": [
           {
             "triple": "Ray Part-of Line",
             "nearest_sentence": "A ray is part of a line that starts at one endpoint and extends infinitely in one direction.",
-            "distance": 0.2245272397994995
+            "distance": 0.2245272994041443
           },
           {
             "triple": "Angle Part-of Complementary",
             "nearest_sentence": "Complementary angles are two angles whose measures sum to 90 degrees.",
-            "distance": 0.20632755756378174
+            "distance": 0.20632719993591309
           }
         ]
       }
@@ -313,89 +313,89 @@
         "triples": 54,
         "full": {
           "bigs_to_graph": 0.4848410189151764,
-          "bigs_from_graph": 0.27637389302253723,
-          "sym_bigs": 0.3981482477481296
+          "bigs_from_graph": 0.2763739824295044,
+          "sym_bigs": 0.39814827867186897
         },
         "subset_10": {
-          "bigs_to_graph": 0.5961823499202729,
-          "bigs_from_graph": 0.26989743411540984,
-          "sym_bigs": 0.48031059395177406
+          "bigs_to_graph": 0.59618239402771,
+          "bigs_from_graph": 0.2698975443840027,
+          "sym_bigs": 0.48031065884127794
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.016694854438846524,
-          "bigs_from_graph": 0.027715314261804118,
-          "sym_bigs": 0.016476203671236936
+          "bigs_to_graph": 0.016694856652875942,
+          "bigs_from_graph": 0.02771529790186681,
+          "sym_bigs": 0.01647619680497597
         },
         "evidence_examples": [
           {
             "triple": "acute angle Prerequisite angle",
             "nearest_sentence": "Acute angles measure less than 90 degrees.",
-            "distance": 0.23089712858200073
+            "distance": 0.23089689016342163
           },
           {
             "triple": "acute angle Prerequisite angle measure",
             "nearest_sentence": "Acute angles measure less than 90 degrees.",
-            "distance": 0.18912291526794434
+            "distance": 0.18912261724472046
           }
         ]
       },
       "Part-of": {
         "triples": 216,
         "full": {
-          "bigs_to_graph": 0.34775310754776,
+          "bigs_to_graph": 0.3477531671524048,
           "bigs_from_graph": 0.25399306416511536,
-          "sym_bigs": 0.3040166301676607
+          "sym_bigs": 0.3040166641007823
         },
         "subset_10": {
-          "bigs_to_graph": 0.5953663098812103,
-          "bigs_from_graph": 0.25683676660060883,
-          "sym_bigs": 0.47636359100844133
+          "bigs_to_graph": 0.5953663218021393,
+          "bigs_from_graph": 0.2568367755413055,
+          "sym_bigs": 0.47636360320164906
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.01650815440434014,
-          "bigs_from_graph": 0.02626897417356166,
-          "sym_bigs": 0.015576169724210883
+          "bigs_to_graph": 0.016508153396402398,
+          "bigs_from_graph": 0.026268974422756455,
+          "sym_bigs": 0.015576168918126314
         },
         "evidence_examples": [
           {
             "triple": "acute angle Part-of triangle",
             "nearest_sentence": "An acute triangle has all angles less than 90 degrees.",
-            "distance": 0.25827527046203613
+            "distance": 0.25827568769454956
           },
           {
             "triple": "acute triangle Part-of angle",
             "nearest_sentence": "An acute triangle has all angles less than 90 degrees.",
-            "distance": 0.23264777660369873
+            "distance": 0.23264753818511963
           }
         ]
       },
       "Application": {
         "triples": 228,
         "full": {
-          "bigs_to_graph": 0.3751809597015381,
+          "bigs_to_graph": 0.3751809895038605,
           "bigs_from_graph": 0.2981491684913635,
-          "sym_bigs": 0.33890145198131516
+          "sym_bigs": 0.33890146866315773
         },
         "subset_10": {
-          "bigs_to_graph": 0.608830794095993,
-          "bigs_from_graph": 0.29706353217363357,
-          "sym_bigs": 0.4975481524444293
+          "bigs_to_graph": 0.6088308131694794,
+          "bigs_from_graph": 0.2970635497570038,
+          "sym_bigs": 0.4975481726278268
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.01394088026987945,
-          "bigs_from_graph": 0.024840085028266814,
-          "sym_bigs": 0.015100896720958901
+          "bigs_to_graph": 0.013940881465634061,
+          "bigs_from_graph": 0.024840089005559837,
+          "sym_bigs": 0.015100899770519519
         },
         "evidence_examples": [
           {
             "triple": "acute triangle Application degree",
             "nearest_sentence": "An acute triangle has all angles less than 90 degrees.",
-            "distance": 0.3444565534591675
+            "distance": 0.3444564938545227
           },
           {
             "triple": "Alternate exterior angles Application alternate exterior angles theorem",
             "nearest_sentence": "The alternate exterior angles theorem states that if two parallel lines are cut by a transversal, then alternate exterior angles are congruent.",
-            "distance": 0.23577117919921875
+            "distance": 0.2357708215713501
           }
         ]
       },
@@ -403,14 +403,14 @@
         "triples": 4,
         "full": {
           "bigs_to_graph": 0.6420451402664185,
-          "bigs_from_graph": 0.24623936414718628,
-          "sym_bigs": 0.5146019215337615
+          "bigs_from_graph": 0.2462395280599594,
+          "sym_bigs": 0.5146019555207015
         },
         "evidence_examples": [
           {
             "triple": "altitude Similarity median",
             "nearest_sentence": "5.3 Medians and Altitudes",
-            "distance": 0.2504584789276123
+            "distance": 0.25045859813690186
           },
           {
             "triple": "congruent Similarity Congruent arcs",
@@ -422,19 +422,19 @@
       "Extension": {
         "triples": 43,
         "full": {
-          "bigs_to_graph": 0.5218837261199951,
-          "bigs_from_graph": 0.3119626045227051,
-          "sym_bigs": 0.435817277842966
+          "bigs_to_graph": 0.5218837857246399,
+          "bigs_from_graph": 0.31196269392967224,
+          "sym_bigs": 0.43581734939830774
         },
         "subset_10": {
-          "bigs_to_graph": 0.6310780787467957,
-          "bigs_from_graph": 0.31031486332416536,
-          "sym_bigs": 0.5193823713175014
+          "bigs_to_graph": 0.6310780847072601,
+          "bigs_from_graph": 0.31031491041183473,
+          "sym_bigs": 0.519382388068799
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.010728124001600198,
-          "bigs_from_graph": 0.01674251380880221,
-          "sym_bigs": 0.011486252244894902
+          "bigs_to_graph": 0.010728122380140492,
+          "bigs_from_graph": 0.016742515242270984,
+          "sym_bigs": 0.011486245491640736
         },
         "evidence_examples": [
           {
@@ -445,37 +445,37 @@
           {
             "triple": "angle Extension angle angle similarity postulate",
             "nearest_sentence": "The angle angle similarity postulate states that if two angles of one triangle are congruent to two angles of another, then the triangles are similar.",
-            "distance": 0.2641710042953491
+            "distance": 0.26417094469070435
           }
         ]
       },
       "ALL": {
         "triples": 545,
         "full": {
-          "bigs_to_graph": 0.2833961546421051,
+          "bigs_to_graph": 0.2833961844444275,
           "bigs_from_graph": 0.27920010685920715,
-          "sym_bigs": 0.2813042552710413
+          "sym_bigs": 0.28130427025932825
         },
         "subset_10": {
-          "bigs_to_graph": 0.5964719974994659,
-          "bigs_from_graph": 0.27773659288883207,
-          "sym_bigs": 0.48248129197792033
+          "bigs_to_graph": 0.5964720284938813,
+          "bigs_from_graph": 0.27773662120103837,
+          "sym_bigs": 0.4824813247971398
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.01708497608487692,
-          "bigs_from_graph": 0.025331805839431922,
-          "sym_bigs": 0.017228699512028968
+          "bigs_to_graph": 0.017084969345024993,
+          "bigs_from_graph": 0.025331811996860017,
+          "sym_bigs": 0.017228693843962056
         },
         "evidence_examples": [
           {
             "triple": "acute angle Prerequisite angle",
             "nearest_sentence": "Acute angles measure less than 90 degrees.",
-            "distance": 0.23089730739593506
+            "distance": 0.23089689016342163
           },
           {
             "triple": "acute angle Prerequisite angle measure",
             "nearest_sentence": "Acute angles measure less than 90 degrees.",
-            "distance": 0.18912279605865479
+            "distance": 0.18912261724472046
           }
         ]
       }
@@ -484,49 +484,49 @@
       "Prerequisite": {
         "triples": 518,
         "full": {
-          "bigs_to_graph": 0.3098220229148865,
-          "bigs_from_graph": 0.3147878050804138,
-          "sym_bigs": 0.3123138783602788
+          "bigs_to_graph": 0.30982208251953125,
+          "bigs_from_graph": 0.3147878348827362,
+          "sym_bigs": 0.31231392295674554
         },
         "subset_10": {
-          "bigs_to_graph": 0.6012749648094178,
-          "bigs_from_graph": 0.31754240751266477,
-          "sym_bigs": 0.49680965225819257
+          "bigs_to_graph": 0.6012749993801116,
+          "bigs_from_graph": 0.31754244327545167,
+          "sym_bigs": 0.4968096894100366
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.013760776471166889,
-          "bigs_from_graph": 0.025070558754051762,
-          "sym_bigs": 0.015247915959117403
+          "bigs_to_graph": 0.013760779092241094,
+          "bigs_from_graph": 0.025070559432524023,
+          "sym_bigs": 0.015247920771014226
         },
         "evidence_examples": [
           {
             "triple": "line Prerequisite line of reflection",
             "nearest_sentence": "A reflection flips a figure over a line called the line of reflection.",
-            "distance": 0.36859238147735596
+            "distance": 0.3685925006866455
           },
           {
             "triple": "angle Prerequisite central angle",
             "nearest_sentence": "A central angle is an angle formed by two radii.",
-            "distance": 0.21796470880508423
+            "distance": 0.217964768409729
           }
         ]
       },
       "Part-of": {
         "triples": 71,
         "full": {
-          "bigs_to_graph": 0.46958932280540466,
-          "bigs_from_graph": 0.2790018916130066,
-          "sym_bigs": 0.38880867813655884
+          "bigs_to_graph": 0.4695894420146942,
+          "bigs_from_graph": 0.279001921415329,
+          "sym_bigs": 0.3888087679870442
         },
         "subset_10": {
-          "bigs_to_graph": 0.5964034223556518,
-          "bigs_from_graph": 0.2714825683832169,
-          "sym_bigs": 0.4807150878726476
+          "bigs_to_graph": 0.5964034390449524,
+          "bigs_from_graph": 0.2714825463294983,
+          "sym_bigs": 0.4807150961021863
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.012887788604763566,
-          "bigs_from_graph": 0.028276146642706366,
-          "sym_bigs": 0.015714967517014983
+          "bigs_to_graph": 0.01288779574670696,
+          "bigs_from_graph": 0.02827614602665914,
+          "sym_bigs": 0.015714973585379106
         },
         "evidence_examples": [
           {
@@ -537,7 +537,7 @@
           {
             "triple": "secant Part-of circle",
             "nearest_sentence": "A secant is a line that intersects a circle at two points.",
-            "distance": 0.21512901782989502
+            "distance": 0.21512871980667114
           }
         ]
       },
@@ -545,104 +545,104 @@
         "triples": 63,
         "full": {
           "bigs_to_graph": 0.47183334827423096,
-          "bigs_from_graph": 0.2924957275390625,
-          "sym_bigs": 0.3951785133840253
+          "bigs_from_graph": 0.2924957573413849,
+          "sym_bigs": 0.3951785242737378
         },
         "subset_10": {
-          "bigs_to_graph": 0.607343841791153,
-          "bigs_from_graph": 0.29221132040023806,
-          "sym_bigs": 0.49512780709053944
+          "bigs_to_graph": 0.6073438596725463,
+          "bigs_from_graph": 0.29221133708953856,
+          "sym_bigs": 0.4951278263352623
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.01426948254149111,
-          "bigs_from_graph": 0.021470279201826807,
-          "sym_bigs": 0.013603379025182391
+          "bigs_to_graph": 0.014269480410427545,
+          "bigs_from_graph": 0.02147028070707767,
+          "sym_bigs": 0.013603373385142004
         },
         "evidence_examples": [
           {
             "triple": "Corresponding angles Application intersection",
             "nearest_sentence": "Corresponding angles are in the same position at each intersection.",
-            "distance": 0.21749264001846313
+            "distance": 0.21749281883239746
           },
           {
             "triple": "hinge theorem Application included angle",
             "nearest_sentence": "The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",
-            "distance": 0.29938364028930664
+            "distance": 0.29938358068466187
           }
         ]
       },
       "Similarity": {
         "triples": 1,
         "full": {
-          "bigs_to_graph": 0.8253013491630554,
-          "bigs_from_graph": 0.25045835971832275,
-          "sym_bigs": 0.7166453041235931
+          "bigs_to_graph": 0.8253012299537659,
+          "bigs_from_graph": 0.2504582405090332,
+          "sym_bigs": 0.7166451387996795
         },
         "evidence_examples": [
           {
             "triple": "altitude Similarity median",
             "nearest_sentence": "5.3 Medians and Altitudes",
-            "distance": 0.25045835971832275
+            "distance": 0.2504582405090332
           }
         ]
       },
       "Extension": {
         "triples": 16,
         "full": {
-          "bigs_to_graph": 0.5943621397018433,
-          "bigs_from_graph": 0.3117946982383728,
-          "sym_bigs": 0.4895755886488302
+          "bigs_to_graph": 0.594362199306488,
+          "bigs_from_graph": 0.3117947280406952,
+          "sym_bigs": 0.48957564403416376
         },
         "subset_10": {
-          "bigs_to_graph": 0.6323800265789032,
-          "bigs_from_graph": 0.30997715651988983,
-          "sym_bigs": 0.5203931025604317
+          "bigs_to_graph": 0.6323800528049469,
+          "bigs_from_graph": 0.3099771863222122,
+          "sym_bigs": 0.5203931322985575
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.009603419209839916,
-          "bigs_from_graph": 0.01503384622588087,
-          "sym_bigs": 0.010245607675879275
+          "bigs_to_graph": 0.009603424030609,
+          "bigs_from_graph": 0.015033827653869862,
+          "sym_bigs": 0.010245603593802903
         },
         "evidence_examples": [
           {
             "triple": "Adjacent angles Extension linear pair",
             "nearest_sentence": "A linear pair is two adjacent angles that form a straight line.",
-            "distance": 0.3305698037147522
+            "distance": 0.33056962490081787
           },
           {
             "triple": "angle bisector Extension perpendicular bisector theorem",
             "nearest_sentence": "5.2 Perpendicular Bisectors and Angle Bisectors",
-            "distance": 0.26969629526138306
+            "distance": 0.2696964740753174
           }
         ]
       },
       "ALL": {
         "triples": 669,
         "full": {
-          "bigs_to_graph": 0.29367974400520325,
-          "bigs_from_graph": 0.3087228834629059,
-          "sym_bigs": 0.30128227268875474
+          "bigs_to_graph": 0.293679803609848,
+          "bigs_from_graph": 0.30872294306755066,
+          "sym_bigs": 0.301282332300305
         },
         "subset_10": {
-          "bigs_to_graph": 0.5972553896903992,
-          "bigs_from_graph": 0.3106800889968872,
-          "sym_bigs": 0.49176271916495856
+          "bigs_to_graph": 0.5972554194927215,
+          "bigs_from_graph": 0.310680136680603,
+          "sym_bigs": 0.49176275614039155
         },
         "subset_10_sd": {
-          "bigs_to_graph": 0.013000120393185594,
-          "bigs_from_graph": 0.03022711246182227,
-          "sym_bigs": 0.015986516423025916
+          "bigs_to_graph": 0.013000120624679638,
+          "bigs_from_graph": 0.03022711778348924,
+          "sym_bigs": 0.015986514970432023
         },
         "evidence_examples": [
           {
             "triple": "Corresponding angles Application intersection",
             "nearest_sentence": "Corresponding angles are in the same position at each intersection.",
-            "distance": 0.21749275922775269
+            "distance": 0.21749281883239746
           },
           {
             "triple": "hinge theorem Application included angle",
             "nearest_sentence": "The hinge theorem states that if two sides of one triangle are congruent to two sides of another but the included angle is larger, then the third side is longer.",
-            "distance": 0.2993835210800171
+            "distance": 0.29938364028930664
           }
         ]
       }

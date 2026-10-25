@@ -296,7 +296,7 @@ Edge_(geometry),Star_polygon,0,False,,,,,,
 Radius,Line_(geometry),1,True,0.0,0.0,0.0,0.0,14939.0,1.0
 Convex_polygon,Angle,1,False,,,,,,
 Sphere,Polyhedron,0,True,0.0,0.0,0.0,0.0,1186.0,1.0
-Trigonometric_functions,Right_triangle,0,True,1.0,0.0,1.0,0.3095,10885.0,1.0
+Trigonometric_functions,Right_triangle,0,True,1.0,0.0,1.0,0.1537,10885.0,1.0
 Polygon,Hexagon,0,True,0.0,0.0,0.0,0.0,-216.0,0.0
 Square,Circle,0,True,0.0,0.0,0.0,0.0,-3259.0,0.0
 Tangent,Triangle,1,True,0.0,0.0,0.0,0.0,12203.0,1.0
@@ -582,7 +582,7 @@ Rhombus,Cone,0,True,0.0,0.0,0.0,0.0,-7212.0,0.0
 Acute_and_obtuse_triangles,Altitude_(triangle),0,True,0.0,0.0,0.0,0.0,-7392.0,0.0
 Triangle,Convex_polygon,0,False,,,,,,
 Edge_(geometry),Tangent,0,False,,,,,,
-Sphere,Circle,1,True,1.0,0.0,1.0,0.3497,4286.0,1.0
+Sphere,Circle,1,True,1.0,0.0,1.0,0.3609,4286.0,1.0
 Rhombus,Circle,0,True,0.0,0.0,0.0,0.0,-3274.0,0.0
 Symmetry,Quadrilateral,0,True,0.0,0.0,0.0,0.0,16488.0,1.0
 Collinearity,Sphere,0,False,,,,,,
@@ -590,7 +590,7 @@ Heptagon,Point_(geometry),1,False,,,,,,
 Line_segment,Prism_(geometry),0,True,0.0,0.0,0.0,0.0,-17683.0,0.0
 Hexagon,Geometry,1,False,,,,,,
 Pyramid_(geometry),Edge_(geometry),1,False,,,,,,
-Cross_section_(geometry),Plane_(geometry),1,True,1.0,0.0,1.0,0.2843,18315.0,1.0
+Cross_section_(geometry),Plane_(geometry),1,True,1.0,0.0,1.0,0.1582,18315.0,1.0
 Quadrilateral,Tessellation,0,False,,,,,,
 Vertex_(geometry),Geometry,1,False,,,,,,
 Angle,Diagonal,0,False,,,,,,
@@ -648,7 +648,7 @@ Pyramid_(geometry),Triangle,0,True,0.0,0.0,0.0,0.0,15859.0,1.0
 Pyramid_(geometry),Geometry,1,False,,,,,,
 Geometry,Self-similarity,0,False,,,,,,
 Quadrilateral,Line_(geometry),1,True,0.0,0.0,0.0,0.0,3003.0,1.0
-Bisection,Perpendicular,1,True,0.0,1.0,0.0,0.0,1764.0,1.0
+Bisection,Perpendicular,1,True,0.0,0.0,0.0,0.0,1764.0,1.0
 Face_(geometry),Square,0,False,,,,,,
 Tangent,Trigonometric_functions,1,True,0.0,0.0,0.0,0.0,942.0,1.0
 Circle,Chord_(geometry),0,True,0.0,0.0,0.0,0.0,-199.0,0.0
@@ -689,7 +689,7 @@ Rotation_(mathematics),Reflection_(mathematics),0,True,0.0,0.0,0.0,0.0,-350.0,0.
 Cylinder_(geometry),Angle,0,True,0.0,0.0,0.0,0.0,17094.0,1.0
 Rectangle,Bisection,0,True,0.0,0.0,0.0,0.0,4677.0,1.0
 Rotation_(mathematics),Cartesian_coordinate_system,0,False,,,,,,
-Point_(geometry),Bisection,0,True,1.0,0.0,1.0,0.4031,-6865.0,0.0
+Point_(geometry),Bisection,0,True,0.0,0.0,0.0,0.0,-6865.0,0.0
 Skew_lines,Line_(geometry),1,False,,,,,,
 Edge_(geometry),Octagon,0,False,,,,,,
 Line_(geometry),Diagonal,0,False,,,,,,
@@ -748,7 +748,7 @@ Octagon,Line_(geometry),1,False,,,,,,
 Polygon,Square,0,True,0.0,0.0,0.0,0.0,-8715.0,0.0
 Angle,Coordinate_system,0,False,,,,,,
 Right_angle,Point_(geometry),1,True,0.0,0.0,0.0,0.0,2632.0,1.0
-Parallel_(geometry),Slope,0,True,1.0,0.0,1.0,0.2386,-1427.0,0.0
+Parallel_(geometry),Slope,0,True,1.0,0.0,1.0,0.1825,-1427.0,0.0
 Dodecagon,Polygon,1,False,,,,,,
 Prism_(geometry),Polyhedron,1,True,0.0,0.0,0.0,0.0,112.0,1.0
 Vertex_(geometry),Angle_bisector_theorem,0,True,0.0,0.0,0.0,0.0,-8034.0,0.0
@@ -758,7 +758,7 @@ Line_segment,Triangle,0,True,0.0,1.0,0.0,0.0,-1899.0,0.0
 Similarity_(geometry),Right_triangle,0,True,0.0,0.0,0.0,0.0,9566.0,1.0
 Plane_(geometry),Geometry,1,False,,,,,,
 Line_(geometry),Circle,0,True,0.0,0.0,0.0,0.0,-14820.0,0.0
-Perpendicular,Slope,0,True,1.0,0.0,1.0,0.215,-1414.0,0.0
+Perpendicular,Slope,0,True,1.0,0.0,1.0,0.1867,-1414.0,0.0
 Rhombus,Trapezoid,0,True,0.0,0.0,0.0,0.0,-324.0,0.0
 Line_(geometry),Trigonometric_functions,0,True,0.0,0.0,0.0,0.0,-13509.0,0.0
 Tangent,Arc_length,0,True,0.0,0.0,0.0,0.0,-2981.0,0.0
@@ -838,7 +838,7 @@ Secant_line,Tangent,0,True,0.0,0.0,0.0,0.0,1809.0,1.0
 Right_angle,Perpendicular,0,True,0.0,0.0,0.0,0.0,-2469.0,0.0
 Arc_(geometry),Perpendicular,0,True,0.0,0.0,0.0,0.0,10255.0,1.0
 Geometry,Congruence_(geometry),0,False,,,,,,
-Pythagorean_theorem,Right_triangle,1,True,1.0,0.0,1.0,0.94,10907.0,1.0
+Pythagorean_theorem,Right_triangle,1,True,1.0,0.0,1.0,0.1962,10907.0,1.0
 Rhombus,Rectangle,0,True,0.0,0.0,0.0,0.0,12.0,1.0
 Congruence_(geometry),Edge_(geometry),1,False,,,,,,
 Angle,Convex_polygon,0,False,,,,,,
@@ -847,7 +847,7 @@ Parallel_(geometry),Geometry,1,False,,,,,,
 Rigid_transformation,Symmetry,1,False,,,,,,
 Rectangle,Symmetry,0,True,0.0,0.0,0.0,0.0,-7957.0,0.0
 Pentagon,Convex_polygon,0,False,,,,,,
-Bisection,Point_(geometry),1,True,0.0,1.0,0.0,0.0,6865.0,1.0
+Bisection,Point_(geometry),1,True,0.0,0.0,0.0,0.0,6865.0,1.0
 Geometry,Circle,0,False,,,,,,
 Similarity_(geometry),Translation_(geometry),0,True,0.0,0.0,0.0,0.0,-7556.0,0.0
 Coordinate_system,Arc_length,0,False,,,,,,
@@ -967,8 +967,8 @@ Isosceles_triangle,Acute_and_obtuse_triangles,0,True,0.0,0.0,0.0,0.0,-149.0,0.0
 Polygon,Star_polygon,0,False,,,,,,
 Rigid_transformation,Reflection_(mathematics),1,False,,,,,,
 Polyhedron,Pyramid_(geometry),0,True,0.0,0.0,0.0,0.0,-187.0,0.0
-Bisection,Angle_bisector_theorem,0,True,0.0,1.0,0.0,0.0,-2610.0,0.0
-Cylinder_(geometry),Circle,1,True,1.0,0.0,1.0,0.215,3582.0,1.0
+Bisection,Angle_bisector_theorem,0,True,0.0,0.0,0.0,0.0,-2610.0,0.0
+Cylinder_(geometry),Circle,1,True,1.0,0.0,1.0,0.03,3582.0,1.0
 Transversal_(geometry),Perpendicular,0,True,0.0,0.0,0.0,0.0,157.0,1.0
 Polyhedron,Line_segment,1,True,0.0,0.0,0.0,0.0,17571.0,1.0
 Symmetry,Star_polygon,0,False,,,,,,
@@ -1272,7 +1272,7 @@ Rotational_symmetry,Symmetry,1,True,0.0,0.0,0.0,0.0,91.0,1.0
 Edge_(geometry),Exterior_angle_theorem,0,False,,,,,,
 Line_(geometry),Dodecagon,0,False,,,,,,
 Point_(geometry),Edge_(geometry),0,False,,,,,,
-Pythagorean_theorem,Right_angle,1,True,1.0,0.0,1.0,0.94,10907.0,1.0
+Pythagorean_theorem,Right_angle,1,True,1.0,0.0,1.0,0.1962,10907.0,1.0
 Octagon,Geometry,1,False,,,,,,
 Equilateral_triangle,Tessellation,0,False,,,,,,
 Square,Bisection,0,True,0.0,0.0,0.0,0.0,4704.0,1.0
@@ -1420,7 +1420,7 @@ Triangle,Line_(geometry),1,True,0.0,0.0,0.0,0.0,2248.0,1.0
 Triangle,Exterior_angle_theorem,0,True,0.0,0.0,0.0,0.0,-3295.0,0.0
 Sine,Triangle,1,True,0.0,0.0,0.0,0.0,12185.0,1.0
 Point_(geometry),Internal_and_external_angle,0,True,0.0,0.0,0.0,0.0,-3172.0,0.0
-Perpendicular,Bisection,0,True,1.0,0.0,1.0,0.407,-1764.0,0.0
+Perpendicular,Bisection,0,True,0.0,0.0,0.0,0.0,-1764.0,0.0
 Trigonometric_functions,Radius,0,True,0.0,0.0,0.0,0.0,-1430.0,0.0
 Prism_(geometry),Cylinder_(geometry),0,True,0.0,0.0,0.0,0.0,-370.0,0.0
 Line_(geometry),Point_(geometry),1,True,0.0,0.0,0.0,0.0,8.0,1.0
@@ -1600,7 +1600,7 @@ Reflection_(mathematics),Reflection_symmetry,0,True,0.0,0.0,0.0,0.0,470.0,1.0
 Special_right_triangles,Trigonometric_functions,0,True,0.0,0.0,0.0,0.0,642.0,1.0
 Radius,Perpendicular,0,True,0.0,0.0,0.0,0.0,9846.0,1.0
 Rhombus,Polyhedron,0,True,0.0,0.0,0.0,0.0,-6374.0,0.0
-Angle_bisector_theorem,Bisection,1,True,1.0,0.0,1.0,0.4083,2610.0,1.0
+Angle_bisector_theorem,Bisection,1,True,0.0,0.0,0.0,0.0,2610.0,1.0
 Line_segment,Triangle_inequality,0,False,,,,,,
 Polyhedron,Star_polygon,0,False,,,,,,
 Parallelogram,Square,0,True,0.0,0.0,0.0,0.0,-511.0,0.0
@@ -1629,7 +1629,7 @@ Trapezoid,Diagonal,0,False,,,,,,
 Equilateral_triangle,Point_(geometry),1,True,0.0,0.0,0.0,0.0,2378.0,1.0
 Polygon,Tangent,0,True,0.0,0.0,0.0,0.0,-11605.0,0.0
 Vertex_(geometry),Tangent,0,True,0.0,0.0,0.0,0.0,-13018.0,0.0
-Triangle,Line_segment,1,True,1.0,0.0,1.0,0.215,1899.0,1.0
+Triangle,Line_segment,1,True,1.0,0.0,1.0,0.1189,1899.0,1.0
 Parallelogram,Midpoint,0,True,0.0,0.0,0.0,0.0,10007.0,1.0
 Symmetry,Circle,0,True,0.0,0.0,0.0,0.0,4671.0,1.0
 Coordinate_system,Radius,0,False,,,,,,

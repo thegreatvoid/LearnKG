@@ -1,0 +1,525 @@
+gold_concept,gold_prereq,true_direction,kg_target_id,kg_source_id,stage_lost,details
+Cartesian_coordinate_system,Line_(geometry),Line_(geometry) -> Cartesian_coordinate_system,,C0002,concept_missing_absent_from_book,Missing concept absent from textbook text
+Polygon,Line_segment,Line_segment -> Polygon,C0032,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Grade_(slope),Geometry,Geometry -> Grade_(slope),C0050,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Concentric,Geometry,Geometry -> Concentric,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Special_right_triangles,Right_angle,Right_angle -> Special_right_triangles,C0086,C0025,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Pythagorean_triple,Pythagorean_theorem,Pythagorean_theorem -> Pythagorean_triple,,C0085,concept_missing_absent_from_book,Missing concept absent from textbook text
+Circle,Geometry,Geometry -> Circle,C0097,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Pythagorean_triple,Right_triangle,Right_triangle -> Pythagorean_triple,,C0025,concept_missing_absent_from_book,Missing concept absent from textbook text
+Two-dimensional_space,Plane_(geometry),Plane_(geometry) -> Two-dimensional_space,C0004,C0004,concept_missing_present_not_extracted,Both mapped to identical KG concept C0004
+Dodecagon,Angle,Angle -> Dodecagon,,C0012,concept_missing_absent_from_book,Missing concept absent from textbook text
+Coordinate_system,Geometry,Geometry -> Coordinate_system,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Parallelogram,Angle,Angle -> Parallelogram,C0072,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Kite_(geometry),Angle,Angle -> Kite_(geometry),C0078,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Convex_polygon,Geometry,Geometry -> Convex_polygon,,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Pentagon,Edge_(geometry),Edge_(geometry) -> Pentagon,C0031,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Perpendicular,Angle,Angle -> Perpendicular,C0046,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Rectangle,Point_(geometry),Point_(geometry) -> Rectangle,C0074,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Diameter,Radius,Radius -> Diameter,C0098,C0100,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Rhombus,Edge_(geometry),Edge_(geometry) -> Rhombus,C0075,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Right_triangle,Polygon,Polygon -> Right_triangle,C0025,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Reflection_symmetry,Line_(geometry),Line_(geometry) -> Reflection_symmetry,C0124,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Acute_and_obtuse_triangles,Vertex_(geometry),Vertex_(geometry) -> Acute_and_obtuse_triangles,C0020,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Rhombus,Parallelogram,Parallelogram -> Rhombus,C0075,C0072,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Acute_and_obtuse_triangles,Triangle,Triangle -> Acute_and_obtuse_triangles,C0020,C0028,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Trigonometric_functions,Line_(geometry),Line_(geometry) -> Trigonometric_functions,C0095,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Arc_length,Distance,Distance -> Arc_length,C0109,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Rhombus,Vertex_(geometry),Vertex_(geometry) -> Rhombus,C0075,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Acute_and_obtuse_triangles,Polygon,Polygon -> Acute_and_obtuse_triangles,C0020,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Right_angle,Geometry,Geometry -> Right_angle,C0025,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Sine,Trigonometric_functions,Trigonometric_functions -> Sine,C0091,C0095,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Altitude_(triangle),Geometry,Geometry -> Altitude_(triangle),C0068,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Inverse_trigonometric_functions,Line_segment,Line_segment -> Inverse_trigonometric_functions,C0089,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Equilateral_triangle,Angle,Angle -> Equilateral_triangle,C0022,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Midpoint,Point_(geometry),Point_(geometry) -> Midpoint,C0008,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Trapezoid,Geometry,Geometry -> Trapezoid,C0079,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Polyhedron,Geometry,Geometry -> Polyhedron,C0112,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Polyhedron,Point_(geometry),Point_(geometry) -> Polyhedron,C0112,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Cross_section_(geometry),Geometry,Geometry -> Cross_section_(geometry),C0115,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Equilateral_triangle,Geometry,Geometry -> Equilateral_triangle,C0022,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Octagon,Line_segment,Line_segment -> Octagon,,C0003,concept_missing_absent_from_book,Missing concept absent from textbook text
+Diameter,Line_segment,Line_segment -> Diameter,C0098,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Polyhedron,Line_(geometry),Line_(geometry) -> Polyhedron,C0112,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Decagon,Edge_(geometry),Edge_(geometry) -> Decagon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Altitude_(triangle),Line_(geometry),Line_(geometry) -> Altitude_(triangle),C0068,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Self-similarity,Similarity_(geometry),Similarity_(geometry) -> Self-similarity,,C0082,concept_missing_absent_from_book,Missing concept absent from textbook text
+Altitude_(triangle),Point_(geometry),Point_(geometry) -> Altitude_(triangle),C0068,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Edge_(geometry),Line_(geometry),Line_(geometry) -> Edge_(geometry),,C0002,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Reflection_symmetry,Reflection_(mathematics),Reflection_(mathematics) -> Reflection_symmetry,C0124,C0130,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Angle_bisector_theorem,Point_(geometry),Point_(geometry) -> Angle_bisector_theorem,C0065,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Star_polygon,Vertex_(geometry),Vertex_(geometry) -> Star_polygon,,C0014,concept_missing_absent_from_book,Missing concept absent from textbook text
+Convex_polygon,Point_(geometry),Point_(geometry) -> Convex_polygon,,C0005,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Pythagorean_triple,Line_(geometry),Line_(geometry) -> Pythagorean_triple,,C0002,concept_missing_absent_from_book,Missing concept absent from textbook text
+Reflection_symmetry,Geometry,Geometry -> Reflection_symmetry,C0124,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Cartesian_coordinate_system,Two-dimensional_space,Two-dimensional_space -> Cartesian_coordinate_system,,C0004,concept_missing_absent_from_book,Missing concept absent from textbook text
+Special_right_triangles,Line_segment,Line_segment -> Special_right_triangles,C0086,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pentagon,Point_(geometry),Point_(geometry) -> Pentagon,C0031,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pythagorean_triple,Polygon,Polygon -> Pythagorean_triple,,C0032,concept_missing_absent_from_book,Missing concept absent from textbook text
+Angle_bisector_theorem,Geometry,Geometry -> Angle_bisector_theorem,C0065,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Nonagon,Line_segment,Line_segment -> Nonagon,,C0003,concept_missing_absent_from_book,Missing concept absent from textbook text
+Rotational_symmetry,Line_(geometry),Line_(geometry) -> Rotational_symmetry,C0126,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Inverse_trigonometric_functions,Geometry,Geometry -> Inverse_trigonometric_functions,C0089,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Point_(geometry),Geometry,Geometry -> Point_(geometry),C0005,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Isosceles_triangle,Geometry,Geometry -> Isosceles_triangle,C0023,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Pythagorean_triple,Angle,Angle -> Pythagorean_triple,,C0012,concept_missing_absent_from_book,Missing concept absent from textbook text
+Reflection_symmetry,Point_(geometry),Point_(geometry) -> Reflection_symmetry,C0124,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Parallelogram,Line_segment,Line_segment -> Parallelogram,C0072,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Rhombus,Geometry,Geometry -> Rhombus,C0075,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Cartesian_coordinate_system,Angle,Angle -> Cartesian_coordinate_system,,C0012,concept_missing_absent_from_book,Missing concept absent from textbook text
+Equilateral_triangle,Line_(geometry),Line_(geometry) -> Equilateral_triangle,C0022,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Trapezoid,Line_(geometry),Line_(geometry) -> Trapezoid,C0079,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Bisection,Line_segment,Line_segment -> Bisection,C0051,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Congruence_(geometry),Vertex_(geometry),Vertex_(geometry) -> Congruence_(geometry),C0040,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Symmetry,Geometry,Geometry -> Symmetry,C0127,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Heptagon,Polygon,Polygon -> Heptagon,,C0032,concept_missing_absent_from_book,Missing concept absent from textbook text
+Diameter,Line_(geometry),Line_(geometry) -> Diameter,C0098,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Rectangle,Polygon,Polygon -> Rectangle,C0074,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Polygon,Angle,Angle -> Polygon,C0032,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Prism_(geometry),Line_(geometry),Line_(geometry) -> Prism_(geometry),C0113,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Diagonal,Edge_(geometry),Edge_(geometry) -> Diagonal,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Triangle,Point_(geometry),Point_(geometry) -> Triangle,C0028,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Triangle_inequality,Line_(geometry),Line_(geometry) -> Triangle_inequality,,C0002,concept_missing_absent_from_book,Missing concept absent from textbook text
+Acute_and_obtuse_triangles,Edge_(geometry),Edge_(geometry) -> Acute_and_obtuse_triangles,C0020,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Dodecagon,Geometry,Geometry -> Dodecagon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Hendecagon,Line_(geometry),Line_(geometry) -> Hendecagon,,C0002,concept_missing_absent_from_book,Missing concept absent from textbook text
+Decagon,Line_segment,Line_segment -> Decagon,,C0003,concept_missing_absent_from_book,Missing concept absent from textbook text
+Edge_(geometry),Point_(geometry),Point_(geometry) -> Edge_(geometry),,C0005,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Pythagorean_theorem,Point_(geometry),Point_(geometry) -> Pythagorean_theorem,C0085,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Radius,Line_(geometry),Line_(geometry) -> Radius,C0100,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Convex_polygon,Angle,Angle -> Convex_polygon,,C0012,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Tangent,Triangle,Triangle -> Tangent,C0093,C0028,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Heptagon,Edge_(geometry),Edge_(geometry) -> Heptagon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Rectangle,Vertex_(geometry),Vertex_(geometry) -> Rectangle,C0074,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Rotation_(mathematics),Point_(geometry),Point_(geometry) -> Rotation_(mathematics),C0125,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Rigid_transformation,Line_(geometry),Line_(geometry) -> Rigid_transformation,,C0002,concept_missing_absent_from_book,Missing concept absent from textbook text
+Rhombus,Line_segment,Line_segment -> Rhombus,C0075,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Kite_(geometry),Quadrilateral,Quadrilateral -> Kite_(geometry),C0078,C0033,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Vertex_(geometry),Point_(geometry),Point_(geometry) -> Vertex_(geometry),C0014,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Sine,Line_segment,Line_segment -> Sine,C0091,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Tangent,Edge_(geometry),Edge_(geometry) -> Tangent,C0093,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Pyramid_(geometry),Line_(geometry),Line_(geometry) -> Pyramid_(geometry),C0114,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Two-dimensional_space,Point_(geometry),Point_(geometry) -> Two-dimensional_space,C0004,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Arc_length,Circle,Circle -> Arc_length,C0109,C0097,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Acute_and_obtuse_triangles,Point_(geometry),Point_(geometry) -> Acute_and_obtuse_triangles,C0020,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Prism_(geometry),Line_segment,Line_segment -> Prism_(geometry),C0113,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Hexagon,Angle,Angle -> Hexagon,C0030,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Polyhedron,Vertex_(geometry),Vertex_(geometry) -> Polyhedron,C0112,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Radius,Geometry,Geometry -> Radius,C0100,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Parallel_(geometry),Point_(geometry),Point_(geometry) -> Parallel_(geometry),C0045,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Prism_(geometry),Parallel_(geometry),Parallel_(geometry) -> Prism_(geometry),C0113,C0045,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Angle_bisector_theorem,Edge_(geometry),Edge_(geometry) -> Angle_bisector_theorem,C0065,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Bisection,Line_(geometry),Line_(geometry) -> Bisection,C0051,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Diagonal,Point_(geometry),Point_(geometry) -> Diagonal,,C0005,concept_missing_absent_from_book,Missing concept absent from textbook text
+Decagon,Polygon,Polygon -> Decagon,,C0032,concept_missing_absent_from_book,Missing concept absent from textbook text
+Pythagorean_triple,Geometry,Geometry -> Pythagorean_triple,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Pythagorean_triple,Right_angle,Right_angle -> Pythagorean_triple,,C0025,concept_missing_absent_from_book,Missing concept absent from textbook text
+Congruence_(geometry),Geometry,Geometry -> Congruence_(geometry),C0040,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Angle_bisector_theorem,Triangle,Triangle -> Angle_bisector_theorem,C0065,C0028,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Pythagorean_triple,Vertex_(geometry),Vertex_(geometry) -> Pythagorean_triple,,C0014,concept_missing_absent_from_book,Missing concept absent from textbook text
+Triangle_inequality,Geometry,Geometry -> Triangle_inequality,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Isosceles_triangle,Line_segment,Line_segment -> Isosceles_triangle,C0023,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Cartesian_coordinate_system,Distance,Distance -> Cartesian_coordinate_system,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Diameter,Geometry,Geometry -> Diameter,C0098,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Midpoint,Line_segment,Line_segment -> Midpoint,C0008,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Secant_line,Line_(geometry),Line_(geometry) -> Secant_line,C0105,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Polyhedron,Polygon,Polygon -> Polyhedron,C0112,C0032,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Dodecagon,Point_(geometry),Point_(geometry) -> Dodecagon,,C0005,concept_missing_absent_from_book,Missing concept absent from textbook text
+Grade_(slope),Angle,Angle -> Grade_(slope),C0050,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pyramid_(geometry),Angle,Angle -> Pyramid_(geometry),C0114,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Sine,Edge_(geometry),Edge_(geometry) -> Sine,C0091,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Isosceles_triangle,Vertex_(geometry),Vertex_(geometry) -> Isosceles_triangle,C0023,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Perpendicular,Line_(geometry),Line_(geometry) -> Perpendicular,C0046,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Angle_bisector_theorem,Perpendicular,Perpendicular -> Angle_bisector_theorem,C0065,C0046,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Pentagon,Vertex_(geometry),Vertex_(geometry) -> Pentagon,C0031,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Tangent,Polygon,Polygon -> Tangent,C0093,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Collinearity,Point_(geometry),Point_(geometry) -> Collinearity,,C0005,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Congruence_(geometry),Line_segment,Line_segment -> Congruence_(geometry),C0040,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Diameter,Point_(geometry),Point_(geometry) -> Diameter,C0098,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Square,Edge_(geometry),Edge_(geometry) -> Square,C0076,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Prism_(geometry),Polygon,Polygon -> Prism_(geometry),C0113,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Rhombus,Line_(geometry),Line_(geometry) -> Rhombus,C0075,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Inverse_trigonometric_functions,Angle,Angle -> Inverse_trigonometric_functions,C0089,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Parallel_(geometry),Line_(geometry),Line_(geometry) -> Parallel_(geometry),C0045,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Special_right_triangles,Triangle,Triangle -> Special_right_triangles,C0086,C0028,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Decagon,Angle,Angle -> Decagon,,C0012,concept_missing_absent_from_book,Missing concept absent from textbook text
+Radius,Line_segment,Line_segment -> Radius,C0100,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Angle_bisector_theorem,Line_segment,Line_segment -> Angle_bisector_theorem,C0065,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Exterior_angle_theorem,Angle,Angle -> Exterior_angle_theorem,C0054,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Right_angle,Angle,Angle -> Right_angle,C0025,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Heptagon,Geometry,Geometry -> Heptagon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Angle_bisector_theorem,Midpoint,Midpoint -> Angle_bisector_theorem,C0065,C0008,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Triangle,Geometry,Geometry -> Triangle,C0028,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Hendecagon,Line_segment,Line_segment -> Hendecagon,,C0003,concept_missing_absent_from_book,Missing concept absent from textbook text
+Star_polygon,Line_segment,Line_segment -> Star_polygon,,C0003,concept_missing_absent_from_book,Missing concept absent from textbook text
+Cartesian_coordinate_system,Perpendicular,Perpendicular -> Cartesian_coordinate_system,,C0046,concept_missing_absent_from_book,Missing concept absent from textbook text
+Pentagon,Polygon,Polygon -> Pentagon,C0031,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Hendecagon,Vertex_(geometry),Vertex_(geometry) -> Hendecagon,,C0014,concept_missing_absent_from_book,Missing concept absent from textbook text
+Internal_and_external_angle,Line_segment,Line_segment -> Internal_and_external_angle,C0071,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Coordinate_system,Plane_(geometry),Plane_(geometry) -> Coordinate_system,,C0004,concept_missing_absent_from_book,Missing concept absent from textbook text
+Polyhedron,Angle,Angle -> Polyhedron,C0112,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Special_right_triangles,Vertex_(geometry),Vertex_(geometry) -> Special_right_triangles,C0086,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Slope,Line_(geometry),Line_(geometry) -> Slope,C0050,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Cone,Geometry,Geometry -> Cone,C0120,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Star_polygon,Angle,Angle -> Star_polygon,,C0012,concept_missing_absent_from_book,Missing concept absent from textbook text
+Parallelogram,Parallel_(geometry),Parallel_(geometry) -> Parallelogram,C0072,C0045,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Right_triangle,Triangle,Triangle -> Right_triangle,C0025,C0028,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Diagonal,Angle,Angle -> Diagonal,,C0012,concept_missing_absent_from_book,Missing concept absent from textbook text
+Right_triangle,Geometry,Geometry -> Right_triangle,C0025,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Edge_(geometry),Vertex_(geometry),Vertex_(geometry) -> Edge_(geometry),,C0014,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Nonagon,Angle,Angle -> Nonagon,,C0012,concept_missing_absent_from_book,Missing concept absent from textbook text
+Rectangle,Line_(geometry),Line_(geometry) -> Rectangle,C0074,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Square,Right_angle,Right_angle -> Square,C0076,C0025,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Pentagon,Angle,Angle -> Pentagon,C0031,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Rigid_transformation,Point_(geometry),Point_(geometry) -> Rigid_transformation,,C0005,concept_missing_absent_from_book,Missing concept absent from textbook text
+Reflection_symmetry,Symmetry,Symmetry -> Reflection_symmetry,C0124,C0127,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Exterior_angle_theorem,Edge_(geometry),Edge_(geometry) -> Exterior_angle_theorem,C0054,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Decagon,Line_(geometry),Line_(geometry) -> Decagon,,C0002,concept_missing_absent_from_book,Missing concept absent from textbook text
+Nonagon,Vertex_(geometry),Vertex_(geometry) -> Nonagon,,C0014,concept_missing_absent_from_book,Missing concept absent from textbook text
+Sphere,Circle,Circle -> Sphere,C0121,C0097,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Heptagon,Point_(geometry),Point_(geometry) -> Heptagon,,C0005,concept_missing_absent_from_book,Missing concept absent from textbook text
+Hexagon,Geometry,Geometry -> Hexagon,C0030,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Pyramid_(geometry),Edge_(geometry),Edge_(geometry) -> Pyramid_(geometry),C0114,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Cross_section_(geometry),Plane_(geometry),Plane_(geometry) -> Cross_section_(geometry),C0115,C0004,survived_in_graph,Successfully extracted into rule_v3 graph
+Vertex_(geometry),Geometry,Geometry -> Vertex_(geometry),C0014,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Congruence_(geometry),Line_(geometry),Line_(geometry) -> Congruence_(geometry),C0040,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Nonagon,Point_(geometry),Point_(geometry) -> Nonagon,,C0005,concept_missing_absent_from_book,Missing concept absent from textbook text
+Rotation_(mathematics),Angle,Angle -> Rotation_(mathematics),C0125,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Cartesian_coordinate_system,Point_(geometry),Point_(geometry) -> Cartesian_coordinate_system,,C0005,concept_missing_absent_from_book,Missing concept absent from textbook text
+Triangle_inequality,Line_segment,Line_segment -> Triangle_inequality,,C0003,concept_missing_absent_from_book,Missing concept absent from textbook text
+Decagon,Point_(geometry),Point_(geometry) -> Decagon,,C0005,concept_missing_absent_from_book,Missing concept absent from textbook text
+Rotation_(mathematics),Symmetry,Symmetry -> Rotation_(mathematics),C0125,C0127,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Acute_and_obtuse_triangles,Geometry,Geometry -> Acute_and_obtuse_triangles,C0020,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Pythagorean_theorem,Line_segment,Line_segment -> Pythagorean_theorem,C0085,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Exterior_angle_theorem,Geometry,Geometry -> Exterior_angle_theorem,C0054,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Exterior_angle_theorem,Point_(geometry),Point_(geometry) -> Exterior_angle_theorem,C0054,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Rectangle,Quadrilateral,Quadrilateral -> Rectangle,C0074,C0033,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Polygon,Point_(geometry),Point_(geometry) -> Polygon,C0032,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Triangle,Edge_(geometry),Edge_(geometry) -> Triangle,C0028,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Tangent,Point_(geometry),Point_(geometry) -> Tangent,C0093,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Reflection_(mathematics),Symmetry,Symmetry -> Reflection_(mathematics),C0130,C0127,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pyramid_(geometry),Geometry,Geometry -> Pyramid_(geometry),C0114,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Quadrilateral,Line_(geometry),Line_(geometry) -> Quadrilateral,C0033,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Bisection,Perpendicular,Perpendicular -> Bisection,C0051,C0046,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Tangent,Trigonometric_functions,Trigonometric_functions -> Tangent,C0093,C0095,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Kite_(geometry),Vertex_(geometry),Vertex_(geometry) -> Kite_(geometry),C0078,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Tessellation,Plane_(geometry),Plane_(geometry) -> Tessellation,,C0004,concept_missing_absent_from_book,Missing concept absent from textbook text
+Equilateral_triangle,Polygon,Polygon -> Equilateral_triangle,C0022,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Square,Parallel_(geometry),Parallel_(geometry) -> Square,C0076,C0045,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Inverse_trigonometric_functions,Triangle,Triangle -> Inverse_trigonometric_functions,C0089,C0028,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Acute_and_obtuse_triangles,Line_segment,Line_segment -> Acute_and_obtuse_triangles,C0020,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Trigonometric_functions,Line_segment,Line_segment -> Trigonometric_functions,C0095,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Special_right_triangles,Line_(geometry),Line_(geometry) -> Special_right_triangles,C0086,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Rhombus,Polygon,Polygon -> Rhombus,C0075,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Skew_lines,Line_(geometry),Line_(geometry) -> Skew_lines,,C0002,concept_missing_absent_from_book,Missing concept absent from textbook text
+Sine,Line_(geometry),Line_(geometry) -> Sine,C0091,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Octagon,Edge_(geometry),Edge_(geometry) -> Octagon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Exterior_angle_theorem,Triangle,Triangle -> Exterior_angle_theorem,C0054,C0028,llm_rejection,"Proposed as a different relation type (Part-of, Similarity, etc.)"
+Grade_(slope),Point_(geometry),Point_(geometry) -> Grade_(slope),C0050,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Hendecagon,Polygon,Polygon -> Hendecagon,,C0032,concept_missing_absent_from_book,Missing concept absent from textbook text
+Dodecagon,Line_(geometry),Line_(geometry) -> Dodecagon,,C0002,concept_missing_absent_from_book,Missing concept absent from textbook text
+Diameter,Chord_(geometry),Chord_(geometry) -> Diameter,C0098,C0096,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Quadrilateral,Edge_(geometry),Edge_(geometry) -> Quadrilateral,C0033,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Rectangle,Edge_(geometry),Edge_(geometry) -> Rectangle,C0074,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Transversal_(geometry),Line_(geometry),Line_(geometry) -> Transversal_(geometry),C0047,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Reflection_(mathematics),Point_(geometry),Point_(geometry) -> Reflection_(mathematics),C0130,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Dodecagon,Line_segment,Line_segment -> Dodecagon,,C0003,concept_missing_absent_from_book,Missing concept absent from textbook text
+Inverse_trigonometric_functions,Point_(geometry),Point_(geometry) -> Inverse_trigonometric_functions,C0089,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Internal_and_external_angle,Edge_(geometry),Edge_(geometry) -> Internal_and_external_angle,C0071,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Two-dimensional_space,Geometry,Geometry -> Two-dimensional_space,C0004,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Octagon,Point_(geometry),Point_(geometry) -> Octagon,,C0005,concept_missing_absent_from_book,Missing concept absent from textbook text
+Octagon,Line_(geometry),Line_(geometry) -> Octagon,,C0002,concept_missing_absent_from_book,Missing concept absent from textbook text
+Right_angle,Point_(geometry),Point_(geometry) -> Right_angle,C0025,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Dodecagon,Polygon,Polygon -> Dodecagon,,C0032,concept_missing_absent_from_book,Missing concept absent from textbook text
+Prism_(geometry),Polyhedron,Polyhedron -> Prism_(geometry),C0113,C0112,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Transversal_(geometry),Plane_(geometry),Plane_(geometry) -> Transversal_(geometry),C0047,C0004,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Internal_and_external_angle,Polygon,Polygon -> Internal_and_external_angle,C0071,C0032,llm_rejection,"Proposed as a different relation type (Part-of, Similarity, etc.)"
+Plane_(geometry),Geometry,Geometry -> Plane_(geometry),C0004,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Triangle_inequality,Edge_(geometry),Edge_(geometry) -> Triangle_inequality,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Triangle_inequality,Angle,Angle -> Triangle_inequality,,C0012,concept_missing_absent_from_book,Missing concept absent from textbook text
+Special_right_triangles,Right_triangle,Right_triangle -> Special_right_triangles,C0086,C0025,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Star_polygon,Line_(geometry),Line_(geometry) -> Star_polygon,,C0002,concept_missing_absent_from_book,Missing concept absent from textbook text
+Star_polygon,Point_(geometry),Point_(geometry) -> Star_polygon,,C0005,concept_missing_absent_from_book,Missing concept absent from textbook text
+Rigid_transformation,Angle,Angle -> Rigid_transformation,,C0012,concept_missing_absent_from_book,Missing concept absent from textbook text
+Square,Angle,Angle -> Square,C0076,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Line_(geometry),Geometry,Geometry -> Line_(geometry),C0002,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Angle_bisector_theorem,Line_(geometry),Line_(geometry) -> Angle_bisector_theorem,C0065,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Angle,Line_(geometry),Line_(geometry) -> Angle,C0012,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Square,Line_(geometry),Line_(geometry) -> Square,C0076,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Congruence_(geometry),Polygon,Polygon -> Congruence_(geometry),C0040,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Square,Rectangle,Rectangle -> Square,C0076,C0074,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Skew_lines,Parallel_(geometry),Parallel_(geometry) -> Skew_lines,,C0045,concept_missing_absent_from_book,Missing concept absent from textbook text
+Line_segment,Line_(geometry),Line_(geometry) -> Line_segment,C0003,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Trigonometric_functions,Angle,Angle -> Trigonometric_functions,C0095,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Pythagorean_theorem,Right_triangle,Right_triangle -> Pythagorean_theorem,C0085,C0025,survived_in_graph,Successfully extracted into rule_v3 graph
+Congruence_(geometry),Edge_(geometry),Edge_(geometry) -> Congruence_(geometry),C0040,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Parallel_(geometry),Geometry,Geometry -> Parallel_(geometry),C0045,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Rigid_transformation,Symmetry,Symmetry -> Rigid_transformation,,C0127,concept_missing_absent_from_book,Missing concept absent from textbook text
+Bisection,Point_(geometry),Point_(geometry) -> Bisection,C0051,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Square,Line_segment,Line_segment -> Square,C0076,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Isosceles_triangle,Triangle,Triangle -> Isosceles_triangle,C0023,C0028,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Square,Polygon,Polygon -> Square,C0076,C0032,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Convex_polygon,Polygon,Polygon -> Convex_polygon,,C0032,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Right_angle,Line_(geometry),Line_(geometry) -> Right_angle,C0025,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Bisection,Midpoint,Midpoint -> Bisection,C0051,C0008,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Rotation_(mathematics),Geometry,Geometry -> Rotation_(mathematics),C0125,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Equilateral_triangle,Vertex_(geometry),Vertex_(geometry) -> Equilateral_triangle,C0022,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pythagorean_theorem,Vertex_(geometry),Vertex_(geometry) -> Pythagorean_theorem,C0085,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Kite_(geometry),Line_(geometry),Line_(geometry) -> Kite_(geometry),C0078,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Heptagon,Line_segment,Line_segment -> Heptagon,,C0003,concept_missing_absent_from_book,Missing concept absent from textbook text
+Hexagon,Vertex_(geometry),Vertex_(geometry) -> Hexagon,C0030,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Secant_line,Geometry,Geometry -> Secant_line,C0105,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Rhombus,Quadrilateral,Quadrilateral -> Rhombus,C0075,C0033,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Right_triangle,Point_(geometry),Point_(geometry) -> Right_triangle,C0025,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Scaling_(geometry),Scale_factor,Scale_factor -> Scaling_(geometry),C0080,C0080,concept_missing_present_not_extracted,Both mapped to identical KG concept C0080
+Isosceles_triangle,Edge_(geometry),Edge_(geometry) -> Isosceles_triangle,C0023,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Polyhedron,Edge_(geometry),Edge_(geometry) -> Polyhedron,C0112,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Square,Geometry,Geometry -> Square,C0076,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Exterior_angle_theorem,Line_segment,Line_segment -> Exterior_angle_theorem,C0054,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pythagorean_triple,Line_segment,Line_segment -> Pythagorean_triple,,C0003,concept_missing_absent_from_book,Missing concept absent from textbook text
+Sine,Geometry,Geometry -> Sine,C0091,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Tangent,Angle,Angle -> Tangent,C0093,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Rectangle,Right_angle,Right_angle -> Rectangle,C0074,C0025,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Chord_(geometry),Point_(geometry),Point_(geometry) -> Chord_(geometry),C0096,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pythagorean_theorem,Edge_(geometry),Edge_(geometry) -> Pythagorean_theorem,C0085,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Self-similarity,Symmetry,Symmetry -> Self-similarity,,C0127,concept_missing_absent_from_book,Missing concept absent from textbook text
+Altitude_(triangle),Triangle,Triangle -> Altitude_(triangle),C0068,C0028,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Sine,Point_(geometry),Point_(geometry) -> Sine,C0091,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Convex_polygon,Edge_(geometry),Edge_(geometry) -> Convex_polygon,,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Kite_(geometry),Point_(geometry),Point_(geometry) -> Kite_(geometry),C0078,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Reflection_(mathematics),Line_(geometry),Line_(geometry) -> Reflection_(mathematics),C0130,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Internal_and_external_angle,Vertex_(geometry),Vertex_(geometry) -> Internal_and_external_angle,C0071,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Rotational_symmetry,Point_(geometry),Point_(geometry) -> Rotational_symmetry,C0126,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Reflection_(mathematics),Geometry,Geometry -> Reflection_(mathematics),C0130,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Cartesian_coordinate_system,Geometry,Geometry -> Cartesian_coordinate_system,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Angle_bisector_theorem,Polygon,Polygon -> Angle_bisector_theorem,C0065,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Rigid_transformation,Reflection_(mathematics),Reflection_(mathematics) -> Rigid_transformation,,C0130,concept_missing_absent_from_book,Missing concept absent from textbook text
+Cylinder_(geometry),Circle,Circle -> Cylinder_(geometry),C0117,C0097,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Polyhedron,Line_segment,Line_segment -> Polyhedron,C0112,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Arc_length,Arc_(geometry),Arc_(geometry) -> Arc_length,C0109,C0102,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Trigonometric_functions,Point_(geometry),Point_(geometry) -> Trigonometric_functions,C0095,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Star_polygon,Edge_(geometry),Edge_(geometry) -> Star_polygon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Line_segment,Point_(geometry),Point_(geometry) -> Line_segment,C0003,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Chord_(geometry),Line_(geometry),Line_(geometry) -> Chord_(geometry),C0096,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Kite_(geometry),Edge_(geometry),Edge_(geometry) -> Kite_(geometry),C0078,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Altitude_(triangle),Polygon,Polygon -> Altitude_(triangle),C0068,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Triangle_inequality,Triangle,Triangle -> Triangle_inequality,,C0028,concept_missing_absent_from_book,Missing concept absent from textbook text
+Quadrilateral,Vertex_(geometry),Vertex_(geometry) -> Quadrilateral,C0033,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Midpoint,Line_(geometry),Line_(geometry) -> Midpoint,C0008,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Hendecagon,Geometry,Geometry -> Hendecagon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Self-similarity,Geometry,Geometry -> Self-similarity,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Right_triangle,Right_angle,Right_angle -> Right_triangle,C0025,C0025,concept_missing_present_not_extracted,Both mapped to identical KG concept C0025
+Octagon,Angle,Angle -> Octagon,,C0012,concept_missing_absent_from_book,Missing concept absent from textbook text
+Arc_(geometry),Geometry,Geometry -> Arc_(geometry),C0102,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Line_segment,Geometry,Geometry -> Line_segment,C0003,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Tangent,Line_(geometry),Line_(geometry) -> Tangent,C0093,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Internal_and_external_angle,Line_(geometry),Line_(geometry) -> Internal_and_external_angle,C0071,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Slope,Geometry,Geometry -> Slope,C0050,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Prism_(geometry),Geometry,Geometry -> Prism_(geometry),C0113,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Triangle_inequality,Vertex_(geometry),Vertex_(geometry) -> Triangle_inequality,,C0014,concept_missing_absent_from_book,Missing concept absent from textbook text
+Pentagon,Line_(geometry),Line_(geometry) -> Pentagon,C0031,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Exterior_angle_theorem,Internal_and_external_angle,Internal_and_external_angle -> Exterior_angle_theorem,C0054,C0071,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Hexagon,Line_segment,Line_segment -> Hexagon,C0030,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Congruence_(geometry),Point_(geometry),Point_(geometry) -> Congruence_(geometry),C0040,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Altitude_(triangle),Vertex_(geometry),Vertex_(geometry) -> Altitude_(triangle),C0068,C0014,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Nonagon,Line_(geometry),Line_(geometry) -> Nonagon,,C0002,concept_missing_absent_from_book,Missing concept absent from textbook text
+Quadrilateral,Polygon,Polygon -> Quadrilateral,C0033,C0032,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Equilateral_triangle,Line_segment,Line_segment -> Equilateral_triangle,C0022,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pythagorean_theorem,Line_(geometry),Line_(geometry) -> Pythagorean_theorem,C0085,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Hendecagon,Edge_(geometry),Edge_(geometry) -> Hendecagon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Triangle,Polygon,Polygon -> Triangle,C0028,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Reflection_(mathematics),Angle,Angle -> Reflection_(mathematics),C0130,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Isosceles_triangle,Angle,Angle -> Isosceles_triangle,C0023,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Right_triangle,Line_(geometry),Line_(geometry) -> Right_triangle,C0025,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Rotational_symmetry,Geometry,Geometry -> Rotational_symmetry,C0126,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Prism_(geometry),Edge_(geometry),Edge_(geometry) -> Prism_(geometry),C0113,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Square,Parallelogram,Parallelogram -> Square,C0076,C0072,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Internal_and_external_angle,Point_(geometry),Point_(geometry) -> Internal_and_external_angle,C0071,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Reflection_symmetry,Angle,Angle -> Reflection_symmetry,C0124,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pythagorean_theorem,Polygon,Polygon -> Pythagorean_theorem,C0085,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Trigonometric_functions,Vertex_(geometry),Vertex_(geometry) -> Trigonometric_functions,C0095,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Angle,Geometry,Geometry -> Angle,C0012,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Quadrilateral,Angle,Angle -> Quadrilateral,C0033,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Hexagon,Edge_(geometry),Edge_(geometry) -> Hexagon,C0030,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Rectangle,Line_segment,Line_segment -> Rectangle,C0074,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Arc_length,Geometry,Geometry -> Arc_length,C0109,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Right_triangle,Vertex_(geometry),Vertex_(geometry) -> Right_triangle,C0025,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Exterior_angle_theorem,Vertex_(geometry),Vertex_(geometry) -> Exterior_angle_theorem,C0054,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Star_polygon,Geometry,Geometry -> Star_polygon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Triangle,Angle,Angle -> Triangle,C0028,C0012,llm_rejection,"Proposed as a different relation type (Part-of, Similarity, etc.)"
+Radius,Point_(geometry),Point_(geometry) -> Radius,C0100,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Square,Point_(geometry),Point_(geometry) -> Square,C0076,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Diagonal,Geometry,Geometry -> Diagonal,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Rotation_(mathematics),Line_(geometry),Line_(geometry) -> Rotation_(mathematics),C0125,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Isosceles_triangle,Polygon,Polygon -> Isosceles_triangle,C0023,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Collinearity,Geometry,Geometry -> Collinearity,,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Equilateral_triangle,Triangle,Triangle -> Equilateral_triangle,C0022,C0028,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Polygon,Vertex_(geometry),Vertex_(geometry) -> Polygon,C0032,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Sine,Polygon,Polygon -> Sine,C0091,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Nonagon,Geometry,Geometry -> Nonagon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Dodecagon,Vertex_(geometry),Vertex_(geometry) -> Dodecagon,,C0014,concept_missing_absent_from_book,Missing concept absent from textbook text
+Skew_lines,Point_(geometry),Point_(geometry) -> Skew_lines,,C0005,concept_missing_absent_from_book,Missing concept absent from textbook text
+Slope,Point_(geometry),Point_(geometry) -> Slope,C0050,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Inverse_trigonometric_functions,Edge_(geometry),Edge_(geometry) -> Inverse_trigonometric_functions,C0089,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Right_triangle,Line_segment,Line_segment -> Right_triangle,C0025,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Polyhedron,Face_(geometry),Face_(geometry) -> Polyhedron,C0112,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Parallelogram,Line_(geometry),Line_(geometry) -> Parallelogram,C0072,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pentagon,Geometry,Geometry -> Pentagon,C0031,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Circumference,Geometry,Geometry -> Circumference,C0110,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Rigid_transformation,Translation_(geometry),Translation_(geometry) -> Rigid_transformation,,C0128,concept_missing_absent_from_book,Missing concept absent from textbook text
+Trigonometric_functions,Geometry,Geometry -> Trigonometric_functions,C0095,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Pythagorean_theorem,Angle,Angle -> Pythagorean_theorem,C0085,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Diagonal,Polygon,Polygon -> Diagonal,,C0032,concept_missing_absent_from_book,Missing concept absent from textbook text
+Quadrilateral,Line_segment,Line_segment -> Quadrilateral,C0033,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Translation_(geometry),Symmetry,Symmetry -> Translation_(geometry),C0128,C0127,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Polygon,Line_(geometry),Line_(geometry) -> Polygon,C0032,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Internal_and_external_angle,Angle,Angle -> Internal_and_external_angle,C0071,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Special_right_triangles,Point_(geometry),Point_(geometry) -> Special_right_triangles,C0086,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pentagon,Line_segment,Line_segment -> Pentagon,C0031,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Parallelogram,Polygon,Polygon -> Parallelogram,C0072,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Kite_(geometry),Polygon,Polygon -> Kite_(geometry),C0078,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Tangent,Line_segment,Line_segment -> Tangent,C0093,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Arc_(geometry),Circle,Circle -> Arc_(geometry),C0102,C0097,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Right_triangle,Angle,Angle -> Right_triangle,C0025,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Transversal_(geometry),Point_(geometry),Point_(geometry) -> Transversal_(geometry),C0047,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Prism_(geometry),Angle,Angle -> Prism_(geometry),C0113,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Rectangle,Parallel_(geometry),Parallel_(geometry) -> Rectangle,C0074,C0045,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Quadrilateral,Geometry,Geometry -> Quadrilateral,C0033,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Quadrilateral,Point_(geometry),Point_(geometry) -> Quadrilateral,C0033,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Grade_(slope),Line_(geometry),Line_(geometry) -> Grade_(slope),C0050,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Rotational_symmetry,Symmetry,Symmetry -> Rotational_symmetry,C0126,C0127,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Pythagorean_theorem,Right_angle,Right_angle -> Pythagorean_theorem,C0085,C0025,survived_in_graph,Successfully extracted into rule_v3 graph
+Octagon,Geometry,Geometry -> Octagon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Coordinate_system,Two-dimensional_space,Two-dimensional_space -> Coordinate_system,,C0004,concept_missing_absent_from_book,Missing concept absent from textbook text
+Square,Vertex_(geometry),Vertex_(geometry) -> Square,C0076,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Dodecagon,Edge_(geometry),Edge_(geometry) -> Dodecagon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Sine,Angle,Angle -> Sine,C0091,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Tangent,Geometry,Geometry -> Tangent,C0093,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Cartesian_coordinate_system,Coordinate_system,Coordinate_system -> Cartesian_coordinate_system,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Prism_(geometry),Vertex_(geometry),Vertex_(geometry) -> Prism_(geometry),C0113,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Congruence_(geometry),Angle,Angle -> Congruence_(geometry),C0040,C0012,llm_rejection,"Proposed as a different relation type (Part-of, Similarity, etc.)"
+Parallelogram,Edge_(geometry),Edge_(geometry) -> Parallelogram,C0072,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Trigonometric_functions,Polygon,Polygon -> Trigonometric_functions,C0095,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Heptagon,Vertex_(geometry),Vertex_(geometry) -> Heptagon,,C0014,concept_missing_absent_from_book,Missing concept absent from textbook text
+Rotational_symmetry,Angle,Angle -> Rotational_symmetry,C0126,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pyramid_(geometry),Line_segment,Line_segment -> Pyramid_(geometry),C0114,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Inverse_trigonometric_functions,Trigonometric_functions,Trigonometric_functions -> Inverse_trigonometric_functions,C0089,C0095,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Trigonometric_functions,Edge_(geometry),Edge_(geometry) -> Trigonometric_functions,C0095,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Chord_(geometry),Geometry,Geometry -> Chord_(geometry),C0096,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Coordinate_system,Point_(geometry),Point_(geometry) -> Coordinate_system,,C0005,concept_missing_absent_from_book,Missing concept absent from textbook text
+Decagon,Geometry,Geometry -> Decagon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Edge_(geometry),Line_segment,Line_segment -> Edge_(geometry),,C0003,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Rigid_transformation,Rotation_(mathematics),Rotation_(mathematics) -> Rigid_transformation,,C0125,concept_missing_absent_from_book,Missing concept absent from textbook text
+Square,Quadrilateral,Quadrilateral -> Square,C0076,C0033,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Trapezoid,Angle,Angle -> Trapezoid,C0079,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Heptagon,Angle,Angle -> Heptagon,,C0012,concept_missing_absent_from_book,Missing concept absent from textbook text
+Rectangle,Parallelogram,Parallelogram -> Rectangle,C0074,C0072,llm_rejection,"Proposed as a different relation type (Part-of, Similarity, etc.)"
+Radius,Circle,Circle -> Radius,C0100,C0097,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Rigid_transformation,Geometry,Geometry -> Rigid_transformation,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Rectangle,Angle,Angle -> Rectangle,C0074,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Pythagorean_theorem,Triangle,Triangle -> Pythagorean_theorem,C0085,C0028,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Sphere,Geometry,Geometry -> Sphere,C0121,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Rhombus,Parallel_(geometry),Parallel_(geometry) -> Rhombus,C0075,C0045,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pythagorean_triple,Triangle,Triangle -> Pythagorean_triple,,C0028,concept_missing_absent_from_book,Missing concept absent from textbook text
+Hendecagon,Angle,Angle -> Hendecagon,,C0012,concept_missing_absent_from_book,Missing concept absent from textbook text
+Secant_line,Point_(geometry),Point_(geometry) -> Secant_line,C0105,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Transversal_(geometry),Angle,Angle -> Transversal_(geometry),C0047,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Inverse_trigonometric_functions,Line_(geometry),Line_(geometry) -> Inverse_trigonometric_functions,C0089,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Prism_(geometry),Point_(geometry),Point_(geometry) -> Prism_(geometry),C0113,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Polygon,Geometry,Geometry -> Polygon,C0032,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Circumference,Circle,Circle -> Circumference,C0110,C0097,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Inverse_trigonometric_functions,Polygon,Polygon -> Inverse_trigonometric_functions,C0089,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Diagonal,Vertex_(geometry),Vertex_(geometry) -> Diagonal,,C0014,concept_missing_absent_from_book,Missing concept absent from textbook text
+Diagonal,Line_segment,Line_segment -> Diagonal,,C0003,concept_missing_absent_from_book,Missing concept absent from textbook text
+Trigonometric_functions,Triangle,Triangle -> Trigonometric_functions,C0095,C0028,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Triangle,Line_(geometry),Line_(geometry) -> Triangle,C0028,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Sine,Triangle,Triangle -> Sine,C0091,C0028,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Line_(geometry),Point_(geometry),Point_(geometry) -> Line_(geometry),C0002,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Rotational_symmetry,Rotation_(mathematics),Rotation_(mathematics) -> Rotational_symmetry,C0126,C0125,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Convex_polygon,Vertex_(geometry),Vertex_(geometry) -> Convex_polygon,,C0014,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Acute_and_obtuse_triangles,Angle,Angle -> Acute_and_obtuse_triangles,C0020,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Edge_(geometry),Geometry,Geometry -> Edge_(geometry),,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Trapezoid,Point_(geometry),Point_(geometry) -> Trapezoid,C0079,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Parallelogram,Geometry,Geometry -> Parallelogram,C0072,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Angle_bisector_theorem,Angle,Angle -> Angle_bisector_theorem,C0065,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Kite_(geometry),Geometry,Geometry -> Kite_(geometry),C0078,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Cartesian_coordinate_system,Plane_(geometry),Plane_(geometry) -> Cartesian_coordinate_system,,C0004,concept_missing_absent_from_book,Missing concept absent from textbook text
+Skew_lines,Plane_(geometry),Plane_(geometry) -> Skew_lines,,C0004,concept_missing_absent_from_book,Missing concept absent from textbook text
+Triangle_inequality,Polygon,Polygon -> Triangle_inequality,,C0032,concept_missing_absent_from_book,Missing concept absent from textbook text
+Hexagon,Polygon,Polygon -> Hexagon,C0030,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Prism_(geometry),Face_(geometry),Face_(geometry) -> Prism_(geometry),C0113,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Pythagorean_triple,Edge_(geometry),Edge_(geometry) -> Pythagorean_triple,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Midpoint,Geometry,Geometry -> Midpoint,C0008,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Rectangle,Geometry,Geometry -> Rectangle,C0074,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Diagonal,Line_(geometry),Line_(geometry) -> Diagonal,,C0002,concept_missing_absent_from_book,Missing concept absent from textbook text
+Face_(geometry),Geometry,Geometry -> Face_(geometry),,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Special_right_triangles,Edge_(geometry),Edge_(geometry) -> Special_right_triangles,C0086,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Octagon,Vertex_(geometry),Vertex_(geometry) -> Octagon,,C0014,concept_missing_absent_from_book,Missing concept absent from textbook text
+Triangle,Vertex_(geometry),Vertex_(geometry) -> Triangle,C0028,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Special_right_triangles,Angle,Angle -> Special_right_triangles,C0086,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Altitude_(triangle),Line_segment,Line_segment -> Altitude_(triangle),C0068,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Equilateral_triangle,Edge_(geometry),Edge_(geometry) -> Equilateral_triangle,C0022,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Pythagorean_triple,Point_(geometry),Point_(geometry) -> Pythagorean_triple,,C0005,concept_missing_absent_from_book,Missing concept absent from textbook text
+Special_right_triangles,Polygon,Polygon -> Special_right_triangles,C0086,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Rhombus,Point_(geometry),Point_(geometry) -> Rhombus,C0075,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Hendecagon,Point_(geometry),Point_(geometry) -> Hendecagon,,C0005,concept_missing_absent_from_book,Missing concept absent from textbook text
+Nonagon,Edge_(geometry),Edge_(geometry) -> Nonagon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Convex_polygon,Line_segment,Line_segment -> Convex_polygon,,C0003,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Grade_(slope),Slope,Slope -> Grade_(slope),C0050,C0050,concept_missing_present_not_extracted,Both mapped to identical KG concept C0050
+Altitude_(triangle),Perpendicular,Perpendicular -> Altitude_(triangle),C0068,C0046,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Chord_(geometry),Line_segment,Line_segment -> Chord_(geometry),C0096,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Altitude_(triangle),Angle,Angle -> Altitude_(triangle),C0068,C0012,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Chord_(geometry),Circle,Circle -> Chord_(geometry),C0096,C0097,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Skew_lines,Geometry,Geometry -> Skew_lines,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Diameter,Circle,Circle -> Diameter,C0098,C0097,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Tessellation,Geometry,Geometry -> Tessellation,,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Heptagon,Line_(geometry),Line_(geometry) -> Heptagon,,C0002,concept_missing_absent_from_book,Missing concept absent from textbook text
+Cone,Circle,Circle -> Cone,C0120,C0097,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Kite_(geometry),Line_segment,Line_segment -> Kite_(geometry),C0078,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Angle_bisector_theorem,Vertex_(geometry),Vertex_(geometry) -> Angle_bisector_theorem,C0065,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Octagon,Polygon,Polygon -> Octagon,,C0032,concept_missing_absent_from_book,Missing concept absent from textbook text
+Reflection_(mathematics),Rotation_(mathematics),Rotation_(mathematics) -> Reflection_(mathematics),C0130,C0125,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Isosceles_triangle,Point_(geometry),Point_(geometry) -> Isosceles_triangle,C0023,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Exterior_angle_theorem,Polygon,Polygon -> Exterior_angle_theorem,C0054,C0032,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Pythagorean_theorem,Geometry,Geometry -> Pythagorean_theorem,C0085,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Isosceles_triangle,Line_(geometry),Line_(geometry) -> Isosceles_triangle,C0023,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Parallelogram,Point_(geometry),Point_(geometry) -> Parallelogram,C0072,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Sine,Vertex_(geometry),Vertex_(geometry) -> Sine,C0091,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pyramid_(geometry),Point_(geometry),Point_(geometry) -> Pyramid_(geometry),C0114,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Pyramid_(geometry),Polygon,Polygon -> Pyramid_(geometry),C0114,C0032,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Perpendicular,Point_(geometry),Point_(geometry) -> Perpendicular,C0046,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Perpendicular,Geometry,Geometry -> Perpendicular,C0046,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Angle_bisector_theorem,Bisection,Bisection -> Angle_bisector_theorem,C0065,C0051,survived_in_graph,Successfully extracted into rule_v3 graph
+Altitude_(triangle),Edge_(geometry),Edge_(geometry) -> Altitude_(triangle),C0068,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Right_triangle,Edge_(geometry),Edge_(geometry) -> Right_triangle,C0025,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Cylinder_(geometry),Geometry,Geometry -> Cylinder_(geometry),C0117,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Acute_and_obtuse_triangles,Line_(geometry),Line_(geometry) -> Acute_and_obtuse_triangles,C0020,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Star_polygon,Polygon,Polygon -> Star_polygon,,C0032,concept_missing_absent_from_book,Missing concept absent from textbook text
+Decagon,Vertex_(geometry),Vertex_(geometry) -> Decagon,,C0014,concept_missing_absent_from_book,Missing concept absent from textbook text
+Internal_and_external_angle,Geometry,Geometry -> Internal_and_external_angle,C0071,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Inverse_trigonometric_functions,Sine,Sine -> Inverse_trigonometric_functions,C0089,C0091,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Inverse_trigonometric_functions,Vertex_(geometry),Vertex_(geometry) -> Inverse_trigonometric_functions,C0089,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Exterior_angle_theorem,Line_(geometry),Line_(geometry) -> Exterior_angle_theorem,C0054,C0002,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Transversal_(geometry),Geometry,Geometry -> Transversal_(geometry),C0047,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Equilateral_triangle,Point_(geometry),Point_(geometry) -> Equilateral_triangle,C0022,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Triangle,Line_segment,Line_segment -> Triangle,C0028,C0003,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Translation_(geometry),Geometry,Geometry -> Translation_(geometry),C0128,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Convex_polygon,Line_(geometry),Line_(geometry) -> Convex_polygon,,C0002,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Hexagon,Line_(geometry),Line_(geometry) -> Hexagon,C0030,C0002,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Collinearity,Line_(geometry),Line_(geometry) -> Collinearity,,C0002,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Nonagon,Polygon,Polygon -> Nonagon,,C0032,concept_missing_absent_from_book,Missing concept absent from textbook text
+Bisection,Geometry,Geometry -> Bisection,C0051,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Pyramid_(geometry),Vertex_(geometry),Vertex_(geometry) -> Pyramid_(geometry),C0114,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Triangle_inequality,Point_(geometry),Point_(geometry) -> Triangle_inequality,,C0005,concept_missing_absent_from_book,Missing concept absent from textbook text
+Rhombus,Angle,Angle -> Rhombus,C0075,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Hexagon,Point_(geometry),Point_(geometry) -> Hexagon,C0030,C0005,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Special_right_triangles,Geometry,Geometry -> Special_right_triangles,C0086,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Altitude_(triangle),Distance,Distance -> Altitude_(triangle),C0068,,concept_missing_absent_from_book,Missing concept absent from textbook text
+Parallelogram,Quadrilateral,Quadrilateral -> Parallelogram,C0072,C0033,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Tangent,Vertex_(geometry),Vertex_(geometry) -> Tangent,C0093,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Reflection_symmetry,Rotation_(mathematics),Rotation_(mathematics) -> Reflection_symmetry,C0124,C0125,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Angle,Point_(geometry),Point_(geometry) -> Angle,C0012,C0005,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Parallelogram,Vertex_(geometry),Vertex_(geometry) -> Parallelogram,C0072,C0014,not_a_candidate,Zero sentence co-occurrences (n=0); rule keyword path requires sentence co-occurrence
+Polygon,Edge_(geometry),Edge_(geometry) -> Polygon,C0032,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
+Bisection,Angle,Angle -> Bisection,C0051,C0012,relatedness_filter,Co-occurred but no prerequisite regex/cue matched
+Similarity_(geometry),Geometry,Geometry -> Similarity_(geometry),C0082,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
