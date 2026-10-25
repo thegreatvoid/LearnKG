@@ -21,7 +21,16 @@ from typing import Dict, List
 import pandas as pd
 
 from evaluate_prerequisite_extraction import build_extracted_concept_index, match_gold_concept
-from .data import DEFAULT_KG_DIR, DEFAULT_SOURCE, fmt, load_alcpl, load_kg, read_source
+from .data import (
+    DEFAULT_ALCPL_PAIRS,
+    DEFAULT_ALCPL_PREQS,
+    DEFAULT_KG_DIR,
+    DEFAULT_SOURCE,
+    fmt,
+    load_alcpl,
+    load_kg,
+    read_source,
+)
 
 
 def _norm(s):
@@ -105,6 +114,8 @@ def main():
     ap.add_argument("--judge-model", default=None,
                     help="Ollama model for the concept-precision judge (off if omitted; use a model other than the extractor's)")
     ap.add_argument("--subject", default="the subject of this textbook", help="subject named in the judge prompt")
+    ap.add_argument("--pairs", type=Path, default=DEFAULT_ALCPL_PAIRS, help="AL-CPL <subject>.pairs")
+    ap.add_argument("--preqs", type=Path, default=DEFAULT_ALCPL_PREQS, help="AL-CPL <subject>.preqs")
     a = ap.parse_args()
     out = a.out or a.kg_dir / "kg_eval"
     out.mkdir(parents=True, exist_ok=True)
@@ -117,7 +128,7 @@ def main():
         return bool(n) and any(v in text for v in (f" {n} ", f" {n}s ", f" {n}es ", f" {n.rstrip('s')} "))
     verbatim = [found(n) for n in concepts["concept_name"]]
 
-    gold = load_alcpl()
+    gold = load_alcpl(a.pairs, a.preqs)
     by_id, term_to_cid, normalizer = build_extracted_concept_index(concepts)
     names = sorted(set(gold["concept"]) | set(gold["prereq"]))
     match = {g: match_gold_concept(g, term_to_cid, by_id, normalizer) for g in names}
@@ -125,6 +136,7 @@ def main():
     high = {g for g, m in match.items() if m[0] and m[1] == "high"}
 
     rep = {"kg_dir": str(a.kg_dir), "n_concepts": len(concepts),
+           "gold": f"AL-CPL ({a.pairs.name} / {a.preqs.name})",
            "verbatim_in_text_rate": sum(verbatim) / max(1, len(verbatim)),
            "not_verbatim_examples": [n for n, v in zip(concepts["concept_name"], verbatim) if not v][:15],
            "gold_concepts": len(names), "gold_concept_recall_any": len(matched) / len(names),

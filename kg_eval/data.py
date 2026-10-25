@@ -186,8 +186,17 @@ def prf(pred: Sequence[int], labels: Sequence[int]) -> Dict[str, float]:
 
 # ---------- AL-CPL gold and textbook positions ----------
 
-DEFAULT_ALCPL_PAIRS = ROOT / "data_input" / "ck12_geometry" / "geometry.pairs"
-DEFAULT_ALCPL_PREQS = ROOT / "data_input" / "ck12_geometry" / "geometry.preqs"
+# Original AL-CPL benchmark
+ORIGINAL_ALCPL_PAIRS = ROOT / "data_input" / "ck12_geometry" / "geometry.pairs"
+ORIGINAL_ALCPL_PREQS = ROOT / "data_input" / "ck12_geometry" / "geometry.preqs"
+
+# Cleaned AL-CPL benchmark (excludes 13 concepts absent from CK-12 Geometry textbook)
+CLEANED_ALCPL_PAIRS = ROOT / "data_input" / "ck12_geometry_cleaned" / "geometry.pairs"
+CLEANED_ALCPL_PREQS = ROOT / "data_input" / "ck12_geometry_cleaned" / "geometry.preqs"
+
+# Default benchmark paths used by kg_eval
+DEFAULT_ALCPL_PAIRS = CLEANED_ALCPL_PAIRS
+DEFAULT_ALCPL_PREQS = CLEANED_ALCPL_PREQS
 
 
 def load_alcpl(pairs_path: Path = DEFAULT_ALCPL_PAIRS, preqs_path: Path = DEFAULT_ALCPL_PREQS) -> pd.DataFrame:
