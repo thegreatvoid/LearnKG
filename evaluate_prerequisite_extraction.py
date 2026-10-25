@@ -51,6 +51,8 @@ GEOMETRY_SYNONYM_MAP: Dict[str, List[str]] = {
     "Star polygon":               ["Star Polygon"],
     "Trigonometric functions":    ["Trigonometry", "Sine", "Cosine", "Tangent Ratio"],
     "Two-dimensional space":      ["Coordinate Plane", "Plane"],
+    "Collinearity":               ["Collinear points"],
+    "Sine":                       ["Sine Ratios"],
 }
 
 
