@@ -2,21 +2,47 @@
   "prerequisite_evaluation": {
     "gold_pairs_total": 1681,
     "gold_concepts_total": 89,
-    "gold_concepts_matched": 65,
-    "gold_concept_coverage": 0.7303,
-    "matched_pairs_evaluated": 1025,
+    "gold_concepts_matched": 71,
+    "gold_concept_coverage": 0.7978,
+    "matched_pairs_evaluated": 1159,
     "matched_concept_metrics": {
       "tp": 6,
       "fp": 3,
-      "fn": 289,
-      "tn": 727,
+      "fn": 312,
+      "tn": 838,
       "precision": 0.6667,
-      "recall": 0.0203,
-      "f1": 0.0395,
-      "accuracy": 0.7151,
-      "specificity": 0.9959,
-      "balanced_accuracy": 0.5081,
-      "mcc": 0.0788
+      "recall": 0.0189,
+      "f1": 0.0367,
+      "accuracy": 0.7282,
+      "specificity": 0.9964,
+      "balanced_accuracy": 0.5077,
+      "mcc": 0.0778
+    },
+    "matched_concept_metrics_direct": {
+      "tp": 6,
+      "fp": 3,
+      "fn": 312,
+      "tn": 838,
+      "precision": 0.6667,
+      "recall": 0.0189,
+      "f1": 0.0367,
+      "accuracy": 0.7282,
+      "specificity": 0.9964,
+      "balanced_accuracy": 0.5077,
+      "mcc": 0.0778
+    },
+    "matched_concept_metrics_transitive_closure": {
+      "tp": 6,
+      "fp": 3,
+      "fn": 312,
+      "tn": 838,
+      "precision": 0.6667,
+      "recall": 0.0189,
+      "f1": 0.0367,
+      "accuracy": 0.7282,
+      "specificity": 0.9964,
+      "balanced_accuracy": 0.5077,
+      "mcc": 0.0778
     },
     "all_pairs_metrics": {
       "tp": 6,
@@ -31,23 +57,51 @@
       "balanced_accuracy": 0.5044,
       "mcc": 0.0562
     },
-    "ndcg_at_5": 0.5348,
-    "ndcg_at_10": 0.6086,
+    "all_pairs_metrics_direct": {
+      "tp": 6,
+      "fp": 3,
+      "fn": 518,
+      "tn": 1154,
+      "precision": 0.6667,
+      "recall": 0.0115,
+      "f1": 0.0225,
+      "accuracy": 0.6901,
+      "specificity": 0.9974,
+      "balanced_accuracy": 0.5044,
+      "mcc": 0.0562
+    },
+    "all_pairs_metrics_transitive_closure": {
+      "tp": 6,
+      "fp": 3,
+      "fn": 518,
+      "tn": 1154,
+      "precision": 0.6667,
+      "recall": 0.0115,
+      "f1": 0.0225,
+      "accuracy": 0.6901,
+      "specificity": 0.9974,
+      "balanced_accuracy": 0.5044,
+      "mcc": 0.0562
+    },
+    "roc_auc_direct": 0.5077,
+    "roc_auc_transitive_closure": 0.5077,
+    "ndcg_at_5": 0.4999,
+    "ndcg_at_10": 0.5903,
     "direction_errors_reversed_edges": 0,
     "leakage_note": "Book-order is not used as an evaluation signal; strictly directional predicted edges evaluated."
   },
   "reference_free_quality_indicators": {
-    "total_relations": 73,
+    "total_relations": 83,
     "relation_distribution": {
-      "Similarity": 46,
+      "Similarity": 56,
       "Prerequisite": 16,
       "Part-of": 7,
       "Application": 2,
       "Extension": 2
     },
     "evidence_quote_validity_rate": 1.0,
-    "evidence_quotes_checked": 73,
-    "evidence_quotes_verified": 73,
+    "evidence_quotes_checked": 83,
+    "evidence_quotes_verified": 83,
     "schema_compliance_rate": 1.0,
     "duplicate_edge_count": 0,
     "part_of_type_confusion_count": 0,
@@ -57,8 +111,8 @@
     "quality_indicator_limitations": "Automated verification indicators reflect evidence grounding and schema compliance, not independent human ground-truth accuracy."
   },
   "graph_topology_diagnostics": {
-    "num_nodes": 130,
-    "num_edges": 72,
+    "num_nodes": 138,
+    "num_edges": 82,
     "density": 0.0043,
     "referential_integrity": {
       "dangling_sources": 0,
@@ -72,16 +126,16 @@
       "extension_is_dag": true
     },
     "connectivity": {
-      "connected_components": 91,
-      "largest_component_size": 20,
-      "largest_component_ratio": 0.1538,
-      "isolated_concepts": 79
+      "connected_components": 98,
+      "largest_component_size": 21,
+      "largest_component_ratio": 0.1522,
+      "isolated_concepts": 86
     }
   },
   "bigs_grounding_metrics": {
     "bigs_coverage_forward": 0.4821,
-    "bigs_grounding_backward": 0.3195,
-    "sym_bigs": 0.4118,
+    "bigs_grounding_backward": 0.3311,
+    "sym_bigs": 0.4162,
     "embedder": "sentence-transformers/all-MiniLM-L6-v2",
     "note": "BIGS assesses semantic proximity of verbalized triples to sentences; low distance does not guarantee correct direction."
   }

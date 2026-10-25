@@ -1,14 +1,14 @@
 {
-  "kg_dir": "data_output/ck12_geometry_kgx_v2_hybrid",
+  "kg_dir": "data_output\\ck12_geometry_kgx_v2_hybrid",
   "gold_positive_pairs_matched": 293,
   "uses_book_order": true,
   "kg_edges": {
-    "decided": 76,
-    "correct": 75,
-    "accuracy": 0.9868421052631579,
+    "decided": 87,
+    "correct": 86,
+    "accuracy": 0.9885057471264368,
     "wilson95": [
-      0.929161553705025,
-      0.9976735798594324
+      0.937726515139851,
+      0.9979681445755221
     ]
   },
   "pair_scores": {

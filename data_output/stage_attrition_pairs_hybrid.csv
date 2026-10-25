@@ -21,7 +21,7 @@ Rhombus,Edge_(geometry),Edge_(geometry) -> Rhombus,C0154,,concept_missing_presen
 Right_triangle,Polygon,Polygon -> Right_triangle,C0156,C0135,direction_wrong,Book order inverted or unpositioned: pos(C0135)=2919 >= pos(C0156)=2697
 Reflection_symmetry,Line_(geometry),Line_(geometry) -> Reflection_symmetry,C0103,C0100,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
 Acute_and_obtuse_triangles,Vertex_(geometry),Vertex_(geometry) -> Acute_and_obtuse_triangles,C0002,C0200,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
-Rhombus,Parallelogram,Parallelogram -> Rhombus,C0154,C0123,top_k_cap,Dropped by predecessor cap k=3 (rank=7)
+Rhombus,Parallelogram,Parallelogram -> Rhombus,C0154,C0123,top_k_cap,Dropped by predecessor cap k=3 (rank=5)
 Acute_and_obtuse_triangles,Triangle,Triangle -> Acute_and_obtuse_triangles,C0002,C0192,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
 Trigonometric_functions,Line_(geometry),Line_(geometry) -> Trigonometric_functions,C0197,C0100,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Arc_length,Distance,Distance -> Arc_length,C0017,C0069,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
@@ -47,7 +47,7 @@ Self-similarity,Similarity_(geometry),Similarity_(geometry) -> Self-similarity,,
 Altitude_(triangle),Point_(geometry),Point_(geometry) -> Altitude_(triangle),C0007,C0133,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
 Edge_(geometry),Line_(geometry),Line_(geometry) -> Edge_(geometry),,C0100,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Reflection_symmetry,Reflection_(mathematics),Reflection_(mathematics) -> Reflection_symmetry,C0103,C0150,direction_wrong,Book order inverted or unpositioned: pos(C0150)=20056 >= pos(C0103)=19586
-Angle_bisector_theorem,Point_(geometry),Point_(geometry) -> Angle_bisector_theorem,C0012,C0133,top_k_cap,Dropped by predecessor cap k=3 (rank=4)
+Angle_bisector_theorem,Point_(geometry),Point_(geometry) -> Angle_bisector_theorem,C0012,C0133,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
 Star_polygon,Vertex_(geometry),Vertex_(geometry) -> Star_polygon,,C0200,concept_missing_absent_from_book,Missing concept absent from textbook text
 Convex_polygon,Point_(geometry),Point_(geometry) -> Convex_polygon,,C0133,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Pythagorean_triple,Line_(geometry),Line_(geometry) -> Pythagorean_triple,C0143,C0100,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
@@ -86,12 +86,12 @@ Hendecagon,Line_(geometry),Line_(geometry) -> Hendecagon,,C0100,concept_missing_
 Decagon,Line_segment,Line_segment -> Decagon,,C0102,concept_missing_absent_from_book,Missing concept absent from textbook text
 Edge_(geometry),Point_(geometry),Point_(geometry) -> Edge_(geometry),,C0133,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Pythagorean_theorem,Point_(geometry),Point_(geometry) -> Pythagorean_theorem,C0142,C0133,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
-Radius,Line_(geometry),Line_(geometry) -> Radius,C0145,C0100,top_k_cap,Dropped by predecessor cap k=3 (rank=4)
+Radius,Line_(geometry),Line_(geometry) -> Radius,C0145,C0100,top_k_cap,Dropped by predecessor cap k=3 (rank=5)
 Convex_polygon,Angle,Angle -> Convex_polygon,,C0008,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Tangent,Triangle,Triangle -> Tangent,C0186,C0192,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Heptagon,Edge_(geometry),Edge_(geometry) -> Heptagon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
 Rectangle,Vertex_(geometry),Vertex_(geometry) -> Rectangle,C0149,C0200,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
-Rotation_(mathematics),Point_(geometry),Point_(geometry) -> Rotation_(mathematics),C0159,C0133,top_k_cap,Dropped by predecessor cap k=3 (rank=7)
+Rotation_(mathematics),Point_(geometry),Point_(geometry) -> Rotation_(mathematics),C0159,C0133,top_k_cap,Dropped by predecessor cap k=3 (rank=5)
 Rigid_transformation,Line_(geometry),Line_(geometry) -> Rigid_transformation,C0157,C0100,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Rhombus,Line_segment,Line_segment -> Rhombus,C0154,C0102,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Kite_(geometry),Quadrilateral,Quadrilateral -> Kite_(geometry),C0096,C0144,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
@@ -169,7 +169,7 @@ Right_triangle,Geometry,Geometry -> Right_triangle,C0156,,concept_missing_presen
 Edge_(geometry),Vertex_(geometry),Vertex_(geometry) -> Edge_(geometry),,C0200,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Nonagon,Angle,Angle -> Nonagon,,C0008,concept_missing_absent_from_book,Missing concept absent from textbook text
 Rectangle,Line_(geometry),Line_(geometry) -> Rectangle,C0149,C0100,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
-Square,Right_angle,Right_angle -> Square,C0175,C0155,top_k_cap,Dropped by predecessor cap k=3 (rank=5)
+Square,Right_angle,Right_angle -> Square,C0175,C0155,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
 Pentagon,Angle,Angle -> Pentagon,C0124,C0008,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Rigid_transformation,Point_(geometry),Point_(geometry) -> Rigid_transformation,C0157,C0133,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Reflection_symmetry,Symmetry,Symmetry -> Reflection_symmetry,C0103,C0183,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
@@ -283,7 +283,7 @@ Rectangle,Right_angle,Right_angle -> Rectangle,C0149,C0155,survived_in_graph,Sur
 Chord_(geometry),Point_(geometry),Point_(geometry) -> Chord_(geometry),C0030,C0133,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Pythagorean_theorem,Edge_(geometry),Edge_(geometry) -> Pythagorean_theorem,C0142,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Self-similarity,Symmetry,Symmetry -> Self-similarity,,C0183,concept_missing_absent_from_book,Missing concept absent from textbook text
-Altitude_(triangle),Triangle,Triangle -> Altitude_(triangle),C0007,C0192,top_k_cap,Dropped by predecessor cap k=3 (rank=5)
+Altitude_(triangle),Triangle,Triangle -> Altitude_(triangle),C0007,C0192,top_k_cap,Dropped by predecessor cap k=3 (rank=6)
 Sine,Point_(geometry),Point_(geometry) -> Sine,,C0133,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Convex_polygon,Edge_(geometry),Edge_(geometry) -> Convex_polygon,,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Kite_(geometry),Point_(geometry),Point_(geometry) -> Kite_(geometry),C0096,C0133,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
@@ -300,7 +300,7 @@ Arc_length,Arc_(geometry),Arc_(geometry) -> Arc_length,C0017,C0015,survived_in_g
 Trigonometric_functions,Point_(geometry),Point_(geometry) -> Trigonometric_functions,C0197,C0133,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Star_polygon,Edge_(geometry),Edge_(geometry) -> Star_polygon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
 Line_segment,Point_(geometry),Point_(geometry) -> Line_segment,C0102,C0133,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
-Chord_(geometry),Line_(geometry),Line_(geometry) -> Chord_(geometry),C0030,C0100,top_k_cap,Dropped by predecessor cap k=3 (rank=6)
+Chord_(geometry),Line_(geometry),Line_(geometry) -> Chord_(geometry),C0030,C0100,top_k_cap,Dropped by predecessor cap k=3 (rank=7)
 Kite_(geometry),Edge_(geometry),Edge_(geometry) -> Kite_(geometry),C0096,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Altitude_(triangle),Polygon,Polygon -> Altitude_(triangle),C0007,C0135,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Triangle_inequality,Triangle,Triangle -> Triangle_inequality,C0194,C0192,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
@@ -312,13 +312,13 @@ Right_triangle,Right_angle,Right_angle -> Right_triangle,C0156,C0155,relatedness
 Octagon,Angle,Angle -> Octagon,,C0008,concept_missing_absent_from_book,Missing concept absent from textbook text
 Arc_(geometry),Geometry,Geometry -> Arc_(geometry),C0015,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Line_segment,Geometry,Geometry -> Line_segment,C0102,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
-Tangent,Line_(geometry),Line_(geometry) -> Tangent,C0186,C0100,top_k_cap,Dropped by predecessor cap k=3 (rank=5)
+Tangent,Line_(geometry),Line_(geometry) -> Tangent,C0186,C0100,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
 Internal_and_external_angle,Line_(geometry),Line_(geometry) -> Internal_and_external_angle,C0074,C0100,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
 Slope,Geometry,Geometry -> Slope,C0172,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Prism_(geometry),Geometry,Geometry -> Prism_(geometry),C0137,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Triangle_inequality,Vertex_(geometry),Vertex_(geometry) -> Triangle_inequality,C0194,C0200,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Pentagon,Line_(geometry),Line_(geometry) -> Pentagon,C0124,C0100,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
-Exterior_angle_theorem,Internal_and_external_angle,Internal_and_external_angle -> Exterior_angle_theorem,C0076,C0074,top_k_cap,Dropped by predecessor cap k=3 (rank=4)
+Exterior_angle_theorem,Internal_and_external_angle,Internal_and_external_angle -> Exterior_angle_theorem,C0076,C0074,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
 Hexagon,Line_segment,Line_segment -> Hexagon,C0079,C0102,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Congruence_(geometry),Point_(geometry),Point_(geometry) -> Congruence_(geometry),C0043,C0133,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Altitude_(triangle),Vertex_(geometry),Vertex_(geometry) -> Altitude_(triangle),C0007,C0200,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
@@ -329,17 +329,17 @@ Pythagorean_theorem,Line_(geometry),Line_(geometry) -> Pythagorean_theorem,C0142
 Hendecagon,Edge_(geometry),Edge_(geometry) -> Hendecagon,,,concept_missing_absent_from_book,Missing concept absent from textbook text
 Triangle,Polygon,Polygon -> Triangle,C0192,C0135,direction_wrong,Book order inverted or unpositioned: pos(C0135)=2919 >= pos(C0192)=2321
 Reflection_(mathematics),Angle,Angle -> Reflection_(mathematics),C0150,C0008,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
-Isosceles_triangle,Angle,Angle -> Isosceles_triangle,C0094,C0008,top_k_cap,Dropped by predecessor cap k=3 (rank=4)
+Isosceles_triangle,Angle,Angle -> Isosceles_triangle,C0094,C0008,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
 Right_triangle,Line_(geometry),Line_(geometry) -> Right_triangle,C0156,C0100,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Rotational_symmetry,Geometry,Geometry -> Rotational_symmetry,C0158,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Prism_(geometry),Edge_(geometry),Edge_(geometry) -> Prism_(geometry),C0137,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
-Square,Parallelogram,Parallelogram -> Square,C0175,C0123,top_k_cap,Dropped by predecessor cap k=3 (rank=11)
+Square,Parallelogram,Parallelogram -> Square,C0175,C0123,top_k_cap,Dropped by predecessor cap k=3 (rank=10)
 Internal_and_external_angle,Point_(geometry),Point_(geometry) -> Internal_and_external_angle,C0074,C0133,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Reflection_symmetry,Angle,Angle -> Reflection_symmetry,C0103,C0008,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Pythagorean_theorem,Polygon,Polygon -> Pythagorean_theorem,C0142,C0135,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Trigonometric_functions,Vertex_(geometry),Vertex_(geometry) -> Trigonometric_functions,C0197,C0200,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Angle,Geometry,Geometry -> Angle,C0008,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
-Quadrilateral,Angle,Angle -> Quadrilateral,C0144,C0008,top_k_cap,Dropped by predecessor cap k=3 (rank=4)
+Quadrilateral,Angle,Angle -> Quadrilateral,C0144,C0008,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
 Hexagon,Edge_(geometry),Edge_(geometry) -> Hexagon,C0079,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Rectangle,Line_segment,Line_segment -> Rectangle,C0149,C0102,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Arc_length,Geometry,Geometry -> Arc_length,C0017,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
@@ -350,7 +350,7 @@ Triangle,Angle,Angle -> Triangle,C0192,C0008,survived_in_graph,Survived into fin
 Radius,Point_(geometry),Point_(geometry) -> Radius,C0145,C0133,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
 Square,Point_(geometry),Point_(geometry) -> Square,C0175,C0133,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Diagonal,Geometry,Geometry -> Diagonal,C0067,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
-Rotation_(mathematics),Line_(geometry),Line_(geometry) -> Rotation_(mathematics),C0159,C0100,top_k_cap,Dropped by predecessor cap k=3 (rank=6)
+Rotation_(mathematics),Line_(geometry),Line_(geometry) -> Rotation_(mathematics),C0159,C0100,top_k_cap,Dropped by predecessor cap k=3 (rank=7)
 Isosceles_triangle,Polygon,Polygon -> Isosceles_triangle,C0094,C0135,direction_wrong,Book order inverted or unpositioned: pos(C0135)=2919 >= pos(C0094)=2494
 Collinearity,Geometry,Geometry -> Collinearity,,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Equilateral_triangle,Triangle,Triangle -> Equilateral_triangle,C0073,C0192,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
@@ -369,7 +369,7 @@ Circumference,Geometry,Geometry -> Circumference,C0033,,concept_missing_present_
 Rigid_transformation,Translation_(geometry),Translation_(geometry) -> Rigid_transformation,C0157,C0189,direction_wrong,Book order inverted or unpositioned: pos(C0189)=19819 >= pos(C0157)=19526
 Trigonometric_functions,Geometry,Geometry -> Trigonometric_functions,C0197,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Pythagorean_theorem,Angle,Angle -> Pythagorean_theorem,C0142,C0008,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
-Diagonal,Polygon,Polygon -> Diagonal,C0067,C0135,top_k_cap,Dropped by predecessor cap k=3 (rank=4)
+Diagonal,Polygon,Polygon -> Diagonal,C0067,C0135,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
 Quadrilateral,Line_segment,Line_segment -> Quadrilateral,C0144,C0102,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Translation_(geometry),Symmetry,Symmetry -> Translation_(geometry),C0189,C0183,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Polygon,Line_(geometry),Line_(geometry) -> Polygon,C0135,C0100,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
@@ -413,7 +413,7 @@ Rigid_transformation,Rotation_(mathematics),Rotation_(mathematics) -> Rigid_tran
 Square,Quadrilateral,Quadrilateral -> Square,C0175,C0144,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Trapezoid,Angle,Angle -> Trapezoid,C0191,C0008,relatedness_filter,No sentence co-occurrence (n=0) and no LLM relatedness (rel=0)
 Heptagon,Angle,Angle -> Heptagon,,C0008,concept_missing_absent_from_book,Missing concept absent from textbook text
-Rectangle,Parallelogram,Parallelogram -> Rectangle,C0149,C0123,top_k_cap,Dropped by predecessor cap k=3 (rank=4)
+Rectangle,Parallelogram,Parallelogram -> Rectangle,C0149,C0123,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
 Radius,Circle,Circle -> Radius,C0145,C0031,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)
 Rigid_transformation,Geometry,Geometry -> Rigid_transformation,C0157,,concept_missing_present_not_extracted,Missing concept present in book text but not extracted
 Rectangle,Angle,Angle -> Rectangle,C0149,C0008,survived_in_graph,Survived into final hybrid graph (top-3 related predecessor)

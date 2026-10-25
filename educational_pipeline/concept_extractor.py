@@ -48,18 +48,31 @@ _BOILERPLATE_BLOCKLIST = {
     "and", "basic", "content", "printed",
 }
 
+# Whitelist geometry congruence/similarity shorthand and key domain lexemes
+GEOMETRY_ACRONYMS = {"HL", "AA", "SS", "SA", "AS", "SSS", "SAS", "ASA", "AAS"}
+PROTECTED_DOMAIN_TERMS = {
+    "area", "similarity", "distance", "diagonal", "edge", "face",
+    "geometry", "space", "sine", "cosine", "tangent", "parallel",
+    "perpendicular", "collinearity", "convex polygon", "special right triangles",
+}
+
 
 def _is_boilerplate_concept(name: str) -> bool:
     """Returns True if the candidate name is clearly noise (author, license, etc)."""
-    low = name.lower().strip()
+    stripped = name.strip()
+    if stripped in GEOMETRY_ACRONYMS:
+        return False
+    low = stripped.lower()
+    if low in PROTECTED_DOMAIN_TERMS:
+        return False
     if low in _BOILERPLATE_BLOCKLIST:
         return True
-    is_acronym = bool(re.fullmatch(r"[A-Z]{2,4}", name.strip()))
+    is_acronym = bool(re.fullmatch(r"[A-Z]{2,4}", stripped))
     if not is_acronym:
         # Pure numeric / symbol strings are not concepts
         if not re.search(r"[a-zA-Z]{3,}", name):
             return True
-        # Very short (≤ 2 chars) single tokens are noise (e.g. "SA", "BY", "NC")
+        # Very short (≤ 2 chars) single tokens are noise (e.g. "BY", "NC"), unless whitelisted
         tokens = name.split()
         if len(tokens) == 1 and len(name) <= 2:
             return True
@@ -111,6 +124,9 @@ DOMAIN_TERMS = [
     "Midsegment", "Median", "Altitude", "Centroid", "Incenter", "Circumcenter",
     "Trigonometry", "Sine", "Cosine", "Tangent Ratio", "Inverse Trigonometric",
     "Fractal", "Self Similarity", "Star Polygon",
+    # Domain lexemes and congruence/similarity abbreviations
+    "Distance", "Diagonal", "Edge", "Face", "Collinearity", "Convex Polygon",
+    "Space", "SSS", "SAS", "ASA", "AAS", "HL", "AA",
 ]
 
 
@@ -127,15 +143,16 @@ def extract_candidate_concepts_from_text(text: str) -> List[str]:
     for p in cap_phrase:
         p_clean = p.strip()
         first_word = p_clean.split()[0].lower()
-        if first_word not in STOPWORDS and len(p_clean) > 4 and not _is_boilerplate_concept(p_clean):
+        if (p_clean.lower() in PROTECTED_DOMAIN_TERMS) or (first_word not in STOPWORDS and len(p_clean) > 4 and not _is_boilerplate_concept(p_clean)):
             candidates.add(p_clean)
 
-    # 2. Meaningful all-caps acronyms (geometry: SAS, ASA, AAS, SSS, HL, SSA)
-    #    Restrict to known geometry abbreviation patterns; generic 2-char codes are noise.
+    # 2. Meaningful all-caps acronyms (geometry: SAS, ASA, AAS, SSS, HL, AA)
+    #    Exempt whitelisted 2-letter geometry shorthand
     acronyms = re.findall(r"\b([A-Z]{2,5})\b", text)
     for acr in acronyms:
-        if acr.lower() not in STOPWORDS and acr not in {"AND", "THE", "FOR", "NOT", "URL"}:
-            # Only keep geometry congruence/similarity short-codes or well-known abbreviations
+        if acr in GEOMETRY_ACRONYMS:
+            candidates.add(acr)
+        elif acr.lower() not in STOPWORDS and acr not in {"AND", "THE", "FOR", "NOT", "URL"}:
             if len(acr) >= 3 and not _is_boilerplate_concept(acr):
                 candidates.add(acr)
 
@@ -169,6 +186,7 @@ def extract_concepts_for_chunk(chunk: EducationalChunk, llm_concepts: List[dict]
     Combines rule-based candidates with LLM-extracted concepts.
     Returns list of concept dicts: {concept_name, aliases, concept_type, definition, evidence}
     Boilerplate names (authors, license text) are excluded from both sources.
+    Structural Header Parsing: Concatenates chapter and section metadata with chunk body text.
     """
     results: Dict[str, dict] = {}
 
@@ -185,8 +203,9 @@ def extract_concepts_for_chunk(chunk: EducationalChunk, llm_concepts: List[dict]
                     "evidence": c.get("evidence", ""),
                 }
 
-    # Supplement with deterministic candidates
-    candidates = extract_candidate_concepts_from_text(chunk.text)
+    # Supplement with deterministic candidates (including header and section context)
+    full_chunk_text = f"{chunk.chapter or ''}\n{chunk.section or ''}\n{chunk.text}"
+    candidates = extract_candidate_concepts_from_text(full_chunk_text)
     for cand in candidates:
         if _is_boilerplate_concept(cand):
             continue

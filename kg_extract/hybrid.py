@@ -41,7 +41,7 @@ def rank01(x: np.ndarray) -> np.ndarray:
     return out
 
 
-def build(run_dir: Path, source: Path, out: Path, top_k: int = 3, min_score: float = 0.0):
+def build(run_dir: Path, source: Path, out: Path, top_k: int = 4, min_score: float = 0.0):
     text = read_source(source)
     concepts = pd.read_csv(run_dir / "concepts.csv", dtype=str, keep_default_na=False)
     ids = concepts["concept_id"].tolist()
@@ -85,7 +85,39 @@ def build(run_dir: Path, source: Path, out: Path, top_k: int = 3, min_score: flo
         signals["llm_rel"] = rank01(rel)
     score = np.mean([s for s in signals.values()], axis=0) * forward
 
-    related = (cooc > 0) | (rel > 0)
+    # Definitional Grounding Fallback: Target concept v's definition explicitly references u's name/alias
+    def_mention = np.zeros((n, n), dtype=bool)
+    if "definition" in concepts.columns:
+        defs = {c: str(d).lower() for c, d in zip(concepts.concept_id, concepts.definition)}
+        for j, v in enumerate(ids):
+            v_def = defs.get(v, "")
+            if v_def:
+                for i, u in enumerate(ids):
+                    if i != j:
+                        u_terms = [t.lower() for t in terms.get(u, []) if len(t) > 2]
+                        if any(re.search(rf"\b{re.escape(ut)}\b", v_def) for ut in u_terms):
+                            def_mention[i, j] = True
+
+    # Bi-encoder definition similarity
+    def_sim = np.zeros((n, n), dtype=float)
+    if "definition" in concepts.columns:
+        try:
+            from sentence_transformers import SentenceTransformer
+            model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+            c_name = dict(zip(concepts.concept_id, concepts.concept_name))
+            c_texts = [f"{c_name.get(c, '')}: {concepts.loc[concepts.concept_id == c, 'definition'].values[0]}"
+                       if concepts.loc[concepts.concept_id == c, 'definition'].values[0] else c_name.get(c, '')
+                       for c in ids]
+            c_vecs = model.encode(c_texts, normalize_embeddings=True)
+            def_sim = np.maximum(0.0, c_vecs @ c_vecs.T)
+            np.fill_diagonal(def_sim, 0.0)
+        except Exception:
+            pass
+
+    if def_mention.any():
+        score += 0.10 * def_mention.astype(float) * forward
+
+    related = (cooc > 0) | (rel > 0) | def_mention | (def_sim >= 0.40)
     rows = []
     for i, u in enumerate(ids):
         for j, v in enumerate(ids):
@@ -146,7 +178,7 @@ def main():
     ap.add_argument("--run", type=Path, required=True)
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
-    ap.add_argument("--top-k", type=int, default=3)
+    ap.add_argument("--top-k", type=int, default=4)
     a = ap.parse_args()
     print(json.dumps(build(a.run, a.source, a.out, a.top_k), indent=2))
 

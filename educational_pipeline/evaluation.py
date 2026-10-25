@@ -104,10 +104,16 @@ class GraphEvaluator:
             w = float(row.get("weight", 1.0))
             pred_edges[(s, t)] = max(pred_edges.get((s, t), 0.0), w)
 
+        # Build directed graph of extracted prerequisite edges and compute transitive closure G+
+        G_prereq = nx.DiGraph(list(pred_edges.keys()))
+        G_closure = nx.transitive_closure(G_prereq)
+
         # Reverse prerequisite edge set to detect direction inversions
         reversed_hits = 0
-        all_eval_rows = []
-        matched_eval_rows = []
+        all_eval_rows_direct = []
+        all_eval_rows_closure = []
+        matched_eval_rows_direct = []
+        matched_eval_rows_closure = []
 
         for _, row in gold_df.iterrows():
             gc_tgt = row["concept"]
@@ -117,23 +123,43 @@ class GraphEvaluator:
             cid_src = matched_gold_map.get(gc_src)
             cid_tgt = matched_gold_map.get(gc_tgt)
 
-            # End-to-end (all pairs)
+            # Direct and transitive closure evaluation
             pred_score = 0.0
-            is_pred = 0
+            is_pred_direct = 0
+            is_pred_closure = 0
+            closure_score = 0.0
+
             if cid_src and cid_tgt:
                 if (cid_src, cid_tgt) in pred_edges:
                     pred_score = pred_edges[(cid_src, cid_tgt)]
-                    is_pred = 1
+                    is_pred_direct = 1
                 elif (cid_tgt, cid_src) in pred_edges and label == 1:
                     reversed_hits += 1
 
-                matched_eval_rows.append({
+                if cid_src in G_closure and cid_tgt in G_closure and G_closure.has_edge(cid_src, cid_tgt):
+                    is_pred_closure = 1
+                    try:
+                        path_len = nx.shortest_path_length(G_prereq, cid_src, cid_tgt)
+                        closure_score = 1.0 / path_len
+                    except (nx.NetworkXNoPath, nx.NodeNotFound):
+                        closure_score = 0.5
+                else:
+                    closure_score = 0.0
+
+                matched_eval_rows_direct.append({
                     "src_id": cid_src, "tgt_id": cid_tgt,
-                    "label": label, "pred": is_pred, "score": pred_score,
+                    "label": label, "pred": is_pred_direct, "score": pred_score,
+                })
+                matched_eval_rows_closure.append({
+                    "src_id": cid_src, "tgt_id": cid_tgt,
+                    "label": label, "pred": is_pred_closure, "score": closure_score,
                 })
 
-            all_eval_rows.append({
-                "label": label, "pred": is_pred, "score": pred_score,
+            all_eval_rows_direct.append({
+                "label": label, "pred": is_pred_direct, "score": pred_score,
+            })
+            all_eval_rows_closure.append({
+                "label": label, "pred": is_pred_closure, "score": closure_score,
             })
 
         def calc_prf(rows):
@@ -157,12 +183,27 @@ class GraphEvaluator:
                 "balanced_accuracy": round(bacc, 4), "mcc": round(mcc, 4),
             }
 
-        matched_metrics = calc_prf(matched_eval_rows)
-        all_metrics = calc_prf(all_eval_rows)
+        def compute_auc(rows):
+            pos_scores = [r["score"] for r in rows if r["label"] == 1]
+            neg_scores = [r["score"] for r in rows if r["label"] == 0]
+            if not pos_scores or not neg_scores:
+                return 0.5
+            n_pos = len(pos_scores)
+            n_neg = len(neg_scores)
+            wins = sum(1.0 if p > n else (0.5 if p == n else 0.0) for p in pos_scores for n in neg_scores)
+            return round(wins / (n_pos * n_neg), 4)
+
+        matched_metrics_direct = calc_prf(matched_eval_rows_direct)
+        matched_metrics_closure = calc_prf(matched_eval_rows_closure)
+        all_metrics_direct = calc_prf(all_eval_rows_direct)
+        all_metrics_closure = calc_prf(all_eval_rows_closure)
+
+        auc_direct = compute_auc(matched_eval_rows_direct)
+        auc_closure = compute_auc(matched_eval_rows_closure)
 
         # NDCG@5 and NDCG@10 ranking evaluation across query concepts
         queries = defaultdict(list)
-        for r in matched_eval_rows:
+        for r in matched_eval_rows_direct:
             queries[r["tgt_id"]].append((r["score"], r["label"]))
 
         ndcg5_list = []
@@ -183,9 +224,15 @@ class GraphEvaluator:
             "gold_concepts_total": len(gold_concepts),
             "gold_concepts_matched": len(matched_gold_map),
             "gold_concept_coverage": round(gold_coverage, 4),
-            "matched_pairs_evaluated": len(matched_eval_rows),
-            "matched_concept_metrics": matched_metrics,
-            "all_pairs_metrics": all_metrics,
+            "matched_pairs_evaluated": len(matched_eval_rows_direct),
+            "matched_concept_metrics": matched_metrics_direct,
+            "matched_concept_metrics_direct": matched_metrics_direct,
+            "matched_concept_metrics_transitive_closure": matched_metrics_closure,
+            "all_pairs_metrics": all_metrics_direct,
+            "all_pairs_metrics_direct": all_metrics_direct,
+            "all_pairs_metrics_transitive_closure": all_metrics_closure,
+            "roc_auc_direct": auc_direct,
+            "roc_auc_transitive_closure": auc_closure,
             "ndcg_at_5": round(mean_ndcg5, 4),
             "ndcg_at_10": round(mean_ndcg10, 4),
             "direction_errors_reversed_edges": reversed_hits,

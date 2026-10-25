@@ -173,10 +173,25 @@ class EvidenceVerifier:
         """Deterministic offline rule-based verification when no verifier LLM is available."""
         src_name = proposal.source_name.lower()
         tgt_name = proposal.target_name.lower()
-        quote = proposal.evidence_quote.lower()
+        quote = (proposal.evidence_quote or "").lower()
 
-        # Check 1: Quote existence
-        if not quote_exists:
+        # Definitional Grounding Fallback:
+        # For Prerequisite relations, allow an edge to be accepted if target concept B's definition
+        # explicitly references source concept A's name or alias, even if exact sentence-level quote is missing.
+        tgt_c = self.normalizer.concepts_by_id.get(proposal.target_concept_id)
+        src_c = self.normalizer.concepts_by_id.get(proposal.source_concept_id)
+        def_fallback = False
+        if proposal.relation_type == "Prerequisite" and tgt_c and src_c and tgt_c.definition:
+            t_def = tgt_c.definition.lower()
+            s_aliases = [src_c.concept_name.lower()] + [a.lower() for a in src_c.aliases]
+            if any(re.search(rf"\b{re.escape(sa)}\b", t_def) for sa in s_aliases if len(sa) > 1):
+                def_fallback = True
+                if not proposal.evidence_quote:
+                    proposal.evidence_quote = tgt_c.definition
+                    quote = t_def
+
+        # Check 1: Quote existence (exempt if definitional grounding fallback applies)
+        if not quote_exists and not def_fallback:
             return VerificationRecord(
                 proposal=proposal,
                 status="INSUFFICIENT_EVIDENCE",
@@ -188,11 +203,11 @@ class EvidenceVerifier:
                 accepted=False,
             )
 
-        # Check 2: Concept presence in quote
+        # Check 2: Concept presence in quote (exempt if definitional grounding fallback applies)
         src_in_quote = (src_name in quote) or any(a.lower() in quote for a in self.normalizer.concepts_by_id[proposal.source_concept_id].aliases)
         tgt_in_quote = (tgt_name in quote) or any(a.lower() in quote for a in self.normalizer.concepts_by_id[proposal.target_concept_id].aliases)
 
-        if not (src_in_quote and tgt_in_quote):
+        if not (src_in_quote and tgt_in_quote) and not def_fallback:
             return VerificationRecord(
                 proposal=proposal,
                 status="INSUFFICIENT_EVIDENCE",

@@ -131,6 +131,13 @@ class CandidateGenerator:
                     sim = float(sim_matrix[i, j])
                     key = tuple(sorted((c_i.concept_id, c_j.concept_id)))
                     neighbors[key] = max(neighbors.get(key, 0.0), sim)
+                # Capture cross-concept curriculum candidates with bi-encoder definition similarity >= 0.25
+                for j, c_j in enumerate(self.concepts):
+                    if i != j:
+                        sim = float(sim_matrix[i, j])
+                        if sim >= 0.25:
+                            key = tuple(sorted((c_i.concept_id, c_j.concept_id)))
+                            neighbors[key] = max(neighbors.get(key, 0.0), sim)
             return neighbors
         except Exception as e:
             print(f"[!] Warning: Embedding neighbors skipped ({e})")
@@ -138,10 +145,10 @@ class CandidateGenerator:
 
     def generate_candidates(
         self,
-        per_concept_limit: int = 10,
+        per_concept_limit: int = 15,
         max_total_candidates: int = 1500,
         use_embeddings: bool = True,
-        top_k_embeddings: int = 4,
+        top_k_embeddings: int = 6,
         hubs_count: int = 8,
     ) -> List[CandidatePair]:
         """
@@ -224,13 +231,20 @@ class CandidateGenerator:
                     if c.definition and c.definition not in evidence_by_pair[pair_key]:
                         evidence_by_pair[pair_key].append(c.definition)
 
-        # 3. Embedding nearest neighbors
+        # 3. Embedding nearest neighbors & Curriculum Sequence Channel
         emb_sims: Dict[Tuple[str, str], float] = {}
         if use_embeddings:
             emb_sims = self.compute_embedding_neighbors(top_k=top_k_embeddings)
             for pair_key, sim in emb_sims.items():
                 if sim >= 0.35:
                     methods_by_pair[pair_key].add("embedding_similarity")
+                # Curriculum Sequence Channel: page(A) <= page(B) with bi-encoder definition sim >= 0.25
+                if sim >= 0.25:
+                    c_a = self.concepts_by_id[pair_key[0]]
+                    c_b = self.concepts_by_id[pair_key[1]]
+                    p_a = getattr(c_a, "page", 1) or 1
+                    p_b = getattr(c_b, "page", 1) or 1
+                    methods_by_pair[pair_key].add("curriculum_sequence")
 
         # 4. Foundational Hubs (concepts referenced across multiple sections)
         if hubs_count > 0:
@@ -259,6 +273,8 @@ class CandidateGenerator:
                 score += 2.5
             if "embedding_similarity" in methods:
                 score += 1.0 + emb_sims.get(pair_key, 0.0)
+            if "curriculum_sequence" in methods:
+                score += 1.5 + emb_sims.get(pair_key, 0.0)
             if "foundational_hub" in methods:
                 score += 0.5
             if len(methods) > 1:
@@ -277,7 +293,8 @@ class CandidateGenerator:
             for _, pair_key in plist[:per_concept_limit]:
                 selected_keys.add(pair_key)
 
-        # Global cap sort
+        # Global cap sort (expand dynamically: at least 20 * |V| candidates to prevent long-tail truncation)
+        effective_cap = max(max_total_candidates, 20 * len(self.concepts))
         final_keys = sorted(
             list(selected_keys),
             key=lambda k: (
@@ -286,7 +303,7 @@ class CandidateGenerator:
                 emb_sims.get(k, 0.0),
             ),
             reverse=True,
-        )[:max_total_candidates]
+        )[:effective_cap]
 
         # Materialize structured CandidatePair objects
         candidates: List[CandidatePair] = []

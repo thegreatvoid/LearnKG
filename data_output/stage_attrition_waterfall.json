@@ -16,11 +16,11 @@
     "concept_missing_present_not_extracted": 151,
     "not_a_candidate": 0,
     "relatedness_filter": 172,
-    "top_k_cap": 31,
+    "top_k_cap": 23,
     "llm_rejection": 0,
     "dag_pruning": 0,
     "direction_wrong": 15,
-    "survived_in_graph": 75
+    "survived_in_graph": 83
   },
   "rule_v3": {
     "concept_missing_absent_from_book": 119,

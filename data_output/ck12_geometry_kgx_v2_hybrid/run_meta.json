@@ -7,9 +7,9 @@
     "refd",
     "llm_rel"
   ],
-  "top_k": 3,
-  "prerequisite_edges": 518,
-  "llm_edges_kept": 151,
-  "total_edges": 669,
+  "top_k": 4,
+  "prerequisite_edges": 732,
+  "llm_edges_kept": 91,
+  "total_edges": 823,
   "concepts": 204
 }

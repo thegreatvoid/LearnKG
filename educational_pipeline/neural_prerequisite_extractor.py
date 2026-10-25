@@ -6,8 +6,9 @@ between concepts grounded in textbook context and curriculum sequence.
 Enforces DAG acyclicity and outputs evidence-backed prerequisite relations.
 """
 
+from collections import defaultdict
 import re
-from typing import Dict, List, Optional, Tuple, Set
+from typing import Any, Dict, List, Optional, Tuple, Set
 import networkx as nx
 import torch
 from sentence_transformers import CrossEncoder
@@ -24,7 +25,7 @@ class NeuralPrerequisiteExtractor:
     def __init__(
         self,
         model_name: str = "cross-encoder/ms-marco-MiniLM-L-6-v2",
-        threshold: float = 0.5,
+        threshold: float = -1.5,
         device: Optional[str] = None,
     ):
         if device is None:
@@ -108,17 +109,25 @@ class NeuralPrerequisiteExtractor:
         print(f"[*] Scoring {len(candidates)} candidate concept pairs with Neural Cross-Encoder...")
         scores = self.model.predict(candidates, batch_size=64, show_progress_bar=False)
 
-        # 4. Filter by threshold, sort by score descending, and enforce DAG acyclicity
-        scored_pairs = []
+        # 4. Filter by threshold, target-relative top-k scoring, and enforce DAG acyclicity
+        by_target: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
         for i, score in enumerate(scores):
-            if score >= self.threshold:
+            raw_s = float(score)
+            if raw_s >= self.threshold:
                 c_src, c_tgt, evidence = pair_metadata[i]
-                scored_pairs.append({
+                by_target[c_tgt.concept_id].append({
                     "src": c_src,
                     "tgt": c_tgt,
-                    "score": float(score),
+                    "score": raw_s,
                     "evidence": evidence,
                 })
+
+        # Apply target-relative top-k logit scoring (keep top-k strongest incoming prerequisites per concept)
+        scored_pairs = []
+        for tgt_id, cands in by_target.items():
+            cands.sort(key=lambda x: x["score"], reverse=True)
+            for item in cands[:8]:  # Up to 8 calibrated candidate predecessors per target
+                scored_pairs.append(item)
 
         scored_pairs.sort(key=lambda x: x["score"], reverse=True)
 
@@ -139,9 +148,9 @@ class NeuralPrerequisiteExtractor:
                 G_dag.remove_edge(s_id, t_id)
                 continue
 
-            # Scale neural score (e.g. from raw logit to 0.1-1.0 range)
+            # Scale neural score from raw logit (e.g. -1.5 to +5.0) to normalized 0.1-1.0 range
             raw_s = pair["score"]
-            norm_weight = min(1.0, max(0.2, (raw_s + 2.0) / 7.0))
+            norm_weight = min(1.0, max(0.1, (raw_s + 2.5) / 7.5))
 
             accepted_relations.append({
                 "source_name": pair["src"].concept_name,

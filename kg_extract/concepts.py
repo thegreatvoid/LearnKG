@@ -90,11 +90,24 @@ def heading_terms(heading: str) -> List[Tuple[str, str]]:
     return out
 
 
+# Whitelist geometry congruence/similarity shorthand and key domain lexemes
+GEOMETRY_ACRONYMS = {"HL", "AA", "SS", "SA", "AS", "SSS", "SAS", "ASA", "AAS"}
+PROTECTED_DOMAIN_TERMS = {
+    "area", "similarity", "distance", "diagonal", "edge", "face",
+    "geometry", "space", "sine", "cosine", "tangent", "parallel",
+    "perpendicular", "collinearity", "convex polygon", "special right triangles",
+}
+
+
 def clean_term(t: str) -> Optional[str]:
     t = re.sub(r"\s+", " ", t).strip(" \t\n.,;:()[]\"'")
     t = re.sub(r"^(?:an?|the|this|that|these|those|its|their|our|each|any|every|some)\s+", "", t, flags=re.I)
     w = t.split()
-    if not (1 <= len(w) <= 4) or t.lower() in GENERIC:
+    if not (1 <= len(w) <= 4):
+        return None
+    if t.strip() in GEOMETRY_ACRONYMS or t.strip().lower() in PROTECTED_DOMAIN_TERMS:
+        return t.strip()
+    if t.lower() in GENERIC:
         return None
     is_acronym = bool(re.fullmatch(r"[A-Z]{2,4}", t))
     if not is_acronym:
@@ -159,7 +172,9 @@ def rule_candidates(chunk, nlp=None) -> Dict[str, dict]:
         if t:
             c.setdefault(t.lower(), {"name": t, "cues": set()})["cues"].add(cue)
 
-    # Section headings only: chapter titles name broad topics ("Relationships with Triangles"), not concepts.
+    # Section and chapter headings: structural header parsing
+    for t, cue in heading_terms(chunk.chapter):
+        add(t, cue)
     for t, cue in heading_terms(chunk.section):
         add(t, cue)
     for pat in _DEF_PATTERNS:
@@ -168,7 +183,8 @@ def rule_candidates(chunk, nlp=None) -> Dict[str, dict]:
                 continue
             add(m.group(1), "definition")
     if nlp is not None:
-        for t in spacy_noun_chunks(chunk.text, nlp):
+        header_and_body = f"{chunk.chapter or ''}\n{chunk.section or ''}\n{chunk.text}"
+        for t in spacy_noun_chunks(header_and_body, nlp):
             add(t, "np")
     return c
 
@@ -225,7 +241,12 @@ def extract_concepts(chunks, backend: Optional[OllamaBackend], full_text: str, t
         rows[key] = {"name": e["name"], "cues": "+".join(sorted(e["cues"])), "freq": freq, "salience": round(s, 3),
                      "general_zipf": None if zipf is None else round(zipf, 2), "dropped": ""}
         drop = ""
-        if freq < min_freq and "heading" not in e["cues"] and "definition" not in e["cues"]:
+        is_geo_acronym = e["name"] in GEOMETRY_ACRONYMS
+        is_protected_term = e["name"].lower() in PROTECTED_DOMAIN_TERMS
+        if is_geo_acronym or is_protected_term:
+            s += 3.0  # Salience boost to ensure retention within top_k
+            drop = ""
+        elif freq < min_freq and "heading" not in e["cues"] and "definition" not in e["cues"]:
             drop = "min_freq"
         elif weak and len(e["name"].split()) == 1:
             # Frequent domain terms (freq >= 3) are preserved; lone noun-chunk acronyms are point labels
