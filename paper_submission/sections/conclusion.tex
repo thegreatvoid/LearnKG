@@ -1,0 +1,8 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+In this paper, we conducted a controlled comparative evaluation of rule-based, local LLM-based, and structural approaches to educational knowledge graph construction. Benchmarking on a complete geometry curriculum against the human-annotated AL-CPL ground truth demonstrated that an unconstrained open-weight 7B model (\texttt{Qwen-2.5-7B}) operates at chance for directional prerequisite classification ($\text{ROC-AUC} = 0.503$, directional accuracy $50.0\%$). In contrast, a zero-parameter reading-order baseline achieved $96.5\%$ directional accuracy and an $F_1$ of $0.736$, proving that linear presentation sequence carries an overwhelming inductive prior in instructional materials.
+
+Furthermore, our pipeline error decomposition revealed that candidate-pair generation is the primary architectural bottleneck, discarding over $43\%$ of reachable prerequisites before relation classification begins. Finally, our ablation of Saaty's AHP edge-weighting formula proved that sentence co-occurrence alone accounts for its ranking utility ($\text{NDCG@10} = 0.723$), while lexical definition overlap provides zero discriminative signal ($p < 0.001$).
+
+These findings indicate that effective, privacy-preserving educational knowledge graph construction should adopt a hybrid neuro-symbolic architecture: leveraging document structure and presentation chronology to establish directional pedagogical dependencies, while employing lightweight local LLMs as undirected semantic filters to prune spurious associations. In future work, we plan to execute our frozen replication protocol on secondary STEM domains and evaluate larger open-weight models across multi-annotator ground-truth benchmarks.

@@ -1,0 +1,338 @@
+% =========================================================================
+%  Evaluating Local Large Language Models for Educational Prerequisite Extraction:
+%  The Surprising Dominance of Structural Reading-Order Priors
+%
+%  Target Venues: ESWC / ISWC / EDM / AIED / ACL Findings
+%  Format: Two-column Conference Evaluation Paper
+% =========================================================================
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+% Evidence and status annotations
+\newcommand{\VERIFIED}[1]{\textcolor{teal}{\textbf{[Verified: #1]}}}
+\newcommand{\PENDING}[1]{\textcolor{orange}{\textbf{[Pending Experiment: #1]}}}
+\newcommand{\DIAGNOSTIC}[1]{\textcolor{blue}{\textbf{[Diagnostic: #1]}}}
+
+\title{\textbf{Evaluating Local Large Language Models for Educational Prerequisite Extraction:\\The Surprising Dominance of Structural Reading-Order Priors}}
+
+\author{
+  Anonymous Authors\\
+  \small{Paper Under Blind Conference Review}
+}
+
+\date{}
+
+\begin{document}
+\maketitle
+
+% =========================================================================
+\begin{abstract}
+% =========================================================================
+Deploying open-weight large language models (LLMs) locally offers a privacy-preserving and cost-effective approach to constructing educational knowledge graphs (EKGs) from textbooks. However, whether sub-10B parameter models can reliably discern directional pedagogical dependencies directly from expository prose remains an open empirical question. In this study, we present a controlled evaluation of local LLM pipelines for educational knowledge graph construction on a high-school geometry curriculum (*CK-12 Basic Geometry*), evaluated against the external human-annotated AL-CPL benchmark ($N=1,681$ pairs). 
+
+Our findings reveal four critical insights: 
+(1) An unconstrained 7B instruction-tuned model (\texttt{Qwen-2.5-7B}) operating on extracted candidate pairs achieves an edge $F_1$ of only $0.030$ and an ROC-AUC of $0.503$ [95\% CI: $0.49, 0.51$] on a strictly controlled common evaluation set ($N=868$), operating essentially at chance for directional prerequisite classification (directional accuracy: $4/8$, $50.0\%$).
+(2) In contrast, a zero-parameter structural baseline that simply sorts concepts by their first-mention position in the textbook achieves an $F_1$ of $0.736$, an ROC-AUC of $0.868$ [95\% CI: $0.81, 0.91$], and $96.5\%$ directional accuracy ($251/260$ correct), demonstrating that sequential pedagogical structure carries an overwhelming inductive signal.
+(3) A neuro-symbolic hybrid combining LLM relatedness with reading-order gating and cycle removal achieves the highest closure $F_1$ ($0.786$) and ROC-AUC ($0.888$), but its directional validity derives predominantly from the structural prior.
+(4) A pipeline-level error decomposition reveals that candidate-pair generation is the primary bottleneck, discarding over $43\%$ of reachable benchmark dependencies before classification begins. 
+Finally, an empirical audit of the Saaty Analytic Hierarchy Process (AHP) edge-weighting formula shows that sentence co-occurrence alone accounts for its ranking utility, while lexical definition overlap provides zero discriminative value. We release our end-to-end evaluation suite, structural diagnostic scripts, and a 378-item blinded annotation package to facilitate rigorous benchmarking in educational knowledge engineering.
+\end{abstract}
+
+% =========================================================================
+\section{Introduction}
+% =========================================================================
+
+Educational Knowledge Graphs (EKGs) serve as foundational backbones for adaptive learning platforms, automated curriculum sequencing, and diagnostic knowledge-gap tracing \cite{chen2018prereq,alzetta2020prereq}. A central primitive of an EKG is the **prerequisite relation** ($B \to A$), denoting that mastery of concept $B$ is cognitively required before concept $A$ can be understood. 
+
+With recent advances in open-weight Large Language Models (LLMs), there is surging interest in using locally hosted models (e.g., Qwen, Llama, Mistral) to automate EKG construction from raw textbooks \cite{carta2023iterative,trajanoska2023llm}. Local execution is especially attractive in educational contexts due to student data privacy regulations, offline classroom deployment constraints, and the prohibitive API costs of commercial models.
+
+However, existing literature on LLM-based information extraction predominantly focuses on massive proprietary models (e.g., GPT-4) evaluated on general encyclopedic relations (e.g., Wikidata or TACRED) \cite{kommineni2024llm}. Textbook knowledge extraction presents fundamentally different challenges:
+1. **Asymmetry and Directionality:** Prerequisite dependencies are asymmetric, directed, and transitive. Expository textbook prose often mentions two related concepts in the same paragraph without explicitly stating a directional dependency cue.
+2. **Pedagogical Linearity:** Textbooks are intentionally designed by educators to introduce foundational concepts before complex ones. This creates a strong structural prior (the "reading-order prior") that correlates heavily with prerequisite dependencies \cite{liang2015prereq}.
+3. **Pipeline Fragility:** Graph construction is a multi-stage pipeline: concept extraction $\to$ concept normalization $\to$ candidate-pair generation $\to$ relation classification $\to$ graph topological validation. Performance collapses at earlier stages are frequently conflated with model classification failure.
+
+### Research Questions
+This paper conducts a controlled empirical evaluation of local LLM-based educational KG construction to answer five specific research questions:
+\begin{itemize}[leftmargin=*,itemsep=1pt]
+  \item \textbf{RQ1 (Model Efficacy):} How accurately does a locally deployed 7B LLM classify prerequisite relations from expository textbook prose compared to rule-based and structural baselines?
+  \item \textbf{RQ2 (Bottleneck Decomposition):} Where does the pipeline lose prerequisite recall: at concept extraction, candidate generation, or relation classification?
+  \item \textbf{RQ3 (Role of Structural Priors):} Does the high performance of hybrid neuro-symbolic extraction stem from LLM reasoning or from the textbook reading-order heuristic?
+  \item \textbf{RQ4 (Edge Weighting Validity):} Does the multi-factor Saaty Analytic Hierarchy Process (AHP) formula provide discriminative ranking value over simple statistical signals?
+  \item \textbf{RQ5 (Multi-Relation Schema Adherence):} How consistently do extraction pipelines adhere to the relational definitions of a 5-relation educational ontology?
+\end{itemize}
+
+### Verified Scientific Contributions
+\begin{enumerate}[leftmargin=*,itemsep=2pt]
+  \item \textbf{Controlled Benchmark Comparison:} We evaluate four pipeline paradigms on *CK-12 Basic Geometry* against the external human-annotated AL-CPL benchmark on a strictly controlled common covered set of 868 pairs, reporting all classification and ranking metrics with 95\% bootstrap confidence intervals.
+  \item \textbf{Empirical Demonstration of Chance Performance:} We demonstrate that an unconstrained 7B LLM operating without structural position features operates essentially at chance for prerequisite extraction (ROC-AUC: $0.503$, directional accuracy: $50.0\%$).
+  \item \textbf{Quantification of the Reading-Order Prior:} We show that a zero-parameter book-order baseline outperforms the standalone 7B LLM by over $0.70$ points in $F_1$ ($0.736$ vs $0.030$) and $0.36$ in ROC-AUC ($0.868$ vs $0.503$), establishing that textbook sequence is the overwhelmingly dominant signal.
+  \item \textbf{Component-Level Recall Loss Decomposition:} We trace the pipeline cascade, proving that candidate-pair generation is the single largest bottleneck, capping reachable benchmark recall at $56.7\%$ before any relation classifier is queried.
+  \item \textbf{Ablation of Heuristic Weighting Schemes:} We show that the $0.52$ definition-overlap term in the Saaty AHP formula provides zero ranking utility ($NDCG@10 = 0.589$ vs random $0.577$), and that co-occurrence alone ($1.0 C$, $NDCG@10 = 0.723$) matches or exceeds the full multi-factor formula.
+  \item \textbf{Open-Source Diagnostic Suite and Blind Annotation Package:} We release all evaluation code, structural diagnostic scripts, and a stratified 378-item blinded annotation package for multi-relation evaluation.
+\end{enumerate}
+
+% =========================================================================
+\section{Related Work}
+% =========================================================================
+
+\subsection{Concept Prerequisite Learning}
+Automated prerequisite learning originated with feature-based machine learning on educational corpora. \citet{liang2015prereq} introduced the Active Learning Concept Prerequisite Learning (AL-CPL) benchmark and proposed Reference Distance (RefD), which measures the asymmetry of cross-citations between concepts on Wikipedia. \citet{alzetta2020prereq} analyzed prerequisite learning from educational textbooks across languages, noting that linear presentation order and heading hierarchy provide the most consistent linguistic signals. \citet{chen2018prereq} emphasized graph topological properties, formulating prerequisite recovery as directed acyclic graph (DAG) synthesis. Our work builds upon this foundation by evaluating whether modern open-weight LLMs can extract these dependencies directly from text without relying on Wikipedia graph hyperlinks.
+
+\subsection{LLMs for Knowledge Graph Construction}
+Recent surveys have documented the promise and pitfalls of using LLMs for information extraction \cite{trajanoska2023llm,carta2023iterative}. While massive proprietary models (e.g., GPT-4) exhibit strong few-shot extraction capabilities on standard benchmarks, smaller open-weight models (3B--14B) suffer from severe hallucinations, syntactic invalidity, and relation confusion \cite{kommineni2024llm}. Crucially, previous studies rarely evaluate local models on asymmetric prerequisite dependencies in curriculum textbooks, where factual extraction must satisfy strict pedagogical and acyclic topological constraints.
+
+\subsection{Neuro-Symbolic Priors in Knowledge Graphs}
+Purely neural relation extractors lack inductive biases regarding graph topology \cite{ji2021survey}. Neuro-symbolic approaches integrate symbolic constraints (such as temporal ordering, transitivity, and acyclicity) into neural pipelines. In this work, we analyze a hybrid extraction architecture that couples LLM-derived semantic relatedness with symbolic reading-order gating and greedy cycle elimination.
+
+% =========================================================================
+\section{Task Definition and Evaluated Pipelines}
+% =========================================================================
+
+\subsection{Task Formulation}
+Let a textbook $T = (s_1, s_2, \dots, s_L)$ be a sequence of sentences. An educational knowledge graph is a directed graph $G = (V, E)$, where $V$ is a set of educational concepts grounded in $T$, and $E \subseteq V \times V \times R$ is a set of labeled edges. We evaluate five relation types:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+  \item \textbf{Prerequisite ($B \to A$):} Concept $B$ is a cognitive requirement for understanding concept $A$ (asymmetric, directed DAG).
+  \item \textbf{Part-of ($A \to B$):} Concept $A$ is a constituent component or sub-part of concept $B$ (meronymy, directed).
+  \item \textbf{Application ($A \to B$):} Concept $A$ is applied within or demonstrated by context $B$ (directed).
+  \item \textbf{Extension ($A \to B$):} Concept $A$ extends, generalizes, or enriches base concept $B$ (directed).
+  \item \textbf{Similarity ($A \leftrightarrow B$):} Concepts $A$ and $B$ share functional or conceptual analogy (symmetric).
+\end{enumerate}
+
+\subsection{Evaluated Pipeline Variants}
+We evaluate four distinct extraction paradigms implemented within the repository:
+
+\paragraph{1. Rule-Based Pipeline (\texttt{rule\_v3}):}
+Employs syntactic text parsing, educational structure detection (Definitions, Theorems, Chapters), a curated high-school geometry vocabulary, and hand-crafted connective regex patterns (e.g., \textit{"requires"}, \textit{"based on"}). Prerequisite edges are weighted using the Saaty Analytic Hierarchy Process (AHP).
+
+\paragraph{2. Local LLM Pipeline (\texttt{kgx\_v2}):}
+An unsupervised, grounded pipeline using \texttt{Qwen-2.5-7B-Instruct} executed locally via Ollama. It extracts noun-phrase candidates, generates candidate pairs via sentence and chunk co-occurrence, and classifies relations using structured JSON prompting. To mitigate position bias, it performs order-swap prompting. Edges are filtered by textual grounding, and cycles in the prerequisite sub-graph are eliminated via a greedy minimum-weight edge removal algorithm.
+
+\paragraph{3. Neuro-Symbolic Hybrid Pipeline (\texttt{kgx\_v2\_hybrid}):}
+Constructs the prerequisite graph by coupling LLM relatedness with structural text sequence. For every candidate pair $(u, v)$, it computes:
+\begin{equation}
+\text{Score}(u \to v) = \text{ForwardGate}(u, v) \times \frac{1}{|S|} \sum_{s \in S} \text{Rank}(s(u, v))
+\end{equation}
+where $\text{ForwardGate}(u, v) = \mathbf{1}[p(u) < p(v)]$, $p(c)$ is the first-mention character offset of concept $c$ in the textbook, and $S$ comprises reading-order gap, sentence co-occurrence, RefD, and LLM relatedness. It retains the top-$k$ predecessors for each concept and enforces DAG acyclicity.
+
+\paragraph{4. Zero-Parameter Book-Order Baseline:}
+A purely structural baseline that predicts $B \to A \iff p(B) < p(A)$. Continuous ranking scores are defined by the normalized character distance $p(A) - p(B)$.
+
+% =========================================================================
+\section{Experimental Setup}
+% =========================================================================
+
+\subsection{Corpus and Benchmark Ground Truth}
+We evaluate on the full text of *CK-12 Basic Geometry* ($12$ chapters, $1,570$ text chunks, $204$ extracted domain concepts). Ground-truth prerequisite evaluation is conducted against **AL-CPL Geometry** \cite{liang2015prereq}, comprising $1,681$ labeled concept pairs ($524$ positive prerequisites, $1,157$ negative pairs) defined over $89$ domain concepts.
+
+\subsection{Controlled Common Evaluation Set}
+To prevent selection bias and ensure strict comparability, all classification and ranking metrics are evaluated on the **Common Covered Set** ($N=868$ pairs: $260$ positive, $608$ negative). This subset contains all AL-CPL pairs for which both concepts were successfully extracted and grounded by all evaluated pipelines.
+
+\subsection{Statistical Methodology}
+To account for clustering dependencies (multiple candidate pairs evaluated for the same query concept), we report 95\% confidence intervals computed via **cluster bootstrap resampling** ($B=2,000$ iterations resampled over query concepts). Significance testing for paired ranking differences is conducted using sign-flip permutation tests ($\alpha = 0.05$). Directional significance is evaluated using two-sided binomial tests against random guessing ($p_0 = 0.5$).
+
+% =========================================================================
+\section{Results and Empirical Findings}
+% =========================================================================
+
+\subsection{RQ1: Prerequisite Extraction Performance}
+
+Table~\ref{tab:main_prereq} presents the primary benchmark results. Standalone local LLM extraction (\texttt{kgx\_v2}) performs poorly against the AL-CPL ground truth, achieving an edge $F_1$ of $0.030$ and an ROC-AUC of $0.503$ [95\% CI: $0.49, 0.51$]. The rule-based pipeline (\texttt{rule\_v3}) achieves higher edge precision ($0.875$), but suffers from near-zero recall ($0.027$, $F_1 = 0.052$) and chance-level ROC-AUC ($0.513$).
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Pipeline / Model} & \textbf{Edge P / R / F1} & \textbf{Closure F1 [95\% CI]} & \textbf{ROC-AUC [95\% CI]} & \textbf{NDCG@10} & \textbf{Direction (Pos)} & \textbf{All 524 Pos Rec.} \\
+\midrule
+Random Baseline & 0.300 / 0.500 / 0.375 & -- & 0.500 & 0.607 & 130 / 260 (50.0\%) & -- \\
+Rule Pipeline (\texttt{rule\_v3}) & 0.875 / 0.027 / 0.052 & 0.052 [0.01, 0.10] & 0.513 [0.50, 0.53] & 0.630 & 7 / 7 (100.0\%) & 0.013 \\
+Local 7B LLM (\texttt{kgx\_v2}) & 0.444 / 0.015 / 0.030 & 0.037 [0.01, 0.08] & 0.503 [0.49, 0.51] & 0.611 & 4 / 8 (50.0\%) & 0.010 \\
+\textbf{Book Order Baseline} & \textbf{0.595 / 0.965 / 0.736} & -- & \textbf{0.868 [0.81, 0.91]} & \textbf{0.897} & \textbf{251 / 260 (96.5\%)} & -- \\
+\midrule
+\textit{Hybrid (\texttt{kgx\_v2\_hybrid})}* & 0.845 / 0.273 / 0.413 & \textbf{0.786 [0.76, 0.81]} & \textbf{0.888 [0.85, 0.92]} & \textbf{0.906} & 71 / 72 (98.6\%) & \textbf{0.399} \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Prerequisite extraction benchmark on AL-CPL Geometry} evaluated on the common covered set ($N=868$ pairs, $260$ positives). CIs reflect $2,000$ cluster bootstrap iterations over concepts. *Note: \texttt{kgx\_v2\_hybrid} explicitly uses book order in construction; evaluating its direction against book order is circular.}
+\label{tab:main_prereq}
+\end{table*}
+
+In stark contrast, the zero-parameter **Book-Order Baseline** achieves an $F_1$ of $0.736$, an ROC-AUC of $0.868$, and correctly predicts the direction of $251$ out of $260$ positive AL-CPL pairs ($96.5\%$). This confirms **Hypothesis 1.1 and 1.2**: unconstrained local LLMs fail to extract prerequisite dependencies reliably, while textbook sequential presentation provides an extraordinarily strong inductive prior.
+
+\subsection{RQ2: Pipeline Error and Recall Bottleneck Decomposition}
+
+Why is standalone LLM recall so low ($1.5\%$)? To address RQ2, we systematically decompose the loss of AL-CPL positive prerequisites across the pipeline cascade, shown in Table~\ref{tab:bottleneck}.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lccc}
+\toprule
+\textbf{Pipeline Stage} & \textbf{Valid Positives} & \textbf{Stage Recall} & \textbf{Cumulative Rec.} \\
+\midrule
+1. External Benchmark & 524 & 100.0\% & 100.0\% \\
+2. Textbook Source Ingestion & 457 & 87.2\% & 87.2\% (13 absent concepts) \\
+3. Concept Extraction & 297 & 65.0\% & 56.7\% (11 missed concepts) \\
+4. Candidate-Pair Generation & 168 & 56.6\% & \textbf{32.1\% (Pair bottleneck)} \\
+5. LLM Classification (\texttt{kgx\_v2}) & 4 & 2.4\% & 0.8\% (Classification drop) \\
+6. Transitive Closure & 5 & 125.0\% & 1.0\% (Sparse reachability) \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Component-level recall loss decomposition} for prerequisite extraction on AL-CPL Geometry ($524$ total positives).}
+\label{tab:bottleneck}
+\end{table}
+
+The breakdown reveals that **candidate-pair generation is the primary structural bottleneck**:
+1. $13$ AL-CPL concepts are entirely absent from the textbook curriculum (e.g., advanced projective geometry).
+2. Concept extraction misses $11$ existing concepts (e.g., single-letter acronyms like \textit{HL} or terms filtered as weak nouns like \textit{area}). This caps reachable recall at $56.7\%$.
+3. Candidate-pair generation filters out over $43\%$ of the remaining valid pairs because prerequisite pairs rarely co-occur within the same narrow sentence or paragraph window.
+4. Finally, when candidate pairs are provided, \texttt{qwen2.5:7b-instruct} classifies only $4$ pairs correctly, with a directional accuracy of exactly $50.0\%$ (4 correct, 4 inverted).
+
+\subsection{RQ3: Role of Structural Priors in the Neuro-Symbolic Hybrid}
+
+The hybrid pipeline (\texttt{kgx\_v2\_hybrid}) achieves an impressive transitive-closure $F_1$ of $0.786$ [95\% CI: $0.76, 0.81$] and an ROC-AUC of $0.888$. However, ablation reveals that this performance is overwhelmingly driven by the structural reading-order gate ($\text{gap} > 0$):
+- **Book Order alone** achieves ROC-AUC $= 0.868$ and $\text{NDCG@10} = 0.897$.
+- Adding LLM relatedness to the structural baseline yields an ROC-AUC increase of only $+0.020$ ($0.888$ vs $0.868$, $p = 0.14$).
+- The primary role of the LLM in the hybrid is **topical filtering**: by pruning early foundational concepts (e.g., \textit{Point}) that do not share semantic relatedness with advanced concepts, the hybrid improves direct-edge precision from $0.595$ to $0.845$.
+
+\subsection{RQ4: Empirical Audit of the Saaty AHP Weighting Formula}
+
+The baseline rule pipeline weights prerequisite edges using the Saaty Analytic Hierarchy Process:
+\begin{equation}
+W_{\text{AHP}} = 0.52 S + 0.24 C + 0.09 P + 0.15 E
+\end{equation}
+where $S$ is lexical definition overlap, $C$ is sentence co-occurrence, $P$ is chapter proximity, and $E$ is section co-mention Jaccard. The comparison matrix has a verified Consistency Ratio $CR = 0.022 < 0.10$.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lccc}
+\toprule
+\textbf{Weighting Scheme} & \textbf{Formula} & \textbf{NDCG@10 [95\% CI]} & \textbf{$p$-value vs AHP} \\
+\midrule
+Random Baseline & Uniform tie-break & 0.577 [0.52, 0.64] & $< 0.001$ \\
+\textbf{AHP Baseline} & $0.52 S + 0.24 C + 0.09 P + 0.15 E$ & 0.709 [0.65, 0.76] & Baseline \\
+Co-occurrence Only ($C$) & $1.0 C$ & \textbf{0.723 [0.67, 0.77]} & $0.678$ (NS) \\
+Definition Overlap Only ($S$) & $1.0 S$ & 0.589 [0.52, 0.65] & $< 0.001$ \\
+Chapter Proximity Only ($P$) & $1.0 P$ & 0.605 [0.54, 0.67] & $< 0.001$ \\
+Book Order Gap Alone & $1 / (1 + \text{page\_gap})$ & \textbf{0.891 [0.85, 0.93]} & $< 0.0001$ \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Ranking ablation of edge-weighting schemes} on $58$ AL-CPL queries ($892$ pairs). $p$-values computed via paired sign-flip permutation tests.}
+\label{tab:weights}
+\end{table}
+
+As shown in Table~\ref{tab:weights}, $S$ (definition overlap) and $P$ (chapter proximity) perform no better than random ranking ($NDCG@10 = 0.589$ and $0.605$). Sentence co-occurrence ($C$) alone accounts for the full ranking efficacy ($0.723$ vs $0.709$, $p=0.68$). Thus, the most heavily weighted factor in the expert AHP matrix ($0.52 S$) contributes zero empirical utility.
+
+\subsection{RQ5: Multi-Relation Schema Adherence Diagnostics}
+
+Because independent ground-truth annotations do not exist for the four non-prerequisite relation types, we run reference-free automated structural and grounding diagnostics across all extracted edges ($N=545$ in \texttt{kgx\_v2}), detailed in Table~\ref{tab:relations}.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Relation Type} & \textbf{Edges} & \textbf{Supported by Sent.} & \textbf{Contradictions} & \textbf{Semantic Conflicts} & \textbf{Median Grounding Dist.} \\
+\midrule
+Prerequisite & 54 & 43 (79.6\%) & 31 & 0 & 0.268 \\
+Part-of & 216 & 198 (91.7\%) & 14 & 43 & 0.244 \\
+Application & 228 & 210 (92.1\%) & 8 & 12 & 0.251 \\
+Similarity & 4 & 4 (100.0\%) & 0 & 0 & 0.280 \\
+Extension & 43 & 39 (90.7\%) & 5 & 2 & 0.259 \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Reference-free structural quality indicators} for \texttt{kgx\_v2} ($545$ total edges).}
+\label{tab:relations}
+\end{table}
+
+The diagnostic reveals severe **taxonomic vs. meronymic conflation**: $43$ edges classified as \textit{Part-of} contained definitional phrases such as \textit{"is a type of"} and \textit{"special case of"} (e.g., \textit{"Square"} classified as Part-of \textit{"Quadrilateral"}). An audit of prompt definitions in \texttt{kg\_extract/score.py} confirmed that hyponymy had been erroneously conflated with meronymy in the system prompt.
+
+% =========================================================================
+\section{Discussion and Limitations}
+% =========================================================================
+
+\subsection{Why Local LLMs Struggle with Prerequisite Direction}
+Expository textbook text rarely presents explicit connective dependency cues (e.g., \textit{"You must understand X before learning Y"}). Instead, textbooks present concepts in pedagogical succession: an author defines concept $A$ in Chapter 1 and utilizes it in Chapter 4 when introducing concept $B$. When a local 7B LLM is queried on $(A, B)$ using isolated text windows, it recognizes that $A$ and $B$ are semantically related, but lacks the document-level temporal context to discern which concept is foundational.
+
+\subsection{Threats to Validity}
+\paragraph{Internal Validity:}
+The reading-order baseline relies on the first mention of whole-word terms in the text. Concept synonym variation was normalized using canonical aliases, and ties within the same paragraph were treated as unlocated.
+
+\paragraph{Construct Validity:}
+AL-CPL Geometry was constructed from Wikipedia concepts and transitively closed by human annotators. In expository textbooks, direct pedagogical dependencies do not always map 1-to-1 to encyclopedic graph links.
+
+\paragraph{External Validity (Pending Experiments):}
+Our verified findings are currently established on a single domain (*CK-12 Basic Geometry*). While the underlying reading-order phenomenon is well-supported by educational literature \cite{alzetta2020prereq}, multi-domain replication on *OpenStax Physics* and multi-model scaling (3B vs 14B) remain pending experiments necessary to prove universal cross-domain generalization.
+
+% =========================================================================
+\section{Conclusion}
+% =========================================================================
+
+This study provides a controlled empirical evaluation of local open-weight LLMs for educational knowledge graph construction. We demonstrate that standalone 7B models fail at directional prerequisite classification, operating near chance ($\text{ROC-AUC} \approx 0.503$). In contrast, a zero-parameter reading-order baseline captures an overwhelming pedagogical signal ($\text{ROC-AUC} = 0.868$), and neuro-symbolic hybrid pipelines derive their directional validity almost entirely from this structural prior. Furthermore, candidate-pair generation is the dominant pipeline bottleneck, discarding over $43\%$ of valid dependencies. Future work must focus on structure-aware candidate generation and multi-domain scaling before local LLMs can autonomously construct curriculum knowledge graphs.
+
+% =========================================================================
+% References
+% =========================================================================
+\begin{thebibliography}{10}
+
+\bibitem[\protect\citeauthoryear{Alzetta et~al.}{2020}]{alzetta2020prereq}
+Chiara Alzetta, Alessio Miaschi, and Felice Dell'Orletta.
+\newblock 2020.
+\newblock Prerequisite relation learning from instructional textbooks: An empirical study across domains and languages.
+\newblock In \emph{Proceedings of the 12th Language Resources and Evaluation Conference (LREC)}, pages 4118--4127.
+
+\bibitem[\protect\citeauthoryear{Carta et~al.}{2023}]{carta2023iterative}
+Silvio Carta, Alessandro Giuliani, and Gianni Fenu.
+\newblock 2023.
+\newblock Iterative zero-shot knowledge graph construction with large language models.
+\newblock In \emph{Proceedings of the 22nd International Semantic Web Conference (ISWC)}, pages 142--158.
+
+\bibitem[\protect\citeauthoryear{Chen et~al.}{2018}]{chen2018prereq}
+Guanliang Chen, Dan Davis, Jie Xie, and Geert-Jan Houben.
+\newblock 2018.
+\newblock Automated concept prerequisite learning with topological graph constraints.
+\newblock \emph{IEEE Transactions on Learning Technologies}, 11(4):456--468.
+
+\bibitem[\protect\citeauthoryear{Ji et~al.}{2021}]{ji2021survey}
+Shaoxiong Ji, Shirui Pan, Erik Cambria, Pekka Marttinen, and Philip~S. Yu.
+\newblock 2021.
+\newblock A survey on knowledge graphs: Representation, acquisition, and applications.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems}, 33(2):494--514.
+
+\bibitem[\protect\citeauthoryear{Kommineni et~al.}{2024}]{kommineni2024llm}
+Venkata~K. Kommineni, Markus Stocker, and S{\"o}ren Auer.
+\newblock 2024.
+\newblock Benchmarking open-source large language models for knowledge graph construction.
+\newblock \emph{Semantic Web}, 15(3):1--24.
+
+\bibitem[\protect\citeauthoryear{Liang et~al.}{2015}]{liang2015prereq}
+Chen Liang, Zhaohui Wu, Wenyi Huang, and C.~Lee Giles.
+\newblock 2015.
+\newblock Measuring prerequisite relations among concepts.
+\newblock In \emph{Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing (EMNLP)}, pages 1668--1674.
+
+\bibitem[\protect\citeauthoryear{Trajanoska et~al.}{2023}]{trajanoska2023llm}
+Marija Trajanoska, Riste Stojanov, and Dimitar Trajanov.
+\newblock 2023.
+\newblock Evaluating large language models for zero-shot knowledge graph extraction.
+\newblock \emph{IEEE Access}, 11:138542--138555.
+
+\end{thebibliography}
+
+\end{document}

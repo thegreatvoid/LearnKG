@@ -1,0 +1,30 @@
+\section{Experimental Results}
+\label{sec:results}
+
+\subsection{Prerequisite Extraction Benchmark}
+Table~\ref{tab:main_results} presents the primary comparative evaluation on the common covered AL-CPL benchmark set ($N=868$).
+
+\input{tables/main_results}
+
+\textbf{Standalone Local LLM Operates at Chance:} The unconstrained open-weight model (\texttt{kgx\_v2}, \texttt{Qwen-2.5-7B}) achieves an edge $F_1$ of only $0.030$ and an ROC-AUC of $0.503$ [95\% CI: $0.49, 0.51$]. Its $95\%$ confidence interval encompasses $0.500$, indicating performance statistically indistinguishable from a random guessing baseline. Crucially, on ground-truth positive pairs that the LLM attempted to classify, directional accuracy was exactly $4/8$ ($50.0\%$). Expository definitions present properties symmetrically (e.g., stating relationships between angles and lines without asymmetric cue markers), leaving the 7B parameter model incapable of establishing directional dependency from text snippets alone.
+
+\textbf{Dominance of the Reading-Order Prior:} In sharp contrast, the zero-parameter textbook reading-order baseline achieves an edge $F_1$ of $0.736$, an ROC-AUC of $0.868$ [95\% CI: $0.81, 0.91$], and correctly orients $251$ out of $260$ ground-truth positive prerequisites ($96.5\%$ directional accuracy). This demonstrates that linear textbook organization encodes an overwhelming pedagogical prior: curriculum authors structure instructional materials so that foundational concepts precede dependent ones.
+
+\textbf{Analysis of the Neuro-Symbolic Hybrid:} The hybrid pipeline (\texttt{kgx\_v2\_hybrid}) achieves the highest transitive closure $F_1$ ($0.786$ [95\% CI: $0.76, 0.81$]) and ROC-AUC ($0.888$ [95\% CI: $0.85, 0.92$]). However, as disclosed in Table~\ref{tab:main_results}, this performance derives predominantly from the structural reading-order forward gate. When the LLM relatedness component is ablated, reading order alone already achieves an ROC-AUC of $0.868$. The marginal gain of incorporating neural relatedness is $+0.020$ in AUC. Rather than providing directional intelligence, the LLM functions as an undirected semantic filter that prunes false-positive early concepts, boosting precision from $0.595$ to $0.845$.
+
+\textbf{Sparsity of Rule-Based Extraction:} The symbolic pipeline (\texttt{rule\_v3}) achieves high precision on matched edges ($0.875$, $7/7$ correct directional cues), but suffers from catastrophic recall ($0.027$). Textbook authors rarely express prerequisites using explicit lexical connectives (e.g., \textit{"Concept A is required for Concept B"}), causing pattern-based recall to collapse.
+
+\subsection{Edge Weighting and Ranking Ablation}
+Table~\ref{tab:weighting_ablation} reports the ablation of edge-scoring functions against AL-CPL queries.
+
+\input{tables/weighting_ablation}
+
+The Saaty Analytic Hierarchy Process composite formula achieves an $\text{NDCG@10}$ of $0.709$ [95\% CI: $0.65, 0.76$]. However, isolating sentence co-occurrence alone ($C$) yields an $\text{NDCG@10}$ of $0.723$ ($p = 0.68$, no significant difference from AHP), while raw co-occurrence count reaches $0.742$. 
+
+Conversely, lexical definition overlap ($S$)—which Saaty AHP weights heavily at $52\%$—achieves an $\text{NDCG@10}$ of only $0.589$ [95\% CI: $0.52, 0.65$], which is statistically indistinguishable from the random baseline ($0.582$, $p < 0.001$ drop relative to $C$). Chapter proximity ($P$) similarly yields near-random ranking ($0.605$). These results prove empirically that the AHP multi-factor weighting is redundant: simple distributional co-occurrence carries the entire predictive signal, while definition overlap adds zero discriminative value.
+
+\subsection{Multi-Relation Reference-Free Diagnostics}
+Because external human annotations do not exist for the non-prerequisite relation types (\textit{Part-of}, \textit{Application}, \textit{Extension}, \textit{Similarity}), we executed automated structural consistency checks. The audit identified $43$ semantic contradictions in the unconstrained \texttt{kgx\_v2} graph, primarily stemming from ontological confusion where the prompt and regex rules conflated hyponymy (\textit{"is a type of"}) with meronymy (\textit{"part-of"}). Enforcing formal schema constraints eliminated these reciprocal contradictions in the hybrid graph.
+
+\subsection{Prerequisite Retrieval as a Structural Proxy}
+We evaluated downstream prerequisite reachability by masking leaf concepts in the graph and traversing directed ancestor paths to retrieve missing prerequisites. Lower-bound Precision@5 was $0.073$ for \texttt{rule\_v3} and $0.047$ for \texttt{kgx\_v2}, confirming that extreme graph sparsity in standalone models destroys path traversal. In contrast, \texttt{kgx\_v2\_hybrid} achieved $\text{P@5} = 0.461$, closely matching the reading-order baseline ($0.455$).

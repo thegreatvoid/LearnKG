@@ -1,0 +1,24 @@
+\section{Experimental Setup}
+\label{sec:experimental_setup}
+
+\subsection{Corpus and Benchmark Ground Truth}
+All experiments evaluate extraction from \textit{CK-12 Basic Geometry} (\texttt{ck12\_basic\_geometry\_concepts.txt}), an open-access high-school textbook comprising $12$ structured chapters and $60$ pedagogical sections. 
+
+External ground truth is provided by the human-annotated AL-CPL Geometry benchmark \cite{liang2015prereq}. The benchmark contains $1{,}681$ labeled concept pairs ($524$ positive prerequisites, $1{,}157$ negative pairs) defined over $89$ domain concepts. Benchmark positives are transitively closed.
+
+\subsection{Concept Grounding and Alignment}
+Extracted concepts are aligned to the $89$ AL-CPL entities using a normalized geometric synonym map. Both \texttt{rule\_v3} and \texttt{kgx\_v2} successfully ground exactly $65$ of the $89$ benchmark concepts ($73.0\%$ coverage). 
+
+A manual audit of the $24$ missing benchmark concepts reveals that $13$ terms (including \textit{Euler line}, \textit{Nine-point circle}, and \textit{Ceva's theorem}) are entirely absent from the textbook body, representing an external benchmark misalignment rather than an extractor failure. The remaining $11$ terms were dropped during candidate extraction: \texttt{rule\_v3} dropped short acronyms (e.g., the \textit{HL} Hypotenuse-Leg theorem), while \texttt{kgx_v2} filtered foundational single words (e.g., \textit{area}, \textit{similarity}) under a frequency heuristic.
+
+\subsection{Controlled Evaluation Sets}
+To ensure fair and rigorous benchmarking, we define two distinct evaluation sets:
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Common Covered Set ($N=868$):} Comprises exactly $260$ positive and $608$ negative AL-CPL pairs whose concept endpoints are mutually extracted and grounded across all evaluated systems. This provides the strictly controlled testbed for comparative relation classification.
+    \item \textbf{Full Benchmark Set ($N=1{,}681$):} Used to evaluate end-to-end recall loss across the entire pipeline cascade. Pairs touching concepts unextracted by a pipeline are treated as coverage loss.
+\end{enumerate}
+
+\subsection{Evaluation Metrics and Statistical Hygiene}
+We report standard edge-level Precision ($P$), Recall ($R$), and $F_1$, as well as Transitive Closure $F_1$ ($G^+$) over the reachability matrix of the extracted DAG. Continuous scores are evaluated via Area Under the Receiver Operating Characteristic (ROC-AUC) and Normalized Discounted Cumulative Gain ($\text{NDCG@}k$) averaged over $20$ random tie-breaks. Directional accuracy measures the proportion of ground-truth positive pairs correctly oriented ($N_{\text{correct}} / N_{\text{pos}}$).
+
+To prevent false significance claims, all metrics report $95\%$ bootstrap confidence intervals clustered over $2{,}000$ query concept resamples. Directional accuracies report Wilson score intervals, and ranking differences are evaluated via paired sign-flip permutation tests ($p < 0.05$).

@@ -1,0 +1,17 @@
+\section{Discussion and Practical Implications}
+\label{sec:discussion}
+
+\subsection{Is Reading Order an Inductive Prior or a Benchmark Cheat?}
+The finding that a zero-parameter reading-order heuristic ($F_1 = 0.736$, ROC-AUC $= 0.868$) substantially outperforms a 7B parameter neural model ($F_1 = 0.030$, ROC-AUC $= 0.503$) raises a fundamental methodological question: Is reading order a legitimate baseline, or does it represent an unfair shortcut?
+
+Instructional textbooks are not unstructured encyclopedic web dumps; they are intentionally curated pedagogical trajectories. Authors deliberately introduce foundational axioms before presenting composite theorems. In this context, textbook reading order is not a data artifact to be ignored, but rather the single most powerful inductive prior available in educational document engineering. We argue that any educational knowledge graph paper that reports high prerequisite extraction accuracy without benchmarking against reading order is likely observing chronological presentation leakage rather than genuine semantic reasoning.
+
+\subsection{The True Role of Local LLMs in Educational Knowledge Graphs}
+Our results do not imply that local LLMs are useless for educational knowledge engineering. Rather, they define the precise boundary conditions of what sub-10B models can and cannot achieve. 
+
+Standalone 7B models cannot reliably determine directional prerequisite asymmetry from isolated expository sentences without positional metadata. However, when embedded within a neuro-symbolic architecture (\texttt{kgx\_v2\_hybrid}), the LLM provides substantial value as an \textbf{undirected semantic filter}. By evaluating whether two concepts share conceptual affinity, the model eliminates false-positive early concepts that happen to precede later concepts chronologically, boosting edge precision from $0.595$ to $0.845$. In offline educational deployment, local LLMs should be tasked with semantic relatedness filtering and entity normalization, while directional orientation should be anchored in document structure.
+
+\subsection{The Multi-Criteria Decision Illusion}
+Our ablation of the Saaty AHP weighting formula exposes a critical lesson for knowledge graph scoring. The comparison matrix satisfies strict mathematical consistency ($CR = 0.022 \ll 0.10$). Yet, empirical ranking reveals that sentence co-occurrence ($C$) drives the entire predictive utility ($NDCG@10 = 0.723$), while definition lexical overlap ($S$) adds zero discriminative value ($0.589$ vs. random $0.582$). 
+
+In technical domains, definitions share high lexical overlap due to generic mathematical function words (e.g., \textit{"is"}, \textit{"defined"},\textit{"measure"},\textit{"shape"}), while co-occurrence directly captures the didactic reality that dependent concepts are co-explained in exercises and proofs. Multi-criteria formulas can easily masquerade as mathematically sophisticated while deriving their entire predictive signal from simple distributional co-occurrence.

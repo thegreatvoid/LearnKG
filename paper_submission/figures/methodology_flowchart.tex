@@ -1,0 +1,99 @@
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[
+    node distance=0.85cm and 0.9cm,
+    every node/.style={font=\footnotesize},
+    block/.style={rectangle, draw=black!70, rounded corners=3pt, fill=blue!5, text width=2.4cm, minimum height=0.9cm, align=center, line width=0.6pt},
+    baseline/.style={rectangle, draw=teal!80, rounded corners=3pt, fill=teal!6, text width=2.4cm, minimum height=0.9cm, align=center, line width=0.6pt},
+    eval/.style={rectangle, draw=orange!80, rounded corners=3pt, fill=orange!8, text width=2.3cm, minimum height=0.9cm, align=center, line width=0.6pt},
+    source/.style={rectangle, draw=gray!80, rounded corners=3pt, fill=gray!10, text width=3.0cm, minimum height=0.7cm, align=center, font=\footnotesize\bfseries},
+    arrow/.style={-Latex, thick, draw=black!70},
+    dashedarrow/.style={-Latex, dashed, thick, draw=black!60}
+]
+
+% Source
+\node[source] (textbook) {Source Textbook\\(\texttt{CK-12 Basic Geometry})};
+
+% Preprocessing
+\node[block, below=0.6cm of textbook, text width=5.5cm] (preprocess) {
+    \textbf{Text Ingestion \& Preprocessing}\\
+    Structure Detection (Def, Thm, Expl) \& Segmentation
+};
+
+% Pipelines
+\node[block, below left=0.9cm and 0.4cm of preprocess, text width=3.4cm, fill=purple!6, draw=purple!80] (rule_pipe) {
+    \textbf{Rule Pipeline (\texttt{rule\_v3})}\\
+    \textit{Lexicon:} 130 Curated Concepts\\
+    \textit{Pairs:} Intra-sentence cooc\\
+    \textit{Classify:} Hearst \& Connectives\\
+    \textit{Score:} Saaty AHP ($CR=0.022$)
+};
+
+\node[block, below right=0.9cm and 0.4cm of preprocess, text width=3.4cm, fill=red!6, draw=red!80] (llm_pipe) {
+    \textbf{LLM Pipeline (\texttt{kgx\_v2})}\\
+    \textit{Concepts:} spaCy Noun Chunks (204)\\
+    \textit{Pairs:} Multi-source (989 pairs)\\
+    \textit{Classify:} Swap-sampled 7B Prompt\\
+    \textit{Constraint:} Feedback Arc Set
+};
+
+% Baselines & Hybrid
+\node[baseline, left=0.6cm of rule_pipe, text width=2.5cm] (book_order) {
+    \textbf{Reading Order Prior}\\
+    \textit{Rule:} $p(A) < p(B)$\\
+    \textit{Score:} $\Delta \text{Position}$
+};
+
+\node[block, below=0.9cm of llm_pipe, text width=3.6cm, fill=green!6, draw=green!70!black] (hybrid_pipe) {
+    \textbf{Neuro-Symbolic Hybrid}\\
+    \textit{Expansion:} Cartesian ($N=41{,}412$)\\
+    \textit{Gate:} Forward Order $\times$ Rank Fusion\\
+    \textit{Acyclicity:} Topological DAG Sorting
+};
+
+% Evaluation
+\node[eval, below=1.2cm of rule_pipe, text width=2.8cm] (eval_rule) {
+    \textbf{Evaluation on Gold}\\
+    AL-CPL Benchmark\\
+    Direct $F_1 = 0.052$\\
+    $\text{AUC} = 0.513$
+};
+
+\node[eval, below=1.2cm of hybrid_pipe, text width=2.8cm] (eval_hybrid) {
+    \textbf{Evaluation on Gold}\\
+    AL-CPL Benchmark\\
+    Closure $F_1 = 0.786$\\
+    $\text{AUC} = 0.888$
+};
+
+\node[eval, below=1.2cm of book_order, text width=2.5cm] (eval_order) {
+    \textbf{Structural Baseline}\\
+    Direct $F_1 = 0.736$\\
+    $\text{AUC} = 0.868$\\
+    Acc $= 96.5\%$
+};
+
+\node[eval, below=0.4cm of llm_pipe, text width=3.2cm, fill=red!10, draw=red!70] (eval_llm) {
+    \textbf{LLM Directional Score}\\
+    Direct $F_1 = 0.030$, $\text{AUC} = 0.503$\\
+    Directional Acc $= 50.0\%$ (Chance)
+};
+
+% Connectors
+\draw[arrow] (textbook) -- (preprocess);
+\draw[arrow] (preprocess.south) -| (rule_pipe.north);
+\draw[arrow] (preprocess.south) -| (llm_pipe.north);
+\draw[dashedarrow] (preprocess.west) -| (book_order.north);
+
+\draw[arrow] (llm_pipe.south) -- (eval_llm.north);
+\draw[dashedarrow] (llm_pipe.south) -- (hybrid_pipe.north);
+\draw[dashedarrow] (book_order.south) |- ($(hybrid_pipe.west)+(0,0.2)$);
+
+\draw[arrow] (rule_pipe.south) -- (eval_rule.north);
+\draw[arrow] (hybrid_pipe.south) -- (eval_hybrid.north);
+\draw[arrow] (book_order.south) -- (eval_order.north);
+
+\end{tikzpicture}
+\caption{System architecture and comparative evaluation workflow across the three knowledge graph construction pipelines (\texttt{rule\_v3}, \texttt{kgx\_v2}, \texttt{kgx\_v2\_hybrid}) and the structural reading-order baseline, evaluated against the external AL-CPL benchmark on identical covered candidate pairs.}
+\label{fig:methodology_flowchart}
+\end{figure*}

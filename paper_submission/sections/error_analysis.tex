@@ -1,0 +1,19 @@
+\section{Error Analysis and Bottleneck Decomposition}
+\label{sec:error_analysis}
+
+\subsection{Pipeline Recall Cascade Decomposition}
+To explain why end-to-end extraction recall remains low across automated systems, we trace the retention of all $524$ ground-truth AL-CPL positive prerequisites across the sequential stages of the pipeline:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Benchmark Positives ($N=524$, $100\%$):} The total set of ground-truth pedagogical dependencies.
+    \item \textbf{Concept Extraction Retention ($N=297$, $56.7\%$):} Dropping $24$ benchmark concepts immediately eliminates $227$ positive pairs ($43.3\%$ initial loss). Of these, $13$ concepts are completely absent from the textbook, while $11$ were dropped by automated filtering rules.
+    \item \textbf{Candidate Generation Bottleneck ($N=169$, $32.3\%$):} Restricting candidate pairing to sentence and chunk co-occurrences discards an additional $128$ positive pairs ($24.4\%$). In educational curricula, prerequisites frequently span non-adjacent chapters without explicit co-mention, imposing an insurmountable recall ceiling of $32.3\%$ before any classification model is queried.
+    \item \textbf{Direct Edge Classification ($N=8$, $1.5\%$):} Conservative classification thresholds and directional errors reduce direct true positive edges to $8$ in \texttt{kgx\_v2} and $7$ in \texttt{rule\_v3}.
+    \item \textbf{Transitive Closure Recovery ($N=209$, $39.9\%$):} In \texttt{kgx\_v2\_hybrid}, expanding to Cartesian candidate pairs and computing transitive reachability over the DAG recovers $209$ reachable positives ($39.9\%$ overall recall).
+\end{enumerate}
+
+\subsection{Directional Symmetry Bias in Expository Text}
+Inspection of classification errors in \texttt{kgx\_v2} reveals that 7B parameter models struggle with directional asymmetry primarily because expository textbook text lacks overt relational connectives. Unlike news articles or social media where verbs explicitly assert actions (e.g., \textit{"Company A acquired Company B"}), geometry textbooks present definitions as copular equivalence statements (e.g., \textit{"A polygon with three sides is a triangle"}). When prompted with local sentences, the LLM recognizes that the concepts are mathematically related, but cannot determine whether the pedagogical dependency flows $A \to B$ or $B \to A$. Without structural document position, directional classification collapses to coin-flip probability ($50.0\%$).
+
+\subsection{Ontological Category Confusion}
+Auditing relation classification errors across the non-prerequisite types revealed a persistent semantic confusion between hyponymy (\textit{Is-a}) and meronymy (\textit{Part-of}). In \texttt{rule\_v3} and early prompts in \texttt{kgx\_v2}, cue phrases such as \textit{"is a type of"} and \textit{"special case of"} were erroneously mapped to the \textit{Part-of} schema, treating taxonomic specializations (e.g., an \textit{Equilateral Triangle} is a type of \textit{Triangle}) as meronymic physical components. Disentangling taxonomic hierarchies from meronymic part-whole relations is a critical prerequisite for automated educational ontology construction.

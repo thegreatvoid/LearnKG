@@ -1,0 +1,30 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Systematic methodology comparison across evaluated educational knowledge graph construction pipelines, structural baselines, and feature weighting ablations.}
+\label{tab:methodology_comparison}
+\begin{tabularx}{\textwidth}{l p{2.4cm} p{2.2cm} p{2.4cm} p{2.2cm} p{2.5cm} l}
+\toprule
+\textbf{Approach} & \textbf{Paradigm} & \textbf{Concept Extraction} & \textbf{Candidate Pairing} & \textbf{Direction Decided By} & \textbf{Graph Constraints} & \textbf{Runtime} \\
+\midrule
+\multicolumn{7}{l}{\textit{\textbf{Group A: End-to-End Construction Pipelines}}} \\
+\addlinespace[2pt]
+\texttt{rule\_v3} & Heuristic / Symbolic Regex & Hard-coded lexicon (130 nodes) & Intra-sentence co-occurrence only & Passive voice cues or reading-order fallback & Manual deduplication; cycles unconstrained & $\approx 8.4$\,s \\
+\addlinespace[3pt]
+\texttt{kgx\_v2} & Open-weight Local LLM (\texttt{Qwen-2.5-7B}) & Unsupervised spaCy discovery (204 nodes) & Multi-source proposal (cooc, embeddings) & Swap-sampled zero-shot JSON prompting & Greedy feedback arc set (DAG on Prereq) & $\approx 68$\,m \\
+\addlinespace[3pt]
+\texttt{kgx\_v2\_hybrid} & Neuro-Symbolic Synthesis & Inherits 204 nodes from \texttt{kgx\_v2} & Cartesian candidate expansion ($N=41{,}412$) & Forward reading gate ($p_A < p_B$) $\times$ rank fusion & Strict DAG on Prereq; top-$3$ predecessor bound & $\approx 22$\,s \\
+\midrule
+\multicolumn{7}{l}{\textit{\textbf{Group B: Comparative Baselines}}} \\
+\addlinespace[2pt]
+Random & Non-informative baseline & N/A & Evaluated candidate pairs & Uniform random assignment & None & $< 0.1$\,s \\
+\addlinespace[3pt]
+Book Order & Zero-parameter structural prior & Offset scanning of textbook text & All covered candidate pairs ($N=868$) & First-mention offset in raw text: $p(A) < p(B)$ & Inherently acyclic (transitive linear chain) & $< 0.5$\,s \\
+\midrule
+\multicolumn{7}{l}{\textit{\textbf{Group C: Edge Weighting \& Scoring Ablations (Prerequisite Ranking)}}} \\
+\addlinespace[2pt]
+Saaty AHP & Multi-Criteria Decision Analysis & Verified first definitions & Evaluated candidate pairs & Symmetric: $W(A,B) = W(B,A)$ (No direction) & Normalized weights $W \in [0, 1]$ & $< 1.0$\,s \\
+Co-occurrence & Distributional statistical count & Sentence token sets & Evaluated candidate pairs & Symmetric: $C(A,B) = C(B,A)$ (No direction) & Linear frequency saturation $\min(1, n/3)$ & $< 0.2$\,s \\
+\bottomrule
+\end{tabularx}
+\end{table*}

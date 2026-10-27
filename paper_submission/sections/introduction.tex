@@ -1,0 +1,23 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Educational Knowledge Graphs (EKGs) organize curriculum concepts and their pedagogical relationships into structured semantic networks \cite{chen2018prereq,ji2021survey}. Unlike encyclopedic knowledge graphs that model static real-world facts, an EKG centers on the \textbf{prerequisite relation} ($A \to B$), denoting that mastery of concept $A$ is cognitively required before concept $B$ can be understood. Accurate prerequisite graphs serve as backbones for adaptive learning platforms, automated curriculum sequencing, and diagnostic learning-path tracing \cite{alzetta2020prereq,roy2019moocs}.
+
+Recent advancements in open-weight Large Language Models (LLMs) have generated significant interest in automating knowledge graph construction directly from textbooks \cite{carta2023iterative,trajanoska2023llm}. For educational institutions, deploying local sub-10B parameter models (such as \texttt{Qwen-2.5-7B}) is particularly attractive: local deployment guarantees student data privacy, incurs no external API costs, and functions offline in resource-constrained classroom settings. 
+
+However, whether an unconstrained local neural model can reliably deduce directional prerequisite relationships from expository text remains questionable. High-school textbooks are written in pedagogical prose: definitions introduce concept attributes symmetrically, while theorems explain mathematical properties without explicitly declaring directional dependencies. Furthermore, instructional textbooks are inherently sequential. Authors introduce foundational concepts in early chapters and advanced concepts in later chapters. Consequently, automated systems that report high extraction accuracy on textbook corpora may simply be exploiting the linear presentation order of the document rather than extracting genuine conceptual dependencies.
+
+Evaluating these systems requires a controlled experimental setup that isolates linguistic cues, neural reasoning, and structural priors. In this work, we address this challenge through a rigorous comparative evaluation on a complete high-school curriculum (\textit{CK-12 Basic Geometry}), benchmarked against the external human-annotated AL-CPL ground truth ($N=1{,}681$ pairs) \cite{liang2015prereq}. We analyze three knowledge graph construction paradigms—a heuristic rule-based pipeline (\texttt{rule\_v3}), an open-weight 7B LLM pipeline (\texttt{kgx\_v2}), and a neuro-symbolic hybrid synthesizer (\texttt{kgx_v2_hybrid})—alongside a zero-parameter reading-order baseline and multi-factor edge-weighting ablations.
+
+Specifically, we investigate the following primary research question:
+\begin{quote}
+\textit{How do rule-based extraction, local LLM-based extraction, and document-structural information compare in constructing educational prerequisite graphs, and what does the observed performance reveal about the contribution of structural priors and pipeline design?}
+\end{quote}
+
+Our study produces four primary contributions:
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Controlled Benchmark of Local LLM Extraction:} We demonstrate that an unconstrained 7B instruction-tuned model (\texttt{Qwen-2.5-7B}) evaluated on an identical covered test set ($N=868$) achieves an ROC-AUC of only $0.503$ [95\% CI: $0.49, 0.51$] and operates at pure chance for directional classification ($50.0\%$, $4/8$ decided), showing that expository prose alone provides insufficient directional signal for sub-10B models.
+    \item \textbf{Quantifying the Structural Reading-Order Prior:} We show that a zero-parameter baseline sorting concepts by first appearance achieves an $F_1$ of $0.736$, an ROC-AUC of $0.868$, and $96.5\%$ directional accuracy ($251/260$ correct), demonstrating that linear text sequence carries an overwhelming inductive prior that must be controlled in any educational extraction benchmark.
+    \item \textbf{Decomposing Pipeline Recall Bottlenecks:} Through an empirical error cascade analysis, we prove that candidate-pair generation (sparse intra-sentence and chunk co-occurrence) is the primary structural bottleneck, discarding over $43\%$ of reachable dependencies before the relation classifier is ever queried.
+    \item \textbf{Empirical Audit of Multi-Criteria Weighting:} We deconstruct Saaty's Analytic Hierarchy Process (AHP) edge-weighting formulation ($CR=0.022$), showing that sentence co-occurrence alone drives its ranking utility ($\text{NDCG@10} = 0.723$), while lexical definition overlap contributes zero discriminative signal ($\text{NDCG@10} = 0.589$ vs. random $0.582$, $p < 0.001$).
+\end{enumerate}

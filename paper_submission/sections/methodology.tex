@@ -1,0 +1,52 @@
+\section{Methodologies under Comparison}
+\label{sec:methodology}
+
+\input{figures/methodology_flowchart}
+\input{tables/methodology_comparison}
+
+We evaluate three complete knowledge graph construction pipelines, one structural baseline, and one statistical reference baseline. Figure~\ref{fig:methodology_flowchart} illustrates the system architecture, Table~\ref{tab:methodology_comparison} summarizes their methodological properties, and Figure~\ref{fig:methodology_comparison} contrasts their information sources.
+
+\input{figures/methodology_comparison}
+
+
+\subsection{Method 1: Rule-Based Pipeline (\texttt{rule\_v3})}
+The symbolic pipeline implements deterministic information extraction anchored in textbook structural hierarchy:
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Text Parsing and Structure Detection:} The document is parsed into $72$ structured blocks classified into didactic types (\textit{Definition}, \textit{Theorem}, \textit{Explanation}, \textit{Chapter}, \textit{Section}) using pattern-based structural heuristics.
+    \item \textbf{Curated Lexicon Grounding:} Concepts are matched against a curated textbook vocabulary of $130$ canonical mathematical entities. Surface forms are normalized using alias maps, and first definitions are captured verbatim. Acronyms shorter than three characters are excluded.
+    \item \textbf{Intra-Sentence Candidate Pairing:} Candidate relation pairs are proposed strictly when two concepts co-occur within the same sentence or definition clause ($192$ total proposals). Concepts in distinct chapters cannot form candidate pairs unless explicitly co-mentioned.
+    \item \textbf{Linguistic Pattern Extraction:} Rules match curated connective regexes (\texttt{KEYWORD\_RES}) and Hearst patterns (\texttt{ONTOLOGY\_PATTERNS}). Prerequisite direction is assigned via passive-voice inversion cues or falls back to textbook sequence.
+    \item \textbf{Saaty AHP Edge Weighting:} Edge confidence is calculated via the Analytic Hierarchy Process ($CR=0.022$):
+    \begin{equation}
+    W_{\text{AHP}} = 0.52 S + 0.24 C + 0.09 P + 0.15 E
+    \end{equation}
+    where $S$ is lexical definition Jaccard, $C = \min(1.0, n_{\text{sentences}}/3)$ is co-occurrence frequency, $P = 1 / (1 + |\text{chap}_A - \text{chap}_B|)$ is chapter proximity, and $E$ is section co-mention overlap.
+\end{enumerate}
+
+\subsection{Method 2: Standalone Local LLM Pipeline (\texttt{kgx\_v2})}
+The neural pipeline implements open-weight generative extraction without pre-compiled lexicons:
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Unsupervised Concept Discovery:} The raw text is segmented into $1{,}200$-token windows. Noun chunks are extracted via spaCy and filtered by document frequency and capitalization thresholds, discovering $204$ canonical concepts.
+    \item \textbf{Multi-Source Candidate Proposal:} To capture cross-chapter dependencies, candidates are generated across four channels: sentence co-occurrence, chunk co-occurrence, definition cross-references, and embedding nearest neighbors ($989$ proposed candidate pairs).
+    \item \textbf{Swap-Sampled Generative Classification:} For each candidate pair $(u, v)$, the local open-weight model (\texttt{Qwen-2.5-7B-Instruct} via Ollama) is queried with the surrounding text context. To cancel positional framing bias, the model is queried twice with swapped arguments—$(u, v)$ and $(v, u)$—and the resulting JSON probability distributions across the five relation classes are averaged.
+    \item \textbf{DAG Cycle Elimination:} A greedy feedback arc set algorithm detects and removes cycles on Prerequisite edges, guaranteeing an acyclic prerequisite subgraph ($545$ total multi-relation edges).
+\end{enumerate}
+
+\subsection{Method 3: Neuro-Symbolic Hybrid (\texttt{kgx\_v2\_hybrid})}
+The hybrid system synthesizes neural relatedness with structural text priors:
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Cartesian Candidate Expansion:} The pipeline generates the full Cartesian product of all $204$ concepts ($204 \times 203 = 41{,}412$ pairs), eliminating the candidate-pairing recall bottleneck.
+    \item \textbf{Multi-Signal Scoring Engine:} Every directed pair $u \to v$ is scored via percentile rank fusion:
+    \begin{equation}
+    \text{Score}(u \to v) = \text{Gate}(u, v) \times \frac{1}{3} \sum_{k \in \{C, \text{RefD}, \text{LLM}\}} \text{Rank}(k)
+    \end{equation}
+    where $\text{Gate}(u, v)$ is a forward-only indicator ($p(u) < p(v)$ scaled by position gap), $C$ is sentence co-occurrence, $\text{RefD}$ is sentence-level Reference Distance \cite{liang2015prereq}, and $\text{LLM}$ is the symmetric relatedness score from \texttt{kgx\_v2}.
+    \item \textbf{Top-$k$ Degree Constraint and Cycle Removal:} For each concept, only its top-$k=3$ predecessors with positive relatedness are retained. Cycles are removed via feedback arc set sorting, yielding $669$ final edges ($518$ prerequisite edges).
+\end{enumerate}
+
+\subsection{Comparative Baselines}
+\textbf{Textbook Reading-Order Baseline:} Computes the first-mention character offset $p(c)$ for every concept in the raw text string. An edge $A \to B$ is predicted if $p(A) < p(B)$. Continuous ranking evaluates:
+\begin{equation}
+\text{Score}_{\text{Order}}(A \to B) = \max\left(0, \frac{p(B) - p(A)}{\text{Total Characters}}\right)
+\end{equation}
+\textbf{Random Baseline:} Generates uniform random predictions and tie-breaks across candidate pairs to establish the non-informative lower bound.

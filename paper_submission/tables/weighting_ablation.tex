@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Edge weighting and ranking ablation on AL-CPL prerequisite queries ($2{,}000$ bootstrap resamples). The $p$-values measure significance relative to the Saaty AHP baseline using paired sign-flip permutation tests.}
+\label{tab:weighting_ablation}
+\begin{tabularx}{\columnwidth}{l X c c r}
+\toprule
+\textbf{Feature / Scheme} & \textbf{Formulation} & \textbf{NDCG@5} & \textbf{NDCG@10} & \textbf{$p$-value} \\
+\midrule
+Book-Order Gap & $\Delta \text{Position}$ & $\mathbf{0.868}$ & $\mathbf{0.891}$ & $< 0.0001$ \\
+Raw Cooc Count & Count of co-mentions & $0.682$ & $0.742$ & $0.31$ (ns) \\
+Co-occurrence ($C$) & $\min(1, n_{\text{sent}}/3)$ & $0.661$ & $0.723$ & $0.68$ (ns) \\
+Saaty AHP Baseline & $0.52S + 0.24C + 0.09P + 0.15E$ & $0.620$ & $0.709$ & Reference \\
+Section Jaccard ($E$) & $\text{Jaccard}(\text{Sec}_A, \text{Sec}_B)$ & $0.598$ & $0.684$ & $0.42$ (ns) \\
+Chapter Prox. ($P$) & $1 / (1 + \Delta \text{chap})$ & $0.489$ & $0.605$ & $< 0.001$ \\
+Def. Overlap ($S$) & $\text{Jaccard}(\text{Def}_A, \text{Def}_B)$ & $0.471$ & $0.589$ & $< 0.001$ \\
+Random Baseline & Uniform tie-break & $0.483$ & $0.582$ & $< 0.001$ \\
+\bottomrule
+\end{tabularx}
+\end{table}

@@ -1,0 +1,12 @@
+\section{Threats to Validity}
+\label{sec:threats_to_validity}
+
+\textbf{Single-Domain Confinement:} A primary limitation of this study is its empirical confinement to a single high-school mathematics curriculum (\textit{CK-12 Basic Geometry}). Geometry is inherently axiomatic: definitions lead to postulates, which lead to theorems and proofs, naturally enforcing strong chronological progression. Whether the dominance of reading order persists in less axiomatic disciplines (e.g., Biology or History) requires empirical replication. While our cross-domain protocol on \textit{OpenStax Physics} is documented and frozen in our repository (\texttt{second\_domain\_protocol.md}), its execution remains designated for future work.
+
+\textbf{Model Parameter Scale:} Our neural evaluation focused on \texttt{Qwen-2.5-7B}, an open-weight instruction-tuned model. Larger models (e.g., 70B parameter models or closed-source commercial APIs like GPT-4) may exhibit superior zero-shot directional reasoning on isolated sentences. However, our study intentionally restricted evaluation to sub-10B parameter models because only models of this scale can realistically run on consumer-grade hardware in privacy-conscious, offline educational settings.
+
+\textbf{External Benchmark Coverage Misalignment:} AL-CPL Geometry was annotated over Wikipedia concept graphs rather than the \textit{CK-12} textbook text. Although both cover standard Euclidean geometry, $13$ AL-CPL concepts were completely absent from the textbook, preventing $100\%$ benchmark coverage. We mitigated this confound by restricting primary comparative benchmarking to the common covered set ($N=868$).
+
+\textbf{Absence of Gold Standards for Non-Prerequisite Relations:} While prerequisite extraction is evaluated against rigorous external ground truth, the other four relation types (\textit{Part-of}, \textit{Application}, \textit{Extension}, \textit{Similarity}) lack public human-annotated benchmarks. Our evaluation of these relations relied on reference-free structural diagnostics and contradiction detection. To facilitate future adjudication, we release a $378$-item stratified blinded annotation package.
+
+\textbf{Proxy Task vs. Human Cognitive Assessment:} Our downstream evaluation tests ancestor path traversal in the prerequisite DAG as a structural proxy for learning-gap tracing. This experiment evaluates graph reachability, not human student cognitive diagnostics. Validating pedagogical utility for real students requires learner assessment logs, which were beyond the scope of this study.

@@ -1,0 +1,14 @@
+\section{Reproducibility and Open Science}
+\label{sec:reproducibility}
+
+To support open science and verifiable research, all code, datasets, evaluation scripts, and machine-readable result logs are preserved in the repository with deterministic execution instructions:
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Software Environment:} The evaluation framework runs on Python 3.10+ on Linux x86\_64. Core dependencies include \texttt{spacy} (with \texttt{en\_core\_web\_sm}), \texttt{networkx}, \texttt{scikit-learn}, \texttt{scipy}, \texttt{pandas}, and \texttt{numpy}. Neural inference uses Ollama hosting \texttt{qwen2.5:7b-instruct}.
+    \item \textbf{Deterministic Evaluation:} All reported metrics, bootstrap confidence intervals, and ranking tables can be reproduced deterministically without re-running model inference via the command:
+    \begin{quote}
+    \small \texttt{python3 -m kg\_eval.framework.run\_all --out data\_output/eval\_framework}
+    \end{quote}
+    \item \textbf{Unit and Regression Test Suite:} Metric implementations, Wilson intervals, bootstrap sampling, and DAG cycle detection are verified via automated regression tests in \texttt{kg\_eval/framework/test\_framework.py} and \texttt{kg\_extract/test\_kg\_extract.py}.
+    \item \textbf{Public Release Artifacts:} We release the machine-readable evaluation logs (\texttt{prerequisite\_report.json}, \texttt{weights\_report.json}), the extracted knowledge graph CSVs, the $378$-item blinded multi-relation annotation package, and the full replication protocol for secondary domains (\texttt{second\_domain\_protocol.md}).
+\end{enumerate}

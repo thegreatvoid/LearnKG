@@ -1,0 +1,32 @@
+\section{Problem Formulation and Relation Ontology}
+\label{sec:problem_formulation}
+
+\subsection{Formal Graph Definition}
+We define an Educational Knowledge Graph as a directed, edge-typed, weighted multigraph:
+\begin{equation}
+G = (V, E, \mathcal{R}, W)
+\end{equation}
+where $V$ is a set of canonical educational concept nodes, $E \subseteq V \times V \times \mathcal{R}$ is a set of directed relational triples $(u, v, r)$, $\mathcal{R}$ is the predefined relation ontology, and $W: E \to [0, 1]$ assigns a continuous confidence weight to each edge.
+
+Each concept node $v \in V$ is grounded in the textbook corpus via:
+\begin{equation}
+v = \langle \text{id}, \text{canonical\_name}, \text{aliases}, p(v), \text{def}(v) \rangle
+\end{equation}
+where $p(v) \in \mathbb{N}$ denotes the character offset of the first textual mention of $v$ in the corpus, and $\text{def}(v)$ is the verbatim first definitional sentence extracted from the text.
+
+\subsection{Educational Relation Ontology}
+The framework defines five pedagogical relation types ($\mathcal{R}$):
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Prerequisite ($A \to B$):} Cognitive dependency denoting that understanding concept $A$ is necessary before acquiring concept $B$. This relation is asymmetric, transitive, and must form a Directed Acyclic Graph (DAG) across the curriculum.
+    \item \textbf{Part-of ($A \to B$):} Meronymic component-to-whole relationship (e.g., \textit{Hypotenuse} is a component of \textit{Right Triangle}). Asymmetric.
+    \item \textbf{Application ($A \to B$):} Direct operational use of a concept in a task or domain (e.g., \textit{Pythagorean Theorem} applied to \textit{Distance Calculation}). Asymmetric.
+    \item \textbf{Extension ($A \to B$):} Generalization or advanced enrichment of a base concept (e.g., \textit{Non-Euclidean Geometry} extends \textit{Euclidean Geometry}). Asymmetric.
+    \item \textbf{Similarity ($A \leftrightarrow B$):} Conceptual, geometric, or structural analogy (e.g., \textit{Congruence} is analogous to \textit{Similarity}). Symmetric: $(u, v) \in E \iff (v, u) \in E$.
+\end{enumerate}
+
+\subsection{Distinguishing Reading Order from Prerequisite Dependency}
+A critical theoretical requirement of this study is the formal distinction between chronological presentation order and conceptual dependency. Let $p(A)$ and $p(B)$ denote the first occurrence coordinates of concepts $A$ and $B$. The \textbf{temporal presentation prior} asserts:
+\begin{equation}
+\text{Order}(A, B) \iff p(A) < p(B)
+\end{equation}
+While curriculum designers structure textbooks so that foundational material precedes advanced material, $\text{Order}(A, B)$ does not logically entail that $A$ is a prerequisite of $B$. An author may introduce an ungrounded motivational example or advance through mutually independent chapters sequentially. Conflating presentation order with conceptual prerequisite dependency creates an inductive leakage confound that our benchmark explicitly controls.

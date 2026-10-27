@@ -1,0 +1,54 @@
+\documentclass[10pt,twocolumn,a4paper]{article}
+
+% --- Layout and Typography Packages ---
+\usepackage[margin=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks,breaklinks=true]{hyperref}
+
+% --- TikZ Graphics Configuration ---
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,calc,backgrounds}
+
+% --- Title and Metadata ---
+\title{\textbf{Evaluating Local Large Language Models for Educational Prerequisite Extraction:\\The Surprising Dominance of Structural Reading-Order Priors}}
+
+\author{
+  Anonymous Authors\\
+  \small{Paper Under Double-Blind Conference Review}
+}
+
+\date{}
+
+\begin{document}
+\maketitle
+
+% --- Section Imports ---
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/problem_formulation}
+\input{sections/methodology}
+\input{sections/experimental_setup}
+\input{sections/results}
+\input{sections/error_analysis}
+\input{sections/discussion}
+\input{sections/threats_to_validity}
+\input{sections/reproducibility}
+\input{sections/conclusion}
+
+% --- Bibliography ---
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
