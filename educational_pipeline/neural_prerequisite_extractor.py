@@ -79,7 +79,7 @@ class NeuralPrerequisiteExtractor:
                 "mentions": mentions,
             }
 
-        # 2. Generate candidate pairs following curriculum sequence (page_a <= page_b)
+        # 2. Generate candidate pairs with soft page penalty (instead of strict cutoff)
         candidates = []
         pair_metadata = []
 
@@ -90,9 +90,10 @@ class NeuralPrerequisiteExtractor:
                     continue
                 tgt_prof = concept_profiles[c_tgt.concept_id]
 
-                # Asymmetric curriculum constraint: introductory topics precede advanced topics
-                if src_prof["page"] > tgt_prof["page"]:
-                    continue
+                # Soft page penalty: concepts appearing later receive penalty proportional to delta
+                page_delta = tgt_prof["page"] - src_prof["page"]
+                # If target appears before source, apply sharp penalty
+                soft_page_penalty = 0.0 if page_delta >= 0 else min(5.0, abs(page_delta) * 0.5)
 
                 # Prepare Cross-Encoder prompt
                 query = f"Foundational prerequisite in geometry: {src_prof['name']}"
@@ -100,25 +101,26 @@ class NeuralPrerequisiteExtractor:
                 doc = f"Topic: {tgt_prof['name']}. Definition: {tgt_prof['context']}. Evidence: {tgt_evidence}"
 
                 candidates.append((query, doc))
-                pair_metadata.append((c_src, c_tgt, tgt_evidence))
+                pair_metadata.append((c_src, c_tgt, tgt_evidence, soft_page_penalty))
 
         if not candidates:
             return []
 
-        # 3. Batch neural scoring on GPU
+        # 3. Batch neural scoring on GPU/CPU
         print(f"[*] Scoring {len(candidates)} candidate concept pairs with Neural Cross-Encoder...")
         scores = self.model.predict(candidates, batch_size=64, show_progress_bar=False)
 
-        # 4. Filter by threshold, target-relative top-k scoring, and enforce DAG acyclicity
+        # 4. Filter by threshold after soft page penalty, target-relative top-k scoring, and enforce DAG acyclicity
         by_target: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
         for i, score in enumerate(scores):
-            raw_s = float(score)
-            if raw_s >= self.threshold:
-                c_src, c_tgt, evidence = pair_metadata[i]
+            c_src, c_tgt, evidence, page_pen = pair_metadata[i]
+            calibrated_score = float(score) - page_pen
+            if calibrated_score >= self.threshold:
                 by_target[c_tgt.concept_id].append({
                     "src": c_src,
                     "tgt": c_tgt,
-                    "score": raw_s,
+                    "score": calibrated_score,
+                    "raw_score": float(score),
                     "evidence": evidence,
                 })
 
@@ -126,7 +128,7 @@ class NeuralPrerequisiteExtractor:
         scored_pairs = []
         for tgt_id, cands in by_target.items():
             cands.sort(key=lambda x: x["score"], reverse=True)
-            for item in cands[:8]:  # Up to 8 calibrated candidate predecessors per target
+            for item in cands[:12]:  # Keep up to 12 calibrated predecessor candidates per target
                 scored_pairs.append(item)
 
         scored_pairs.sort(key=lambda x: x["score"], reverse=True)
@@ -157,6 +159,7 @@ class NeuralPrerequisiteExtractor:
                 "target_name": pair["tgt"].concept_name,
                 "relation_type": "Prerequisite",
                 "weight": round(norm_weight, 4),
+                "raw_logit": round(pair["raw_score"], 4),
                 "evidence": pair["evidence"],
                 "page": pair["tgt"].page,
                 "chunk_id": pair["tgt"].chunk_id,

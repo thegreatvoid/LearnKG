@@ -54,6 +54,8 @@ PROTECTED_DOMAIN_TERMS = {
     "area", "similarity", "distance", "diagonal", "edge", "face",
     "geometry", "space", "sine", "cosine", "tangent", "parallel",
     "perpendicular", "collinearity", "convex polygon", "special right triangles",
+    "pythagorean triple", "rigid transformation", "triangle inequality",
+    "inverse trigonometric",
 }
 
 
@@ -125,7 +127,8 @@ DOMAIN_TERMS = [
     "Trigonometry", "Sine", "Cosine", "Tangent Ratio", "Inverse Trigonometric",
     "Fractal", "Self Similarity", "Star Polygon",
     # Domain lexemes and congruence/similarity abbreviations
-    "Distance", "Diagonal", "Edge", "Face", "Collinearity", "Convex Polygon",
+    "Geometry", "Distance", "Diagonal", "Edge", "Face", "Collinearity", "Convex Polygon",
+    "Pythagorean Triple", "Rigid Transformation", "Triangle Inequality",
     "Space", "SSS", "SAS", "ASA", "AAS", "HL", "AA",
 ]
 

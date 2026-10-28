@@ -225,7 +225,7 @@ def run_educational_pipeline(
     import json
     from .candidate_generator import CandidateGenerator
     cand_gen = CandidateGenerator(normalizer, chunks)
-    candidate_pairs = cand_gen.generate_candidates(per_concept_limit=10, max_total_candidates=1500)
+    candidate_pairs = cand_gen.generate_candidates(per_concept_limit=20, max_total_candidates=3000)
     cand_csv = output_path / "candidate_pairs.csv"
     pd.DataFrame([c.to_dict() for c in candidate_pairs]).to_csv(cand_csv, index=False)
     print(f"[+] Candidate pairs generated: {len(candidate_pairs)} -> {cand_csv.name}")

@@ -20,6 +20,7 @@ class NormalizedConcept:
     chapter: str = ""
     section: str = ""
     page: int = 1
+    definition_page: int = 1
     chunk_id: str = ""
     evidence: str = ""
     definition_kind: str = ""  # "definitional" / "llm" / "mention" / "" (see find_definition)
@@ -36,6 +37,22 @@ class ConceptNormalizer:
     #   "first_definitional"  keep the first definitional (or LLM) definition; never replace it with a mention
     DEFINITION_POLICIES = ("legacy_longest", "first_definitional")
     _KIND_RANK = {"definitional": 2, "llm": 2, "mention": 1, "": 0}
+
+    # Common educational geometry synonym pairs and variations
+    DOMAIN_SYNONYMS: Dict[str, Set[str]] = {
+        "coordinate plane": {"coordinate system", "cartesian coordinate system", "cartesian plane"},
+        "coordinate system": {"coordinate plane", "cartesian coordinate system"},
+        "dilation": {"scaling", "scale factor"},
+        "scale factor": {"dilation", "scaling"},
+        "reflection symmetry": {"line symmetry"},
+        "line symmetry": {"reflection symmetry"},
+        "secant": {"secant line"},
+        "secant line": {"secant"},
+        "self similarity": {"self-similarity", "fractal"},
+        "perpendicular bisector": {"bisector"},
+        "angle bisector": {"bisector"},
+        "trigonometry": {"trigonometric functions"},
+    }
 
     def __init__(self, definition_policy: str = "legacy_longest"):
         if definition_policy not in self.DEFINITION_POLICIES:
@@ -98,6 +115,17 @@ class ConceptNormalizer:
             if self._is_plural_match(lowered, existing_term):
                 return cid
 
+        # Check hyphen/space variation (e.g. self-similarity vs self similarity)
+        normalized_spacing = lowered.replace("-", " ")
+        if normalized_spacing in self.lookup:
+            return self.lookup[normalized_spacing]
+
+        # Check domain synonym map
+        syns = self.DOMAIN_SYNONYMS.get(lowered, set()) | self.DOMAIN_SYNONYMS.get(normalized_spacing, set())
+        for syn in syns:
+            if syn in self.lookup:
+                return self.lookup[syn]
+
         # Check acronym match
         for existing_term, cid in self.lookup.items():
             if len(cleaned) <= 5 and cleaned.isupper() and self._is_acronym_match(cleaned, existing_term):
@@ -143,20 +171,22 @@ class ConceptNormalizer:
             # book order), so a longer definition found later must not move it.
             concept.chapter = concept.chapter or chapter
             concept.section = concept.section or section
+            if page and (concept.page is None or concept.page == 1 or page < concept.page):
+                concept.page = page
 
             if self.definition_policy == "legacy_longest":
                 # Update definition if existing is empty or shorter
                 if definition and (not concept.definition or len(definition) > len(concept.definition)):
                     concept.definition = definition.strip()
                     concept.evidence = evidence.strip() or concept.evidence
-                    concept.page = page or concept.page
+                    concept.definition_page = page or concept.definition_page
                     concept.chunk_id = chunk_id or concept.chunk_id
                     concept.definition_kind = definition_kind or concept.definition_kind
             elif self._KIND_RANK.get(definition_kind, 0) > self._KIND_RANK.get(concept.definition_kind, 0):
                 # first_definitional: only a strictly better kind replaces (chunks arrive in book order)
                 concept.definition = definition.strip()
                 concept.evidence = evidence.strip() or concept.evidence
-                concept.page = page or concept.page
+                concept.definition_page = page or concept.definition_page
                 concept.chunk_id = chunk_id or concept.chunk_id
                 concept.definition_kind = definition_kind
 
@@ -183,7 +213,8 @@ class ConceptNormalizer:
             definition=definition.strip(),
             chapter=chapter,
             section=section,
-            page=page,
+            page=page or 1,
+            definition_page=page or 1,
             chunk_id=chunk_id,
             evidence=evidence.strip(),
             definition_kind=definition_kind,
