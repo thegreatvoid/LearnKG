@@ -1,0 +1,91 @@
+{
+  "dataset": "PRAT",
+  "evaluation_protocol": "Positive-Only Prerequisite Evaluation (No Negative Synthesis)",
+  "gold_concepts_total": 133,
+  "gold_concepts_mapped": 53,
+  "gold_concept_mapping_coverage": 0.3985,
+  "gold_positive_pairs_total": 384,
+  "gold_pairs_evaluable_subset": 72,
+  "gold_pair_evaluable_coverage": 0.1875,
+  "predicted_prerequisite_pairs_raw": 0,
+  "predicted_prerequisite_pairs_unique": 0,
+  "duplicate_predictions_removed": 0,
+  "metrics_evaluable_subset": {
+    "TP": 0,
+    "FP_unmatched_predictions": 0,
+    "FN": 72,
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "F1": 0.0,
+    "Gold_Pair_Coverage": 0.0
+  },
+  "metrics_full_gold_set": {
+    "TP": 0,
+    "FP_unmatched_predictions": 0,
+    "FN": 384,
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "F1": 0.0,
+    "Gold_Pair_Coverage": 0.0
+  },
+  "sample_true_positives": [],
+  "sample_unmatched_predictions": [],
+  "sample_missed_gold_pairs": [
+    {
+      "prerequisite": "NETWORK",
+      "target": "STAR",
+      "both_concepts_mapped": false
+    },
+    {
+      "prerequisite": "BROWSER",
+      "target": "HYPERTEXT TRANSFER PROTOCOL",
+      "both_concepts_mapped": false
+    },
+    {
+      "prerequisite": "APPLICATION LAYER",
+      "target": "PORT NUMBER",
+      "both_concepts_mapped": false
+    },
+    {
+      "prerequisite": "PHONE NETWORK",
+      "target": "SECOND GENERATION",
+      "both_concepts_mapped": false
+    },
+    {
+      "prerequisite": "NETWORK",
+      "target": "METROPOLITAN AREA NETWORK",
+      "both_concepts_mapped": false
+    },
+    {
+      "prerequisite": "INTERNET PROTOCOL",
+      "target": "HOP COUNT",
+      "both_concepts_mapped": true
+    },
+    {
+      "prerequisite": "HYPERTEXT MARKUP LANGUAGE",
+      "target": "HEAD",
+      "both_concepts_mapped": false
+    },
+    {
+      "prerequisite": "COMPUTER",
+      "target": "DOMAIN",
+      "both_concepts_mapped": false
+    },
+    {
+      "prerequisite": "TRADITIONAL TELEPHONE",
+      "target": "VOICE OVER INTERNET PROTOCOL",
+      "both_concepts_mapped": false
+    },
+    {
+      "prerequisite": "ROUTER",
+      "target": "HOP COUNT",
+      "both_concepts_mapped": true
+    }
+  ],
+  "unmapped_predicted_endpoints": [],
+  "important_limitations": [
+    "Positive-only gold standard: gold file contains verified prerequisite pairs, not an exhaustive negative enumeration.",
+    "Unmatched predictions are counted as FP under set-matching convention, but cannot be inferred to be true false prerequisites.",
+    "ROC-AUC, specificity, and accuracy are intentionally omitted because explicit negative labels do not exist."
+  ]
+}

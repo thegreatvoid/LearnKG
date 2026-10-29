@@ -1,0 +1,136 @@
+{
+  "prerequisite_evaluation": {
+    "gold_pairs_total": 1595,
+    "gold_concepts_total": 84,
+    "gold_concepts_matched": 4,
+    "gold_concept_coverage": 0.0476,
+    "matched_pairs_evaluated": 4,
+    "matched_concept_metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "tn": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.75,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5,
+      "mcc": 0.0
+    },
+    "matched_concept_metrics_direct": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "tn": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.75,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5,
+      "mcc": 0.0
+    },
+    "matched_concept_metrics_transitive_closure": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "tn": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.75,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5,
+      "mcc": 0.0
+    },
+    "all_pairs_metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 496,
+      "tn": 1099,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.689,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5,
+      "mcc": 0.0
+    },
+    "all_pairs_metrics_direct": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 496,
+      "tn": 1099,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.689,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5,
+      "mcc": 0.0
+    },
+    "all_pairs_metrics_transitive_closure": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 496,
+      "tn": 1099,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.689,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5,
+      "mcc": 0.0
+    },
+    "roc_auc_direct": 0.5,
+    "roc_auc_transitive_closure": 0.5,
+    "ndcg_at_5": 0.6309,
+    "ndcg_at_10": 0.6309,
+    "direction_errors_reversed_edges": 0,
+    "leakage_note": "Book-order is not used as an evaluation signal; strictly directional predicted edges evaluated."
+  },
+  "reference_free_quality_indicators": {
+    "total_relations": 31,
+    "relation_distribution": {
+      "Similarity": 15,
+      "Application": 8,
+      "Part-of": 8
+    },
+    "evidence_quote_validity_rate": 1.0,
+    "evidence_quotes_checked": 31,
+    "evidence_quotes_verified": 31,
+    "schema_compliance_rate": 1.0,
+    "duplicate_edge_count": 0,
+    "part_of_type_confusion_count": 0,
+    "part_of_type_confusion_rate": 0.0,
+    "verification_status_distribution": {},
+    "verification_acceptance_rate": 0.0,
+    "quality_indicator_limitations": "Automated verification indicators reflect evidence grounding and schema compliance, not independent human ground-truth accuracy."
+  },
+  "graph_topology_diagnostics": {
+    "num_nodes": 221,
+    "num_edges": 30,
+    "density": 0.0006,
+    "referential_integrity": {
+      "dangling_sources": 0,
+      "dangling_targets": 0,
+      "self_loops": 0
+    },
+    "structural_validity": {
+      "prerequisite_is_dag": true,
+      "prerequisite_cycles": 0,
+      "part_of_is_dag": false,
+      "extension_is_dag": true
+    },
+    "connectivity": {
+      "connected_components": 199,
+      "largest_component_size": 16,
+      "largest_component_ratio": 0.0724,
+      "isolated_concepts": 194
+    }
+  },
+  "bigs_grounding_metrics": {
+    "error": "BIGS computation failed: BIGS needs sentence-transformers: pip install sentence-transformers (then the embedder is downloaded once from Hugging Face)"
+  }
+}

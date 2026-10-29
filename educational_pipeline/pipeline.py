@@ -44,6 +44,7 @@ def run_educational_pipeline(
     weighting_scheme: str = "ahp",
     show_edge_labels: bool = False,
     show_edge_tooltips: bool = True,
+    source_filename: Optional[str] = None,
 ) -> Tuple[Path, Path, nx.DiGraph]:
     """
     Executes the complete Educational Dataset Construction Pipeline.
@@ -65,7 +66,11 @@ def run_educational_pipeline(
     # -------------------------------------------------------------------------
     print("[*] Step 1: Document Parsing...")
     doc_files = []
-    if input_path.is_file():
+    if source_filename and (input_path / source_filename).exists():
+        doc_files = [input_path / source_filename]
+    elif (input_path / "rawText.txt").exists():
+        doc_files = [input_path / "rawText.txt"]
+    elif input_path.is_file():
         doc_files = [input_path]
     elif input_path.is_dir():
         doc_files = sorted(list(input_path.glob("*.pdf")) + list(input_path.glob("*.txt")))

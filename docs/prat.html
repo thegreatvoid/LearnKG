@@ -1,0 +1,891 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.0.0-rc.4/css/tom-select.min.css" integrity="sha512-43fHB3GLgZfz8QXl1RPQ8O66oIgv3po9cJ5erMt1c4QISq9dYb195T3vr5ImnJPXuVroKcGBPXBFKETW8jrPNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.0.0-rc.4/js/tom-select.complete.js" integrity="sha512-jeF9CfnvzDiw9G9xiksVjxR2lib44Gnovvkv+3CgCG6NXCD4gqlA5nDAVW5WjpA+i+/zKsUWV5xNEbW1X/HH0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 900px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 900px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+                <div id="select-menu" class="card-header">
+                    <div class="row no-gutters">
+                        <div class="col-10 pb-2">
+                            <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="selectNode([value]);"
+                            id="select-node"
+                            placeholder="Select node..."
+                            >
+                                <option selected>Select a Node by ID</option>
+                                
+                                    <option value="C0007">C0007</option>
+                                
+                                    <option value="C0015">C0015</option>
+                                
+                                    <option value="C0012">C0012</option>
+                                
+                                    <option value="C0044">C0044</option>
+                                
+                                    <option value="C0024">C0024</option>
+                                
+                                    <option value="C0001">C0001</option>
+                                
+                                    <option value="C0058">C0058</option>
+                                
+                                    <option value="C0041">C0041</option>
+                                
+                                    <option value="C0088">C0088</option>
+                                
+                                    <option value="C0156">C0156</option>
+                                
+                                    <option value="C0170">C0170</option>
+                                
+                                    <option value="C0171">C0171</option>
+                                
+                                    <option value="C0154">C0154</option>
+                                
+                                    <option value="C0169">C0169</option>
+                                
+                                    <option value="C0027">C0027</option>
+                                
+                                    <option value="C0048">C0048</option>
+                                
+                                    <option value="C0052">C0052</option>
+                                
+                                    <option value="C0123">C0123</option>
+                                
+                                    <option value="C0124">C0124</option>
+                                
+                                    <option value="C0081">C0081</option>
+                                
+                                    <option value="C0153">C0153</option>
+                                
+                                    <option value="C0060">C0060</option>
+                                
+                                    <option value="C0143">C0143</option>
+                                
+                                    <option value="C0139">C0139</option>
+                                
+                                    <option value="C0166">C0166</option>
+                                
+                                    <option value="C0204">C0204</option>
+                                
+                                    <option value="C0201">C0201</option>
+                                
+                                    <option value="C0002">C0002</option>
+                                
+                                    <option value="C0003">C0003</option>
+                                
+                                    <option value="C0004">C0004</option>
+                                
+                                    <option value="C0005">C0005</option>
+                                
+                                    <option value="C0006">C0006</option>
+                                
+                                    <option value="C0008">C0008</option>
+                                
+                                    <option value="C0009">C0009</option>
+                                
+                                    <option value="C0010">C0010</option>
+                                
+                                    <option value="C0011">C0011</option>
+                                
+                                    <option value="C0013">C0013</option>
+                                
+                                    <option value="C0014">C0014</option>
+                                
+                                    <option value="C0016">C0016</option>
+                                
+                                    <option value="C0017">C0017</option>
+                                
+                                    <option value="C0018">C0018</option>
+                                
+                                    <option value="C0019">C0019</option>
+                                
+                                    <option value="C0020">C0020</option>
+                                
+                                    <option value="C0021">C0021</option>
+                                
+                                    <option value="C0022">C0022</option>
+                                
+                                    <option value="C0023">C0023</option>
+                                
+                                    <option value="C0025">C0025</option>
+                                
+                                    <option value="C0026">C0026</option>
+                                
+                                    <option value="C0028">C0028</option>
+                                
+                                    <option value="C0029">C0029</option>
+                                
+                                    <option value="C0030">C0030</option>
+                                
+                                    <option value="C0031">C0031</option>
+                                
+                                    <option value="C0032">C0032</option>
+                                
+                                    <option value="C0033">C0033</option>
+                                
+                                    <option value="C0034">C0034</option>
+                                
+                                    <option value="C0035">C0035</option>
+                                
+                                    <option value="C0036">C0036</option>
+                                
+                                    <option value="C0037">C0037</option>
+                                
+                                    <option value="C0038">C0038</option>
+                                
+                                    <option value="C0039">C0039</option>
+                                
+                                    <option value="C0040">C0040</option>
+                                
+                                    <option value="C0042">C0042</option>
+                                
+                                    <option value="C0043">C0043</option>
+                                
+                                    <option value="C0045">C0045</option>
+                                
+                                    <option value="C0046">C0046</option>
+                                
+                                    <option value="C0047">C0047</option>
+                                
+                                    <option value="C0049">C0049</option>
+                                
+                                    <option value="C0050">C0050</option>
+                                
+                                    <option value="C0051">C0051</option>
+                                
+                                    <option value="C0053">C0053</option>
+                                
+                                    <option value="C0054">C0054</option>
+                                
+                                    <option value="C0055">C0055</option>
+                                
+                                    <option value="C0056">C0056</option>
+                                
+                                    <option value="C0057">C0057</option>
+                                
+                                    <option value="C0059">C0059</option>
+                                
+                                    <option value="C0061">C0061</option>
+                                
+                                    <option value="C0062">C0062</option>
+                                
+                                    <option value="C0063">C0063</option>
+                                
+                                    <option value="C0064">C0064</option>
+                                
+                                    <option value="C0065">C0065</option>
+                                
+                                    <option value="C0066">C0066</option>
+                                
+                                    <option value="C0067">C0067</option>
+                                
+                                    <option value="C0068">C0068</option>
+                                
+                                    <option value="C0069">C0069</option>
+                                
+                                    <option value="C0070">C0070</option>
+                                
+                                    <option value="C0071">C0071</option>
+                                
+                                    <option value="C0072">C0072</option>
+                                
+                                    <option value="C0073">C0073</option>
+                                
+                                    <option value="C0074">C0074</option>
+                                
+                                    <option value="C0075">C0075</option>
+                                
+                                    <option value="C0076">C0076</option>
+                                
+                                    <option value="C0077">C0077</option>
+                                
+                                    <option value="C0078">C0078</option>
+                                
+                                    <option value="C0079">C0079</option>
+                                
+                                    <option value="C0080">C0080</option>
+                                
+                                    <option value="C0082">C0082</option>
+                                
+                                    <option value="C0083">C0083</option>
+                                
+                                    <option value="C0084">C0084</option>
+                                
+                                    <option value="C0085">C0085</option>
+                                
+                                    <option value="C0086">C0086</option>
+                                
+                                    <option value="C0087">C0087</option>
+                                
+                                    <option value="C0089">C0089</option>
+                                
+                                    <option value="C0090">C0090</option>
+                                
+                                    <option value="C0091">C0091</option>
+                                
+                                    <option value="C0092">C0092</option>
+                                
+                                    <option value="C0093">C0093</option>
+                                
+                                    <option value="C0094">C0094</option>
+                                
+                                    <option value="C0095">C0095</option>
+                                
+                                    <option value="C0096">C0096</option>
+                                
+                                    <option value="C0097">C0097</option>
+                                
+                                    <option value="C0098">C0098</option>
+                                
+                                    <option value="C0099">C0099</option>
+                                
+                                    <option value="C0100">C0100</option>
+                                
+                                    <option value="C0101">C0101</option>
+                                
+                                    <option value="C0102">C0102</option>
+                                
+                                    <option value="C0103">C0103</option>
+                                
+                                    <option value="C0104">C0104</option>
+                                
+                                    <option value="C0105">C0105</option>
+                                
+                                    <option value="C0106">C0106</option>
+                                
+                                    <option value="C0107">C0107</option>
+                                
+                                    <option value="C0108">C0108</option>
+                                
+                                    <option value="C0109">C0109</option>
+                                
+                                    <option value="C0110">C0110</option>
+                                
+                                    <option value="C0111">C0111</option>
+                                
+                                    <option value="C0112">C0112</option>
+                                
+                                    <option value="C0113">C0113</option>
+                                
+                                    <option value="C0114">C0114</option>
+                                
+                                    <option value="C0115">C0115</option>
+                                
+                                    <option value="C0116">C0116</option>
+                                
+                                    <option value="C0117">C0117</option>
+                                
+                                    <option value="C0118">C0118</option>
+                                
+                                    <option value="C0119">C0119</option>
+                                
+                                    <option value="C0120">C0120</option>
+                                
+                                    <option value="C0121">C0121</option>
+                                
+                                    <option value="C0122">C0122</option>
+                                
+                                    <option value="C0125">C0125</option>
+                                
+                                    <option value="C0126">C0126</option>
+                                
+                                    <option value="C0127">C0127</option>
+                                
+                                    <option value="C0128">C0128</option>
+                                
+                                    <option value="C0129">C0129</option>
+                                
+                                    <option value="C0130">C0130</option>
+                                
+                                    <option value="C0131">C0131</option>
+                                
+                                    <option value="C0132">C0132</option>
+                                
+                                    <option value="C0133">C0133</option>
+                                
+                                    <option value="C0134">C0134</option>
+                                
+                                    <option value="C0135">C0135</option>
+                                
+                                    <option value="C0136">C0136</option>
+                                
+                                    <option value="C0137">C0137</option>
+                                
+                                    <option value="C0138">C0138</option>
+                                
+                                    <option value="C0140">C0140</option>
+                                
+                                    <option value="C0141">C0141</option>
+                                
+                                    <option value="C0142">C0142</option>
+                                
+                                    <option value="C0144">C0144</option>
+                                
+                                    <option value="C0145">C0145</option>
+                                
+                                    <option value="C0146">C0146</option>
+                                
+                                    <option value="C0147">C0147</option>
+                                
+                                    <option value="C0148">C0148</option>
+                                
+                                    <option value="C0149">C0149</option>
+                                
+                                    <option value="C0150">C0150</option>
+                                
+                                    <option value="C0151">C0151</option>
+                                
+                                    <option value="C0152">C0152</option>
+                                
+                                    <option value="C0155">C0155</option>
+                                
+                                    <option value="C0157">C0157</option>
+                                
+                                    <option value="C0158">C0158</option>
+                                
+                                    <option value="C0159">C0159</option>
+                                
+                                    <option value="C0160">C0160</option>
+                                
+                                    <option value="C0161">C0161</option>
+                                
+                                    <option value="C0162">C0162</option>
+                                
+                                    <option value="C0163">C0163</option>
+                                
+                                    <option value="C0164">C0164</option>
+                                
+                                    <option value="C0165">C0165</option>
+                                
+                                    <option value="C0167">C0167</option>
+                                
+                                    <option value="C0168">C0168</option>
+                                
+                                    <option value="C0172">C0172</option>
+                                
+                                    <option value="C0173">C0173</option>
+                                
+                                    <option value="C0174">C0174</option>
+                                
+                                    <option value="C0175">C0175</option>
+                                
+                                    <option value="C0176">C0176</option>
+                                
+                                    <option value="C0177">C0177</option>
+                                
+                                    <option value="C0178">C0178</option>
+                                
+                                    <option value="C0179">C0179</option>
+                                
+                                    <option value="C0180">C0180</option>
+                                
+                                    <option value="C0181">C0181</option>
+                                
+                                    <option value="C0182">C0182</option>
+                                
+                                    <option value="C0183">C0183</option>
+                                
+                                    <option value="C0184">C0184</option>
+                                
+                                    <option value="C0185">C0185</option>
+                                
+                                    <option value="C0186">C0186</option>
+                                
+                                    <option value="C0187">C0187</option>
+                                
+                                    <option value="C0188">C0188</option>
+                                
+                                    <option value="C0189">C0189</option>
+                                
+                                    <option value="C0190">C0190</option>
+                                
+                                    <option value="C0191">C0191</option>
+                                
+                                    <option value="C0192">C0192</option>
+                                
+                                    <option value="C0193">C0193</option>
+                                
+                                    <option value="C0194">C0194</option>
+                                
+                                    <option value="C0195">C0195</option>
+                                
+                                    <option value="C0196">C0196</option>
+                                
+                                    <option value="C0197">C0197</option>
+                                
+                                    <option value="C0198">C0198</option>
+                                
+                                    <option value="C0199">C0199</option>
+                                
+                                    <option value="C0200">C0200</option>
+                                
+                                    <option value="C0202">C0202</option>
+                                
+                                    <option value="C0203">C0203</option>
+                                
+                                    <option value="C0205">C0205</option>
+                                
+                                    <option value="C0206">C0206</option>
+                                
+                                    <option value="C0207">C0207</option>
+                                
+                                    <option value="C0208">C0208</option>
+                                
+                                    <option value="C0209">C0209</option>
+                                
+                                    <option value="C0210">C0210</option>
+                                
+                                    <option value="C0211">C0211</option>
+                                
+                                    <option value="C0212">C0212</option>
+                                
+                                    <option value="C0213">C0213</option>
+                                
+                                    <option value="C0214">C0214</option>
+                                
+                                    <option value="C0215">C0215</option>
+                                
+                                    <option value="C0216">C0216</option>
+                                
+                                    <option value="C0217">C0217</option>
+                                
+                                    <option value="C0218">C0218</option>
+                                
+                                    <option value="C0219">C0219</option>
+                                
+                                    <option value="C0220">C0220</option>
+                                
+                                    <option value="C0221">C0221</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-2 pb-2">
+                            <button type="button" class="btn btn-primary btn-block" onclick="neighbourhoodHighlight({nodes: []});">Reset Selection</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+                  new TomSelect("#select-node",{
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      }
+                  });
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"concept_name": "Carrier Sense", "concept_type": "Component", "definition": "", "group": 7, "id": "C0007", "label": "Carrier Sense", "shape": "dot", "size": 43, "title": "\u003cb\u003eCarrier Sense\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Ethernet", "concept_type": "Component", "definition": "", "group": 7, "id": "C0015", "label": "Ethernet", "shape": "dot", "size": 43, "title": "\u003cb\u003eEthernet\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Distributed Systems", "concept_type": "Model", "definition": "", "group": 12, "id": "C0012", "label": "Distributed Systems", "shape": "dot", "size": 12, "title": "\u003cb\u003eDistributed Systems\u003c/b\u003e (Model)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Request", "concept_type": "Component", "definition": "", "group": 12, "id": "C0044", "label": "Request", "shape": "dot", "size": 16, "title": "\u003cb\u003eRequest\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Internet", "concept_type": "Component", "definition": "", "group": 1, "id": "C0024", "label": "Internet", "shape": "dot", "size": 57, "title": "\u003cb\u003eInternet\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Networks", "concept_type": "Model", "definition": "", "group": 1, "id": "C0001", "label": "Networks", "shape": "dot", "size": 18, "title": "\u003cb\u003eNetworks\u003c/b\u003e (Model)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "DATA", "concept_type": "Component", "definition": "", "group": 44, "id": "C0058", "label": "DATA", "shape": "dot", "size": 26, "title": "\u003cb\u003eDATA\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Protocols", "concept_type": "Component", "definition": "", "group": 25, "id": "C0041", "label": "Protocols", "shape": "dot", "size": 27, "title": "\u003cb\u003eProtocols\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "MAIL", "concept_type": "Component", "definition": "", "group": 25, "id": "C0088", "label": "MAIL", "shape": "dot", "size": 39, "title": "\u003cb\u003eMAIL\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "East Coast", "concept_type": "Component", "definition": "", "group": 1, "id": "C0156", "label": "East Coast", "shape": "dot", "size": 32, "title": "\u003cb\u003eEast Coast\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "United States", "concept_type": "Component", "definition": "", "group": 1, "id": "C0170", "label": "United States", "shape": "dot", "size": 26, "title": "\u003cb\u003eUnited States\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "West Coast", "concept_type": "Component", "definition": "", "group": 1, "id": "C0171", "label": "West Coast", "shape": "dot", "size": 32, "title": "\u003cb\u003eWest Coast\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Application Layer", "concept_type": "Component", "definition": "The application layer uses the transport layer to send and receive messages over the Internet in much the same way that you would use a shipping company to send and receive packages.", "group": 1, "id": "C0154", "label": "Application Layer", "shape": "dot", "size": 17, "title": "\u003cb\u003eApplication Layer\u003c/b\u003e (Component)\u003cbr/\u003e\u003cbr/\u003e\u003cb\u003eDefinition:\u003c/b\u003e The application layer uses the transport layer to send and receive messages over the Internet in much the same way that you would use a shipping company to send and receive packages.\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "UDP", "concept_type": "Component", "definition": "", "group": 44, "id": "C0169", "label": "UDP", "shape": "dot", "size": 34, "title": "\u003cb\u003eUDP\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Line", "concept_type": "Component", "definition": "", "group": 25, "id": "C0027", "label": "Line", "shape": "dot", "size": 20, "title": "\u003cb\u003eLine\u003c/b\u003e (Component)\u003cbr/\u003e\u003cb\u003eAliases:\u003c/b\u003e Lines\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Transmission Control Protocol", "concept_type": "Component", "definition": "", "group": 44, "id": "C0048", "label": "Transmission Control Protocol", "shape": "dot", "size": 12, "title": "\u003cb\u003eTransmission Control Protocol\u003c/b\u003e (Component)\u003cbr/\u003e\u003cb\u003eAliases:\u003c/b\u003e TCP\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "ASCII", "concept_type": "Component", "definition": "", "group": 48, "id": "C0052", "label": "ASCII", "shape": "dot", "size": 41, "title": "\u003cb\u003eASCII\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Hypertext", "concept_type": "Component", "definition": "", "group": 48, "id": "C0123", "label": "Hypertext", "shape": "dot", "size": 55, "title": "\u003cb\u003eHypertext\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Hypertext Markup Language", "concept_type": "Component", "definition": "hypertext markup language is essentially a notational system by which a text document along with the document\u0027s appearance can be encoded as a simple text file.", "group": 48, "id": "C0124", "label": "Hypertext Markup Language", "shape": "dot", "size": 55, "title": "\u003cb\u003eHypertext Markup Language\u003c/b\u003e (Component)\u003cbr/\u003e\u003cbr/\u003e\u003cb\u003eDefinition:\u003c/b\u003e hypertext markup language is essentially a notational system by which a text document along with the document\u0027s appearance can be encoded as a simple text file.\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Internet Protocol", "concept_type": "Component", "definition": "", "group": 44, "id": "C0081", "label": "Internet Protocol", "shape": "dot", "size": 18, "title": "\u003cb\u003eInternet Protocol\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "XML", "concept_type": "Component", "definition": "", "group": 44, "id": "C0153", "label": "XML", "shape": "dot", "size": 14, "title": "\u003cb\u003eXML\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "DSL", "concept_type": "Component", "definition": "", "group": 1, "id": "C0060", "label": "DSL", "shape": "dot", "size": 12, "title": "\u003cb\u003eDSL\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Tags", "concept_type": "Component", "definition": "", "group": 48, "id": "C0143", "label": "Tags", "shape": "dot", "size": 12, "title": "\u003cb\u003eTags\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Source", "concept_type": "Component", "definition": "", "group": 48, "id": "C0139", "label": "Source", "shape": "dot", "size": 13, "title": "\u003cb\u003eSource\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Protocol Suite", "concept_type": "Component", "definition": "", "group": 44, "id": "C0166", "label": "Protocol Suite", "shape": "dot", "size": 12, "title": "\u003cb\u003eProtocol Suite\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Public-Key", "concept_type": "Component", "definition": "", "group": 182, "id": "C0204", "label": "Public-Key", "shape": "dot", "size": 12, "title": "\u003cb\u003ePublic-Key\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Private-Key", "concept_type": "Component", "definition": "The private-key is held in confidence at this destination.", "group": 182, "id": "C0201", "label": "Private-Key", "shape": "dot", "size": 16, "title": "\u003cb\u003ePrivate-Key\u003c/b\u003e (Component)\u003cbr/\u003e\u003cbr/\u003e\u003cb\u003eDefinition:\u003c/b\u003e The private-key is held in confidence at this destination.\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Access Point", "concept_type": "Component", "definition": "", "group": 2, "id": "C0002", "label": "Access Point", "shape": "dot", "size": 12, "title": "\u003cb\u003eAccess Point\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Area", "concept_type": "Component", "definition": "", "group": 3, "id": "C0003", "label": "Area", "shape": "dot", "size": 12, "title": "\u003cb\u003eArea\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "BOINC", "concept_type": "Component", "definition": "", "group": 4, "id": "C0004", "label": "BOINC", "shape": "dot", "size": 12, "title": "\u003cb\u003eBOINC\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Bus", "concept_type": "Component", "definition": "", "group": 5, "id": "C0005", "label": "Bus", "shape": "dot", "size": 12, "title": "\u003cb\u003eBus\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "CSMA", "concept_type": "Component", "definition": "", "group": 6, "id": "C0006", "label": "CSMA", "shape": "dot", "size": 12, "title": "\u003cb\u003eCSMA\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Closed", "concept_type": "Component", "definition": "", "group": 8, "id": "C0008", "label": "Closed", "shape": "dot", "size": 12, "title": "\u003cb\u003eClosed\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Combining Networks", "concept_type": "Model", "definition": "", "group": 9, "id": "C0009", "label": "Combining Networks", "shape": "dot", "size": 12, "title": "\u003cb\u003eCombining Networks\u003c/b\u003e (Model)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Difficult", "concept_type": "Component", "definition": "", "group": 10, "id": "C0010", "label": "Difficult", "shape": "dot", "size": 12, "title": "\u003cb\u003eDifficult\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Distance", "concept_type": "Component", "definition": "", "group": 11, "id": "C0011", "label": "Distance", "shape": "dot", "size": 12, "title": "\u003cb\u003eDistance\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Elastic Compute Cloud", "concept_type": "Component", "definition": "", "group": 13, "id": "C0013", "label": "Elastic Compute Cloud", "shape": "dot", "size": 12, "title": "\u003cb\u003eElastic Compute Cloud\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Electronics Engineers", "concept_type": "Component", "definition": "", "group": 14, "id": "C0014", "label": "Electronics Engineers", "shape": "dot", "size": 12, "title": "\u003cb\u003eElectronics Engineers\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "File Server", "concept_type": "Component", "definition": "", "group": 15, "id": "C0016", "label": "File Server", "shape": "dot", "size": 12, "title": "\u003cb\u003eFile Server\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Google Apps", "concept_type": "Component", "definition": "", "group": 16, "id": "C0017", "label": "Google Apps", "shape": "dot", "size": 12, "title": "\u003cb\u003eGoogle Apps\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Google Drive", "concept_type": "Component", "definition": "", "group": 17, "id": "C0018", "label": "Google Drive", "shape": "dot", "size": 12, "title": "\u003cb\u003eGoogle Drive\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Hidden Terminal", "concept_type": "Component", "definition": "", "group": 18, "id": "C0019", "label": "Hidden Terminal", "shape": "dot", "size": 12, "title": "\u003cb\u003eHidden Terminal\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Hidden Terminal Problem", "concept_type": "Component", "definition": "", "group": 19, "id": "C0020", "label": "Hidden Terminal Problem", "shape": "dot", "size": 12, "title": "\u003cb\u003eHidden Terminal Problem\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Hub", "concept_type": "Component", "definition": "", "group": 20, "id": "C0021", "label": "Hub", "shape": "dot", "size": 12, "title": "\u003cb\u003eHub\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "IEEE", "concept_type": "Component", "definition": "", "group": 21, "id": "C0022", "label": "IEEE", "shape": "dot", "size": 12, "title": "\u003cb\u003eIEEE\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Impossible", "concept_type": "Component", "definition": "", "group": 22, "id": "C0023", "label": "Impossible", "shape": "dot", "size": 12, "title": "\u003cb\u003eImpossible\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Interprocess Communication", "concept_type": "Component", "definition": "", "group": 23, "id": "C0025", "label": "Interprocess Communication", "shape": "dot", "size": 12, "title": "\u003cb\u003eInterprocess Communication\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "LAN", "concept_type": "Component", "definition": "", "group": 24, "id": "C0026", "label": "LAN", "shape": "dot", "size": 12, "title": "\u003cb\u003eLAN\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Local", "concept_type": "Component", "definition": "", "group": 26, "id": "C0028", "label": "Local", "shape": "dot", "size": 12, "title": "\u003cb\u003eLocal\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "MAN", "concept_type": "Component", "definition": "", "group": 27, "id": "C0029", "label": "MAN", "shape": "dot", "size": 12, "title": "\u003cb\u003eMAN\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Network Classifications", "concept_type": "Model", "definition": "", "group": 28, "id": "C0030", "label": "Network Classifications", "shape": "dot", "size": 12, "title": "\u003cb\u003eNetwork Classifications\u003c/b\u003e (Model)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Network Computing", "concept_type": "Model", "definition": "", "group": 29, "id": "C0031", "label": "Network Computing", "shape": "dot", "size": 12, "title": "\u003cb\u003eNetwork Computing\u003c/b\u003e (Model)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Network Fundamentals", "concept_type": "Model", "definition": "", "group": 30, "id": "C0032", "label": "Network Fundamentals", "shape": "dot", "size": 12, "title": "\u003cb\u003eNetwork Fundamentals\u003c/b\u003e (Model)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Newcomer", "concept_type": "Component", "definition": "", "group": 31, "id": "C0033", "label": "Newcomer", "shape": "dot", "size": 12, "title": "\u003cb\u003eNewcomer\u003c/b\u003e (Component)\u003cbr/\u003e\u003cb\u003eAliases:\u003c/b\u003e Newcomers\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Novell Inc", "concept_type": "Component", "definition": "", "group": 32, "id": "C0034", "label": "Novell Inc", "shape": "dot", "size": 12, "title": "\u003cb\u003eNovell Inc\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Open Infrastructure", "concept_type": "Component", "definition": "", "group": 33, "id": "C0035", "label": "Open Infrastructure", "shape": "dot", "size": 12, "title": "\u003cb\u003eOpen Infrastructure\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Open Network", "concept_type": "Model", "definition": "", "group": 34, "id": "C0036", "label": "Open Network", "shape": "dot", "size": 12, "title": "\u003cb\u003eOpen Network\u003c/b\u003e (Model)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "PAN", "concept_type": "Component", "definition": "", "group": 35, "id": "C0037", "label": "PAN", "shape": "dot", "size": 12, "title": "\u003cb\u003ePAN\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Point", "concept_type": "Component", "definition": "", "group": 36, "id": "C0038", "label": "Point", "shape": "dot", "size": 12, "title": "\u003cb\u003ePoint\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Print Server", "concept_type": "Component", "definition": "", "group": 37, "id": "C0039", "label": "Print Server", "shape": "dot", "size": 12, "title": "\u003cb\u003ePrint Server\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Process Communication", "concept_type": "Component", "definition": "", "group": 38, "id": "C0040", "label": "Process Communication", "shape": "dot", "size": 12, "title": "\u003cb\u003eProcess Communication\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Protocols For", "concept_type": "Component", "definition": "", "group": 39, "id": "C0042", "label": "Protocols For", "shape": "dot", "size": 12, "title": "\u003cb\u003eProtocols For\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Repeaters", "concept_type": "Component", "definition": "", "group": 40, "id": "C0043", "label": "Repeaters", "shape": "dot", "size": 12, "title": "\u003cb\u003eRepeaters\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Routers", "concept_type": "Component", "definition": "", "group": 41, "id": "C0045", "label": "Routers", "shape": "dot", "size": 12, "title": "\u003cb\u003eRouters\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Swarm", "concept_type": "Component", "definition": "", "group": 42, "id": "C0046", "label": "Swarm", "shape": "dot", "size": 12, "title": "\u003cb\u003eSwarm\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Cloud", "concept_type": "Component", "definition": "", "group": 43, "id": "C0047", "label": "Cloud", "shape": "dot", "size": 12, "title": "\u003cb\u003eCloud\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Type", "concept_type": "Component", "definition": "", "group": 45, "id": "C0049", "label": "Type", "shape": "dot", "size": 12, "title": "\u003cb\u003eType\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "WAN", "concept_type": "Component", "definition": "", "group": 46, "id": "C0050", "label": "WAN", "shape": "dot", "size": 12, "title": "\u003cb\u003eWAN\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Wifi", "concept_type": "Component", "definition": "", "group": 47, "id": "C0051", "label": "Wifi", "shape": "dot", "size": 12, "title": "\u003cb\u003eWifi\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Assigned Names", "concept_type": "Component", "definition": "", "group": 49, "id": "C0053", "label": "Assigned Names", "shape": "dot", "size": 12, "title": "\u003cb\u003eAssigned Names\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Cells And The", "concept_type": "Component", "definition": "", "group": 50, "id": "C0054", "label": "Cells And The", "shape": "dot", "size": 12, "title": "\u003cb\u003eCells And The\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Country-Code Top-Level Domains", "concept_type": "Component", "definition": "", "group": 51, "id": "C0055", "label": "Country-Code Top-Level Domains", "shape": "dot", "size": 12, "title": "\u003cb\u003eCountry-Code Top-Level Domains\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "DAR", "concept_type": "Component", "definition": "", "group": 52, "id": "C0056", "label": "DAR", "shape": "dot", "size": 12, "title": "\u003cb\u003eDAR\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "DARPA", "concept_type": "Component", "definition": "", "group": 53, "id": "C0057", "label": "DARPA", "shape": "dot", "size": 12, "title": "\u003cb\u003eDARPA\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "DNS", "concept_type": "Component", "definition": "", "group": 54, "id": "C0059", "label": "DNS", "shape": "dot", "size": 12, "title": "\u003cb\u003eDNS\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "DVD", "concept_type": "Component", "definition": "", "group": 55, "id": "C0061", "label": "DVD", "shape": "dot", "size": 12, "title": "\u003cb\u003eDVD\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Dalek", "concept_type": "Component", "definition": "", "group": 56, "id": "C0062", "label": "Dalek", "shape": "dot", "size": 12, "title": "\u003cb\u003eDalek\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Defense Advanced Research Projects", "concept_type": "Algorithm", "definition": "", "group": 57, "id": "C0063", "label": "Defense Advanced Research Projects", "shape": "dot", "size": 12, "title": "\u003cb\u003eDefense Advanced Research Projects\u003c/b\u003e (Algorithm)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Doctor", "concept_type": "Component", "definition": "", "group": 58, "id": "C0064", "label": "Doctor", "shape": "dot", "size": 12, "title": "\u003cb\u003eDoctor\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Domain Name System", "concept_type": "Model", "definition": "", "group": 59, "id": "C0065", "label": "Domain Name System", "shape": "dot", "size": 12, "title": "\u003cb\u003eDomain Name System\u003c/b\u003e (Model)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "EYE", "concept_type": "Component", "definition": "", "group": 60, "id": "C0066", "label": "EYE", "shape": "dot", "size": 12, "title": "\u003cb\u003eEYE\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Educational", "concept_type": "Component", "definition": "", "group": 61, "id": "C0067", "label": "Educational", "shape": "dot", "size": 12, "title": "\u003cb\u003eEducational\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Electronic Mail", "concept_type": "Component", "definition": "", "group": 62, "id": "C0068", "label": "Electronic Mail", "shape": "dot", "size": 12, "title": "\u003cb\u003eElectronic Mail\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Eye-Map", "concept_type": "Component", "definition": "", "group": 63, "id": "C0069", "label": "Eye-Map", "shape": "dot", "size": 12, "title": "\u003cb\u003eEye-Map\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "FTP", "concept_type": "Component", "definition": "", "group": 64, "id": "C0070", "label": "FTP", "shape": "dot", "size": 12, "title": "\u003cb\u003eFTP\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "HELO", "concept_type": "Component", "definition": "", "group": 65, "id": "C0071", "label": "HELO", "shape": "dot", "size": 12, "title": "\u003cb\u003eHELO\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "HTTP", "concept_type": "Component", "definition": "", "group": 66, "id": "C0072", "label": "HTTP", "shape": "dot", "size": 12, "title": "\u003cb\u003eHTTP\u003c/b\u003e (Component)\u003cbr/\u003e\u003cb\u003eAliases:\u003c/b\u003e HTTPS\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Hot Spot", "concept_type": "Component", "definition": "", "group": 67, "id": "C0073", "label": "Hot Spot", "shape": "dot", "size": 12, "title": "\u003cb\u003eHot Spot\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "ICANN", "concept_type": "Component", "definition": "", "group": 68, "id": "C0074", "label": "ICANN", "shape": "dot", "size": 12, "title": "\u003cb\u003eICANN\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "IMAP", "concept_type": "Component", "definition": "", "group": 69, "id": "C0075", "label": "IMAP", "shape": "dot", "size": 12, "title": "\u003cb\u003eIMAP\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Internet Addressing", "concept_type": "Component", "definition": "", "group": 70, "id": "C0076", "label": "Internet Addressing", "shape": "dot", "size": 12, "title": "\u003cb\u003eInternet Addressing\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Internet Applications", "concept_type": "Component", "definition": "", "group": 71, "id": "C0077", "label": "Internet Applications", "shape": "dot", "size": 12, "title": "\u003cb\u003eInternet Applications\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Internet Architecture", "concept_type": "Model", "definition": "", "group": 72, "id": "C0078", "label": "Internet Architecture", "shape": "dot", "size": 12, "title": "\u003cb\u003eInternet Architecture\u003c/b\u003e (Model)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Internet Corporation", "concept_type": "Formula", "definition": "", "group": 73, "id": "C0079", "label": "Internet Corporation", "shape": "dot", "size": 12, "title": "\u003cb\u003eInternet Corporation\u003c/b\u003e (Formula)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Internet Multimedia Streaming", "concept_type": "Component", "definition": "", "group": 74, "id": "C0080", "label": "Internet Multimedia Streaming", "shape": "dot", "size": 12, "title": "\u003cb\u003eInternet Multimedia Streaming\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Internet Protocol Addresses", "concept_type": "Component", "definition": "internet protocol addresses are traditionally written in dotted decimal notation in which the bytes of the address are separated by periods and each byte is expressed as an integer represented in traditional base 10 notation.", "group": 75, "id": "C0082", "label": "Internet Protocol Addresses", "shape": "dot", "size": 12, "title": "\u003cb\u003eInternet Protocol Addresses\u003c/b\u003e (Component)\u003cbr/\u003e\u003cbr/\u003e\u003cb\u003eDefinition:\u003c/b\u003e internet protocol addresses are traditionally written in dotted decimal notation in which the bytes of the address are separated by periods and each byte is expressed as an integer represented in traditional base 10 notation.\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Internet Service Providers", "concept_type": "Component", "definition": "The internet service providers are then allowed to allocate the addresses within their awarded blocks to machines within their region of authority.", "group": 76, "id": "C0083", "label": "Internet Service Providers", "shape": "dot", "size": 12, "title": "\u003cb\u003eInternet Service Providers\u003c/b\u003e (Component)\u003cbr/\u003e\u003cbr/\u003e\u003cb\u003eDefinition:\u003c/b\u003e The internet service providers are then allowed to allocate the addresses within their awarded blocks to machines within their region of authority.\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Internet2", "concept_type": "Component", "definition": "Internet2 is intended as an academic-only system and involves numerous universities working in partnership with industry and government.", "group": 77, "id": "C0084", "label": "Internet2", "shape": "dot", "size": 12, "title": "\u003cb\u003eInternet2\u003c/b\u003e (Component)\u003cbr/\u003e\u003cbr/\u003e\u003cb\u003eDefinition:\u003c/b\u003e Internet2 is intended as an academic-only system and involves numerous universities working in partnership with industry and government.\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Intranet", "concept_type": "Component", "definition": "", "group": 78, "id": "C0085", "label": "Intranet", "shape": "dot", "size": 12, "title": "\u003cb\u003eIntranet\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Last Mile", "concept_type": "Component", "definition": "", "group": 79, "id": "C0086", "label": "Last Mile", "shape": "dot", "size": 12, "title": "\u003cb\u003eLast Mile\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Level Domain", "concept_type": "Component", "definition": "", "group": 80, "id": "C0087", "label": "Level Domain", "shape": "dot", "size": 12, "title": "\u003cb\u003eLevel Domain\u003c/b\u003e (Component)\u003cbr/\u003e\u003cb\u003eAliases:\u003c/b\u003e Level Domains\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "MIME", "concept_type": "Component", "definition": "", "group": 81, "id": "C0089", "label": "MIME", "shape": "dot", "size": 12, "title": "\u003cb\u003eMIME\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Marquette University", "concept_type": "Component", "definition": "", "group": 82, "id": "C0090", "label": "Marquette University", "shape": "dot", "size": 12, "title": "\u003cb\u003eMarquette University\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "NNTP", "concept_type": "Component", "definition": "", "group": 83, "id": "C0091", "label": "NNTP", "shape": "dot", "size": 12, "title": "\u003cb\u003eNNTP\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Name Servers", "concept_type": "Component", "definition": "", "group": 84, "id": "C0092", "label": "Name Servers", "shape": "dot", "size": 12, "title": "\u003cb\u003eName Servers\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Neighborhood", "concept_type": "Component", "definition": "", "group": 85, "id": "C0093", "label": "Neighborhood", "shape": "dot", "size": 12, "title": "\u003cb\u003eNeighborhood\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Network News Transfer Protocol", "concept_type": "Model", "definition": "", "group": 86, "id": "C0094", "label": "Network News Transfer Protocol", "shape": "dot", "size": 12, "title": "\u003cb\u003eNetwork News Transfer Protocol\u003c/b\u003e (Model)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Pleased To Meet You", "concept_type": "Component", "definition": "", "group": 87, "id": "C0095", "label": "Pleased To Meet You", "shape": "dot", "size": 12, "title": "\u003cb\u003ePleased To Meet You\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Pop-Three", "concept_type": "Component", "definition": "", "group": 88, "id": "C0096", "label": "Pop-Three", "shape": "dot", "size": 12, "title": "\u003cb\u003ePop-Three\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "QUIT", "concept_type": "Component", "definition": "", "group": 89, "id": "C0097", "label": "QUIT", "shape": "dot", "size": 12, "title": "\u003cb\u003eQUIT\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "RCPT", "concept_type": "Component", "definition": "", "group": 90, "id": "C0098", "label": "RCPT", "shape": "dot", "size": 12, "title": "\u003cb\u003eRCPT\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Ray", "concept_type": "Component", "definition": "", "group": 91, "id": "C0099", "label": "Ray", "shape": "dot", "size": 12, "title": "\u003cb\u003eRay\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Region", "concept_type": "Component", "definition": "", "group": 92, "id": "C0100", "label": "Region", "shape": "dot", "size": 12, "title": "\u003cb\u003eRegion\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Registrars", "concept_type": "Component", "definition": "", "group": 93, "id": "C0101", "label": "Registrars", "shape": "dot", "size": 12, "title": "\u003cb\u003eRegistrars\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "SMTP", "concept_type": "Component", "definition": "", "group": 94, "id": "C0102", "label": "SMTP", "shape": "dot", "size": 12, "title": "\u003cb\u003eSMTP\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "SSH", "concept_type": "Component", "definition": "", "group": 95, "id": "C0103", "label": "SSH", "shape": "dot", "size": 12, "title": "\u003cb\u003eSSH\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Streaming", "concept_type": "Component", "definition": "", "group": 96, "id": "C0104", "label": "Streaming", "shape": "dot", "size": 12, "title": "\u003cb\u003eStreaming\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Subdomains", "concept_type": "Component", "definition": "", "group": 97, "id": "C0105", "label": "Subdomains", "shape": "dot", "size": 12, "title": "\u003cb\u003eSubdomains\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "THREE", "concept_type": "Component", "definition": "", "group": 98, "id": "C0106", "label": "THREE", "shape": "dot", "size": 12, "title": "\u003cb\u003eTHREE\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Top-Level Domains", "concept_type": "Component", "definition": "", "group": 99, "id": "C0107", "label": "Top-Level Domains", "shape": "dot", "size": 12, "title": "\u003cb\u003eTop-Level Domains\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Translation", "concept_type": "Component", "definition": "", "group": 100, "id": "C0108", "label": "Translation", "shape": "dot", "size": 12, "title": "\u003cb\u003eTranslation\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Tweets", "concept_type": "Component", "definition": "", "group": 101, "id": "C0109", "label": "Tweets", "shape": "dot", "size": 12, "title": "\u003cb\u003eTweets\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Wall", "concept_type": "Component", "definition": "", "group": 102, "id": "C0110", "label": "Wall", "shape": "dot", "size": 12, "title": "\u003cb\u003eWall\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Ycast", "concept_type": "Component", "definition": "", "group": 103, "id": "C0111", "label": "Ycast", "shape": "dot", "size": 12, "title": "\u003cb\u003eYcast\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Yoyodyne Corporation", "concept_type": "Formula", "definition": "", "group": 104, "id": "C0112", "label": "Yoyodyne Corporation", "shape": "dot", "size": 12, "title": "\u003cb\u003eYoyodyne Corporation\u003c/b\u003e (Formula)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "ASP", "concept_type": "Component", "definition": "", "group": 105, "id": "C0113", "label": "ASP", "shape": "dot", "size": 12, "title": "\u003cb\u003eASP\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "CERN", "concept_type": "Component", "definition": "CERN is where the original hypertext markup language markup language was developed as well as the hypertext transfer protocol protocol for transferring hypertext markup language documents over the Internet.", "group": 106, "id": "C0114", "label": "CERN", "shape": "dot", "size": 12, "title": "\u003cb\u003eCERN\u003c/b\u003e (Component)\u003cbr/\u003e\u003cbr/\u003e\u003cb\u003eDefinition:\u003c/b\u003e CERN is where the original hypertext markup language markup language was developed as well as the hypertext transfer protocol protocol for transferring hypertext markup language documents over the Internet.\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "CGI", "concept_type": "Component", "definition": "", "group": 107, "id": "C0115", "label": "CGI", "shape": "dot", "size": 12, "title": "\u003cb\u003eCGI\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Chor Tags", "concept_type": "Component", "definition": "", "group": 108, "id": "C0116", "label": "Chor Tags", "shape": "dot", "size": 12, "title": "\u003cb\u003eChor Tags\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Common Gateway Interface", "concept_type": "Component", "definition": "", "group": 109, "id": "C0117", "label": "Common Gateway Interface", "shape": "dot", "size": 12, "title": "\u003cb\u003eCommon Gateway Interface\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Common Internet", "concept_type": "Component", "definition": "", "group": 110, "id": "C0118", "label": "Common Internet", "shape": "dot", "size": 12, "title": "\u003cb\u003eCommon Internet\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Ctive Server Pages", "concept_type": "Component", "definition": "", "group": 111, "id": "C0119", "label": "Ctive Server Pages", "shape": "dot", "size": 12, "title": "\u003cb\u003eCtive Server Pages\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Eagle", "concept_type": "Component", "definition": "", "group": 112, "id": "C0120", "label": "Eagle", "shape": "dot", "size": 12, "title": "\u003cb\u003eEagle\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "HTML", "concept_type": "Component", "definition": "", "group": 113, "id": "C0121", "label": "HTML", "shape": "dot", "size": 12, "title": "\u003cb\u003eHTML\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Home Page", "concept_type": "Component", "definition": "", "group": 114, "id": "C0122", "label": "Home Page", "shape": "dot", "size": 12, "title": "\u003cb\u003eHome Page\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Hypertext Preprocessor", "concept_type": "Component", "definition": "", "group": 115, "id": "C0125", "label": "Hypertext Preprocessor", "shape": "dot", "size": 12, "title": "\u003cb\u003eHypertext Preprocessor\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Hypertext Transfer Protocol", "concept_type": "Component", "definition": "", "group": 116, "id": "C0126", "label": "Hypertext Transfer Protocol", "shape": "dot", "size": 12, "title": "\u003cb\u003eHypertext Transfer Protocol\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Internet Explorer", "concept_type": "Component", "definition": "", "group": 117, "id": "C0127", "label": "Internet Explorer", "shape": "dot", "size": 12, "title": "\u003cb\u003eInternet Explorer\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "JPEG", "concept_type": "Component", "definition": "", "group": 118, "id": "C0128", "label": "JPEG", "shape": "dot", "size": 12, "title": "\u003cb\u003eJPEG\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "JSP", "concept_type": "Component", "definition": "", "group": 119, "id": "C0129", "label": "JSP", "shape": "dot", "size": 12, "title": "\u003cb\u003eJSP\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Javaserver Pages", "concept_type": "Component", "definition": "", "group": 120, "id": "C0130", "label": "Javaserver Pages", "shape": "dot", "size": 12, "title": "\u003cb\u003eJavaserver Pages\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "My Web Page", "concept_type": "Component", "definition": "", "group": 121, "id": "C0131", "label": "My Web Page", "shape": "dot", "size": 12, "title": "\u003cb\u003eMy Web Page\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Netscape Communications", "concept_type": "Component", "definition": "", "group": 122, "id": "C0132", "label": "Netscape Communications", "shape": "dot", "size": 12, "title": "\u003cb\u003eNetscape Communications\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Ourpic", "concept_type": "Component", "definition": "", "group": 123, "id": "C0133", "label": "Ourpic", "shape": "dot", "size": 12, "title": "\u003cb\u003eOurpic\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "PHP", "concept_type": "Component", "definition": "", "group": 124, "id": "C0134", "label": "PHP", "shape": "dot", "size": 12, "title": "\u003cb\u003ePHP\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Personal Home Page", "concept_type": "Component", "definition": "", "group": 125, "id": "C0135", "label": "Personal Home Page", "shape": "dot", "size": 12, "title": "\u003cb\u003ePersonal Home Page\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Pplets", "concept_type": "Component", "definition": "", "group": 126, "id": "C0136", "label": "Pplets", "shape": "dot", "size": 12, "title": "\u003cb\u003ePplets\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "SGML", "concept_type": "Component", "definition": "", "group": 127, "id": "C0137", "label": "SGML", "shape": "dot", "size": 12, "title": "\u003cb\u003eSGML\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Side Activities", "concept_type": "Component", "definition": "", "group": 128, "id": "C0138", "label": "Side Activities", "shape": "dot", "size": 12, "title": "\u003cb\u003eSide Activities\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Source Version", "concept_type": "Component", "definition": "", "group": 129, "id": "C0140", "label": "Source Version", "shape": "dot", "size": 12, "title": "\u003cb\u003eSource Version\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Standard Generalized Markup Language", "concept_type": "Component", "definition": "", "group": 130, "id": "C0141", "label": "Standard Generalized Markup Language", "shape": "dot", "size": 12, "title": "\u003cb\u003eStandard Generalized Markup Language\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Sun Microsystems", "concept_type": "Model", "definition": "", "group": 131, "id": "C0142", "label": "Sun Microsystems", "shape": "dot", "size": 12, "title": "\u003cb\u003eSun Microsystems\u003c/b\u003e (Model)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Tim Berners", "concept_type": "Component", "definition": "", "group": 132, "id": "C0144", "label": "Tim Berners", "shape": "dot", "size": 12, "title": "\u003cb\u003eTim Berners\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Title", "concept_type": "Component", "definition": "", "group": 133, "id": "C0145", "label": "Title", "shape": "dot", "size": 12, "title": "\u003cb\u003eTitle\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Treble", "concept_type": "Component", "definition": "", "group": 134, "id": "C0146", "label": "Treble", "shape": "dot", "size": 12, "title": "\u003cb\u003eTreble\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Uniform Resource Locator", "concept_type": "Component", "definition": "", "group": 135, "id": "C0147", "label": "Uniform Resource Locator", "shape": "dot", "size": 12, "title": "\u003cb\u003eUniform Resource Locator\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Uthors", "concept_type": "Component", "definition": "", "group": 136, "id": "C0148", "label": "Uthors", "shape": "dot", "size": 12, "title": "\u003cb\u003eUthors\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Web Implementation", "concept_type": "Component", "definition": "", "group": 137, "id": "C0149", "label": "Web Implementation", "shape": "dot", "size": 12, "title": "\u003cb\u003eWeb Implementation\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "World Wide Semantic Web", "concept_type": "Component", "definition": "", "group": 138, "id": "C0150", "label": "World Wide Semantic Web", "shape": "dot", "size": 12, "title": "\u003cb\u003eWorld Wide Semantic Web\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "World Wide Syntactic Web", "concept_type": "Component", "definition": "", "group": 139, "id": "C0151", "label": "World Wide Syntactic Web", "shape": "dot", "size": 12, "title": "\u003cb\u003eWorld Wide Syntactic Web\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "XHTML", "concept_type": "Component", "definition": "", "group": 140, "id": "C0152", "label": "XHTML", "shape": "dot", "size": 12, "title": "\u003cb\u003eXHTML\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Connectionless Protocol", "concept_type": "Component", "definition": "", "group": 141, "id": "C0155", "label": "Connectionless Protocol", "shape": "dot", "size": 12, "title": "\u003cb\u003eConnectionless Protocol\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Hop Count", "concept_type": "Component", "definition": "", "group": 142, "id": "C0157", "label": "Hop Count", "shape": "dot", "size": 12, "title": "\u003cb\u003eHop Count\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "International Organization", "concept_type": "Component", "definition": "", "group": 143, "id": "C0158", "label": "International Organization", "shape": "dot", "size": 12, "title": "\u003cb\u003eInternational Organization\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Internet Software", "concept_type": "Component", "definition": "", "group": 144, "id": "C0159", "label": "Internet Software", "shape": "dot", "size": 12, "title": "\u003cb\u003eInternet Software\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Ipv4", "concept_type": "Component", "definition": "", "group": 145, "id": "C0160", "label": "Ipv4", "shape": "dot", "size": 12, "title": "\u003cb\u003eIpv4\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Ipv6", "concept_type": "Component", "definition": "", "group": 146, "id": "C0161", "label": "Ipv6", "shape": "dot", "size": 12, "title": "\u003cb\u003eIpv6\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "OSI", "concept_type": "Component", "definition": "", "group": 147, "id": "C0162", "label": "OSI", "shape": "dot", "size": 12, "title": "\u003cb\u003eOSI\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Open System Interconnection", "concept_type": "Model", "definition": "", "group": 148, "id": "C0163", "label": "Open System Interconnection", "shape": "dot", "size": 12, "title": "\u003cb\u003eOpen System Interconnection\u003c/b\u003e (Model)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Packets", "concept_type": "Component", "definition": "", "group": 149, "id": "C0164", "label": "Packets", "shape": "dot", "size": 12, "title": "\u003cb\u003ePackets\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Postal Service", "concept_type": "Component", "definition": "", "group": 150, "id": "C0165", "label": "Postal Service", "shape": "dot", "size": 12, "title": "\u003cb\u003ePostal Service\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Reliable Protocol", "concept_type": "Component", "definition": "", "group": 151, "id": "C0167", "label": "Reliable Protocol", "shape": "dot", "size": 12, "title": "\u003cb\u003eReliable Protocol\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Stops", "concept_type": "Component", "definition": "", "group": 152, "id": "C0168", "label": "Stops", "shape": "dot", "size": 12, "title": "\u003cb\u003eStops\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Abuse Act", "concept_type": "Component", "definition": "", "group": 153, "id": "C0172", "label": "Abuse Act", "shape": "dot", "size": 12, "title": "\u003cb\u003eAbuse Act\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Anticybersquatting Consumer Protection Act", "concept_type": "Formula", "definition": "", "group": 154, "id": "C0173", "label": "Anticybersquatting Consumer Protection Act", "shape": "dot", "size": 12, "title": "\u003cb\u003eAnticybersquatting Consumer Protection Act\u003c/b\u003e (Formula)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Anything Of Value", "concept_type": "Component", "definition": "", "group": 155, "id": "C0174", "label": "Anything Of Value", "shape": "dot", "size": 12, "title": "\u003cb\u003eAnything Of Value\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Bank", "concept_type": "Component", "definition": "", "group": 156, "id": "C0175", "label": "Bank", "shape": "dot", "size": 12, "title": "\u003cb\u003eBank\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Big Al", "concept_type": "Component", "definition": "", "group": 157, "id": "C0176", "label": "Big Al", "shape": "dot", "size": 12, "title": "\u003cb\u003eBig Al\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Botnet", "concept_type": "Component", "definition": "", "group": 158, "id": "C0177", "label": "Botnet", "shape": "dot", "size": 12, "title": "\u003cb\u003eBotnet\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "CALEA", "concept_type": "Component", "definition": "", "group": 159, "id": "C0178", "label": "CALEA", "shape": "dot", "size": 12, "title": "\u003cb\u003eCALEA\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "CERT", "concept_type": "Component", "definition": "", "group": 160, "id": "C0179", "label": "CERT", "shape": "dot", "size": 12, "title": "\u003cb\u003eCERT\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Carnivore", "concept_type": "Component", "definition": "", "group": 161, "id": "C0180", "label": "Carnivore", "shape": "dot", "size": 12, "title": "\u003cb\u003eCarnivore\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Certificate Authorities", "concept_type": "Component", "definition": "", "group": 162, "id": "C0181", "label": "Certificate Authorities", "shape": "dot", "size": 12, "title": "\u003cb\u003eCertificate Authorities\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Certificates", "concept_type": "Component", "definition": "", "group": 163, "id": "C0182", "label": "Certificates", "shape": "dot", "size": 12, "title": "\u003cb\u003eCertificates\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Computer Emergency Response Team", "concept_type": "Component", "definition": "The Computer Emergency Response Team is the Internet\u0027s security \"watchdog\".", "group": 164, "id": "C0183", "label": "Computer Emergency Response Team", "shape": "dot", "size": 12, "title": "\u003cb\u003eComputer Emergency Response Team\u003c/b\u003e (Component)\u003cbr/\u003e\u003cbr/\u003e\u003cb\u003eDefinition:\u003c/b\u003e The Computer Emergency Response Team is the Internet\u0027s security \"watchdog\".\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Computer Fraud", "concept_type": "Component", "definition": "", "group": 165, "id": "C0184", "label": "Computer Fraud", "shape": "dot", "size": 12, "title": "\u003cb\u003eComputer Fraud\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Coordination Center", "concept_type": "Component", "definition": "", "group": 166, "id": "C0185", "label": "Coordination Center", "shape": "dot", "size": 12, "title": "\u003cb\u003eCoordination Center\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Cybersquatting", "concept_type": "Component", "definition": "", "group": 167, "id": "C0186", "label": "Cybersquatting", "shape": "dot", "size": 12, "title": "\u003cb\u003eCybersquatting\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Digital Signature", "concept_type": "Component", "definition": "", "group": 168, "id": "C0187", "label": "Digital Signature", "shape": "dot", "size": 12, "title": "\u003cb\u003eDigital Signature\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "ECPA", "concept_type": "Component", "definition": "", "group": 169, "id": "C0188", "label": "ECPA", "shape": "dot", "size": 12, "title": "\u003cb\u003eECPA\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "European Union", "concept_type": "Component", "definition": "", "group": 170, "id": "C0189", "label": "European Union", "shape": "dot", "size": 12, "title": "\u003cb\u003eEuropean Union\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "FBI", "concept_type": "Component", "definition": "", "group": 171, "id": "C0190", "label": "FBI", "shape": "dot", "size": 12, "title": "\u003cb\u003eFBI\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Firewall", "concept_type": "Component", "definition": "Firewalls are also used to protect individual computers rather than entire networks or domains.", "group": 172, "id": "C0191", "label": "Firewall", "shape": "dot", "size": 12, "title": "\u003cb\u003eFirewall\u003c/b\u003e (Component)\u003cbr/\u003e\u003cbr/\u003e\u003cb\u003eDefinition:\u003c/b\u003e Firewalls are also used to protect individual computers rather than entire networks or domains.\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Hole", "concept_type": "Component", "definition": "", "group": 173, "id": "C0192", "label": "Hole", "shape": "dot", "size": 12, "title": "\u003cb\u003eHole\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Host", "concept_type": "Component", "definition": "", "group": 174, "id": "C0193", "label": "Host", "shape": "dot", "size": 12, "title": "\u003cb\u003eHost\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "International Court", "concept_type": "Component", "definition": "", "group": 175, "id": "C0194", "label": "International Court", "shape": "dot", "size": 12, "title": "\u003cb\u003eInternational Court\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Keys", "concept_type": "Component", "definition": "", "group": 176, "id": "C0195", "label": "Keys", "shape": "dot", "size": 12, "title": "\u003cb\u003eKeys\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Legal Approaches", "concept_type": "Component", "definition": "", "group": 177, "id": "C0196", "label": "Legal Approaches", "shape": "dot", "size": 12, "title": "\u003cb\u003eLegal Approaches\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Malware", "concept_type": "Component", "definition": "", "group": 178, "id": "C0197", "label": "Malware", "shape": "dot", "size": 12, "title": "\u003cb\u003eMalware\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Mellon University", "concept_type": "Component", "definition": "", "group": 179, "id": "C0198", "label": "Mellon University", "shape": "dot", "size": 12, "title": "\u003cb\u003eMellon University\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Network Security", "concept_type": "Model", "definition": "", "group": 180, "id": "C0199", "label": "Network Security", "shape": "dot", "size": 12, "title": "\u003cb\u003eNetwork Security\u003c/b\u003e (Model)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Obstruct Terrorism", "concept_type": "Component", "definition": "", "group": 181, "id": "C0200", "label": "Obstruct Terrorism", "shape": "dot", "size": 12, "title": "\u003cb\u003eObstruct Terrorism\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Proof", "concept_type": "Theory", "definition": "", "group": 183, "id": "C0202", "label": "Proof", "shape": "dot", "size": 12, "title": "\u003cb\u003eProof\u003c/b\u003e (Theory)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Providing Appropriate Tools Required", "concept_type": "Component", "definition": "", "group": 184, "id": "C0203", "label": "Providing Appropriate Tools Required", "shape": "dot", "size": 12, "title": "\u003cb\u003eProviding Appropriate Tools Required\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "S Security", "concept_type": "Component", "definition": "", "group": 185, "id": "C0205", "label": "S Security", "shape": "dot", "size": 12, "title": "\u003cb\u003eS Security\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "S Trademark Or", "concept_type": "Component", "definition": "", "group": 186, "id": "C0206", "label": "S Trademark Or", "shape": "dot", "size": 12, "title": "\u003cb\u003eS Trademark Or\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "SERT", "concept_type": "Component", "definition": "", "group": 187, "id": "C0207", "label": "SERT", "shape": "dot", "size": 12, "title": "\u003cb\u003eSERT\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "SSL", "concept_type": "Component", "definition": "", "group": 188, "id": "C0208", "label": "SSL", "shape": "dot", "size": 12, "title": "\u003cb\u003eSSL\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Secure Sockets Layer", "concept_type": "Component", "definition": "", "group": 189, "id": "C0209", "label": "Secure Sockets Layer", "shape": "dot", "size": 12, "title": "\u003cb\u003eSecure Sockets Layer\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Secure Versions", "concept_type": "Component", "definition": "", "group": 190, "id": "C0210", "label": "Secure Versions", "shape": "dot", "size": 12, "title": "\u003cb\u003eSecure Versions\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Sniffing Software", "concept_type": "Component", "definition": "", "group": 191, "id": "C0211", "label": "Sniffing Software", "shape": "dot", "size": 12, "title": "\u003cb\u003eSniffing Software\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Spam", "concept_type": "Component", "definition": "", "group": 192, "id": "C0212", "label": "Spam", "shape": "dot", "size": 12, "title": "\u003cb\u003eSpam\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Spoofing", "concept_type": "Component", "definition": "", "group": 193, "id": "C0213", "label": "Spoofing", "shape": "dot", "size": 12, "title": "\u003cb\u003eSpoofing\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Strengthening America", "concept_type": "Component", "definition": "", "group": 194, "id": "C0214", "label": "Strengthening America", "shape": "dot", "size": 12, "title": "\u003cb\u003eStrengthening America\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Take The Bait", "concept_type": "Component", "definition": "", "group": 195, "id": "C0215", "label": "Take The Bait", "shape": "dot", "size": 12, "title": "\u003cb\u003eTake The Bait\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Team Coordination Center", "concept_type": "Component", "definition": "", "group": 196, "id": "C0216", "label": "Team Coordination Center", "shape": "dot", "size": 12, "title": "\u003cb\u003eTeam Coordination Center\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Team In November", "concept_type": "Component", "definition": "", "group": 197, "id": "C0217", "label": "Team In November", "shape": "dot", "size": 12, "title": "\u003cb\u003eTeam In November\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Tivirus Software", "concept_type": "Component", "definition": "", "group": 198, "id": "C0218", "label": "Tivirus Software", "shape": "dot", "size": 12, "title": "\u003cb\u003eTivirus Software\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "USA", "concept_type": "Component", "definition": "", "group": 199, "id": "C0219", "label": "USA", "shape": "dot", "size": 12, "title": "\u003cb\u003eUSA\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "Volume", "concept_type": "Component", "definition": "", "group": 200, "id": "C0220", "label": "Volume", "shape": "dot", "size": 12, "title": "\u003cb\u003eVolume\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}, {"concept_name": "World Trade Center", "concept_type": "Component", "definition": "", "group": 201, "id": "C0221", "label": "World Trade Center", "shape": "dot", "size": 12, "title": "\u003cb\u003eWorld Trade Center\u003c/b\u003e (Component)\u003cbr/\u003e\u003csmall\u003e\u003ci\u003eLocation:\u003c/i\u003e  (Page 47)\u003c/small\u003e"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#7209b7", "from": "C0007", "relation_type": "Similarity", "title": "\u003cb\u003eCarrier Sense\u003c/b\u003e \u0026rarr; \u003cb\u003eEthernet\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.39)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;The protocol used is similar to Ethernet\u0027s carrier sense, multiple access with collision detection.\u0026rdquo;", "to": "C0015", "value": 0.385, "width": 0.385}, {"arrows": "to", "color": "#2a9d8f", "from": "C0012", "relation_type": "Application", "title": "\u003cb\u003eDistributed Systems\u003c/b\u003e \u0026rarr; \u003cb\u003eRequest\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Application (Weight: 0.17)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;Such distributed systems are used to provide high-availability-because it is more likely that at least one member of the cluster will be able to answer a request, even if other cluster members break down or are unavailable-and load-balancing-because the workload can be shifted automatically from members of the cluster that have too much to do to those that may have too little.\u0026rdquo;", "to": "C0044", "value": 0.175, "width": 0.175}, {"arrows": "to", "color": "#7209b7", "from": "C0015", "relation_type": "Similarity", "title": "\u003cb\u003eEthernet\u003c/b\u003e \u0026harr; \u003cb\u003eCarrier Sense\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.39)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;The protocol used is similar to Ethernet\u0027s carrier sense, multiple access with collision detection.\u0026rdquo;", "to": "C0007", "value": 0.385, "width": 0.385}, {"arrows": "to", "color": "#0077b6", "from": "C0024", "relation_type": "Part-of", "title": "\u003cb\u003eInternet\u003c/b\u003e \u0026rarr; \u003cb\u003eNetworks\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Part-of (Weight: 0.41)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;Modern networks can be designed to carry digital data directly between computers, but older, analog network infrastructure still comprises a significant portion of the Internet.\u0026rdquo;", "to": "C0001", "value": 0.405, "width": 0.405}, {"arrows": "to", "color": "#0077b6", "from": "C0024", "relation_type": "Part-of", "title": "\u003cb\u003eInternet\u003c/b\u003e \u0026rarr; \u003cb\u003eDATA\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Part-of (Weight: 0.43)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;Modern networks can be designed to carry digital data directly between computers, but older, analog network infrastructure still comprises a significant portion of the Internet.\u0026rdquo;", "to": "C0058", "value": 0.435, "width": 0.435}, {"arrows": "to", "color": "#7209b7", "from": "C0024", "relation_type": "Similarity", "title": "\u003cb\u003eInternet\u003c/b\u003e \u0026rarr; \u003cb\u003eProtocols\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.38)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;While many users now rely on their browser or a sophisticated application like Microsoft\u0027s Outlook, Apple\u0027s Mail, or Mozilla\u0027s Thunderbird to read and compose their email, the actual transmission of email messages from one computer to another on the Internet remains the domain of basic network protocols like simple mail transfer protocol.\u0026rdquo;", "to": "C0041", "value": 0.375, "width": 0.375}, {"arrows": "to", "color": "#7209b7", "from": "C0024", "relation_type": "Similarity", "title": "\u003cb\u003eInternet\u003c/b\u003e \u0026rarr; \u003cb\u003eMAIL\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.38)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;While many users now rely on their browser or a sophisticated application like Microsoft\u0027s Outlook, Apple\u0027s Mail, or Mozilla\u0027s Thunderbird to read and compose their email, the actual transmission of email messages from one computer to another on the Internet remains the domain of basic network protocols like simple mail transfer protocol.\u0026rdquo;", "to": "C0088", "value": 0.375, "width": 0.375}, {"arrows": "to", "color": "#7209b7", "from": "C0024", "relation_type": "Similarity", "title": "\u003cb\u003eInternet\u003c/b\u003e \u0026rarr; \u003cb\u003eEast Coast\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.15)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;In the Internet, this message-passing activity is accomplished by means of a hierarchy of software units, which perform tasks analogous to those that would be performed if you were to send a gift in a package from the West Coast of the United States to a friend on the East Coast (Figure 4.12).\u0026rdquo;", "to": "C0156", "value": 0.155, "width": 0.155}, {"arrows": "to", "color": "#7209b7", "from": "C0024", "relation_type": "Similarity", "title": "\u003cb\u003eInternet\u003c/b\u003e \u0026rarr; \u003cb\u003eUnited States\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.18)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;In the Internet, this message-passing activity is accomplished by means of a hierarchy of software units, which perform tasks analogous to those that would be performed if you were to send a gift in a package from the West Coast of the United States to a friend on the East Coast (Figure 4.12).\u0026rdquo;", "to": "C0170", "value": 0.185, "width": 0.185}, {"arrows": "to", "color": "#7209b7", "from": "C0024", "relation_type": "Similarity", "title": "\u003cb\u003eInternet\u003c/b\u003e \u0026rarr; \u003cb\u003eWest Coast\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.15)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;In the Internet, this message-passing activity is accomplished by means of a hierarchy of software units, which perform tasks analogous to those that would be performed if you were to send a gift in a package from the West Coast of the United States to a friend on the East Coast (Figure 4.12).\u0026rdquo;", "to": "C0171", "value": 0.155, "width": 0.155}, {"arrows": "to", "color": "#0077b6", "from": "C0024", "relation_type": "Part-of", "title": "\u003cb\u003eInternet\u003c/b\u003e \u0026rarr; \u003cb\u003eApplication Layer\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Part-of (Weight: 0.34)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;The application layer consists of those software units such as clients and servers that use Internet communication to carry out their tasks.\u0026rdquo;", "to": "C0154", "value": 0.3398, "width": 0.3398}, {"arrows": "to", "color": "#2a9d8f", "from": "C0024", "relation_type": "Application", "title": "\u003cb\u003eInternet\u003c/b\u003e \u0026rarr; \u003cb\u003eUDP\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Application (Weight: 0.15)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;We say a version because the transmission control protocol/internet protocol protocol suite provides for more than one way of implementing the transport layer; one of the other options is defined by the user datagram protocol (UDP).\u0026rdquo;", "to": "C0169", "value": 0.155, "width": 0.155}, {"arrows": "to", "color": "#7209b7", "from": "C0027", "relation_type": "Similarity", "title": "\u003cb\u003eLine\u003c/b\u003e \u0026rarr; \u003cb\u003eMAIL\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.34)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;The transcript of their simple mail transfer protocol exchange might look something like this: In line 1, the remote mail server process answers the caller by announcing its name, the protocol it speaks, and other optional information, such as the version of protocol, and the date and time.\u0026rdquo;", "to": "C0088", "value": 0.345, "width": 0.345}, {"arrows": "to", "color": "#7209b7", "from": "C0041", "relation_type": "Similarity", "title": "\u003cb\u003eProtocols\u003c/b\u003e \u0026harr; \u003cb\u003eInternet\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.38)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;While many users now rely on their browser or a sophisticated application like Microsoft\u0027s Outlook, Apple\u0027s Mail, or Mozilla\u0027s Thunderbird to read and compose their email, the actual transmission of email messages from one computer to another on the Internet remains the domain of basic network protocols like simple mail transfer protocol.\u0026rdquo;", "to": "C0024", "value": 0.375, "width": 0.375}, {"arrows": "to", "color": "#2a9d8f", "from": "C0041", "relation_type": "Application", "title": "\u003cb\u003eProtocols\u003c/b\u003e \u0026rarr; \u003cb\u003eMAIL\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Application (Weight: 0.36)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;There are two popular protocols that may be used for accessing email that has arrived and accumulated at a user\u0027s mail server.\u0026rdquo;", "to": "C0088", "value": 0.36, "width": 0.36}, {"arrows": "to", "color": "#2a9d8f", "from": "C0048", "relation_type": "Application", "title": "\u003cb\u003eTransmission Control Protocol\u003c/b\u003e \u0026rarr; \u003cb\u003eUDP\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Application (Weight: 0.17)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;We say a version because the transmission control protocol/internet protocol protocol suite provides for more than one way of implementing the transport layer; one of the other options is defined by the user datagram protocol (UDP).\u0026rdquo;", "to": "C0169", "value": 0.175, "width": 0.175}, {"arrows": "to", "color": "#7209b7", "from": "C0052", "relation_type": "Similarity", "title": "\u003cb\u003eASCII\u003c/b\u003e \u0026rarr; \u003cb\u003eHypertext\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.20)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;hypertext markup language A traditional hypertext document is similar to a text file because its text is encoded character by character using a system such as ASCII or Unicode.\u0026rdquo;", "to": "C0123", "value": 0.2, "width": 0.2}, {"arrows": "to", "color": "#7209b7", "from": "C0052", "relation_type": "Similarity", "title": "\u003cb\u003eASCII\u003c/b\u003e \u0026rarr; \u003cb\u003eHypertext Markup Language\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.20)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;hypertext markup language A traditional hypertext document is similar to a text file because its text is encoded character by character using a system such as ASCII or Unicode.\u0026rdquo;", "to": "C0124", "value": 0.2, "width": 0.2}, {"arrows": "to", "color": "#0077b6", "from": "C0058", "relation_type": "Part-of", "title": "\u003cb\u003eDATA\u003c/b\u003e \u0026rarr; \u003cb\u003eInternet\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Part-of (Weight: 0.43)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;In its simplest form, voice over internet protocol consists of two processes on different machines transferring audio data via the peer-to-peer model-a process that in itself presents no significant problems.\u0026rdquo;", "to": "C0024", "value": 0.435, "width": 0.435}, {"arrows": "to", "color": "#0077b6", "from": "C0058", "relation_type": "Part-of", "title": "\u003cb\u003eDATA\u003c/b\u003e \u0026rarr; \u003cb\u003eInternet Protocol\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Part-of (Weight: 0.38)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;In its simplest form, voice over internet protocol consists of two processes on different machines transferring audio data via the peer-to-peer model-a process that in itself presents no significant problems.\u0026rdquo;", "to": "C0081", "value": 0.375, "width": 0.375}, {"arrows": "to", "color": "#7209b7", "from": "C0058", "relation_type": "Similarity", "title": "\u003cb\u003eDATA\u003c/b\u003e \u0026rarr; \u003cb\u003eXML\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.15)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;The extensible markup language (XML) is a standardized style (similar to that of our music example) for designing notational systems for representing data as text files.\u0026rdquo;", "to": "C0153", "value": 0.155, "width": 0.155}, {"arrows": "to", "color": "#2a9d8f", "from": "C0060", "relation_type": "Application", "title": "\u003cb\u003eDSL\u003c/b\u003e \u0026rarr; \u003cb\u003eInternet\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Application (Weight: 0.15)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;DSL modems, cable modems, satellite uplinks, and even direct fiber-optic connections to the home are used to bring broadband internet access to end users.\u0026rdquo;", "to": "C0024", "value": 0.155, "width": 0.155}, {"arrows": "to", "color": "#2a9d8f", "from": "C0081", "relation_type": "Application", "title": "\u003cb\u003eInternet Protocol\u003c/b\u003e \u0026rarr; \u003cb\u003eUDP\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Application (Weight: 0.17)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;We say a version because the transmission control protocol/internet protocol protocol suite provides for more than one way of implementing the transport layer; one of the other options is defined by the user datagram protocol (UDP).\u0026rdquo;", "to": "C0169", "value": 0.175, "width": 0.175}, {"arrows": "to", "color": "#7209b7", "from": "C0088", "relation_type": "Similarity", "title": "\u003cb\u003eMAIL\u003c/b\u003e \u0026harr; \u003cb\u003eInternet\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.38)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;While many users now rely on their browser or a sophisticated application like Microsoft\u0027s Outlook, Apple\u0027s Mail, or Mozilla\u0027s Thunderbird to read and compose their email, the actual transmission of email messages from one computer to another on the Internet remains the domain of basic network protocols like simple mail transfer protocol.\u0026rdquo;", "to": "C0024", "value": 0.375, "width": 0.375}, {"arrows": "to", "color": "#7209b7", "from": "C0088", "relation_type": "Similarity", "title": "\u003cb\u003eMAIL\u003c/b\u003e \u0026harr; \u003cb\u003eProtocols\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.36)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;While many users now rely on their browser or a sophisticated application like Microsoft\u0027s Outlook, Apple\u0027s Mail, or Mozilla\u0027s Thunderbird to read and compose their email, the actual transmission of email messages from one computer to another on the Internet remains the domain of basic network protocols like simple mail transfer protocol.\u0026rdquo;", "to": "C0041", "value": 0.36, "width": 0.36}, {"arrows": "to", "color": "#7209b7", "from": "C0088", "relation_type": "Similarity", "title": "\u003cb\u003eMAIL\u003c/b\u003e \u0026harr; \u003cb\u003eLine\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.34)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;The transcript of their simple mail transfer protocol exchange might look something like this: In line 1, the remote mail server process answers the caller by announcing its name, the protocol it speaks, and other optional information, such as the version of protocol, and the date and time.\u0026rdquo;", "to": "C0027", "value": 0.345, "width": 0.345}, {"arrows": "to", "color": "#7209b7", "from": "C0123", "relation_type": "Similarity", "title": "\u003cb\u003eHypertext\u003c/b\u003e \u0026harr; \u003cb\u003eASCII\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.20)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;hypertext markup language A traditional hypertext document is similar to a text file because its text is encoded character by character using a system such as ASCII or Unicode.\u0026rdquo;", "to": "C0052", "value": 0.2, "width": 0.2}, {"arrows": "to", "color": "#7209b7", "from": "C0123", "relation_type": "Similarity", "title": "\u003cb\u003eHypertext\u003c/b\u003e \u0026rarr; \u003cb\u003eHypertext Markup Language\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.35)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;hypertext markup language A traditional hypertext document is similar to a text file because its text is encoded character by character using a system such as ASCII or Unicode.\u0026rdquo;", "to": "C0124", "value": 0.3531, "width": 0.3531}, {"arrows": "to", "color": "#7209b7", "from": "C0124", "relation_type": "Similarity", "title": "\u003cb\u003eHypertext Markup Language\u003c/b\u003e \u0026harr; \u003cb\u003eASCII\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.20)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;hypertext markup language A traditional hypertext document is similar to a text file because its text is encoded character by character using a system such as ASCII or Unicode.\u0026rdquo;", "to": "C0052", "value": 0.2, "width": 0.2}, {"arrows": "to", "color": "#7209b7", "from": "C0124", "relation_type": "Similarity", "title": "\u003cb\u003eHypertext Markup Language\u003c/b\u003e \u0026harr; \u003cb\u003eHypertext\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.35)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;hypertext markup language A traditional hypertext document is similar to a text file because its text is encoded character by character using a system such as ASCII or Unicode.\u0026rdquo;", "to": "C0123", "value": 0.3531, "width": 0.3531}, {"arrows": "to", "color": "#0077b6", "from": "C0143", "relation_type": "Part-of", "title": "\u003cb\u003eTags\u003c/b\u003e \u0026rarr; \u003cb\u003eHypertext\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Part-of (Weight: 0.32)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;The hypertext markup language source document consists of two sections-a head (surrounded by the \u003chead\u003e and \u003c/head\u003e tags) and a body (surrounded by the \u003cbody\u003e and \u003c/body\u003e tags).\u0026rdquo;", "to": "C0123", "value": 0.3225, "width": 0.3225}, {"arrows": "to", "color": "#0077b6", "from": "C0143", "relation_type": "Part-of", "title": "\u003cb\u003eTags\u003c/b\u003e \u0026rarr; \u003cb\u003eHypertext Markup Language\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Part-of (Weight: 0.43)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;The hypertext markup language source document consists of two sections-a head (surrounded by the \u003chead\u003e and \u003c/head\u003e tags) and a body (surrounded by the \u003cbody\u003e and \u003c/body\u003e tags).\u0026rdquo;", "to": "C0124", "value": 0.435, "width": 0.435}, {"arrows": "to", "color": "#0077b6", "from": "C0143", "relation_type": "Part-of", "title": "\u003cb\u003eTags\u003c/b\u003e \u0026rarr; \u003cb\u003eSource\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Part-of (Weight: 0.26)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;The hypertext markup language source document consists of two sections-a head (surrounded by the \u003chead\u003e and \u003c/head\u003e tags) and a body (surrounded by the \u003cbody\u003e and \u003c/body\u003e tags).\u0026rdquo;", "to": "C0139", "value": 0.255, "width": 0.255}, {"arrows": "to", "color": "#7209b7", "from": "C0153", "relation_type": "Similarity", "title": "\u003cb\u003eXML\u003c/b\u003e \u0026harr; \u003cb\u003eDATA\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.15)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;The extensible markup language (XML) is a standardized style (similar to that of our music example) for designing notational systems for representing data as text files.\u0026rdquo;", "to": "C0058", "value": 0.155, "width": 0.155}, {"arrows": "to", "color": "#7209b7", "from": "C0156", "relation_type": "Similarity", "title": "\u003cb\u003eEast Coast\u003c/b\u003e \u0026harr; \u003cb\u003eInternet\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.15)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;In the Internet, this message-passing activity is accomplished by means of a hierarchy of software units, which perform tasks analogous to those that would be performed if you were to send a gift in a package from the West Coast of the United States to a friend on the East Coast (Figure 4.12).\u0026rdquo;", "to": "C0024", "value": 0.155, "width": 0.155}, {"arrows": "to", "color": "#7209b7", "from": "C0156", "relation_type": "Similarity", "title": "\u003cb\u003eEast Coast\u003c/b\u003e \u0026rarr; \u003cb\u003eUnited States\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.20)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;In the Internet, this message-passing activity is accomplished by means of a hierarchy of software units, which perform tasks analogous to those that would be performed if you were to send a gift in a package from the West Coast of the United States to a friend on the East Coast (Figure 4.12).\u0026rdquo;", "to": "C0170", "value": 0.2, "width": 0.2}, {"arrows": "to", "color": "#7209b7", "from": "C0156", "relation_type": "Similarity", "title": "\u003cb\u003eEast Coast\u003c/b\u003e \u0026rarr; \u003cb\u003eWest Coast\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.45)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;In the Internet, this message-passing activity is accomplished by means of a hierarchy of software units, which perform tasks analogous to those that would be performed if you were to send a gift in a package from the West Coast of the United States to a friend on the East Coast (Figure 4.12).\u0026rdquo;", "to": "C0171", "value": 0.4483, "width": 0.4483}, {"arrows": "to", "color": "#2a9d8f", "from": "C0166", "relation_type": "Application", "title": "\u003cb\u003eProtocol Suite\u003c/b\u003e \u0026rarr; \u003cb\u003eUDP\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Application (Weight: 0.20)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;We say a version because the transmission control protocol/internet protocol protocol suite provides for more than one way of implementing the transport layer; one of the other options is defined by the user datagram protocol (UDP).\u0026rdquo;", "to": "C0169", "value": 0.2, "width": 0.2}, {"arrows": "to", "color": "#7209b7", "from": "C0170", "relation_type": "Similarity", "title": "\u003cb\u003eUnited States\u003c/b\u003e \u0026harr; \u003cb\u003eInternet\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.18)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;In the Internet, this message-passing activity is accomplished by means of a hierarchy of software units, which perform tasks analogous to those that would be performed if you were to send a gift in a package from the West Coast of the United States to a friend on the East Coast (Figure 4.12).\u0026rdquo;", "to": "C0024", "value": 0.185, "width": 0.185}, {"arrows": "to", "color": "#7209b7", "from": "C0170", "relation_type": "Similarity", "title": "\u003cb\u003eUnited States\u003c/b\u003e \u0026harr; \u003cb\u003eEast Coast\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.20)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;In the Internet, this message-passing activity is accomplished by means of a hierarchy of software units, which perform tasks analogous to those that would be performed if you were to send a gift in a package from the West Coast of the United States to a friend on the East Coast (Figure 4.12).\u0026rdquo;", "to": "C0156", "value": 0.2, "width": 0.2}, {"arrows": "to", "color": "#7209b7", "from": "C0170", "relation_type": "Similarity", "title": "\u003cb\u003eUnited States\u003c/b\u003e \u0026rarr; \u003cb\u003eWest Coast\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.20)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;In the Internet, this message-passing activity is accomplished by means of a hierarchy of software units, which perform tasks analogous to those that would be performed if you were to send a gift in a package from the West Coast of the United States to a friend on the East Coast (Figure 4.12).\u0026rdquo;", "to": "C0171", "value": 0.2, "width": 0.2}, {"arrows": "to", "color": "#7209b7", "from": "C0171", "relation_type": "Similarity", "title": "\u003cb\u003eWest Coast\u003c/b\u003e \u0026harr; \u003cb\u003eInternet\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.15)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;In the Internet, this message-passing activity is accomplished by means of a hierarchy of software units, which perform tasks analogous to those that would be performed if you were to send a gift in a package from the West Coast of the United States to a friend on the East Coast (Figure 4.12).\u0026rdquo;", "to": "C0024", "value": 0.155, "width": 0.155}, {"arrows": "to", "color": "#7209b7", "from": "C0171", "relation_type": "Similarity", "title": "\u003cb\u003eWest Coast\u003c/b\u003e \u0026harr; \u003cb\u003eEast Coast\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.45)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;In the Internet, this message-passing activity is accomplished by means of a hierarchy of software units, which perform tasks analogous to those that would be performed if you were to send a gift in a package from the West Coast of the United States to a friend on the East Coast (Figure 4.12).\u0026rdquo;", "to": "C0156", "value": 0.4483, "width": 0.4483}, {"arrows": "to", "color": "#7209b7", "from": "C0171", "relation_type": "Similarity", "title": "\u003cb\u003eWest Coast\u003c/b\u003e \u0026harr; \u003cb\u003eUnited States\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Similarity (Weight: 0.20)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;In the Internet, this message-passing activity is accomplished by means of a hierarchy of software units, which perform tasks analogous to those that would be performed if you were to send a gift in a package from the West Coast of the United States to a friend on the East Coast (Figure 4.12).\u0026rdquo;", "to": "C0170", "value": 0.2, "width": 0.2}, {"arrows": "to", "color": "#2a9d8f", "from": "C0204", "relation_type": "Application", "title": "\u003cb\u003ePublic-Key\u003c/b\u003e \u0026rarr; \u003cb\u003ePrivate-Key\u003c/b\u003e\u003cbr/\u003e\u003cb\u003eRelation:\u003c/b\u003e Application (Weight: 0.34)\u003cbr/\u003e\u003ci\u003eEvidence:\u003c/i\u003e \u0026ldquo;One key, known as the public-key, is used to encrypt messages; the other key, known as the private-key, is required to decrypt messages.\u0026rdquo;", "to": "C0201", "value": 0.34, "width": 0.34}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"edges": {"arrows": {"to": {"enabled": true, "scaleFactor": 0.7}}, "smooth": {"enabled": true, "type": "curvedCW", "roundness": 0.15}, "font": {"size": 9, "align": "middle", "strokeWidth": 2, "strokeColor": "#ffffff"}, "scaling": {"min": 1, "max": 10}}, "nodes": {"font": {"size": 13, "face": "Arial", "strokeWidth": 2, "strokeColor": "#ffffff"}, "scaling": {"min": 12, "max": 55}}, "physics": {"forceAtlas2Based": {"centralGravity": 0.015, "springLength": 130, "springConstant": 0.08, "damping": 0.4, "avoidOverlap": 0.25}, "maxVelocity": 45, "solver": "forceAtlas2Based", "timestep": 0.35, "stabilization": {"iterations": 180}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+                    network.on("selectNode", neighbourhoodHighlight);
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
