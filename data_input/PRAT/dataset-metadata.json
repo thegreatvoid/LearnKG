@@ -1,0 +1,40 @@
+{
+    "@context":"https://schema.org/",
+    "@type":"Dataset",
+    "@id":"IDPR_Gold",
+    "name":"PREAP-sample-CS-dataset",
+    "description":"High-quality annotated dataset for Prerequisite Relations in a Computer Science textbook chapter (Gold-PR dataset)",
+    "url":"https://github.com/IntAIEdu/PRAT/tree/master/data/PREAP-sample-CS-dataset",
+    "keywords":["prerequisite relations","educational concepts","manual text annotation", "in-context annotation"],    
+    "language": "English",
+    "measurementTechnique": "PREAP annotation protocol, https://github.com/IntAIEdu/PRAT/tree/master/docs/PREAPspecifications",     
+    "variableMeasured":"Prerequisite relations between pairs of educational concepts",
+    "isBasedOn":{    
+     		"@id":"corpus",       
+      		"@type":"Book",             
+            "name":"Brookshear, G., Brylow, D.: Networking and the Internet. In: Computer Science: An Overview, Global Edition. Pearson Education Limited (2015). Chapter 4",
+      		"learningResourceType": "textbook chapter",
+      		"teaches":"Introduction to computer networks",
+      		"encodingFormat":"text"
+    },
+    "usageInfo":{
+    		 "@id":"Annotationfeatures",
+    		 "description":[
+             "concepts-number:132",
+             "PRrelations-number:1974",
+     	     "concept-annotation-method:autonomous-semi-automatic",
+             "revision:true",
+             "combination-method:union",
+             "annotators-number:4",
+             "k-agreement:0.62"
+               ]
+     },
+    "license" : "https://creativecommons.org/licenses/by/4.0/",
+    "isAccessibleForFree" : true,
+    "creator":{
+             "@type":"Organization",
+             "@id":"IntAIEdu",
+              "url": "anonymized",
+              "name":"anonymized"
+    }
+}
